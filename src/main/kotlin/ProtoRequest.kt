@@ -7,7 +7,7 @@ import proto.*
 * Created at: 2018-01-04
 *
 * Created by Filip
-* 
+*
 * */
 
 @Throws(RequestException::class)

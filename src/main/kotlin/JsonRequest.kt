@@ -1,4 +1,14 @@
 
+/*
+* JsonRequest
+* This file holds function extensions for IGDBWrapper for each public endpoint in the API
+*
+* Created at: 2018-01-04
+*
+* Created by Filip
+*
+* */
+
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonAchievements(apiCalypse: APICalypse): String {
     return apiJsonRequest(Endpoint.ACHIEVEMENTS.url(), apiCalypse.buildQuery())

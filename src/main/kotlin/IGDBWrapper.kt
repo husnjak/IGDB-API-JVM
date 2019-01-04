@@ -1,5 +1,4 @@
 import com.github.kittinunf.fuel.httpPost
-import proto.*
 
 /**
  * IGDBWrapper
@@ -16,8 +15,8 @@ object IGDBWrapper {
 
     @Throws(RequestException::class)
     fun apiRequest(url: String, body: String): ByteArray {
-        val reqeustURL = "$APIURL$url.pb"
-        val (request, response, result) = reqeustURL.httpPost()
+        val requestURL = "$APIURL$url.pb"
+        val (request, response, result) = requestURL.httpPost()
             .header("user-key" to userkey).body(body).responseString()
 
         if (response.statusCode != 200) {
@@ -28,8 +27,8 @@ object IGDBWrapper {
 
     @Throws(RequestException::class)
     fun apiJsonRequest(url: String, body: String): String {
-        val reqeustURL = "$APIURL$url"
-        val (request, response, result) = reqeustURL.httpPost()
+        val requestURL = "$APIURL$url"
+        val (request, response, result) = requestURL.httpPost()
             .header("user-key" to userkey).body(body).responseString()
 
         if (response.statusCode != 200) {
@@ -39,13 +38,5 @@ object IGDBWrapper {
     }
 
     fun Endpoint.url() = "/${this.name.toLowerCase()}"
-
-    /*
-    * Helper methods for each endpoint
-    * 1. ProtoHelper methods
-    * 2. JsonHelper methods
-    * */
-
-
 
 }
