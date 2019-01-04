@@ -13,6 +13,7 @@ Thus, you are not only contributing to the value of this site but to thousands o
 More info here:
 * [About the API](https://www.igdb.com/api)
 * [API Documentation](https://api-docs.igdb.com/)
+
 Information about the Querying language APICalypse:
 * [apicalypse.io](https://apicalypse.io/)
 
