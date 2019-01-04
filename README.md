@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
 # IGDB API-JVM (V3)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
 
