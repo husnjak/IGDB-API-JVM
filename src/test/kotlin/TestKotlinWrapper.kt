@@ -2,7 +2,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 class TestKotlinWrapper {
-    val wrapper = IGDBWrapper
+    private val wrapper = IGDBWrapper
 
     @BeforeEach
     fun setup() {

@@ -1,5 +1,15 @@
 import proto.*
 
+/*
+* ProtoRequest
+* This file holds function extensions for IGDBWrapper for each public endpoint in the API
+*
+* Created at: 2018-01-04
+*
+* Created by Filip
+* 
+* */
+
 @Throws(RequestException::class)
 fun IGDBWrapper.achievements(apiCalypse: APICalypse): List<proto.Achievement> {
     val bytes = apiRequest(Endpoint.ACHIEVEMENTS.url(), apiCalypse.buildQuery())
