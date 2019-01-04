@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-
 class TestProtobufRequests {
     val wrapper = IGDBWrapper
 

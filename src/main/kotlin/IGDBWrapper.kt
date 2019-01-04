@@ -14,6 +14,7 @@ private const val APIURL = "https://api-v3.igdb.com"
 object IGDBWrapper {
     var userkey = ""
 
+    @Throws(RequestException::class)
     fun apiRequest(url: String, body: String): ByteArray {
         val reqeustURL = "$APIURL$url.pb"
         val (request, response, result) = reqeustURL.httpPost()
@@ -25,6 +26,7 @@ object IGDBWrapper {
         return response.data
     }
 
+    @Throws(RequestException::class)
     fun apiJsonRequest(url: String, body: String): String {
         val reqeustURL = "$APIURL$url"
         val (request, response, result) = reqeustURL.httpPost()
