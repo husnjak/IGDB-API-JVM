@@ -17,7 +17,7 @@ More info here:
 ## About the wrapper
 This wrapper is written in Kotlin which uses the JVM and works with both Koltin & Java projects. I have not tested it on other JVM languages but it should work for these languages as well. The examples bellow showcase this wrapper in both Kotlin and Java.
 
-Feel free to test it your selves :)
+Feel free to test it on other languages your selves :)
 
 The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have choosen to make the Generated classes the standard because it will make it easier to use, you dont have to create your own classes to hold the information.
 
