@@ -6,7 +6,7 @@ __IMPORTANT__
 This wrapper is compatible with ONLY their newest release V3.
 
 ## About IGDB
-One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool videogame oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.
+One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.
 
 Thus, you are not only contributing to the value of this site but to thousands of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!
 
@@ -15,11 +15,11 @@ More info here:
 * [API Documentation](https://api-docs.igdb.com/)
 
 ## About the wrapper
-This wrapper is written in Kotlin which uses the JVM and works with both Koltin & Java projects. I have not tested it on other JVM languages but it should work for these languages as well. The examples bellow showcase this wrapper in both Kotlin and Java.
+This wrapper is written in Kotlin which uses the JVM and works with both Koltin & Java projects. I have not tested it on other JVM languages but it should work for these languages as well. The examples below showcase this wrapper in both Kotlin and Java.
 
-Feel free to test it on other languages your selves :)
+Feel free to test it on other languages yourselves :)
 
-The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have choosen to make the Generated classes the standard because it will make it easier to use, you dont have to create your own classes to hold the information.
+The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have chosen to make the Generated classes the standard way because it will make it easier to use as you don't have to create your own classes to hold the information.
 
 # Installation and setup
 
@@ -72,9 +72,9 @@ IGDBWrapper.userkey = "YOUR_API_KEY"
 ```
 
 # How to use the wrapper
-The wrapper has two "wrapping" functions and a lot of helper funtions (one for each endpoint..)  
+The wrapper has two "wrapping" functions and a lot of helper functions (one for each endpoint..)  
 The two main functions are called `apiRequest` and `apiJsonRequest` and they handle all of the requests to the api.  
-The class `APICalypse` handles the new querying language, so that you dont need to care about structure and syntax as much.
+The class `APICalypse` handles the new querying language, so that you don't need to care about structure and syntax as much.
 
 * `apiRequest`  
   This method handles IGDB generated proto classes which returns an ByteArray to be used to fill the appropriate class.  
@@ -129,9 +129,9 @@ The class `APICalypse` handles the new querying language, so that you dont need 
   Here are all of the options, this creates a query for you. To get a String query from APICalypse just add `.buildQuery()`.
   
 __NOTE__  
-These examples above are only here to show you how to use the "manual" part of the wrapper. This wrapper comes with complete functions for each endpoint in the API :) so you dont have to deal with the manual stuff..
+These examples above are only here to show you how to use the "manual" part of the wrapper. This wrapper comes with complete functions for each endpoint in the API :) so you don't have to deal with the manual stuff..
 
-There are two functions for each endpoint, one for classes and one for json, for quick access. The difference between them is the name see the examples bellow:  
+There are two functions for each endpoint, one for classes and one for json, for quick access. The difference between them is the name see the examples below:  
 ```kotlin
 // Example of functions in Kotlin
 IGDBWrapper.games(APICalypse())
@@ -156,7 +156,7 @@ JsonRequestKt.jsonGenres(IGDBWrapper.INSTANCE, new APICalypse())
 ```
 
 ## Exceptions
-The wrapper thorws an `RequestException` on every exception from the API. This exception hold three things:
+The wrapper throws an `RequestException` on every exception from the API. This exception hold three things:
 * HTTP status code
 * Request (The complete sent request for debugging)
 * Result (The response from the API)
