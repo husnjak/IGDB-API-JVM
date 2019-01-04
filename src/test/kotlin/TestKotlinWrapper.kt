@@ -17,7 +17,7 @@ class TestKotlinWrapper {
 //        val query = APICalypse()
 //            .fields("*")
 //            .where("platforms = 48 & release_dates.date > " + date)
-//            .sort("release_dates.date", SortOrder.ASCENDING)
+//            .sort("release_dates.date", Sort.ASCENDING)
 //
 //        try {
 //            val ps4Games = wrapper.games(query)
@@ -34,7 +34,7 @@ class TestKotlinWrapper {
 //        val query = APICalypse()
 //                .fields("*")
 //                .where("platforms = 48 & release_dates.date < " + date)
-//                .sort("release_dates.date", SortOrder.DESCENDING)
+//                .sort("release_dates.date", Sort.DESCENDING)
 //
 //        try {
 //            val ps4Games = wrapper.games(query)

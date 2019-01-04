@@ -39,7 +39,7 @@ class TestJavaWrapper {
 //        APICalypse query = new APICalypse()
 //                .fields("*")
 //                .where("platforms = 48 & release_dates.date > " + date)
-//                .sort("release_dates.date", SortOrder.ASCENDING);
+//                .sort("release_dates.date", Sort.ASCENDING);
 //
 //        try {
 //            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);
@@ -56,7 +56,7 @@ class TestJavaWrapper {
 //        APICalypse query = new APICalypse()
 //                .fields("*")
 //                .where("platforms = 48 & release_dates.date < " + date)
-//                .sort("release_dates.date", SortOrder.DESCENDING);
+//                .sort("release_dates.date", Sort.DESCENDING);
 //
 //        try {
 //            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);

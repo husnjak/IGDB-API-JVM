@@ -14,10 +14,10 @@ object IGDBWrapper {
     var userkey = ""
 
     @Throws(RequestException::class)
-    fun apiRequest(url: String, body: String): ByteArray {
-        val requestURL = "$APIURL$url.pb"
+    fun apiRequest(endpoint: Endpoint, apicalypseQuery: String): ByteArray {
+        val requestURL = "$APIURL${endpoint.url()}.pb"
         val (request, response, result) = requestURL.httpPost()
-            .header("user-key" to userkey).body(body).responseString()
+            .header("user-key" to userkey).body(apicalypseQuery).responseString()
 
         if (response.statusCode != 200) {
             throw RequestException(response.statusCode, request, result)
@@ -26,10 +26,10 @@ object IGDBWrapper {
     }
 
     @Throws(RequestException::class)
-    fun apiJsonRequest(url: String, body: String): String {
-        val requestURL = "$APIURL$url"
+    fun apiJsonRequest(endpoint: Endpoint, apicalypseQuery: String): String {
+        val requestURL = "$APIURL${endpoint.url()}"
         val (request, response, result) = requestURL.httpPost()
-            .header("user-key" to userkey).body(body).responseString()
+            .header("user-key" to userkey).body(apicalypseQuery).responseString()
 
         if (response.statusCode != 200) {
             throw RequestException(response.statusCode, request, result)

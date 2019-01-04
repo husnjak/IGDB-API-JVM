@@ -53,7 +53,7 @@ class TestAPICalypse {
 
     @Test
     fun testSort() {
-        val apiCalypse = APICalypse().fields("name,popularity").sort("popularity", SortOrder.DESCENDING)
+        val apiCalypse = APICalypse().fields("name,popularity").sort("popularity", Sort.DESCENDING)
         assertEquals("f name,popularity;s popularity desc;", apiCalypse.buildQuery())
     }
 
@@ -61,7 +61,7 @@ class TestAPICalypse {
     fun testComingSoonGamesForPS4() {
         val apiCalypse = APICalypse().fields("*")
             .where("platform = 48 & date > 1538129354;")
-            .sort("date", SortOrder.ASCENDING)
+            .sort("date", Sort.ASCENDING)
         assertEquals("f *;s date asc;w platform = 48 & date > 1538129354;", apiCalypse.buildQuery())
     }
 
@@ -69,7 +69,7 @@ class TestAPICalypse {
     fun testRecentlyReleaseGamesPS4() {
         val apiCalypse = APICalypse().fields("*")
             .where("platform = 48 & date > 1538129354;")
-            .sort("date", SortOrder.DESCENDING)
+            .sort("date", Sort.DESCENDING)
         assertEquals("f *;s date desc;w platform = 48 & date > 1538129354;", apiCalypse.buildQuery())
     }
 

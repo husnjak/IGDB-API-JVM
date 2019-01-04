@@ -10,7 +10,7 @@ class APICalypse {
     private var where = ""
     // TODO where, plan where class with functions
 
-    fun sort(field: String, order: SortOrder): APICalypse {
+    fun sort(field: String, order: Sort): APICalypse {
         this.sort = "s $field ${order.apiName};"
         return this
     }
@@ -74,7 +74,7 @@ class APICalypse {
     }
 }
 
-enum class SortOrder(val apiName: String) {
+enum class Sort(val apiName: String) {
     ASCENDING("asc"), DESCENDING("desc")
 }
 
