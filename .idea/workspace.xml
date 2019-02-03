@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt" line="18" mnemonic="8" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f78ee3a6-9ed8-425e-b2bc-310b3e5db6ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ImageBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/TestImageBuilder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/APICalypse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/APICalypse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Endpoints.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Endpoints.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/JsonRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/JsonRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestJavaWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestJavaWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,24 +42,18 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apicalypse-kotlin" type="f1a62948:ProjectNode" />
+                <item name="IGDB-API-JVM" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apicalypse-kotlin" type="f1a62948:ProjectNode" />
+                <item name="IGDB-API-JVM" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apicalypse-kotlin" type="f1a62948:ProjectNode" />
+                <item name="IGDB-API-JVM" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apicalypse-kotlin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -75,10 +65,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/ImageBuilder.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="230">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -86,32 +76,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="289" column="22" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#168#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2507">
+              <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestImageBuilder.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -119,67 +112,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="874">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/RequestException.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2530">
-              <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Endpoints.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/APICalypse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -190,9 +127,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Object" />
-        <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -226,15 +163,20 @@
         <option value="$PROJECT_DIR$/src/test/java/TestJavaWrapper.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/JsonRequest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Endpoints.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/APICalypse.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/createImgUrl.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/APICalypse.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ImageURL.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ImageBuilder.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/TestImageBuilder.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       </list>
     </option>
   </component>
@@ -256,42 +198,46 @@
           <expand>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apiV3-jvm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
@@ -304,7 +250,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546617604656" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549197121202" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -323,59 +269,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestJavaWrapper">
+  <component name="RunManager" selected="Gradle.IGDB-API-JVM [build]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAPICalypse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IGDB-API-JVM [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestImageBuilder.testGIFImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.igdb.IGDB-API-JVM.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAPICalypse" />
+      <option name="MAIN_CLASS_NAME" value="TestImageBuilder" />
+      <option name="METHOD_NAME" value="testGIFImg" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJavaWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestImageBuilder.testJPEGImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.igdb.IGDB-API-JVM.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJavaWrapper" />
+      <option name="MAIN_CLASS_NAME" value="TestImageBuilder" />
+      <option name="METHOD_NAME" value="testJPEGImg" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestKotlinWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.igdb.apicalypse-kotlin.test" />
+    <configuration name="TestImageBuilder.testPNGImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.igdb.IGDB-API-JVM.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestKotlinWrapper" />
+      <option name="MAIN_CLASS_NAME" value="TestImageBuilder" />
+      <option name="METHOD_NAME" value="testPNGImg" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProtobufRequests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestImageBuilder.testWEBPImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.igdb.IGDB-API-JVM.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestProtobufRequests" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRequestExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.igdb.IGDB-API-JVM.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestRequestExceptions" />
+      <option name="MAIN_CLASS_NAME" value="TestImageBuilder" />
+      <option name="METHOD_NAME" value="testWEBPImg" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -391,11 +356,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestJavaWrapper" />
-        <item itemvalue="JUnit.TestRequestExceptions" />
-        <item itemvalue="JUnit.TestKotlinWrapper" />
-        <item itemvalue="JUnit.TestAPICalypse" />
-        <item itemvalue="JUnit.TestProtobufRequests" />
+        <item itemvalue="Gradle.IGDB-API-JVM [build]" />
+        <item itemvalue="JUnit.TestImageBuilder.testWEBPImg" />
+        <item itemvalue="JUnit.TestImageBuilder.testGIFImg" />
+        <item itemvalue="JUnit.TestImageBuilder.testPNGImg" />
+        <item itemvalue="JUnit.TestImageBuilder.testJPEGImg" />
       </list>
     </recent_temporary>
   </component>
@@ -413,42 +378,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestJavaWrapper_testComingSoonPS4Games - 2019.01.04 at 14h 41m 09s.xml">
-      <configuration name="TestJavaWrapper.testComingSoonPS4Games" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestJavaWrapper_testComingSoonPS4Games - 2019.01.04 at 14h 47m 11s.xml">
-      <configuration name="TestJavaWrapper.testComingSoonPS4Games" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestJavaWrapper - 2019.01.04 at 14h 51m 53s.xml">
-      <configuration name="TestJavaWrapper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestKotlinWrapper - 2019.01.04 at 14h 57m 41s.xml">
-      <configuration name="TestKotlinWrapper" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestProtobufRequests - 2019.01.04 at 16h 05m 41s.xml">
-      <configuration name="TestProtobufRequests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestProtobufRequests_testAchievements - 2019.01.04 at 16h 06m 04s.xml">
-      <configuration name="TestProtobufRequests.testAchievements" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestProtobufRequests - 2019.01.04 at 16h 58m 25s.xml">
-      <configuration name="TestProtobufRequests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAPICalypse - 2019.01.04 at 16h 58m 46s.xml">
-      <configuration name="TestAPICalypse" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestKotlinWrapper - 2019.01.04 at 16h 59m 20s.xml">
       <configuration name="TestKotlinWrapper" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestRequestExceptions - 2019.01.04 at 16h 59m 33s.xml">
       <configuration name="TestRequestExceptions" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestImageBuilder_testJPEGImg - 2019.02.03 at 13h 15m 29s.xml">
+      <configuration name="TestImageBuilder.testJPEGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testJPEGImg - 2019.02.03 at 13h 19m 27s.xml">
+      <configuration name="TestImageBuilder.testJPEGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testJPEGImg - 2019.02.03 at 13h 19m 32s.xml">
+      <configuration name="TestImageBuilder.testJPEGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testJPEGImg - 2019.02.03 at 13h 20m 31s.xml">
+      <configuration name="TestImageBuilder.testJPEGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testJPEGImg - 2019.02.03 at 13h 22m 33s.xml">
+      <configuration name="TestImageBuilder.testJPEGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testPNGImg - 2019.02.03 at 13h 23m 11s.xml">
+      <configuration name="TestImageBuilder.testPNGImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testGIFImg - 2019.02.03 at 13h 23m 47s.xml">
+      <configuration name="TestImageBuilder.testGIFImg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestImageBuilder_testWEBPImg - 2019.02.03 at 13h 24m 28s.xml">
+      <configuration name="TestImageBuilder.testWEBPImg" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1721" y="23" width="1720" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19184652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2002398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -482,7 +446,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.23221758" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.23201439" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -565,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/JsonRequest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -582,24 +539,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Endpoints.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/APICalypse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,28 +578,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Endpoints.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="289" column="22" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="22" />
+        <state relative-caret-position="644">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="230">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#0#168#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/APICalypse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="76" selection-start-line="76" selection-end-line="78" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
+        <state relative-caret-position="1228">
           <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
           <folding>
             <element signature="e#0#86#0" expanded="true" />
@@ -642,33 +612,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ImageBuilder.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ProtoRequest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2507">
+          <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestImageBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="874">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#168#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="354">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

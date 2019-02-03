@@ -9,40 +9,39 @@ class TestKotlinWrapper {
         wrapper.userkey = System.getenv("key")
     }
 
-    // TODO uncomment when api bug is fixed *API3-176*
     //Get all Coming Soon PS4 games
-//    @Test
-//    fun testComingSoonPS4Games() {
-//        val date = (System.currentTimeMillis() / 1000).toString()
-//        val query = APICalypse()
-//            .fields("*")
-//            .where("platforms = 48 & release_dates.date > " + date)
-//            .sort("release_dates.date", Sort.ASCENDING)
-//
-//        try {
-//            val ps4Games = wrapper.games(query)
-//            assert(!ps4Games.isEmpty());
-//        } catch (e: RequestException) {
-//            assert(false)
-//        }
-//    }
-//
-//    //Get all Recently released PS4 games
-//    @Test
-//    fun testRecentlyReleasedPS4Games() {
-//        val date = (System.currentTimeMillis() / 1000).toString()
-//        val query = APICalypse()
-//                .fields("*")
-//                .where("platforms = 48 & release_dates.date < " + date)
-//                .sort("release_dates.date", Sort.DESCENDING)
-//
-//        try {
-//            val ps4Games = wrapper.games(query)
-//            assert(!ps4Games.isEmpty());
-//        } catch (e: RequestException) {
-//            assert(false)
-//        }
-//    }
+    @Test
+    fun testComingSoonPS4Games() {
+        val date = (System.currentTimeMillis() / 1000).toString()
+        val query = APICalypse()
+            .fields("*")
+            .where("platforms = 48 & release_dates.date > " + date)
+            .sort("release_dates.date", Sort.ASCENDING)
+
+        try {
+            val ps4Games = wrapper.games(query)
+            assert(!ps4Games.isEmpty())
+        } catch (e: RequestException) {
+            assert(false)
+        }
+    }
+
+    //Get all Recently released PS4 games
+    @Test
+    fun testRecentlyReleasedPS4Games() {
+        val date = (System.currentTimeMillis() / 1000).toString()
+        val query = APICalypse()
+                .fields("*")
+                .where("platforms = 48 & release_dates.date < " + date)
+                .sort("release_dates.date", Sort.DESCENDING)
+
+        try {
+            val ps4Games = wrapper.games(query)
+            assert(!ps4Games.isEmpty())
+        } catch (e: RequestException) {
+            assert(false)
+        }
+    }
 
     //Get all Recently released PS4 games
     @Test
