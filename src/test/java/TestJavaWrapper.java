@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import proto.Cover;
 import proto.Game;
 import proto.Search;
 
@@ -31,40 +32,39 @@ class TestJavaWrapper {
     * Real-world test cases
     * */
 
-    // TODO uncomment when api bug is fixed *API3-176*
-//    //Get all Coming Soon PS4 games
-//    @Test
-//    void testComingSoonPS4Games() {
-//        String date = String.valueOf((System.currentTimeMillis() / 1000));
-//        APICalypse query = new APICalypse()
-//                .fields("*")
-//                .where("platforms = 48 & release_dates.date > " + date)
-//                .sort("release_dates.date", Sort.ASCENDING);
-//
-//        try {
-//            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);
-//            assert(!ps4Games.isEmpty());
-//        } catch (RequestException e) {
-//            assert(false);
-//        }
-//    }
-//
-//    //Get all Recently released PS4 games
-//    @Test
-//    void testRecentlyReleasedPS4Games() {
-//        String date = String.valueOf((System.currentTimeMillis() / 1000));
-//        APICalypse query = new APICalypse()
-//                .fields("*")
-//                .where("platforms = 48 & release_dates.date < " + date)
-//                .sort("release_dates.date", Sort.DESCENDING);
-//
-//        try {
-//            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);
-//            assert(!ps4Games.isEmpty());
-//        } catch (RequestException e) {
-//            assert(false);
-//        }
-//    }
+   //Get all Coming Soon PS4 games
+    @Test
+    void testComingSoonPS4Games() {
+        String date = String.valueOf((System.currentTimeMillis() / 1000));
+        APICalypse query = new APICalypse()
+                .fields("*")
+                .where("platforms = 48 & release_dates.date > " + date)
+                .sort("release_dates.date", Sort.ASCENDING);
+
+        try {
+            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);
+            assert(!ps4Games.isEmpty());
+        } catch (RequestException e) {
+            assert(false);
+        }
+    }
+
+    //Get all Recently released PS4 games
+    @Test
+    void testRecentlyReleasedPS4Games() {
+        String date = String.valueOf((System.currentTimeMillis() / 1000));
+        APICalypse query = new APICalypse()
+                .fields("*")
+                .where("platforms = 48 & release_dates.date < " + date)
+                .sort("release_dates.date", Sort.DESCENDING);
+
+        try {
+            List<Game> ps4Games = ProtoRequestKt.games(wrapper, query);
+            assert(!ps4Games.isEmpty());
+        } catch (RequestException e) {
+            assert(false);
+        }
+    }
 
     //Get all Recently released PS4 games
     @Test
@@ -92,6 +92,24 @@ class TestJavaWrapper {
         try {
             List<Game> result = ProtoRequestKt.games(wrapper, query);
             assert(!result.isEmpty());
+        } catch (RequestException e) {
+            assert(false);
+        }
+    }
+
+    @Test
+    void testJPEGImg() {
+        APICalypse query = new APICalypse()
+                .fields("image_id")
+                .where("image_id != n");
+        try {
+            List<Cover> covers = ProtoRequestKt.covers(wrapper, query);
+            assert(!covers.isEmpty());
+            Cover firstCover = covers.get(0);
+            String coverUrl = ImageBuilderKt.imageBuilder(firstCover.getUrl(), ImageSize.HD, ImageType.JPEG);
+            assert(!coverUrl.isEmpty());
+            assert(coverUrl.substring(coverUrl.length() - 3).equals("jpg"));
+
         } catch (RequestException e) {
             assert(false);
         }
