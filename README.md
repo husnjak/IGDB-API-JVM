@@ -40,7 +40,7 @@ __Maven__
 <dependency>
     <groupId>com.github.husnjak</groupId>
     <artifactId>IGDB-API-JVM</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
 </dependency>
 ```
 
@@ -55,7 +55,7 @@ repositories {
   Step 2. Add the dependency
 ``` Gradle
 dependencies {
-    implementation 'com.github.husnjak:IGDB-API-JVM:0.2'
+    implementation 'com.github.husnjak:IGDB-API-JVM:0.3'
 }
 ```
   Optional Step 3 (Android). Add internet permissions in the manifest
@@ -157,6 +157,30 @@ JsonRequestKt.jsonGames(IGDBWrapper.INSTANCE, new APICalypse())
 JsonRequestKt.jsonPlatforms(IGDBWrapper.INSTANCE, new APICalypse())
 JsonRequestKt.jsonGenres(IGDBWrapper.INSTANCE, new APICalypse())
 ...
+```
+
+## ImageBuilder
+To simplify the process of building the image URLs for IGDB images there is a new function called `imageBuilder` which is a helping tool in requesting the perfect sized images for your project. The function requires you to get the `image_id` then set your desired size (resolution), set your desired image format (default is set to PNG).  
+```kotlin
+// Kotlin Example
+val image_id = "mnljdjtrh44x4snmierh"
+val imageURL = imageBuilder(image_id, ImageSize.SCREENSHOT_HUGE, ImageType.PNG)
+
+/*
+* Result: 
+* imageURL = https://images.igdb.com/igdb/image/upload/t_screenshot_huge/mnljdjtrh44x4snmierh.png
+*/
+```
+
+```java
+// Java Example
+String image_id = "mnljdjtrh44x4snmierh";
+String imageURL = ImageBuilderKt.imageBuilder(image_id, ImageSize.SCREENSHOT_HUGE, ImageType.PNG)
+
+/*
+* Result: 
+* imageURL = https://images.igdb.com/igdb/image/upload/t_screenshot_huge/mnljdjtrh44x4snmierh.png
+*/
 ```
 
 ## Exceptions
