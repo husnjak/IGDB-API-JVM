@@ -182,7 +182,7 @@ String imageURL = ImageBuilderKt.imageBuilder(image_id, ImageSize.SCREENSHOT_HUG
 * imageURL = https://images.igdb.com/igdb/image/upload/t_screenshot_huge/mnljdjtrh44x4snmierh.png
 */
 ```
-
+More information about images can be found [here](https://api-docs.igdb.com/#images)
 ## Exceptions
 The wrapper throws an `RequestException` on every exception from the API. This exception hold three things:
 * HTTP status code
