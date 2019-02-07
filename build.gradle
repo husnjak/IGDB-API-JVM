@@ -14,8 +14,8 @@ repositories {
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     // HTTP
-    implementation 'com.github.kittinunf.fuel:fuel:1.15.1'
-    implementation 'com.github.kittinunf.fuel:fuel-gson:1.15.1'
+    implementation 'com.github.kittinunf.fuel:fuel:2.0.1'
+    implementation 'com.github.kittinunf.fuel:fuel-gson:2.0.1'
     // Protocoll Buffers
     implementation 'com.google.protobuf:protobuf-java:3.6.1'
     implementation 'com.google.protobuf:protobuf-gradle-plugin:0.8.5'
