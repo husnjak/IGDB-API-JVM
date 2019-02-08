@@ -66,19 +66,40 @@ private static final long serialVersionUID = 0L;
     return result == null ? proto.WebsiteCategoryEnum.UNRECOGNIZED : result;
   }
 
-  public static final int TRUSTED_FIELD_NUMBER = 3;
+  public static final int GAME_FIELD_NUMBER = 3;
+  private proto.Game game_;
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  public boolean hasGame() {
+    return game_ != null;
+  }
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  public proto.Game getGame() {
+    return game_ == null ? proto.Game.getDefaultInstance() : game_;
+  }
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  public proto.GameOrBuilder getGameOrBuilder() {
+    return getGame();
+  }
+
+  public static final int TRUSTED_FIELD_NUMBER = 4;
   private boolean trusted_;
   /**
-   * <code>bool trusted = 3;</code>
+   * <code>bool trusted = 4;</code>
    */
   public boolean getTrusted() {
     return trusted_;
   }
 
-  public static final int URL_FIELD_NUMBER = 4;
+  public static final int URL_FIELD_NUMBER = 5;
   private volatile java.lang.Object url_;
   /**
-   * <code>string url = 4;</code>
+   * <code>string url = 5;</code>
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -93,7 +114,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string url = 4;</code>
+   * <code>string url = 5;</code>
    */
   public com.google.protobuf.ByteString
       getUrlBytes() {
@@ -241,6 +262,12 @@ private static final long serialVersionUID = 0L;
 
       category_ = 0;
 
+      if (gameBuilder_ == null) {
+        game_ = null;
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
       trusted_ = false;
 
       url_ = "";
@@ -273,6 +300,11 @@ private static final long serialVersionUID = 0L;
       proto.Website result = new proto.Website(this);
       result.id_ = id_;
       result.category_ = category_;
+      if (gameBuilder_ == null) {
+        result.game_ = game_;
+      } else {
+        result.game_ = gameBuilder_.build();
+      }
       result.trusted_ = trusted_;
       result.url_ = url_;
       onBuilt();
@@ -383,15 +415,132 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private proto.Game game_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public boolean hasGame() {
+      return gameBuilder_ != null || game_ != null;
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public proto.Game getGame() {
+      if (gameBuilder_ == null) {
+        return game_ == null ? proto.Game.getDefaultInstance() : game_;
+      } else {
+        return gameBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public Builder setGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        game_ = value;
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public Builder setGame(
+        proto.Game.Builder builderForValue) {
+      if (gameBuilder_ == null) {
+        game_ = builderForValue.build();
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public Builder mergeGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (game_ != null) {
+          game_ =
+            proto.Game.newBuilder(game_).mergeFrom(value).buildPartial();
+        } else {
+          game_ = value;
+        }
+        onChanged();
+      } else {
+        gameBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public Builder clearGame() {
+      if (gameBuilder_ == null) {
+        game_ = null;
+        onChanged();
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public proto.Game.Builder getGameBuilder() {
+      
+      onChanged();
+      return getGameFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    public proto.GameOrBuilder getGameOrBuilder() {
+      if (gameBuilder_ != null) {
+        return gameBuilder_.getMessageOrBuilder();
+      } else {
+        return game_ == null ?
+            proto.Game.getDefaultInstance() : game_;
+      }
+    }
+    /**
+     * <code>.proto.Game game = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getGameFieldBuilder() {
+      if (gameBuilder_ == null) {
+        gameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                getGame(),
+                getParentForChildren(),
+                isClean());
+        game_ = null;
+      }
+      return gameBuilder_;
+    }
+
     private boolean trusted_ ;
     /**
-     * <code>bool trusted = 3;</code>
+     * <code>bool trusted = 4;</code>
      */
     public boolean getTrusted() {
       return trusted_;
     }
     /**
-     * <code>bool trusted = 3;</code>
+     * <code>bool trusted = 4;</code>
      */
     public Builder setTrusted(boolean value) {
       
@@ -400,7 +549,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool trusted = 3;</code>
+     * <code>bool trusted = 4;</code>
      */
     public Builder clearTrusted() {
       
@@ -411,7 +560,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object url_ = "";
     /**
-     * <code>string url = 4;</code>
+     * <code>string url = 5;</code>
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -426,7 +575,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 4;</code>
+     * <code>string url = 5;</code>
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -442,7 +591,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 4;</code>
+     * <code>string url = 5;</code>
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -455,7 +604,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 4;</code>
+     * <code>string url = 5;</code>
      */
     public Builder clearUrl() {
       
@@ -464,7 +613,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 4;</code>
+     * <code>string url = 5;</code>
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {

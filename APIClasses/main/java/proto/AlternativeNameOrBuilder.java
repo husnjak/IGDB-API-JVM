@@ -23,11 +23,24 @@ public interface AlternativeNameOrBuilder extends
       getCommentBytes();
 
   /**
-   * <code>string name = 3;</code>
+   * <code>.proto.Game game = 3;</code>
+   */
+  boolean hasGame();
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  proto.Game getGame();
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  proto.GameOrBuilder getGameOrBuilder();
+
+  /**
+   * <code>string name = 4;</code>
    */
   java.lang.String getName();
   /**
-   * <code>string name = 3;</code>
+   * <code>string name = 4;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();

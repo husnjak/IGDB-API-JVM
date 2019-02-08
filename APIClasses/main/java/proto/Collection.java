@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private Collection() {
     id_ = 0L;
+    games_ = java.util.Collections.emptyList();
     name_ = "";
     slug_ = "";
     url_ = "";
@@ -40,6 +41,7 @@ private static final long serialVersionUID = 0L;
             proto.Collection.class, proto.Collection.Builder.class);
   }
 
+  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
@@ -70,10 +72,45 @@ private static final long serialVersionUID = 0L;
     return getCreatedAt();
   }
 
-  public static final int NAME_FIELD_NUMBER = 3;
+  public static final int GAMES_FIELD_NUMBER = 3;
+  private java.util.List<proto.Game> games_;
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  public java.util.List<proto.Game> getGamesList() {
+    return games_;
+  }
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getGamesOrBuilderList() {
+    return games_;
+  }
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  public int getGamesCount() {
+    return games_.size();
+  }
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  public proto.Game getGames(int index) {
+    return games_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  public proto.GameOrBuilder getGamesOrBuilder(
+      int index) {
+    return games_.get(index);
+  }
+
+  public static final int NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object name_;
   /**
-   * <code>string name = 3;</code>
+   * <code>string name = 4;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -88,7 +125,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string name = 3;</code>
+   * <code>string name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -104,10 +141,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int SLUG_FIELD_NUMBER = 4;
+  public static final int SLUG_FIELD_NUMBER = 5;
   private volatile java.lang.Object slug_;
   /**
-   * <code>string slug = 4;</code>
+   * <code>string slug = 5;</code>
    */
   public java.lang.String getSlug() {
     java.lang.Object ref = slug_;
@@ -122,7 +159,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string slug = 4;</code>
+   * <code>string slug = 5;</code>
    */
   public com.google.protobuf.ByteString
       getSlugBytes() {
@@ -138,31 +175,31 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int UPDATEDAT_FIELD_NUMBER = 5;
+  public static final int UPDATEDAT_FIELD_NUMBER = 6;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
 
-  public static final int URL_FIELD_NUMBER = 6;
+  public static final int URL_FIELD_NUMBER = 7;
   private volatile java.lang.Object url_;
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -177,7 +214,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   public com.google.protobuf.ByteString
       getUrlBytes() {
@@ -316,6 +353,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
+        getGamesFieldBuilder();
       }
     }
     @java.lang.Override
@@ -328,6 +366,12 @@ private static final long serialVersionUID = 0L;
       } else {
         createdAt_ = null;
         createdAtBuilder_ = null;
+      }
+      if (gamesBuilder_ == null) {
+        games_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+      } else {
+        gamesBuilder_.clear();
       }
       name_ = "";
 
@@ -367,11 +411,22 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.Collection buildPartial() {
       proto.Collection result = new proto.Collection(this);
+      int from_bitField0_ = bitField0_;
+      int to_bitField0_ = 0;
       result.id_ = id_;
       if (createdAtBuilder_ == null) {
         result.createdAt_ = createdAt_;
       } else {
         result.createdAt_ = createdAtBuilder_.build();
+      }
+      if (gamesBuilder_ == null) {
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          games_ = java.util.Collections.unmodifiableList(games_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.games_ = games_;
+      } else {
+        result.games_ = gamesBuilder_.build();
       }
       result.name_ = name_;
       result.slug_ = slug_;
@@ -381,6 +436,7 @@ private static final long serialVersionUID = 0L;
         result.updatedAt_ = updatedAtBuilder_.build();
       }
       result.url_ = url_;
+      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -417,6 +473,7 @@ private static final long serialVersionUID = 0L;
         java.lang.Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
+    private int bitField0_;
 
     private long id_ ;
     /**
@@ -561,9 +618,249 @@ private static final long serialVersionUID = 0L;
       return createdAtBuilder_;
     }
 
+    private java.util.List<proto.Game> games_ =
+      java.util.Collections.emptyList();
+    private void ensureGamesIsMutable() {
+      if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+        games_ = new java.util.ArrayList<proto.Game>(games_);
+        bitField0_ |= 0x00000004;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gamesBuilder_;
+
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public java.util.List<proto.Game> getGamesList() {
+      if (gamesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(games_);
+      } else {
+        return gamesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public int getGamesCount() {
+      if (gamesBuilder_ == null) {
+        return games_.size();
+      } else {
+        return gamesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public proto.Game getGames(int index) {
+      if (gamesBuilder_ == null) {
+        return games_.get(index);
+      } else {
+        return gamesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder setGames(
+        int index, proto.Game value) {
+      if (gamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGamesIsMutable();
+        games_.set(index, value);
+        onChanged();
+      } else {
+        gamesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder setGames(
+        int index, proto.Game.Builder builderForValue) {
+      if (gamesBuilder_ == null) {
+        ensureGamesIsMutable();
+        games_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        gamesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder addGames(proto.Game value) {
+      if (gamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGamesIsMutable();
+        games_.add(value);
+        onChanged();
+      } else {
+        gamesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder addGames(
+        int index, proto.Game value) {
+      if (gamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGamesIsMutable();
+        games_.add(index, value);
+        onChanged();
+      } else {
+        gamesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder addGames(
+        proto.Game.Builder builderForValue) {
+      if (gamesBuilder_ == null) {
+        ensureGamesIsMutable();
+        games_.add(builderForValue.build());
+        onChanged();
+      } else {
+        gamesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder addGames(
+        int index, proto.Game.Builder builderForValue) {
+      if (gamesBuilder_ == null) {
+        ensureGamesIsMutable();
+        games_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        gamesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder addAllGames(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (gamesBuilder_ == null) {
+        ensureGamesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, games_);
+        onChanged();
+      } else {
+        gamesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder clearGames() {
+      if (gamesBuilder_ == null) {
+        games_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+      } else {
+        gamesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public Builder removeGames(int index) {
+      if (gamesBuilder_ == null) {
+        ensureGamesIsMutable();
+        games_.remove(index);
+        onChanged();
+      } else {
+        gamesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public proto.Game.Builder getGamesBuilder(
+        int index) {
+      return getGamesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public proto.GameOrBuilder getGamesOrBuilder(
+        int index) {
+      if (gamesBuilder_ == null) {
+        return games_.get(index);  } else {
+        return gamesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getGamesOrBuilderList() {
+      if (gamesBuilder_ != null) {
+        return gamesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(games_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public proto.Game.Builder addGamesBuilder() {
+      return getGamesFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public proto.Game.Builder addGamesBuilder(
+        int index) {
+      return getGamesFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game games = 3;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getGamesBuilderList() {
+      return getGamesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getGamesFieldBuilder() {
+      if (gamesBuilder_ == null) {
+        gamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                games_,
+                ((bitField0_ & 0x00000004) == 0x00000004),
+                getParentForChildren(),
+                isClean());
+        games_ = null;
+      }
+      return gamesBuilder_;
+    }
+
     private java.lang.Object name_ = "";
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -578,7 +875,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -594,7 +891,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -607,7 +904,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public Builder clearName() {
       
@@ -616,7 +913,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string name = 3;</code>
+     * <code>string name = 4;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -632,7 +929,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object slug_ = "";
     /**
-     * <code>string slug = 4;</code>
+     * <code>string slug = 5;</code>
      */
     public java.lang.String getSlug() {
       java.lang.Object ref = slug_;
@@ -647,7 +944,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string slug = 4;</code>
+     * <code>string slug = 5;</code>
      */
     public com.google.protobuf.ByteString
         getSlugBytes() {
@@ -663,7 +960,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string slug = 4;</code>
+     * <code>string slug = 5;</code>
      */
     public Builder setSlug(
         java.lang.String value) {
@@ -676,7 +973,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string slug = 4;</code>
+     * <code>string slug = 5;</code>
      */
     public Builder clearSlug() {
       
@@ -685,7 +982,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string slug = 4;</code>
+     * <code>string slug = 5;</code>
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
@@ -703,13 +1000,13 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -719,7 +1016,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public Builder setUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
@@ -735,7 +1032,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public Builder setUpdatedAt(
         com.google.protobuf.Timestamp.Builder builderForValue) {
@@ -749,7 +1046,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public Builder mergeUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
@@ -767,7 +1064,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public Builder clearUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -781,7 +1078,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public com.google.protobuf.Timestamp.Builder getUpdatedAtBuilder() {
       
@@ -789,7 +1086,7 @@ private static final long serialVersionUID = 0L;
       return getUpdatedAtFieldBuilder().getBuilder();
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
       if (updatedAtBuilder_ != null) {
@@ -800,7 +1097,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+     * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
@@ -818,7 +1115,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object url_ = "";
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -833,7 +1130,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -849,7 +1146,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -862,7 +1159,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder clearUrl() {
       
@@ -871,7 +1168,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {

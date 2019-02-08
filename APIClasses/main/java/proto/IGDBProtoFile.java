@@ -756,605 +756,611 @@ public final class IGDBProtoFile {
       "(\0162\032.proto.AgeRatingRatingEnum\022\023\n\013descri" +
       "ption\030\003 \001(\t\"I\n\025AlternativeNameResult\0220\n\020" +
       "alternativenames\030\001 \003(\0132\026.proto.Alternati" +
-      "veName\"<\n\017AlternativeName\022\n\n\002id\030\001 \001(\004\022\017\n" +
-      "\007comment\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\"4\n\016ApiToken" +
-      "Result\022\"\n\tapitokens\030\001 \003(\0132\017.proto.ApiTok" +
-      "en\"u\n\010ApiToken\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030" +
-      "\002 \001(\0132\032.google.protobuf.Timestamp\022\021\n\texp" +
-      "iresIn\030\003 \001(\005\022\r\n\005token\030\004 \001(\t\022\014\n\004user\030\005 \001(" +
-      "\005\"1\n\rArtworkResult\022 \n\010artworks\030\001 \003(\0132\016.p" +
-      "roto.Artwork\"z\n\007Artwork\022\n\n\002id\030\001 \001(\004\022\024\n\014a" +
-      "lphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006h" +
-      "eight\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030\006 \001(" +
-      "\t\022\r\n\005width\030\007 \001(\005\"7\n\017CharacterResult\022$\n\nc" +
-      "haracters\030\001 \003(\0132\020.proto.Character\"\222\003\n\tCh" +
-      "aracter\022\n\n\002id\030\001 \001(\004\022\014\n\004akas\030\002 \003(\t\022\023\n\013cou" +
-      "ntryName\030\003 \001(\t\022-\n\tcreatedAt\030\004 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\023\n\013description\030\005 \001" +
-      "(\t\022\032\n\005games\030\006 \003(\0132\013.proto.Game\022\'\n\006gender" +
-      "\030\007 \001(\0162\027.proto.GenderGenderEnum\022(\n\007mugSh" +
-      "ot\030\010 \001(\0132\027.proto.CharacterMugShot\022\014\n\004nam" +
-      "e\030\t \001(\t\022\035\n\006people\030\n \003(\0132\r.proto.Person\022\014" +
-      "\n\004slug\030\013 \001(\t\022,\n\007species\030\014 \001(\0162\033.proto.Ch" +
-      "aracterSpeciesEnum\022-\n\tupdatedAt\030\r \001(\0132\032." +
-      "google.protobuf.Timestamp\022\013\n\003url\030\016 \001(\t\"L" +
-      "\n\026CharacterMugShotResult\0222\n\021charactermug" +
-      "shots\030\001 \003(\0132\027.proto.CharacterMugShot\"\203\001\n" +
-      "\020CharacterMugShot\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaCh" +
-      "annel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030" +
-      "\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005w" +
-      "idth\030\007 \001(\005\":\n\020CollectionResult\022&\n\013collec" +
-      "tions\030\001 \003(\0132\021.proto.Collection\"\237\001\n\nColle" +
-      "ction\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.g" +
+      "veName\"W\n\017AlternativeName\022\n\n\002id\030\001 \001(\004\022\017\n" +
+      "\007comment\030\002 \001(\t\022\031\n\004game\030\003 \001(\0132\013.proto.Gam" +
+      "e\022\014\n\004name\030\004 \001(\t\"4\n\016ApiTokenResult\022\"\n\tapi" +
+      "tokens\030\001 \003(\0132\017.proto.ApiToken\"u\n\010ApiToke" +
+      "n\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.googl" +
+      "e.protobuf.Timestamp\022\021\n\texpiresIn\030\003 \001(\005\022" +
+      "\r\n\005token\030\004 \001(\t\022\014\n\004user\030\005 \001(\005\"1\n\rArtworkR" +
+      "esult\022 \n\010artworks\030\001 \003(\0132\016.proto.Artwork\"" +
+      "\225\001\n\007Artwork\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030" +
+      "\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013." +
+      "proto.Game\022\016\n\006height\030\005 \001(\005\022\017\n\007imageId\030\006 " +
+      "\001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\"7\n\017Chara" +
+      "cterResult\022$\n\ncharacters\030\001 \003(\0132\020.proto.C" +
+      "haracter\"\222\003\n\tCharacter\022\n\n\002id\030\001 \001(\004\022\014\n\004ak" +
+      "as\030\002 \003(\t\022\023\n\013countryName\030\003 \001(\t\022-\n\tcreated" +
+      "At\030\004 \001(\0132\032.google.protobuf.Timestamp\022\023\n\013" +
+      "description\030\005 \001(\t\022\032\n\005games\030\006 \003(\0132\013.proto" +
+      ".Game\022\'\n\006gender\030\007 \001(\0162\027.proto.GenderGend" +
+      "erEnum\022(\n\007mugShot\030\010 \001(\0132\027.proto.Characte" +
+      "rMugShot\022\014\n\004name\030\t \001(\t\022\035\n\006people\030\n \003(\0132\r" +
+      ".proto.Person\022\014\n\004slug\030\013 \001(\t\022,\n\007species\030\014" +
+      " \001(\0162\033.proto.CharacterSpeciesEnum\022-\n\tupd" +
+      "atedAt\030\r \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\013\n\003url\030\016 \001(\t\"L\n\026CharacterMugShotResult\022" +
+      "2\n\021charactermugshots\030\001 \003(\0132\027.proto.Chara" +
+      "cterMugShot\"\203\001\n\020CharacterMugShot\022\n\n\002id\030\001" +
+      " \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003" +
+      " \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n" +
+      "\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\":\n\020CollectionR" +
+      "esult\022&\n\013collections\030\001 \003(\0132\021.proto.Colle" +
+      "ction\"\273\001\n\nCollection\022\n\n\002id\030\001 \001(\004\022-\n\tcrea" +
+      "tedAt\030\002 \001(\0132\032.google.protobuf.Timestamp\022" +
+      "\032\n\005games\030\003 \003(\0132\013.proto.Game\022\014\n\004name\030\004 \001(" +
+      "\t\022\014\n\004slug\030\005 \001(\t\022-\n\tupdatedAt\030\006 \001(\0132\032.goo" +
+      "gle.protobuf.Timestamp\022\013\n\003url\030\007 \001(\t\"2\n\rC" +
+      "ompanyResult\022!\n\tcompanies\030\001 \003(\0132\016.proto." +
+      "Company\"\375\004\n\007Company\022\n\n\002id\030\001 \001(\004\022.\n\nchang" +
+      "eDate\030\002 \001(\0132\032.google.protobuf.Timestamp\022" +
+      "B\n\022changeDateCategory\030\003 \001(\0162&.proto.Date" +
+      "FormatStartDateCategoryEnum\022(\n\020changedCo" +
+      "mpanyId\030\004 \001(\0132\016.proto.Company\022\017\n\007country" +
+      "\030\005 \001(\005\022-\n\tcreatedAt\030\006 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022\023\n\013description\030\007 \001(\t\022\036\n\tde" +
+      "veloped\030\010 \003(\0132\013.proto.Game\022 \n\004logo\030\t \001(\013" +
+      "2\022.proto.CompanyLogo\022\014\n\004name\030\n \001(\t\022\036\n\006pa" +
+      "rent\030\013 \001(\0132\016.proto.Company\022\036\n\tpublished\030" +
+      "\014 \003(\0132\013.proto.Game\022\014\n\004slug\030\r \001(\t\022-\n\tstar" +
+      "tDate\030\016 \001(\0132\032.google.protobuf.Timestamp\022" +
+      "A\n\021startDateCategory\030\017 \001(\0162&.proto.DateF" +
+      "ormatStartDateCategoryEnum\022-\n\tupdatedAt\030" +
+      "\020 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url" +
+      "\030\021 \001(\t\022\'\n\010websites\030\022 \003(\0132\025.proto.Company" +
+      "Website\"=\n\021CompanyLogoResult\022(\n\014companyl" +
+      "ogos\030\001 \003(\0132\022.proto.CompanyLogo\"~\n\013Compan" +
+      "yLogo\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022" +
+      "\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007ima" +
+      "geId\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"F" +
+      "\n\024CompanyWebsiteResult\022.\n\017companywebsite" +
+      "s\030\001 \003(\0132\025.proto.CompanyWebsite\"h\n\016Compan" +
+      "yWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032" +
+      ".proto.WebsiteCategoryEnum\022\017\n\007trusted\030\003 " +
+      "\001(\010\022\013\n\003url\030\004 \001(\t\"+\n\013CoverResult\022\034\n\006cover" +
+      "s\030\001 \003(\0132\014.proto.Cover\"\223\001\n\005Cover\022\n\n\002id\030\001 " +
+      "\001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 " +
+      "\001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006height" +
+      "\030\005 \001(\005\022\017\n\007imageId\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005" +
+      "width\030\010 \001(\005\".\n\014CreditResult\022\036\n\007credits\030\001" +
+      " \003(\0132\r.proto.Credit\"\232\003\n\006Credit\022\n\n\002id\030\001 \001" +
+      "(\004\022+\n\010category\030\002 \001(\0162\031.proto.CreditCateg" +
+      "oryEnum\022#\n\tcharacter\030\003 \001(\0132\020.proto.Chara" +
+      "cter\022\035\n\025characterCreditedName\030\004 \001(\t\022\037\n\007c" +
+      "ompany\030\005 \001(\0132\016.proto.Company\022\017\n\007country\030" +
+      "\006 \001(\005\022-\n\tcreatedAt\030\007 \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\024\n\014creditedName\030\010 \001(\t\022\031\n\004ga" +
+      "me\030\t \001(\0132\013.proto.Game\022\035\n\006person\030\n \001(\0132\r." +
+      "proto.Person\022!\n\013personTitle\030\013 \001(\0132\014.prot" +
+      "o.Title\022\020\n\010position\030\014 \001(\005\022-\n\tupdatedAt\030\r" +
+      " \001(\0132\032.google.protobuf.Timestamp\"@\n\022Exte" +
+      "rnalGameResult\022*\n\rexternalgames\030\001 \003(\0132\023." +
+      "proto.ExternalGame\"\374\001\n\014ExternalGame\022\n\n\002i" +
+      "d\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037.proto.Extern" +
+      "alGameCategoryEnum\022-\n\tcreatedAt\030\003 \001(\0132\032." +
+      "google.protobuf.Timestamp\022\031\n\004game\030\004 \001(\0132" +
+      "\013.proto.Game\022\014\n\004name\030\005 \001(\t\022\013\n\003uid\030\006 \001(\t\022" +
+      "-\n\tupdatedAt\030\007 \001(\0132\032.google.protobuf.Tim" +
+      "estamp\022\013\n\003url\030\010 \001(\t\022\014\n\004year\030\t \001(\005\"(\n\nFee" +
+      "dResult\022\032\n\005feeds\030\001 \003(\0132\013.proto.Feed\"\246\003\n\004" +
+      "Feed\022\n\n\002id\030\001 \001(\004\022)\n\010category\030\002 \001(\0162\027.pro" +
+      "to.FeedCategoryEnum\022\017\n\007content\030\003 \001(\t\022-\n\t" +
+      "createdAt\030\004 \001(\0132\032.google.protobuf.Timest" +
+      "amp\022\026\n\016feedLikesCount\030\005 \001(\005\022#\n\tfeedVideo" +
+      "\030\006 \001(\0132\020.proto.GameVideo\022\032\n\005games\030\007 \003(\0132" +
+      "\013.proto.Game\022\014\n\004meta\030\010 \001(\t\022/\n\013publishedA" +
+      "t\030\t \001(\0132\032.google.protobuf.Timestamp\022\033\n\005p" +
+      "ulse\030\n \001(\0132\014.proto.Pulse\022\014\n\004slug\030\013 \001(\t\022\r" +
+      "\n\005title\030\014 \001(\t\022\013\n\003uid\030\r \001(\t\022-\n\tupdatedAt\030" +
+      "\016 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url" +
+      "\030\017 \001(\t\022\014\n\004user\030\020 \001(\005\":\n\020FeedFollowResult" +
+      "\022&\n\013feedfollows\030\001 \003(\0132\021.proto.FeedFollow" +
+      "\"\351\001\n\nFeedFollow\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt" +
+      "\030\002 \001(\0132\032.google.protobuf.Timestamp\022%\n\004fe" +
+      "ed\030\003 \001(\0162\027.proto.FeedCategoryEnum\022/\n\013pub" +
+      "lishedAt\030\004 \001(\0132\032.google.protobuf.Timesta" +
+      "mp\022-\n\tupdatedAt\030\005 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\031\n\004user\030\006 \001(\0132\013.proto.User\".\n\014" +
+      "FollowResult\022\036\n\007follows\030\001 \003(\0132\r.proto.Fo" +
+      "llow\"J\n\006Follow\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\013" +
+      "2\013.proto.Game\022\031\n\004user\030\003 \001(\0132\013.proto.User" +
+      "\"7\n\017FranchiseResult\022$\n\nfranchises\030\001 \003(\0132" +
+      "\020.proto.Franchise\"\272\001\n\tFranchise\022\n\n\002id\030\001 " +
+      "\001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google.protobuf" +
+      ".Timestamp\022\032\n\005games\030\003 \003(\0132\013.proto.Game\022\014" +
+      "\n\004name\030\004 \001(\t\022\014\n\004slug\030\005 \001(\t\022-\n\tupdatedAt\030" +
+      "\006 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url" +
+      "\030\007 \001(\t\"(\n\nGameResult\022\032\n\005games\030\001 \003(\0132\013.pr" +
+      "oto.Game\"\206\r\n\004Game\022\n\n\002id\030\001 \001(\004\022$\n\nageRati" +
+      "ngs\030\002 \003(\0132\020.proto.AgeRating\022\030\n\020aggregate" +
+      "dRating\030\003 \001(\001\022\035\n\025aggregatedRatingCount\030\004" +
+      " \001(\005\0220\n\020alternativeNames\030\005 \003(\0132\026.proto.A" +
+      "lternativeName\022 \n\010artworks\030\006 \003(\0132\016.proto" +
+      ".Artwork\022\034\n\007bundles\030\007 \003(\0132\013.proto.Game\022)" +
+      "\n\010category\030\010 \001(\0162\027.proto.GameCategoryEnu" +
+      "m\022%\n\ncollection\030\t \001(\0132\021.proto.Collection" +
+      "\022\033\n\005cover\030\n \001(\0132\014.proto.Cover\022-\n\tcreated" +
+      "At\030\013 \001(\0132\032.google.protobuf.Timestamp\022\031\n\004" +
+      "dlcs\030\014 \003(\0132\013.proto.Game\022\037\n\nexpansions\030\r " +
+      "\003(\0132\013.proto.Game\022*\n\rexternalGames\030\016 \003(\0132" +
+      "\023.proto.ExternalGame\0224\n\020firstReleaseDate" +
+      "\030\017 \001(\0132\032.google.protobuf.Timestamp\022\017\n\007fo" +
+      "llows\030\020 \001(\005\022#\n\tfranchise\030\021 \001(\0132\020.proto.F" +
+      "ranchise\022$\n\nfranchises\030\022 \003(\0132\020.proto.Fra" +
+      "nchise\022&\n\013gameEngines\030\023 \003(\0132\021.proto.Game" +
+      "Engine\022\"\n\tgameModes\030\024 \003(\0132\017.proto.GameMo" +
+      "de\022\034\n\006genres\030\025 \003(\0132\014.proto.Genre\022\r\n\005hype" +
+      "s\030\026 \001(\005\0221\n\021involvedCompanies\030\027 \003(\0132\026.pro" +
+      "to.InvolvedCompany\022 \n\010keywords\030\030 \003(\0132\016.p" +
+      "roto.Keyword\0220\n\020multiplayerModes\030\031 \003(\0132\026" +
+      ".proto.MultiplayerMode\022\014\n\004name\030\032 \001(\t\022\037\n\n" +
+      "parentGame\030\033 \001(\0132\013.proto.Game\022\"\n\tplatfor" +
+      "ms\030\034 \003(\0132\017.proto.Platform\0224\n\022playerPersp" +
+      "ectives\030\035 \003(\0132\030.proto.PlayerPerspective\022" +
+      "\022\n\npopularity\030\036 \001(\001\022\022\n\npulseCount\030\037 \001(\005\022" +
+      "\016\n\006rating\030  \001(\001\022\023\n\013ratingCount\030! \001(\005\022(\n\014" +
+      "releaseDates\030\" \003(\0132\022.proto.ReleaseDate\022&" +
+      "\n\013screenshots\030# \003(\0132\021.proto.Screenshot\022!" +
+      "\n\014similarGames\030$ \003(\0132\013.proto.Game\022\014\n\004slu" +
+      "g\030% \001(\t\022)\n\024standaloneExpansions\030& \003(\0132\013." +
+      "proto.Game\022%\n\006status\030\' \001(\0162\025.proto.GameS" +
+      "tatusEnum\022\021\n\tstoryline\030( \001(\t\022\017\n\007summary\030" +
+      ") \001(\t\022\014\n\004tags\030* \003(\005\022\034\n\006themes\030+ \003(\0132\014.pr" +
+      "oto.Theme\022%\n\ntimeToBeat\030, \001(\0132\021.proto.Ti" +
+      "meToBeat\022\023\n\013totalRating\030- \001(\001\022\030\n\020totalRa" +
+      "tingCount\030. \001(\005\022-\n\tupdatedAt\030/ \001(\0132\032.goo" +
+      "gle.protobuf.Timestamp\022\013\n\003url\0300 \001(\t\022\"\n\rv" +
+      "ersionParent\0301 \001(\0132\013.proto.Game\022\024\n\014versi" +
+      "onTitle\0302 \001(\t\022 \n\006videos\0303 \003(\0132\020.proto.Ga" +
+      "meVideo\022 \n\010websites\0304 \003(\0132\016.proto.Websit" +
+      "e\":\n\020GameEngineResult\022&\n\013gameengines\030\001 \003" +
+      "(\0132\021.proto.GameEngine\"\240\002\n\nGameEngine\022\n\n\002" +
+      "id\030\001 \001(\004\022!\n\tcompanies\030\002 \003(\0132\016.proto.Comp" +
+      "any\022-\n\tcreatedAt\030\003 \001(\0132\032.google.protobuf" +
+      ".Timestamp\022\023\n\013description\030\004 \001(\t\022#\n\004logo\030" +
+      "\005 \001(\0132\025.proto.GameEngineLogo\022\014\n\004name\030\006 \001" +
+      "(\t\022\"\n\tplatforms\030\007 \003(\0132\017.proto.Platform\022\014" +
+      "\n\004slug\030\010 \001(\t\022-\n\tupdatedAt\030\t \001(\0132\032.google" +
+      ".protobuf.Timestamp\022\013\n\003url\030\n \001(\t\"F\n\024Game" +
+      "EngineLogoResult\022.\n\017gameenginelogos\030\001 \003(" +
+      "\0132\025.proto.GameEngineLogo\"\201\001\n\016GameEngineL" +
+      "ogo\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n" +
+      "\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007image" +
+      "Id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"4\n\016" +
+      "GameModeResult\022\"\n\tgamemodes\030\001 \003(\0132\017.prot" +
+      "o.GameMode\"\235\001\n\010GameMode\022\n\n\002id\030\001 \001(\004\022-\n\tc" +
+      "reatedAt\030\002 \001(\0132\032.google.protobuf.Timesta" +
+      "mp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022-\n\tupdate" +
+      "dAt\030\005 \001(\0132\032.google.protobuf.Timestamp\022\013\n" +
+      "\003url\030\006 \001(\t\"=\n\021GameVersionResult\022(\n\014gamev" +
+      "ersions\030\001 \003(\0132\022.proto.GameVersion\"\350\001\n\013Ga" +
+      "meVersion\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\013" +
+      "2\032.google.protobuf.Timestamp\022+\n\010features" +
+      "\030\003 \003(\0132\031.proto.GameVersionFeature\022\031\n\004gam" +
+      "e\030\004 \001(\0132\013.proto.Game\022\032\n\005games\030\005 \003(\0132\013.pr" +
+      "oto.Game\022-\n\tupdatedAt\030\006 \001(\0132\032.google.pro" +
+      "tobuf.Timestamp\022\013\n\003url\030\007 \001(\t\"R\n\030GameVers" +
+      "ionFeatureResult\0226\n\023gameversionfeatures\030" +
+      "\001 \003(\0132\031.proto.GameVersionFeature\"\277\001\n\022Gam" +
+      "eVersionFeature\022\n\n\002id\030\001 \001(\004\0227\n\010category\030" +
+      "\002 \001(\0162%.proto.GameVersionFeatureCategory" +
+      "Enum\022\023\n\013description\030\003 \001(\t\022\020\n\010position\030\004 " +
+      "\001(\005\022\r\n\005title\030\005 \001(\t\022.\n\006values\030\006 \003(\0132\036.pro" +
+      "to.GameVersionFeatureValue\"a\n\035GameVersio" +
+      "nFeatureValueResult\022@\n\030gameversionfeatur" +
+      "evalues\030\001 \003(\0132\036.proto.GameVersionFeature" +
+      "Value\"\312\001\n\027GameVersionFeatureValue\022\n\n\002id\030" +
+      "\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.proto.Game\022.\n\013game" +
+      "Feature\030\003 \001(\0132\031.proto.GameVersionFeature" +
+      "\022J\n\017includedFeature\030\004 \001(\01621.proto.GameVe" +
+      "rsionFeatureValueIncludedFeatureEnum\022\014\n\004" +
+      "note\030\005 \001(\t\"7\n\017GameVideoResult\022$\n\ngamevid" +
+      "eos\030\001 \003(\0132\020.proto.GameVideo\"Q\n\tGameVideo" +
+      "\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.proto.Game\022" +
+      "\014\n\004name\030\003 \001(\t\022\017\n\007videoId\030\004 \001(\t\"+\n\013GenreR" +
+      "esult\022\034\n\006genres\030\001 \003(\0132\014.proto.Genre\"\232\001\n\005" +
+      "Genre\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.g" +
       "oogle.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014" +
       "\n\004slug\030\004 \001(\t\022-\n\tupdatedAt\030\005 \001(\0132\032.google" +
-      ".protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\"2\n\rComp" +
-      "anyResult\022!\n\tcompanies\030\001 \003(\0132\016.proto.Com" +
-      "pany\"\375\004\n\007Company\022\n\n\002id\030\001 \001(\004\022.\n\nchangeDa" +
-      "te\030\002 \001(\0132\032.google.protobuf.Timestamp\022B\n\022" +
-      "changeDateCategory\030\003 \001(\0162&.proto.DateFor" +
-      "matStartDateCategoryEnum\022(\n\020changedCompa" +
-      "nyId\030\004 \001(\0132\016.proto.Company\022\017\n\007country\030\005 " +
-      "\001(\005\022-\n\tcreatedAt\030\006 \001(\0132\032.google.protobuf" +
-      ".Timestamp\022\023\n\013description\030\007 \001(\t\022\036\n\tdevel" +
-      "oped\030\010 \003(\0132\013.proto.Game\022 \n\004logo\030\t \001(\0132\022." +
-      "proto.CompanyLogo\022\014\n\004name\030\n \001(\t\022\036\n\006paren" +
-      "t\030\013 \001(\0132\016.proto.Company\022\036\n\tpublished\030\014 \003" +
-      "(\0132\013.proto.Game\022\014\n\004slug\030\r \001(\t\022-\n\tstartDa" +
-      "te\030\016 \001(\0132\032.google.protobuf.Timestamp\022A\n\021" +
-      "startDateCategory\030\017 \001(\0162&.proto.DateForm" +
-      "atStartDateCategoryEnum\022-\n\tupdatedAt\030\020 \001" +
-      "(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\021 " +
-      "\001(\t\022\'\n\010websites\030\022 \003(\0132\025.proto.CompanyWeb" +
-      "site\"=\n\021CompanyLogoResult\022(\n\014companylogo" +
-      "s\030\001 \003(\0132\022.proto.CompanyLogo\"~\n\013CompanyLo" +
-      "go\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010" +
-      "animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageI" +
-      "d\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"F\n\024C" +
-      "ompanyWebsiteResult\022.\n\017companywebsites\030\001" +
-      " \003(\0132\025.proto.CompanyWebsite\"h\n\016CompanyWe" +
-      "bsite\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.pr" +
-      "oto.WebsiteCategoryEnum\022\017\n\007trusted\030\003 \001(\010" +
-      "\022\013\n\003url\030\004 \001(\t\"+\n\013CoverResult\022\034\n\006covers\030\001" +
-      " \003(\0132\014.proto.Cover\"x\n\005Cover\022\n\n\002id\030\001 \001(\004\022" +
-      "\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022" +
-      "\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030" +
-      "\006 \001(\t\022\r\n\005width\030\007 \001(\005\".\n\014CreditResult\022\036\n\007" +
-      "credits\030\001 \003(\0132\r.proto.Credit\"\232\003\n\006Credit\022" +
-      "\n\n\002id\030\001 \001(\004\022+\n\010category\030\002 \001(\0162\031.proto.Cr" +
-      "editCategoryEnum\022#\n\tcharacter\030\003 \001(\0132\020.pr" +
-      "oto.Character\022\035\n\025characterCreditedName\030\004" +
-      " \001(\t\022\037\n\007company\030\005 \001(\0132\016.proto.Company\022\017\n" +
-      "\007country\030\006 \001(\005\022-\n\tcreatedAt\030\007 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\024\n\014creditedName\030\010 " +
-      "\001(\t\022\031\n\004game\030\t \001(\0132\013.proto.Game\022\035\n\006person" +
-      "\030\n \001(\0132\r.proto.Person\022!\n\013personTitle\030\013 \001" +
-      "(\0132\014.proto.Title\022\020\n\010position\030\014 \001(\005\022-\n\tup" +
-      "datedAt\030\r \001(\0132\032.google.protobuf.Timestam" +
-      "p\"@\n\022ExternalGameResult\022*\n\rexternalgames" +
-      "\030\001 \003(\0132\023.proto.ExternalGame\"\374\001\n\014External" +
-      "Game\022\n\n\002id\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037.pro" +
-      "to.ExternalGameCategoryEnum\022-\n\tcreatedAt" +
-      "\030\003 \001(\0132\032.google.protobuf.Timestamp\022\031\n\004ga" +
-      "me\030\004 \001(\0132\013.proto.Game\022\014\n\004name\030\005 \001(\t\022\013\n\003u" +
-      "id\030\006 \001(\t\022-\n\tupdatedAt\030\007 \001(\0132\032.google.pro" +
-      "tobuf.Timestamp\022\013\n\003url\030\010 \001(\t\022\014\n\004year\030\t \001" +
-      "(\005\"(\n\nFeedResult\022\032\n\005feeds\030\001 \003(\0132\013.proto." +
-      "Feed\"\246\003\n\004Feed\022\n\n\002id\030\001 \001(\004\022)\n\010category\030\002 " +
-      "\001(\0162\027.proto.FeedCategoryEnum\022\017\n\007content\030" +
-      "\003 \001(\t\022-\n\tcreatedAt\030\004 \001(\0132\032.google.protob" +
-      "uf.Timestamp\022\026\n\016feedLikesCount\030\005 \001(\005\022#\n\t" +
-      "feedVideo\030\006 \001(\0132\020.proto.GameVideo\022\032\n\005gam" +
-      "es\030\007 \003(\0132\013.proto.Game\022\014\n\004meta\030\010 \001(\t\022/\n\013p" +
-      "ublishedAt\030\t \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\033\n\005pulse\030\n \001(\0132\014.proto.Pulse\022\014\n\004slu" +
-      "g\030\013 \001(\t\022\r\n\005title\030\014 \001(\t\022\013\n\003uid\030\r \001(\t\022-\n\tu" +
-      "pdatedAt\030\016 \001(\0132\032.google.protobuf.Timesta" +
-      "mp\022\013\n\003url\030\017 \001(\t\022\014\n\004user\030\020 \001(\005\":\n\020FeedFol" +
-      "lowResult\022&\n\013feedfollows\030\001 \003(\0132\021.proto.F" +
-      "eedFollow\"\351\001\n\nFeedFollow\022\n\n\002id\030\001 \001(\004\022-\n\t" +
-      "createdAt\030\002 \001(\0132\032.google.protobuf.Timest" +
-      "amp\022%\n\004feed\030\003 \001(\0162\027.proto.FeedCategoryEn" +
-      "um\022/\n\013publishedAt\030\004 \001(\0132\032.google.protobu" +
-      "f.Timestamp\022-\n\tupdatedAt\030\005 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\031\n\004user\030\006 \001(\0132\013.proto" +
-      ".User\".\n\014FollowResult\022\036\n\007follows\030\001 \003(\0132\r" +
-      ".proto.Follow\"J\n\006Follow\022\n\n\002id\030\001 \001(\004\022\031\n\004g" +
-      "ame\030\002 \001(\0132\013.proto.Game\022\031\n\004user\030\003 \001(\0132\013.p" +
-      "roto.User\"7\n\017FranchiseResult\022$\n\nfranchis" +
-      "es\030\001 \003(\0132\020.proto.Franchise\"\236\001\n\tFranchise" +
-      "\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google" +
-      ".protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slu" +
-      "g\030\004 \001(\t\022-\n\tupdatedAt\030\005 \001(\0132\032.google.prot" +
-      "obuf.Timestamp\022\013\n\003url\030\006 \001(\t\"(\n\nGameResul" +
-      "t\022\032\n\005games\030\001 \003(\0132\013.proto.Game\"\206\r\n\004Game\022\n" +
-      "\n\002id\030\001 \001(\004\022$\n\nageRatings\030\002 \003(\0132\020.proto.A" +
-      "geRating\022\030\n\020aggregatedRating\030\003 \001(\001\022\035\n\025ag" +
-      "gregatedRatingCount\030\004 \001(\005\0220\n\020alternative" +
-      "Names\030\005 \003(\0132\026.proto.AlternativeName\022 \n\010a" +
-      "rtworks\030\006 \003(\0132\016.proto.Artwork\022\034\n\007bundles" +
-      "\030\007 \003(\0132\013.proto.Game\022)\n\010category\030\010 \001(\0162\027." +
-      "proto.GameCategoryEnum\022%\n\ncollection\030\t \001" +
-      "(\0132\021.proto.Collection\022\033\n\005cover\030\n \001(\0132\014.p" +
-      "roto.Cover\022-\n\tcreatedAt\030\013 \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022\031\n\004dlcs\030\014 \003(\0132\013.proto." +
-      "Game\022\037\n\nexpansions\030\r \003(\0132\013.proto.Game\022*\n" +
-      "\rexternalGames\030\016 \003(\0132\023.proto.ExternalGam" +
-      "e\0224\n\020firstReleaseDate\030\017 \001(\0132\032.google.pro" +
-      "tobuf.Timestamp\022\017\n\007follows\030\020 \001(\005\022#\n\tfran" +
-      "chise\030\021 \001(\0132\020.proto.Franchise\022$\n\nfranchi" +
-      "ses\030\022 \003(\0132\020.proto.Franchise\022&\n\013gameEngin" +
-      "es\030\023 \003(\0132\021.proto.GameEngine\022\"\n\tgameModes" +
-      "\030\024 \003(\0132\017.proto.GameMode\022\034\n\006genres\030\025 \003(\0132" +
-      "\014.proto.Genre\022\r\n\005hypes\030\026 \001(\005\0221\n\021involved" +
-      "Companies\030\027 \003(\0132\026.proto.InvolvedCompany\022" +
-      " \n\010keywords\030\030 \003(\0132\016.proto.Keyword\0220\n\020mul" +
-      "tiplayerModes\030\031 \003(\0132\026.proto.MultiplayerM" +
-      "ode\022\014\n\004name\030\032 \001(\t\022\037\n\nparentGame\030\033 \001(\0132\013." +
-      "proto.Game\022\"\n\tplatforms\030\034 \003(\0132\017.proto.Pl" +
-      "atform\0224\n\022playerPerspectives\030\035 \003(\0132\030.pro" +
-      "to.PlayerPerspective\022\022\n\npopularity\030\036 \001(\001" +
-      "\022\022\n\npulseCount\030\037 \001(\005\022\016\n\006rating\030  \001(\001\022\023\n\013" +
-      "ratingCount\030! \001(\005\022(\n\014releaseDates\030\" \003(\0132" +
-      "\022.proto.ReleaseDate\022&\n\013screenshots\030# \003(\013" +
-      "2\021.proto.Screenshot\022!\n\014similarGames\030$ \003(" +
-      "\0132\013.proto.Game\022\014\n\004slug\030% \001(\t\022)\n\024standalo" +
-      "neExpansions\030& \003(\0132\013.proto.Game\022%\n\006statu" +
-      "s\030\' \001(\0162\025.proto.GameStatusEnum\022\021\n\tstoryl" +
-      "ine\030( \001(\t\022\017\n\007summary\030) \001(\t\022\014\n\004tags\030* \003(\005" +
-      "\022\034\n\006themes\030+ \003(\0132\014.proto.Theme\022%\n\ntimeTo" +
-      "Beat\030, \001(\0132\021.proto.TimeToBeat\022\023\n\013totalRa" +
-      "ting\030- \001(\001\022\030\n\020totalRatingCount\030. \001(\005\022-\n\t" +
-      "updatedAt\030/ \001(\0132\032.google.protobuf.Timest" +
-      "amp\022\013\n\003url\0300 \001(\t\022\"\n\rversionParent\0301 \001(\0132" +
-      "\013.proto.Game\022\024\n\014versionTitle\0302 \001(\t\022 \n\006vi" +
-      "deos\0303 \003(\0132\020.proto.GameVideo\022 \n\010websites" +
-      "\0304 \003(\0132\016.proto.Website\":\n\020GameEngineResu" +
-      "lt\022&\n\013gameengines\030\001 \003(\0132\021.proto.GameEngi" +
-      "ne\"\240\002\n\nGameEngine\022\n\n\002id\030\001 \001(\004\022!\n\tcompani" +
-      "es\030\002 \003(\0132\016.proto.Company\022-\n\tcreatedAt\030\003 " +
-      "\001(\0132\032.google.protobuf.Timestamp\022\023\n\013descr" +
-      "iption\030\004 \001(\t\022#\n\004logo\030\005 \001(\0132\025.proto.GameE" +
-      "ngineLogo\022\014\n\004name\030\006 \001(\t\022\"\n\tplatforms\030\007 \003" +
-      "(\0132\017.proto.Platform\022\014\n\004slug\030\010 \001(\t\022-\n\tupd" +
-      "atedAt\030\t \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\013\n\003url\030\n \001(\t\"F\n\024GameEngineLogoResult\022.\n" +
-      "\017gameenginelogos\030\001 \003(\0132\025.proto.GameEngin" +
-      "eLogo\"\201\001\n\016GameEngineLogo\022\n\n\002id\030\001 \001(\004\022\024\n\014" +
-      "alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006" +
-      "height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030\006 \001" +
-      "(\t\022\r\n\005width\030\007 \001(\005\"4\n\016GameModeResult\022\"\n\tg" +
-      "amemodes\030\001 \003(\0132\017.proto.GameMode\"\235\001\n\010Game" +
-      "Mode\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n" +
-      "\004slug\030\004 \001(\t\022-\n\tupdatedAt\030\005 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\"=\n\021GameV" +
-      "ersionResult\022(\n\014gameversions\030\001 \003(\0132\022.pro" +
-      "to.GameVersion\"\350\001\n\013GameVersion\022\n\n\002id\030\001 \001" +
+      ".protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\"J\n\025Invo" +
+      "lvedCompanyResult\0221\n\021involvedcompanies\030\001" +
+      " \003(\0132\026.proto.InvolvedCompany\"\202\002\n\017Involve" +
+      "dCompany\022\n\n\002id\030\001 \001(\004\022\037\n\007company\030\002 \001(\0132\016." +
+      "proto.Company\022-\n\tcreatedAt\030\003 \001(\0132\032.googl" +
+      "e.protobuf.Timestamp\022\021\n\tdeveloper\030\004 \001(\010\022" +
+      "\031\n\004game\030\005 \001(\0132\013.proto.Game\022\017\n\007porting\030\006 " +
+      "\001(\010\022\021\n\tpublisher\030\007 \001(\010\022\022\n\nsupporting\030\010 \001" +
+      "(\010\022-\n\tupdatedAt\030\t \001(\0132\032.google.protobuf." +
+      "Timestamp\"1\n\rKeywordResult\022 \n\010keywords\030\001" +
+      " \003(\0132\016.proto.Keyword\"\234\001\n\007Keyword\022\n\n\002id\030\001" +
+      " \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022" +
+      "-\n\tupdatedAt\030\005 \001(\0132\032.google.protobuf.Tim" +
+      "estamp\022\013\n\003url\030\006 \001(\t\"(\n\nListResult\022\032\n\005lis" +
+      "ts\030\001 \003(\0132\013.proto.List\"\311\002\n\004List\022\n\n\002id\030\001 \001" +
       "(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google.protobuf." +
-      "Timestamp\022+\n\010features\030\003 \003(\0132\031.proto.Game" +
-      "VersionFeature\022\031\n\004game\030\004 \001(\0132\013.proto.Gam" +
-      "e\022\032\n\005games\030\005 \003(\0132\013.proto.Game\022-\n\tupdated" +
-      "At\030\006 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003" +
-      "url\030\007 \001(\t\"R\n\030GameVersionFeatureResult\0226\n" +
-      "\023gameversionfeatures\030\001 \003(\0132\031.proto.GameV" +
-      "ersionFeature\"\277\001\n\022GameVersionFeature\022\n\n\002" +
-      "id\030\001 \001(\004\0227\n\010category\030\002 \001(\0162%.proto.GameV" +
-      "ersionFeatureCategoryEnum\022\023\n\013description" +
-      "\030\003 \001(\t\022\020\n\010position\030\004 \001(\005\022\r\n\005title\030\005 \001(\t\022" +
-      ".\n\006values\030\006 \003(\0132\036.proto.GameVersionFeatu" +
-      "reValue\"a\n\035GameVersionFeatureValueResult" +
-      "\022@\n\030gameversionfeaturevalues\030\001 \003(\0132\036.pro" +
-      "to.GameVersionFeatureValue\"\312\001\n\027GameVersi" +
-      "onFeatureValue\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\013" +
-      "2\013.proto.Game\022.\n\013gameFeature\030\003 \001(\0132\031.pro" +
-      "to.GameVersionFeature\022J\n\017includedFeature" +
-      "\030\004 \001(\01621.proto.GameVersionFeatureValueIn" +
-      "cludedFeatureEnum\022\014\n\004note\030\005 \001(\t\"7\n\017GameV" +
-      "ideoResult\022$\n\ngamevideos\030\001 \003(\0132\020.proto.G" +
-      "ameVideo\"6\n\tGameVideo\022\n\n\002id\030\001 \001(\004\022\014\n\004nam" +
-      "e\030\002 \001(\t\022\017\n\007videoId\030\003 \001(\t\"+\n\013GenreResult\022" +
-      "\034\n\006genres\030\001 \003(\0132\014.proto.Genre\"\232\001\n\005Genre\022" +
-      "\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug" +
-      "\030\004 \001(\t\022-\n\tupdatedAt\030\005 \001(\0132\032.google.proto" +
-      "buf.Timestamp\022\013\n\003url\030\006 \001(\t\"J\n\025InvolvedCo" +
-      "mpanyResult\0221\n\021involvedcompanies\030\001 \003(\0132\026" +
-      ".proto.InvolvedCompany\"\202\002\n\017InvolvedCompa" +
-      "ny\022\n\n\002id\030\001 \001(\004\022\037\n\007company\030\002 \001(\0132\016.proto." +
-      "Company\022-\n\tcreatedAt\030\003 \001(\0132\032.google.prot" +
-      "obuf.Timestamp\022\021\n\tdeveloper\030\004 \001(\010\022\031\n\004gam" +
-      "e\030\005 \001(\0132\013.proto.Game\022\017\n\007porting\030\006 \001(\010\022\021\n" +
-      "\tpublisher\030\007 \001(\010\022\022\n\nsupporting\030\010 \001(\010\022-\n\t" +
-      "updatedAt\030\t \001(\0132\032.google.protobuf.Timest" +
-      "amp\"1\n\rKeywordResult\022 \n\010keywords\030\001 \003(\0132\016" +
-      ".proto.Keyword\"\234\001\n\007Keyword\022\n\n\002id\030\001 \001(\004\022-" +
-      "\n\tcreatedAt\030\002 \001(\0132\032.google.protobuf.Time" +
-      "stamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022-\n\tupd" +
-      "atedAt\030\005 \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\013\n\003url\030\006 \001(\t\"(\n\nListResult\022\032\n\005lists\030\001 \003" +
-      "(\0132\013.proto.List\"\311\002\n\004List\022\n\n\002id\030\001 \001(\004\022-\n\t" +
-      "createdAt\030\002 \001(\0132\032.google.protobuf.Timest" +
-      "amp\022\023\n\013description\030\003 \001(\t\022%\n\013listEntries\030" +
-      "\004 \003(\0132\020.proto.ListEntry\022\020\n\010listTags\030\005 \003(" +
-      "\005\022\014\n\004name\030\006 \001(\t\022\021\n\tnumbering\030\007 \001(\010\022\017\n\007pr" +
-      "ivate\030\010 \001(\010\022!\n\014similarLists\030\t \003(\0132\013.prot" +
-      "o.List\022\014\n\004slug\030\n \001(\t\022-\n\tupdatedAt\030\013 \001(\0132" +
-      "\032.google.protobuf.Timestamp\022\013\n\003url\030\014 \001(\t" +
-      "\022\031\n\004user\030\r \001(\0132\013.proto.User\"8\n\017ListEntry" +
-      "Result\022%\n\013listentries\030\001 \003(\0132\020.proto.List" +
-      "Entry\"\303\001\n\tListEntry\022\n\n\002id\030\001 \001(\004\022\023\n\013descr" +
-      "iption\030\002 \001(\t\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022" +
-      "\031\n\004list\030\004 \001(\0132\013.proto.List\022!\n\010platform\030\005" +
-      " \001(\0132\017.proto.Platform\022\020\n\010position\030\006 \001(\005\022" +
-      "\017\n\007private\030\007 \001(\010\022\031\n\004user\030\010 \001(\0132\013.proto.U" +
-      "ser\"I\n\025MultiplayerModeResult\0220\n\020multipla" +
-      "yermodes\030\001 \003(\0132\026.proto.MultiplayerMode\"\246" +
-      "\002\n\017MultiplayerMode\022\n\n\002id\030\001 \001(\004\022\024\n\014campai" +
-      "gncoop\030\002 \001(\010\022\016\n\006dropin\030\003 \001(\010\022\017\n\007lancoop\030" +
-      "\004 \001(\010\022\023\n\013offlinecoop\030\005 \001(\010\022\026\n\016offlinecoo" +
-      "pmax\030\006 \001(\005\022\022\n\nofflinemax\030\007 \001(\005\022\022\n\nonline" +
-      "coop\030\010 \001(\010\022\025\n\ronlinecoopmax\030\t \001(\005\022\021\n\tonl" +
-      "inemax\030\n \001(\005\022!\n\010platform\030\013 \001(\0132\017.proto.P" +
-      "latform\022\023\n\013splitscreen\030\014 \001(\010\022\031\n\021splitscr" +
-      "eenonline\030\r \001(\010\"(\n\nPageResult\022\032\n\005pages\030\001" +
-      " \003(\0132\013.proto.Page\"\363\004\n\004Page\022\n\n\002id\030\001 \001(\004\022)" +
-      "\n\nbackground\030\002 \001(\0132\025.proto.PageBackgroun" +
-      "d\022\021\n\tbattlenet\030\003 \001(\t\022)\n\010category\030\004 \001(\0162\027" +
-      ".proto.PageCategoryEnum\022$\n\005color\030\005 \001(\0162\025" +
-      ".proto.ColorColorEnum\022\037\n\007company\030\006 \001(\0132\016" +
-      ".proto.Company\022\017\n\007country\030\007 \001(\005\022-\n\tcreat" +
-      "edAt\030\010 \001(\0132\032.google.protobuf.Timestamp\022\023" +
-      "\n\013description\030\t \001(\t\022\031\n\004feed\030\n \001(\0132\013.prot" +
-      "o.Feed\022\031\n\004game\030\013 \001(\0132\013.proto.Game\022\014\n\004nam" +
-      "e\030\014 \001(\t\022\016\n\006origin\030\r \001(\t\022\030\n\020pageFollowsCo" +
-      "unt\030\016 \001(\005\022!\n\010pageLogo\030\017 \001(\0132\017.proto.Page" +
-      "Logo\022\014\n\004slug\030\020 \001(\t\022/\n\013subCategory\030\021 \001(\0162" +
-      "\032.proto.PageSubCategoryEnum\022-\n\tupdatedAt" +
-      "\030\022 \001(\0132\032.google.protobuf.Timestamp\022\r\n\005up" +
-      "lay\030\023 \001(\t\022\013\n\003url\030\024 \001(\t\022\031\n\004user\030\025 \001(\0132\013.p" +
-      "roto.User\022$\n\010websites\030\026 \003(\0132\022.proto.Page" +
-      "Website\"F\n\024PageBackgroundResult\022.\n\017pageb" +
-      "ackgrounds\030\001 \003(\0132\025.proto.PageBackground\"" +
-      "\201\001\n\016PageBackground\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaC" +
-      "hannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height" +
-      "\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005" +
-      "width\030\007 \001(\005\"4\n\016PageLogoResult\022\"\n\tpagelog" +
-      "os\030\001 \003(\0132\017.proto.PageLogo\"{\n\010PageLogo\022\n\n" +
-      "\002id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010anima" +
-      "ted\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001" +
-      "(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"=\n\021PageWe" +
-      "bsiteResult\022(\n\014pagewebsites\030\001 \003(\0132\022.prot" +
-      "o.PageWebsite\"e\n\013PageWebsite\022\n\n\002id\030\001 \001(\004" +
+      "Timestamp\022\023\n\013description\030\003 \001(\t\022%\n\013listEn" +
+      "tries\030\004 \003(\0132\020.proto.ListEntry\022\020\n\010listTag" +
+      "s\030\005 \003(\005\022\014\n\004name\030\006 \001(\t\022\021\n\tnumbering\030\007 \001(\010" +
+      "\022\017\n\007private\030\010 \001(\010\022!\n\014similarLists\030\t \003(\0132" +
+      "\013.proto.List\022\014\n\004slug\030\n \001(\t\022-\n\tupdatedAt\030" +
+      "\013 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url" +
+      "\030\014 \001(\t\022\031\n\004user\030\r \001(\0132\013.proto.User\"8\n\017Lis" +
+      "tEntryResult\022%\n\013listentries\030\001 \003(\0132\020.prot" +
+      "o.ListEntry\"\303\001\n\tListEntry\022\n\n\002id\030\001 \001(\004\022\023\n" +
+      "\013description\030\002 \001(\t\022\031\n\004game\030\003 \001(\0132\013.proto" +
+      ".Game\022\031\n\004list\030\004 \001(\0132\013.proto.List\022!\n\010plat" +
+      "form\030\005 \001(\0132\017.proto.Platform\022\020\n\010position\030" +
+      "\006 \001(\005\022\017\n\007private\030\007 \001(\010\022\031\n\004user\030\010 \001(\0132\013.p" +
+      "roto.User\"I\n\025MultiplayerModeResult\0220\n\020mu" +
+      "ltiplayermodes\030\001 \003(\0132\026.proto.Multiplayer" +
+      "Mode\"\301\002\n\017MultiplayerMode\022\n\n\002id\030\001 \001(\004\022\024\n\014" +
+      "campaigncoop\030\002 \001(\010\022\016\n\006dropin\030\003 \001(\010\022\031\n\004ga" +
+      "me\030\004 \001(\0132\013.proto.Game\022\017\n\007lancoop\030\005 \001(\010\022\023" +
+      "\n\013offlinecoop\030\006 \001(\010\022\026\n\016offlinecoopmax\030\007 " +
+      "\001(\005\022\022\n\nofflinemax\030\010 \001(\005\022\022\n\nonlinecoop\030\t " +
+      "\001(\010\022\025\n\ronlinecoopmax\030\n \001(\005\022\021\n\tonlinemax\030" +
+      "\013 \001(\005\022!\n\010platform\030\014 \001(\0132\017.proto.Platform" +
+      "\022\023\n\013splitscreen\030\r \001(\010\022\031\n\021splitscreenonli" +
+      "ne\030\016 \001(\010\"(\n\nPageResult\022\032\n\005pages\030\001 \003(\0132\013." +
+      "proto.Page\"\363\004\n\004Page\022\n\n\002id\030\001 \001(\004\022)\n\nbackg" +
+      "round\030\002 \001(\0132\025.proto.PageBackground\022\021\n\tba" +
+      "ttlenet\030\003 \001(\t\022)\n\010category\030\004 \001(\0162\027.proto." +
+      "PageCategoryEnum\022$\n\005color\030\005 \001(\0162\025.proto." +
+      "ColorColorEnum\022\037\n\007company\030\006 \001(\0132\016.proto." +
+      "Company\022\017\n\007country\030\007 \001(\005\022-\n\tcreatedAt\030\010 " +
+      "\001(\0132\032.google.protobuf.Timestamp\022\023\n\013descr" +
+      "iption\030\t \001(\t\022\031\n\004feed\030\n \001(\0132\013.proto.Feed\022" +
+      "\031\n\004game\030\013 \001(\0132\013.proto.Game\022\014\n\004name\030\014 \001(\t" +
+      "\022\016\n\006origin\030\r \001(\t\022\030\n\020pageFollowsCount\030\016 \001" +
+      "(\005\022!\n\010pageLogo\030\017 \001(\0132\017.proto.PageLogo\022\014\n" +
+      "\004slug\030\020 \001(\t\022/\n\013subCategory\030\021 \001(\0162\032.proto" +
+      ".PageSubCategoryEnum\022-\n\tupdatedAt\030\022 \001(\0132" +
+      "\032.google.protobuf.Timestamp\022\r\n\005uplay\030\023 \001" +
+      "(\t\022\013\n\003url\030\024 \001(\t\022\031\n\004user\030\025 \001(\0132\013.proto.Us" +
+      "er\022$\n\010websites\030\026 \003(\0132\022.proto.PageWebsite" +
+      "\"F\n\024PageBackgroundResult\022.\n\017pagebackgrou" +
+      "nds\030\001 \003(\0132\025.proto.PageBackground\"\201\001\n\016Pag" +
+      "eBackground\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030" +
+      "\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022" +
+      "\017\n\007imageId\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007" +
+      " \001(\005\"4\n\016PageLogoResult\022\"\n\tpagelogos\030\001 \003(" +
+      "\0132\017.proto.PageLogo\"{\n\010PageLogo\022\n\n\002id\030\001 \001" +
+      "(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001" +
+      "(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003u" +
+      "rl\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"=\n\021PageWebsiteRe" +
+      "sult\022(\n\014pagewebsites\030\001 \003(\0132\022.proto.PageW" +
+      "ebsite\"e\n\013PageWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010cat" +
+      "egory\030\002 \001(\0162\032.proto.WebsiteCategoryEnum\022" +
+      "\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\"-\n\014PersonR" +
+      "esult\022\035\n\006people\030\001 \003(\0132\r.proto.Person\"\240\004\n" +
+      "\006Person\022\n\n\002id\030\001 \001(\004\022\013\n\003bio\030\002 \001(\t\022$\n\nchar" +
+      "acters\030\003 \003(\0132\020.proto.Character\022\017\n\007countr" +
+      "y\030\004 \001(\005\022-\n\tcreatedAt\030\005 \001(\0132\032.google.prot" +
+      "obuf.Timestamp\022\"\n\rcreditedGames\030\006 \003(\0132\013." +
+      "proto.Game\022\023\n\013description\030\007 \001(\t\022\'\n\003dob\030\010" +
+      " \001(\0132\032.google.protobuf.Timestamp\022\'\n\006gend" +
+      "er\030\t \001(\0162\027.proto.GenderGenderEnum\022\022\n\nlov" +
+      "esCount\030\n \001(\005\022%\n\007mugShot\030\013 \001(\0132\024.proto.P" +
+      "ersonMugShot\022\014\n\004name\030\014 \001(\t\022\021\n\tnicknames\030" +
+      "\r \003(\t\022\035\n\006parent\030\016 \001(\0132\r.proto.Person\022\014\n\004" +
+      "slug\030\017 \001(\t\022-\n\tupdatedAt\030\020 \001(\0132\032.google.p" +
+      "rotobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\037\n\nvoiceA" +
+      "cted\030\022 \003(\0132\013.proto.Game\022&\n\010websites\030\023 \003(" +
+      "\0132\024.proto.PersonWebsite\"C\n\023PersonMugShot" +
+      "Result\022,\n\016personmugshots\030\001 \003(\0132\024.proto.P" +
+      "ersonMugShot\"X\n\rPersonMugShot\022\n\n\002id\030\001 \001(" +
+      "\004\022\016\n\006height\030\002 \001(\005\022\017\n\007imageId\030\003 \001(\t\022\013\n\003ur" +
+      "l\030\004 \001(\t\022\r\n\005width\030\005 \001(\005\"C\n\023PersonWebsiteR" +
+      "esult\022,\n\016personwebsites\030\001 \003(\0132\024.proto.Pe" +
+      "rsonWebsite\"g\n\rPersonWebsite\022\n\n\002id\030\001 \001(\004" +
       "\022,\n\010category\030\002 \001(\0162\032.proto.WebsiteCatego" +
-      "ryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\"-\n\014" +
-      "PersonResult\022\035\n\006people\030\001 \003(\0132\r.proto.Per" +
-      "son\"\240\004\n\006Person\022\n\n\002id\030\001 \001(\004\022\013\n\003bio\030\002 \001(\t\022" +
-      "$\n\ncharacters\030\003 \003(\0132\020.proto.Character\022\017\n" +
-      "\007country\030\004 \001(\005\022-\n\tcreatedAt\030\005 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\"\n\rcreditedGames\030\006" +
-      " \003(\0132\013.proto.Game\022\023\n\013description\030\007 \001(\t\022\'" +
-      "\n\003dob\030\010 \001(\0132\032.google.protobuf.Timestamp\022" +
-      "\'\n\006gender\030\t \001(\0162\027.proto.GenderGenderEnum" +
-      "\022\022\n\nlovesCount\030\n \001(\005\022%\n\007mugShot\030\013 \001(\0132\024." +
-      "proto.PersonMugShot\022\014\n\004name\030\014 \001(\t\022\021\n\tnic" +
-      "knames\030\r \003(\t\022\035\n\006parent\030\016 \001(\0132\r.proto.Per" +
-      "son\022\014\n\004slug\030\017 \001(\t\022-\n\tupdatedAt\030\020 \001(\0132\032.g" +
-      "oogle.protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\037\n" +
-      "\nvoiceActed\030\022 \003(\0132\013.proto.Game\022&\n\010websit" +
-      "es\030\023 \003(\0132\024.proto.PersonWebsite\"C\n\023Person" +
-      "MugShotResult\022,\n\016personmugshots\030\001 \003(\0132\024." +
-      "proto.PersonMugShot\"X\n\rPersonMugShot\022\n\n\002" +
-      "id\030\001 \001(\004\022\016\n\006height\030\002 \001(\005\022\017\n\007imageId\030\003 \001(" +
-      "\t\022\013\n\003url\030\004 \001(\t\022\r\n\005width\030\005 \001(\005\"C\n\023PersonW" +
-      "ebsiteResult\022,\n\016personwebsites\030\001 \003(\0132\024.p" +
-      "roto.PersonWebsite\"g\n\rPersonWebsite\022\n\n\002i" +
-      "d\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.Websit" +
-      "eCategoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 " +
-      "\001(\t\"4\n\016PlatformResult\022\"\n\tplatforms\030\001 \003(\013" +
-      "2\017.proto.Platform\"\314\003\n\010Platform\022\n\n\002id\030\001 \001" +
-      "(\004\022\024\n\014abbreviation\030\002 \001(\t\022\027\n\017alternativeN" +
-      "ame\030\003 \001(\t\022-\n\010category\030\004 \001(\0162\033.proto.Plat" +
-      "formCategoryEnum\022-\n\tcreatedAt\030\005 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022\022\n\ngeneration\030\006 " +
-      "\001(\005\022\014\n\004name\030\007 \001(\t\022)\n\014platformLogo\030\010 \001(\0132" +
-      "\023.proto.PlatformLogo\022+\n\rproductFamily\030\t " +
-      "\001(\0132\024.proto.ProductFamily\022\014\n\004slug\030\n \001(\t\022" +
-      "\017\n\007summary\030\013 \001(\t\022-\n\tupdatedAt\030\014 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022\013\n\003url\030\r \001(\t\022(\n\010" +
-      "versions\030\016 \003(\0132\026.proto.PlatformVersion\022(" +
-      "\n\010websites\030\017 \003(\0132\026.proto.PlatformWebsite" +
-      "\"@\n\022PlatformLogoResult\022*\n\rplatformlogos\030" +
-      "\001 \003(\0132\023.proto.PlatformLogo\"\177\n\014PlatformLo" +
-      "go\022\n\n\002id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010" +
-      "animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageI" +
-      "d\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"I\n\025P" +
-      "latformVersionResult\0220\n\020platformversions" +
-      "\030\001 \003(\0132\026.proto.PlatformVersion\"\352\003\n\017Platf" +
-      "ormVersion\022\n\n\002id\030\001 \001(\004\0220\n\tcompanies\030\002 \003(" +
-      "\0132\035.proto.PlatformVersionCompany\022\024\n\014conn" +
-      "ectivity\030\003 \001(\t\022\013\n\003cpu\030\004 \001(\t\022\020\n\010graphics\030" +
-      "\005 \001(\t\0227\n\020mainManufacturer\030\006 \001(\0132\035.proto." +
-      "PlatformVersionCompany\022\r\n\005media\030\007 \001(\t\022\016\n" +
-      "\006memory\030\010 \001(\t\022\014\n\004name\030\t \001(\t\022\016\n\006online\030\n " +
-      "\001(\t\022\n\n\002os\030\013 \001(\t\022\016\n\006output\030\014 \001(\t\022)\n\014platf" +
-      "ormLogo\030\r \001(\0132\023.proto.PlatformLogo\022F\n\033pl" +
-      "atformVersionReleaseDates\030\016 \003(\0132!.proto." +
-      "PlatformVersionReleaseDate\022\023\n\013resolution" +
-      "s\030\017 \001(\t\022\014\n\004slug\030\020 \001(\t\022\r\n\005sound\030\021 \001(\t\022\017\n\007" +
-      "storage\030\022 \001(\t\022\017\n\007summary\030\023 \001(\t\022\013\n\003url\030\024 " +
-      "\001(\t\"_\n\034PlatformVersionCompanyResult\022?\n\030p" +
-      "latformversioncompanies\030\001 \003(\0132\035.proto.Pl" +
-      "atformVersionCompany\"\177\n\026PlatformVersionC" +
-      "ompany\022\n\n\002id\030\001 \001(\004\022\017\n\007comment\030\002 \001(\t\022\037\n\007c" +
-      "ompany\030\003 \001(\0132\016.proto.Company\022\021\n\tdevelope" +
-      "r\030\004 \001(\010\022\024\n\014manufacturer\030\005 \001(\010\"j\n Platfor" +
-      "mVersionReleaseDateResult\022F\n\033platformver" +
-      "sionreleasedates\030\001 \003(\0132!.proto.PlatformV" +
-      "ersionReleaseDate\"\353\002\n\032PlatformVersionRel" +
-      "easeDate\022\n\n\002id\030\001 \001(\004\0228\n\010category\030\002 \001(\0162&" +
-      ".proto.DateFormatStartDateCategoryEnum\022-" +
-      "\n\tcreatedAt\030\003 \001(\0132\032.google.protobuf.Time" +
-      "stamp\022(\n\004date\030\004 \001(\0132\032.google.protobuf.Ti" +
-      "mestamp\022\r\n\005human\030\005 \001(\t\022\t\n\001m\030\006 \001(\005\022/\n\017pla" +
-      "tformVersion\030\007 \001(\0132\026.proto.PlatformVersi" +
-      "on\022)\n\006region\030\010 \001(\0162\031.proto.RegionLanguag" +
-      "eEnum\022-\n\tupdatedAt\030\t \001(\0132\032.google.protob" +
-      "uf.Timestamp\022\t\n\001y\030\n \001(\005\"I\n\025PlatformWebsi" +
-      "teResult\0220\n\020platformwebsites\030\001 \003(\0132\026.pro" +
-      "to.PlatformWebsite\"i\n\017PlatformWebsite\022\n\n" +
-      "\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.Webs" +
-      "iteCategoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030" +
-      "\004 \001(\t\"O\n\027PlayerPerspectiveResult\0224\n\022play" +
-      "erperspectives\030\001 \003(\0132\030.proto.PlayerPersp" +
-      "ective\"\246\001\n\021PlayerPerspective\022\n\n\002id\030\001 \001(\004" +
-      "\022-\n\tcreatedAt\030\002 \001(\0132\032.google.protobuf.Ti" +
-      "mestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022-\n\tu" +
-      "pdatedAt\030\005 \001(\0132\032.google.protobuf.Timesta" +
-      "mp\022\013\n\003url\030\006 \001(\t\"D\n\023ProductFamilyResult\022-" +
-      "\n\017productfamilies\030\001 \003(\0132\024.proto.ProductF" +
-      "amily\"7\n\rProductFamily\022\n\n\002id\030\001 \001(\004\022\014\n\004na" +
-      "me\030\002 \001(\t\022\014\n\004slug\030\003 \001(\t\"+\n\013PulseResult\022\034\n" +
-      "\006pulses\030\001 \003(\0132\014.proto.Pulse\"\241\003\n\005Pulse\022\n\n" +
-      "\002id\030\001 \001(\004\022\016\n\006author\030\002 \001(\t\022\020\n\010category\030\003 " +
-      "\001(\005\022-\n\tcreatedAt\030\004 \001(\0132\032.google.protobuf",
-      ".Timestamp\022\017\n\007ignored\030\005 \001(\010\022\r\n\005image\030\006 \001" +
-      "(\t\022/\n\013publishedAt\030\007 \001(\0132\032.google.protobu" +
-      "f.Timestamp\022%\n\npulseImage\030\010 \001(\0132\021.proto." +
-      "PulseImage\022\'\n\013pulseSource\030\t \001(\0132\022.proto." +
-      "PulseSource\022\017\n\007summary\030\n \001(\t\022\014\n\004tags\030\013 \003" +
-      "(\005\022\r\n\005title\030\014 \001(\t\022\013\n\003uid\030\r \001(\t\022-\n\tupdate" +
-      "dAt\030\016 \001(\0132\032.google.protobuf.Timestamp\022\016\n" +
-      "\006videos\030\017 \003(\t\022 \n\007website\030\020 \001(\0132\017.proto.P" +
-      "ulseUrl\":\n\020PulseGroupResult\022&\n\013pulsegrou" +
-      "ps\030\001 \003(\0132\021.proto.PulseGroup\"\374\001\n\nPulseGro" +
-      "up\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\031\n\004game\030\003 \001(\0132\013.pr" +
-      "oto.Game\022\014\n\004name\030\004 \001(\t\022/\n\013publishedAt\030\005 " +
-      "\001(\0132\032.google.protobuf.Timestamp\022\034\n\006pulse" +
-      "s\030\006 \003(\0132\014.proto.Pulse\022\014\n\004tags\030\007 \003(\005\022-\n\tu" +
-      "pdatedAt\030\010 \001(\0132\032.google.protobuf.Timesta" +
-      "mp\":\n\020PulseImageResult\022&\n\013pulseimages\030\001 " +
-      "\003(\0132\021.proto.PulseImage\"}\n\nPulseImage\022\n\n\002" +
-      "id\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animat" +
-      "ed\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(" +
-      "\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"=\n\021PulseSo" +
-      "urceResult\022(\n\014pulsesources\030\001 \003(\0132\022.proto" +
-      ".PulseSource\"]\n\013PulseSource\022\n\n\002id\030\001 \001(\004\022" +
-      "\031\n\004game\030\002 \001(\0132\013.proto.Game\022\014\n\004name\030\003 \001(\t" +
-      "\022\031\n\004page\030\004 \001(\0132\013.proto.Page\"4\n\016PulseUrlR" +
-      "esult\022\"\n\tpulseurls\030\001 \003(\0132\017.proto.PulseUr" +
-      "l\"4\n\010PulseUrl\022\n\n\002id\030\001 \001(\004\022\017\n\007trusted\030\002 \001" +
-      "(\010\022\013\n\003url\030\003 \001(\t\"(\n\nRateResult\022\032\n\005rates\030\001" +
-      " \003(\0132\013.proto.Rate\"X\n\004Rate\022\n\n\002id\030\001 \001(\004\022\031\n" +
-      "\004game\030\002 \001(\0132\013.proto.Game\022\016\n\006rating\030\003 \001(\001" +
-      "\022\031\n\004user\030\004 \001(\0132\013.proto.User\"=\n\021ReleaseDa" +
-      "teResult\022(\n\014releasedates\030\001 \003(\0132\022.proto.R" +
-      "eleaseDate\"\351\002\n\013ReleaseDate\022\n\n\002id\030\001 \001(\004\0228" +
-      "\n\010category\030\002 \001(\0162&.proto.DateFormatStart" +
-      "DateCategoryEnum\022-\n\tcreatedAt\030\003 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022(\n\004date\030\004 \001(\0132\032." +
-      "google.protobuf.Timestamp\022\031\n\004game\030\005 \001(\0132" +
-      "\013.proto.Game\022\r\n\005human\030\006 \001(\t\022\t\n\001m\030\007 \001(\005\022!" +
-      "\n\010platform\030\010 \001(\0132\017.proto.Platform\022)\n\006reg" +
-      "ion\030\t \001(\0162\031.proto.RegionLanguageEnum\022-\n\t" +
-      "updatedAt\030\n \001(\0132\032.google.protobuf.Timest" +
-      "amp\022\t\n\001y\030\013 \001(\005\".\n\014ReviewResult\022\036\n\007review" +
-      "s\030\001 \003(\0132\r.proto.Review\"\357\003\n\006Review\022\n\n\002id\030" +
-      "\001 \001(\004\022+\n\010category\030\002 \001(\0162\031.proto.ReviewCa" +
-      "tegoryEnum\022\022\n\nconclusion\030\003 \001(\t\022\017\n\007conten" +
-      "t\030\004 \001(\t\022-\n\tcreatedAt\030\005 \001(\0132\032.google.prot" +
-      "obuf.Timestamp\022\031\n\004game\030\006 \001(\0132\013.proto.Gam" +
-      "e\022\024\n\014introduction\030\007 \001(\t\022\r\n\005likes\030\010 \001(\005\022\026" +
-      "\n\016negativePoints\030\t \001(\t\022!\n\010platform\030\n \001(\013" +
-      "2\017.proto.Platform\022\026\n\016positivePoints\030\013 \001(" +
-      "\t\022\014\n\004slug\030\014 \001(\t\022\r\n\005title\030\r \001(\t\022-\n\tupdate" +
-      "dAt\030\016 \001(\0132\032.google.protobuf.Timestamp\022\013\n" +
-      "\003url\030\017 \001(\t\022\031\n\004user\030\020 \001(\0132\013.proto.User\022\037\n" +
-      "\nuserRating\030\021 \001(\0132\013.proto.Rate\022!\n\005video\030" +
-      "\022 \001(\0132\022.proto.ReviewVideo\022\r\n\005views\030\023 \001(\005" +
-      "\"=\n\021ReviewVideoResult\022(\n\014reviewvideos\030\001 " +
-      "\003(\0132\022.proto.ReviewVideo\"7\n\013ReviewVideo\022\n" +
-      "\n\002id\030\001 \001(\004\022\017\n\007trusted\030\002 \001(\010\022\013\n\003url\030\003 \001(\t" +
-      "\":\n\020ScreenshotResult\022&\n\013screenshots\030\001 \003(" +
-      "\0132\021.proto.Screenshot\"}\n\nScreenshot\022\n\n\002id" +
-      "\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated" +
-      "\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022" +
-      "\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"/\n\014SearchRes" +
-      "ult\022\037\n\010searches\030\001 \003(\0132\r.proto.Search\"\241\003\n" +
-      "\006Search\022\n\n\002id\030\001 \001(\004\022\027\n\017alternativeName\030\002" +
-      " \001(\t\022#\n\tcharacter\030\003 \001(\0132\020.proto.Characte" +
-      "r\022%\n\ncollection\030\004 \001(\0132\021.proto.Collection" +
-      "\022\037\n\007company\030\005 \001(\0132\016.proto.Company\022\023\n\013des" +
-      "cription\030\006 \001(\t\022\031\n\004game\030\007 \001(\0132\013.proto.Gam" +
-      "e\022\014\n\004name\030\010 \001(\t\022\035\n\006person\030\t \001(\0132\r.proto." +
-      "Person\022!\n\010platform\030\n \001(\0132\017.proto.Platfor" +
-      "m\022\022\n\npopularity\030\013 \001(\001\022/\n\013publishedAt\030\014 \001" +
-      "(\0132\032.google.protobuf.Timestamp\022#\n\ttestDu" +
-      "mmy\030\r \001(\0132\020.proto.TestDummy\022\033\n\005theme\030\016 \001" +
-      "(\0132\014.proto.Theme\"@\n\022SocialMetricResult\022*" +
-      "\n\rsocialmetrics\030\001 \003(\0132\023.proto.SocialMetr" +
-      "ic\"\302\001\n\014SocialMetric\022\n\n\002id\030\001 \001(\004\0221\n\010categ" +
-      "ory\030\002 \001(\0162\037.proto.SocialMetricCategoryEn" +
-      "um\022-\n\tcreatedAt\030\003 \001(\0132\032.google.protobuf." +
-      "Timestamp\0225\n\022socialMetricSource\030\004 \001(\0132\031." +
-      "proto.SocialMetricSource\022\r\n\005value\030\005 \001(\005\"" +
-      "R\n\030SocialMetricSourceResult\0226\n\023socialmet" +
-      "ricsources\030\001 \003(\0132\031.proto.SocialMetricSou" +
-      "rce\"\354\003\n\022SocialMetricSource\022\n\n\002id\030\001 \001(\004\022\020" +
-      "\n\010category\030\002 \001(\005\022\017\n\007channel\030\003 \001(\t\022\024\n\014cha" +
-      "nnelTitle\030\004 \001(\t\022-\n\tcreatedAt\030\005 \001(\0132\032.goo" +
-      "gle.protobuf.Timestamp\022\020\n\010duration\030\006 \001(\005" +
-      "\022\022\n\nexternalId\030\007 \001(\t\022\031\n\004game\030\010 \001(\0132\013.pro" +
-      "to.Game\022\024\n\014internalName\030\t \001(\t\022\014\n\004meta\030\n " +
-      "\001(\t\022\022\n\nmetricTags\030\013 \003(\t\022/\n\013publishedAt\030\014" +
-      " \001(\0132\032.google.protobuf.Timestamp\022*\n\rsoci" +
-      "alMetrics\030\r \003(\0132\023.proto.SocialMetric\022A\n\r" +
-      "socialNetwork\030\016 \001(\0162*.proto.SocialMetric" +
-      "SourceSocialNetworkEnum\022\r\n\005title\030\017 \001(\t\022-" +
-      "\n\tupdatedAt\030\020 \001(\0132\032.google.protobuf.Time" +
-      "stamp\022\013\n\003url\030\021 \001(\t\"8\n\017TestDummyResult\022%\n" +
-      "\013testdummies\030\001 \003(\0132\020.proto.TestDummy\"\342\003\n" +
-      "\tTestDummy\022\n\n\002id\030\001 \001(\004\022\021\n\tboolValue\030\002 \001(" +
-      "\010\022-\n\tcreatedAt\030\003 \001(\0132\032.google.protobuf.T" +
-      "imestamp\022.\n\010enumTest\030\004 \001(\0162\034.proto.TestD" +
-      "ummyEnumTestEnum\022\022\n\nfloatValue\030\005 \001(\001\022\031\n\004" +
-      "game\030\006 \001(\0132\013.proto.Game\022\024\n\014integerArray\030" +
-      "\007 \003(\005\022\024\n\014integerValue\030\010 \001(\005\022\014\n\004name\030\t \001(" +
-      "\t\022\027\n\017newIntegerValue\030\n \001(\005\022\017\n\007private\030\013 " +
-      "\001(\010\022\014\n\004slug\030\014 \001(\t\022\023\n\013stringArray\030\r \003(\t\022%" +
-      "\n\013testDummies\030\016 \003(\0132\020.proto.TestDummy\022#\n" +
-      "\ttestDummy\030\017 \001(\0132\020.proto.TestDummy\022-\n\tup" +
-      "datedAt\030\020 \001(\0132\032.google.protobuf.Timestam" +
-      "p\022\013\n\003url\030\021 \001(\t\022\031\n\004user\030\022 \001(\0132\013.proto.Use" +
-      "r\"+\n\013ThemeResult\022\034\n\006themes\030\001 \003(\0132\014.proto" +
-      ".Theme\"\232\001\n\005Theme\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedA" +
-      "t\030\002 \001(\0132\032.google.protobuf.Timestamp\022\014\n\004n" +
-      "ame\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022-\n\tupdatedAt\030\005 \001" +
-      "(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\006 " +
-      "\001(\t\":\n\020TimeToBeatResult\022&\n\013timetobeats\030\001" +
-      " \003(\0132\021.proto.TimeToBeat\"i\n\nTimeToBeat\022\n\n" +
-      "\002id\030\001 \001(\004\022\022\n\ncompletely\030\002 \001(\005\022\031\n\004game\030\003 " +
-      "\001(\0132\013.proto.Game\022\016\n\006hastly\030\004 \001(\005\022\020\n\010norm" +
-      "ally\030\005 \001(\005\"+\n\013TitleResult\022\034\n\006titles\030\001 \003(" +
-      "\0132\014.proto.Title\"\313\001\n\005Title\022\n\n\002id\030\001 \001(\004\022-\n" +
-      "\tcreatedAt\030\002 \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\023\n\013description\030\003 \001(\t\022\032\n\005games\030\004 \003(\013" +
-      "2\013.proto.Game\022\014\n\004name\030\005 \001(\t\022\014\n\004slug\030\006 \001(" +
-      "\t\022-\n\tupdatedAt\030\007 \001(\0132\032.google.protobuf.T" +
-      "imestamp\022\013\n\003url\030\010 \001(\t\"(\n\nUserResult\022\032\n\005u" +
-      "sers\030\001 \003(\0132\013.proto.User\"\202\004\n\004User\022\n\n\002id\030\001" +
-      " \001(\004\022\021\n\tbattlenet\030\002 \001(\t\022$\n\005color\030\003 \001(\0162\025" +
-      ".proto.ColorColorEnum\022-\n\tcreatedAt\030\004 \001(\013" +
-      "2\032.google.protobuf.Timestamp\022\017\n\007discord\030" +
-      "\005 \001(\t\022\020\n\010facebook\030\006 \001(\t\022\022\n\ngooglePlus\030\007 " +
-      "\001(\t\022\021\n\tinstagram\030\010 \001(\t\022\020\n\010linkedin\030\t \001(\t" +
-      "\022\016\n\006origin\030\n \001(\t\022\021\n\tpinterest\030\013 \001(\t\022\024\n\014p" +
-      "resentation\030\014 \001(\t\022\016\n\006reddit\030\r \001(\t\022!\n\004rol" +
-      "e\030\016 \001(\0162\023.proto.UserRoleEnum\022\014\n\004slug\030\017 \001" +
-      "(\t\022\022\n\nsoundcloud\030\020 \001(\t\022\r\n\005steam\030\021 \001(\t\022\016\n" +
-      "\006twitch\030\022 \001(\t\022\017\n\007twitter\030\023 \001(\t\022-\n\tupdate" +
-      "dAt\030\024 \001(\0132\032.google.protobuf.Timestamp\022\r\n" +
-      "\005uplay\030\025 \001(\t\022\013\n\003url\030\026 \001(\t\022\020\n\010username\030\027 " +
-      "\001(\t\022\017\n\007youtube\030\030 \001(\t\"1\n\rWebsiteResult\022 \n" +
-      "\010websites\030\001 \003(\0132\016.proto.Website\"a\n\007Websi" +
-      "te\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto" +
-      ".WebsiteCategoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n" +
-      "\003url\030\004 \001(\t*^\n\027AchievementCategoryEnum\022\035\n" +
-      "\031ACHIEVEMENT_CATEGORY_NULL\020\000\022\017\n\013PLAYSTAT" +
-      "ION\020\001\022\010\n\004XBOX\020\002\022\t\n\005STEAM\020\003*\273\001\n\022RegionLan" +
-      "guageEnum\022\030\n\024REGION_LANGUAGE_NULL\020\000\022\n\n\006E" +
-      "UROPE\020\001\022\021\n\rNORTH_AMERICA\020\002\022\r\n\tAUSTRALIA\020" +
-      "\003\022\016\n\nNEW_ZELAND\020\004\022\t\n\005JAPAN\020\005\022\t\n\005CHINA\020\006\022" +
-      "\010\n\004ASIA\020\007\022\r\n\tWORLDWIDE\020\010\022\r\n\tHONG_KONG\020\t\022" +
-      "\017\n\013SOUTH_KOREA\020\n*`\n\023AchievementRankEnum\022" +
-      "\031\n\025ACHIEVEMENT_RANK_NULL\020\000\022\n\n\006BRONZE\020\001\022\n" +
-      "\n\006SILVER\020\002\022\010\n\004GOLD\020\003\022\014\n\010PLATINUM\020\004*H\n\025Ag" +
-      "eRatingCategoryEnum\022\033\n\027AGERATING_CATEGOR" +
-      "Y_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002*\243\001\n\023AgeRati" +
-      "ngRatingEnum\022\031\n\025AGERATING_RATING_NULL\020\000\022" +
-      "\t\n\005THREE\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWELVE\020\003\022\013\n\007SIX" +
-      "TEEN\020\004\022\014\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022\006\n\002EC\020\007\022\005\n\001" +
-      "E\020\010\022\007\n\003E10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n\002AO\020\014*K\n\020Ge" +
-      "nderGenderEnum\022\026\n\022GENDER_GENDER_NULL\020\000\022\010" +
-      "\n\004MALE\020\001\022\n\n\006FEMALE\020\002\022\t\n\005OTHER\020\003*n\n\024Chara" +
-      "cterSpeciesEnum\022\032\n\026CHARACTER_SPECIES_NUL" +
-      "L\020\000\022\t\n\005HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n" +
-      "\007ANDROID\020\004\022\013\n\007UNKNOWN\020\005*\202\001\n\037DateFormatSt" +
-      "artDateCategoryEnum\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010Y" +
-      "YYYMMMM\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ" +
-      "2\020\004\022\n\n\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\304\003\n" +
-      "\023WebsiteCategoryEnum\022\031\n\025WEBSITE_CATEGORY" +
-      "_NULL\020\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n\rWEBSITE" +
-      "_WIKIA\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022\024\n\020WEBSI" +
-      "TE_FACEBOOK\020\004\022\023\n\017WEBSITE_TWITTER\020\005\022\022\n\016WE" +
-      "BSITE_TWITCH\020\006\022\025\n\021WEBSITE_INSTAGRAM\020\010\022\023\n" +
-      "\017WEBSITE_YOUTUBE\020\t\022\022\n\016WEBSITE_IPHONE\020\n\022\020" +
-      "\n\014WEBSITE_IPAD\020\013\022\023\n\017WEBSITE_ANDROID\020\014\022\021\n" +
-      "\rWEBSITE_STEAM\020\r\022\022\n\016WEBSITE_REDDIT\020\016\022\023\n\017" +
-      "WEBSITE_DISCORD\020\017\022\027\n\023WEBSITE_GOOGLE_PLUS" +
-      "\020\020\022\022\n\016WEBSITE_TUMBLR\020\021\022\024\n\020WEBSITE_LINKED" +
-      "IN\020\022\022\025\n\021WEBSITE_PINTEREST\020\023\022\026\n\022WEBSITE_S" +
-      "OUNDCLOUD\020\024*\216\001\n\022CreditCategoryEnum\022\030\n\024CR" +
-      "EDIT_CATEGORY_NULL\020\000\022\017\n\013VOICE_ACTOR\020\001\022\014\n" +
-      "\010LANGUAGE\020\002\022\022\n\016COMPANY_CREDIT\020\003\022\014\n\010EMPLO" +
-      "YEE\020\004\022\010\n\004MISC\020\005\022\023\n\017SUPPORT_COMPANY\020\006*\351\001\n" +
-      "\030ExternalGameCategoryEnum\022\036\n\032EXTERNALGAM" +
-      "E_CATEGORY_NULL\020\000\022\026\n\022EXTERNALGAME_STEAM\020" +
-      "\001\022\024\n\020EXTERNALGAME_GOG\020\005\022\030\n\024EXTERNALGAME_" +
-      "YOUTUBE\020\n\022\032\n\026EXTERNALGAME_MICROSOFT\020\013\022\026\n" +
-      "\022EXTERNALGAME_APPLE\020\r\022\027\n\023EXTERNALGAME_TW" +
-      "ITCH\020\016\022\030\n\024EXTERNALGAME_ANDROID\020\017*\262\001\n\020Fee" +
-      "dCategoryEnum\022\026\n\022FEED_CATEGORY_NULL\020\000\022\021\n" +
-      "\rPULSE_ARTICLE\020\001\022\017\n\013COMING_SOON\020\002\022\017\n\013NEW" +
-      "_TRAILER\020\003\022\031\n\025USER_CONTRIBUTED_ITEM\020\005\022\033\n" +
-      "\027USER_CONTRIBUTIONS_ITEM\020\006\022\031\n\025PAGE_CONTR" +
-      "IBUTED_ITEM\020\007*e\n\020GameCategoryEnum\022\r\n\tMAI" +
-      "N_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r\n\tEXPANSION\020\002\022\n" +
-      "\n\006BUNDLE\020\003\022\030\n\024STANDALONE_EXPANSION\020\004*a\n\016" +
-      "GameStatusEnum\022\014\n\010RELEASED\020\000\022\t\n\005ALPHA\020\002\022" +
-      "\010\n\004BETA\020\003\022\020\n\014EARLY_ACCESS\020\004\022\013\n\007OFFLINE\020\005" +
-      "\022\r\n\tCANCELLED\020\006*>\n\036GameVersionFeatureCat" +
-      "egoryEnum\022\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTION\020\001*" +
-      "`\n*GameVersionFeatureValueIncludedFeatur" +
-      "eEnum\022\020\n\014NOT_INCLUDED\020\000\022\014\n\010INCLUDED\020\001\022\022\n" +
-      "\016PRE_ORDER_ONLY\020\002*w\n\020PageCategoryEnum\022\026\n" +
-      "\022PAGE_CATEGORY_NULL\020\000\022\017\n\013PERSONALITY\020\001\022\026" +
-      "\n\022MEDIA_ORGANIZATION\020\002\022\023\n\017CONTENT_CREATO" +
-      "R\020\003\022\r\n\tCLAN_TEAM\020\004*P\n\016ColorColorEnum\022\t\n\005" +
-      "GREEN\020\000\022\010\n\004BLUE\020\001\022\007\n\003RED\020\002\022\n\n\006ORANGE\020\003\022\010" +
-      "\n\004PINK\020\004\022\n\n\006YELLOW\020\005*|\n\023PageSubCategoryE" +
-      "num\022\032\n\026PAGE_SUB_CATEGORY_NULL\020\000\022\010\n\004USER\020" +
-      "\001\022\010\n\004GAME\020\002\022\013\n\007COMPANY\020\003\022\014\n\010CONSUMER\020\004\022\014" +
-      "\n\010INDUSTRY\020\005\022\014\n\010E_SPORTS\020\006*\223\001\n\024PlatformC" +
-      "ategoryEnum\022\032\n\026PLATFORM_CATEGORY_NULL\020\000\022" +
-      "\013\n\007CONSOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010PLATFORM\020\003\022\024" +
-      "\n\020OPERATING_SYSTEM\020\004\022\024\n\020PORTABLE_CONSOLE" +
-      "\020\005\022\014\n\010COMPUTER\020\006*C\n\022ReviewCategoryEnum\022\030" +
-      "\n\024REVIEW_CATEGORY_NULL\020\000\022\010\n\004TEXT\020\001\022\t\n\005VI" +
-      "DEO\020\002*\220\001\n\030SocialMetricCategoryEnum\022\036\n\032SO" +
-      "CIALMETRIC_CATEGORY_NULL\020\000\022\013\n\007FOLLOWS\020\001\022" +
-      "\t\n\005LIKES\020\002\022\t\n\005HATES\020\003\022\n\n\006SHARES\020\004\022\010\n\004VIE" +
-      "W\020\005\022\014\n\010COMMENTS\020\006\022\r\n\tFAVORITES\020\007*\355\003\n#Soc" +
-      "ialMetricSourceSocialNetworkEnum\022*\n&SOCI" +
-      "ALMETRICSOURCE_SOCIAL_NETWORK_NULL\020\000\022\037\n\033" +
-      "SOCIALMETRICSOURCE_OFFICIAL\020\001\022\034\n\030SOCIALM" +
-      "ETRICSOURCE_WIKIA\020\002\022 \n\034SOCIALMETRICSOURC" +
-      "E_WIKIPEDIA\020\003\022\037\n\033SOCIALMETRICSOURCE_FACE" +
-      "BOOK\020\004\022\036\n\032SOCIALMETRICSOURCE_TWITTER\020\005\022\035" +
-      "\n\031SOCIALMETRICSOURCE_TWITCH\020\006\022 \n\034SOCIALM" +
-      "ETRICSOURCE_INSTAGRAM\020\010\022\036\n\032SOCIALMETRICS" +
-      "OURCE_YOUTUBE\020\t\022\035\n\031SOCIALMETRICSOURCE_IP" +
-      "HONE\020\n\022\033\n\027SOCIALMETRICSOURCE_IPAD\020\013\022\036\n\032S" +
-      "OCIALMETRICSOURCE_ANDROID\020\014\022\034\n\030SOCIALMET" +
-      "RICSOURCE_STEAM\020\r\022\035\n\031SOCIALMETRICSOURCE_" +
-      "REDDIT\020\016*K\n\025TestDummyEnumTestEnum\022\034\n\030TES" +
-      "TDUMMY_ENUM_TEST_NULL\020\000\022\t\n\005ENUM1\020\001\022\t\n\005EN" +
-      "UM2\020\002*\236\001\n\014UserRoleEnum\022\022\n\016USER_ROLE_NULL" +
-      "\020\000\022\r\n\tUSER_USER\020\001\022\026\n\022USER_ADVANCED_USER\020" +
-      "\002\022\034\n\030USER_SUPER_ADVANCED_USER\020\003\022\017\n\013USER_" +
-      "KEEPER\020\004\022\016\n\nUSER_ADMIN\020\t\022\024\n\020USER_SUPER_A" +
-      "DMIN\020\nB\004H\002P\001b\006proto3"
+      "ryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\"4\n\016" +
+      "PlatformResult\022\"\n\tplatforms\030\001 \003(\0132\017.prot" +
+      "o.Platform\"\314\003\n\010Platform\022\n\n\002id\030\001 \001(\004\022\024\n\014a" +
+      "bbreviation\030\002 \001(\t\022\027\n\017alternativeName\030\003 \001" +
+      "(\t\022-\n\010category\030\004 \001(\0162\033.proto.PlatformCat" +
+      "egoryEnum\022-\n\tcreatedAt\030\005 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\022\n\ngeneration\030\006 \001(\005\022\014\n\004" +
+      "name\030\007 \001(\t\022)\n\014platformLogo\030\010 \001(\0132\023.proto" +
+      ".PlatformLogo\022+\n\rproductFamily\030\t \001(\0132\024.p" +
+      "roto.ProductFamily\022\014\n\004slug\030\n \001(\t\022\017\n\007summ" +
+      "ary\030\013 \001(\t\022-\n\tupdatedAt\030\014 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\013\n\003url\030\r \001(\t\022(\n\010version" +
+      "s\030\016 \003(\0132\026.proto.PlatformVersion\022(\n\010websi" +
+      "tes\030\017 \003(\0132\026.proto.PlatformWebsite\"@\n\022Pla" +
+      "tformLogoResult\022*\n\rplatformlogos\030\001 \003(\0132\023" +
+      ".proto.PlatformLogo\"\177\n\014PlatformLogo\022\n\n\002i" +
+      "d\030\001 \001(\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animate" +
+      "d\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t" +
+      "\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"I\n\025Platform" +
+      "VersionResult\0220\n\020platformversions\030\001 \003(\0132" +
+      "\026.proto.PlatformVersion\"\352\003\n\017PlatformVers" +
+      "ion\022\n\n\002id\030\001 \001(\004\0220\n\tcompanies\030\002 \003(\0132\035.pro" +
+      "to.PlatformVersionCompany\022\024\n\014connectivit" +
+      "y\030\003 \001(\t\022\013\n\003cpu\030\004 \001(\t\022\020\n\010graphics\030\005 \001(\t\0227" +
+      "\n\020mainManufacturer\030\006 \001(\0132\035.proto.Platfor" +
+      "mVersionCompany\022\r\n\005media\030\007 \001(\t\022\016\n\006memory" +
+      "\030\010 \001(\t\022\014\n\004name\030\t \001(\t\022\016\n\006online\030\n \001(\t\022\n\n\002" +
+      "os\030\013 \001(\t\022\016\n\006output\030\014 \001(\t\022)\n\014platformLogo" +
+      "\030\r \001(\0132\023.proto.PlatformLogo\022F\n\033platformV" +
+      "ersionReleaseDates\030\016 \003(\0132!.proto.Platfor" +
+      "mVersionReleaseDate\022\023\n\013resolutions\030\017 \001(\t" +
+      "\022\014\n\004slug\030\020 \001(\t\022\r\n\005sound\030\021 \001(\t\022\017\n\007storage" +
+      "\030\022 \001(\t\022\017\n\007summary\030\023 \001(\t\022\013\n\003url\030\024 \001(\t\"_\n\034" +
+      "PlatformVersionCompanyResult\022?\n\030platform" +
+      "versioncompanies\030\001 \003(\0132\035.proto.PlatformV" +
+      "ersionCompany\"\177\n\026PlatformVersionCompany\022" +
+      "\n\n\002id\030\001 \001(\004\022\017\n\007comment\030\002 \001(\t\022\037\n\007company\030" +
+      "\003 \001(\0132\016.proto.Company\022\021\n\tdeveloper\030\004 \001(\010" +
+      "\022\024\n\014manufacturer\030\005 \001(\010\"j\n PlatformVersio" +
+      "nReleaseDateResult\022F\n\033platformversionrel" +
+      "easedates\030\001 \003(\0132!.proto.PlatformVersionR" +
+      "eleaseDate\"\353\002\n\032PlatformVersionReleaseDat" +
+      "e\022\n\n\002id\030\001 \001(\004\0228\n\010category\030\002 \001(\0162&.proto." +
+      "DateFormatStartDateCategoryEnum\022-\n\tcreat" +
+      "edAt\030\003 \001(\0132\032.google.protobuf.Timestamp\022(" +
+      "\n\004date\030\004 \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\r\n\005human\030\005 \001(\t\022\t\n\001m\030\006 \001(\005\022/\n\017platformVe" +
+      "rsion\030\007 \001(\0132\026.proto.PlatformVersion\022)\n\006r" +
+      "egion\030\010 \001(\0162\031.proto.RegionLanguageEnum\022-" +
+      "\n\tupdatedAt\030\t \001(\0132\032.google.protobuf.Time" +
+      "stamp\022\t\n\001y\030\n \001(\005\"I\n\025PlatformWebsiteResul" +
+      "t\0220\n\020platformwebsites\030\001 \003(\0132\026.proto.Plat" +
+      "formWebsite\"i\n\017PlatformWebsite\022\n\n\002id\030\001 \001" +
+      "(\004\022,\n\010category\030\002 \001(\0162\032.proto.WebsiteCate" +
+      "goryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\"O" +
+      "\n\027PlayerPerspectiveResult\0224\n\022playerpersp" +
+      "ectives\030\001 \003(\0132\030.proto.PlayerPerspective\"" +
+      "\246\001\n\021PlayerPerspective\022\n\n\002id\030\001 \001(\004\022-\n\tcre" +
+      "atedAt\030\002 \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022-\n\tupdatedA" +
+      "t\030\005 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003u" +
+      "rl\030\006 \001(\t\"D\n\023ProductFamilyResult\022-\n\017produ" +
+      "ctfamilies\030\001 \003(\0132\024.proto.ProductFamily\"7",
+      "\n\rProductFamily\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(" +
+      "\t\022\014\n\004slug\030\003 \001(\t\"+\n\013PulseResult\022\034\n\006pulses" +
+      "\030\001 \003(\0132\014.proto.Pulse\"\241\003\n\005Pulse\022\n\n\002id\030\001 \001" +
+      "(\004\022\016\n\006author\030\002 \001(\t\022\020\n\010category\030\003 \001(\005\022-\n\t" +
+      "createdAt\030\004 \001(\0132\032.google.protobuf.Timest" +
+      "amp\022\017\n\007ignored\030\005 \001(\010\022\r\n\005image\030\006 \001(\t\022/\n\013p" +
+      "ublishedAt\030\007 \001(\0132\032.google.protobuf.Times" +
+      "tamp\022%\n\npulseImage\030\010 \001(\0132\021.proto.PulseIm" +
+      "age\022\'\n\013pulseSource\030\t \001(\0132\022.proto.PulseSo" +
+      "urce\022\017\n\007summary\030\n \001(\t\022\014\n\004tags\030\013 \003(\005\022\r\n\005t" +
+      "itle\030\014 \001(\t\022\013\n\003uid\030\r \001(\t\022-\n\tupdatedAt\030\016 \001" +
+      "(\0132\032.google.protobuf.Timestamp\022\016\n\006videos" +
+      "\030\017 \003(\t\022 \n\007website\030\020 \001(\0132\017.proto.PulseUrl" +
+      "\":\n\020PulseGroupResult\022&\n\013pulsegroups\030\001 \003(" +
+      "\0132\021.proto.PulseGroup\"\374\001\n\nPulseGroup\022\n\n\002i" +
+      "d\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google.prot" +
+      "obuf.Timestamp\022\031\n\004game\030\003 \001(\0132\013.proto.Gam" +
+      "e\022\014\n\004name\030\004 \001(\t\022/\n\013publishedAt\030\005 \001(\0132\032.g" +
+      "oogle.protobuf.Timestamp\022\034\n\006pulses\030\006 \003(\013" +
+      "2\014.proto.Pulse\022\014\n\004tags\030\007 \003(\005\022-\n\tupdatedA" +
+      "t\030\010 \001(\0132\032.google.protobuf.Timestamp\":\n\020P" +
+      "ulseImageResult\022&\n\013pulseimages\030\001 \003(\0132\021.p" +
+      "roto.PulseImage\"}\n\nPulseImage\022\n\n\002id\030\001 \001(" +
+      "\004\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(" +
+      "\010\022\016\n\006height\030\004 \001(\005\022\017\n\007imageId\030\005 \001(\t\022\013\n\003ur" +
+      "l\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\"=\n\021PulseSourceRes" +
+      "ult\022(\n\014pulsesources\030\001 \003(\0132\022.proto.PulseS" +
+      "ource\"]\n\013PulseSource\022\n\n\002id\030\001 \001(\004\022\031\n\004game" +
+      "\030\002 \001(\0132\013.proto.Game\022\014\n\004name\030\003 \001(\t\022\031\n\004pag" +
+      "e\030\004 \001(\0132\013.proto.Page\"4\n\016PulseUrlResult\022\"" +
+      "\n\tpulseurls\030\001 \003(\0132\017.proto.PulseUrl\"4\n\010Pu" +
+      "lseUrl\022\n\n\002id\030\001 \001(\004\022\017\n\007trusted\030\002 \001(\010\022\013\n\003u" +
+      "rl\030\003 \001(\t\"(\n\nRateResult\022\032\n\005rates\030\001 \003(\0132\013." +
+      "proto.Rate\"X\n\004Rate\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002" +
+      " \001(\0132\013.proto.Game\022\016\n\006rating\030\003 \001(\001\022\031\n\004use" +
+      "r\030\004 \001(\0132\013.proto.User\"=\n\021ReleaseDateResul" +
+      "t\022(\n\014releasedates\030\001 \003(\0132\022.proto.ReleaseD" +
+      "ate\"\351\002\n\013ReleaseDate\022\n\n\002id\030\001 \001(\004\0228\n\010categ" +
+      "ory\030\002 \001(\0162&.proto.DateFormatStartDateCat" +
+      "egoryEnum\022-\n\tcreatedAt\030\003 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022(\n\004date\030\004 \001(\0132\032.google." +
+      "protobuf.Timestamp\022\031\n\004game\030\005 \001(\0132\013.proto" +
+      ".Game\022\r\n\005human\030\006 \001(\t\022\t\n\001m\030\007 \001(\005\022!\n\010platf" +
+      "orm\030\010 \001(\0132\017.proto.Platform\022)\n\006region\030\t \001" +
+      "(\0162\031.proto.RegionLanguageEnum\022-\n\tupdated" +
+      "At\030\n \001(\0132\032.google.protobuf.Timestamp\022\t\n\001" +
+      "y\030\013 \001(\005\".\n\014ReviewResult\022\036\n\007reviews\030\001 \003(\013" +
+      "2\r.proto.Review\"\357\003\n\006Review\022\n\n\002id\030\001 \001(\004\022+" +
+      "\n\010category\030\002 \001(\0162\031.proto.ReviewCategoryE" +
+      "num\022\022\n\nconclusion\030\003 \001(\t\022\017\n\007content\030\004 \001(\t" +
+      "\022-\n\tcreatedAt\030\005 \001(\0132\032.google.protobuf.Ti" +
+      "mestamp\022\031\n\004game\030\006 \001(\0132\013.proto.Game\022\024\n\014in" +
+      "troduction\030\007 \001(\t\022\r\n\005likes\030\010 \001(\005\022\026\n\016negat" +
+      "ivePoints\030\t \001(\t\022!\n\010platform\030\n \001(\0132\017.prot" +
+      "o.Platform\022\026\n\016positivePoints\030\013 \001(\t\022\014\n\004sl" +
+      "ug\030\014 \001(\t\022\r\n\005title\030\r \001(\t\022-\n\tupdatedAt\030\016 \001" +
+      "(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\017 " +
+      "\001(\t\022\031\n\004user\030\020 \001(\0132\013.proto.User\022\037\n\nuserRa" +
+      "ting\030\021 \001(\0132\013.proto.Rate\022!\n\005video\030\022 \001(\0132\022" +
+      ".proto.ReviewVideo\022\r\n\005views\030\023 \001(\005\"=\n\021Rev" +
+      "iewVideoResult\022(\n\014reviewvideos\030\001 \003(\0132\022.p" +
+      "roto.ReviewVideo\"7\n\013ReviewVideo\022\n\n\002id\030\001 " +
+      "\001(\004\022\017\n\007trusted\030\002 \001(\010\022\013\n\003url\030\003 \001(\t\":\n\020Scr" +
+      "eenshotResult\022&\n\013screenshots\030\001 \003(\0132\021.pro" +
+      "to.Screenshot\"\230\001\n\nScreenshot\022\n\n\002id\030\001 \001(\004" +
+      "\022\024\n\014alphaChannel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010" +
+      "\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006height\030\005 " +
+      "\001(\005\022\017\n\007imageId\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005wid" +
+      "th\030\010 \001(\005\"/\n\014SearchResult\022\037\n\010searches\030\001 \003" +
+      "(\0132\r.proto.Search\"\241\003\n\006Search\022\n\n\002id\030\001 \001(\004" +
+      "\022\027\n\017alternativeName\030\002 \001(\t\022#\n\tcharacter\030\003" +
+      " \001(\0132\020.proto.Character\022%\n\ncollection\030\004 \001" +
+      "(\0132\021.proto.Collection\022\037\n\007company\030\005 \001(\0132\016" +
+      ".proto.Company\022\023\n\013description\030\006 \001(\t\022\031\n\004g" +
+      "ame\030\007 \001(\0132\013.proto.Game\022\014\n\004name\030\010 \001(\t\022\035\n\006" +
+      "person\030\t \001(\0132\r.proto.Person\022!\n\010platform\030" +
+      "\n \001(\0132\017.proto.Platform\022\022\n\npopularity\030\013 \001" +
+      "(\001\022/\n\013publishedAt\030\014 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022#\n\ttestDummy\030\r \001(\0132\020.proto.T" +
+      "estDummy\022\033\n\005theme\030\016 \001(\0132\014.proto.Theme\"@\n" +
+      "\022SocialMetricResult\022*\n\rsocialmetrics\030\001 \003" +
+      "(\0132\023.proto.SocialMetric\"\302\001\n\014SocialMetric" +
+      "\022\n\n\002id\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037.proto.S" +
+      "ocialMetricCategoryEnum\022-\n\tcreatedAt\030\003 \001" +
+      "(\0132\032.google.protobuf.Timestamp\0225\n\022social" +
+      "MetricSource\030\004 \001(\0132\031.proto.SocialMetricS" +
+      "ource\022\r\n\005value\030\005 \001(\005\"R\n\030SocialMetricSour" +
+      "ceResult\0226\n\023socialmetricsources\030\001 \003(\0132\031." +
+      "proto.SocialMetricSource\"\354\003\n\022SocialMetri" +
+      "cSource\022\n\n\002id\030\001 \001(\004\022\020\n\010category\030\002 \001(\005\022\017\n" +
+      "\007channel\030\003 \001(\t\022\024\n\014channelTitle\030\004 \001(\t\022-\n\t" +
+      "createdAt\030\005 \001(\0132\032.google.protobuf.Timest" +
+      "amp\022\020\n\010duration\030\006 \001(\005\022\022\n\nexternalId\030\007 \001(" +
+      "\t\022\031\n\004game\030\010 \001(\0132\013.proto.Game\022\024\n\014internal" +
+      "Name\030\t \001(\t\022\014\n\004meta\030\n \001(\t\022\022\n\nmetricTags\030\013" +
+      " \003(\t\022/\n\013publishedAt\030\014 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022*\n\rsocialMetrics\030\r \003(\0132\023.p" +
+      "roto.SocialMetric\022A\n\rsocialNetwork\030\016 \001(\016" +
+      "2*.proto.SocialMetricSourceSocialNetwork" +
+      "Enum\022\r\n\005title\030\017 \001(\t\022-\n\tupdatedAt\030\020 \001(\0132\032" +
+      ".google.protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\"" +
+      "8\n\017TestDummyResult\022%\n\013testdummies\030\001 \003(\0132" +
+      "\020.proto.TestDummy\"\342\003\n\tTestDummy\022\n\n\002id\030\001 " +
+      "\001(\004\022\021\n\tboolValue\030\002 \001(\010\022-\n\tcreatedAt\030\003 \001(" +
+      "\0132\032.google.protobuf.Timestamp\022.\n\010enumTes" +
+      "t\030\004 \001(\0162\034.proto.TestDummyEnumTestEnum\022\022\n" +
+      "\nfloatValue\030\005 \001(\001\022\031\n\004game\030\006 \001(\0132\013.proto." +
+      "Game\022\024\n\014integerArray\030\007 \003(\005\022\024\n\014integerVal" +
+      "ue\030\010 \001(\005\022\014\n\004name\030\t \001(\t\022\027\n\017newIntegerValu" +
+      "e\030\n \001(\005\022\017\n\007private\030\013 \001(\010\022\014\n\004slug\030\014 \001(\t\022\023" +
+      "\n\013stringArray\030\r \003(\t\022%\n\013testDummies\030\016 \003(\013" +
+      "2\020.proto.TestDummy\022#\n\ttestDummy\030\017 \001(\0132\020." +
+      "proto.TestDummy\022-\n\tupdatedAt\030\020 \001(\0132\032.goo" +
+      "gle.protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\031\n\004u" +
+      "ser\030\022 \001(\0132\013.proto.User\"+\n\013ThemeResult\022\034\n" +
+      "\006themes\030\001 \003(\0132\014.proto.Theme\"\232\001\n\005Theme\022\n\n" +
+      "\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004" +
+      " \001(\t\022-\n\tupdatedAt\030\005 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022\013\n\003url\030\006 \001(\t\":\n\020TimeToBeatRe" +
+      "sult\022&\n\013timetobeats\030\001 \003(\0132\021.proto.TimeTo" +
+      "Beat\"i\n\nTimeToBeat\022\n\n\002id\030\001 \001(\004\022\022\n\ncomple" +
+      "tely\030\002 \001(\005\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022\016\n" +
+      "\006hastly\030\004 \001(\005\022\020\n\010normally\030\005 \001(\005\"+\n\013Title" +
+      "Result\022\034\n\006titles\030\001 \003(\0132\014.proto.Title\"\313\001\n" +
+      "\005Title\022\n\n\002id\030\001 \001(\004\022-\n\tcreatedAt\030\002 \001(\0132\032." +
+      "google.protobuf.Timestamp\022\023\n\013description" +
+      "\030\003 \001(\t\022\032\n\005games\030\004 \003(\0132\013.proto.Game\022\014\n\004na" +
+      "me\030\005 \001(\t\022\014\n\004slug\030\006 \001(\t\022-\n\tupdatedAt\030\007 \001(" +
+      "\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\010 \001" +
+      "(\t\"(\n\nUserResult\022\032\n\005users\030\001 \003(\0132\013.proto." +
+      "User\"\202\004\n\004User\022\n\n\002id\030\001 \001(\004\022\021\n\tbattlenet\030\002" +
+      " \001(\t\022$\n\005color\030\003 \001(\0162\025.proto.ColorColorEn" +
+      "um\022-\n\tcreatedAt\030\004 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\017\n\007discord\030\005 \001(\t\022\020\n\010facebook\030\006" +
+      " \001(\t\022\022\n\ngooglePlus\030\007 \001(\t\022\021\n\tinstagram\030\010 " +
+      "\001(\t\022\020\n\010linkedin\030\t \001(\t\022\016\n\006origin\030\n \001(\t\022\021\n" +
+      "\tpinterest\030\013 \001(\t\022\024\n\014presentation\030\014 \001(\t\022\016" +
+      "\n\006reddit\030\r \001(\t\022!\n\004role\030\016 \001(\0162\023.proto.Use" +
+      "rRoleEnum\022\014\n\004slug\030\017 \001(\t\022\022\n\nsoundcloud\030\020 " +
+      "\001(\t\022\r\n\005steam\030\021 \001(\t\022\016\n\006twitch\030\022 \001(\t\022\017\n\007tw" +
+      "itter\030\023 \001(\t\022-\n\tupdatedAt\030\024 \001(\0132\032.google." +
+      "protobuf.Timestamp\022\r\n\005uplay\030\025 \001(\t\022\013\n\003url" +
+      "\030\026 \001(\t\022\020\n\010username\030\027 \001(\t\022\017\n\007youtube\030\030 \001(" +
+      "\t\"1\n\rWebsiteResult\022 \n\010websites\030\001 \003(\0132\016.p" +
+      "roto.Website\"|\n\007Website\022\n\n\002id\030\001 \001(\004\022,\n\010c" +
+      "ategory\030\002 \001(\0162\032.proto.WebsiteCategoryEnu" +
+      "m\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022\017\n\007trusted\030" +
+      "\004 \001(\010\022\013\n\003url\030\005 \001(\t*^\n\027AchievementCategor" +
+      "yEnum\022\035\n\031ACHIEVEMENT_CATEGORY_NULL\020\000\022\017\n\013" +
+      "PLAYSTATION\020\001\022\010\n\004XBOX\020\002\022\t\n\005STEAM\020\003*\273\001\n\022R" +
+      "egionLanguageEnum\022\030\n\024REGION_LANGUAGE_NUL" +
+      "L\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AMERICA\020\002\022\r\n\tAU" +
+      "STRALIA\020\003\022\016\n\nNEW_ZELAND\020\004\022\t\n\005JAPAN\020\005\022\t\n\005" +
+      "CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLDWIDE\020\010\022\r\n\tHONG" +
+      "_KONG\020\t\022\017\n\013SOUTH_KOREA\020\n*`\n\023AchievementR" +
+      "ankEnum\022\031\n\025ACHIEVEMENT_RANK_NULL\020\000\022\n\n\006BR" +
+      "ONZE\020\001\022\n\n\006SILVER\020\002\022\010\n\004GOLD\020\003\022\014\n\010PLATINUM" +
+      "\020\004*H\n\025AgeRatingCategoryEnum\022\033\n\027AGERATING" +
+      "_CATEGORY_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002*\243\001\n" +
+      "\023AgeRatingRatingEnum\022\031\n\025AGERATING_RATING" +
+      "_NULL\020\000\022\t\n\005THREE\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWELVE\020" +
+      "\003\022\013\n\007SIXTEEN\020\004\022\014\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022\006\n\002" +
+      "EC\020\007\022\005\n\001E\020\010\022\007\n\003E10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n\002AO" +
+      "\020\014*K\n\020GenderGenderEnum\022\026\n\022GENDER_GENDER_" +
+      "NULL\020\000\022\010\n\004MALE\020\001\022\n\n\006FEMALE\020\002\022\t\n\005OTHER\020\003*" +
+      "n\n\024CharacterSpeciesEnum\022\032\n\026CHARACTER_SPE" +
+      "CIES_NULL\020\000\022\t\n\005HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANI" +
+      "MAL\020\003\022\013\n\007ANDROID\020\004\022\013\n\007UNKNOWN\020\005*\202\001\n\037Date" +
+      "FormatStartDateCategoryEnum\022\016\n\nYYYYMMMMD" +
+      "D\020\000\022\014\n\010YYYYMMMM\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022" +
+      "\n\n\006YYYYQ2\020\004\022\n\n\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003T" +
+      "BD\020\007*\304\003\n\023WebsiteCategoryEnum\022\031\n\025WEBSITE_" +
+      "CATEGORY_NULL\020\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n" +
+      "\rWEBSITE_WIKIA\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022" +
+      "\024\n\020WEBSITE_FACEBOOK\020\004\022\023\n\017WEBSITE_TWITTER" +
+      "\020\005\022\022\n\016WEBSITE_TWITCH\020\006\022\025\n\021WEBSITE_INSTAG" +
+      "RAM\020\010\022\023\n\017WEBSITE_YOUTUBE\020\t\022\022\n\016WEBSITE_IP" +
+      "HONE\020\n\022\020\n\014WEBSITE_IPAD\020\013\022\023\n\017WEBSITE_ANDR" +
+      "OID\020\014\022\021\n\rWEBSITE_STEAM\020\r\022\022\n\016WEBSITE_REDD" +
+      "IT\020\016\022\023\n\017WEBSITE_DISCORD\020\017\022\027\n\023WEBSITE_GOO" +
+      "GLE_PLUS\020\020\022\022\n\016WEBSITE_TUMBLR\020\021\022\024\n\020WEBSIT" +
+      "E_LINKEDIN\020\022\022\025\n\021WEBSITE_PINTEREST\020\023\022\026\n\022W" +
+      "EBSITE_SOUNDCLOUD\020\024*\216\001\n\022CreditCategoryEn" +
+      "um\022\030\n\024CREDIT_CATEGORY_NULL\020\000\022\017\n\013VOICE_AC" +
+      "TOR\020\001\022\014\n\010LANGUAGE\020\002\022\022\n\016COMPANY_CREDIT\020\003\022" +
+      "\014\n\010EMPLOYEE\020\004\022\010\n\004MISC\020\005\022\023\n\017SUPPORT_COMPA" +
+      "NY\020\006*\351\001\n\030ExternalGameCategoryEnum\022\036\n\032EXT" +
+      "ERNALGAME_CATEGORY_NULL\020\000\022\026\n\022EXTERNALGAM" +
+      "E_STEAM\020\001\022\024\n\020EXTERNALGAME_GOG\020\005\022\030\n\024EXTER" +
+      "NALGAME_YOUTUBE\020\n\022\032\n\026EXTERNALGAME_MICROS" +
+      "OFT\020\013\022\026\n\022EXTERNALGAME_APPLE\020\r\022\027\n\023EXTERNA" +
+      "LGAME_TWITCH\020\016\022\030\n\024EXTERNALGAME_ANDROID\020\017" +
+      "*\262\001\n\020FeedCategoryEnum\022\026\n\022FEED_CATEGORY_N" +
+      "ULL\020\000\022\021\n\rPULSE_ARTICLE\020\001\022\017\n\013COMING_SOON\020" +
+      "\002\022\017\n\013NEW_TRAILER\020\003\022\031\n\025USER_CONTRIBUTED_I" +
+      "TEM\020\005\022\033\n\027USER_CONTRIBUTIONS_ITEM\020\006\022\031\n\025PA" +
+      "GE_CONTRIBUTED_ITEM\020\007*e\n\020GameCategoryEnu" +
+      "m\022\r\n\tMAIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r\n\tEXPAN" +
+      "SION\020\002\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE_EXPANSI" +
+      "ON\020\004*a\n\016GameStatusEnum\022\014\n\010RELEASED\020\000\022\t\n\005" +
+      "ALPHA\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCESS\020\004\022\013\n\007O" +
+      "FFLINE\020\005\022\r\n\tCANCELLED\020\006*>\n\036GameVersionFe" +
+      "atureCategoryEnum\022\013\n\007BOOLEAN\020\000\022\017\n\013DESCRI" +
+      "PTION\020\001*`\n*GameVersionFeatureValueInclud" +
+      "edFeatureEnum\022\020\n\014NOT_INCLUDED\020\000\022\014\n\010INCLU" +
+      "DED\020\001\022\022\n\016PRE_ORDER_ONLY\020\002*w\n\020PageCategor" +
+      "yEnum\022\026\n\022PAGE_CATEGORY_NULL\020\000\022\017\n\013PERSONA" +
+      "LITY\020\001\022\026\n\022MEDIA_ORGANIZATION\020\002\022\023\n\017CONTEN" +
+      "T_CREATOR\020\003\022\r\n\tCLAN_TEAM\020\004*P\n\016ColorColor" +
+      "Enum\022\t\n\005GREEN\020\000\022\010\n\004BLUE\020\001\022\007\n\003RED\020\002\022\n\n\006OR" +
+      "ANGE\020\003\022\010\n\004PINK\020\004\022\n\n\006YELLOW\020\005*|\n\023PageSubC" +
+      "ategoryEnum\022\032\n\026PAGE_SUB_CATEGORY_NULL\020\000\022" +
+      "\010\n\004USER\020\001\022\010\n\004GAME\020\002\022\013\n\007COMPANY\020\003\022\014\n\010CONS" +
+      "UMER\020\004\022\014\n\010INDUSTRY\020\005\022\014\n\010E_SPORTS\020\006*\223\001\n\024P" +
+      "latformCategoryEnum\022\032\n\026PLATFORM_CATEGORY" +
+      "_NULL\020\000\022\013\n\007CONSOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010PLAT" +
+      "FORM\020\003\022\024\n\020OPERATING_SYSTEM\020\004\022\024\n\020PORTABLE" +
+      "_CONSOLE\020\005\022\014\n\010COMPUTER\020\006*C\n\022ReviewCatego" +
+      "ryEnum\022\030\n\024REVIEW_CATEGORY_NULL\020\000\022\010\n\004TEXT" +
+      "\020\001\022\t\n\005VIDEO\020\002*\220\001\n\030SocialMetricCategoryEn" +
+      "um\022\036\n\032SOCIALMETRIC_CATEGORY_NULL\020\000\022\013\n\007FO" +
+      "LLOWS\020\001\022\t\n\005LIKES\020\002\022\t\n\005HATES\020\003\022\n\n\006SHARES\020" +
+      "\004\022\010\n\004VIEW\020\005\022\014\n\010COMMENTS\020\006\022\r\n\tFAVORITES\020\007" +
+      "*\355\003\n#SocialMetricSourceSocialNetworkEnum" +
+      "\022*\n&SOCIALMETRICSOURCE_SOCIAL_NETWORK_NU" +
+      "LL\020\000\022\037\n\033SOCIALMETRICSOURCE_OFFICIAL\020\001\022\034\n" +
+      "\030SOCIALMETRICSOURCE_WIKIA\020\002\022 \n\034SOCIALMET" +
+      "RICSOURCE_WIKIPEDIA\020\003\022\037\n\033SOCIALMETRICSOU" +
+      "RCE_FACEBOOK\020\004\022\036\n\032SOCIALMETRICSOURCE_TWI" +
+      "TTER\020\005\022\035\n\031SOCIALMETRICSOURCE_TWITCH\020\006\022 \n" +
+      "\034SOCIALMETRICSOURCE_INSTAGRAM\020\010\022\036\n\032SOCIA" +
+      "LMETRICSOURCE_YOUTUBE\020\t\022\035\n\031SOCIALMETRICS" +
+      "OURCE_IPHONE\020\n\022\033\n\027SOCIALMETRICSOURCE_IPA" +
+      "D\020\013\022\036\n\032SOCIALMETRICSOURCE_ANDROID\020\014\022\034\n\030S" +
+      "OCIALMETRICSOURCE_STEAM\020\r\022\035\n\031SOCIALMETRI" +
+      "CSOURCE_REDDIT\020\016*K\n\025TestDummyEnumTestEnu" +
+      "m\022\034\n\030TESTDUMMY_ENUM_TEST_NULL\020\000\022\t\n\005ENUM1" +
+      "\020\001\022\t\n\005ENUM2\020\002*\236\001\n\014UserRoleEnum\022\022\n\016USER_R" +
+      "OLE_NULL\020\000\022\r\n\tUSER_USER\020\001\022\026\n\022USER_ADVANC" +
+      "ED_USER\020\002\022\034\n\030USER_SUPER_ADVANCED_USER\020\003\022" +
+      "\017\n\013USER_KEEPER\020\004\022\016\n\nUSER_ADMIN\020\t\022\024\n\020USER" +
+      "_SUPER_ADMIN\020\nB\004H\002P\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1446,7 +1452,7 @@ public final class IGDBProtoFile {
     internal_static_proto_AlternativeName_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_AlternativeName_descriptor,
-        new java.lang.String[] { "Id", "Comment", "Name", });
+        new java.lang.String[] { "Id", "Comment", "Game", "Name", });
     internal_static_proto_ApiTokenResult_descriptor =
       getDescriptor().getMessageTypes().get(13);
     internal_static_proto_ApiTokenResult_fieldAccessorTable = new
@@ -1470,7 +1476,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Artwork_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Artwork_descriptor,
-        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Height", "ImageId", "Url", "Width", });
+        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", });
     internal_static_proto_CharacterResult_descriptor =
       getDescriptor().getMessageTypes().get(17);
     internal_static_proto_CharacterResult_fieldAccessorTable = new
@@ -1506,7 +1512,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Collection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Collection_descriptor,
-        new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", });
+        new java.lang.String[] { "Id", "CreatedAt", "Games", "Name", "Slug", "UpdatedAt", "Url", });
     internal_static_proto_CompanyResult_descriptor =
       getDescriptor().getMessageTypes().get(23);
     internal_static_proto_CompanyResult_fieldAccessorTable = new
@@ -1554,7 +1560,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Cover_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Cover_descriptor,
-        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Height", "ImageId", "Url", "Width", });
+        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", });
     internal_static_proto_CreditResult_descriptor =
       getDescriptor().getMessageTypes().get(31);
     internal_static_proto_CreditResult_fieldAccessorTable = new
@@ -1626,7 +1632,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Franchise_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Franchise_descriptor,
-        new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", });
+        new java.lang.String[] { "Id", "CreatedAt", "Games", "Name", "Slug", "UpdatedAt", "Url", });
     internal_static_proto_GameResult_descriptor =
       getDescriptor().getMessageTypes().get(43);
     internal_static_proto_GameResult_fieldAccessorTable = new
@@ -1722,7 +1728,7 @@ public final class IGDBProtoFile {
     internal_static_proto_GameVideo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVideo_descriptor,
-        new java.lang.String[] { "Id", "Name", "VideoId", });
+        new java.lang.String[] { "Id", "Game", "Name", "VideoId", });
     internal_static_proto_GenreResult_descriptor =
       getDescriptor().getMessageTypes().get(59);
     internal_static_proto_GenreResult_fieldAccessorTable = new
@@ -1794,7 +1800,7 @@ public final class IGDBProtoFile {
     internal_static_proto_MultiplayerMode_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_MultiplayerMode_descriptor,
-        new java.lang.String[] { "Id", "Campaigncoop", "Dropin", "Lancoop", "Offlinecoop", "Offlinecoopmax", "Offlinemax", "Onlinecoop", "Onlinecoopmax", "Onlinemax", "Platform", "Splitscreen", "Splitscreenonline", });
+        new java.lang.String[] { "Id", "Campaigncoop", "Dropin", "Game", "Lancoop", "Offlinecoop", "Offlinecoopmax", "Offlinemax", "Onlinecoop", "Onlinecoopmax", "Onlinemax", "Platform", "Splitscreen", "Splitscreenonline", });
     internal_static_proto_PageResult_descriptor =
       getDescriptor().getMessageTypes().get(71);
     internal_static_proto_PageResult_fieldAccessorTable = new
@@ -2094,7 +2100,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Screenshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Screenshot_descriptor,
-        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Height", "ImageId", "Url", "Width", });
+        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", });
     internal_static_proto_SearchResult_descriptor =
       getDescriptor().getMessageTypes().get(121);
     internal_static_proto_SearchResult_fieldAccessorTable = new
@@ -2202,7 +2208,7 @@ public final class IGDBProtoFile {
     internal_static_proto_Website_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Website_descriptor,
-        new java.lang.String[] { "Id", "Category", "Trusted", "Url", });
+        new java.lang.String[] { "Id", "Category", "Game", "Trusted", "Url", });
     com.google.protobuf.TimestampProto.getDescriptor();
   }
 

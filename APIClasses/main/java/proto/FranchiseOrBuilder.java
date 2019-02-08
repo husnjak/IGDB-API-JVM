@@ -26,44 +26,68 @@ public interface FranchiseOrBuilder extends
   com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
 
   /**
-   * <code>string name = 3;</code>
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  java.util.List<proto.Game> 
+      getGamesList();
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  proto.Game getGames(int index);
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  int getGamesCount();
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getGamesOrBuilderList();
+  /**
+   * <code>repeated .proto.Game games = 3;</code>
+   */
+  proto.GameOrBuilder getGamesOrBuilder(
+      int index);
+
+  /**
+   * <code>string name = 4;</code>
    */
   java.lang.String getName();
   /**
-   * <code>string name = 3;</code>
+   * <code>string name = 4;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>string slug = 4;</code>
+   * <code>string slug = 5;</code>
    */
   java.lang.String getSlug();
   /**
-   * <code>string slug = 4;</code>
+   * <code>string slug = 5;</code>
    */
   com.google.protobuf.ByteString
       getSlugBytes();
 
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   boolean hasUpdatedAt();
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
-   * <code>.google.protobuf.Timestamp updatedAt = 5;</code>
+   * <code>.google.protobuf.Timestamp updatedAt = 6;</code>
    */
   com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
 
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   java.lang.String getUrl();
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   com.google.protobuf.ByteString
       getUrlBytes();

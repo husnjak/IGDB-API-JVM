@@ -70,19 +70,40 @@ private static final long serialVersionUID = 0L;
     return animated_;
   }
 
-  public static final int HEIGHT_FIELD_NUMBER = 4;
+  public static final int GAME_FIELD_NUMBER = 4;
+  private proto.Game game_;
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public boolean hasGame() {
+    return game_ != null;
+  }
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public proto.Game getGame() {
+    return game_ == null ? proto.Game.getDefaultInstance() : game_;
+  }
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public proto.GameOrBuilder getGameOrBuilder() {
+    return getGame();
+  }
+
+  public static final int HEIGHT_FIELD_NUMBER = 5;
   private int height_;
   /**
-   * <code>int32 height = 4;</code>
+   * <code>int32 height = 5;</code>
    */
   public int getHeight() {
     return height_;
   }
 
-  public static final int IMAGEID_FIELD_NUMBER = 5;
+  public static final int IMAGEID_FIELD_NUMBER = 6;
   private volatile java.lang.Object imageId_;
   /**
-   * <code>string imageId = 5;</code>
+   * <code>string imageId = 6;</code>
    */
   public java.lang.String getImageId() {
     java.lang.Object ref = imageId_;
@@ -97,7 +118,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string imageId = 5;</code>
+   * <code>string imageId = 6;</code>
    */
   public com.google.protobuf.ByteString
       getImageIdBytes() {
@@ -113,10 +134,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int URL_FIELD_NUMBER = 6;
+  public static final int URL_FIELD_NUMBER = 7;
   private volatile java.lang.Object url_;
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -131,7 +152,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   public com.google.protobuf.ByteString
       getUrlBytes() {
@@ -147,10 +168,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int WIDTH_FIELD_NUMBER = 7;
+  public static final int WIDTH_FIELD_NUMBER = 8;
   private int width_;
   /**
-   * <code>int32 width = 7;</code>
+   * <code>int32 width = 8;</code>
    */
   public int getWidth() {
     return width_;
@@ -290,6 +311,12 @@ private static final long serialVersionUID = 0L;
 
       animated_ = false;
 
+      if (gameBuilder_ == null) {
+        game_ = null;
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
       height_ = 0;
 
       imageId_ = "";
@@ -327,6 +354,11 @@ private static final long serialVersionUID = 0L;
       result.id_ = id_;
       result.alphaChannel_ = alphaChannel_;
       result.animated_ = animated_;
+      if (gameBuilder_ == null) {
+        result.game_ = game_;
+      } else {
+        result.game_ = gameBuilder_.build();
+      }
       result.height_ = height_;
       result.imageId_ = imageId_;
       result.url_ = url_;
@@ -446,15 +478,132 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private proto.Game game_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public boolean hasGame() {
+      return gameBuilder_ != null || game_ != null;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.Game getGame() {
+      if (gameBuilder_ == null) {
+        return game_ == null ? proto.Game.getDefaultInstance() : game_;
+      } else {
+        return gameBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder setGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        game_ = value;
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder setGame(
+        proto.Game.Builder builderForValue) {
+      if (gameBuilder_ == null) {
+        game_ = builderForValue.build();
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder mergeGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (game_ != null) {
+          game_ =
+            proto.Game.newBuilder(game_).mergeFrom(value).buildPartial();
+        } else {
+          game_ = value;
+        }
+        onChanged();
+      } else {
+        gameBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder clearGame() {
+      if (gameBuilder_ == null) {
+        game_ = null;
+        onChanged();
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.Game.Builder getGameBuilder() {
+      
+      onChanged();
+      return getGameFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.GameOrBuilder getGameOrBuilder() {
+      if (gameBuilder_ != null) {
+        return gameBuilder_.getMessageOrBuilder();
+      } else {
+        return game_ == null ?
+            proto.Game.getDefaultInstance() : game_;
+      }
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getGameFieldBuilder() {
+      if (gameBuilder_ == null) {
+        gameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                getGame(),
+                getParentForChildren(),
+                isClean());
+        game_ = null;
+      }
+      return gameBuilder_;
+    }
+
     private int height_ ;
     /**
-     * <code>int32 height = 4;</code>
+     * <code>int32 height = 5;</code>
      */
     public int getHeight() {
       return height_;
     }
     /**
-     * <code>int32 height = 4;</code>
+     * <code>int32 height = 5;</code>
      */
     public Builder setHeight(int value) {
       
@@ -463,7 +612,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 height = 4;</code>
+     * <code>int32 height = 5;</code>
      */
     public Builder clearHeight() {
       
@@ -474,7 +623,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object imageId_ = "";
     /**
-     * <code>string imageId = 5;</code>
+     * <code>string imageId = 6;</code>
      */
     public java.lang.String getImageId() {
       java.lang.Object ref = imageId_;
@@ -489,7 +638,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string imageId = 5;</code>
+     * <code>string imageId = 6;</code>
      */
     public com.google.protobuf.ByteString
         getImageIdBytes() {
@@ -505,7 +654,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string imageId = 5;</code>
+     * <code>string imageId = 6;</code>
      */
     public Builder setImageId(
         java.lang.String value) {
@@ -518,7 +667,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string imageId = 5;</code>
+     * <code>string imageId = 6;</code>
      */
     public Builder clearImageId() {
       
@@ -527,7 +676,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string imageId = 5;</code>
+     * <code>string imageId = 6;</code>
      */
     public Builder setImageIdBytes(
         com.google.protobuf.ByteString value) {
@@ -543,7 +692,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object url_ = "";
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -558,7 +707,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -574,7 +723,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -587,7 +736,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder clearUrl() {
       
@@ -596,7 +745,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string url = 6;</code>
+     * <code>string url = 7;</code>
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -612,13 +761,13 @@ private static final long serialVersionUID = 0L;
 
     private int width_ ;
     /**
-     * <code>int32 width = 7;</code>
+     * <code>int32 width = 8;</code>
      */
     public int getWidth() {
       return width_;
     }
     /**
-     * <code>int32 width = 7;</code>
+     * <code>int32 width = 8;</code>
      */
     public Builder setWidth(int value) {
       
@@ -627,7 +776,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 width = 7;</code>
+     * <code>int32 width = 8;</code>
      */
     public Builder clearWidth() {
       

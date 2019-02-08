@@ -6,7 +6,7 @@ class TestImageBuilder {
 
     @BeforeEach
     fun setup() {
-        wrapper.userkey = System.getenv("key")
+        wrapper.userkey = "260ebcadb73853584b3d7526f9ebfe7b" //System.getenv("key")
     }
 
     // TODO change url to image_id after covers bug is resolved! API3-214
@@ -20,7 +20,7 @@ class TestImageBuilder {
             val covers = wrapper.covers(query)
             assert(!covers.isEmpty())
             val firstCover = covers.first()
-            val coverUrl = imageBuilder(firstCover.url, ImageSize.HD, ImageType.JPEG)
+            val coverUrl = imageBuilder(firstCover.imageId, ImageSize.HD, ImageType.JPEG)
             assert(coverUrl.isNotBlank())
             assert(coverUrl.substringAfterLast(".") == "jpg")
 
@@ -38,7 +38,7 @@ class TestImageBuilder {
             val covers = wrapper.covers(query)
             assert(!covers.isEmpty())
             val firstCover = covers.first()
-            val coverUrl = imageBuilder(firstCover.url, ImageSize.THUMB, ImageType.PNG)
+            val coverUrl = imageBuilder(firstCover.imageId, ImageSize.THUMB, ImageType.PNG)
             assert(coverUrl.isNotBlank())
             assert(coverUrl.substringAfterLast(".") == "png")
 
@@ -56,7 +56,7 @@ class TestImageBuilder {
             val covers = wrapper.covers(query)
             assert(!covers.isEmpty())
             val firstCover = covers.first()
-            val coverUrl = imageBuilder(firstCover.url, ImageSize.LOGO_MEDIUM, ImageType.GIF)
+            val coverUrl = imageBuilder(firstCover.imageId, ImageSize.LOGO_MEDIUM, ImageType.GIF)
             assert(coverUrl.isNotBlank())
             assert(coverUrl.substringAfterLast(".") == "gif")
 
@@ -74,7 +74,7 @@ class TestImageBuilder {
             val covers = wrapper.covers(query)
             assert(!covers.isEmpty())
             val firstCover = covers.first()
-            val coverUrl = imageBuilder(firstCover.url, ImageSize.SCREENSHOT_HUGE, ImageType.WEBP)
+            val coverUrl = imageBuilder(firstCover.imageId, ImageSize.SCREENSHOT_HUGE, ImageType.WEBP)
             assert(coverUrl.isNotBlank())
             assert(coverUrl.substringAfterLast(".") == "webp")
 

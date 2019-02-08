@@ -144,7 +144,8 @@ message AlternativeNameResult {
 message AlternativeName {
     uint64 id = 1;
     string comment = 2;
-    string name = 3;
+    Game game = 3;
+    string name = 4;
 }
 
 message ApiTokenResult {
@@ -167,10 +168,11 @@ message Artwork {
     uint64 id = 1;
     bool alphaChannel = 2;
     bool animated = 3;
-    int32 height = 4;
-    string imageId = 5;
-    string url = 6;
-    int32 width = 7;
+    Game game = 4;
+    int32 height = 5;
+    string imageId = 6;
+    string url = 7;
+    int32 width = 8;
 }
 
 message CharacterResult {
@@ -233,10 +235,11 @@ message CollectionResult {
 message Collection {
     uint64 id = 1;
     google.protobuf.Timestamp createdAt = 2;
-    string name = 3;
-    string slug = 4;
-    google.protobuf.Timestamp updatedAt = 5;
-    string url = 6;
+    repeated Game games = 3;
+    string name = 4;
+    string slug = 5;
+    google.protobuf.Timestamp updatedAt = 6;
+    string url = 7;
 }
 
 message CompanyResult {
@@ -333,10 +336,11 @@ message Cover {
     uint64 id = 1;
     bool alphaChannel = 2;
     bool animated = 3;
-    int32 height = 4;
-    string imageId = 5;
-    string url = 6;
-    int32 width = 7;
+    Game game = 4;
+    int32 height = 5;
+    string imageId = 6;
+    string url = 7;
+    int32 width = 8;
 }
 
 message CreditResult {
@@ -462,10 +466,11 @@ message FranchiseResult {
 message Franchise {
     uint64 id = 1;
     google.protobuf.Timestamp createdAt = 2;
-    string name = 3;
-    string slug = 4;
-    google.protobuf.Timestamp updatedAt = 5;
-    string url = 6;
+    repeated Game games = 3;
+    string name = 4;
+    string slug = 5;
+    google.protobuf.Timestamp updatedAt = 6;
+    string url = 7;
 }
 
 message GameResult {
@@ -648,8 +653,9 @@ message GameVideoResult {
 
 message GameVideo {
     uint64 id = 1;
-    string name = 2;
-    string videoId = 3;
+    Game game = 2;
+    string name = 3;
+    string videoId = 4;
 }
 
 message GenreResult {
@@ -737,16 +743,17 @@ message MultiplayerMode {
     uint64 id = 1;
     bool campaigncoop = 2;
     bool dropin = 3;
-    bool lancoop = 4;
-    bool offlinecoop = 5;
-    int32 offlinecoopmax = 6;
-    int32 offlinemax = 7;
-    bool onlinecoop = 8;
-    int32 onlinecoopmax = 9;
-    int32 onlinemax = 10;
-    Platform platform = 11;
-    bool splitscreen = 12;
-    bool splitscreenonline = 13;
+    Game game = 4;
+    bool lancoop = 5;
+    bool offlinecoop = 6;
+    int32 offlinecoopmax = 7;
+    int32 offlinemax = 8;
+    bool onlinecoop = 9;
+    int32 onlinecoopmax = 10;
+    int32 onlinemax = 11;
+    Platform platform = 12;
+    bool splitscreen = 13;
+    bool splitscreenonline = 14;
 }
 
 message PageResult {
@@ -1186,10 +1193,11 @@ message Screenshot {
     uint64 id = 1;
     bool alphaChannel = 2;
     bool animated = 3;
-    int32 height = 4;
-    string imageId = 5;
-    string url = 6;
-    int32 width = 7;
+    Game game = 4;
+    int32 height = 5;
+    string imageId = 6;
+    string url = 7;
+    int32 width = 8;
 }
 
 message SearchResult {
@@ -1400,6 +1408,7 @@ message WebsiteResult {
 message Website {
     uint64 id = 1;
     WebsiteCategoryEnum category = 2;
-    bool trusted = 3;
-    string url = 4;
+    Game game = 3;
+    bool trusted = 4;
+    string url = 5;
 }

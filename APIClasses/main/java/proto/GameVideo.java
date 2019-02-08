@@ -48,10 +48,31 @@ private static final long serialVersionUID = 0L;
     return id_;
   }
 
-  public static final int NAME_FIELD_NUMBER = 2;
+  public static final int GAME_FIELD_NUMBER = 2;
+  private proto.Game game_;
+  /**
+   * <code>.proto.Game game = 2;</code>
+   */
+  public boolean hasGame() {
+    return game_ != null;
+  }
+  /**
+   * <code>.proto.Game game = 2;</code>
+   */
+  public proto.Game getGame() {
+    return game_ == null ? proto.Game.getDefaultInstance() : game_;
+  }
+  /**
+   * <code>.proto.Game game = 2;</code>
+   */
+  public proto.GameOrBuilder getGameOrBuilder() {
+    return getGame();
+  }
+
+  public static final int NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object name_;
   /**
-   * <code>string name = 2;</code>
+   * <code>string name = 3;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -66,7 +87,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string name = 2;</code>
+   * <code>string name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -82,10 +103,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int VIDEOID_FIELD_NUMBER = 3;
+  public static final int VIDEOID_FIELD_NUMBER = 4;
   private volatile java.lang.Object videoId_;
   /**
-   * <code>string videoId = 3;</code>
+   * <code>string videoId = 4;</code>
    */
   public java.lang.String getVideoId() {
     java.lang.Object ref = videoId_;
@@ -100,7 +121,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string videoId = 3;</code>
+   * <code>string videoId = 4;</code>
    */
   public com.google.protobuf.ByteString
       getVideoIdBytes() {
@@ -246,6 +267,12 @@ private static final long serialVersionUID = 0L;
       super.clear();
       id_ = 0L;
 
+      if (gameBuilder_ == null) {
+        game_ = null;
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
       name_ = "";
 
       videoId_ = "";
@@ -277,6 +304,11 @@ private static final long serialVersionUID = 0L;
     public proto.GameVideo buildPartial() {
       proto.GameVideo result = new proto.GameVideo(this);
       result.id_ = id_;
+      if (gameBuilder_ == null) {
+        result.game_ = game_;
+      } else {
+        result.game_ = gameBuilder_.build();
+      }
       result.name_ = name_;
       result.videoId_ = videoId_;
       onBuilt();
@@ -342,9 +374,126 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private proto.Game game_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public boolean hasGame() {
+      return gameBuilder_ != null || game_ != null;
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public proto.Game getGame() {
+      if (gameBuilder_ == null) {
+        return game_ == null ? proto.Game.getDefaultInstance() : game_;
+      } else {
+        return gameBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public Builder setGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        game_ = value;
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public Builder setGame(
+        proto.Game.Builder builderForValue) {
+      if (gameBuilder_ == null) {
+        game_ = builderForValue.build();
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public Builder mergeGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (game_ != null) {
+          game_ =
+            proto.Game.newBuilder(game_).mergeFrom(value).buildPartial();
+        } else {
+          game_ = value;
+        }
+        onChanged();
+      } else {
+        gameBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public Builder clearGame() {
+      if (gameBuilder_ == null) {
+        game_ = null;
+        onChanged();
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public proto.Game.Builder getGameBuilder() {
+      
+      onChanged();
+      return getGameFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    public proto.GameOrBuilder getGameOrBuilder() {
+      if (gameBuilder_ != null) {
+        return gameBuilder_.getMessageOrBuilder();
+      } else {
+        return game_ == null ?
+            proto.Game.getDefaultInstance() : game_;
+      }
+    }
+    /**
+     * <code>.proto.Game game = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getGameFieldBuilder() {
+      if (gameBuilder_ == null) {
+        gameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                getGame(),
+                getParentForChildren(),
+                isClean());
+        game_ = null;
+      }
+      return gameBuilder_;
+    }
+
     private java.lang.Object name_ = "";
     /**
-     * <code>string name = 2;</code>
+     * <code>string name = 3;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -359,7 +508,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string name = 2;</code>
+     * <code>string name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -375,7 +524,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string name = 2;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -388,7 +537,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string name = 2;</code>
+     * <code>string name = 3;</code>
      */
     public Builder clearName() {
       
@@ -397,7 +546,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string name = 2;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -413,7 +562,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object videoId_ = "";
     /**
-     * <code>string videoId = 3;</code>
+     * <code>string videoId = 4;</code>
      */
     public java.lang.String getVideoId() {
       java.lang.Object ref = videoId_;
@@ -428,7 +577,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string videoId = 3;</code>
+     * <code>string videoId = 4;</code>
      */
     public com.google.protobuf.ByteString
         getVideoIdBytes() {
@@ -444,7 +593,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string videoId = 3;</code>
+     * <code>string videoId = 4;</code>
      */
     public Builder setVideoId(
         java.lang.String value) {
@@ -457,7 +606,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string videoId = 3;</code>
+     * <code>string videoId = 4;</code>
      */
     public Builder clearVideoId() {
       
@@ -466,7 +615,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string videoId = 3;</code>
+     * <code>string videoId = 4;</code>
      */
     public Builder setVideoIdBytes(
         com.google.protobuf.ByteString value) {

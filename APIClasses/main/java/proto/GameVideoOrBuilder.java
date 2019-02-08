@@ -13,21 +13,34 @@ public interface GameVideoOrBuilder extends
   long getId();
 
   /**
-   * <code>string name = 2;</code>
+   * <code>.proto.Game game = 2;</code>
+   */
+  boolean hasGame();
+  /**
+   * <code>.proto.Game game = 2;</code>
+   */
+  proto.Game getGame();
+  /**
+   * <code>.proto.Game game = 2;</code>
+   */
+  proto.GameOrBuilder getGameOrBuilder();
+
+  /**
+   * <code>string name = 3;</code>
    */
   java.lang.String getName();
   /**
-   * <code>string name = 2;</code>
+   * <code>string name = 3;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>string videoId = 3;</code>
+   * <code>string videoId = 4;</code>
    */
   java.lang.String getVideoId();
   /**
-   * <code>string videoId = 3;</code>
+   * <code>string videoId = 4;</code>
    */
   com.google.protobuf.ByteString
       getVideoIdBytes();

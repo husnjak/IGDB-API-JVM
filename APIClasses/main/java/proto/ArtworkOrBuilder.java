@@ -23,32 +23,45 @@ public interface ArtworkOrBuilder extends
   boolean getAnimated();
 
   /**
-   * <code>int32 height = 4;</code>
+   * <code>.proto.Game game = 4;</code>
+   */
+  boolean hasGame();
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  proto.Game getGame();
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  proto.GameOrBuilder getGameOrBuilder();
+
+  /**
+   * <code>int32 height = 5;</code>
    */
   int getHeight();
 
   /**
-   * <code>string imageId = 5;</code>
+   * <code>string imageId = 6;</code>
    */
   java.lang.String getImageId();
   /**
-   * <code>string imageId = 5;</code>
+   * <code>string imageId = 6;</code>
    */
   com.google.protobuf.ByteString
       getImageIdBytes();
 
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   java.lang.String getUrl();
   /**
-   * <code>string url = 6;</code>
+   * <code>string url = 7;</code>
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
-   * <code>int32 width = 7;</code>
+   * <code>int32 width = 8;</code>
    */
   int getWidth();
 }

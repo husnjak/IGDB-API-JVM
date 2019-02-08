@@ -106,7 +106,7 @@ class TestJavaWrapper {
             List<Cover> covers = ProtoRequestKt.covers(wrapper, query);
             assert(!covers.isEmpty());
             Cover firstCover = covers.get(0);
-            String coverUrl = ImageBuilderKt.imageBuilder(firstCover.getUrl(), ImageSize.HD, ImageType.JPEG);
+            String coverUrl = ImageBuilderKt.imageBuilder(firstCover.getImageId(), ImageSize.HD, ImageType.JPEG);
             assert(!coverUrl.isEmpty());
             assert(coverUrl.substring(coverUrl.length() - 3).equals("jpg"));
 

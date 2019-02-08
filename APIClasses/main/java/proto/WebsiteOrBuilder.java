@@ -22,16 +22,29 @@ public interface WebsiteOrBuilder extends
   proto.WebsiteCategoryEnum getCategory();
 
   /**
-   * <code>bool trusted = 3;</code>
+   * <code>.proto.Game game = 3;</code>
+   */
+  boolean hasGame();
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  proto.Game getGame();
+  /**
+   * <code>.proto.Game game = 3;</code>
+   */
+  proto.GameOrBuilder getGameOrBuilder();
+
+  /**
+   * <code>bool trusted = 4;</code>
    */
   boolean getTrusted();
 
   /**
-   * <code>string url = 4;</code>
+   * <code>string url = 5;</code>
    */
   java.lang.String getUrl();
   /**
-   * <code>string url = 4;</code>
+   * <code>string url = 5;</code>
    */
   com.google.protobuf.ByteString
       getUrlBytes();

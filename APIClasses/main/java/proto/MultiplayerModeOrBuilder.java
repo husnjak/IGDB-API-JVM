@@ -23,60 +23,73 @@ public interface MultiplayerModeOrBuilder extends
   boolean getDropin();
 
   /**
-   * <code>bool lancoop = 4;</code>
+   * <code>.proto.Game game = 4;</code>
+   */
+  boolean hasGame();
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  proto.Game getGame();
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  proto.GameOrBuilder getGameOrBuilder();
+
+  /**
+   * <code>bool lancoop = 5;</code>
    */
   boolean getLancoop();
 
   /**
-   * <code>bool offlinecoop = 5;</code>
+   * <code>bool offlinecoop = 6;</code>
    */
   boolean getOfflinecoop();
 
   /**
-   * <code>int32 offlinecoopmax = 6;</code>
+   * <code>int32 offlinecoopmax = 7;</code>
    */
   int getOfflinecoopmax();
 
   /**
-   * <code>int32 offlinemax = 7;</code>
+   * <code>int32 offlinemax = 8;</code>
    */
   int getOfflinemax();
 
   /**
-   * <code>bool onlinecoop = 8;</code>
+   * <code>bool onlinecoop = 9;</code>
    */
   boolean getOnlinecoop();
 
   /**
-   * <code>int32 onlinecoopmax = 9;</code>
+   * <code>int32 onlinecoopmax = 10;</code>
    */
   int getOnlinecoopmax();
 
   /**
-   * <code>int32 onlinemax = 10;</code>
+   * <code>int32 onlinemax = 11;</code>
    */
   int getOnlinemax();
 
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   boolean hasPlatform();
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   proto.Platform getPlatform();
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   proto.PlatformOrBuilder getPlatformOrBuilder();
 
   /**
-   * <code>bool splitscreen = 12;</code>
+   * <code>bool splitscreen = 13;</code>
    */
   boolean getSplitscreen();
 
   /**
-   * <code>bool splitscreenonline = 13;</code>
+   * <code>bool splitscreenonline = 14;</code>
    */
   boolean getSplitscreenonline();
 }

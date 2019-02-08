@@ -75,103 +75,124 @@ private static final long serialVersionUID = 0L;
     return dropin_;
   }
 
-  public static final int LANCOOP_FIELD_NUMBER = 4;
+  public static final int GAME_FIELD_NUMBER = 4;
+  private proto.Game game_;
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public boolean hasGame() {
+    return game_ != null;
+  }
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public proto.Game getGame() {
+    return game_ == null ? proto.Game.getDefaultInstance() : game_;
+  }
+  /**
+   * <code>.proto.Game game = 4;</code>
+   */
+  public proto.GameOrBuilder getGameOrBuilder() {
+    return getGame();
+  }
+
+  public static final int LANCOOP_FIELD_NUMBER = 5;
   private boolean lancoop_;
   /**
-   * <code>bool lancoop = 4;</code>
+   * <code>bool lancoop = 5;</code>
    */
   public boolean getLancoop() {
     return lancoop_;
   }
 
-  public static final int OFFLINECOOP_FIELD_NUMBER = 5;
+  public static final int OFFLINECOOP_FIELD_NUMBER = 6;
   private boolean offlinecoop_;
   /**
-   * <code>bool offlinecoop = 5;</code>
+   * <code>bool offlinecoop = 6;</code>
    */
   public boolean getOfflinecoop() {
     return offlinecoop_;
   }
 
-  public static final int OFFLINECOOPMAX_FIELD_NUMBER = 6;
+  public static final int OFFLINECOOPMAX_FIELD_NUMBER = 7;
   private int offlinecoopmax_;
   /**
-   * <code>int32 offlinecoopmax = 6;</code>
+   * <code>int32 offlinecoopmax = 7;</code>
    */
   public int getOfflinecoopmax() {
     return offlinecoopmax_;
   }
 
-  public static final int OFFLINEMAX_FIELD_NUMBER = 7;
+  public static final int OFFLINEMAX_FIELD_NUMBER = 8;
   private int offlinemax_;
   /**
-   * <code>int32 offlinemax = 7;</code>
+   * <code>int32 offlinemax = 8;</code>
    */
   public int getOfflinemax() {
     return offlinemax_;
   }
 
-  public static final int ONLINECOOP_FIELD_NUMBER = 8;
+  public static final int ONLINECOOP_FIELD_NUMBER = 9;
   private boolean onlinecoop_;
   /**
-   * <code>bool onlinecoop = 8;</code>
+   * <code>bool onlinecoop = 9;</code>
    */
   public boolean getOnlinecoop() {
     return onlinecoop_;
   }
 
-  public static final int ONLINECOOPMAX_FIELD_NUMBER = 9;
+  public static final int ONLINECOOPMAX_FIELD_NUMBER = 10;
   private int onlinecoopmax_;
   /**
-   * <code>int32 onlinecoopmax = 9;</code>
+   * <code>int32 onlinecoopmax = 10;</code>
    */
   public int getOnlinecoopmax() {
     return onlinecoopmax_;
   }
 
-  public static final int ONLINEMAX_FIELD_NUMBER = 10;
+  public static final int ONLINEMAX_FIELD_NUMBER = 11;
   private int onlinemax_;
   /**
-   * <code>int32 onlinemax = 10;</code>
+   * <code>int32 onlinemax = 11;</code>
    */
   public int getOnlinemax() {
     return onlinemax_;
   }
 
-  public static final int PLATFORM_FIELD_NUMBER = 11;
+  public static final int PLATFORM_FIELD_NUMBER = 12;
   private proto.Platform platform_;
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   public boolean hasPlatform() {
     return platform_ != null;
   }
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   public proto.Platform getPlatform() {
     return platform_ == null ? proto.Platform.getDefaultInstance() : platform_;
   }
   /**
-   * <code>.proto.Platform platform = 11;</code>
+   * <code>.proto.Platform platform = 12;</code>
    */
   public proto.PlatformOrBuilder getPlatformOrBuilder() {
     return getPlatform();
   }
 
-  public static final int SPLITSCREEN_FIELD_NUMBER = 12;
+  public static final int SPLITSCREEN_FIELD_NUMBER = 13;
   private boolean splitscreen_;
   /**
-   * <code>bool splitscreen = 12;</code>
+   * <code>bool splitscreen = 13;</code>
    */
   public boolean getSplitscreen() {
     return splitscreen_;
   }
 
-  public static final int SPLITSCREENONLINE_FIELD_NUMBER = 13;
+  public static final int SPLITSCREENONLINE_FIELD_NUMBER = 14;
   private boolean splitscreenonline_;
   /**
-   * <code>bool splitscreenonline = 13;</code>
+   * <code>bool splitscreenonline = 14;</code>
    */
   public boolean getSplitscreenonline() {
     return splitscreenonline_;
@@ -311,6 +332,12 @@ private static final long serialVersionUID = 0L;
 
       dropin_ = false;
 
+      if (gameBuilder_ == null) {
+        game_ = null;
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
       lancoop_ = false;
 
       offlinecoop_ = false;
@@ -364,6 +391,11 @@ private static final long serialVersionUID = 0L;
       result.id_ = id_;
       result.campaigncoop_ = campaigncoop_;
       result.dropin_ = dropin_;
+      if (gameBuilder_ == null) {
+        result.game_ = game_;
+      } else {
+        result.game_ = gameBuilder_.build();
+      }
       result.lancoop_ = lancoop_;
       result.offlinecoop_ = offlinecoop_;
       result.offlinecoopmax_ = offlinecoopmax_;
@@ -493,15 +525,132 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private proto.Game game_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public boolean hasGame() {
+      return gameBuilder_ != null || game_ != null;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.Game getGame() {
+      if (gameBuilder_ == null) {
+        return game_ == null ? proto.Game.getDefaultInstance() : game_;
+      } else {
+        return gameBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder setGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        game_ = value;
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder setGame(
+        proto.Game.Builder builderForValue) {
+      if (gameBuilder_ == null) {
+        game_ = builderForValue.build();
+        onChanged();
+      } else {
+        gameBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder mergeGame(proto.Game value) {
+      if (gameBuilder_ == null) {
+        if (game_ != null) {
+          game_ =
+            proto.Game.newBuilder(game_).mergeFrom(value).buildPartial();
+        } else {
+          game_ = value;
+        }
+        onChanged();
+      } else {
+        gameBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public Builder clearGame() {
+      if (gameBuilder_ == null) {
+        game_ = null;
+        onChanged();
+      } else {
+        game_ = null;
+        gameBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.Game.Builder getGameBuilder() {
+      
+      onChanged();
+      return getGameFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    public proto.GameOrBuilder getGameOrBuilder() {
+      if (gameBuilder_ != null) {
+        return gameBuilder_.getMessageOrBuilder();
+      } else {
+        return game_ == null ?
+            proto.Game.getDefaultInstance() : game_;
+      }
+    }
+    /**
+     * <code>.proto.Game game = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getGameFieldBuilder() {
+      if (gameBuilder_ == null) {
+        gameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                getGame(),
+                getParentForChildren(),
+                isClean());
+        game_ = null;
+      }
+      return gameBuilder_;
+    }
+
     private boolean lancoop_ ;
     /**
-     * <code>bool lancoop = 4;</code>
+     * <code>bool lancoop = 5;</code>
      */
     public boolean getLancoop() {
       return lancoop_;
     }
     /**
-     * <code>bool lancoop = 4;</code>
+     * <code>bool lancoop = 5;</code>
      */
     public Builder setLancoop(boolean value) {
       
@@ -510,7 +659,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool lancoop = 4;</code>
+     * <code>bool lancoop = 5;</code>
      */
     public Builder clearLancoop() {
       
@@ -521,13 +670,13 @@ private static final long serialVersionUID = 0L;
 
     private boolean offlinecoop_ ;
     /**
-     * <code>bool offlinecoop = 5;</code>
+     * <code>bool offlinecoop = 6;</code>
      */
     public boolean getOfflinecoop() {
       return offlinecoop_;
     }
     /**
-     * <code>bool offlinecoop = 5;</code>
+     * <code>bool offlinecoop = 6;</code>
      */
     public Builder setOfflinecoop(boolean value) {
       
@@ -536,7 +685,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool offlinecoop = 5;</code>
+     * <code>bool offlinecoop = 6;</code>
      */
     public Builder clearOfflinecoop() {
       
@@ -547,13 +696,13 @@ private static final long serialVersionUID = 0L;
 
     private int offlinecoopmax_ ;
     /**
-     * <code>int32 offlinecoopmax = 6;</code>
+     * <code>int32 offlinecoopmax = 7;</code>
      */
     public int getOfflinecoopmax() {
       return offlinecoopmax_;
     }
     /**
-     * <code>int32 offlinecoopmax = 6;</code>
+     * <code>int32 offlinecoopmax = 7;</code>
      */
     public Builder setOfflinecoopmax(int value) {
       
@@ -562,7 +711,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 offlinecoopmax = 6;</code>
+     * <code>int32 offlinecoopmax = 7;</code>
      */
     public Builder clearOfflinecoopmax() {
       
@@ -573,13 +722,13 @@ private static final long serialVersionUID = 0L;
 
     private int offlinemax_ ;
     /**
-     * <code>int32 offlinemax = 7;</code>
+     * <code>int32 offlinemax = 8;</code>
      */
     public int getOfflinemax() {
       return offlinemax_;
     }
     /**
-     * <code>int32 offlinemax = 7;</code>
+     * <code>int32 offlinemax = 8;</code>
      */
     public Builder setOfflinemax(int value) {
       
@@ -588,7 +737,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 offlinemax = 7;</code>
+     * <code>int32 offlinemax = 8;</code>
      */
     public Builder clearOfflinemax() {
       
@@ -599,13 +748,13 @@ private static final long serialVersionUID = 0L;
 
     private boolean onlinecoop_ ;
     /**
-     * <code>bool onlinecoop = 8;</code>
+     * <code>bool onlinecoop = 9;</code>
      */
     public boolean getOnlinecoop() {
       return onlinecoop_;
     }
     /**
-     * <code>bool onlinecoop = 8;</code>
+     * <code>bool onlinecoop = 9;</code>
      */
     public Builder setOnlinecoop(boolean value) {
       
@@ -614,7 +763,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool onlinecoop = 8;</code>
+     * <code>bool onlinecoop = 9;</code>
      */
     public Builder clearOnlinecoop() {
       
@@ -625,13 +774,13 @@ private static final long serialVersionUID = 0L;
 
     private int onlinecoopmax_ ;
     /**
-     * <code>int32 onlinecoopmax = 9;</code>
+     * <code>int32 onlinecoopmax = 10;</code>
      */
     public int getOnlinecoopmax() {
       return onlinecoopmax_;
     }
     /**
-     * <code>int32 onlinecoopmax = 9;</code>
+     * <code>int32 onlinecoopmax = 10;</code>
      */
     public Builder setOnlinecoopmax(int value) {
       
@@ -640,7 +789,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 onlinecoopmax = 9;</code>
+     * <code>int32 onlinecoopmax = 10;</code>
      */
     public Builder clearOnlinecoopmax() {
       
@@ -651,13 +800,13 @@ private static final long serialVersionUID = 0L;
 
     private int onlinemax_ ;
     /**
-     * <code>int32 onlinemax = 10;</code>
+     * <code>int32 onlinemax = 11;</code>
      */
     public int getOnlinemax() {
       return onlinemax_;
     }
     /**
-     * <code>int32 onlinemax = 10;</code>
+     * <code>int32 onlinemax = 11;</code>
      */
     public Builder setOnlinemax(int value) {
       
@@ -666,7 +815,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 onlinemax = 10;</code>
+     * <code>int32 onlinemax = 11;</code>
      */
     public Builder clearOnlinemax() {
       
@@ -679,13 +828,13 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder> platformBuilder_;
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public boolean hasPlatform() {
       return platformBuilder_ != null || platform_ != null;
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public proto.Platform getPlatform() {
       if (platformBuilder_ == null) {
@@ -695,7 +844,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public Builder setPlatform(proto.Platform value) {
       if (platformBuilder_ == null) {
@@ -711,7 +860,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public Builder setPlatform(
         proto.Platform.Builder builderForValue) {
@@ -725,7 +874,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public Builder mergePlatform(proto.Platform value) {
       if (platformBuilder_ == null) {
@@ -743,7 +892,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public Builder clearPlatform() {
       if (platformBuilder_ == null) {
@@ -757,7 +906,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public proto.Platform.Builder getPlatformBuilder() {
       
@@ -765,7 +914,7 @@ private static final long serialVersionUID = 0L;
       return getPlatformFieldBuilder().getBuilder();
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     public proto.PlatformOrBuilder getPlatformOrBuilder() {
       if (platformBuilder_ != null) {
@@ -776,7 +925,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.proto.Platform platform = 11;</code>
+     * <code>.proto.Platform platform = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder> 
@@ -794,13 +943,13 @@ private static final long serialVersionUID = 0L;
 
     private boolean splitscreen_ ;
     /**
-     * <code>bool splitscreen = 12;</code>
+     * <code>bool splitscreen = 13;</code>
      */
     public boolean getSplitscreen() {
       return splitscreen_;
     }
     /**
-     * <code>bool splitscreen = 12;</code>
+     * <code>bool splitscreen = 13;</code>
      */
     public Builder setSplitscreen(boolean value) {
       
@@ -809,7 +958,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool splitscreen = 12;</code>
+     * <code>bool splitscreen = 13;</code>
      */
     public Builder clearSplitscreen() {
       
@@ -820,13 +969,13 @@ private static final long serialVersionUID = 0L;
 
     private boolean splitscreenonline_ ;
     /**
-     * <code>bool splitscreenonline = 13;</code>
+     * <code>bool splitscreenonline = 14;</code>
      */
     public boolean getSplitscreenonline() {
       return splitscreenonline_;
     }
     /**
-     * <code>bool splitscreenonline = 13;</code>
+     * <code>bool splitscreenonline = 14;</code>
      */
     public Builder setSplitscreenonline(boolean value) {
       
@@ -835,7 +984,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bool splitscreenonline = 13;</code>
+     * <code>bool splitscreenonline = 14;</code>
      */
     public Builder clearSplitscreenonline() {
       
