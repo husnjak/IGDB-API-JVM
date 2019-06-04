@@ -6,7 +6,7 @@ class TestImageBuilder {
 
     @BeforeEach
     fun setup() {
-        wrapper.userkey = "260ebcadb73853584b3d7526f9ebfe7b" //System.getenv("key")
+        wrapper.userkey = System.getenv("key")
     }
 
     // TODO change url to image_id after covers bug is resolved! API3-214

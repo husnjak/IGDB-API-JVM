@@ -6,7 +6,7 @@ class TestProtobufRequests {
 
     @BeforeEach
     fun setup() {
-        wrapper.userkey = System.getProperty("key")
+        wrapper.userkey = System.getenv("key")
     }
 
     @Test

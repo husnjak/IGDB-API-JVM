@@ -27,6 +27,9 @@
     <JetCodeStyleSettings>
       <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
     </JetCodeStyleSettings>
+    <MarkdownNavigatorCodeStyleSettings>
+      <option name="RIGHT_MARGIN" value="72" />
+    </MarkdownNavigatorCodeStyleSettings>
     <DBN-PSQL>
       <case-options enabled="false">
         <option name="KEYWORD_CASE" value="lower" />
