@@ -23,7 +23,7 @@ This wrapper is written in Kotlin which uses the JVM and works with both Koltin 
 
 Feel free to test it on other languages yourselves :)
 
-The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have chosen to make the Generated classes the standard way because it will make it easier to use as you don't have to create your own classes to hold the information.
+The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have chosen to make the API's Generated classes ([Protocol Buffers](https://developers.google.com/protocol-buffers/)) the standard way because it will make it easier to use as you don't have to create your own classes to hold the information.
 
 # Installation and setup
 
