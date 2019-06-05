@@ -220,7 +220,6 @@ Search objects contain the objects from search ex: Characters, Collections, Game
 // Kotlin
 IGDBWrapper.userKey = "YOUR_API_KEY"
 val apicalypse = APICalypse().search("Halo").fields("*")
-    .sort("release_dates.date", Sort.DESCENDING)
 try{
   val searchResult: List<Search> = IGDBWrapper.search(apicalypse) 
 } catch(e: RequestException) {
@@ -232,7 +231,6 @@ try{
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
 wrapper.setUserkey("YOUR_API_KEY");
 APICalypse apicalypse = new APICalypse().search("Halo").fields("*")
-    .sort("release_dates.date", Sort.DESCENDING);
 try{
   List<Search> searchResult = ProtoRequestKt.search(wrapper, apicalypse);
 } catch(RequestException e) {
