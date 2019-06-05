@@ -31,6 +31,12 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 protobuf {
     protoc {
         // The artifact spec for the Protobuf Compiler

@@ -4,508 +4,8 @@
     <list default="true" id="f78ee3a6-9ed8-425e-b2bc-310b3e5db6ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/IGDB-API-JVM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/META-INF/IGDB-API-JVM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/IGDB-API-JVM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/META-INF/IGDB-API-JVM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/any.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/any.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/compiler/plugin.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/compiler/plugin.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/descriptor.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/descriptor.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/duration.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/duration.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/field_mask.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/field_mask.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/struct.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/struct.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/timestamp.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/timestamp.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/type.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/type.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/wrappers.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/wrappers.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/IGDBProtoFile.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/any.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/api.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/compiler/plugin.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/descriptor.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/duration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/empty.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/field_mask.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/source_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/struct.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/timestamp.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/type.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/wrappers.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/IGDBAPIJVM03jar-classes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/IGDBAPIJVM06jar-classes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/data-container-format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/gradle-format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/data-container-format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/gradle-format-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/IGDBProtoFile.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/buildZip/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Achievement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementIcon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementIconOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementIconResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementIconResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementRankEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AchievementResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRating.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingContentDescription.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingContentDescriptionOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingContentDescriptionResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingContentDescriptionResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingRatingEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AgeRatingResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AlternativeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AlternativeNameOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AlternativeNameResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/AlternativeNameResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ApiToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ApiTokenOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ApiTokenResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ApiTokenResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Artwork.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ArtworkOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ArtworkResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ArtworkResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Character.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterMugShot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterMugShotOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterMugShotResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterMugShotResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CharacterSpeciesEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Collection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CollectionOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CollectionResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CollectionResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ColorColorEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Company.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyLogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyLogoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyLogoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyLogoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyWebsite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyWebsiteOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyWebsiteResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CompanyWebsiteResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Count.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CountOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Cover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CoverOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CoverResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CoverResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Credit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CreditCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CreditOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CreditResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/CreditResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/DateFormatStartDateCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ExternalGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ExternalGameCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ExternalGameOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ExternalGameResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ExternalGameResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Feed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedFollow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedFollowOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedFollowResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedFollowResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FeedResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Follow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FollowOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FollowResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FollowResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Franchise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FranchiseOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FranchiseResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/FranchiseResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineLogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineLogoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineLogoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineLogoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameEngineResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameMode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameModeOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameModeResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameModeResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameStatusEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureValueIncludedFeatureEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureValueOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureValueResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionFeatureValueResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVersionResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVideo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVideoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVideoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GameVideoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GenderGenderEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Genre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GenreOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GenreResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/GenreResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/IGDBProtoFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/InvolvedCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/InvolvedCompanyOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/InvolvedCompanyResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/InvolvedCompanyResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Keyword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/KeywordOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/KeywordResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/KeywordResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListEntryOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListEntryResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListEntryResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ListResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiQueryResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiQueryResultArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiQueryResultArrayOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiQueryResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiplayerMode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiplayerModeOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiplayerModeResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/MultiplayerModeResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageBackground.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageBackgroundOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageBackgroundResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageBackgroundResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageLogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageLogoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageLogoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageLogoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageSubCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageWebsite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageWebsiteOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageWebsiteResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PageWebsiteResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonMugShot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonMugShotOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonMugShotResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonMugShotResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonWebsite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonWebsiteOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonWebsiteResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PersonWebsiteResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Platform.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformLogo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformLogoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformLogoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformLogoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionCompanyOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionCompanyResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionCompanyResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionReleaseDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionReleaseDateOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionReleaseDateResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionReleaseDateResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformVersionResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformWebsite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformWebsiteOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformWebsiteResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlatformWebsiteResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlayerPerspective.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlayerPerspectiveOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlayerPerspectiveResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PlayerPerspectiveResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ProductFamily.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ProductFamilyOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ProductFamilyResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ProductFamilyResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Pulse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseGroupOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseGroupResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseGroupResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseImageOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseImageResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseImageResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseSourceOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseSourceResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseSourceResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseUrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseUrlOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseUrlResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/PulseUrlResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Rate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/RateOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/RateResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/RateResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/RegionLanguageEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReleaseDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReleaseDateOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReleaseDateResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReleaseDateResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Review.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewVideo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewVideoOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewVideoResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ReviewVideoResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Screenshot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ScreenshotOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ScreenshotResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ScreenshotResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SearchOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SearchResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SearchResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetric.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricSourceOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricSourceResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricSourceResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/SocialMetricSourceSocialNetworkEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TestDummy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TestDummyEnumTestEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TestDummyOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TestDummyResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TestDummyResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Theme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ThemeOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ThemeResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/ThemeResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TimeToBeat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TimeToBeatOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TimeToBeatResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TimeToBeatResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Title.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TitleOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TitleResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/TitleResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/UserOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/UserResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/UserResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/UserRoleEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/Website.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/WebsiteCategoryEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/WebsiteOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/WebsiteResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proto/WebsiteResultOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestJavaWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestJavaWrapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -548,12 +48,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="IGDB-API-JVM" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -566,17 +60,68 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="485">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="2438">
+              <caret line="108" column="76" selection-start-line="108" selection-start-column="76" selection-end-line="108" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-722">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestRequestExceptions.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#168#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -649,10 +194,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1920" />
-    <option name="height" value="1177" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -660,17 +204,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
               <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
@@ -721,8 +262,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -752,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.IGDB-API-JVM [assemble]">
+  <component name="RunManager" selected="Gradle.IGDB-API-JVM [build]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -790,6 +329,25 @@
         <option name="taskNames">
           <list>
             <option value="buildZip" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IGDB-API-JVM [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -835,25 +393,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="IGDB-API-JVM [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -884,19 +423,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.IGDB-API-JVM [jar]" />
       <item itemvalue="Gradle.IGDB-API-JVM [buildZip]" />
       <item itemvalue="Gradle.IGDB-API-JVM [generateProto]" />
       <item itemvalue="Gradle.IGDB-API-JVM [assemble]" />
       <item itemvalue="Gradle.IGDB-API-JVM [clean]" />
+      <item itemvalue="Gradle.IGDB-API-JVM [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IGDB-API-JVM [build]" />
         <item itemvalue="Gradle.IGDB-API-JVM [clean]" />
         <item itemvalue="Gradle.IGDB-API-JVM [assemble]" />
         <item itemvalue="Gradle.IGDB-API-JVM [generateProto]" />
         <item itemvalue="Gradle.IGDB-API-JVM [buildZip]" />
-        <item itemvalue="Gradle.IGDB-API-JVM [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -946,10 +485,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1895075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19164883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -962,7 +501,7 @@
       <window_info id="aws.explorer" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32763276" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3141314" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992453" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1149,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ImageBuilder.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -1180,16 +709,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt">
+    <entry file="file://$PROJECT_DIR$/src/java/main/java/proto/PersonWebsiteResult.java" />
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2438">
+          <caret line="108" column="76" selection-start-line="108" selection-start-column="76" selection-end-line="108" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestAPICalypse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestProtobufRequests.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="-722">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
@@ -1207,36 +764,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/java/proto/PersonWebsiteResult.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestJavaWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/TestKotlinWrapper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="207">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/IGDBWrapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="485">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
