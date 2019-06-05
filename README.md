@@ -40,7 +40,7 @@ __Maven__
 <dependency>
     <groupId>com.github.husnjak</groupId>
     <artifactId>IGDB-API-JVM</artifactId>
-    <version>0.5</version>
+    <version>0.7</version>
 </dependency>
 ```
 
@@ -55,7 +55,7 @@ repositories {
   Step 2. Add the dependency
 ``` Gradle
 dependencies {
-    implementation 'com.github.husnjak:IGDB-API-JVM:0.5'
+    implementation 'com.github.husnjak:IGDB-API-JVM:0.7'
 }
 ```
   Optional Step 3 (Android). Add internet permissions in the manifest
