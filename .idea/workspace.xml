@@ -4,8 +4,15 @@
     <list default="true" id="f78ee3a6-9ed8-425e-b2bc-310b3e5db6ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/IGDB-API-JVM-0.6/IGDBProtoFile.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/IGDB-API-JVM-0.6/META-INF/IGDB-API-JVM.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/IGDB-API-JVM-0.6/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -48,6 +55,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="IGDB-API-JVM" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -60,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="591">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -216,6 +229,17 @@
             <path>
               <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
               <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IGDB-API-JVM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IGDB-API-JVM" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.IGDB-API-JVM [build]">
+  <component name="RunManager" selected="Gradle.IGDB-API-JVM [assemble]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -310,25 +334,6 @@
         <option name="taskNames">
           <list>
             <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="IGDB-API-JVM [buildZip]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildZip" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -374,7 +379,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="IGDB-API-JVM [generateProto]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IGDB-API-JVM [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -385,7 +390,26 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="generateProto" />
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IGDB-API-JVM [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -423,19 +447,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.IGDB-API-JVM [buildZip]" />
-      <item itemvalue="Gradle.IGDB-API-JVM [generateProto]" />
       <item itemvalue="Gradle.IGDB-API-JVM [assemble]" />
       <item itemvalue="Gradle.IGDB-API-JVM [clean]" />
       <item itemvalue="Gradle.IGDB-API-JVM [build]" />
+      <item itemvalue="Gradle.IGDB-API-JVM [jar]" />
+      <item itemvalue="Gradle.IGDB-API-JVM [fatJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IGDB-API-JVM [fatJar]" />
+        <item itemvalue="Gradle.IGDB-API-JVM [jar]" />
         <item itemvalue="Gradle.IGDB-API-JVM [build]" />
         <item itemvalue="Gradle.IGDB-API-JVM [clean]" />
         <item itemvalue="Gradle.IGDB-API-JVM [assemble]" />
-        <item itemvalue="Gradle.IGDB-API-JVM [generateProto]" />
-        <item itemvalue="Gradle.IGDB-API-JVM [buildZip]" />
       </list>
     </recent_temporary>
   </component>
@@ -515,7 +539,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.3290566" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32853284" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="19" />
@@ -776,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="591">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
         </state>
       </provider>
     </entry>
