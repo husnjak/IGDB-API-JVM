@@ -17,7 +17,7 @@ dependencies {
     implementation 'com.github.kittinunf.fuel:fuel:2.1.0'
     implementation 'com.github.kittinunf.fuel:fuel-gson:2.0.1'
     // Protocoll Buffers
-    implementation 'com.google.protobuf:protobuf-java:3.6.0'
+    api 'com.google.protobuf:protobuf-java:3.6.0'
     // Tests
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.2'
     testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
@@ -33,20 +33,9 @@ compileTestKotlin {
 
 jar {
     manifest {
-        attributes(
-                'Main-Class': 'com.igdb.IGDBWrapperKt',
-        )
+        attributes 'Main-Class': 'com.igdb.IGDBWrapperKt'
     }
-}
-
-task fatJar(type: Jar) {
-    classifier = 'all'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-    with jar
-}
-
-artifacts {
-    archives fatJar
+    from configurations.compile.collect { zipTree(it) }
 }
 
 protobuf {
