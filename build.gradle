@@ -35,7 +35,9 @@ jar {
     manifest {
         attributes 'Main-Class': 'com.igdb.IGDBWrapperKt'
     }
-    from configurations.compileClasspath.filter{ it.exists() }.collect { it.isDirectory() ? it : zipTree(it) }
+    from configurations.compileClasspath.filter{
+        it.exists() && it.toString().contains("protobuf-java")
+    }.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
 protobuf {
