@@ -12,12 +12,19 @@ import com.github.kittinunf.fuel.httpPost
 private const val APIURL = "https://api-v3.igdb.com"
 object IGDBWrapper {
     var userkey = ""
+    var isDebugLog = false
 
     @Throws(RequestException::class)
     fun apiRequest(endpoint: Endpoint, apicalypseQuery: String): ByteArray {
         val requestURL = "$APIURL${endpoint.url()}.pb"
         val (request, response, result) = requestURL.httpPost()
             .header("user-key" to userkey).body(apicalypseQuery).responseString()
+
+        if(isDebugLog) {
+            println("IGDBWrapper Request: $request")
+            println("IGDBWrapper Response: $response")
+            println("IGDBWrapper Result: $result")
+        }
 
         if (response.statusCode != 200) {
             throw RequestException(response.statusCode, request, result)
@@ -30,6 +37,12 @@ object IGDBWrapper {
         val requestURL = "$APIURL${endpoint.url()}"
         val (request, response, result) = requestURL.httpPost()
             .header("user-key" to userkey).body(apicalypseQuery).responseString()
+
+        if(isDebugLog) {
+            println("IGDBWrapper Request: $request")
+            println("IGDBWrapper Response: $response")
+            println("IGDBWrapper Result: $result")
+        }
 
         if (response.statusCode != 200) {
             throw RequestException(response.statusCode, request, result)
