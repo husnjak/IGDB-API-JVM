@@ -1,5 +1,7 @@
 jdk:
   - openjdk9
+before_install:
+  - apt-get install libatomic1
 install:
   - echo "Running custom install"
   - ./gradlew clean publish -xtest
