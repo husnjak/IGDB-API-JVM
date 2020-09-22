@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.KeywordResult}
  */
-public  final class KeywordResult extends
+public final class KeywordResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.KeywordResult)
     KeywordResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private KeywordResult() {
     keywords_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new KeywordResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Keyword> getKeywordsList() {
     return keywords_;
   }
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.KeywordOrBuilder> 
       getKeywordsOrBuilderList() {
     return keywords_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
    */
+  @java.lang.Override
   public int getKeywordsCount() {
     return keywords_.size();
   }
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
    */
+  @java.lang.Override
   public proto.Keyword getKeywords(int index) {
     return keywords_.get(index);
   }
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
    */
+  @java.lang.Override
   public proto.KeywordOrBuilder getKeywordsOrBuilder(
       int index) {
     return keywords_.get(index);

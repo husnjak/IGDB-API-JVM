@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.TestDummy}
  */
-public  final class TestDummy extends
+public final class TestDummy extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.TestDummy)
     TestDummyOrBuilder {
@@ -27,6 +27,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new TestDummy();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -44,12 +51,13 @@ private static final long serialVersionUID = 0L;
             proto.TestDummy.class, proto.TestDummy.Builder.class);
   }
 
-  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -58,7 +66,9 @@ private static final long serialVersionUID = 0L;
   private boolean boolValue_;
   /**
    * <code>bool bool_value = 2;</code>
+   * @return The boolValue.
    */
+  @java.lang.Override
   public boolean getBoolValue() {
     return boolValue_;
   }
@@ -67,19 +77,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp createdAt_;
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
+  @java.lang.Override
   public boolean hasCreatedAt() {
     return createdAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreatedAt() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return getCreatedAt();
   }
@@ -88,14 +103,16 @@ private static final long serialVersionUID = 0L;
   private int enumTest_;
   /**
    * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+   * @return The enum numeric value on the wire for enumTest.
    */
-  public int getEnumTestValue() {
+  @java.lang.Override public int getEnumTestValue() {
     return enumTest_;
   }
   /**
    * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+   * @return The enumTest.
    */
-  public proto.TestDummyEnumTestEnum getEnumTest() {
+  @java.lang.Override public proto.TestDummyEnumTestEnum getEnumTest() {
     @SuppressWarnings("deprecation")
     proto.TestDummyEnumTestEnum result = proto.TestDummyEnumTestEnum.valueOf(enumTest_);
     return result == null ? proto.TestDummyEnumTestEnum.UNRECOGNIZED : result;
@@ -105,7 +122,9 @@ private static final long serialVersionUID = 0L;
   private double floatValue_;
   /**
    * <code>double float_value = 5;</code>
+   * @return The floatValue.
    */
+  @java.lang.Override
   public double getFloatValue() {
     return floatValue_;
   }
@@ -114,19 +133,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 6;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 6;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 6;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -135,19 +159,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Internal.IntList integerArray_;
   /**
    * <code>repeated int32 integer_array = 7;</code>
+   * @return A list containing the integerArray.
    */
+  @java.lang.Override
   public java.util.List<java.lang.Integer>
       getIntegerArrayList() {
     return integerArray_;
   }
   /**
    * <code>repeated int32 integer_array = 7;</code>
+   * @return The count of integerArray.
    */
   public int getIntegerArrayCount() {
     return integerArray_.size();
   }
   /**
    * <code>repeated int32 integer_array = 7;</code>
+   * @param index The index of the element to return.
+   * @return The integerArray at the given index.
    */
   public int getIntegerArray(int index) {
     return integerArray_.getInt(index);
@@ -158,7 +187,9 @@ private static final long serialVersionUID = 0L;
   private int integerValue_;
   /**
    * <code>int32 integer_value = 8;</code>
+   * @return The integerValue.
    */
+  @java.lang.Override
   public int getIntegerValue() {
     return integerValue_;
   }
@@ -167,7 +198,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 9;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -182,7 +215,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 9;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -201,7 +236,9 @@ private static final long serialVersionUID = 0L;
   private int newIntegerValue_;
   /**
    * <code>int32 new_integer_value = 10;</code>
+   * @return The newIntegerValue.
    */
+  @java.lang.Override
   public int getNewIntegerValue() {
     return newIntegerValue_;
   }
@@ -210,7 +247,9 @@ private static final long serialVersionUID = 0L;
   private boolean private_;
   /**
    * <code>bool private = 11;</code>
+   * @return The private.
    */
+  @java.lang.Override
   public boolean getPrivate() {
     return private_;
   }
@@ -219,7 +258,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object slug_;
   /**
    * <code>string slug = 12;</code>
+   * @return The slug.
    */
+  @java.lang.Override
   public java.lang.String getSlug() {
     java.lang.Object ref = slug_;
     if (ref instanceof java.lang.String) {
@@ -234,7 +275,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string slug = 12;</code>
+   * @return The bytes for slug.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSlugBytes() {
     java.lang.Object ref = slug_;
@@ -253,6 +296,7 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.LazyStringList stringArray_;
   /**
    * <code>repeated string string_array = 13;</code>
+   * @return A list containing the stringArray.
    */
   public com.google.protobuf.ProtocolStringList
       getStringArrayList() {
@@ -260,18 +304,23 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>repeated string string_array = 13;</code>
+   * @return The count of stringArray.
    */
   public int getStringArrayCount() {
     return stringArray_.size();
   }
   /**
    * <code>repeated string string_array = 13;</code>
+   * @param index The index of the element to return.
+   * @return The stringArray at the given index.
    */
   public java.lang.String getStringArray(int index) {
     return stringArray_.get(index);
   }
   /**
    * <code>repeated string string_array = 13;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the stringArray at the given index.
    */
   public com.google.protobuf.ByteString
       getStringArrayBytes(int index) {
@@ -283,12 +332,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.TestDummy test_dummies = 14;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.TestDummy> getTestDummiesList() {
     return testDummies_;
   }
   /**
    * <code>repeated .proto.TestDummy test_dummies = 14;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.TestDummyOrBuilder> 
       getTestDummiesOrBuilderList() {
     return testDummies_;
@@ -296,18 +347,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.TestDummy test_dummies = 14;</code>
    */
+  @java.lang.Override
   public int getTestDummiesCount() {
     return testDummies_.size();
   }
   /**
    * <code>repeated .proto.TestDummy test_dummies = 14;</code>
    */
+  @java.lang.Override
   public proto.TestDummy getTestDummies(int index) {
     return testDummies_.get(index);
   }
   /**
    * <code>repeated .proto.TestDummy test_dummies = 14;</code>
    */
+  @java.lang.Override
   public proto.TestDummyOrBuilder getTestDummiesOrBuilder(
       int index) {
     return testDummies_.get(index);
@@ -317,19 +371,24 @@ private static final long serialVersionUID = 0L;
   private proto.TestDummy testDummy_;
   /**
    * <code>.proto.TestDummy test_dummy = 15;</code>
+   * @return Whether the testDummy field is set.
    */
+  @java.lang.Override
   public boolean hasTestDummy() {
     return testDummy_ != null;
   }
   /**
    * <code>.proto.TestDummy test_dummy = 15;</code>
+   * @return The testDummy.
    */
+  @java.lang.Override
   public proto.TestDummy getTestDummy() {
     return testDummy_ == null ? proto.TestDummy.getDefaultInstance() : testDummy_;
   }
   /**
    * <code>.proto.TestDummy test_dummy = 15;</code>
    */
+  @java.lang.Override
   public proto.TestDummyOrBuilder getTestDummyOrBuilder() {
     return getTestDummy();
   }
@@ -338,19 +397,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
    * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+   * @return Whether the updatedAt field is set.
    */
+  @java.lang.Override
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+   * @return The updatedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 16;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
@@ -359,7 +423,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object url_;
   /**
    * <code>string url = 17;</code>
+   * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -374,7 +440,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string url = 17;</code>
+   * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getUrlBytes() {
     java.lang.Object ref = url_;
@@ -393,7 +461,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 18;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -408,7 +478,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 18;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -573,7 +645,7 @@ private static final long serialVersionUID = 0L;
         gameBuilder_ = null;
       }
       integerArray_ = emptyIntList();
-      bitField0_ = (bitField0_ & ~0x00000040);
+      bitField0_ = (bitField0_ & ~0x00000001);
       integerValue_ = 0;
 
       name_ = "";
@@ -585,10 +657,10 @@ private static final long serialVersionUID = 0L;
       slug_ = "";
 
       stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00001000);
+      bitField0_ = (bitField0_ & ~0x00000002);
       if (testDummiesBuilder_ == null) {
         testDummies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000004);
       } else {
         testDummiesBuilder_.clear();
       }
@@ -635,7 +707,6 @@ private static final long serialVersionUID = 0L;
     public proto.TestDummy buildPartial() {
       proto.TestDummy result = new proto.TestDummy(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.id_ = id_;
       result.boolValue_ = boolValue_;
       if (createdAtBuilder_ == null) {
@@ -650,9 +721,9 @@ private static final long serialVersionUID = 0L;
       } else {
         result.game_ = gameBuilder_.build();
       }
-      if (((bitField0_ & 0x00000040) != 0)) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         integerArray_.makeImmutable();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.integerArray_ = integerArray_;
       result.integerValue_ = integerValue_;
@@ -660,15 +731,15 @@ private static final long serialVersionUID = 0L;
       result.newIntegerValue_ = newIntegerValue_;
       result.private_ = private_;
       result.slug_ = slug_;
-      if (((bitField0_ & 0x00001000) != 0)) {
+      if (((bitField0_ & 0x00000002) != 0)) {
         stringArray_ = stringArray_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00000002);
       }
       result.stringArray_ = stringArray_;
       if (testDummiesBuilder_ == null) {
-        if (((bitField0_ & 0x00002000) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           testDummies_ = java.util.Collections.unmodifiableList(testDummies_);
-          bitField0_ = (bitField0_ & ~0x00002000);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.testDummies_ = testDummies_;
       } else {
@@ -686,7 +757,6 @@ private static final long serialVersionUID = 0L;
       }
       result.url_ = url_;
       result.checksum_ = checksum_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -728,12 +798,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -743,6 +817,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -754,12 +829,16 @@ private static final long serialVersionUID = 0L;
     private boolean boolValue_ ;
     /**
      * <code>bool bool_value = 2;</code>
+     * @return The boolValue.
      */
+    @java.lang.Override
     public boolean getBoolValue() {
       return boolValue_;
     }
     /**
      * <code>bool bool_value = 2;</code>
+     * @param value The boolValue to set.
+     * @return This builder for chaining.
      */
     public Builder setBoolValue(boolean value) {
       
@@ -769,6 +848,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool bool_value = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearBoolValue() {
       
@@ -782,12 +862,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
       return createdAtBuilder_ != null || createdAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
       if (createdAtBuilder_ == null) {
@@ -897,21 +979,27 @@ private static final long serialVersionUID = 0L;
     private int enumTest_ = 0;
     /**
      * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+     * @return The enum numeric value on the wire for enumTest.
      */
-    public int getEnumTestValue() {
+    @java.lang.Override public int getEnumTestValue() {
       return enumTest_;
     }
     /**
      * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+     * @param value The enum numeric value on the wire for enumTest to set.
+     * @return This builder for chaining.
      */
     public Builder setEnumTestValue(int value) {
+      
       enumTest_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+     * @return The enumTest.
      */
+    @java.lang.Override
     public proto.TestDummyEnumTestEnum getEnumTest() {
       @SuppressWarnings("deprecation")
       proto.TestDummyEnumTestEnum result = proto.TestDummyEnumTestEnum.valueOf(enumTest_);
@@ -919,6 +1007,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+     * @param value The enumTest to set.
+     * @return This builder for chaining.
      */
     public Builder setEnumTest(proto.TestDummyEnumTestEnum value) {
       if (value == null) {
@@ -931,6 +1021,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.TestDummyEnumTestEnum enum_test = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearEnumTest() {
       
@@ -942,12 +1033,16 @@ private static final long serialVersionUID = 0L;
     private double floatValue_ ;
     /**
      * <code>double float_value = 5;</code>
+     * @return The floatValue.
      */
+    @java.lang.Override
     public double getFloatValue() {
       return floatValue_;
     }
     /**
      * <code>double float_value = 5;</code>
+     * @param value The floatValue to set.
+     * @return This builder for chaining.
      */
     public Builder setFloatValue(double value) {
       
@@ -957,6 +1052,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>double float_value = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearFloatValue() {
       
@@ -970,12 +1066,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 6;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 6;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -1084,33 +1182,40 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.Internal.IntList integerArray_ = emptyIntList();
     private void ensureIntegerArrayIsMutable() {
-      if (!((bitField0_ & 0x00000040) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         integerArray_ = mutableCopy(integerArray_);
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000001;
        }
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @return A list containing the integerArray.
      */
     public java.util.List<java.lang.Integer>
         getIntegerArrayList() {
-      return ((bitField0_ & 0x00000040) != 0) ?
+      return ((bitField0_ & 0x00000001) != 0) ?
                java.util.Collections.unmodifiableList(integerArray_) : integerArray_;
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @return The count of integerArray.
      */
     public int getIntegerArrayCount() {
       return integerArray_.size();
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @param index The index of the element to return.
+     * @return The integerArray at the given index.
      */
     public int getIntegerArray(int index) {
       return integerArray_.getInt(index);
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @param index The index to set the value at.
+     * @param value The integerArray to set.
+     * @return This builder for chaining.
      */
     public Builder setIntegerArray(
         int index, int value) {
@@ -1121,6 +1226,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @param value The integerArray to add.
+     * @return This builder for chaining.
      */
     public Builder addIntegerArray(int value) {
       ensureIntegerArrayIsMutable();
@@ -1130,6 +1237,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @param values The integerArray to add.
+     * @return This builder for chaining.
      */
     public Builder addAllIntegerArray(
         java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -1141,10 +1250,11 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 integer_array = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearIntegerArray() {
       integerArray_ = emptyIntList();
-      bitField0_ = (bitField0_ & ~0x00000040);
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -1152,12 +1262,16 @@ private static final long serialVersionUID = 0L;
     private int integerValue_ ;
     /**
      * <code>int32 integer_value = 8;</code>
+     * @return The integerValue.
      */
+    @java.lang.Override
     public int getIntegerValue() {
       return integerValue_;
     }
     /**
      * <code>int32 integer_value = 8;</code>
+     * @param value The integerValue to set.
+     * @return This builder for chaining.
      */
     public Builder setIntegerValue(int value) {
       
@@ -1167,6 +1281,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 integer_value = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearIntegerValue() {
       
@@ -1178,6 +1293,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 9;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1193,6 +1309,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 9;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1209,6 +1326,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 9;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -1222,6 +1341,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 9;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -1231,6 +1351,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 9;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1247,12 +1369,16 @@ private static final long serialVersionUID = 0L;
     private int newIntegerValue_ ;
     /**
      * <code>int32 new_integer_value = 10;</code>
+     * @return The newIntegerValue.
      */
+    @java.lang.Override
     public int getNewIntegerValue() {
       return newIntegerValue_;
     }
     /**
      * <code>int32 new_integer_value = 10;</code>
+     * @param value The newIntegerValue to set.
+     * @return This builder for chaining.
      */
     public Builder setNewIntegerValue(int value) {
       
@@ -1262,6 +1388,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 new_integer_value = 10;</code>
+     * @return This builder for chaining.
      */
     public Builder clearNewIntegerValue() {
       
@@ -1273,12 +1400,16 @@ private static final long serialVersionUID = 0L;
     private boolean private_ ;
     /**
      * <code>bool private = 11;</code>
+     * @return The private.
      */
+    @java.lang.Override
     public boolean getPrivate() {
       return private_;
     }
     /**
      * <code>bool private = 11;</code>
+     * @param value The private to set.
+     * @return This builder for chaining.
      */
     public Builder setPrivate(boolean value) {
       
@@ -1288,6 +1419,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool private = 11;</code>
+     * @return This builder for chaining.
      */
     public Builder clearPrivate() {
       
@@ -1299,6 +1431,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object slug_ = "";
     /**
      * <code>string slug = 12;</code>
+     * @return The slug.
      */
     public java.lang.String getSlug() {
       java.lang.Object ref = slug_;
@@ -1314,6 +1447,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 12;</code>
+     * @return The bytes for slug.
      */
     public com.google.protobuf.ByteString
         getSlugBytes() {
@@ -1330,6 +1464,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 12;</code>
+     * @param value The slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlug(
         java.lang.String value) {
@@ -1343,6 +1479,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 12;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSlug() {
       
@@ -1352,6 +1489,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 12;</code>
+     * @param value The bytes for slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
@@ -1367,13 +1506,14 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.LazyStringList stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     private void ensureStringArrayIsMutable() {
-      if (!((bitField0_ & 0x00001000) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         stringArray_ = new com.google.protobuf.LazyStringArrayList(stringArray_);
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00000002;
        }
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @return A list containing the stringArray.
      */
     public com.google.protobuf.ProtocolStringList
         getStringArrayList() {
@@ -1381,18 +1521,23 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @return The count of stringArray.
      */
     public int getStringArrayCount() {
       return stringArray_.size();
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param index The index of the element to return.
+     * @return The stringArray at the given index.
      */
     public java.lang.String getStringArray(int index) {
       return stringArray_.get(index);
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the stringArray at the given index.
      */
     public com.google.protobuf.ByteString
         getStringArrayBytes(int index) {
@@ -1400,6 +1545,9 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param index The index to set the value at.
+     * @param value The stringArray to set.
+     * @return This builder for chaining.
      */
     public Builder setStringArray(
         int index, java.lang.String value) {
@@ -1413,6 +1561,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param value The stringArray to add.
+     * @return This builder for chaining.
      */
     public Builder addStringArray(
         java.lang.String value) {
@@ -1426,6 +1576,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param values The stringArray to add.
+     * @return This builder for chaining.
      */
     public Builder addAllStringArray(
         java.lang.Iterable<java.lang.String> values) {
@@ -1437,15 +1589,18 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @return This builder for chaining.
      */
     public Builder clearStringArray() {
       stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00001000);
+      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
     /**
      * <code>repeated string string_array = 13;</code>
+     * @param value The bytes of the stringArray to add.
+     * @return This builder for chaining.
      */
     public Builder addStringArrayBytes(
         com.google.protobuf.ByteString value) {
@@ -1462,9 +1617,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.TestDummy> testDummies_ =
       java.util.Collections.emptyList();
     private void ensureTestDummiesIsMutable() {
-      if (!((bitField0_ & 0x00002000) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         testDummies_ = new java.util.ArrayList<proto.TestDummy>(testDummies_);
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00000004;
        }
     }
 
@@ -1614,7 +1769,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearTestDummies() {
       if (testDummiesBuilder_ == null) {
         testDummies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         testDummiesBuilder_.clear();
@@ -1691,7 +1846,7 @@ private static final long serialVersionUID = 0L;
         testDummiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.TestDummy, proto.TestDummy.Builder, proto.TestDummyOrBuilder>(
                 testDummies_,
-                ((bitField0_ & 0x00002000) != 0),
+                ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
                 isClean());
         testDummies_ = null;
@@ -1704,12 +1859,14 @@ private static final long serialVersionUID = 0L;
         proto.TestDummy, proto.TestDummy.Builder, proto.TestDummyOrBuilder> testDummyBuilder_;
     /**
      * <code>.proto.TestDummy test_dummy = 15;</code>
+     * @return Whether the testDummy field is set.
      */
     public boolean hasTestDummy() {
       return testDummyBuilder_ != null || testDummy_ != null;
     }
     /**
      * <code>.proto.TestDummy test_dummy = 15;</code>
+     * @return The testDummy.
      */
     public proto.TestDummy getTestDummy() {
       if (testDummyBuilder_ == null) {
@@ -1821,12 +1978,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+     * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+     * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -1936,6 +2095,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object url_ = "";
     /**
      * <code>string url = 17;</code>
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -1951,6 +2111,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 17;</code>
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -1967,6 +2128,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 17;</code>
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -1980,6 +2143,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 17;</code>
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
       
@@ -1989,6 +2153,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 17;</code>
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -2005,6 +2171,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 18;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -2020,6 +2187,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 18;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -2036,6 +2204,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 18;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -2049,6 +2219,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 18;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -2058,6 +2229,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 18;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

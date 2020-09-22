@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.MultiQueryResult}
  */
-public  final class MultiQueryResult extends
+public final class MultiQueryResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.MultiQueryResult)
     MultiQueryResultOrBuilder {
@@ -18,6 +18,13 @@ private static final long serialVersionUID = 0L;
   private MultiQueryResult() {
     name_ = "";
     results_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new MultiQueryResult();
   }
 
   @java.lang.Override
@@ -38,12 +45,13 @@ private static final long serialVersionUID = 0L;
             proto.MultiQueryResult.class, proto.MultiQueryResult.Builder.class);
   }
 
-  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 1;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -58,7 +66,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 1;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -77,19 +87,24 @@ private static final long serialVersionUID = 0L;
   private java.util.List<com.google.protobuf.ByteString> results_;
   /**
    * <code>repeated bytes results = 2;</code>
+   * @return A list containing the results.
    */
+  @java.lang.Override
   public java.util.List<com.google.protobuf.ByteString>
       getResultsList() {
     return results_;
   }
   /**
    * <code>repeated bytes results = 2;</code>
+   * @return The count of results.
    */
   public int getResultsCount() {
     return results_.size();
   }
   /**
    * <code>repeated bytes results = 2;</code>
+   * @param index The index of the element to return.
+   * @return The results at the given index.
    */
   public com.google.protobuf.ByteString getResults(int index) {
     return results_.get(index);
@@ -99,7 +114,9 @@ private static final long serialVersionUID = 0L;
   private long count_;
   /**
    * <code>int64 count = 3;</code>
+   * @return The count.
    */
+  @java.lang.Override
   public long getCount() {
     return count_;
   }
@@ -235,7 +252,7 @@ private static final long serialVersionUID = 0L;
       name_ = "";
 
       results_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       count_ = 0L;
 
       return this;
@@ -265,15 +282,13 @@ private static final long serialVersionUID = 0L;
     public proto.MultiQueryResult buildPartial() {
       proto.MultiQueryResult result = new proto.MultiQueryResult(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.name_ = name_;
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         results_ = java.util.Collections.unmodifiableList(results_);
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.results_ = results_;
       result.count_ = count_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -315,6 +330,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 1;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -330,6 +346,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 1;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -346,6 +363,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 1;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -359,6 +378,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -368,6 +388,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 1;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -383,33 +405,40 @@ private static final long serialVersionUID = 0L;
 
     private java.util.List<com.google.protobuf.ByteString> results_ = java.util.Collections.emptyList();
     private void ensureResultsIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         results_ = new java.util.ArrayList<com.google.protobuf.ByteString>(results_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @return A list containing the results.
      */
     public java.util.List<com.google.protobuf.ByteString>
         getResultsList() {
-      return ((bitField0_ & 0x00000002) != 0) ?
+      return ((bitField0_ & 0x00000001) != 0) ?
                java.util.Collections.unmodifiableList(results_) : results_;
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @return The count of results.
      */
     public int getResultsCount() {
       return results_.size();
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @param index The index of the element to return.
+     * @return The results at the given index.
      */
     public com.google.protobuf.ByteString getResults(int index) {
       return results_.get(index);
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @param index The index to set the value at.
+     * @param value The results to set.
+     * @return This builder for chaining.
      */
     public Builder setResults(
         int index, com.google.protobuf.ByteString value) {
@@ -423,6 +452,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @param value The results to add.
+     * @return This builder for chaining.
      */
     public Builder addResults(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -435,6 +466,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @param values The results to add.
+     * @return This builder for chaining.
      */
     public Builder addAllResults(
         java.lang.Iterable<? extends com.google.protobuf.ByteString> values) {
@@ -446,10 +479,11 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated bytes results = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearResults() {
       results_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -457,12 +491,16 @@ private static final long serialVersionUID = 0L;
     private long count_ ;
     /**
      * <code>int64 count = 3;</code>
+     * @return The count.
      */
+    @java.lang.Override
     public long getCount() {
       return count_;
     }
     /**
      * <code>int64 count = 3;</code>
+     * @param value The count to set.
+     * @return This builder for chaining.
      */
     public Builder setCount(long value) {
       
@@ -472,6 +510,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int64 count = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCount() {
       

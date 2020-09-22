@@ -9,39 +9,47 @@ public interface GameVersionFeatureOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+   * @return The category.
    */
   proto.GameVersionFeatureCategoryEnum getCategory();
 
   /**
    * <code>string description = 3;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 3;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
 
   /**
    * <code>int32 position = 4;</code>
+   * @return The position.
    */
   int getPosition();
 
   /**
    * <code>string title = 5;</code>
+   * @return The title.
    */
   java.lang.String getTitle();
   /**
    * <code>string title = 5;</code>
+   * @return The bytes for title.
    */
   com.google.protobuf.ByteString
       getTitleBytes();
@@ -72,10 +80,12 @@ public interface GameVersionFeatureOrBuilder extends
 
   /**
    * <code>string checksum = 7;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 7;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

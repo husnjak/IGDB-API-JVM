@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameVersionFeatureResult}
  */
-public  final class GameVersionFeatureResult extends
+public final class GameVersionFeatureResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameVersionFeatureResult)
     GameVersionFeatureResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameVersionFeatureResult() {
     gameversionfeatures_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameVersionFeatureResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeature gameversionfeatures = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVersionFeature> getGameversionfeaturesList() {
     return gameversionfeatures_;
   }
   /**
    * <code>repeated .proto.GameVersionFeature gameversionfeatures = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVersionFeatureOrBuilder> 
       getGameversionfeaturesOrBuilderList() {
     return gameversionfeatures_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeature gameversionfeatures = 1;</code>
    */
+  @java.lang.Override
   public int getGameversionfeaturesCount() {
     return gameversionfeatures_.size();
   }
   /**
    * <code>repeated .proto.GameVersionFeature gameversionfeatures = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeature getGameversionfeatures(int index) {
     return gameversionfeatures_.get(index);
   }
   /**
    * <code>repeated .proto.GameVersionFeature gameversionfeatures = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeatureOrBuilder getGameversionfeaturesOrBuilder(
       int index) {
     return gameversionfeatures_.get(index);

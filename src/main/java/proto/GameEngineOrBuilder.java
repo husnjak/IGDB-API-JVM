@@ -9,6 +9,7 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
@@ -38,10 +39,12 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -51,20 +54,24 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>string description = 4;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 4;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
 
   /**
    * <code>.proto.GameEngineLogo logo = 5;</code>
+   * @return Whether the logo field is set.
    */
   boolean hasLogo();
   /**
    * <code>.proto.GameEngineLogo logo = 5;</code>
+   * @return The logo.
    */
   proto.GameEngineLogo getLogo();
   /**
@@ -74,10 +81,12 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>string name = 6;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 6;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
@@ -108,20 +117,24 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>string slug = 8;</code>
+   * @return The slug.
    */
   java.lang.String getSlug();
   /**
    * <code>string slug = 8;</code>
+   * @return The bytes for slug.
    */
   com.google.protobuf.ByteString
       getSlugBytes();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -131,20 +144,24 @@ public interface GameEngineOrBuilder extends
 
   /**
    * <code>string url = 10;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 10;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>string checksum = 11;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 11;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameEngineResult}
  */
-public  final class GameEngineResult extends
+public final class GameEngineResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameEngineResult)
     GameEngineResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameEngineResult() {
     gameengines_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameEngineResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameEngine> getGameenginesList() {
     return gameengines_;
   }
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameEngineOrBuilder> 
       getGameenginesOrBuilderList() {
     return gameengines_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
    */
+  @java.lang.Override
   public int getGameenginesCount() {
     return gameengines_.size();
   }
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
    */
+  @java.lang.Override
   public proto.GameEngine getGameengines(int index) {
     return gameengines_.get(index);
   }
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
    */
+  @java.lang.Override
   public proto.GameEngineOrBuilder getGameenginesOrBuilder(
       int index) {
     return gameengines_.get(index);

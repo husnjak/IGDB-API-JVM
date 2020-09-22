@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.TestDummyResult}
  */
-public  final class TestDummyResult extends
+public final class TestDummyResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.TestDummyResult)
     TestDummyResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private TestDummyResult() {
     testdummies_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new TestDummyResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.TestDummy> getTestdummiesList() {
     return testdummies_;
   }
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.TestDummyOrBuilder> 
       getTestdummiesOrBuilderList() {
     return testdummies_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
    */
+  @java.lang.Override
   public int getTestdummiesCount() {
     return testdummies_.size();
   }
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
    */
+  @java.lang.Override
   public proto.TestDummy getTestdummies(int index) {
     return testdummies_.get(index);
   }
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
    */
+  @java.lang.Override
   public proto.TestDummyOrBuilder getTestdummiesOrBuilder(
       int index) {
     return testdummies_.get(index);

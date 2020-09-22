@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformVersionReleaseDateResult}
  */
-public  final class PlatformVersionReleaseDateResult extends
+public final class PlatformVersionReleaseDateResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformVersionReleaseDateResult)
     PlatformVersionReleaseDateResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformVersionReleaseDateResult() {
     platformversionreleasedates_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformVersionReleaseDateResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platformversionreleasedates = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformVersionReleaseDate> getPlatformversionreleasedatesList() {
     return platformversionreleasedates_;
   }
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platformversionreleasedates = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformVersionReleaseDateOrBuilder> 
       getPlatformversionreleasedatesOrBuilderList() {
     return platformversionreleasedates_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platformversionreleasedates = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformversionreleasedatesCount() {
     return platformversionreleasedates_.size();
   }
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platformversionreleasedates = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersionReleaseDate getPlatformversionreleasedates(int index) {
     return platformversionreleasedates_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platformversionreleasedates = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersionReleaseDateOrBuilder getPlatformversionreleasedatesOrBuilder(
       int index) {
     return platformversionreleasedates_.get(index);

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameEngineLogoResult}
  */
-public  final class GameEngineLogoResult extends
+public final class GameEngineLogoResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameEngineLogoResult)
     GameEngineLogoResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameEngineLogoResult() {
     gameenginelogos_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameEngineLogoResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngineLogo gameenginelogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameEngineLogo> getGameenginelogosList() {
     return gameenginelogos_;
   }
   /**
    * <code>repeated .proto.GameEngineLogo gameenginelogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameEngineLogoOrBuilder> 
       getGameenginelogosOrBuilderList() {
     return gameenginelogos_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngineLogo gameenginelogos = 1;</code>
    */
+  @java.lang.Override
   public int getGameenginelogosCount() {
     return gameenginelogos_.size();
   }
   /**
    * <code>repeated .proto.GameEngineLogo gameenginelogos = 1;</code>
    */
+  @java.lang.Override
   public proto.GameEngineLogo getGameenginelogos(int index) {
     return gameenginelogos_.get(index);
   }
   /**
    * <code>repeated .proto.GameEngineLogo gameenginelogos = 1;</code>
    */
+  @java.lang.Override
   public proto.GameEngineLogoOrBuilder getGameenginelogosOrBuilder(
       int index) {
     return gameenginelogos_.get(index);

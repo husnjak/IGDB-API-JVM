@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.MultiQueryResultArray}
  */
-public  final class MultiQueryResultArray extends
+public final class MultiQueryResultArray extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.MultiQueryResultArray)
     MultiQueryResultArrayOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private MultiQueryResultArray() {
     result_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new MultiQueryResultArray();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.MultiQueryResult> getResultList() {
     return result_;
   }
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.MultiQueryResultOrBuilder> 
       getResultOrBuilderList() {
     return result_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
    */
+  @java.lang.Override
   public int getResultCount() {
     return result_.size();
   }
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
    */
+  @java.lang.Override
   public proto.MultiQueryResult getResult(int index) {
     return result_.get(index);
   }
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
    */
+  @java.lang.Override
   public proto.MultiQueryResultOrBuilder getResultOrBuilder(
       int index) {
     return result_.get(index);

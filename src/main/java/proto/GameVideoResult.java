@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameVideoResult}
  */
-public  final class GameVideoResult extends
+public final class GameVideoResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameVideoResult)
     GameVideoResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameVideoResult() {
     gamevideos_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameVideoResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVideo gamevideos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVideo> getGamevideosList() {
     return gamevideos_;
   }
   /**
    * <code>repeated .proto.GameVideo gamevideos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVideoOrBuilder> 
       getGamevideosOrBuilderList() {
     return gamevideos_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVideo gamevideos = 1;</code>
    */
+  @java.lang.Override
   public int getGamevideosCount() {
     return gamevideos_.size();
   }
   /**
    * <code>repeated .proto.GameVideo gamevideos = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVideo getGamevideos(int index) {
     return gamevideos_.get(index);
   }
   /**
    * <code>repeated .proto.GameVideo gamevideos = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVideoOrBuilder getGamevideosOrBuilder(
       int index) {
     return gamevideos_.get(index);

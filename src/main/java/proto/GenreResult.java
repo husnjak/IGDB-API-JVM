@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GenreResult}
  */
-public  final class GenreResult extends
+public final class GenreResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GenreResult)
     GenreResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GenreResult() {
     genres_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GenreResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Genre> getGenresList() {
     return genres_;
   }
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GenreOrBuilder> 
       getGenresOrBuilderList() {
     return genres_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
    */
+  @java.lang.Override
   public int getGenresCount() {
     return genres_.size();
   }
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
    */
+  @java.lang.Override
   public proto.Genre getGenres(int index) {
     return genres_.get(index);
   }
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
    */
+  @java.lang.Override
   public proto.GenreOrBuilder getGenresOrBuilder(
       int index) {
     return genres_.get(index);

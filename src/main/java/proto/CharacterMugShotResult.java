@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CharacterMugShotResult}
  */
-public  final class CharacterMugShotResult extends
+public final class CharacterMugShotResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CharacterMugShotResult)
     CharacterMugShotResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CharacterMugShotResult() {
     charactermugshots_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CharacterMugShotResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.CharacterMugShot charactermugshots = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.CharacterMugShot> getCharactermugshotsList() {
     return charactermugshots_;
   }
   /**
    * <code>repeated .proto.CharacterMugShot charactermugshots = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CharacterMugShotOrBuilder> 
       getCharactermugshotsOrBuilderList() {
     return charactermugshots_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.CharacterMugShot charactermugshots = 1;</code>
    */
+  @java.lang.Override
   public int getCharactermugshotsCount() {
     return charactermugshots_.size();
   }
   /**
    * <code>repeated .proto.CharacterMugShot charactermugshots = 1;</code>
    */
+  @java.lang.Override
   public proto.CharacterMugShot getCharactermugshots(int index) {
     return charactermugshots_.get(index);
   }
   /**
    * <code>repeated .proto.CharacterMugShot charactermugshots = 1;</code>
    */
+  @java.lang.Override
   public proto.CharacterMugShotOrBuilder getCharactermugshotsOrBuilder(
       int index) {
     return charactermugshots_.get(index);

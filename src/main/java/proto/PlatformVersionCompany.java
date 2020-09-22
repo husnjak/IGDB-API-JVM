@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformVersionCompany}
  */
-public  final class PlatformVersionCompany extends
+public final class PlatformVersionCompany extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformVersionCompany)
     PlatformVersionCompanyOrBuilder {
@@ -18,6 +18,13 @@ private static final long serialVersionUID = 0L;
   private PlatformVersionCompany() {
     comment_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformVersionCompany();
   }
 
   @java.lang.Override
@@ -42,7 +49,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -51,7 +60,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object comment_;
   /**
    * <code>string comment = 2;</code>
+   * @return The comment.
    */
+  @java.lang.Override
   public java.lang.String getComment() {
     java.lang.Object ref = comment_;
     if (ref instanceof java.lang.String) {
@@ -66,7 +77,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string comment = 2;</code>
+   * @return The bytes for comment.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getCommentBytes() {
     java.lang.Object ref = comment_;
@@ -85,19 +98,24 @@ private static final long serialVersionUID = 0L;
   private proto.Company company_;
   /**
    * <code>.proto.Company company = 3;</code>
+   * @return Whether the company field is set.
    */
+  @java.lang.Override
   public boolean hasCompany() {
     return company_ != null;
   }
   /**
    * <code>.proto.Company company = 3;</code>
+   * @return The company.
    */
+  @java.lang.Override
   public proto.Company getCompany() {
     return company_ == null ? proto.Company.getDefaultInstance() : company_;
   }
   /**
    * <code>.proto.Company company = 3;</code>
    */
+  @java.lang.Override
   public proto.CompanyOrBuilder getCompanyOrBuilder() {
     return getCompany();
   }
@@ -106,7 +124,9 @@ private static final long serialVersionUID = 0L;
   private boolean developer_;
   /**
    * <code>bool developer = 4;</code>
+   * @return The developer.
    */
+  @java.lang.Override
   public boolean getDeveloper() {
     return developer_;
   }
@@ -115,7 +135,9 @@ private static final long serialVersionUID = 0L;
   private boolean manufacturer_;
   /**
    * <code>bool manufacturer = 5;</code>
+   * @return The manufacturer.
    */
+  @java.lang.Override
   public boolean getManufacturer() {
     return manufacturer_;
   }
@@ -124,7 +146,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 6;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -139,7 +163,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 6;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -374,12 +400,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -389,6 +419,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -400,6 +431,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object comment_ = "";
     /**
      * <code>string comment = 2;</code>
+     * @return The comment.
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -415,6 +447,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @return The bytes for comment.
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -431,6 +464,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @param value The comment to set.
+     * @return This builder for chaining.
      */
     public Builder setComment(
         java.lang.String value) {
@@ -444,6 +479,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearComment() {
       
@@ -453,6 +489,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @param value The bytes for comment to set.
+     * @return This builder for chaining.
      */
     public Builder setCommentBytes(
         com.google.protobuf.ByteString value) {
@@ -471,12 +509,14 @@ private static final long serialVersionUID = 0L;
         proto.Company, proto.Company.Builder, proto.CompanyOrBuilder> companyBuilder_;
     /**
      * <code>.proto.Company company = 3;</code>
+     * @return Whether the company field is set.
      */
     public boolean hasCompany() {
       return companyBuilder_ != null || company_ != null;
     }
     /**
      * <code>.proto.Company company = 3;</code>
+     * @return The company.
      */
     public proto.Company getCompany() {
       if (companyBuilder_ == null) {
@@ -586,12 +626,16 @@ private static final long serialVersionUID = 0L;
     private boolean developer_ ;
     /**
      * <code>bool developer = 4;</code>
+     * @return The developer.
      */
+    @java.lang.Override
     public boolean getDeveloper() {
       return developer_;
     }
     /**
      * <code>bool developer = 4;</code>
+     * @param value The developer to set.
+     * @return This builder for chaining.
      */
     public Builder setDeveloper(boolean value) {
       
@@ -601,6 +645,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool developer = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDeveloper() {
       
@@ -612,12 +657,16 @@ private static final long serialVersionUID = 0L;
     private boolean manufacturer_ ;
     /**
      * <code>bool manufacturer = 5;</code>
+     * @return The manufacturer.
      */
+    @java.lang.Override
     public boolean getManufacturer() {
       return manufacturer_;
     }
     /**
      * <code>bool manufacturer = 5;</code>
+     * @param value The manufacturer to set.
+     * @return This builder for chaining.
      */
     public Builder setManufacturer(boolean value) {
       
@@ -627,6 +676,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool manufacturer = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearManufacturer() {
       
@@ -638,6 +688,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 6;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -653,6 +704,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -669,6 +721,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -682,6 +736,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -691,6 +746,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

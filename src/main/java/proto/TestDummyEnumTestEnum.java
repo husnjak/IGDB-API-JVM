@@ -46,6 +46,8 @@ public enum TestDummyEnumTestEnum
   }
 
   /**
+   * @param value The numeric wire value of the corresponding enum entry.
+   * @return The enum associated with the given numeric wire value.
    * @deprecated Use {@link #forNumber(int)} instead.
    */
   @java.lang.Deprecated
@@ -53,6 +55,10 @@ public enum TestDummyEnumTestEnum
     return forNumber(value);
   }
 
+  /**
+   * @param value The numeric wire value of the corresponding enum entry.
+   * @return The enum associated with the given numeric wire value.
+   */
   public static TestDummyEnumTestEnum forNumber(int value) {
     switch (value) {
       case 0: return TESTDUMMY_ENUM_TEST_NULL;
@@ -76,6 +82,10 @@ public enum TestDummyEnumTestEnum
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
+    if (this == UNRECOGNIZED) {
+      throw new java.lang.IllegalStateException(
+          "Can't get the descriptor of an unrecognized enum value.");
+    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor

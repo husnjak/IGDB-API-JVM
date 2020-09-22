@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CompanyLogo}
  */
-public  final class CompanyLogo extends
+public final class CompanyLogo extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CompanyLogo)
     CompanyLogoOrBuilder {
@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
     imageId_ = "";
     url_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CompanyLogo();
   }
 
   @java.lang.Override
@@ -43,7 +50,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -52,7 +61,9 @@ private static final long serialVersionUID = 0L;
   private boolean alphaChannel_;
   /**
    * <code>bool alpha_channel = 2;</code>
+   * @return The alphaChannel.
    */
+  @java.lang.Override
   public boolean getAlphaChannel() {
     return alphaChannel_;
   }
@@ -61,7 +72,9 @@ private static final long serialVersionUID = 0L;
   private boolean animated_;
   /**
    * <code>bool animated = 3;</code>
+   * @return The animated.
    */
+  @java.lang.Override
   public boolean getAnimated() {
     return animated_;
   }
@@ -70,7 +83,9 @@ private static final long serialVersionUID = 0L;
   private int height_;
   /**
    * <code>int32 height = 4;</code>
+   * @return The height.
    */
+  @java.lang.Override
   public int getHeight() {
     return height_;
   }
@@ -79,7 +94,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object imageId_;
   /**
    * <code>string image_id = 5;</code>
+   * @return The imageId.
    */
+  @java.lang.Override
   public java.lang.String getImageId() {
     java.lang.Object ref = imageId_;
     if (ref instanceof java.lang.String) {
@@ -94,7 +111,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string image_id = 5;</code>
+   * @return The bytes for imageId.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getImageIdBytes() {
     java.lang.Object ref = imageId_;
@@ -113,7 +132,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object url_;
   /**
    * <code>string url = 6;</code>
+   * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +149,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string url = 6;</code>
+   * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getUrlBytes() {
     java.lang.Object ref = url_;
@@ -147,7 +170,9 @@ private static final long serialVersionUID = 0L;
   private int width_;
   /**
    * <code>int32 width = 7;</code>
+   * @return The width.
    */
+  @java.lang.Override
   public int getWidth() {
     return width_;
   }
@@ -156,7 +181,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 8;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -171,7 +198,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 8;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -404,12 +433,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -419,6 +452,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -430,12 +464,16 @@ private static final long serialVersionUID = 0L;
     private boolean alphaChannel_ ;
     /**
      * <code>bool alpha_channel = 2;</code>
+     * @return The alphaChannel.
      */
+    @java.lang.Override
     public boolean getAlphaChannel() {
       return alphaChannel_;
     }
     /**
      * <code>bool alpha_channel = 2;</code>
+     * @param value The alphaChannel to set.
+     * @return This builder for chaining.
      */
     public Builder setAlphaChannel(boolean value) {
       
@@ -445,6 +483,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool alpha_channel = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAlphaChannel() {
       
@@ -456,12 +495,16 @@ private static final long serialVersionUID = 0L;
     private boolean animated_ ;
     /**
      * <code>bool animated = 3;</code>
+     * @return The animated.
      */
+    @java.lang.Override
     public boolean getAnimated() {
       return animated_;
     }
     /**
      * <code>bool animated = 3;</code>
+     * @param value The animated to set.
+     * @return This builder for chaining.
      */
     public Builder setAnimated(boolean value) {
       
@@ -471,6 +514,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool animated = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAnimated() {
       
@@ -482,12 +526,16 @@ private static final long serialVersionUID = 0L;
     private int height_ ;
     /**
      * <code>int32 height = 4;</code>
+     * @return The height.
      */
+    @java.lang.Override
     public int getHeight() {
       return height_;
     }
     /**
      * <code>int32 height = 4;</code>
+     * @param value The height to set.
+     * @return This builder for chaining.
      */
     public Builder setHeight(int value) {
       
@@ -497,6 +545,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 height = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearHeight() {
       
@@ -508,6 +557,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object imageId_ = "";
     /**
      * <code>string image_id = 5;</code>
+     * @return The imageId.
      */
     public java.lang.String getImageId() {
       java.lang.Object ref = imageId_;
@@ -523,6 +573,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string image_id = 5;</code>
+     * @return The bytes for imageId.
      */
     public com.google.protobuf.ByteString
         getImageIdBytes() {
@@ -539,6 +590,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string image_id = 5;</code>
+     * @param value The imageId to set.
+     * @return This builder for chaining.
      */
     public Builder setImageId(
         java.lang.String value) {
@@ -552,6 +605,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string image_id = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearImageId() {
       
@@ -561,6 +615,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string image_id = 5;</code>
+     * @param value The bytes for imageId to set.
+     * @return This builder for chaining.
      */
     public Builder setImageIdBytes(
         com.google.protobuf.ByteString value) {
@@ -577,6 +633,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object url_ = "";
     /**
      * <code>string url = 6;</code>
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -592,6 +649,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 6;</code>
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -608,6 +666,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 6;</code>
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -621,6 +681,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
       
@@ -630,6 +691,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 6;</code>
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -646,12 +709,16 @@ private static final long serialVersionUID = 0L;
     private int width_ ;
     /**
      * <code>int32 width = 7;</code>
+     * @return The width.
      */
+    @java.lang.Override
     public int getWidth() {
       return width_;
     }
     /**
      * <code>int32 width = 7;</code>
+     * @param value The width to set.
+     * @return This builder for chaining.
      */
     public Builder setWidth(int value) {
       
@@ -661,6 +728,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 width = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearWidth() {
       
@@ -672,6 +740,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 8;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -687,6 +756,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 8;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -703,6 +773,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 8;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -716,6 +788,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -725,6 +798,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 8;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

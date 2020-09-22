@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformFamily}
  */
-public  final class PlatformFamily extends
+public final class PlatformFamily extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformFamily)
     PlatformFamilyOrBuilder {
@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
     name_ = "";
     slug_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformFamily();
   }
 
   @java.lang.Override
@@ -43,7 +50,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -52,7 +61,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 2;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -67,7 +78,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 2;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -86,7 +99,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object slug_;
   /**
    * <code>string slug = 3;</code>
+   * @return The slug.
    */
+  @java.lang.Override
   public java.lang.String getSlug() {
     java.lang.Object ref = slug_;
     if (ref instanceof java.lang.String) {
@@ -101,7 +116,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string slug = 3;</code>
+   * @return The bytes for slug.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSlugBytes() {
     java.lang.Object ref = slug_;
@@ -120,7 +137,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 4;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -135,7 +154,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 4;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -356,12 +377,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -371,6 +396,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -382,6 +408,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 2;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -397,6 +424,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -413,6 +441,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -426,6 +456,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -435,6 +466,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -451,6 +484,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object slug_ = "";
     /**
      * <code>string slug = 3;</code>
+     * @return The slug.
      */
     public java.lang.String getSlug() {
       java.lang.Object ref = slug_;
@@ -466,6 +500,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 3;</code>
+     * @return The bytes for slug.
      */
     public com.google.protobuf.ByteString
         getSlugBytes() {
@@ -482,6 +517,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 3;</code>
+     * @param value The slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlug(
         java.lang.String value) {
@@ -495,6 +532,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSlug() {
       
@@ -504,6 +542,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 3;</code>
+     * @param value The bytes for slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
@@ -520,6 +560,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 4;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -535,6 +576,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -551,6 +593,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -564,6 +608,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -573,6 +618,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

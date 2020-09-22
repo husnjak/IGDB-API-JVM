@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.Search}
  */
-public  final class Search extends
+public final class Search extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.Search)
     SearchOrBuilder {
@@ -20,6 +20,13 @@ private static final long serialVersionUID = 0L;
     description_ = "";
     name_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new Search();
   }
 
   @java.lang.Override
@@ -44,7 +51,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -53,7 +62,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object alternativeName_;
   /**
    * <code>string alternative_name = 2;</code>
+   * @return The alternativeName.
    */
+  @java.lang.Override
   public java.lang.String getAlternativeName() {
     java.lang.Object ref = alternativeName_;
     if (ref instanceof java.lang.String) {
@@ -68,7 +79,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string alternative_name = 2;</code>
+   * @return The bytes for alternativeName.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getAlternativeNameBytes() {
     java.lang.Object ref = alternativeName_;
@@ -87,19 +100,24 @@ private static final long serialVersionUID = 0L;
   private proto.Character character_;
   /**
    * <code>.proto.Character character = 3;</code>
+   * @return Whether the character field is set.
    */
+  @java.lang.Override
   public boolean hasCharacter() {
     return character_ != null;
   }
   /**
    * <code>.proto.Character character = 3;</code>
+   * @return The character.
    */
+  @java.lang.Override
   public proto.Character getCharacter() {
     return character_ == null ? proto.Character.getDefaultInstance() : character_;
   }
   /**
    * <code>.proto.Character character = 3;</code>
    */
+  @java.lang.Override
   public proto.CharacterOrBuilder getCharacterOrBuilder() {
     return getCharacter();
   }
@@ -108,19 +126,24 @@ private static final long serialVersionUID = 0L;
   private proto.Collection collection_;
   /**
    * <code>.proto.Collection collection = 4;</code>
+   * @return Whether the collection field is set.
    */
+  @java.lang.Override
   public boolean hasCollection() {
     return collection_ != null;
   }
   /**
    * <code>.proto.Collection collection = 4;</code>
+   * @return The collection.
    */
+  @java.lang.Override
   public proto.Collection getCollection() {
     return collection_ == null ? proto.Collection.getDefaultInstance() : collection_;
   }
   /**
    * <code>.proto.Collection collection = 4;</code>
    */
+  @java.lang.Override
   public proto.CollectionOrBuilder getCollectionOrBuilder() {
     return getCollection();
   }
@@ -129,19 +152,24 @@ private static final long serialVersionUID = 0L;
   private proto.Company company_;
   /**
    * <code>.proto.Company company = 5;</code>
+   * @return Whether the company field is set.
    */
+  @java.lang.Override
   public boolean hasCompany() {
     return company_ != null;
   }
   /**
    * <code>.proto.Company company = 5;</code>
+   * @return The company.
    */
+  @java.lang.Override
   public proto.Company getCompany() {
     return company_ == null ? proto.Company.getDefaultInstance() : company_;
   }
   /**
    * <code>.proto.Company company = 5;</code>
    */
+  @java.lang.Override
   public proto.CompanyOrBuilder getCompanyOrBuilder() {
     return getCompany();
   }
@@ -150,7 +178,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object description_;
   /**
    * <code>string description = 6;</code>
+   * @return The description.
    */
+  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -165,7 +195,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string description = 6;</code>
+   * @return The bytes for description.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -184,19 +216,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 7;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 7;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 7;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -205,7 +242,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 8;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -220,7 +259,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 8;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -239,19 +280,24 @@ private static final long serialVersionUID = 0L;
   private proto.Platform platform_;
   /**
    * <code>.proto.Platform platform = 9;</code>
+   * @return Whether the platform field is set.
    */
+  @java.lang.Override
   public boolean hasPlatform() {
     return platform_ != null;
   }
   /**
    * <code>.proto.Platform platform = 9;</code>
+   * @return The platform.
    */
+  @java.lang.Override
   public proto.Platform getPlatform() {
     return platform_ == null ? proto.Platform.getDefaultInstance() : platform_;
   }
   /**
    * <code>.proto.Platform platform = 9;</code>
    */
+  @java.lang.Override
   public proto.PlatformOrBuilder getPlatformOrBuilder() {
     return getPlatform();
   }
@@ -260,19 +306,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp publishedAt_;
   /**
    * <code>.google.protobuf.Timestamp published_at = 10;</code>
+   * @return Whether the publishedAt field is set.
    */
+  @java.lang.Override
   public boolean hasPublishedAt() {
     return publishedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp published_at = 10;</code>
+   * @return The publishedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getPublishedAt() {
     return publishedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : publishedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp published_at = 10;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getPublishedAtOrBuilder() {
     return getPublishedAt();
   }
@@ -281,19 +332,24 @@ private static final long serialVersionUID = 0L;
   private proto.TestDummy testDummy_;
   /**
    * <code>.proto.TestDummy test_dummy = 11;</code>
+   * @return Whether the testDummy field is set.
    */
+  @java.lang.Override
   public boolean hasTestDummy() {
     return testDummy_ != null;
   }
   /**
    * <code>.proto.TestDummy test_dummy = 11;</code>
+   * @return The testDummy.
    */
+  @java.lang.Override
   public proto.TestDummy getTestDummy() {
     return testDummy_ == null ? proto.TestDummy.getDefaultInstance() : testDummy_;
   }
   /**
    * <code>.proto.TestDummy test_dummy = 11;</code>
    */
+  @java.lang.Override
   public proto.TestDummyOrBuilder getTestDummyOrBuilder() {
     return getTestDummy();
   }
@@ -302,19 +358,24 @@ private static final long serialVersionUID = 0L;
   private proto.Theme theme_;
   /**
    * <code>.proto.Theme theme = 12;</code>
+   * @return Whether the theme field is set.
    */
+  @java.lang.Override
   public boolean hasTheme() {
     return theme_ != null;
   }
   /**
    * <code>.proto.Theme theme = 12;</code>
+   * @return The theme.
    */
+  @java.lang.Override
   public proto.Theme getTheme() {
     return theme_ == null ? proto.Theme.getDefaultInstance() : theme_;
   }
   /**
    * <code>.proto.Theme theme = 12;</code>
    */
+  @java.lang.Override
   public proto.ThemeOrBuilder getThemeOrBuilder() {
     return getTheme();
   }
@@ -323,7 +384,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 13;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -338,7 +401,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 13;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -650,12 +715,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -665,6 +734,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -676,6 +746,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object alternativeName_ = "";
     /**
      * <code>string alternative_name = 2;</code>
+     * @return The alternativeName.
      */
     public java.lang.String getAlternativeName() {
       java.lang.Object ref = alternativeName_;
@@ -691,6 +762,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string alternative_name = 2;</code>
+     * @return The bytes for alternativeName.
      */
     public com.google.protobuf.ByteString
         getAlternativeNameBytes() {
@@ -707,6 +779,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string alternative_name = 2;</code>
+     * @param value The alternativeName to set.
+     * @return This builder for chaining.
      */
     public Builder setAlternativeName(
         java.lang.String value) {
@@ -720,6 +794,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string alternative_name = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAlternativeName() {
       
@@ -729,6 +804,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string alternative_name = 2;</code>
+     * @param value The bytes for alternativeName to set.
+     * @return This builder for chaining.
      */
     public Builder setAlternativeNameBytes(
         com.google.protobuf.ByteString value) {
@@ -747,12 +824,14 @@ private static final long serialVersionUID = 0L;
         proto.Character, proto.Character.Builder, proto.CharacterOrBuilder> characterBuilder_;
     /**
      * <code>.proto.Character character = 3;</code>
+     * @return Whether the character field is set.
      */
     public boolean hasCharacter() {
       return characterBuilder_ != null || character_ != null;
     }
     /**
      * <code>.proto.Character character = 3;</code>
+     * @return The character.
      */
     public proto.Character getCharacter() {
       if (characterBuilder_ == null) {
@@ -864,12 +943,14 @@ private static final long serialVersionUID = 0L;
         proto.Collection, proto.Collection.Builder, proto.CollectionOrBuilder> collectionBuilder_;
     /**
      * <code>.proto.Collection collection = 4;</code>
+     * @return Whether the collection field is set.
      */
     public boolean hasCollection() {
       return collectionBuilder_ != null || collection_ != null;
     }
     /**
      * <code>.proto.Collection collection = 4;</code>
+     * @return The collection.
      */
     public proto.Collection getCollection() {
       if (collectionBuilder_ == null) {
@@ -981,12 +1062,14 @@ private static final long serialVersionUID = 0L;
         proto.Company, proto.Company.Builder, proto.CompanyOrBuilder> companyBuilder_;
     /**
      * <code>.proto.Company company = 5;</code>
+     * @return Whether the company field is set.
      */
     public boolean hasCompany() {
       return companyBuilder_ != null || company_ != null;
     }
     /**
      * <code>.proto.Company company = 5;</code>
+     * @return The company.
      */
     public proto.Company getCompany() {
       if (companyBuilder_ == null) {
@@ -1096,6 +1179,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object description_ = "";
     /**
      * <code>string description = 6;</code>
+     * @return The description.
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -1111,6 +1195,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 6;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -1127,6 +1212,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 6;</code>
+     * @param value The description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescription(
         java.lang.String value) {
@@ -1140,6 +1227,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDescription() {
       
@@ -1149,6 +1237,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 6;</code>
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
@@ -1167,12 +1257,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 7;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 7;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -1282,6 +1374,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 8;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1297,6 +1390,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 8;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1313,6 +1407,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 8;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -1326,6 +1422,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -1335,6 +1432,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 8;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1353,12 +1452,14 @@ private static final long serialVersionUID = 0L;
         proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder> platformBuilder_;
     /**
      * <code>.proto.Platform platform = 9;</code>
+     * @return Whether the platform field is set.
      */
     public boolean hasPlatform() {
       return platformBuilder_ != null || platform_ != null;
     }
     /**
      * <code>.proto.Platform platform = 9;</code>
+     * @return The platform.
      */
     public proto.Platform getPlatform() {
       if (platformBuilder_ == null) {
@@ -1470,12 +1571,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> publishedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp published_at = 10;</code>
+     * @return Whether the publishedAt field is set.
      */
     public boolean hasPublishedAt() {
       return publishedAtBuilder_ != null || publishedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp published_at = 10;</code>
+     * @return The publishedAt.
      */
     public com.google.protobuf.Timestamp getPublishedAt() {
       if (publishedAtBuilder_ == null) {
@@ -1587,12 +1690,14 @@ private static final long serialVersionUID = 0L;
         proto.TestDummy, proto.TestDummy.Builder, proto.TestDummyOrBuilder> testDummyBuilder_;
     /**
      * <code>.proto.TestDummy test_dummy = 11;</code>
+     * @return Whether the testDummy field is set.
      */
     public boolean hasTestDummy() {
       return testDummyBuilder_ != null || testDummy_ != null;
     }
     /**
      * <code>.proto.TestDummy test_dummy = 11;</code>
+     * @return The testDummy.
      */
     public proto.TestDummy getTestDummy() {
       if (testDummyBuilder_ == null) {
@@ -1704,12 +1809,14 @@ private static final long serialVersionUID = 0L;
         proto.Theme, proto.Theme.Builder, proto.ThemeOrBuilder> themeBuilder_;
     /**
      * <code>.proto.Theme theme = 12;</code>
+     * @return Whether the theme field is set.
      */
     public boolean hasTheme() {
       return themeBuilder_ != null || theme_ != null;
     }
     /**
      * <code>.proto.Theme theme = 12;</code>
+     * @return The theme.
      */
     public proto.Theme getTheme() {
       if (themeBuilder_ == null) {
@@ -1819,6 +1926,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 13;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -1834,6 +1942,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 13;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -1850,6 +1959,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 13;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -1863,6 +1974,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 13;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -1872,6 +1984,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 13;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

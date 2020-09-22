@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.AgeRatingResult}
  */
-public  final class AgeRatingResult extends
+public final class AgeRatingResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.AgeRatingResult)
     AgeRatingResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private AgeRatingResult() {
     ageratings_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new AgeRatingResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.AgeRating> getAgeratingsList() {
     return ageratings_;
   }
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.AgeRatingOrBuilder> 
       getAgeratingsOrBuilderList() {
     return ageratings_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
    */
+  @java.lang.Override
   public int getAgeratingsCount() {
     return ageratings_.size();
   }
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
    */
+  @java.lang.Override
   public proto.AgeRating getAgeratings(int index) {
     return ageratings_.get(index);
   }
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
    */
+  @java.lang.Override
   public proto.AgeRatingOrBuilder getAgeratingsOrBuilder(
       int index) {
     return ageratings_.get(index);

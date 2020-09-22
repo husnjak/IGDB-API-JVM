@@ -9,6 +9,7 @@ public interface PlatformVersionOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
@@ -38,40 +39,48 @@ public interface PlatformVersionOrBuilder extends
 
   /**
    * <code>string connectivity = 3;</code>
+   * @return The connectivity.
    */
   java.lang.String getConnectivity();
   /**
    * <code>string connectivity = 3;</code>
+   * @return The bytes for connectivity.
    */
   com.google.protobuf.ByteString
       getConnectivityBytes();
 
   /**
    * <code>string cpu = 4;</code>
+   * @return The cpu.
    */
   java.lang.String getCpu();
   /**
    * <code>string cpu = 4;</code>
+   * @return The bytes for cpu.
    */
   com.google.protobuf.ByteString
       getCpuBytes();
 
   /**
    * <code>string graphics = 5;</code>
+   * @return The graphics.
    */
   java.lang.String getGraphics();
   /**
    * <code>string graphics = 5;</code>
+   * @return The bytes for graphics.
    */
   com.google.protobuf.ByteString
       getGraphicsBytes();
 
   /**
    * <code>.proto.PlatformVersionCompany main_manufacturer = 6;</code>
+   * @return Whether the mainManufacturer field is set.
    */
   boolean hasMainManufacturer();
   /**
    * <code>.proto.PlatformVersionCompany main_manufacturer = 6;</code>
+   * @return The mainManufacturer.
    */
   proto.PlatformVersionCompany getMainManufacturer();
   /**
@@ -81,70 +90,84 @@ public interface PlatformVersionOrBuilder extends
 
   /**
    * <code>string media = 7;</code>
+   * @return The media.
    */
   java.lang.String getMedia();
   /**
    * <code>string media = 7;</code>
+   * @return The bytes for media.
    */
   com.google.protobuf.ByteString
       getMediaBytes();
 
   /**
    * <code>string memory = 8;</code>
+   * @return The memory.
    */
   java.lang.String getMemory();
   /**
    * <code>string memory = 8;</code>
+   * @return The bytes for memory.
    */
   com.google.protobuf.ByteString
       getMemoryBytes();
 
   /**
    * <code>string name = 9;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 9;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>string online = 10;</code>
+   * @return The online.
    */
   java.lang.String getOnline();
   /**
    * <code>string online = 10;</code>
+   * @return The bytes for online.
    */
   com.google.protobuf.ByteString
       getOnlineBytes();
 
   /**
    * <code>string os = 11;</code>
+   * @return The os.
    */
   java.lang.String getOs();
   /**
    * <code>string os = 11;</code>
+   * @return The bytes for os.
    */
   com.google.protobuf.ByteString
       getOsBytes();
 
   /**
    * <code>string output = 12;</code>
+   * @return The output.
    */
   java.lang.String getOutput();
   /**
    * <code>string output = 12;</code>
+   * @return The bytes for output.
    */
   com.google.protobuf.ByteString
       getOutputBytes();
 
   /**
    * <code>.proto.PlatformLogo platform_logo = 13;</code>
+   * @return Whether the platformLogo field is set.
    */
   boolean hasPlatformLogo();
   /**
    * <code>.proto.PlatformLogo platform_logo = 13;</code>
+   * @return The platformLogo.
    */
   proto.PlatformLogo getPlatformLogo();
   /**
@@ -178,70 +201,84 @@ public interface PlatformVersionOrBuilder extends
 
   /**
    * <code>string resolutions = 15;</code>
+   * @return The resolutions.
    */
   java.lang.String getResolutions();
   /**
    * <code>string resolutions = 15;</code>
+   * @return The bytes for resolutions.
    */
   com.google.protobuf.ByteString
       getResolutionsBytes();
 
   /**
    * <code>string slug = 16;</code>
+   * @return The slug.
    */
   java.lang.String getSlug();
   /**
    * <code>string slug = 16;</code>
+   * @return The bytes for slug.
    */
   com.google.protobuf.ByteString
       getSlugBytes();
 
   /**
    * <code>string sound = 17;</code>
+   * @return The sound.
    */
   java.lang.String getSound();
   /**
    * <code>string sound = 17;</code>
+   * @return The bytes for sound.
    */
   com.google.protobuf.ByteString
       getSoundBytes();
 
   /**
    * <code>string storage = 18;</code>
+   * @return The storage.
    */
   java.lang.String getStorage();
   /**
    * <code>string storage = 18;</code>
+   * @return The bytes for storage.
    */
   com.google.protobuf.ByteString
       getStorageBytes();
 
   /**
    * <code>string summary = 19;</code>
+   * @return The summary.
    */
   java.lang.String getSummary();
   /**
    * <code>string summary = 19;</code>
+   * @return The bytes for summary.
    */
   com.google.protobuf.ByteString
       getSummaryBytes();
 
   /**
    * <code>string url = 20;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 20;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>string checksum = 21;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 21;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

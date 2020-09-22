@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.AgeRatingContentDescription}
  */
-public  final class AgeRatingContentDescription extends
+public final class AgeRatingContentDescription extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.AgeRatingContentDescription)
     AgeRatingContentDescriptionOrBuilder {
@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
     category_ = 0;
     description_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new AgeRatingContentDescription();
   }
 
   @java.lang.Override
@@ -43,7 +50,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -52,14 +61,16 @@ private static final long serialVersionUID = 0L;
   private int category_;
   /**
    * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
-  public int getCategoryValue() {
+  @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
    * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * @return The category.
    */
-  public proto.AgeRatingRatingEnum getCategory() {
+  @java.lang.Override public proto.AgeRatingRatingEnum getCategory() {
     @SuppressWarnings("deprecation")
     proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(category_);
     return result == null ? proto.AgeRatingRatingEnum.UNRECOGNIZED : result;
@@ -69,7 +80,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object description_;
   /**
    * <code>string description = 3;</code>
+   * @return The description.
    */
+  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -84,7 +97,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string description = 3;</code>
+   * @return The bytes for description.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -103,7 +118,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 4;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -118,7 +135,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 4;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -339,12 +358,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -354,6 +377,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -365,21 +389,27 @@ private static final long serialVersionUID = 0L;
     private int category_ = 0;
     /**
      * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * @return The enum numeric value on the wire for category.
      */
-    public int getCategoryValue() {
+    @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
      * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * @param value The enum numeric value on the wire for category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
+      
       category_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * @return The category.
      */
+    @java.lang.Override
     public proto.AgeRatingRatingEnum getCategory() {
       @SuppressWarnings("deprecation")
       proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(category_);
@@ -387,6 +417,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * @param value The category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategory(proto.AgeRatingRatingEnum value) {
       if (value == null) {
@@ -399,6 +431,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCategory() {
       
@@ -410,6 +443,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object description_ = "";
     /**
      * <code>string description = 3;</code>
+     * @return The description.
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -425,6 +459,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -441,6 +476,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @param value The description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescription(
         java.lang.String value) {
@@ -454,6 +491,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDescription() {
       
@@ -463,6 +501,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
@@ -479,6 +519,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 4;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -494,6 +535,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -510,6 +552,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -523,6 +567,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -532,6 +577,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 4;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CollectionResult}
  */
-public  final class CollectionResult extends
+public final class CollectionResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CollectionResult)
     CollectionResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CollectionResult() {
     collections_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CollectionResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Collection> getCollectionsList() {
     return collections_;
   }
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CollectionOrBuilder> 
       getCollectionsOrBuilderList() {
     return collections_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
    */
+  @java.lang.Override
   public int getCollectionsCount() {
     return collections_.size();
   }
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
    */
+  @java.lang.Override
   public proto.Collection getCollections(int index) {
     return collections_.get(index);
   }
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
    */
+  @java.lang.Override
   public proto.CollectionOrBuilder getCollectionsOrBuilder(
       int index) {
     return collections_.get(index);

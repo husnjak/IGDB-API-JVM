@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameResult}
  */
-public  final class GameResult extends
+public final class GameResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameResult)
     GameResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameResult() {
     games_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game games = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getGamesList() {
     return games_;
   }
   /**
    * <code>repeated .proto.Game games = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getGamesOrBuilderList() {
     return games_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game games = 1;</code>
    */
+  @java.lang.Override
   public int getGamesCount() {
     return games_.size();
   }
   /**
    * <code>repeated .proto.Game games = 1;</code>
    */
+  @java.lang.Override
   public proto.Game getGames(int index) {
     return games_.get(index);
   }
   /**
    * <code>repeated .proto.Game games = 1;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGamesOrBuilder(
       int index) {
     return games_.get(index);

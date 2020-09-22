@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.Count}
  */
-public  final class Count extends
+public final class Count extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.Count)
     CountOrBuilder {
@@ -16,6 +16,13 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private Count() {
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new Count();
   }
 
   @java.lang.Override
@@ -40,7 +47,9 @@ private static final long serialVersionUID = 0L;
   private long count_;
   /**
    * <code>int64 count = 1;</code>
+   * @return The count.
    */
+  @java.lang.Override
   public long getCount() {
     return count_;
   }
@@ -242,12 +251,16 @@ private static final long serialVersionUID = 0L;
     private long count_ ;
     /**
      * <code>int64 count = 1;</code>
+     * @return The count.
      */
+    @java.lang.Override
     public long getCount() {
       return count_;
     }
     /**
      * <code>int64 count = 1;</code>
+     * @param value The count to set.
+     * @return This builder for chaining.
      */
     public Builder setCount(long value) {
       
@@ -257,6 +270,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int64 count = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCount() {
       

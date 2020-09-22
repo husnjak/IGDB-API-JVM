@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ReleaseDateResult}
  */
-public  final class ReleaseDateResult extends
+public final class ReleaseDateResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ReleaseDateResult)
     ReleaseDateResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private ReleaseDateResult() {
     releasedates_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ReleaseDateResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ReleaseDate releasedates = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.ReleaseDate> getReleasedatesList() {
     return releasedates_;
   }
   /**
    * <code>repeated .proto.ReleaseDate releasedates = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ReleaseDateOrBuilder> 
       getReleasedatesOrBuilderList() {
     return releasedates_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ReleaseDate releasedates = 1;</code>
    */
+  @java.lang.Override
   public int getReleasedatesCount() {
     return releasedates_.size();
   }
   /**
    * <code>repeated .proto.ReleaseDate releasedates = 1;</code>
    */
+  @java.lang.Override
   public proto.ReleaseDate getReleasedates(int index) {
     return releasedates_.get(index);
   }
   /**
    * <code>repeated .proto.ReleaseDate releasedates = 1;</code>
    */
+  @java.lang.Override
   public proto.ReleaseDateOrBuilder getReleasedatesOrBuilder(
       int index) {
     return releasedates_.get(index);

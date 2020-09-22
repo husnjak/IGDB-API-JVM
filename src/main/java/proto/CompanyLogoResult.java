@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CompanyLogoResult}
  */
-public  final class CompanyLogoResult extends
+public final class CompanyLogoResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CompanyLogoResult)
     CompanyLogoResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CompanyLogoResult() {
     companylogos_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CompanyLogoResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.CompanyLogo companylogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.CompanyLogo> getCompanylogosList() {
     return companylogos_;
   }
   /**
    * <code>repeated .proto.CompanyLogo companylogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CompanyLogoOrBuilder> 
       getCompanylogosOrBuilderList() {
     return companylogos_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.CompanyLogo companylogos = 1;</code>
    */
+  @java.lang.Override
   public int getCompanylogosCount() {
     return companylogos_.size();
   }
   /**
    * <code>repeated .proto.CompanyLogo companylogos = 1;</code>
    */
+  @java.lang.Override
   public proto.CompanyLogo getCompanylogos(int index) {
     return companylogos_.get(index);
   }
   /**
    * <code>repeated .proto.CompanyLogo companylogos = 1;</code>
    */
+  @java.lang.Override
   public proto.CompanyLogoOrBuilder getCompanylogosOrBuilder(
       int index) {
     return companylogos_.get(index);

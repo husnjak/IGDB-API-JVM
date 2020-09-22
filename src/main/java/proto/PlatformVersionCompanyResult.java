@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformVersionCompanyResult}
  */
-public  final class PlatformVersionCompanyResult extends
+public final class PlatformVersionCompanyResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformVersionCompanyResult)
     PlatformVersionCompanyResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformVersionCompanyResult() {
     platformversioncompanies_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformVersionCompanyResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformVersionCompany> getPlatformversioncompaniesList() {
     return platformversioncompanies_;
   }
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformVersionCompanyOrBuilder> 
       getPlatformversioncompaniesOrBuilderList() {
     return platformversioncompanies_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformversioncompaniesCount() {
     return platformversioncompanies_.size();
   }
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersionCompany getPlatformversioncompanies(int index) {
     return platformversioncompanies_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersionCompanyOrBuilder getPlatformversioncompaniesOrBuilder(
       int index) {
     return platformversioncompanies_.get(index);

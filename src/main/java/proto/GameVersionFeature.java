@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameVersionFeature}
  */
-public  final class GameVersionFeature extends
+public final class GameVersionFeature extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameVersionFeature)
     GameVersionFeatureOrBuilder {
@@ -21,6 +21,13 @@ private static final long serialVersionUID = 0L;
     title_ = "";
     values_ = java.util.Collections.emptyList();
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameVersionFeature();
   }
 
   @java.lang.Override
@@ -41,12 +48,13 @@ private static final long serialVersionUID = 0L;
             proto.GameVersionFeature.class, proto.GameVersionFeature.Builder.class);
   }
 
-  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -55,14 +63,16 @@ private static final long serialVersionUID = 0L;
   private int category_;
   /**
    * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
-  public int getCategoryValue() {
+  @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
    * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+   * @return The category.
    */
-  public proto.GameVersionFeatureCategoryEnum getCategory() {
+  @java.lang.Override public proto.GameVersionFeatureCategoryEnum getCategory() {
     @SuppressWarnings("deprecation")
     proto.GameVersionFeatureCategoryEnum result = proto.GameVersionFeatureCategoryEnum.valueOf(category_);
     return result == null ? proto.GameVersionFeatureCategoryEnum.UNRECOGNIZED : result;
@@ -72,7 +82,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object description_;
   /**
    * <code>string description = 3;</code>
+   * @return The description.
    */
+  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -87,7 +99,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string description = 3;</code>
+   * @return The bytes for description.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -106,7 +120,9 @@ private static final long serialVersionUID = 0L;
   private int position_;
   /**
    * <code>int32 position = 4;</code>
+   * @return The position.
    */
+  @java.lang.Override
   public int getPosition() {
     return position_;
   }
@@ -115,7 +131,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object title_;
   /**
    * <code>string title = 5;</code>
+   * @return The title.
    */
+  @java.lang.Override
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -130,7 +148,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string title = 5;</code>
+   * @return The bytes for title.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getTitleBytes() {
     java.lang.Object ref = title_;
@@ -150,12 +170,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeatureValue values = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVersionFeatureValue> getValuesList() {
     return values_;
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue values = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVersionFeatureValueOrBuilder> 
       getValuesOrBuilderList() {
     return values_;
@@ -163,18 +185,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeatureValue values = 6;</code>
    */
+  @java.lang.Override
   public int getValuesCount() {
     return values_.size();
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue values = 6;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeatureValue getValues(int index) {
     return values_.get(index);
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue values = 6;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeatureValueOrBuilder getValuesOrBuilder(
       int index) {
     return values_.get(index);
@@ -184,7 +209,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 7;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -199,7 +226,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 7;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -355,7 +384,7 @@ private static final long serialVersionUID = 0L;
 
       if (valuesBuilder_ == null) {
         values_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         valuesBuilder_.clear();
       }
@@ -388,23 +417,21 @@ private static final long serialVersionUID = 0L;
     public proto.GameVersionFeature buildPartial() {
       proto.GameVersionFeature result = new proto.GameVersionFeature(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.id_ = id_;
       result.category_ = category_;
       result.description_ = description_;
       result.position_ = position_;
       result.title_ = title_;
       if (valuesBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           values_ = java.util.Collections.unmodifiableList(values_);
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.values_ = values_;
       } else {
         result.values_ = valuesBuilder_.build();
       }
       result.checksum_ = checksum_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -446,12 +473,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -461,6 +492,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -472,21 +504,27 @@ private static final long serialVersionUID = 0L;
     private int category_ = 0;
     /**
      * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+     * @return The enum numeric value on the wire for category.
      */
-    public int getCategoryValue() {
+    @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
      * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+     * @param value The enum numeric value on the wire for category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
+      
       category_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+     * @return The category.
      */
+    @java.lang.Override
     public proto.GameVersionFeatureCategoryEnum getCategory() {
       @SuppressWarnings("deprecation")
       proto.GameVersionFeatureCategoryEnum result = proto.GameVersionFeatureCategoryEnum.valueOf(category_);
@@ -494,6 +532,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+     * @param value The category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategory(proto.GameVersionFeatureCategoryEnum value) {
       if (value == null) {
@@ -506,6 +546,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameVersionFeatureCategoryEnum category = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCategory() {
       
@@ -517,6 +558,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object description_ = "";
     /**
      * <code>string description = 3;</code>
+     * @return The description.
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -532,6 +574,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -548,6 +591,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @param value The description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescription(
         java.lang.String value) {
@@ -561,6 +606,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDescription() {
       
@@ -570,6 +616,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 3;</code>
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
@@ -586,12 +634,16 @@ private static final long serialVersionUID = 0L;
     private int position_ ;
     /**
      * <code>int32 position = 4;</code>
+     * @return The position.
      */
+    @java.lang.Override
     public int getPosition() {
       return position_;
     }
     /**
      * <code>int32 position = 4;</code>
+     * @param value The position to set.
+     * @return This builder for chaining.
      */
     public Builder setPosition(int value) {
       
@@ -601,6 +653,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 position = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearPosition() {
       
@@ -612,6 +665,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object title_ = "";
     /**
      * <code>string title = 5;</code>
+     * @return The title.
      */
     public java.lang.String getTitle() {
       java.lang.Object ref = title_;
@@ -627,6 +681,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string title = 5;</code>
+     * @return The bytes for title.
      */
     public com.google.protobuf.ByteString
         getTitleBytes() {
@@ -643,6 +698,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string title = 5;</code>
+     * @param value The title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitle(
         java.lang.String value) {
@@ -656,6 +713,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string title = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTitle() {
       
@@ -665,6 +723,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string title = 5;</code>
+     * @param value The bytes for title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitleBytes(
         com.google.protobuf.ByteString value) {
@@ -681,9 +741,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameVersionFeatureValue> values_ =
       java.util.Collections.emptyList();
     private void ensureValuesIsMutable() {
-      if (!((bitField0_ & 0x00000020) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         values_ = new java.util.ArrayList<proto.GameVersionFeatureValue>(values_);
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -833,7 +893,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearValues() {
       if (valuesBuilder_ == null) {
         values_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         valuesBuilder_.clear();
@@ -910,7 +970,7 @@ private static final long serialVersionUID = 0L;
         valuesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameVersionFeatureValue, proto.GameVersionFeatureValue.Builder, proto.GameVersionFeatureValueOrBuilder>(
                 values_,
-                ((bitField0_ & 0x00000020) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         values_ = null;
@@ -921,6 +981,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 7;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -936,6 +997,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 7;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -952,6 +1014,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 7;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -965,6 +1029,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -974,6 +1039,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 7;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

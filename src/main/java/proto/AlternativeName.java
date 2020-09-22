@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.AlternativeName}
  */
-public  final class AlternativeName extends
+public final class AlternativeName extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.AlternativeName)
     AlternativeNameOrBuilder {
@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
     comment_ = "";
     name_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new AlternativeName();
   }
 
   @java.lang.Override
@@ -43,7 +50,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -52,7 +61,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object comment_;
   /**
    * <code>string comment = 2;</code>
+   * @return The comment.
    */
+  @java.lang.Override
   public java.lang.String getComment() {
     java.lang.Object ref = comment_;
     if (ref instanceof java.lang.String) {
@@ -67,7 +78,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string comment = 2;</code>
+   * @return The bytes for comment.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getCommentBytes() {
     java.lang.Object ref = comment_;
@@ -86,19 +99,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 3;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 3;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 3;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -107,7 +125,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 4;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -122,7 +142,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 4;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -141,7 +163,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 5;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -156,7 +180,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 5;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -388,12 +414,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -403,6 +433,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -414,6 +445,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object comment_ = "";
     /**
      * <code>string comment = 2;</code>
+     * @return The comment.
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -429,6 +461,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @return The bytes for comment.
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -445,6 +478,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @param value The comment to set.
+     * @return This builder for chaining.
      */
     public Builder setComment(
         java.lang.String value) {
@@ -458,6 +493,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearComment() {
       
@@ -467,6 +503,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string comment = 2;</code>
+     * @param value The bytes for comment to set.
+     * @return This builder for chaining.
      */
     public Builder setCommentBytes(
         com.google.protobuf.ByteString value) {
@@ -485,12 +523,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 3;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 3;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -600,6 +640,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 4;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -615,6 +656,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 4;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -631,6 +673,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 4;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -644,6 +688,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -653,6 +698,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 4;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -669,6 +716,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 5;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -684,6 +732,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 5;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -700,6 +749,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 5;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -713,6 +764,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -722,6 +774,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 5;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.InvolvedCompanyResult}
  */
-public  final class InvolvedCompanyResult extends
+public final class InvolvedCompanyResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.InvolvedCompanyResult)
     InvolvedCompanyResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private InvolvedCompanyResult() {
     involvedcompanies_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new InvolvedCompanyResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.InvolvedCompany> getInvolvedcompaniesList() {
     return involvedcompanies_;
   }
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.InvolvedCompanyOrBuilder> 
       getInvolvedcompaniesOrBuilderList() {
     return involvedcompanies_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
    */
+  @java.lang.Override
   public int getInvolvedcompaniesCount() {
     return involvedcompanies_.size();
   }
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
    */
+  @java.lang.Override
   public proto.InvolvedCompany getInvolvedcompanies(int index) {
     return involvedcompanies_.get(index);
   }
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
    */
+  @java.lang.Override
   public proto.InvolvedCompanyOrBuilder getInvolvedcompaniesOrBuilder(
       int index) {
     return involvedcompanies_.get(index);

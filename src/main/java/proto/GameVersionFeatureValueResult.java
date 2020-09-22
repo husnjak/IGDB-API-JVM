@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameVersionFeatureValueResult}
  */
-public  final class GameVersionFeatureValueResult extends
+public final class GameVersionFeatureValueResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameVersionFeatureValueResult)
     GameVersionFeatureValueResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameVersionFeatureValueResult() {
     gameversionfeaturevalues_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameVersionFeatureValueResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVersionFeatureValue> getGameversionfeaturevaluesList() {
     return gameversionfeaturevalues_;
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVersionFeatureValueOrBuilder> 
       getGameversionfeaturevaluesOrBuilderList() {
     return gameversionfeaturevalues_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
    */
+  @java.lang.Override
   public int getGameversionfeaturevaluesCount() {
     return gameversionfeaturevalues_.size();
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeatureValue getGameversionfeaturevalues(int index) {
     return gameversionfeaturevalues_.get(index);
   }
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersionFeatureValueOrBuilder getGameversionfeaturevaluesOrBuilder(
       int index) {
     return gameversionfeaturevalues_.get(index);

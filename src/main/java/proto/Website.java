@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.Website}
  */
-public  final class Website extends
+public final class Website extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.Website)
     WebsiteOrBuilder {
@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
     category_ = 0;
     url_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new Website();
   }
 
   @java.lang.Override
@@ -43,7 +50,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -52,14 +61,16 @@ private static final long serialVersionUID = 0L;
   private int category_;
   /**
    * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
-  public int getCategoryValue() {
+  @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
    * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+   * @return The category.
    */
-  public proto.WebsiteCategoryEnum getCategory() {
+  @java.lang.Override public proto.WebsiteCategoryEnum getCategory() {
     @SuppressWarnings("deprecation")
     proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.valueOf(category_);
     return result == null ? proto.WebsiteCategoryEnum.UNRECOGNIZED : result;
@@ -69,19 +80,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 3;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 3;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 3;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -90,7 +106,9 @@ private static final long serialVersionUID = 0L;
   private boolean trusted_;
   /**
    * <code>bool trusted = 4;</code>
+   * @return The trusted.
    */
+  @java.lang.Override
   public boolean getTrusted() {
     return trusted_;
   }
@@ -99,7 +117,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object url_;
   /**
    * <code>string url = 5;</code>
+   * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +134,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string url = 5;</code>
+   * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getUrlBytes() {
     java.lang.Object ref = url_;
@@ -133,7 +155,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 6;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -148,7 +172,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 6;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -383,12 +409,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -398,6 +428,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -409,21 +440,27 @@ private static final long serialVersionUID = 0L;
     private int category_ = 0;
     /**
      * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+     * @return The enum numeric value on the wire for category.
      */
-    public int getCategoryValue() {
+    @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
      * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+     * @param value The enum numeric value on the wire for category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
+      
       category_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+     * @return The category.
      */
+    @java.lang.Override
     public proto.WebsiteCategoryEnum getCategory() {
       @SuppressWarnings("deprecation")
       proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.valueOf(category_);
@@ -431,6 +468,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+     * @param value The category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategory(proto.WebsiteCategoryEnum value) {
       if (value == null) {
@@ -443,6 +482,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCategory() {
       
@@ -456,12 +496,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 3;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 3;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -571,12 +613,16 @@ private static final long serialVersionUID = 0L;
     private boolean trusted_ ;
     /**
      * <code>bool trusted = 4;</code>
+     * @return The trusted.
      */
+    @java.lang.Override
     public boolean getTrusted() {
       return trusted_;
     }
     /**
      * <code>bool trusted = 4;</code>
+     * @param value The trusted to set.
+     * @return This builder for chaining.
      */
     public Builder setTrusted(boolean value) {
       
@@ -586,6 +632,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool trusted = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTrusted() {
       
@@ -597,6 +644,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object url_ = "";
     /**
      * <code>string url = 5;</code>
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -612,6 +660,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 5;</code>
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -628,6 +677,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 5;</code>
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -641,6 +692,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
       
@@ -650,6 +702,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 5;</code>
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -666,6 +720,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 6;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -681,6 +736,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -697,6 +753,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -710,6 +768,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -719,6 +778,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 6;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

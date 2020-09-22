@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformVersionResult}
  */
-public  final class PlatformVersionResult extends
+public final class PlatformVersionResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformVersionResult)
     PlatformVersionResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformVersionResult() {
     platformversions_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformVersionResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersion platformversions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformVersion> getPlatformversionsList() {
     return platformversions_;
   }
   /**
    * <code>repeated .proto.PlatformVersion platformversions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformVersionOrBuilder> 
       getPlatformversionsOrBuilderList() {
     return platformversions_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformVersion platformversions = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformversionsCount() {
     return platformversions_.size();
   }
   /**
    * <code>repeated .proto.PlatformVersion platformversions = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersion getPlatformversions(int index) {
     return platformversions_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformVersion platformversions = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformVersionOrBuilder getPlatformversionsOrBuilder(
       int index) {
     return platformversions_.get(index);

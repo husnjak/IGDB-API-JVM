@@ -9,29 +9,36 @@ public interface MultiQueryResultOrBuilder extends
 
   /**
    * <code>string name = 1;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 1;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>repeated bytes results = 2;</code>
+   * @return A list containing the results.
    */
   java.util.List<com.google.protobuf.ByteString> getResultsList();
   /**
    * <code>repeated bytes results = 2;</code>
+   * @return The count of results.
    */
   int getResultsCount();
   /**
    * <code>repeated bytes results = 2;</code>
+   * @param index The index of the element to return.
+   * @return The results at the given index.
    */
   com.google.protobuf.ByteString getResults(int index);
 
   /**
    * <code>int64 count = 3;</code>
+   * @return The count.
    */
   long getCount();
 }

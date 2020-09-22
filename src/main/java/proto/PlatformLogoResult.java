@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformLogoResult}
  */
-public  final class PlatformLogoResult extends
+public final class PlatformLogoResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformLogoResult)
     PlatformLogoResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformLogoResult() {
     platformlogos_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformLogoResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformLogo platformlogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformLogo> getPlatformlogosList() {
     return platformlogos_;
   }
   /**
    * <code>repeated .proto.PlatformLogo platformlogos = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformLogoOrBuilder> 
       getPlatformlogosOrBuilderList() {
     return platformlogos_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformLogo platformlogos = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformlogosCount() {
     return platformlogos_.size();
   }
   /**
    * <code>repeated .proto.PlatformLogo platformlogos = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformLogo getPlatformlogos(int index) {
     return platformlogos_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformLogo platformlogos = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformLogoOrBuilder getPlatformlogosOrBuilder(
       int index) {
     return platformlogos_.get(index);

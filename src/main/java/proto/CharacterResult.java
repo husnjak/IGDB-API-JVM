@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CharacterResult}
  */
-public  final class CharacterResult extends
+public final class CharacterResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CharacterResult)
     CharacterResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CharacterResult() {
     characters_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CharacterResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Character characters = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Character> getCharactersList() {
     return characters_;
   }
   /**
    * <code>repeated .proto.Character characters = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CharacterOrBuilder> 
       getCharactersOrBuilderList() {
     return characters_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Character characters = 1;</code>
    */
+  @java.lang.Override
   public int getCharactersCount() {
     return characters_.size();
   }
   /**
    * <code>repeated .proto.Character characters = 1;</code>
    */
+  @java.lang.Override
   public proto.Character getCharacters(int index) {
     return characters_.get(index);
   }
   /**
    * <code>repeated .proto.Character characters = 1;</code>
    */
+  @java.lang.Override
   public proto.CharacterOrBuilder getCharactersOrBuilder(
       int index) {
     return characters_.get(index);

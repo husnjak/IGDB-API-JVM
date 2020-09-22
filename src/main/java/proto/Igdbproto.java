@@ -827,19 +827,11 @@ public final class Igdbproto {
       "TestEnum\022\034\n\030TESTDUMMY_ENUM_TEST_NULL\020\000\022\t" +
       "\n\005ENUM1\020\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
     };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.TimestampProto.getDescriptor(),
-        }, assigner);
+        });
     internal_static_proto_Count_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_proto_Count_fieldAccessorTable = new

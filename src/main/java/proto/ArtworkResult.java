@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ArtworkResult}
  */
-public  final class ArtworkResult extends
+public final class ArtworkResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ArtworkResult)
     ArtworkResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private ArtworkResult() {
     artworks_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ArtworkResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Artwork artworks = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Artwork> getArtworksList() {
     return artworks_;
   }
   /**
    * <code>repeated .proto.Artwork artworks = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ArtworkOrBuilder> 
       getArtworksOrBuilderList() {
     return artworks_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Artwork artworks = 1;</code>
    */
+  @java.lang.Override
   public int getArtworksCount() {
     return artworks_.size();
   }
   /**
    * <code>repeated .proto.Artwork artworks = 1;</code>
    */
+  @java.lang.Override
   public proto.Artwork getArtworks(int index) {
     return artworks_.get(index);
   }
   /**
    * <code>repeated .proto.Artwork artworks = 1;</code>
    */
+  @java.lang.Override
   public proto.ArtworkOrBuilder getArtworksOrBuilder(
       int index) {
     return artworks_.get(index);

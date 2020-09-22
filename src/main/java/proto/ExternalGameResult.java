@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ExternalGameResult}
  */
-public  final class ExternalGameResult extends
+public final class ExternalGameResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ExternalGameResult)
     ExternalGameResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private ExternalGameResult() {
     externalgames_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ExternalGameResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.ExternalGame> getExternalgamesList() {
     return externalgames_;
   }
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ExternalGameOrBuilder> 
       getExternalgamesOrBuilderList() {
     return externalgames_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
    */
+  @java.lang.Override
   public int getExternalgamesCount() {
     return externalgames_.size();
   }
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
    */
+  @java.lang.Override
   public proto.ExternalGame getExternalgames(int index) {
     return externalgames_.get(index);
   }
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
    */
+  @java.lang.Override
   public proto.ExternalGameOrBuilder getExternalgamesOrBuilder(
       int index) {
     return externalgames_.get(index);

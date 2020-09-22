@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.MultiplayerModeResult}
  */
-public  final class MultiplayerModeResult extends
+public final class MultiplayerModeResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.MultiplayerModeResult)
     MultiplayerModeResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private MultiplayerModeResult() {
     multiplayermodes_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new MultiplayerModeResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiplayerMode multiplayermodes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.MultiplayerMode> getMultiplayermodesList() {
     return multiplayermodes_;
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayermodes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.MultiplayerModeOrBuilder> 
       getMultiplayermodesOrBuilderList() {
     return multiplayermodes_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiplayerMode multiplayermodes = 1;</code>
    */
+  @java.lang.Override
   public int getMultiplayermodesCount() {
     return multiplayermodes_.size();
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayermodes = 1;</code>
    */
+  @java.lang.Override
   public proto.MultiplayerMode getMultiplayermodes(int index) {
     return multiplayermodes_.get(index);
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayermodes = 1;</code>
    */
+  @java.lang.Override
   public proto.MultiplayerModeOrBuilder getMultiplayermodesOrBuilder(
       int index) {
     return multiplayermodes_.get(index);

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.FranchiseResult}
  */
-public  final class FranchiseResult extends
+public final class FranchiseResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.FranchiseResult)
     FranchiseResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private FranchiseResult() {
     franchises_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new FranchiseResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Franchise> getFranchisesList() {
     return franchises_;
   }
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.FranchiseOrBuilder> 
       getFranchisesOrBuilderList() {
     return franchises_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
    */
+  @java.lang.Override
   public int getFranchisesCount() {
     return franchises_.size();
   }
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
    */
+  @java.lang.Override
   public proto.Franchise getFranchises(int index) {
     return franchises_.get(index);
   }
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
    */
+  @java.lang.Override
   public proto.FranchiseOrBuilder getFranchisesOrBuilder(
       int index) {
     return franchises_.get(index);

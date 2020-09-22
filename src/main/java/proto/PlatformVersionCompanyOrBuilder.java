@@ -9,25 +9,30 @@ public interface PlatformVersionCompanyOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>string comment = 2;</code>
+   * @return The comment.
    */
   java.lang.String getComment();
   /**
    * <code>string comment = 2;</code>
+   * @return The bytes for comment.
    */
   com.google.protobuf.ByteString
       getCommentBytes();
 
   /**
    * <code>.proto.Company company = 3;</code>
+   * @return Whether the company field is set.
    */
   boolean hasCompany();
   /**
    * <code>.proto.Company company = 3;</code>
+   * @return The company.
    */
   proto.Company getCompany();
   /**
@@ -37,20 +42,24 @@ public interface PlatformVersionCompanyOrBuilder extends
 
   /**
    * <code>bool developer = 4;</code>
+   * @return The developer.
    */
   boolean getDeveloper();
 
   /**
    * <code>bool manufacturer = 5;</code>
+   * @return The manufacturer.
    */
   boolean getManufacturer();
 
   /**
    * <code>string checksum = 6;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 6;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

@@ -9,6 +9,7 @@ public interface GameOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
@@ -38,11 +39,13 @@ public interface GameOrBuilder extends
 
   /**
    * <code>double aggregated_rating = 3;</code>
+   * @return The aggregatedRating.
    */
   double getAggregatedRating();
 
   /**
    * <code>int32 aggregated_rating_count = 4;</code>
+   * @return The aggregatedRatingCount.
    */
   int getAggregatedRatingCount();
 
@@ -120,19 +123,23 @@ public interface GameOrBuilder extends
 
   /**
    * <code>.proto.GameCategoryEnum category = 8;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.GameCategoryEnum category = 8;</code>
+   * @return The category.
    */
   proto.GameCategoryEnum getCategory();
 
   /**
    * <code>.proto.Collection collection = 9;</code>
+   * @return Whether the collection field is set.
    */
   boolean hasCollection();
   /**
    * <code>.proto.Collection collection = 9;</code>
+   * @return The collection.
    */
   proto.Collection getCollection();
   /**
@@ -142,10 +149,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>.proto.Cover cover = 10;</code>
+   * @return Whether the cover field is set.
    */
   boolean hasCover();
   /**
    * <code>.proto.Cover cover = 10;</code>
+   * @return The cover.
    */
   proto.Cover getCover();
   /**
@@ -155,10 +164,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 11;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 11;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -240,10 +251,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+   * @return Whether the firstReleaseDate field is set.
    */
   boolean hasFirstReleaseDate();
   /**
    * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+   * @return The firstReleaseDate.
    */
   com.google.protobuf.Timestamp getFirstReleaseDate();
   /**
@@ -253,15 +266,18 @@ public interface GameOrBuilder extends
 
   /**
    * <code>int32 follows = 16;</code>
+   * @return The follows.
    */
   int getFollows();
 
   /**
    * <code>.proto.Franchise franchise = 17;</code>
+   * @return Whether the franchise field is set.
    */
   boolean hasFranchise();
   /**
    * <code>.proto.Franchise franchise = 17;</code>
+   * @return The franchise.
    */
   proto.Franchise getFranchise();
   /**
@@ -367,6 +383,7 @@ public interface GameOrBuilder extends
 
   /**
    * <code>int32 hypes = 22;</code>
+   * @return The hypes.
    */
   int getHypes();
 
@@ -444,20 +461,24 @@ public interface GameOrBuilder extends
 
   /**
    * <code>string name = 26;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 26;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>.proto.Game parent_game = 27;</code>
+   * @return Whether the parentGame field is set.
    */
   boolean hasParentGame();
   /**
    * <code>.proto.Game parent_game = 27;</code>
+   * @return The parentGame.
    */
   proto.Game getParentGame();
   /**
@@ -515,11 +536,13 @@ public interface GameOrBuilder extends
 
   /**
    * <code>double rating = 30;</code>
+   * @return The rating.
    */
   double getRating();
 
   /**
    * <code>int32 rating_count = 31;</code>
+   * @return The ratingCount.
    */
   int getRatingCount();
 
@@ -597,10 +620,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>string slug = 35;</code>
+   * @return The slug.
    */
   java.lang.String getSlug();
   /**
    * <code>string slug = 35;</code>
+   * @return The bytes for slug.
    */
   com.google.protobuf.ByteString
       getSlugBytes();
@@ -631,43 +656,53 @@ public interface GameOrBuilder extends
 
   /**
    * <code>.proto.GameStatusEnum status = 37;</code>
+   * @return The enum numeric value on the wire for status.
    */
   int getStatusValue();
   /**
    * <code>.proto.GameStatusEnum status = 37;</code>
+   * @return The status.
    */
   proto.GameStatusEnum getStatus();
 
   /**
    * <code>string storyline = 38;</code>
+   * @return The storyline.
    */
   java.lang.String getStoryline();
   /**
    * <code>string storyline = 38;</code>
+   * @return The bytes for storyline.
    */
   com.google.protobuf.ByteString
       getStorylineBytes();
 
   /**
    * <code>string summary = 39;</code>
+   * @return The summary.
    */
   java.lang.String getSummary();
   /**
    * <code>string summary = 39;</code>
+   * @return The bytes for summary.
    */
   com.google.protobuf.ByteString
       getSummaryBytes();
 
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @return A list containing the tags.
    */
   java.util.List<java.lang.Integer> getTagsList();
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @return The count of tags.
    */
   int getTagsCount();
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @param index The index of the element to return.
+   * @return The tags at the given index.
    */
   int getTags(int index);
 
@@ -697,20 +732,24 @@ public interface GameOrBuilder extends
 
   /**
    * <code>double total_rating = 42;</code>
+   * @return The totalRating.
    */
   double getTotalRating();
 
   /**
    * <code>int32 total_rating_count = 43;</code>
+   * @return The totalRatingCount.
    */
   int getTotalRatingCount();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -720,20 +759,24 @@ public interface GameOrBuilder extends
 
   /**
    * <code>string url = 45;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 45;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>.proto.Game version_parent = 46;</code>
+   * @return Whether the versionParent field is set.
    */
   boolean hasVersionParent();
   /**
    * <code>.proto.Game version_parent = 46;</code>
+   * @return The versionParent.
    */
   proto.Game getVersionParent();
   /**
@@ -743,10 +786,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>string version_title = 47;</code>
+   * @return The versionTitle.
    */
   java.lang.String getVersionTitle();
   /**
    * <code>string version_title = 47;</code>
+   * @return The bytes for versionTitle.
    */
   com.google.protobuf.ByteString
       getVersionTitleBytes();
@@ -801,10 +846,12 @@ public interface GameOrBuilder extends
 
   /**
    * <code>string checksum = 50;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 50;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

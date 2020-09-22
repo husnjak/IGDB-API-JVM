@@ -9,34 +9,41 @@ public interface AgeRatingContentDescriptionOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * @return The category.
    */
   proto.AgeRatingRatingEnum getCategory();
 
   /**
    * <code>string description = 3;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 3;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
 
   /**
    * <code>string checksum = 4;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 4;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

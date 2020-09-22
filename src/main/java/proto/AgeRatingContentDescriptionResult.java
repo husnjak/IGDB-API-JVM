@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.AgeRatingContentDescriptionResult}
  */
-public  final class AgeRatingContentDescriptionResult extends
+public final class AgeRatingContentDescriptionResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.AgeRatingContentDescriptionResult)
     AgeRatingContentDescriptionResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private AgeRatingContentDescriptionResult() {
     ageratingcontentdescriptions_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new AgeRatingContentDescriptionResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRatingContentDescription ageratingcontentdescriptions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.AgeRatingContentDescription> getAgeratingcontentdescriptionsList() {
     return ageratingcontentdescriptions_;
   }
   /**
    * <code>repeated .proto.AgeRatingContentDescription ageratingcontentdescriptions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.AgeRatingContentDescriptionOrBuilder> 
       getAgeratingcontentdescriptionsOrBuilderList() {
     return ageratingcontentdescriptions_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRatingContentDescription ageratingcontentdescriptions = 1;</code>
    */
+  @java.lang.Override
   public int getAgeratingcontentdescriptionsCount() {
     return ageratingcontentdescriptions_.size();
   }
   /**
    * <code>repeated .proto.AgeRatingContentDescription ageratingcontentdescriptions = 1;</code>
    */
+  @java.lang.Override
   public proto.AgeRatingContentDescription getAgeratingcontentdescriptions(int index) {
     return ageratingcontentdescriptions_.get(index);
   }
   /**
    * <code>repeated .proto.AgeRatingContentDescription ageratingcontentdescriptions = 1;</code>
    */
+  @java.lang.Override
   public proto.AgeRatingContentDescriptionOrBuilder getAgeratingcontentdescriptionsOrBuilder(
       int index) {
     return ageratingcontentdescriptions_.get(index);

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameModeResult}
  */
-public  final class GameModeResult extends
+public final class GameModeResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameModeResult)
     GameModeResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameModeResult() {
     gamemodes_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameModeResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameMode gamemodes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameMode> getGamemodesList() {
     return gamemodes_;
   }
   /**
    * <code>repeated .proto.GameMode gamemodes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameModeOrBuilder> 
       getGamemodesOrBuilderList() {
     return gamemodes_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameMode gamemodes = 1;</code>
    */
+  @java.lang.Override
   public int getGamemodesCount() {
     return gamemodes_.size();
   }
   /**
    * <code>repeated .proto.GameMode gamemodes = 1;</code>
    */
+  @java.lang.Override
   public proto.GameMode getGamemodes(int index) {
     return gamemodes_.get(index);
   }
   /**
    * <code>repeated .proto.GameMode gamemodes = 1;</code>
    */
+  @java.lang.Override
   public proto.GameModeOrBuilder getGamemodesOrBuilder(
       int index) {
     return gamemodes_.get(index);

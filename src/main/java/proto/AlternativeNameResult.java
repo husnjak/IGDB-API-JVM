@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.AlternativeNameResult}
  */
-public  final class AlternativeNameResult extends
+public final class AlternativeNameResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.AlternativeNameResult)
     AlternativeNameResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private AlternativeNameResult() {
     alternativenames_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new AlternativeNameResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.AlternativeName> getAlternativenamesList() {
     return alternativenames_;
   }
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.AlternativeNameOrBuilder> 
       getAlternativenamesOrBuilderList() {
     return alternativenames_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
    */
+  @java.lang.Override
   public int getAlternativenamesCount() {
     return alternativenames_.size();
   }
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
    */
+  @java.lang.Override
   public proto.AlternativeName getAlternativenames(int index) {
     return alternativenames_.get(index);
   }
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
    */
+  @java.lang.Override
   public proto.AlternativeNameOrBuilder getAlternativenamesOrBuilder(
       int index) {
     return alternativenames_.get(index);

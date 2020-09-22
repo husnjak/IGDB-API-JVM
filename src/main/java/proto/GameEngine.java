@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameEngine}
  */
-public  final class GameEngine extends
+public final class GameEngine extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameEngine)
     GameEngineOrBuilder {
@@ -23,6 +23,13 @@ private static final long serialVersionUID = 0L;
     slug_ = "";
     url_ = "";
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameEngine();
   }
 
   @java.lang.Override
@@ -43,12 +50,13 @@ private static final long serialVersionUID = 0L;
             proto.GameEngine.class, proto.GameEngine.Builder.class);
   }
 
-  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -58,12 +66,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Company companies = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Company> getCompaniesList() {
     return companies_;
   }
   /**
    * <code>repeated .proto.Company companies = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CompanyOrBuilder> 
       getCompaniesOrBuilderList() {
     return companies_;
@@ -71,18 +81,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Company companies = 2;</code>
    */
+  @java.lang.Override
   public int getCompaniesCount() {
     return companies_.size();
   }
   /**
    * <code>repeated .proto.Company companies = 2;</code>
    */
+  @java.lang.Override
   public proto.Company getCompanies(int index) {
     return companies_.get(index);
   }
   /**
    * <code>repeated .proto.Company companies = 2;</code>
    */
+  @java.lang.Override
   public proto.CompanyOrBuilder getCompaniesOrBuilder(
       int index) {
     return companies_.get(index);
@@ -92,19 +105,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp createdAt_;
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
+  @java.lang.Override
   public boolean hasCreatedAt() {
     return createdAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreatedAt() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return getCreatedAt();
   }
@@ -113,7 +131,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object description_;
   /**
    * <code>string description = 4;</code>
+   * @return The description.
    */
+  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +148,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string description = 4;</code>
+   * @return The bytes for description.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -147,19 +169,24 @@ private static final long serialVersionUID = 0L;
   private proto.GameEngineLogo logo_;
   /**
    * <code>.proto.GameEngineLogo logo = 5;</code>
+   * @return Whether the logo field is set.
    */
+  @java.lang.Override
   public boolean hasLogo() {
     return logo_ != null;
   }
   /**
    * <code>.proto.GameEngineLogo logo = 5;</code>
+   * @return The logo.
    */
+  @java.lang.Override
   public proto.GameEngineLogo getLogo() {
     return logo_ == null ? proto.GameEngineLogo.getDefaultInstance() : logo_;
   }
   /**
    * <code>.proto.GameEngineLogo logo = 5;</code>
    */
+  @java.lang.Override
   public proto.GameEngineLogoOrBuilder getLogoOrBuilder() {
     return getLogo();
   }
@@ -168,7 +195,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 6;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -183,7 +212,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 6;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -203,12 +234,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Platform platforms = 7;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Platform> getPlatformsList() {
     return platforms_;
   }
   /**
    * <code>repeated .proto.Platform platforms = 7;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformOrBuilder> 
       getPlatformsOrBuilderList() {
     return platforms_;
@@ -216,18 +249,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Platform platforms = 7;</code>
    */
+  @java.lang.Override
   public int getPlatformsCount() {
     return platforms_.size();
   }
   /**
    * <code>repeated .proto.Platform platforms = 7;</code>
    */
+  @java.lang.Override
   public proto.Platform getPlatforms(int index) {
     return platforms_.get(index);
   }
   /**
    * <code>repeated .proto.Platform platforms = 7;</code>
    */
+  @java.lang.Override
   public proto.PlatformOrBuilder getPlatformsOrBuilder(
       int index) {
     return platforms_.get(index);
@@ -237,7 +273,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object slug_;
   /**
    * <code>string slug = 8;</code>
+   * @return The slug.
    */
+  @java.lang.Override
   public java.lang.String getSlug() {
     java.lang.Object ref = slug_;
     if (ref instanceof java.lang.String) {
@@ -252,7 +290,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string slug = 8;</code>
+   * @return The bytes for slug.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSlugBytes() {
     java.lang.Object ref = slug_;
@@ -271,19 +311,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return Whether the updatedAt field is set.
    */
+  @java.lang.Override
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return The updatedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
@@ -292,7 +337,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object url_;
   /**
    * <code>string url = 10;</code>
+   * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -307,7 +354,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string url = 10;</code>
+   * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getUrlBytes() {
     java.lang.Object ref = url_;
@@ -326,7 +375,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 11;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -341,7 +392,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 11;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -490,7 +543,7 @@ private static final long serialVersionUID = 0L;
 
       if (companiesBuilder_ == null) {
         companies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         companiesBuilder_.clear();
       }
@@ -512,7 +565,7 @@ private static final long serialVersionUID = 0L;
 
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
         platformsBuilder_.clear();
       }
@@ -555,12 +608,11 @@ private static final long serialVersionUID = 0L;
     public proto.GameEngine buildPartial() {
       proto.GameEngine result = new proto.GameEngine(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.id_ = id_;
       if (companiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           companies_ = java.util.Collections.unmodifiableList(companies_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.companies_ = companies_;
       } else {
@@ -579,9 +631,9 @@ private static final long serialVersionUID = 0L;
       }
       result.name_ = name_;
       if (platformsBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           platforms_ = java.util.Collections.unmodifiableList(platforms_);
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.platforms_ = platforms_;
       } else {
@@ -595,7 +647,6 @@ private static final long serialVersionUID = 0L;
       }
       result.url_ = url_;
       result.checksum_ = checksum_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -637,12 +688,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -652,6 +707,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -663,9 +719,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Company> companies_ =
       java.util.Collections.emptyList();
     private void ensureCompaniesIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         companies_ = new java.util.ArrayList<proto.Company>(companies_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -815,7 +871,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearCompanies() {
       if (companiesBuilder_ == null) {
         companies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         companiesBuilder_.clear();
@@ -892,7 +948,7 @@ private static final long serialVersionUID = 0L;
         companiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Company, proto.Company.Builder, proto.CompanyOrBuilder>(
                 companies_,
-                ((bitField0_ & 0x00000002) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         companies_ = null;
@@ -905,12 +961,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
       return createdAtBuilder_ != null || createdAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
       if (createdAtBuilder_ == null) {
@@ -1020,6 +1078,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object description_ = "";
     /**
      * <code>string description = 4;</code>
+     * @return The description.
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -1035,6 +1094,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 4;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -1051,6 +1111,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 4;</code>
+     * @param value The description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescription(
         java.lang.String value) {
@@ -1064,6 +1126,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDescription() {
       
@@ -1073,6 +1136,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string description = 4;</code>
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
@@ -1091,12 +1156,14 @@ private static final long serialVersionUID = 0L;
         proto.GameEngineLogo, proto.GameEngineLogo.Builder, proto.GameEngineLogoOrBuilder> logoBuilder_;
     /**
      * <code>.proto.GameEngineLogo logo = 5;</code>
+     * @return Whether the logo field is set.
      */
     public boolean hasLogo() {
       return logoBuilder_ != null || logo_ != null;
     }
     /**
      * <code>.proto.GameEngineLogo logo = 5;</code>
+     * @return The logo.
      */
     public proto.GameEngineLogo getLogo() {
       if (logoBuilder_ == null) {
@@ -1206,6 +1273,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 6;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1221,6 +1289,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 6;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1237,6 +1306,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 6;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -1250,6 +1321,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -1259,6 +1331,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 6;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1275,9 +1349,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Platform> platforms_ =
       java.util.Collections.emptyList();
     private void ensurePlatformsIsMutable() {
-      if (!((bitField0_ & 0x00000040) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         platforms_ = new java.util.ArrayList<proto.Platform>(platforms_);
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000002;
        }
     }
 
@@ -1427,7 +1501,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlatforms() {
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         platformsBuilder_.clear();
@@ -1504,7 +1578,7 @@ private static final long serialVersionUID = 0L;
         platformsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder>(
                 platforms_,
-                ((bitField0_ & 0x00000040) != 0),
+                ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
         platforms_ = null;
@@ -1515,6 +1589,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object slug_ = "";
     /**
      * <code>string slug = 8;</code>
+     * @return The slug.
      */
     public java.lang.String getSlug() {
       java.lang.Object ref = slug_;
@@ -1530,6 +1605,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 8;</code>
+     * @return The bytes for slug.
      */
     public com.google.protobuf.ByteString
         getSlugBytes() {
@@ -1546,6 +1622,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 8;</code>
+     * @param value The slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlug(
         java.lang.String value) {
@@ -1559,6 +1637,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSlug() {
       
@@ -1568,6 +1647,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 8;</code>
+     * @param value The bytes for slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
@@ -1586,12 +1667,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+     * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+     * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -1701,6 +1784,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object url_ = "";
     /**
      * <code>string url = 10;</code>
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -1716,6 +1800,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 10;</code>
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -1732,6 +1817,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 10;</code>
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -1745,6 +1832,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 10;</code>
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
       
@@ -1754,6 +1842,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 10;</code>
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -1770,6 +1860,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 11;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -1785,6 +1876,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 11;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -1801,6 +1893,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 11;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -1814,6 +1908,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 11;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -1823,6 +1918,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 11;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.dokka") version "0.10.1"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
-    id("com.google.protobuf") version "0.8.12"
+    id("com.google.protobuf") version "0.8.13"
 }
 
 group = "com.api.igdb"
@@ -60,7 +60,7 @@ tasks {
 
 protobuf.protobuf.run {
     protoc(delegateClosureOf<ExecutableLocator> {
-        artifact = "com.google.protobuf:protoc:3.7.0"
+        artifact = "com.google.protobuf:protoc:3.13.0"
     })
     generatedFilesBaseDir = "$projectDir/src"
 }

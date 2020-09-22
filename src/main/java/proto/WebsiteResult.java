@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.WebsiteResult}
  */
-public  final class WebsiteResult extends
+public final class WebsiteResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.WebsiteResult)
     WebsiteResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private WebsiteResult() {
     websites_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new WebsiteResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Website websites = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Website> getWebsitesList() {
     return websites_;
   }
   /**
    * <code>repeated .proto.Website websites = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.WebsiteOrBuilder> 
       getWebsitesOrBuilderList() {
     return websites_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Website websites = 1;</code>
    */
+  @java.lang.Override
   public int getWebsitesCount() {
     return websites_.size();
   }
   /**
    * <code>repeated .proto.Website websites = 1;</code>
    */
+  @java.lang.Override
   public proto.Website getWebsites(int index) {
     return websites_.get(index);
   }
   /**
    * <code>repeated .proto.Website websites = 1;</code>
    */
+  @java.lang.Override
   public proto.WebsiteOrBuilder getWebsitesOrBuilder(
       int index) {
     return websites_.get(index);

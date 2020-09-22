@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.InvolvedCompany}
  */
-public  final class InvolvedCompany extends
+public final class InvolvedCompany extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.InvolvedCompany)
     InvolvedCompanyOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private InvolvedCompany() {
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new InvolvedCompany();
   }
 
   @java.lang.Override
@@ -41,7 +48,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -50,19 +59,24 @@ private static final long serialVersionUID = 0L;
   private proto.Company company_;
   /**
    * <code>.proto.Company company = 2;</code>
+   * @return Whether the company field is set.
    */
+  @java.lang.Override
   public boolean hasCompany() {
     return company_ != null;
   }
   /**
    * <code>.proto.Company company = 2;</code>
+   * @return The company.
    */
+  @java.lang.Override
   public proto.Company getCompany() {
     return company_ == null ? proto.Company.getDefaultInstance() : company_;
   }
   /**
    * <code>.proto.Company company = 2;</code>
    */
+  @java.lang.Override
   public proto.CompanyOrBuilder getCompanyOrBuilder() {
     return getCompany();
   }
@@ -71,19 +85,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp createdAt_;
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
+  @java.lang.Override
   public boolean hasCreatedAt() {
     return createdAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreatedAt() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return getCreatedAt();
   }
@@ -92,7 +111,9 @@ private static final long serialVersionUID = 0L;
   private boolean developer_;
   /**
    * <code>bool developer = 4;</code>
+   * @return The developer.
    */
+  @java.lang.Override
   public boolean getDeveloper() {
     return developer_;
   }
@@ -101,19 +122,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 5;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -122,7 +148,9 @@ private static final long serialVersionUID = 0L;
   private boolean porting_;
   /**
    * <code>bool porting = 6;</code>
+   * @return The porting.
    */
+  @java.lang.Override
   public boolean getPorting() {
     return porting_;
   }
@@ -131,7 +159,9 @@ private static final long serialVersionUID = 0L;
   private boolean publisher_;
   /**
    * <code>bool publisher = 7;</code>
+   * @return The publisher.
    */
+  @java.lang.Override
   public boolean getPublisher() {
     return publisher_;
   }
@@ -140,7 +170,9 @@ private static final long serialVersionUID = 0L;
   private boolean supporting_;
   /**
    * <code>bool supporting = 8;</code>
+   * @return The supporting.
    */
+  @java.lang.Override
   public boolean getSupporting() {
     return supporting_;
   }
@@ -149,19 +181,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return Whether the updatedAt field is set.
    */
+  @java.lang.Override
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+   * @return The updatedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 9;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
@@ -170,7 +207,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 10;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -185,7 +224,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 10;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -456,12 +497,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -471,6 +516,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -484,12 +530,14 @@ private static final long serialVersionUID = 0L;
         proto.Company, proto.Company.Builder, proto.CompanyOrBuilder> companyBuilder_;
     /**
      * <code>.proto.Company company = 2;</code>
+     * @return Whether the company field is set.
      */
     public boolean hasCompany() {
       return companyBuilder_ != null || company_ != null;
     }
     /**
      * <code>.proto.Company company = 2;</code>
+     * @return The company.
      */
     public proto.Company getCompany() {
       if (companyBuilder_ == null) {
@@ -601,12 +649,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
       return createdAtBuilder_ != null || createdAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
       if (createdAtBuilder_ == null) {
@@ -716,12 +766,16 @@ private static final long serialVersionUID = 0L;
     private boolean developer_ ;
     /**
      * <code>bool developer = 4;</code>
+     * @return The developer.
      */
+    @java.lang.Override
     public boolean getDeveloper() {
       return developer_;
     }
     /**
      * <code>bool developer = 4;</code>
+     * @param value The developer to set.
+     * @return This builder for chaining.
      */
     public Builder setDeveloper(boolean value) {
       
@@ -731,6 +785,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool developer = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDeveloper() {
       
@@ -744,12 +799,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 5;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 5;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -859,12 +916,16 @@ private static final long serialVersionUID = 0L;
     private boolean porting_ ;
     /**
      * <code>bool porting = 6;</code>
+     * @return The porting.
      */
+    @java.lang.Override
     public boolean getPorting() {
       return porting_;
     }
     /**
      * <code>bool porting = 6;</code>
+     * @param value The porting to set.
+     * @return This builder for chaining.
      */
     public Builder setPorting(boolean value) {
       
@@ -874,6 +935,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool porting = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearPorting() {
       
@@ -885,12 +947,16 @@ private static final long serialVersionUID = 0L;
     private boolean publisher_ ;
     /**
      * <code>bool publisher = 7;</code>
+     * @return The publisher.
      */
+    @java.lang.Override
     public boolean getPublisher() {
       return publisher_;
     }
     /**
      * <code>bool publisher = 7;</code>
+     * @param value The publisher to set.
+     * @return This builder for chaining.
      */
     public Builder setPublisher(boolean value) {
       
@@ -900,6 +966,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool publisher = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearPublisher() {
       
@@ -911,12 +978,16 @@ private static final long serialVersionUID = 0L;
     private boolean supporting_ ;
     /**
      * <code>bool supporting = 8;</code>
+     * @return The supporting.
      */
+    @java.lang.Override
     public boolean getSupporting() {
       return supporting_;
     }
     /**
      * <code>bool supporting = 8;</code>
+     * @param value The supporting to set.
+     * @return This builder for chaining.
      */
     public Builder setSupporting(boolean value) {
       
@@ -926,6 +997,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool supporting = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSupporting() {
       
@@ -939,12 +1011,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+     * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
+     * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -1054,6 +1128,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 10;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -1069,6 +1144,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 10;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -1085,6 +1161,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 10;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -1098,6 +1176,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 10;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -1107,6 +1186,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 10;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

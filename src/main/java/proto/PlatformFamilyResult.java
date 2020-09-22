@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformFamilyResult}
  */
-public  final class PlatformFamilyResult extends
+public final class PlatformFamilyResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformFamilyResult)
     PlatformFamilyResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformFamilyResult() {
     platformfamilies_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformFamilyResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformFamily platformfamilies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformFamily> getPlatformfamiliesList() {
     return platformfamilies_;
   }
   /**
    * <code>repeated .proto.PlatformFamily platformfamilies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformFamilyOrBuilder> 
       getPlatformfamiliesOrBuilderList() {
     return platformfamilies_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformFamily platformfamilies = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformfamiliesCount() {
     return platformfamilies_.size();
   }
   /**
    * <code>repeated .proto.PlatformFamily platformfamilies = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformFamily getPlatformfamilies(int index) {
     return platformfamilies_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformFamily platformfamilies = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformFamilyOrBuilder getPlatformfamiliesOrBuilder(
       int index) {
     return platformfamilies_.get(index);

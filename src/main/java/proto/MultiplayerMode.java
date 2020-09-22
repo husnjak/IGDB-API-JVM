@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.MultiplayerMode}
  */
-public  final class MultiplayerMode extends
+public final class MultiplayerMode extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.MultiplayerMode)
     MultiplayerModeOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private MultiplayerMode() {
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new MultiplayerMode();
   }
 
   @java.lang.Override
@@ -41,7 +48,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -50,7 +59,9 @@ private static final long serialVersionUID = 0L;
   private boolean campaigncoop_;
   /**
    * <code>bool campaigncoop = 2;</code>
+   * @return The campaigncoop.
    */
+  @java.lang.Override
   public boolean getCampaigncoop() {
     return campaigncoop_;
   }
@@ -59,7 +70,9 @@ private static final long serialVersionUID = 0L;
   private boolean dropin_;
   /**
    * <code>bool dropin = 3;</code>
+   * @return The dropin.
    */
+  @java.lang.Override
   public boolean getDropin() {
     return dropin_;
   }
@@ -68,19 +81,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 4;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 4;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 4;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -89,7 +107,9 @@ private static final long serialVersionUID = 0L;
   private boolean lancoop_;
   /**
    * <code>bool lancoop = 5;</code>
+   * @return The lancoop.
    */
+  @java.lang.Override
   public boolean getLancoop() {
     return lancoop_;
   }
@@ -98,7 +118,9 @@ private static final long serialVersionUID = 0L;
   private boolean offlinecoop_;
   /**
    * <code>bool offlinecoop = 6;</code>
+   * @return The offlinecoop.
    */
+  @java.lang.Override
   public boolean getOfflinecoop() {
     return offlinecoop_;
   }
@@ -107,7 +129,9 @@ private static final long serialVersionUID = 0L;
   private int offlinecoopmax_;
   /**
    * <code>int32 offlinecoopmax = 7;</code>
+   * @return The offlinecoopmax.
    */
+  @java.lang.Override
   public int getOfflinecoopmax() {
     return offlinecoopmax_;
   }
@@ -116,7 +140,9 @@ private static final long serialVersionUID = 0L;
   private int offlinemax_;
   /**
    * <code>int32 offlinemax = 8;</code>
+   * @return The offlinemax.
    */
+  @java.lang.Override
   public int getOfflinemax() {
     return offlinemax_;
   }
@@ -125,7 +151,9 @@ private static final long serialVersionUID = 0L;
   private boolean onlinecoop_;
   /**
    * <code>bool onlinecoop = 9;</code>
+   * @return The onlinecoop.
    */
+  @java.lang.Override
   public boolean getOnlinecoop() {
     return onlinecoop_;
   }
@@ -134,7 +162,9 @@ private static final long serialVersionUID = 0L;
   private int onlinecoopmax_;
   /**
    * <code>int32 onlinecoopmax = 10;</code>
+   * @return The onlinecoopmax.
    */
+  @java.lang.Override
   public int getOnlinecoopmax() {
     return onlinecoopmax_;
   }
@@ -143,7 +173,9 @@ private static final long serialVersionUID = 0L;
   private int onlinemax_;
   /**
    * <code>int32 onlinemax = 11;</code>
+   * @return The onlinemax.
    */
+  @java.lang.Override
   public int getOnlinemax() {
     return onlinemax_;
   }
@@ -152,19 +184,24 @@ private static final long serialVersionUID = 0L;
   private proto.Platform platform_;
   /**
    * <code>.proto.Platform platform = 12;</code>
+   * @return Whether the platform field is set.
    */
+  @java.lang.Override
   public boolean hasPlatform() {
     return platform_ != null;
   }
   /**
    * <code>.proto.Platform platform = 12;</code>
+   * @return The platform.
    */
+  @java.lang.Override
   public proto.Platform getPlatform() {
     return platform_ == null ? proto.Platform.getDefaultInstance() : platform_;
   }
   /**
    * <code>.proto.Platform platform = 12;</code>
    */
+  @java.lang.Override
   public proto.PlatformOrBuilder getPlatformOrBuilder() {
     return getPlatform();
   }
@@ -173,7 +210,9 @@ private static final long serialVersionUID = 0L;
   private boolean splitscreen_;
   /**
    * <code>bool splitscreen = 13;</code>
+   * @return The splitscreen.
    */
+  @java.lang.Override
   public boolean getSplitscreen() {
     return splitscreen_;
   }
@@ -182,7 +221,9 @@ private static final long serialVersionUID = 0L;
   private boolean splitscreenonline_;
   /**
    * <code>bool splitscreenonline = 14;</code>
+   * @return The splitscreenonline.
    */
+  @java.lang.Override
   public boolean getSplitscreenonline() {
     return splitscreenonline_;
   }
@@ -191,7 +232,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 15;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -206,7 +249,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 15;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -476,12 +521,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -491,6 +540,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -502,12 +552,16 @@ private static final long serialVersionUID = 0L;
     private boolean campaigncoop_ ;
     /**
      * <code>bool campaigncoop = 2;</code>
+     * @return The campaigncoop.
      */
+    @java.lang.Override
     public boolean getCampaigncoop() {
       return campaigncoop_;
     }
     /**
      * <code>bool campaigncoop = 2;</code>
+     * @param value The campaigncoop to set.
+     * @return This builder for chaining.
      */
     public Builder setCampaigncoop(boolean value) {
       
@@ -517,6 +571,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool campaigncoop = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCampaigncoop() {
       
@@ -528,12 +583,16 @@ private static final long serialVersionUID = 0L;
     private boolean dropin_ ;
     /**
      * <code>bool dropin = 3;</code>
+     * @return The dropin.
      */
+    @java.lang.Override
     public boolean getDropin() {
       return dropin_;
     }
     /**
      * <code>bool dropin = 3;</code>
+     * @param value The dropin to set.
+     * @return This builder for chaining.
      */
     public Builder setDropin(boolean value) {
       
@@ -543,6 +602,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool dropin = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDropin() {
       
@@ -556,12 +616,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 4;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 4;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -671,12 +733,16 @@ private static final long serialVersionUID = 0L;
     private boolean lancoop_ ;
     /**
      * <code>bool lancoop = 5;</code>
+     * @return The lancoop.
      */
+    @java.lang.Override
     public boolean getLancoop() {
       return lancoop_;
     }
     /**
      * <code>bool lancoop = 5;</code>
+     * @param value The lancoop to set.
+     * @return This builder for chaining.
      */
     public Builder setLancoop(boolean value) {
       
@@ -686,6 +752,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool lancoop = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearLancoop() {
       
@@ -697,12 +764,16 @@ private static final long serialVersionUID = 0L;
     private boolean offlinecoop_ ;
     /**
      * <code>bool offlinecoop = 6;</code>
+     * @return The offlinecoop.
      */
+    @java.lang.Override
     public boolean getOfflinecoop() {
       return offlinecoop_;
     }
     /**
      * <code>bool offlinecoop = 6;</code>
+     * @param value The offlinecoop to set.
+     * @return This builder for chaining.
      */
     public Builder setOfflinecoop(boolean value) {
       
@@ -712,6 +783,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool offlinecoop = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOfflinecoop() {
       
@@ -723,12 +795,16 @@ private static final long serialVersionUID = 0L;
     private int offlinecoopmax_ ;
     /**
      * <code>int32 offlinecoopmax = 7;</code>
+     * @return The offlinecoopmax.
      */
+    @java.lang.Override
     public int getOfflinecoopmax() {
       return offlinecoopmax_;
     }
     /**
      * <code>int32 offlinecoopmax = 7;</code>
+     * @param value The offlinecoopmax to set.
+     * @return This builder for chaining.
      */
     public Builder setOfflinecoopmax(int value) {
       
@@ -738,6 +814,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 offlinecoopmax = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOfflinecoopmax() {
       
@@ -749,12 +826,16 @@ private static final long serialVersionUID = 0L;
     private int offlinemax_ ;
     /**
      * <code>int32 offlinemax = 8;</code>
+     * @return The offlinemax.
      */
+    @java.lang.Override
     public int getOfflinemax() {
       return offlinemax_;
     }
     /**
      * <code>int32 offlinemax = 8;</code>
+     * @param value The offlinemax to set.
+     * @return This builder for chaining.
      */
     public Builder setOfflinemax(int value) {
       
@@ -764,6 +845,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 offlinemax = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOfflinemax() {
       
@@ -775,12 +857,16 @@ private static final long serialVersionUID = 0L;
     private boolean onlinecoop_ ;
     /**
      * <code>bool onlinecoop = 9;</code>
+     * @return The onlinecoop.
      */
+    @java.lang.Override
     public boolean getOnlinecoop() {
       return onlinecoop_;
     }
     /**
      * <code>bool onlinecoop = 9;</code>
+     * @param value The onlinecoop to set.
+     * @return This builder for chaining.
      */
     public Builder setOnlinecoop(boolean value) {
       
@@ -790,6 +876,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool onlinecoop = 9;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOnlinecoop() {
       
@@ -801,12 +888,16 @@ private static final long serialVersionUID = 0L;
     private int onlinecoopmax_ ;
     /**
      * <code>int32 onlinecoopmax = 10;</code>
+     * @return The onlinecoopmax.
      */
+    @java.lang.Override
     public int getOnlinecoopmax() {
       return onlinecoopmax_;
     }
     /**
      * <code>int32 onlinecoopmax = 10;</code>
+     * @param value The onlinecoopmax to set.
+     * @return This builder for chaining.
      */
     public Builder setOnlinecoopmax(int value) {
       
@@ -816,6 +907,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 onlinecoopmax = 10;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOnlinecoopmax() {
       
@@ -827,12 +919,16 @@ private static final long serialVersionUID = 0L;
     private int onlinemax_ ;
     /**
      * <code>int32 onlinemax = 11;</code>
+     * @return The onlinemax.
      */
+    @java.lang.Override
     public int getOnlinemax() {
       return onlinemax_;
     }
     /**
      * <code>int32 onlinemax = 11;</code>
+     * @param value The onlinemax to set.
+     * @return This builder for chaining.
      */
     public Builder setOnlinemax(int value) {
       
@@ -842,6 +938,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 onlinemax = 11;</code>
+     * @return This builder for chaining.
      */
     public Builder clearOnlinemax() {
       
@@ -855,12 +952,14 @@ private static final long serialVersionUID = 0L;
         proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder> platformBuilder_;
     /**
      * <code>.proto.Platform platform = 12;</code>
+     * @return Whether the platform field is set.
      */
     public boolean hasPlatform() {
       return platformBuilder_ != null || platform_ != null;
     }
     /**
      * <code>.proto.Platform platform = 12;</code>
+     * @return The platform.
      */
     public proto.Platform getPlatform() {
       if (platformBuilder_ == null) {
@@ -970,12 +1069,16 @@ private static final long serialVersionUID = 0L;
     private boolean splitscreen_ ;
     /**
      * <code>bool splitscreen = 13;</code>
+     * @return The splitscreen.
      */
+    @java.lang.Override
     public boolean getSplitscreen() {
       return splitscreen_;
     }
     /**
      * <code>bool splitscreen = 13;</code>
+     * @param value The splitscreen to set.
+     * @return This builder for chaining.
      */
     public Builder setSplitscreen(boolean value) {
       
@@ -985,6 +1088,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool splitscreen = 13;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSplitscreen() {
       
@@ -996,12 +1100,16 @@ private static final long serialVersionUID = 0L;
     private boolean splitscreenonline_ ;
     /**
      * <code>bool splitscreenonline = 14;</code>
+     * @return The splitscreenonline.
      */
+    @java.lang.Override
     public boolean getSplitscreenonline() {
       return splitscreenonline_;
     }
     /**
      * <code>bool splitscreenonline = 14;</code>
+     * @param value The splitscreenonline to set.
+     * @return This builder for chaining.
      */
     public Builder setSplitscreenonline(boolean value) {
       
@@ -1011,6 +1119,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool splitscreenonline = 14;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSplitscreenonline() {
       
@@ -1022,6 +1131,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 15;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -1037,6 +1147,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 15;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -1053,6 +1164,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 15;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -1066,6 +1179,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 15;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -1075,6 +1189,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 15;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

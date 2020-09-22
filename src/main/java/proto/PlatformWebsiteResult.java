@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlatformWebsiteResult}
  */
-public  final class PlatformWebsiteResult extends
+public final class PlatformWebsiteResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlatformWebsiteResult)
     PlatformWebsiteResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformWebsiteResult() {
     platformwebsites_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlatformWebsiteResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformWebsite platformwebsites = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlatformWebsite> getPlatformwebsitesList() {
     return platformwebsites_;
   }
   /**
    * <code>repeated .proto.PlatformWebsite platformwebsites = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformWebsiteOrBuilder> 
       getPlatformwebsitesOrBuilderList() {
     return platformwebsites_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlatformWebsite platformwebsites = 1;</code>
    */
+  @java.lang.Override
   public int getPlatformwebsitesCount() {
     return platformwebsites_.size();
   }
   /**
    * <code>repeated .proto.PlatformWebsite platformwebsites = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformWebsite getPlatformwebsites(int index) {
     return platformwebsites_.get(index);
   }
   /**
    * <code>repeated .proto.PlatformWebsite platformwebsites = 1;</code>
    */
+  @java.lang.Override
   public proto.PlatformWebsiteOrBuilder getPlatformwebsitesOrBuilder(
       int index) {
     return platformwebsites_.get(index);

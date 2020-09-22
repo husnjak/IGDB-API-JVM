@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ScreenshotResult}
  */
-public  final class ScreenshotResult extends
+public final class ScreenshotResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ScreenshotResult)
     ScreenshotResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private ScreenshotResult() {
     screenshots_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ScreenshotResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Screenshot> getScreenshotsList() {
     return screenshots_;
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ScreenshotOrBuilder> 
       getScreenshotsOrBuilderList() {
     return screenshots_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
    */
+  @java.lang.Override
   public int getScreenshotsCount() {
     return screenshots_.size();
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
    */
+  @java.lang.Override
   public proto.Screenshot getScreenshots(int index) {
     return screenshots_.get(index);
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
    */
+  @java.lang.Override
   public proto.ScreenshotOrBuilder getScreenshotsOrBuilder(
       int index) {
     return screenshots_.get(index);

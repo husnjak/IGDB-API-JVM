@@ -9,24 +9,29 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+   * @return The category.
    */
   proto.DateFormatChangeDateCategoryEnum getCategory();
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -36,10 +41,12 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>.google.protobuf.Timestamp date = 4;</code>
+   * @return Whether the date field is set.
    */
   boolean hasDate();
   /**
    * <code>.google.protobuf.Timestamp date = 4;</code>
+   * @return The date.
    */
   com.google.protobuf.Timestamp getDate();
   /**
@@ -49,10 +56,12 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return Whether the game field is set.
    */
   boolean hasGame();
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return The game.
    */
   proto.Game getGame();
   /**
@@ -62,25 +71,30 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>string human = 6;</code>
+   * @return The human.
    */
   java.lang.String getHuman();
   /**
    * <code>string human = 6;</code>
+   * @return The bytes for human.
    */
   com.google.protobuf.ByteString
       getHumanBytes();
 
   /**
    * <code>int32 m = 7;</code>
+   * @return The m.
    */
   int getM();
 
   /**
    * <code>.proto.Platform platform = 8;</code>
+   * @return Whether the platform field is set.
    */
   boolean hasPlatform();
   /**
    * <code>.proto.Platform platform = 8;</code>
+   * @return The platform.
    */
   proto.Platform getPlatform();
   /**
@@ -90,19 +104,23 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>.proto.RegionRegionEnum region = 9;</code>
+   * @return The enum numeric value on the wire for region.
    */
   int getRegionValue();
   /**
    * <code>.proto.RegionRegionEnum region = 9;</code>
+   * @return The region.
    */
   proto.RegionRegionEnum getRegion();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -112,15 +130,18 @@ public interface ReleaseDateOrBuilder extends
 
   /**
    * <code>int32 y = 11;</code>
+   * @return The y.
    */
   int getY();
 
   /**
    * <code>string checksum = 12;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 12;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

@@ -9,44 +9,55 @@ public interface CharacterOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>repeated string akas = 2;</code>
+   * @return A list containing the akas.
    */
   java.util.List<java.lang.String>
       getAkasList();
   /**
    * <code>repeated string akas = 2;</code>
+   * @return The count of akas.
    */
   int getAkasCount();
   /**
    * <code>repeated string akas = 2;</code>
+   * @param index The index of the element to return.
+   * @return The akas at the given index.
    */
   java.lang.String getAkas(int index);
   /**
    * <code>repeated string akas = 2;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the akas at the given index.
    */
   com.google.protobuf.ByteString
       getAkasBytes(int index);
 
   /**
    * <code>string country_name = 3;</code>
+   * @return The countryName.
    */
   java.lang.String getCountryName();
   /**
    * <code>string country_name = 3;</code>
+   * @return The bytes for countryName.
    */
   com.google.protobuf.ByteString
       getCountryNameBytes();
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 4;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 4;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -56,10 +67,12 @@ public interface CharacterOrBuilder extends
 
   /**
    * <code>string description = 5;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 5;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
@@ -90,19 +103,23 @@ public interface CharacterOrBuilder extends
 
   /**
    * <code>.proto.GenderGenderEnum gender = 7;</code>
+   * @return The enum numeric value on the wire for gender.
    */
   int getGenderValue();
   /**
    * <code>.proto.GenderGenderEnum gender = 7;</code>
+   * @return The gender.
    */
   proto.GenderGenderEnum getGender();
 
   /**
    * <code>.proto.CharacterMugShot mug_shot = 8;</code>
+   * @return Whether the mugShot field is set.
    */
   boolean hasMugShot();
   /**
    * <code>.proto.CharacterMugShot mug_shot = 8;</code>
+   * @return The mugShot.
    */
   proto.CharacterMugShot getMugShot();
   /**
@@ -112,39 +129,47 @@ public interface CharacterOrBuilder extends
 
   /**
    * <code>string name = 9;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 9;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>string slug = 10;</code>
+   * @return The slug.
    */
   java.lang.String getSlug();
   /**
    * <code>string slug = 10;</code>
+   * @return The bytes for slug.
    */
   com.google.protobuf.ByteString
       getSlugBytes();
 
   /**
    * <code>.proto.CharacterSpeciesEnum species = 11;</code>
+   * @return The enum numeric value on the wire for species.
    */
   int getSpeciesValue();
   /**
    * <code>.proto.CharacterSpeciesEnum species = 11;</code>
+   * @return The species.
    */
   proto.CharacterSpeciesEnum getSpecies();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 12;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 12;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -154,20 +179,24 @@ public interface CharacterOrBuilder extends
 
   /**
    * <code>string url = 13;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 13;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>string checksum = 14;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 14;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

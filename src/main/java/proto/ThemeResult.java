@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ThemeResult}
  */
-public  final class ThemeResult extends
+public final class ThemeResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ThemeResult)
     ThemeResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private ThemeResult() {
     themes_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ThemeResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Theme> getThemesList() {
     return themes_;
   }
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ThemeOrBuilder> 
       getThemesOrBuilderList() {
     return themes_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
    */
+  @java.lang.Override
   public int getThemesCount() {
     return themes_.size();
   }
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
    */
+  @java.lang.Override
   public proto.Theme getThemes(int index) {
     return themes_.get(index);
   }
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
    */
+  @java.lang.Override
   public proto.ThemeOrBuilder getThemesOrBuilder(
       int index) {
     return themes_.get(index);

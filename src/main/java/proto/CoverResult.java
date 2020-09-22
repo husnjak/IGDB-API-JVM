@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CoverResult}
  */
-public  final class CoverResult extends
+public final class CoverResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CoverResult)
     CoverResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CoverResult() {
     covers_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CoverResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Cover covers = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Cover> getCoversList() {
     return covers_;
   }
   /**
    * <code>repeated .proto.Cover covers = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CoverOrBuilder> 
       getCoversOrBuilderList() {
     return covers_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Cover covers = 1;</code>
    */
+  @java.lang.Override
   public int getCoversCount() {
     return covers_.size();
   }
   /**
    * <code>repeated .proto.Cover covers = 1;</code>
    */
+  @java.lang.Override
   public proto.Cover getCovers(int index) {
     return covers_.get(index);
   }
   /**
    * <code>repeated .proto.Cover covers = 1;</code>
    */
+  @java.lang.Override
   public proto.CoverOrBuilder getCoversOrBuilder(
       int index) {
     return covers_.get(index);

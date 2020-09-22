@@ -9,24 +9,29 @@ public interface ExternalGameOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.ExternalGameCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.ExternalGameCategoryEnum category = 2;</code>
+   * @return The category.
    */
   proto.ExternalGameCategoryEnum getCategory();
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -36,10 +41,12 @@ public interface ExternalGameOrBuilder extends
 
   /**
    * <code>.proto.Game game = 4;</code>
+   * @return Whether the game field is set.
    */
   boolean hasGame();
   /**
    * <code>.proto.Game game = 4;</code>
+   * @return The game.
    */
   proto.Game getGame();
   /**
@@ -49,30 +56,36 @@ public interface ExternalGameOrBuilder extends
 
   /**
    * <code>string name = 5;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 5;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>string uid = 6;</code>
+   * @return The uid.
    */
   java.lang.String getUid();
   /**
    * <code>string uid = 6;</code>
+   * @return The bytes for uid.
    */
   com.google.protobuf.ByteString
       getUidBytes();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -82,34 +95,41 @@ public interface ExternalGameOrBuilder extends
 
   /**
    * <code>string url = 8;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 8;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>int32 year = 9;</code>
+   * @return The year.
    */
   int getYear();
 
   /**
    * <code>.proto.ExternalGameMediaEnum media = 10;</code>
+   * @return The enum numeric value on the wire for media.
    */
   int getMediaValue();
   /**
    * <code>.proto.ExternalGameMediaEnum media = 10;</code>
+   * @return The media.
    */
   proto.ExternalGameMediaEnum getMedia();
 
   /**
    * <code>.proto.Platform platform = 11;</code>
+   * @return Whether the platform field is set.
    */
   boolean hasPlatform();
   /**
    * <code>.proto.Platform platform = 11;</code>
+   * @return The platform.
    */
   proto.Platform getPlatform();
   /**
@@ -119,23 +139,29 @@ public interface ExternalGameOrBuilder extends
 
   /**
    * <code>repeated int32 countries = 12;</code>
+   * @return A list containing the countries.
    */
   java.util.List<java.lang.Integer> getCountriesList();
   /**
    * <code>repeated int32 countries = 12;</code>
+   * @return The count of countries.
    */
   int getCountriesCount();
   /**
    * <code>repeated int32 countries = 12;</code>
+   * @param index The index of the element to return.
+   * @return The countries at the given index.
    */
   int getCountries(int index);
 
   /**
    * <code>string checksum = 13;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 13;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

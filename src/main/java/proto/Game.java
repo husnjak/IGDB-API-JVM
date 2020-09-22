@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.Game}
  */
-public  final class Game extends
+public final class Game extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.Game)
     GameOrBuilder {
@@ -52,6 +52,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new Game();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -69,12 +76,13 @@ private static final long serialVersionUID = 0L;
             proto.Game.class, proto.Game.Builder.class);
   }
 
-  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -84,12 +92,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.AgeRating> getAgeRatingsList() {
     return ageRatings_;
   }
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.AgeRatingOrBuilder> 
       getAgeRatingsOrBuilderList() {
     return ageRatings_;
@@ -97,18 +107,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
    */
+  @java.lang.Override
   public int getAgeRatingsCount() {
     return ageRatings_.size();
   }
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
    */
+  @java.lang.Override
   public proto.AgeRating getAgeRatings(int index) {
     return ageRatings_.get(index);
   }
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
    */
+  @java.lang.Override
   public proto.AgeRatingOrBuilder getAgeRatingsOrBuilder(
       int index) {
     return ageRatings_.get(index);
@@ -118,7 +131,9 @@ private static final long serialVersionUID = 0L;
   private double aggregatedRating_;
   /**
    * <code>double aggregated_rating = 3;</code>
+   * @return The aggregatedRating.
    */
+  @java.lang.Override
   public double getAggregatedRating() {
     return aggregatedRating_;
   }
@@ -127,7 +142,9 @@ private static final long serialVersionUID = 0L;
   private int aggregatedRatingCount_;
   /**
    * <code>int32 aggregated_rating_count = 4;</code>
+   * @return The aggregatedRatingCount.
    */
+  @java.lang.Override
   public int getAggregatedRatingCount() {
     return aggregatedRatingCount_;
   }
@@ -137,12 +154,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.AlternativeName> getAlternativeNamesList() {
     return alternativeNames_;
   }
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.AlternativeNameOrBuilder> 
       getAlternativeNamesOrBuilderList() {
     return alternativeNames_;
@@ -150,18 +169,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
    */
+  @java.lang.Override
   public int getAlternativeNamesCount() {
     return alternativeNames_.size();
   }
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
    */
+  @java.lang.Override
   public proto.AlternativeName getAlternativeNames(int index) {
     return alternativeNames_.get(index);
   }
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
    */
+  @java.lang.Override
   public proto.AlternativeNameOrBuilder getAlternativeNamesOrBuilder(
       int index) {
     return alternativeNames_.get(index);
@@ -172,12 +194,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Artwork> getArtworksList() {
     return artworks_;
   }
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ArtworkOrBuilder> 
       getArtworksOrBuilderList() {
     return artworks_;
@@ -185,18 +209,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
    */
+  @java.lang.Override
   public int getArtworksCount() {
     return artworks_.size();
   }
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
    */
+  @java.lang.Override
   public proto.Artwork getArtworks(int index) {
     return artworks_.get(index);
   }
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
    */
+  @java.lang.Override
   public proto.ArtworkOrBuilder getArtworksOrBuilder(
       int index) {
     return artworks_.get(index);
@@ -207,12 +234,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getBundlesList() {
     return bundles_;
   }
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getBundlesOrBuilderList() {
     return bundles_;
@@ -220,18 +249,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
    */
+  @java.lang.Override
   public int getBundlesCount() {
     return bundles_.size();
   }
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
    */
+  @java.lang.Override
   public proto.Game getBundles(int index) {
     return bundles_.get(index);
   }
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getBundlesOrBuilder(
       int index) {
     return bundles_.get(index);
@@ -241,14 +273,16 @@ private static final long serialVersionUID = 0L;
   private int category_;
   /**
    * <code>.proto.GameCategoryEnum category = 8;</code>
+   * @return The enum numeric value on the wire for category.
    */
-  public int getCategoryValue() {
+  @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
    * <code>.proto.GameCategoryEnum category = 8;</code>
+   * @return The category.
    */
-  public proto.GameCategoryEnum getCategory() {
+  @java.lang.Override public proto.GameCategoryEnum getCategory() {
     @SuppressWarnings("deprecation")
     proto.GameCategoryEnum result = proto.GameCategoryEnum.valueOf(category_);
     return result == null ? proto.GameCategoryEnum.UNRECOGNIZED : result;
@@ -258,19 +292,24 @@ private static final long serialVersionUID = 0L;
   private proto.Collection collection_;
   /**
    * <code>.proto.Collection collection = 9;</code>
+   * @return Whether the collection field is set.
    */
+  @java.lang.Override
   public boolean hasCollection() {
     return collection_ != null;
   }
   /**
    * <code>.proto.Collection collection = 9;</code>
+   * @return The collection.
    */
+  @java.lang.Override
   public proto.Collection getCollection() {
     return collection_ == null ? proto.Collection.getDefaultInstance() : collection_;
   }
   /**
    * <code>.proto.Collection collection = 9;</code>
    */
+  @java.lang.Override
   public proto.CollectionOrBuilder getCollectionOrBuilder() {
     return getCollection();
   }
@@ -279,19 +318,24 @@ private static final long serialVersionUID = 0L;
   private proto.Cover cover_;
   /**
    * <code>.proto.Cover cover = 10;</code>
+   * @return Whether the cover field is set.
    */
+  @java.lang.Override
   public boolean hasCover() {
     return cover_ != null;
   }
   /**
    * <code>.proto.Cover cover = 10;</code>
+   * @return The cover.
    */
+  @java.lang.Override
   public proto.Cover getCover() {
     return cover_ == null ? proto.Cover.getDefaultInstance() : cover_;
   }
   /**
    * <code>.proto.Cover cover = 10;</code>
    */
+  @java.lang.Override
   public proto.CoverOrBuilder getCoverOrBuilder() {
     return getCover();
   }
@@ -300,19 +344,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp createdAt_;
   /**
    * <code>.google.protobuf.Timestamp created_at = 11;</code>
+   * @return Whether the createdAt field is set.
    */
+  @java.lang.Override
   public boolean hasCreatedAt() {
     return createdAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 11;</code>
+   * @return The createdAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreatedAt() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 11;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return getCreatedAt();
   }
@@ -322,12 +371,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getDlcsList() {
     return dlcs_;
   }
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getDlcsOrBuilderList() {
     return dlcs_;
@@ -335,18 +386,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
    */
+  @java.lang.Override
   public int getDlcsCount() {
     return dlcs_.size();
   }
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
    */
+  @java.lang.Override
   public proto.Game getDlcs(int index) {
     return dlcs_.get(index);
   }
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getDlcsOrBuilder(
       int index) {
     return dlcs_.get(index);
@@ -357,12 +411,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getExpansionsList() {
     return expansions_;
   }
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getExpansionsOrBuilderList() {
     return expansions_;
@@ -370,18 +426,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
    */
+  @java.lang.Override
   public int getExpansionsCount() {
     return expansions_.size();
   }
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
    */
+  @java.lang.Override
   public proto.Game getExpansions(int index) {
     return expansions_.get(index);
   }
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getExpansionsOrBuilder(
       int index) {
     return expansions_.get(index);
@@ -392,12 +451,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.ExternalGame> getExternalGamesList() {
     return externalGames_;
   }
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ExternalGameOrBuilder> 
       getExternalGamesOrBuilderList() {
     return externalGames_;
@@ -405,18 +466,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
    */
+  @java.lang.Override
   public int getExternalGamesCount() {
     return externalGames_.size();
   }
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
    */
+  @java.lang.Override
   public proto.ExternalGame getExternalGames(int index) {
     return externalGames_.get(index);
   }
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
    */
+  @java.lang.Override
   public proto.ExternalGameOrBuilder getExternalGamesOrBuilder(
       int index) {
     return externalGames_.get(index);
@@ -426,19 +490,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp firstReleaseDate_;
   /**
    * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+   * @return Whether the firstReleaseDate field is set.
    */
+  @java.lang.Override
   public boolean hasFirstReleaseDate() {
     return firstReleaseDate_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+   * @return The firstReleaseDate.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getFirstReleaseDate() {
     return firstReleaseDate_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : firstReleaseDate_;
   }
   /**
    * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getFirstReleaseDateOrBuilder() {
     return getFirstReleaseDate();
   }
@@ -447,7 +516,9 @@ private static final long serialVersionUID = 0L;
   private int follows_;
   /**
    * <code>int32 follows = 16;</code>
+   * @return The follows.
    */
+  @java.lang.Override
   public int getFollows() {
     return follows_;
   }
@@ -456,19 +527,24 @@ private static final long serialVersionUID = 0L;
   private proto.Franchise franchise_;
   /**
    * <code>.proto.Franchise franchise = 17;</code>
+   * @return Whether the franchise field is set.
    */
+  @java.lang.Override
   public boolean hasFranchise() {
     return franchise_ != null;
   }
   /**
    * <code>.proto.Franchise franchise = 17;</code>
+   * @return The franchise.
    */
+  @java.lang.Override
   public proto.Franchise getFranchise() {
     return franchise_ == null ? proto.Franchise.getDefaultInstance() : franchise_;
   }
   /**
    * <code>.proto.Franchise franchise = 17;</code>
    */
+  @java.lang.Override
   public proto.FranchiseOrBuilder getFranchiseOrBuilder() {
     return getFranchise();
   }
@@ -478,12 +554,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Franchise> getFranchisesList() {
     return franchises_;
   }
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.FranchiseOrBuilder> 
       getFranchisesOrBuilderList() {
     return franchises_;
@@ -491,18 +569,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
    */
+  @java.lang.Override
   public int getFranchisesCount() {
     return franchises_.size();
   }
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
    */
+  @java.lang.Override
   public proto.Franchise getFranchises(int index) {
     return franchises_.get(index);
   }
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
    */
+  @java.lang.Override
   public proto.FranchiseOrBuilder getFranchisesOrBuilder(
       int index) {
     return franchises_.get(index);
@@ -513,12 +594,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameEngine> getGameEnginesList() {
     return gameEngines_;
   }
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameEngineOrBuilder> 
       getGameEnginesOrBuilderList() {
     return gameEngines_;
@@ -526,18 +609,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
    */
+  @java.lang.Override
   public int getGameEnginesCount() {
     return gameEngines_.size();
   }
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
    */
+  @java.lang.Override
   public proto.GameEngine getGameEngines(int index) {
     return gameEngines_.get(index);
   }
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
    */
+  @java.lang.Override
   public proto.GameEngineOrBuilder getGameEnginesOrBuilder(
       int index) {
     return gameEngines_.get(index);
@@ -548,12 +634,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameMode> getGameModesList() {
     return gameModes_;
   }
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameModeOrBuilder> 
       getGameModesOrBuilderList() {
     return gameModes_;
@@ -561,18 +649,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
    */
+  @java.lang.Override
   public int getGameModesCount() {
     return gameModes_.size();
   }
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
    */
+  @java.lang.Override
   public proto.GameMode getGameModes(int index) {
     return gameModes_.get(index);
   }
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
    */
+  @java.lang.Override
   public proto.GameModeOrBuilder getGameModesOrBuilder(
       int index) {
     return gameModes_.get(index);
@@ -583,12 +674,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Genre> getGenresList() {
     return genres_;
   }
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GenreOrBuilder> 
       getGenresOrBuilderList() {
     return genres_;
@@ -596,18 +689,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
    */
+  @java.lang.Override
   public int getGenresCount() {
     return genres_.size();
   }
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
    */
+  @java.lang.Override
   public proto.Genre getGenres(int index) {
     return genres_.get(index);
   }
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
    */
+  @java.lang.Override
   public proto.GenreOrBuilder getGenresOrBuilder(
       int index) {
     return genres_.get(index);
@@ -617,7 +713,9 @@ private static final long serialVersionUID = 0L;
   private int hypes_;
   /**
    * <code>int32 hypes = 22;</code>
+   * @return The hypes.
    */
+  @java.lang.Override
   public int getHypes() {
     return hypes_;
   }
@@ -627,12 +725,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.InvolvedCompany> getInvolvedCompaniesList() {
     return involvedCompanies_;
   }
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.InvolvedCompanyOrBuilder> 
       getInvolvedCompaniesOrBuilderList() {
     return involvedCompanies_;
@@ -640,18 +740,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
    */
+  @java.lang.Override
   public int getInvolvedCompaniesCount() {
     return involvedCompanies_.size();
   }
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
    */
+  @java.lang.Override
   public proto.InvolvedCompany getInvolvedCompanies(int index) {
     return involvedCompanies_.get(index);
   }
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
    */
+  @java.lang.Override
   public proto.InvolvedCompanyOrBuilder getInvolvedCompaniesOrBuilder(
       int index) {
     return involvedCompanies_.get(index);
@@ -662,12 +765,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Keyword> getKeywordsList() {
     return keywords_;
   }
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.KeywordOrBuilder> 
       getKeywordsOrBuilderList() {
     return keywords_;
@@ -675,18 +780,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
    */
+  @java.lang.Override
   public int getKeywordsCount() {
     return keywords_.size();
   }
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
    */
+  @java.lang.Override
   public proto.Keyword getKeywords(int index) {
     return keywords_.get(index);
   }
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
    */
+  @java.lang.Override
   public proto.KeywordOrBuilder getKeywordsOrBuilder(
       int index) {
     return keywords_.get(index);
@@ -697,12 +805,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.MultiplayerMode> getMultiplayerModesList() {
     return multiplayerModes_;
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.MultiplayerModeOrBuilder> 
       getMultiplayerModesOrBuilderList() {
     return multiplayerModes_;
@@ -710,18 +820,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
    */
+  @java.lang.Override
   public int getMultiplayerModesCount() {
     return multiplayerModes_.size();
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
    */
+  @java.lang.Override
   public proto.MultiplayerMode getMultiplayerModes(int index) {
     return multiplayerModes_.get(index);
   }
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
    */
+  @java.lang.Override
   public proto.MultiplayerModeOrBuilder getMultiplayerModesOrBuilder(
       int index) {
     return multiplayerModes_.get(index);
@@ -731,7 +844,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 26;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -746,7 +861,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 26;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -765,19 +882,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game parentGame_;
   /**
    * <code>.proto.Game parent_game = 27;</code>
+   * @return Whether the parentGame field is set.
    */
+  @java.lang.Override
   public boolean hasParentGame() {
     return parentGame_ != null;
   }
   /**
    * <code>.proto.Game parent_game = 27;</code>
+   * @return The parentGame.
    */
+  @java.lang.Override
   public proto.Game getParentGame() {
     return parentGame_ == null ? proto.Game.getDefaultInstance() : parentGame_;
   }
   /**
    * <code>.proto.Game parent_game = 27;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getParentGameOrBuilder() {
     return getParentGame();
   }
@@ -787,12 +909,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Platform> getPlatformsList() {
     return platforms_;
   }
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlatformOrBuilder> 
       getPlatformsOrBuilderList() {
     return platforms_;
@@ -800,18 +924,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
    */
+  @java.lang.Override
   public int getPlatformsCount() {
     return platforms_.size();
   }
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
    */
+  @java.lang.Override
   public proto.Platform getPlatforms(int index) {
     return platforms_.get(index);
   }
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
    */
+  @java.lang.Override
   public proto.PlatformOrBuilder getPlatformsOrBuilder(
       int index) {
     return platforms_.get(index);
@@ -822,12 +949,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlayerPerspective> getPlayerPerspectivesList() {
     return playerPerspectives_;
   }
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlayerPerspectiveOrBuilder> 
       getPlayerPerspectivesOrBuilderList() {
     return playerPerspectives_;
@@ -835,18 +964,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
    */
+  @java.lang.Override
   public int getPlayerPerspectivesCount() {
     return playerPerspectives_.size();
   }
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
    */
+  @java.lang.Override
   public proto.PlayerPerspective getPlayerPerspectives(int index) {
     return playerPerspectives_.get(index);
   }
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
    */
+  @java.lang.Override
   public proto.PlayerPerspectiveOrBuilder getPlayerPerspectivesOrBuilder(
       int index) {
     return playerPerspectives_.get(index);
@@ -856,7 +988,9 @@ private static final long serialVersionUID = 0L;
   private double rating_;
   /**
    * <code>double rating = 30;</code>
+   * @return The rating.
    */
+  @java.lang.Override
   public double getRating() {
     return rating_;
   }
@@ -865,7 +999,9 @@ private static final long serialVersionUID = 0L;
   private int ratingCount_;
   /**
    * <code>int32 rating_count = 31;</code>
+   * @return The ratingCount.
    */
+  @java.lang.Override
   public int getRatingCount() {
     return ratingCount_;
   }
@@ -875,12 +1011,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.ReleaseDate> getReleaseDatesList() {
     return releaseDates_;
   }
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ReleaseDateOrBuilder> 
       getReleaseDatesOrBuilderList() {
     return releaseDates_;
@@ -888,18 +1026,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
    */
+  @java.lang.Override
   public int getReleaseDatesCount() {
     return releaseDates_.size();
   }
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
    */
+  @java.lang.Override
   public proto.ReleaseDate getReleaseDates(int index) {
     return releaseDates_.get(index);
   }
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
    */
+  @java.lang.Override
   public proto.ReleaseDateOrBuilder getReleaseDatesOrBuilder(
       int index) {
     return releaseDates_.get(index);
@@ -910,12 +1051,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Screenshot> getScreenshotsList() {
     return screenshots_;
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ScreenshotOrBuilder> 
       getScreenshotsOrBuilderList() {
     return screenshots_;
@@ -923,18 +1066,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
    */
+  @java.lang.Override
   public int getScreenshotsCount() {
     return screenshots_.size();
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
    */
+  @java.lang.Override
   public proto.Screenshot getScreenshots(int index) {
     return screenshots_.get(index);
   }
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
    */
+  @java.lang.Override
   public proto.ScreenshotOrBuilder getScreenshotsOrBuilder(
       int index) {
     return screenshots_.get(index);
@@ -945,12 +1091,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getSimilarGamesList() {
     return similarGames_;
   }
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getSimilarGamesOrBuilderList() {
     return similarGames_;
@@ -958,18 +1106,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
    */
+  @java.lang.Override
   public int getSimilarGamesCount() {
     return similarGames_.size();
   }
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
    */
+  @java.lang.Override
   public proto.Game getSimilarGames(int index) {
     return similarGames_.get(index);
   }
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getSimilarGamesOrBuilder(
       int index) {
     return similarGames_.get(index);
@@ -979,7 +1130,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object slug_;
   /**
    * <code>string slug = 35;</code>
+   * @return The slug.
    */
+  @java.lang.Override
   public java.lang.String getSlug() {
     java.lang.Object ref = slug_;
     if (ref instanceof java.lang.String) {
@@ -994,7 +1147,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string slug = 35;</code>
+   * @return The bytes for slug.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSlugBytes() {
     java.lang.Object ref = slug_;
@@ -1014,12 +1169,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Game> getStandaloneExpansionsList() {
     return standaloneExpansions_;
   }
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameOrBuilder> 
       getStandaloneExpansionsOrBuilderList() {
     return standaloneExpansions_;
@@ -1027,18 +1184,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
    */
+  @java.lang.Override
   public int getStandaloneExpansionsCount() {
     return standaloneExpansions_.size();
   }
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
    */
+  @java.lang.Override
   public proto.Game getStandaloneExpansions(int index) {
     return standaloneExpansions_.get(index);
   }
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getStandaloneExpansionsOrBuilder(
       int index) {
     return standaloneExpansions_.get(index);
@@ -1048,14 +1208,16 @@ private static final long serialVersionUID = 0L;
   private int status_;
   /**
    * <code>.proto.GameStatusEnum status = 37;</code>
+   * @return The enum numeric value on the wire for status.
    */
-  public int getStatusValue() {
+  @java.lang.Override public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.proto.GameStatusEnum status = 37;</code>
+   * @return The status.
    */
-  public proto.GameStatusEnum getStatus() {
+  @java.lang.Override public proto.GameStatusEnum getStatus() {
     @SuppressWarnings("deprecation")
     proto.GameStatusEnum result = proto.GameStatusEnum.valueOf(status_);
     return result == null ? proto.GameStatusEnum.UNRECOGNIZED : result;
@@ -1065,7 +1227,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object storyline_;
   /**
    * <code>string storyline = 38;</code>
+   * @return The storyline.
    */
+  @java.lang.Override
   public java.lang.String getStoryline() {
     java.lang.Object ref = storyline_;
     if (ref instanceof java.lang.String) {
@@ -1080,7 +1244,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string storyline = 38;</code>
+   * @return The bytes for storyline.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getStorylineBytes() {
     java.lang.Object ref = storyline_;
@@ -1099,7 +1265,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object summary_;
   /**
    * <code>string summary = 39;</code>
+   * @return The summary.
    */
+  @java.lang.Override
   public java.lang.String getSummary() {
     java.lang.Object ref = summary_;
     if (ref instanceof java.lang.String) {
@@ -1114,7 +1282,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string summary = 39;</code>
+   * @return The bytes for summary.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSummaryBytes() {
     java.lang.Object ref = summary_;
@@ -1133,19 +1303,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Internal.IntList tags_;
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @return A list containing the tags.
    */
+  @java.lang.Override
   public java.util.List<java.lang.Integer>
       getTagsList() {
     return tags_;
   }
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @return The count of tags.
    */
   public int getTagsCount() {
     return tags_.size();
   }
   /**
    * <code>repeated int32 tags = 40;</code>
+   * @param index The index of the element to return.
+   * @return The tags at the given index.
    */
   public int getTags(int index) {
     return tags_.getInt(index);
@@ -1157,12 +1332,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Theme> getThemesList() {
     return themes_;
   }
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.ThemeOrBuilder> 
       getThemesOrBuilderList() {
     return themes_;
@@ -1170,18 +1347,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
    */
+  @java.lang.Override
   public int getThemesCount() {
     return themes_.size();
   }
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
    */
+  @java.lang.Override
   public proto.Theme getThemes(int index) {
     return themes_.get(index);
   }
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
    */
+  @java.lang.Override
   public proto.ThemeOrBuilder getThemesOrBuilder(
       int index) {
     return themes_.get(index);
@@ -1191,7 +1371,9 @@ private static final long serialVersionUID = 0L;
   private double totalRating_;
   /**
    * <code>double total_rating = 42;</code>
+   * @return The totalRating.
    */
+  @java.lang.Override
   public double getTotalRating() {
     return totalRating_;
   }
@@ -1200,7 +1382,9 @@ private static final long serialVersionUID = 0L;
   private int totalRatingCount_;
   /**
    * <code>int32 total_rating_count = 43;</code>
+   * @return The totalRatingCount.
    */
+  @java.lang.Override
   public int getTotalRatingCount() {
     return totalRatingCount_;
   }
@@ -1209,19 +1393,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
    * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+   * @return Whether the updatedAt field is set.
    */
+  @java.lang.Override
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+   * @return The updatedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 44;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
@@ -1230,7 +1419,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object url_;
   /**
    * <code>string url = 45;</code>
+   * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -1245,7 +1436,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string url = 45;</code>
+   * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getUrlBytes() {
     java.lang.Object ref = url_;
@@ -1264,19 +1457,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game versionParent_;
   /**
    * <code>.proto.Game version_parent = 46;</code>
+   * @return Whether the versionParent field is set.
    */
+  @java.lang.Override
   public boolean hasVersionParent() {
     return versionParent_ != null;
   }
   /**
    * <code>.proto.Game version_parent = 46;</code>
+   * @return The versionParent.
    */
+  @java.lang.Override
   public proto.Game getVersionParent() {
     return versionParent_ == null ? proto.Game.getDefaultInstance() : versionParent_;
   }
   /**
    * <code>.proto.Game version_parent = 46;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getVersionParentOrBuilder() {
     return getVersionParent();
   }
@@ -1285,7 +1483,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object versionTitle_;
   /**
    * <code>string version_title = 47;</code>
+   * @return The versionTitle.
    */
+  @java.lang.Override
   public java.lang.String getVersionTitle() {
     java.lang.Object ref = versionTitle_;
     if (ref instanceof java.lang.String) {
@@ -1300,7 +1500,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string version_title = 47;</code>
+   * @return The bytes for versionTitle.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getVersionTitleBytes() {
     java.lang.Object ref = versionTitle_;
@@ -1320,12 +1522,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVideo> getVideosList() {
     return videos_;
   }
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVideoOrBuilder> 
       getVideosOrBuilderList() {
     return videos_;
@@ -1333,18 +1537,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
    */
+  @java.lang.Override
   public int getVideosCount() {
     return videos_.size();
   }
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
    */
+  @java.lang.Override
   public proto.GameVideo getVideos(int index) {
     return videos_.get(index);
   }
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
    */
+  @java.lang.Override
   public proto.GameVideoOrBuilder getVideosOrBuilder(
       int index) {
     return videos_.get(index);
@@ -1355,12 +1562,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Website websites = 49;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Website> getWebsitesList() {
     return websites_;
   }
   /**
    * <code>repeated .proto.Website websites = 49;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.WebsiteOrBuilder> 
       getWebsitesOrBuilderList() {
     return websites_;
@@ -1368,18 +1577,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Website websites = 49;</code>
    */
+  @java.lang.Override
   public int getWebsitesCount() {
     return websites_.size();
   }
   /**
    * <code>repeated .proto.Website websites = 49;</code>
    */
+  @java.lang.Override
   public proto.Website getWebsites(int index) {
     return websites_.get(index);
   }
   /**
    * <code>repeated .proto.Website websites = 49;</code>
    */
+  @java.lang.Override
   public proto.WebsiteOrBuilder getWebsitesOrBuilder(
       int index) {
     return websites_.get(index);
@@ -1389,7 +1601,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 50;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -1404,7 +1618,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 50;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -1574,7 +1790,7 @@ private static final long serialVersionUID = 0L;
 
       if (ageRatingsBuilder_ == null) {
         ageRatings_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         ageRatingsBuilder_.clear();
       }
@@ -1584,19 +1800,19 @@ private static final long serialVersionUID = 0L;
 
       if (alternativeNamesBuilder_ == null) {
         alternativeNames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
         alternativeNamesBuilder_.clear();
       }
       if (artworksBuilder_ == null) {
         artworks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000004);
       } else {
         artworksBuilder_.clear();
       }
       if (bundlesBuilder_ == null) {
         bundles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000008);
       } else {
         bundlesBuilder_.clear();
       }
@@ -1622,19 +1838,19 @@ private static final long serialVersionUID = 0L;
       }
       if (dlcsBuilder_ == null) {
         dlcs_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000010);
       } else {
         dlcsBuilder_.clear();
       }
       if (expansionsBuilder_ == null) {
         expansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00000020);
       } else {
         expansionsBuilder_.clear();
       }
       if (externalGamesBuilder_ == null) {
         externalGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000040);
       } else {
         externalGamesBuilder_.clear();
       }
@@ -1654,25 +1870,25 @@ private static final long serialVersionUID = 0L;
       }
       if (franchisesBuilder_ == null) {
         franchises_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00000080);
       } else {
         franchisesBuilder_.clear();
       }
       if (gameEnginesBuilder_ == null) {
         gameEngines_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField0_ = (bitField0_ & ~0x00000100);
       } else {
         gameEnginesBuilder_.clear();
       }
       if (gameModesBuilder_ == null) {
         gameModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00080000);
+        bitField0_ = (bitField0_ & ~0x00000200);
       } else {
         gameModesBuilder_.clear();
       }
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00100000);
+        bitField0_ = (bitField0_ & ~0x00000400);
       } else {
         genresBuilder_.clear();
       }
@@ -1680,19 +1896,19 @@ private static final long serialVersionUID = 0L;
 
       if (involvedCompaniesBuilder_ == null) {
         involvedCompanies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00400000);
+        bitField0_ = (bitField0_ & ~0x00000800);
       } else {
         involvedCompaniesBuilder_.clear();
       }
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00800000);
+        bitField0_ = (bitField0_ & ~0x00001000);
       } else {
         keywordsBuilder_.clear();
       }
       if (multiplayerModesBuilder_ == null) {
         multiplayerModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField0_ = (bitField0_ & ~0x00002000);
       } else {
         multiplayerModesBuilder_.clear();
       }
@@ -1706,13 +1922,13 @@ private static final long serialVersionUID = 0L;
       }
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x00004000);
       } else {
         platformsBuilder_.clear();
       }
       if (playerPerspectivesBuilder_ == null) {
         playerPerspectives_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x10000000);
+        bitField0_ = (bitField0_ & ~0x00008000);
       } else {
         playerPerspectivesBuilder_.clear();
       }
@@ -1722,19 +1938,19 @@ private static final long serialVersionUID = 0L;
 
       if (releaseDatesBuilder_ == null) {
         releaseDates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x80000000);
+        bitField0_ = (bitField0_ & ~0x00010000);
       } else {
         releaseDatesBuilder_.clear();
       }
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00020000);
       } else {
         screenshotsBuilder_.clear();
       }
       if (similarGamesBuilder_ == null) {
         similarGames_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00040000);
       } else {
         similarGamesBuilder_.clear();
       }
@@ -1742,7 +1958,7 @@ private static final long serialVersionUID = 0L;
 
       if (standaloneExpansionsBuilder_ == null) {
         standaloneExpansions_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00080000);
       } else {
         standaloneExpansionsBuilder_.clear();
       }
@@ -1753,10 +1969,10 @@ private static final long serialVersionUID = 0L;
       summary_ = "";
 
       tags_ = emptyIntList();
-      bitField1_ = (bitField1_ & ~0x00000080);
+      bitField0_ = (bitField0_ & ~0x00100000);
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00200000);
       } else {
         themesBuilder_.clear();
       }
@@ -1782,13 +1998,13 @@ private static final long serialVersionUID = 0L;
 
       if (videosBuilder_ == null) {
         videos_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00400000);
       } else {
         videosBuilder_.clear();
       }
       if (websitesBuilder_ == null) {
         websites_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00800000);
       } else {
         websitesBuilder_.clear();
       }
@@ -1821,13 +2037,11 @@ private static final long serialVersionUID = 0L;
     public proto.Game buildPartial() {
       proto.Game result = new proto.Game(this);
       int from_bitField0_ = bitField0_;
-      int from_bitField1_ = bitField1_;
-      int to_bitField0_ = 0;
       result.id_ = id_;
       if (ageRatingsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           ageRatings_ = java.util.Collections.unmodifiableList(ageRatings_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.ageRatings_ = ageRatings_;
       } else {
@@ -1836,27 +2050,27 @@ private static final long serialVersionUID = 0L;
       result.aggregatedRating_ = aggregatedRating_;
       result.aggregatedRatingCount_ = aggregatedRatingCount_;
       if (alternativeNamesBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           alternativeNames_ = java.util.Collections.unmodifiableList(alternativeNames_);
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.alternativeNames_ = alternativeNames_;
       } else {
         result.alternativeNames_ = alternativeNamesBuilder_.build();
       }
       if (artworksBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           artworks_ = java.util.Collections.unmodifiableList(artworks_);
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.artworks_ = artworks_;
       } else {
         result.artworks_ = artworksBuilder_.build();
       }
       if (bundlesBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0)) {
+        if (((bitField0_ & 0x00000008) != 0)) {
           bundles_ = java.util.Collections.unmodifiableList(bundles_);
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
         result.bundles_ = bundles_;
       } else {
@@ -1879,27 +2093,27 @@ private static final long serialVersionUID = 0L;
         result.createdAt_ = createdAtBuilder_.build();
       }
       if (dlcsBuilder_ == null) {
-        if (((bitField0_ & 0x00000800) != 0)) {
+        if (((bitField0_ & 0x00000010) != 0)) {
           dlcs_ = java.util.Collections.unmodifiableList(dlcs_);
-          bitField0_ = (bitField0_ & ~0x00000800);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.dlcs_ = dlcs_;
       } else {
         result.dlcs_ = dlcsBuilder_.build();
       }
       if (expansionsBuilder_ == null) {
-        if (((bitField0_ & 0x00001000) != 0)) {
+        if (((bitField0_ & 0x00000020) != 0)) {
           expansions_ = java.util.Collections.unmodifiableList(expansions_);
-          bitField0_ = (bitField0_ & ~0x00001000);
+          bitField0_ = (bitField0_ & ~0x00000020);
         }
         result.expansions_ = expansions_;
       } else {
         result.expansions_ = expansionsBuilder_.build();
       }
       if (externalGamesBuilder_ == null) {
-        if (((bitField0_ & 0x00002000) != 0)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           externalGames_ = java.util.Collections.unmodifiableList(externalGames_);
-          bitField0_ = (bitField0_ & ~0x00002000);
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
         result.externalGames_ = externalGames_;
       } else {
@@ -1917,36 +2131,36 @@ private static final long serialVersionUID = 0L;
         result.franchise_ = franchiseBuilder_.build();
       }
       if (franchisesBuilder_ == null) {
-        if (((bitField0_ & 0x00020000) != 0)) {
+        if (((bitField0_ & 0x00000080) != 0)) {
           franchises_ = java.util.Collections.unmodifiableList(franchises_);
-          bitField0_ = (bitField0_ & ~0x00020000);
+          bitField0_ = (bitField0_ & ~0x00000080);
         }
         result.franchises_ = franchises_;
       } else {
         result.franchises_ = franchisesBuilder_.build();
       }
       if (gameEnginesBuilder_ == null) {
-        if (((bitField0_ & 0x00040000) != 0)) {
+        if (((bitField0_ & 0x00000100) != 0)) {
           gameEngines_ = java.util.Collections.unmodifiableList(gameEngines_);
-          bitField0_ = (bitField0_ & ~0x00040000);
+          bitField0_ = (bitField0_ & ~0x00000100);
         }
         result.gameEngines_ = gameEngines_;
       } else {
         result.gameEngines_ = gameEnginesBuilder_.build();
       }
       if (gameModesBuilder_ == null) {
-        if (((bitField0_ & 0x00080000) != 0)) {
+        if (((bitField0_ & 0x00000200) != 0)) {
           gameModes_ = java.util.Collections.unmodifiableList(gameModes_);
-          bitField0_ = (bitField0_ & ~0x00080000);
+          bitField0_ = (bitField0_ & ~0x00000200);
         }
         result.gameModes_ = gameModes_;
       } else {
         result.gameModes_ = gameModesBuilder_.build();
       }
       if (genresBuilder_ == null) {
-        if (((bitField0_ & 0x00100000) != 0)) {
+        if (((bitField0_ & 0x00000400) != 0)) {
           genres_ = java.util.Collections.unmodifiableList(genres_);
-          bitField0_ = (bitField0_ & ~0x00100000);
+          bitField0_ = (bitField0_ & ~0x00000400);
         }
         result.genres_ = genres_;
       } else {
@@ -1954,27 +2168,27 @@ private static final long serialVersionUID = 0L;
       }
       result.hypes_ = hypes_;
       if (involvedCompaniesBuilder_ == null) {
-        if (((bitField0_ & 0x00400000) != 0)) {
+        if (((bitField0_ & 0x00000800) != 0)) {
           involvedCompanies_ = java.util.Collections.unmodifiableList(involvedCompanies_);
-          bitField0_ = (bitField0_ & ~0x00400000);
+          bitField0_ = (bitField0_ & ~0x00000800);
         }
         result.involvedCompanies_ = involvedCompanies_;
       } else {
         result.involvedCompanies_ = involvedCompaniesBuilder_.build();
       }
       if (keywordsBuilder_ == null) {
-        if (((bitField0_ & 0x00800000) != 0)) {
+        if (((bitField0_ & 0x00001000) != 0)) {
           keywords_ = java.util.Collections.unmodifiableList(keywords_);
-          bitField0_ = (bitField0_ & ~0x00800000);
+          bitField0_ = (bitField0_ & ~0x00001000);
         }
         result.keywords_ = keywords_;
       } else {
         result.keywords_ = keywordsBuilder_.build();
       }
       if (multiplayerModesBuilder_ == null) {
-        if (((bitField0_ & 0x01000000) != 0)) {
+        if (((bitField0_ & 0x00002000) != 0)) {
           multiplayerModes_ = java.util.Collections.unmodifiableList(multiplayerModes_);
-          bitField0_ = (bitField0_ & ~0x01000000);
+          bitField0_ = (bitField0_ & ~0x00002000);
         }
         result.multiplayerModes_ = multiplayerModes_;
       } else {
@@ -1987,18 +2201,18 @@ private static final long serialVersionUID = 0L;
         result.parentGame_ = parentGameBuilder_.build();
       }
       if (platformsBuilder_ == null) {
-        if (((bitField0_ & 0x08000000) != 0)) {
+        if (((bitField0_ & 0x00004000) != 0)) {
           platforms_ = java.util.Collections.unmodifiableList(platforms_);
-          bitField0_ = (bitField0_ & ~0x08000000);
+          bitField0_ = (bitField0_ & ~0x00004000);
         }
         result.platforms_ = platforms_;
       } else {
         result.platforms_ = platformsBuilder_.build();
       }
       if (playerPerspectivesBuilder_ == null) {
-        if (((bitField0_ & 0x10000000) != 0)) {
+        if (((bitField0_ & 0x00008000) != 0)) {
           playerPerspectives_ = java.util.Collections.unmodifiableList(playerPerspectives_);
-          bitField0_ = (bitField0_ & ~0x10000000);
+          bitField0_ = (bitField0_ & ~0x00008000);
         }
         result.playerPerspectives_ = playerPerspectives_;
       } else {
@@ -2007,27 +2221,27 @@ private static final long serialVersionUID = 0L;
       result.rating_ = rating_;
       result.ratingCount_ = ratingCount_;
       if (releaseDatesBuilder_ == null) {
-        if (((bitField0_ & 0x80000000) != 0)) {
+        if (((bitField0_ & 0x00010000) != 0)) {
           releaseDates_ = java.util.Collections.unmodifiableList(releaseDates_);
-          bitField0_ = (bitField0_ & ~0x80000000);
+          bitField0_ = (bitField0_ & ~0x00010000);
         }
         result.releaseDates_ = releaseDates_;
       } else {
         result.releaseDates_ = releaseDatesBuilder_.build();
       }
       if (screenshotsBuilder_ == null) {
-        if (((bitField1_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00020000) != 0)) {
           screenshots_ = java.util.Collections.unmodifiableList(screenshots_);
-          bitField1_ = (bitField1_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00020000);
         }
         result.screenshots_ = screenshots_;
       } else {
         result.screenshots_ = screenshotsBuilder_.build();
       }
       if (similarGamesBuilder_ == null) {
-        if (((bitField1_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00040000) != 0)) {
           similarGames_ = java.util.Collections.unmodifiableList(similarGames_);
-          bitField1_ = (bitField1_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00040000);
         }
         result.similarGames_ = similarGames_;
       } else {
@@ -2035,9 +2249,9 @@ private static final long serialVersionUID = 0L;
       }
       result.slug_ = slug_;
       if (standaloneExpansionsBuilder_ == null) {
-        if (((bitField1_ & 0x00000008) != 0)) {
+        if (((bitField0_ & 0x00080000) != 0)) {
           standaloneExpansions_ = java.util.Collections.unmodifiableList(standaloneExpansions_);
-          bitField1_ = (bitField1_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00080000);
         }
         result.standaloneExpansions_ = standaloneExpansions_;
       } else {
@@ -2046,15 +2260,15 @@ private static final long serialVersionUID = 0L;
       result.status_ = status_;
       result.storyline_ = storyline_;
       result.summary_ = summary_;
-      if (((bitField1_ & 0x00000080) != 0)) {
+      if (((bitField0_ & 0x00100000) != 0)) {
         tags_.makeImmutable();
-        bitField1_ = (bitField1_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00100000);
       }
       result.tags_ = tags_;
       if (themesBuilder_ == null) {
-        if (((bitField1_ & 0x00000100) != 0)) {
+        if (((bitField0_ & 0x00200000) != 0)) {
           themes_ = java.util.Collections.unmodifiableList(themes_);
-          bitField1_ = (bitField1_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00200000);
         }
         result.themes_ = themes_;
       } else {
@@ -2075,25 +2289,24 @@ private static final long serialVersionUID = 0L;
       }
       result.versionTitle_ = versionTitle_;
       if (videosBuilder_ == null) {
-        if (((bitField1_ & 0x00008000) != 0)) {
+        if (((bitField0_ & 0x00400000) != 0)) {
           videos_ = java.util.Collections.unmodifiableList(videos_);
-          bitField1_ = (bitField1_ & ~0x00008000);
+          bitField0_ = (bitField0_ & ~0x00400000);
         }
         result.videos_ = videos_;
       } else {
         result.videos_ = videosBuilder_.build();
       }
       if (websitesBuilder_ == null) {
-        if (((bitField1_ & 0x00010000) != 0)) {
+        if (((bitField0_ & 0x00800000) != 0)) {
           websites_ = java.util.Collections.unmodifiableList(websites_);
-          bitField1_ = (bitField1_ & ~0x00010000);
+          bitField0_ = (bitField0_ & ~0x00800000);
         }
         result.websites_ = websites_;
       } else {
         result.websites_ = websitesBuilder_.build();
       }
       result.checksum_ = checksum_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -2131,17 +2344,20 @@ private static final long serialVersionUID = 0L;
       return super.addRepeatedField(field, value);
     }
     private int bitField0_;
-    private int bitField1_;
 
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -2151,6 +2367,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -2162,9 +2379,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.AgeRating> ageRatings_ =
       java.util.Collections.emptyList();
     private void ensureAgeRatingsIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         ageRatings_ = new java.util.ArrayList<proto.AgeRating>(ageRatings_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -2314,7 +2531,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearAgeRatings() {
       if (ageRatingsBuilder_ == null) {
         ageRatings_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         ageRatingsBuilder_.clear();
@@ -2391,7 +2608,7 @@ private static final long serialVersionUID = 0L;
         ageRatingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.AgeRating, proto.AgeRating.Builder, proto.AgeRatingOrBuilder>(
                 ageRatings_,
-                ((bitField0_ & 0x00000002) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         ageRatings_ = null;
@@ -2402,12 +2619,16 @@ private static final long serialVersionUID = 0L;
     private double aggregatedRating_ ;
     /**
      * <code>double aggregated_rating = 3;</code>
+     * @return The aggregatedRating.
      */
+    @java.lang.Override
     public double getAggregatedRating() {
       return aggregatedRating_;
     }
     /**
      * <code>double aggregated_rating = 3;</code>
+     * @param value The aggregatedRating to set.
+     * @return This builder for chaining.
      */
     public Builder setAggregatedRating(double value) {
       
@@ -2417,6 +2638,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>double aggregated_rating = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAggregatedRating() {
       
@@ -2428,12 +2650,16 @@ private static final long serialVersionUID = 0L;
     private int aggregatedRatingCount_ ;
     /**
      * <code>int32 aggregated_rating_count = 4;</code>
+     * @return The aggregatedRatingCount.
      */
+    @java.lang.Override
     public int getAggregatedRatingCount() {
       return aggregatedRatingCount_;
     }
     /**
      * <code>int32 aggregated_rating_count = 4;</code>
+     * @param value The aggregatedRatingCount to set.
+     * @return This builder for chaining.
      */
     public Builder setAggregatedRatingCount(int value) {
       
@@ -2443,6 +2669,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 aggregated_rating_count = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAggregatedRatingCount() {
       
@@ -2454,9 +2681,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.AlternativeName> alternativeNames_ =
       java.util.Collections.emptyList();
     private void ensureAlternativeNamesIsMutable() {
-      if (!((bitField0_ & 0x00000010) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         alternativeNames_ = new java.util.ArrayList<proto.AlternativeName>(alternativeNames_);
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000002;
        }
     }
 
@@ -2606,7 +2833,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearAlternativeNames() {
       if (alternativeNamesBuilder_ == null) {
         alternativeNames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         alternativeNamesBuilder_.clear();
@@ -2683,7 +2910,7 @@ private static final long serialVersionUID = 0L;
         alternativeNamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.AlternativeName, proto.AlternativeName.Builder, proto.AlternativeNameOrBuilder>(
                 alternativeNames_,
-                ((bitField0_ & 0x00000010) != 0),
+                ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
         alternativeNames_ = null;
@@ -2694,9 +2921,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Artwork> artworks_ =
       java.util.Collections.emptyList();
     private void ensureArtworksIsMutable() {
-      if (!((bitField0_ & 0x00000020) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         artworks_ = new java.util.ArrayList<proto.Artwork>(artworks_);
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000004;
        }
     }
 
@@ -2846,7 +3073,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearArtworks() {
       if (artworksBuilder_ == null) {
         artworks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         artworksBuilder_.clear();
@@ -2923,7 +3150,7 @@ private static final long serialVersionUID = 0L;
         artworksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Artwork, proto.Artwork.Builder, proto.ArtworkOrBuilder>(
                 artworks_,
-                ((bitField0_ & 0x00000020) != 0),
+                ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
                 isClean());
         artworks_ = null;
@@ -2934,9 +3161,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> bundles_ =
       java.util.Collections.emptyList();
     private void ensureBundlesIsMutable() {
-      if (!((bitField0_ & 0x00000040) != 0)) {
+      if (!((bitField0_ & 0x00000008) != 0)) {
         bundles_ = new java.util.ArrayList<proto.Game>(bundles_);
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000008;
        }
     }
 
@@ -3086,7 +3313,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearBundles() {
       if (bundlesBuilder_ == null) {
         bundles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
       } else {
         bundlesBuilder_.clear();
@@ -3163,7 +3390,7 @@ private static final long serialVersionUID = 0L;
         bundlesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 bundles_,
-                ((bitField0_ & 0x00000040) != 0),
+                ((bitField0_ & 0x00000008) != 0),
                 getParentForChildren(),
                 isClean());
         bundles_ = null;
@@ -3174,21 +3401,27 @@ private static final long serialVersionUID = 0L;
     private int category_ = 0;
     /**
      * <code>.proto.GameCategoryEnum category = 8;</code>
+     * @return The enum numeric value on the wire for category.
      */
-    public int getCategoryValue() {
+    @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
      * <code>.proto.GameCategoryEnum category = 8;</code>
+     * @param value The enum numeric value on the wire for category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
+      
       category_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.GameCategoryEnum category = 8;</code>
+     * @return The category.
      */
+    @java.lang.Override
     public proto.GameCategoryEnum getCategory() {
       @SuppressWarnings("deprecation")
       proto.GameCategoryEnum result = proto.GameCategoryEnum.valueOf(category_);
@@ -3196,6 +3429,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameCategoryEnum category = 8;</code>
+     * @param value The category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategory(proto.GameCategoryEnum value) {
       if (value == null) {
@@ -3208,6 +3443,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameCategoryEnum category = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCategory() {
       
@@ -3221,12 +3457,14 @@ private static final long serialVersionUID = 0L;
         proto.Collection, proto.Collection.Builder, proto.CollectionOrBuilder> collectionBuilder_;
     /**
      * <code>.proto.Collection collection = 9;</code>
+     * @return Whether the collection field is set.
      */
     public boolean hasCollection() {
       return collectionBuilder_ != null || collection_ != null;
     }
     /**
      * <code>.proto.Collection collection = 9;</code>
+     * @return The collection.
      */
     public proto.Collection getCollection() {
       if (collectionBuilder_ == null) {
@@ -3338,12 +3576,14 @@ private static final long serialVersionUID = 0L;
         proto.Cover, proto.Cover.Builder, proto.CoverOrBuilder> coverBuilder_;
     /**
      * <code>.proto.Cover cover = 10;</code>
+     * @return Whether the cover field is set.
      */
     public boolean hasCover() {
       return coverBuilder_ != null || cover_ != null;
     }
     /**
      * <code>.proto.Cover cover = 10;</code>
+     * @return The cover.
      */
     public proto.Cover getCover() {
       if (coverBuilder_ == null) {
@@ -3455,12 +3695,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
+     * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
       return createdAtBuilder_ != null || createdAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
+     * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
       if (createdAtBuilder_ == null) {
@@ -3570,9 +3812,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> dlcs_ =
       java.util.Collections.emptyList();
     private void ensureDlcsIsMutable() {
-      if (!((bitField0_ & 0x00000800) != 0)) {
+      if (!((bitField0_ & 0x00000010) != 0)) {
         dlcs_ = new java.util.ArrayList<proto.Game>(dlcs_);
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00000010;
        }
     }
 
@@ -3722,7 +3964,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearDlcs() {
       if (dlcsBuilder_ == null) {
         dlcs_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
       } else {
         dlcsBuilder_.clear();
@@ -3799,7 +4041,7 @@ private static final long serialVersionUID = 0L;
         dlcsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 dlcs_,
-                ((bitField0_ & 0x00000800) != 0),
+                ((bitField0_ & 0x00000010) != 0),
                 getParentForChildren(),
                 isClean());
         dlcs_ = null;
@@ -3810,9 +4052,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> expansions_ =
       java.util.Collections.emptyList();
     private void ensureExpansionsIsMutable() {
-      if (!((bitField0_ & 0x00001000) != 0)) {
+      if (!((bitField0_ & 0x00000020) != 0)) {
         expansions_ = new java.util.ArrayList<proto.Game>(expansions_);
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00000020;
        }
     }
 
@@ -3962,7 +4204,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearExpansions() {
       if (expansionsBuilder_ == null) {
         expansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
       } else {
         expansionsBuilder_.clear();
@@ -4039,7 +4281,7 @@ private static final long serialVersionUID = 0L;
         expansionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 expansions_,
-                ((bitField0_ & 0x00001000) != 0),
+                ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
                 isClean());
         expansions_ = null;
@@ -4050,9 +4292,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.ExternalGame> externalGames_ =
       java.util.Collections.emptyList();
     private void ensureExternalGamesIsMutable() {
-      if (!((bitField0_ & 0x00002000) != 0)) {
+      if (!((bitField0_ & 0x00000040) != 0)) {
         externalGames_ = new java.util.ArrayList<proto.ExternalGame>(externalGames_);
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00000040;
        }
     }
 
@@ -4202,7 +4444,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearExternalGames() {
       if (externalGamesBuilder_ == null) {
         externalGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
       } else {
         externalGamesBuilder_.clear();
@@ -4279,7 +4521,7 @@ private static final long serialVersionUID = 0L;
         externalGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.ExternalGame, proto.ExternalGame.Builder, proto.ExternalGameOrBuilder>(
                 externalGames_,
-                ((bitField0_ & 0x00002000) != 0),
+                ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
                 isClean());
         externalGames_ = null;
@@ -4292,12 +4534,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> firstReleaseDateBuilder_;
     /**
      * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+     * @return Whether the firstReleaseDate field is set.
      */
     public boolean hasFirstReleaseDate() {
       return firstReleaseDateBuilder_ != null || firstReleaseDate_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
+     * @return The firstReleaseDate.
      */
     public com.google.protobuf.Timestamp getFirstReleaseDate() {
       if (firstReleaseDateBuilder_ == null) {
@@ -4407,12 +4651,16 @@ private static final long serialVersionUID = 0L;
     private int follows_ ;
     /**
      * <code>int32 follows = 16;</code>
+     * @return The follows.
      */
+    @java.lang.Override
     public int getFollows() {
       return follows_;
     }
     /**
      * <code>int32 follows = 16;</code>
+     * @param value The follows to set.
+     * @return This builder for chaining.
      */
     public Builder setFollows(int value) {
       
@@ -4422,6 +4670,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 follows = 16;</code>
+     * @return This builder for chaining.
      */
     public Builder clearFollows() {
       
@@ -4435,12 +4684,14 @@ private static final long serialVersionUID = 0L;
         proto.Franchise, proto.Franchise.Builder, proto.FranchiseOrBuilder> franchiseBuilder_;
     /**
      * <code>.proto.Franchise franchise = 17;</code>
+     * @return Whether the franchise field is set.
      */
     public boolean hasFranchise() {
       return franchiseBuilder_ != null || franchise_ != null;
     }
     /**
      * <code>.proto.Franchise franchise = 17;</code>
+     * @return The franchise.
      */
     public proto.Franchise getFranchise() {
       if (franchiseBuilder_ == null) {
@@ -4550,9 +4801,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Franchise> franchises_ =
       java.util.Collections.emptyList();
     private void ensureFranchisesIsMutable() {
-      if (!((bitField0_ & 0x00020000) != 0)) {
+      if (!((bitField0_ & 0x00000080) != 0)) {
         franchises_ = new java.util.ArrayList<proto.Franchise>(franchises_);
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00000080;
        }
     }
 
@@ -4702,7 +4953,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearFranchises() {
       if (franchisesBuilder_ == null) {
         franchises_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
       } else {
         franchisesBuilder_.clear();
@@ -4779,7 +5030,7 @@ private static final long serialVersionUID = 0L;
         franchisesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Franchise, proto.Franchise.Builder, proto.FranchiseOrBuilder>(
                 franchises_,
-                ((bitField0_ & 0x00020000) != 0),
+                ((bitField0_ & 0x00000080) != 0),
                 getParentForChildren(),
                 isClean());
         franchises_ = null;
@@ -4790,9 +5041,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameEngine> gameEngines_ =
       java.util.Collections.emptyList();
     private void ensureGameEnginesIsMutable() {
-      if (!((bitField0_ & 0x00040000) != 0)) {
+      if (!((bitField0_ & 0x00000100) != 0)) {
         gameEngines_ = new java.util.ArrayList<proto.GameEngine>(gameEngines_);
-        bitField0_ |= 0x00040000;
+        bitField0_ |= 0x00000100;
        }
     }
 
@@ -4942,7 +5193,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGameEngines() {
       if (gameEnginesBuilder_ == null) {
         gameEngines_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField0_ = (bitField0_ & ~0x00000100);
         onChanged();
       } else {
         gameEnginesBuilder_.clear();
@@ -5019,7 +5270,7 @@ private static final long serialVersionUID = 0L;
         gameEnginesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameEngine, proto.GameEngine.Builder, proto.GameEngineOrBuilder>(
                 gameEngines_,
-                ((bitField0_ & 0x00040000) != 0),
+                ((bitField0_ & 0x00000100) != 0),
                 getParentForChildren(),
                 isClean());
         gameEngines_ = null;
@@ -5030,9 +5281,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameMode> gameModes_ =
       java.util.Collections.emptyList();
     private void ensureGameModesIsMutable() {
-      if (!((bitField0_ & 0x00080000) != 0)) {
+      if (!((bitField0_ & 0x00000200) != 0)) {
         gameModes_ = new java.util.ArrayList<proto.GameMode>(gameModes_);
-        bitField0_ |= 0x00080000;
+        bitField0_ |= 0x00000200;
        }
     }
 
@@ -5182,7 +5433,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGameModes() {
       if (gameModesBuilder_ == null) {
         gameModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00080000);
+        bitField0_ = (bitField0_ & ~0x00000200);
         onChanged();
       } else {
         gameModesBuilder_.clear();
@@ -5259,7 +5510,7 @@ private static final long serialVersionUID = 0L;
         gameModesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameMode, proto.GameMode.Builder, proto.GameModeOrBuilder>(
                 gameModes_,
-                ((bitField0_ & 0x00080000) != 0),
+                ((bitField0_ & 0x00000200) != 0),
                 getParentForChildren(),
                 isClean());
         gameModes_ = null;
@@ -5270,9 +5521,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Genre> genres_ =
       java.util.Collections.emptyList();
     private void ensureGenresIsMutable() {
-      if (!((bitField0_ & 0x00100000) != 0)) {
+      if (!((bitField0_ & 0x00000400) != 0)) {
         genres_ = new java.util.ArrayList<proto.Genre>(genres_);
-        bitField0_ |= 0x00100000;
+        bitField0_ |= 0x00000400;
        }
     }
 
@@ -5422,7 +5673,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGenres() {
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00100000);
+        bitField0_ = (bitField0_ & ~0x00000400);
         onChanged();
       } else {
         genresBuilder_.clear();
@@ -5499,7 +5750,7 @@ private static final long serialVersionUID = 0L;
         genresBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Genre, proto.Genre.Builder, proto.GenreOrBuilder>(
                 genres_,
-                ((bitField0_ & 0x00100000) != 0),
+                ((bitField0_ & 0x00000400) != 0),
                 getParentForChildren(),
                 isClean());
         genres_ = null;
@@ -5510,12 +5761,16 @@ private static final long serialVersionUID = 0L;
     private int hypes_ ;
     /**
      * <code>int32 hypes = 22;</code>
+     * @return The hypes.
      */
+    @java.lang.Override
     public int getHypes() {
       return hypes_;
     }
     /**
      * <code>int32 hypes = 22;</code>
+     * @param value The hypes to set.
+     * @return This builder for chaining.
      */
     public Builder setHypes(int value) {
       
@@ -5525,6 +5780,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 hypes = 22;</code>
+     * @return This builder for chaining.
      */
     public Builder clearHypes() {
       
@@ -5536,9 +5792,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.InvolvedCompany> involvedCompanies_ =
       java.util.Collections.emptyList();
     private void ensureInvolvedCompaniesIsMutable() {
-      if (!((bitField0_ & 0x00400000) != 0)) {
+      if (!((bitField0_ & 0x00000800) != 0)) {
         involvedCompanies_ = new java.util.ArrayList<proto.InvolvedCompany>(involvedCompanies_);
-        bitField0_ |= 0x00400000;
+        bitField0_ |= 0x00000800;
        }
     }
 
@@ -5688,7 +5944,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearInvolvedCompanies() {
       if (involvedCompaniesBuilder_ == null) {
         involvedCompanies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00400000);
+        bitField0_ = (bitField0_ & ~0x00000800);
         onChanged();
       } else {
         involvedCompaniesBuilder_.clear();
@@ -5765,7 +6021,7 @@ private static final long serialVersionUID = 0L;
         involvedCompaniesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.InvolvedCompany, proto.InvolvedCompany.Builder, proto.InvolvedCompanyOrBuilder>(
                 involvedCompanies_,
-                ((bitField0_ & 0x00400000) != 0),
+                ((bitField0_ & 0x00000800) != 0),
                 getParentForChildren(),
                 isClean());
         involvedCompanies_ = null;
@@ -5776,9 +6032,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Keyword> keywords_ =
       java.util.Collections.emptyList();
     private void ensureKeywordsIsMutable() {
-      if (!((bitField0_ & 0x00800000) != 0)) {
+      if (!((bitField0_ & 0x00001000) != 0)) {
         keywords_ = new java.util.ArrayList<proto.Keyword>(keywords_);
-        bitField0_ |= 0x00800000;
+        bitField0_ |= 0x00001000;
        }
     }
 
@@ -5928,7 +6184,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearKeywords() {
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00800000);
+        bitField0_ = (bitField0_ & ~0x00001000);
         onChanged();
       } else {
         keywordsBuilder_.clear();
@@ -6005,7 +6261,7 @@ private static final long serialVersionUID = 0L;
         keywordsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Keyword, proto.Keyword.Builder, proto.KeywordOrBuilder>(
                 keywords_,
-                ((bitField0_ & 0x00800000) != 0),
+                ((bitField0_ & 0x00001000) != 0),
                 getParentForChildren(),
                 isClean());
         keywords_ = null;
@@ -6016,9 +6272,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.MultiplayerMode> multiplayerModes_ =
       java.util.Collections.emptyList();
     private void ensureMultiplayerModesIsMutable() {
-      if (!((bitField0_ & 0x01000000) != 0)) {
+      if (!((bitField0_ & 0x00002000) != 0)) {
         multiplayerModes_ = new java.util.ArrayList<proto.MultiplayerMode>(multiplayerModes_);
-        bitField0_ |= 0x01000000;
+        bitField0_ |= 0x00002000;
        }
     }
 
@@ -6168,7 +6424,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearMultiplayerModes() {
       if (multiplayerModesBuilder_ == null) {
         multiplayerModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField0_ = (bitField0_ & ~0x00002000);
         onChanged();
       } else {
         multiplayerModesBuilder_.clear();
@@ -6245,7 +6501,7 @@ private static final long serialVersionUID = 0L;
         multiplayerModesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.MultiplayerMode, proto.MultiplayerMode.Builder, proto.MultiplayerModeOrBuilder>(
                 multiplayerModes_,
-                ((bitField0_ & 0x01000000) != 0),
+                ((bitField0_ & 0x00002000) != 0),
                 getParentForChildren(),
                 isClean());
         multiplayerModes_ = null;
@@ -6256,6 +6512,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 26;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -6271,6 +6528,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 26;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -6287,6 +6545,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 26;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -6300,6 +6560,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 26;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -6309,6 +6570,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 26;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -6327,12 +6590,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> parentGameBuilder_;
     /**
      * <code>.proto.Game parent_game = 27;</code>
+     * @return Whether the parentGame field is set.
      */
     public boolean hasParentGame() {
       return parentGameBuilder_ != null || parentGame_ != null;
     }
     /**
      * <code>.proto.Game parent_game = 27;</code>
+     * @return The parentGame.
      */
     public proto.Game getParentGame() {
       if (parentGameBuilder_ == null) {
@@ -6442,9 +6707,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Platform> platforms_ =
       java.util.Collections.emptyList();
     private void ensurePlatformsIsMutable() {
-      if (!((bitField0_ & 0x08000000) != 0)) {
+      if (!((bitField0_ & 0x00004000) != 0)) {
         platforms_ = new java.util.ArrayList<proto.Platform>(platforms_);
-        bitField0_ |= 0x08000000;
+        bitField0_ |= 0x00004000;
        }
     }
 
@@ -6594,7 +6859,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlatforms() {
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
       } else {
         platformsBuilder_.clear();
@@ -6671,7 +6936,7 @@ private static final long serialVersionUID = 0L;
         platformsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder>(
                 platforms_,
-                ((bitField0_ & 0x08000000) != 0),
+                ((bitField0_ & 0x00004000) != 0),
                 getParentForChildren(),
                 isClean());
         platforms_ = null;
@@ -6682,9 +6947,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.PlayerPerspective> playerPerspectives_ =
       java.util.Collections.emptyList();
     private void ensurePlayerPerspectivesIsMutable() {
-      if (!((bitField0_ & 0x10000000) != 0)) {
+      if (!((bitField0_ & 0x00008000) != 0)) {
         playerPerspectives_ = new java.util.ArrayList<proto.PlayerPerspective>(playerPerspectives_);
-        bitField0_ |= 0x10000000;
+        bitField0_ |= 0x00008000;
        }
     }
 
@@ -6834,7 +7099,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlayerPerspectives() {
       if (playerPerspectivesBuilder_ == null) {
         playerPerspectives_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x10000000);
+        bitField0_ = (bitField0_ & ~0x00008000);
         onChanged();
       } else {
         playerPerspectivesBuilder_.clear();
@@ -6911,7 +7176,7 @@ private static final long serialVersionUID = 0L;
         playerPerspectivesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.PlayerPerspective, proto.PlayerPerspective.Builder, proto.PlayerPerspectiveOrBuilder>(
                 playerPerspectives_,
-                ((bitField0_ & 0x10000000) != 0),
+                ((bitField0_ & 0x00008000) != 0),
                 getParentForChildren(),
                 isClean());
         playerPerspectives_ = null;
@@ -6922,12 +7187,16 @@ private static final long serialVersionUID = 0L;
     private double rating_ ;
     /**
      * <code>double rating = 30;</code>
+     * @return The rating.
      */
+    @java.lang.Override
     public double getRating() {
       return rating_;
     }
     /**
      * <code>double rating = 30;</code>
+     * @param value The rating to set.
+     * @return This builder for chaining.
      */
     public Builder setRating(double value) {
       
@@ -6937,6 +7206,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>double rating = 30;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRating() {
       
@@ -6948,12 +7218,16 @@ private static final long serialVersionUID = 0L;
     private int ratingCount_ ;
     /**
      * <code>int32 rating_count = 31;</code>
+     * @return The ratingCount.
      */
+    @java.lang.Override
     public int getRatingCount() {
       return ratingCount_;
     }
     /**
      * <code>int32 rating_count = 31;</code>
+     * @param value The ratingCount to set.
+     * @return This builder for chaining.
      */
     public Builder setRatingCount(int value) {
       
@@ -6963,6 +7237,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 rating_count = 31;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRatingCount() {
       
@@ -6974,9 +7249,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.ReleaseDate> releaseDates_ =
       java.util.Collections.emptyList();
     private void ensureReleaseDatesIsMutable() {
-      if (!((bitField0_ & 0x80000000) != 0)) {
+      if (!((bitField0_ & 0x00010000) != 0)) {
         releaseDates_ = new java.util.ArrayList<proto.ReleaseDate>(releaseDates_);
-        bitField0_ |= 0x80000000;
+        bitField0_ |= 0x00010000;
        }
     }
 
@@ -7126,7 +7401,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearReleaseDates() {
       if (releaseDatesBuilder_ == null) {
         releaseDates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x80000000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         onChanged();
       } else {
         releaseDatesBuilder_.clear();
@@ -7203,7 +7478,7 @@ private static final long serialVersionUID = 0L;
         releaseDatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.ReleaseDate, proto.ReleaseDate.Builder, proto.ReleaseDateOrBuilder>(
                 releaseDates_,
-                ((bitField0_ & 0x80000000) != 0),
+                ((bitField0_ & 0x00010000) != 0),
                 getParentForChildren(),
                 isClean());
         releaseDates_ = null;
@@ -7214,9 +7489,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Screenshot> screenshots_ =
       java.util.Collections.emptyList();
     private void ensureScreenshotsIsMutable() {
-      if (!((bitField1_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00020000) != 0)) {
         screenshots_ = new java.util.ArrayList<proto.Screenshot>(screenshots_);
-        bitField1_ |= 0x00000001;
+        bitField0_ |= 0x00020000;
        }
     }
 
@@ -7366,7 +7641,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearScreenshots() {
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00020000);
         onChanged();
       } else {
         screenshotsBuilder_.clear();
@@ -7443,7 +7718,7 @@ private static final long serialVersionUID = 0L;
         screenshotsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Screenshot, proto.Screenshot.Builder, proto.ScreenshotOrBuilder>(
                 screenshots_,
-                ((bitField1_ & 0x00000001) != 0),
+                ((bitField0_ & 0x00020000) != 0),
                 getParentForChildren(),
                 isClean());
         screenshots_ = null;
@@ -7454,9 +7729,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> similarGames_ =
       java.util.Collections.emptyList();
     private void ensureSimilarGamesIsMutable() {
-      if (!((bitField1_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00040000) != 0)) {
         similarGames_ = new java.util.ArrayList<proto.Game>(similarGames_);
-        bitField1_ |= 0x00000002;
+        bitField0_ |= 0x00040000;
        }
     }
 
@@ -7606,7 +7881,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearSimilarGames() {
       if (similarGamesBuilder_ == null) {
         similarGames_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00040000);
         onChanged();
       } else {
         similarGamesBuilder_.clear();
@@ -7683,7 +7958,7 @@ private static final long serialVersionUID = 0L;
         similarGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 similarGames_,
-                ((bitField1_ & 0x00000002) != 0),
+                ((bitField0_ & 0x00040000) != 0),
                 getParentForChildren(),
                 isClean());
         similarGames_ = null;
@@ -7694,6 +7969,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object slug_ = "";
     /**
      * <code>string slug = 35;</code>
+     * @return The slug.
      */
     public java.lang.String getSlug() {
       java.lang.Object ref = slug_;
@@ -7709,6 +7985,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 35;</code>
+     * @return The bytes for slug.
      */
     public com.google.protobuf.ByteString
         getSlugBytes() {
@@ -7725,6 +8002,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 35;</code>
+     * @param value The slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlug(
         java.lang.String value) {
@@ -7738,6 +8017,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 35;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSlug() {
       
@@ -7747,6 +8027,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string slug = 35;</code>
+     * @param value The bytes for slug to set.
+     * @return This builder for chaining.
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
@@ -7763,9 +8045,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> standaloneExpansions_ =
       java.util.Collections.emptyList();
     private void ensureStandaloneExpansionsIsMutable() {
-      if (!((bitField1_ & 0x00000008) != 0)) {
+      if (!((bitField0_ & 0x00080000) != 0)) {
         standaloneExpansions_ = new java.util.ArrayList<proto.Game>(standaloneExpansions_);
-        bitField1_ |= 0x00000008;
+        bitField0_ |= 0x00080000;
        }
     }
 
@@ -7915,7 +8197,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearStandaloneExpansions() {
       if (standaloneExpansionsBuilder_ == null) {
         standaloneExpansions_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00080000);
         onChanged();
       } else {
         standaloneExpansionsBuilder_.clear();
@@ -7992,7 +8274,7 @@ private static final long serialVersionUID = 0L;
         standaloneExpansionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 standaloneExpansions_,
-                ((bitField1_ & 0x00000008) != 0),
+                ((bitField0_ & 0x00080000) != 0),
                 getParentForChildren(),
                 isClean());
         standaloneExpansions_ = null;
@@ -8003,21 +8285,27 @@ private static final long serialVersionUID = 0L;
     private int status_ = 0;
     /**
      * <code>.proto.GameStatusEnum status = 37;</code>
+     * @return The enum numeric value on the wire for status.
      */
-    public int getStatusValue() {
+    @java.lang.Override public int getStatusValue() {
       return status_;
     }
     /**
      * <code>.proto.GameStatusEnum status = 37;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
+      
       status_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.GameStatusEnum status = 37;</code>
+     * @return The status.
      */
+    @java.lang.Override
     public proto.GameStatusEnum getStatus() {
       @SuppressWarnings("deprecation")
       proto.GameStatusEnum result = proto.GameStatusEnum.valueOf(status_);
@@ -8025,6 +8313,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameStatusEnum status = 37;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
      */
     public Builder setStatus(proto.GameStatusEnum value) {
       if (value == null) {
@@ -8037,6 +8327,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.GameStatusEnum status = 37;</code>
+     * @return This builder for chaining.
      */
     public Builder clearStatus() {
       
@@ -8048,6 +8339,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object storyline_ = "";
     /**
      * <code>string storyline = 38;</code>
+     * @return The storyline.
      */
     public java.lang.String getStoryline() {
       java.lang.Object ref = storyline_;
@@ -8063,6 +8355,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string storyline = 38;</code>
+     * @return The bytes for storyline.
      */
     public com.google.protobuf.ByteString
         getStorylineBytes() {
@@ -8079,6 +8372,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string storyline = 38;</code>
+     * @param value The storyline to set.
+     * @return This builder for chaining.
      */
     public Builder setStoryline(
         java.lang.String value) {
@@ -8092,6 +8387,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string storyline = 38;</code>
+     * @return This builder for chaining.
      */
     public Builder clearStoryline() {
       
@@ -8101,6 +8397,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string storyline = 38;</code>
+     * @param value The bytes for storyline to set.
+     * @return This builder for chaining.
      */
     public Builder setStorylineBytes(
         com.google.protobuf.ByteString value) {
@@ -8117,6 +8415,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object summary_ = "";
     /**
      * <code>string summary = 39;</code>
+     * @return The summary.
      */
     public java.lang.String getSummary() {
       java.lang.Object ref = summary_;
@@ -8132,6 +8431,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string summary = 39;</code>
+     * @return The bytes for summary.
      */
     public com.google.protobuf.ByteString
         getSummaryBytes() {
@@ -8148,6 +8448,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string summary = 39;</code>
+     * @param value The summary to set.
+     * @return This builder for chaining.
      */
     public Builder setSummary(
         java.lang.String value) {
@@ -8161,6 +8463,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string summary = 39;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSummary() {
       
@@ -8170,6 +8473,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string summary = 39;</code>
+     * @param value The bytes for summary to set.
+     * @return This builder for chaining.
      */
     public Builder setSummaryBytes(
         com.google.protobuf.ByteString value) {
@@ -8185,33 +8490,40 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.Internal.IntList tags_ = emptyIntList();
     private void ensureTagsIsMutable() {
-      if (!((bitField1_ & 0x00000080) != 0)) {
+      if (!((bitField0_ & 0x00100000) != 0)) {
         tags_ = mutableCopy(tags_);
-        bitField1_ |= 0x00000080;
+        bitField0_ |= 0x00100000;
        }
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @return A list containing the tags.
      */
     public java.util.List<java.lang.Integer>
         getTagsList() {
-      return ((bitField1_ & 0x00000080) != 0) ?
+      return ((bitField0_ & 0x00100000) != 0) ?
                java.util.Collections.unmodifiableList(tags_) : tags_;
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @return The count of tags.
      */
     public int getTagsCount() {
       return tags_.size();
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @param index The index of the element to return.
+     * @return The tags at the given index.
      */
     public int getTags(int index) {
       return tags_.getInt(index);
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @param index The index to set the value at.
+     * @param value The tags to set.
+     * @return This builder for chaining.
      */
     public Builder setTags(
         int index, int value) {
@@ -8222,6 +8534,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @param value The tags to add.
+     * @return This builder for chaining.
      */
     public Builder addTags(int value) {
       ensureTagsIsMutable();
@@ -8231,6 +8545,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @param values The tags to add.
+     * @return This builder for chaining.
      */
     public Builder addAllTags(
         java.lang.Iterable<? extends java.lang.Integer> values) {
@@ -8242,10 +8558,11 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated int32 tags = 40;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTags() {
       tags_ = emptyIntList();
-      bitField1_ = (bitField1_ & ~0x00000080);
+      bitField0_ = (bitField0_ & ~0x00100000);
       onChanged();
       return this;
     }
@@ -8253,9 +8570,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Theme> themes_ =
       java.util.Collections.emptyList();
     private void ensureThemesIsMutable() {
-      if (!((bitField1_ & 0x00000100) != 0)) {
+      if (!((bitField0_ & 0x00200000) != 0)) {
         themes_ = new java.util.ArrayList<proto.Theme>(themes_);
-        bitField1_ |= 0x00000100;
+        bitField0_ |= 0x00200000;
        }
     }
 
@@ -8405,7 +8722,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearThemes() {
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00200000);
         onChanged();
       } else {
         themesBuilder_.clear();
@@ -8482,7 +8799,7 @@ private static final long serialVersionUID = 0L;
         themesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Theme, proto.Theme.Builder, proto.ThemeOrBuilder>(
                 themes_,
-                ((bitField1_ & 0x00000100) != 0),
+                ((bitField0_ & 0x00200000) != 0),
                 getParentForChildren(),
                 isClean());
         themes_ = null;
@@ -8493,12 +8810,16 @@ private static final long serialVersionUID = 0L;
     private double totalRating_ ;
     /**
      * <code>double total_rating = 42;</code>
+     * @return The totalRating.
      */
+    @java.lang.Override
     public double getTotalRating() {
       return totalRating_;
     }
     /**
      * <code>double total_rating = 42;</code>
+     * @param value The totalRating to set.
+     * @return This builder for chaining.
      */
     public Builder setTotalRating(double value) {
       
@@ -8508,6 +8829,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>double total_rating = 42;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTotalRating() {
       
@@ -8519,12 +8841,16 @@ private static final long serialVersionUID = 0L;
     private int totalRatingCount_ ;
     /**
      * <code>int32 total_rating_count = 43;</code>
+     * @return The totalRatingCount.
      */
+    @java.lang.Override
     public int getTotalRatingCount() {
       return totalRatingCount_;
     }
     /**
      * <code>int32 total_rating_count = 43;</code>
+     * @param value The totalRatingCount to set.
+     * @return This builder for chaining.
      */
     public Builder setTotalRatingCount(int value) {
       
@@ -8534,6 +8860,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 total_rating_count = 43;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTotalRatingCount() {
       
@@ -8547,12 +8874,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+     * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 44;</code>
+     * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -8662,6 +8991,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object url_ = "";
     /**
      * <code>string url = 45;</code>
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -8677,6 +9007,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 45;</code>
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -8693,6 +9024,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 45;</code>
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -8706,6 +9039,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 45;</code>
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
       
@@ -8715,6 +9049,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string url = 45;</code>
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -8733,12 +9069,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> versionParentBuilder_;
     /**
      * <code>.proto.Game version_parent = 46;</code>
+     * @return Whether the versionParent field is set.
      */
     public boolean hasVersionParent() {
       return versionParentBuilder_ != null || versionParent_ != null;
     }
     /**
      * <code>.proto.Game version_parent = 46;</code>
+     * @return The versionParent.
      */
     public proto.Game getVersionParent() {
       if (versionParentBuilder_ == null) {
@@ -8848,6 +9186,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object versionTitle_ = "";
     /**
      * <code>string version_title = 47;</code>
+     * @return The versionTitle.
      */
     public java.lang.String getVersionTitle() {
       java.lang.Object ref = versionTitle_;
@@ -8863,6 +9202,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string version_title = 47;</code>
+     * @return The bytes for versionTitle.
      */
     public com.google.protobuf.ByteString
         getVersionTitleBytes() {
@@ -8879,6 +9219,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string version_title = 47;</code>
+     * @param value The versionTitle to set.
+     * @return This builder for chaining.
      */
     public Builder setVersionTitle(
         java.lang.String value) {
@@ -8892,6 +9234,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string version_title = 47;</code>
+     * @return This builder for chaining.
      */
     public Builder clearVersionTitle() {
       
@@ -8901,6 +9244,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string version_title = 47;</code>
+     * @param value The bytes for versionTitle to set.
+     * @return This builder for chaining.
      */
     public Builder setVersionTitleBytes(
         com.google.protobuf.ByteString value) {
@@ -8917,9 +9262,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameVideo> videos_ =
       java.util.Collections.emptyList();
     private void ensureVideosIsMutable() {
-      if (!((bitField1_ & 0x00008000) != 0)) {
+      if (!((bitField0_ & 0x00400000) != 0)) {
         videos_ = new java.util.ArrayList<proto.GameVideo>(videos_);
-        bitField1_ |= 0x00008000;
+        bitField0_ |= 0x00400000;
        }
     }
 
@@ -9069,7 +9414,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearVideos() {
       if (videosBuilder_ == null) {
         videos_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00400000);
         onChanged();
       } else {
         videosBuilder_.clear();
@@ -9146,7 +9491,7 @@ private static final long serialVersionUID = 0L;
         videosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameVideo, proto.GameVideo.Builder, proto.GameVideoOrBuilder>(
                 videos_,
-                ((bitField1_ & 0x00008000) != 0),
+                ((bitField0_ & 0x00400000) != 0),
                 getParentForChildren(),
                 isClean());
         videos_ = null;
@@ -9157,9 +9502,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Website> websites_ =
       java.util.Collections.emptyList();
     private void ensureWebsitesIsMutable() {
-      if (!((bitField1_ & 0x00010000) != 0)) {
+      if (!((bitField0_ & 0x00800000) != 0)) {
         websites_ = new java.util.ArrayList<proto.Website>(websites_);
-        bitField1_ |= 0x00010000;
+        bitField0_ |= 0x00800000;
        }
     }
 
@@ -9309,7 +9654,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearWebsites() {
       if (websitesBuilder_ == null) {
         websites_ = java.util.Collections.emptyList();
-        bitField1_ = (bitField1_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00800000);
         onChanged();
       } else {
         websitesBuilder_.clear();
@@ -9386,7 +9731,7 @@ private static final long serialVersionUID = 0L;
         websitesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Website, proto.Website.Builder, proto.WebsiteOrBuilder>(
                 websites_,
-                ((bitField1_ & 0x00010000) != 0),
+                ((bitField0_ & 0x00800000) != 0),
                 getParentForChildren(),
                 isClean());
         websites_ = null;
@@ -9397,6 +9742,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 50;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -9412,6 +9758,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 50;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -9428,6 +9775,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 50;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -9441,6 +9790,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 50;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -9450,6 +9800,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 50;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {

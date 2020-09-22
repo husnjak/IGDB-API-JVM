@@ -9,15 +9,18 @@ public interface AgeRatingOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.AgeRatingCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.AgeRatingCategoryEnum category = 2;</code>
+   * @return The category.
    */
   proto.AgeRatingCategoryEnum getCategory();
 
@@ -47,39 +50,47 @@ public interface AgeRatingOrBuilder extends
 
   /**
    * <code>.proto.AgeRatingRatingEnum rating = 4;</code>
+   * @return The enum numeric value on the wire for rating.
    */
   int getRatingValue();
   /**
    * <code>.proto.AgeRatingRatingEnum rating = 4;</code>
+   * @return The rating.
    */
   proto.AgeRatingRatingEnum getRating();
 
   /**
    * <code>string rating_cover_url = 5;</code>
+   * @return The ratingCoverUrl.
    */
   java.lang.String getRatingCoverUrl();
   /**
    * <code>string rating_cover_url = 5;</code>
+   * @return The bytes for ratingCoverUrl.
    */
   com.google.protobuf.ByteString
       getRatingCoverUrlBytes();
 
   /**
    * <code>string synopsis = 6;</code>
+   * @return The synopsis.
    */
   java.lang.String getSynopsis();
   /**
    * <code>string synopsis = 6;</code>
+   * @return The bytes for synopsis.
    */
   com.google.protobuf.ByteString
       getSynopsisBytes();
 
   /**
    * <code>string checksum = 7;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 7;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.PlayerPerspectiveResult}
  */
-public  final class PlayerPerspectiveResult extends
+public final class PlayerPerspectiveResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.PlayerPerspectiveResult)
     PlayerPerspectiveResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private PlayerPerspectiveResult() {
     playerperspectives_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new PlayerPerspectiveResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.PlayerPerspective> getPlayerperspectivesList() {
     return playerperspectives_;
   }
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.PlayerPerspectiveOrBuilder> 
       getPlayerperspectivesOrBuilderList() {
     return playerperspectives_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
    */
+  @java.lang.Override
   public int getPlayerperspectivesCount() {
     return playerperspectives_.size();
   }
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
    */
+  @java.lang.Override
   public proto.PlayerPerspective getPlayerperspectives(int index) {
     return playerperspectives_.get(index);
   }
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
    */
+  @java.lang.Override
   public proto.PlayerPerspectiveOrBuilder getPlayerperspectivesOrBuilder(
       int index) {
     return playerperspectives_.get(index);

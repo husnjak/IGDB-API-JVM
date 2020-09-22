@@ -9,39 +9,47 @@ public interface PlatformWebsiteOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
    * <code>.proto.WebsiteCategoryEnum category = 2;</code>
+   * @return The category.
    */
   proto.WebsiteCategoryEnum getCategory();
 
   /**
    * <code>bool trusted = 3;</code>
+   * @return The trusted.
    */
   boolean getTrusted();
 
   /**
    * <code>string url = 4;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 4;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
 
   /**
    * <code>string checksum = 5;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 5;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

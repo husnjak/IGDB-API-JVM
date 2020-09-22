@@ -9,25 +9,30 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>string alternative_name = 2;</code>
+   * @return The alternativeName.
    */
   java.lang.String getAlternativeName();
   /**
    * <code>string alternative_name = 2;</code>
+   * @return The bytes for alternativeName.
    */
   com.google.protobuf.ByteString
       getAlternativeNameBytes();
 
   /**
    * <code>.proto.Character character = 3;</code>
+   * @return Whether the character field is set.
    */
   boolean hasCharacter();
   /**
    * <code>.proto.Character character = 3;</code>
+   * @return The character.
    */
   proto.Character getCharacter();
   /**
@@ -37,10 +42,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>.proto.Collection collection = 4;</code>
+   * @return Whether the collection field is set.
    */
   boolean hasCollection();
   /**
    * <code>.proto.Collection collection = 4;</code>
+   * @return The collection.
    */
   proto.Collection getCollection();
   /**
@@ -50,10 +57,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>.proto.Company company = 5;</code>
+   * @return Whether the company field is set.
    */
   boolean hasCompany();
   /**
    * <code>.proto.Company company = 5;</code>
+   * @return The company.
    */
   proto.Company getCompany();
   /**
@@ -63,20 +72,24 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>string description = 6;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 6;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
 
   /**
    * <code>.proto.Game game = 7;</code>
+   * @return Whether the game field is set.
    */
   boolean hasGame();
   /**
    * <code>.proto.Game game = 7;</code>
+   * @return The game.
    */
   proto.Game getGame();
   /**
@@ -86,20 +99,24 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>string name = 8;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 8;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>.proto.Platform platform = 9;</code>
+   * @return Whether the platform field is set.
    */
   boolean hasPlatform();
   /**
    * <code>.proto.Platform platform = 9;</code>
+   * @return The platform.
    */
   proto.Platform getPlatform();
   /**
@@ -109,10 +126,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>.google.protobuf.Timestamp published_at = 10;</code>
+   * @return Whether the publishedAt field is set.
    */
   boolean hasPublishedAt();
   /**
    * <code>.google.protobuf.Timestamp published_at = 10;</code>
+   * @return The publishedAt.
    */
   com.google.protobuf.Timestamp getPublishedAt();
   /**
@@ -122,10 +141,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>.proto.TestDummy test_dummy = 11;</code>
+   * @return Whether the testDummy field is set.
    */
   boolean hasTestDummy();
   /**
    * <code>.proto.TestDummy test_dummy = 11;</code>
+   * @return The testDummy.
    */
   proto.TestDummy getTestDummy();
   /**
@@ -135,10 +156,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>.proto.Theme theme = 12;</code>
+   * @return Whether the theme field is set.
    */
   boolean hasTheme();
   /**
    * <code>.proto.Theme theme = 12;</code>
+   * @return The theme.
    */
   proto.Theme getTheme();
   /**
@@ -148,10 +171,12 @@ public interface SearchOrBuilder extends
 
   /**
    * <code>string checksum = 13;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 13;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

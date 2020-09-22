@@ -9,6 +9,7 @@ public interface CountOrBuilder extends
 
   /**
    * <code>int64 count = 1;</code>
+   * @return The count.
    */
   long getCount();
 }

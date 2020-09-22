@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.GameVersionResult}
  */
-public  final class GameVersionResult extends
+public final class GameVersionResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.GameVersionResult)
     GameVersionResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GameVersionResult() {
     gameversions_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GameVersionResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersion gameversions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.GameVersion> getGameversionsList() {
     return gameversions_;
   }
   /**
    * <code>repeated .proto.GameVersion gameversions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.GameVersionOrBuilder> 
       getGameversionsOrBuilderList() {
     return gameversions_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.GameVersion gameversions = 1;</code>
    */
+  @java.lang.Override
   public int getGameversionsCount() {
     return gameversions_.size();
   }
   /**
    * <code>repeated .proto.GameVersion gameversions = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersion getGameversions(int index) {
     return gameversions_.get(index);
   }
   /**
    * <code>repeated .proto.GameVersion gameversions = 1;</code>
    */
+  @java.lang.Override
   public proto.GameVersionOrBuilder getGameversionsOrBuilder(
       int index) {
     return gameversions_.get(index);

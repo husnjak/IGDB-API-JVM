@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.SearchResult}
  */
-public  final class SearchResult extends
+public final class SearchResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.SearchResult)
     SearchResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private SearchResult() {
     searches_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new SearchResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Search searches = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Search> getSearchesList() {
     return searches_;
   }
   /**
    * <code>repeated .proto.Search searches = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.SearchOrBuilder> 
       getSearchesOrBuilderList() {
     return searches_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Search searches = 1;</code>
    */
+  @java.lang.Override
   public int getSearchesCount() {
     return searches_.size();
   }
   /**
    * <code>repeated .proto.Search searches = 1;</code>
    */
+  @java.lang.Override
   public proto.Search getSearches(int index) {
     return searches_.get(index);
   }
   /**
    * <code>repeated .proto.Search searches = 1;</code>
    */
+  @java.lang.Override
   public proto.SearchOrBuilder getSearchesOrBuilder(
       int index) {
     return searches_.get(index);

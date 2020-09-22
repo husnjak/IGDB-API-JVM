@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.CompanyResult}
  */
-public  final class CompanyResult extends
+public final class CompanyResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.CompanyResult)
     CompanyResultOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private CompanyResult() {
     companies_ = java.util.Collections.emptyList();
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new CompanyResult();
   }
 
   @java.lang.Override
@@ -42,12 +49,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Company companies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<proto.Company> getCompaniesList() {
     return companies_;
   }
   /**
    * <code>repeated .proto.Company companies = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends proto.CompanyOrBuilder> 
       getCompaniesOrBuilderList() {
     return companies_;
@@ -55,18 +64,21 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .proto.Company companies = 1;</code>
    */
+  @java.lang.Override
   public int getCompaniesCount() {
     return companies_.size();
   }
   /**
    * <code>repeated .proto.Company companies = 1;</code>
    */
+  @java.lang.Override
   public proto.Company getCompanies(int index) {
     return companies_.get(index);
   }
   /**
    * <code>repeated .proto.Company companies = 1;</code>
    */
+  @java.lang.Override
   public proto.CompanyOrBuilder getCompaniesOrBuilder(
       int index) {
     return companies_.get(index);

@@ -9,15 +9,18 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
   long getId();
 
   /**
    * <code>.google.protobuf.Timestamp change_date = 2;</code>
+   * @return Whether the changeDate field is set.
    */
   boolean hasChangeDate();
   /**
    * <code>.google.protobuf.Timestamp change_date = 2;</code>
+   * @return The changeDate.
    */
   com.google.protobuf.Timestamp getChangeDate();
   /**
@@ -27,19 +30,23 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum change_date_category = 3;</code>
+   * @return The enum numeric value on the wire for changeDateCategory.
    */
   int getChangeDateCategoryValue();
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum change_date_category = 3;</code>
+   * @return The changeDateCategory.
    */
   proto.DateFormatChangeDateCategoryEnum getChangeDateCategory();
 
   /**
    * <code>.proto.Company changed_company_id = 4;</code>
+   * @return Whether the changedCompanyId field is set.
    */
   boolean hasChangedCompanyId();
   /**
    * <code>.proto.Company changed_company_id = 4;</code>
+   * @return The changedCompanyId.
    */
   proto.Company getChangedCompanyId();
   /**
@@ -49,15 +56,18 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>int32 country = 5;</code>
+   * @return The country.
    */
   int getCountry();
 
   /**
    * <code>.google.protobuf.Timestamp created_at = 6;</code>
+   * @return Whether the createdAt field is set.
    */
   boolean hasCreatedAt();
   /**
    * <code>.google.protobuf.Timestamp created_at = 6;</code>
+   * @return The createdAt.
    */
   com.google.protobuf.Timestamp getCreatedAt();
   /**
@@ -67,10 +77,12 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>string description = 7;</code>
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
    * <code>string description = 7;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
@@ -101,10 +113,12 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>.proto.CompanyLogo logo = 9;</code>
+   * @return Whether the logo field is set.
    */
   boolean hasLogo();
   /**
    * <code>.proto.CompanyLogo logo = 9;</code>
+   * @return The logo.
    */
   proto.CompanyLogo getLogo();
   /**
@@ -114,20 +128,24 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>string name = 10;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 10;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>.proto.Company parent = 11;</code>
+   * @return Whether the parent field is set.
    */
   boolean hasParent();
   /**
    * <code>.proto.Company parent = 11;</code>
+   * @return The parent.
    */
   proto.Company getParent();
   /**
@@ -161,20 +179,24 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>string slug = 13;</code>
+   * @return The slug.
    */
   java.lang.String getSlug();
   /**
    * <code>string slug = 13;</code>
+   * @return The bytes for slug.
    */
   com.google.protobuf.ByteString
       getSlugBytes();
 
   /**
    * <code>.google.protobuf.Timestamp start_date = 14;</code>
+   * @return Whether the startDate field is set.
    */
   boolean hasStartDate();
   /**
    * <code>.google.protobuf.Timestamp start_date = 14;</code>
+   * @return The startDate.
    */
   com.google.protobuf.Timestamp getStartDate();
   /**
@@ -184,19 +206,23 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum start_date_category = 15;</code>
+   * @return The enum numeric value on the wire for startDateCategory.
    */
   int getStartDateCategoryValue();
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum start_date_category = 15;</code>
+   * @return The startDateCategory.
    */
   proto.DateFormatChangeDateCategoryEnum getStartDateCategory();
 
   /**
    * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+   * @return Whether the updatedAt field is set.
    */
   boolean hasUpdatedAt();
   /**
    * <code>.google.protobuf.Timestamp updated_at = 16;</code>
+   * @return The updatedAt.
    */
   com.google.protobuf.Timestamp getUpdatedAt();
   /**
@@ -206,10 +232,12 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>string url = 17;</code>
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
    * <code>string url = 17;</code>
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString
       getUrlBytes();
@@ -240,10 +268,12 @@ public interface CompanyOrBuilder extends
 
   /**
    * <code>string checksum = 19;</code>
+   * @return The checksum.
    */
   java.lang.String getChecksum();
   /**
    * <code>string checksum = 19;</code>
+   * @return The bytes for checksum.
    */
   com.google.protobuf.ByteString
       getChecksumBytes();

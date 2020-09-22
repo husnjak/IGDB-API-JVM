@@ -6,7 +6,7 @@ package proto;
 /**
  * Protobuf type {@code proto.ReleaseDate}
  */
-public  final class ReleaseDate extends
+public final class ReleaseDate extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:proto.ReleaseDate)
     ReleaseDateOrBuilder {
@@ -20,6 +20,13 @@ private static final long serialVersionUID = 0L;
     human_ = "";
     region_ = 0;
     checksum_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ReleaseDate();
   }
 
   @java.lang.Override
@@ -44,7 +51,9 @@ private static final long serialVersionUID = 0L;
   private long id_;
   /**
    * <code>uint64 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public long getId() {
     return id_;
   }
@@ -53,14 +62,16 @@ private static final long serialVersionUID = 0L;
   private int category_;
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+   * @return The enum numeric value on the wire for category.
    */
-  public int getCategoryValue() {
+  @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+   * @return The category.
    */
-  public proto.DateFormatChangeDateCategoryEnum getCategory() {
+  @java.lang.Override public proto.DateFormatChangeDateCategoryEnum getCategory() {
     @SuppressWarnings("deprecation")
     proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.valueOf(category_);
     return result == null ? proto.DateFormatChangeDateCategoryEnum.UNRECOGNIZED : result;
@@ -70,19 +81,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp createdAt_;
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return Whether the createdAt field is set.
    */
+  @java.lang.Override
   public boolean hasCreatedAt() {
     return createdAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
+   * @return The createdAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreatedAt() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp created_at = 3;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return getCreatedAt();
   }
@@ -91,19 +107,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp date_;
   /**
    * <code>.google.protobuf.Timestamp date = 4;</code>
+   * @return Whether the date field is set.
    */
+  @java.lang.Override
   public boolean hasDate() {
     return date_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp date = 4;</code>
+   * @return The date.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getDate() {
     return date_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : date_;
   }
   /**
    * <code>.google.protobuf.Timestamp date = 4;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getDateOrBuilder() {
     return getDate();
   }
@@ -112,19 +133,24 @@ private static final long serialVersionUID = 0L;
   private proto.Game game_;
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return Whether the game field is set.
    */
+  @java.lang.Override
   public boolean hasGame() {
     return game_ != null;
   }
   /**
    * <code>.proto.Game game = 5;</code>
+   * @return The game.
    */
+  @java.lang.Override
   public proto.Game getGame() {
     return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
   /**
    * <code>.proto.Game game = 5;</code>
    */
+  @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
     return getGame();
   }
@@ -133,7 +159,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object human_;
   /**
    * <code>string human = 6;</code>
+   * @return The human.
    */
+  @java.lang.Override
   public java.lang.String getHuman() {
     java.lang.Object ref = human_;
     if (ref instanceof java.lang.String) {
@@ -148,7 +176,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string human = 6;</code>
+   * @return The bytes for human.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getHumanBytes() {
     java.lang.Object ref = human_;
@@ -167,7 +197,9 @@ private static final long serialVersionUID = 0L;
   private int m_;
   /**
    * <code>int32 m = 7;</code>
+   * @return The m.
    */
+  @java.lang.Override
   public int getM() {
     return m_;
   }
@@ -176,19 +208,24 @@ private static final long serialVersionUID = 0L;
   private proto.Platform platform_;
   /**
    * <code>.proto.Platform platform = 8;</code>
+   * @return Whether the platform field is set.
    */
+  @java.lang.Override
   public boolean hasPlatform() {
     return platform_ != null;
   }
   /**
    * <code>.proto.Platform platform = 8;</code>
+   * @return The platform.
    */
+  @java.lang.Override
   public proto.Platform getPlatform() {
     return platform_ == null ? proto.Platform.getDefaultInstance() : platform_;
   }
   /**
    * <code>.proto.Platform platform = 8;</code>
    */
+  @java.lang.Override
   public proto.PlatformOrBuilder getPlatformOrBuilder() {
     return getPlatform();
   }
@@ -197,14 +234,16 @@ private static final long serialVersionUID = 0L;
   private int region_;
   /**
    * <code>.proto.RegionRegionEnum region = 9;</code>
+   * @return The enum numeric value on the wire for region.
    */
-  public int getRegionValue() {
+  @java.lang.Override public int getRegionValue() {
     return region_;
   }
   /**
    * <code>.proto.RegionRegionEnum region = 9;</code>
+   * @return The region.
    */
-  public proto.RegionRegionEnum getRegion() {
+  @java.lang.Override public proto.RegionRegionEnum getRegion() {
     @SuppressWarnings("deprecation")
     proto.RegionRegionEnum result = proto.RegionRegionEnum.valueOf(region_);
     return result == null ? proto.RegionRegionEnum.UNRECOGNIZED : result;
@@ -214,19 +253,24 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
    * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+   * @return Whether the updatedAt field is set.
    */
+  @java.lang.Override
   public boolean hasUpdatedAt() {
     return updatedAt_ != null;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+   * @return The updatedAt.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getUpdatedAt() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
    * <code>.google.protobuf.Timestamp updated_at = 10;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return getUpdatedAt();
   }
@@ -235,7 +279,9 @@ private static final long serialVersionUID = 0L;
   private int y_;
   /**
    * <code>int32 y = 11;</code>
+   * @return The y.
    */
+  @java.lang.Override
   public int getY() {
     return y_;
   }
@@ -244,7 +290,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object checksum_;
   /**
    * <code>string checksum = 12;</code>
+   * @return The checksum.
    */
+  @java.lang.Override
   public java.lang.String getChecksum() {
     java.lang.Object ref = checksum_;
     if (ref instanceof java.lang.String) {
@@ -259,7 +307,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string checksum = 12;</code>
+   * @return The bytes for checksum.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getChecksumBytes() {
     java.lang.Object ref = checksum_;
@@ -544,12 +594,16 @@ private static final long serialVersionUID = 0L;
     private long id_ ;
     /**
      * <code>uint64 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public long getId() {
       return id_;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(long value) {
       
@@ -559,6 +613,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>uint64 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -570,21 +625,27 @@ private static final long serialVersionUID = 0L;
     private int category_ = 0;
     /**
      * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+     * @return The enum numeric value on the wire for category.
      */
-    public int getCategoryValue() {
+    @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
      * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+     * @param value The enum numeric value on the wire for category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
+      
       category_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+     * @return The category.
      */
+    @java.lang.Override
     public proto.DateFormatChangeDateCategoryEnum getCategory() {
       @SuppressWarnings("deprecation")
       proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.valueOf(category_);
@@ -592,6 +653,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+     * @param value The category to set.
+     * @return This builder for chaining.
      */
     public Builder setCategory(proto.DateFormatChangeDateCategoryEnum value) {
       if (value == null) {
@@ -604,6 +667,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearCategory() {
       
@@ -617,12 +681,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
       return createdAtBuilder_ != null || createdAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
+     * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
       if (createdAtBuilder_ == null) {
@@ -734,12 +800,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> dateBuilder_;
     /**
      * <code>.google.protobuf.Timestamp date = 4;</code>
+     * @return Whether the date field is set.
      */
     public boolean hasDate() {
       return dateBuilder_ != null || date_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp date = 4;</code>
+     * @return The date.
      */
     public com.google.protobuf.Timestamp getDate() {
       if (dateBuilder_ == null) {
@@ -851,12 +919,14 @@ private static final long serialVersionUID = 0L;
         proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
     /**
      * <code>.proto.Game game = 5;</code>
+     * @return Whether the game field is set.
      */
     public boolean hasGame() {
       return gameBuilder_ != null || game_ != null;
     }
     /**
      * <code>.proto.Game game = 5;</code>
+     * @return The game.
      */
     public proto.Game getGame() {
       if (gameBuilder_ == null) {
@@ -966,6 +1036,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object human_ = "";
     /**
      * <code>string human = 6;</code>
+     * @return The human.
      */
     public java.lang.String getHuman() {
       java.lang.Object ref = human_;
@@ -981,6 +1052,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string human = 6;</code>
+     * @return The bytes for human.
      */
     public com.google.protobuf.ByteString
         getHumanBytes() {
@@ -997,6 +1069,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string human = 6;</code>
+     * @param value The human to set.
+     * @return This builder for chaining.
      */
     public Builder setHuman(
         java.lang.String value) {
@@ -1010,6 +1084,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string human = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearHuman() {
       
@@ -1019,6 +1094,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string human = 6;</code>
+     * @param value The bytes for human to set.
+     * @return This builder for chaining.
      */
     public Builder setHumanBytes(
         com.google.protobuf.ByteString value) {
@@ -1035,12 +1112,16 @@ private static final long serialVersionUID = 0L;
     private int m_ ;
     /**
      * <code>int32 m = 7;</code>
+     * @return The m.
      */
+    @java.lang.Override
     public int getM() {
       return m_;
     }
     /**
      * <code>int32 m = 7;</code>
+     * @param value The m to set.
+     * @return This builder for chaining.
      */
     public Builder setM(int value) {
       
@@ -1050,6 +1131,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 m = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearM() {
       
@@ -1063,12 +1145,14 @@ private static final long serialVersionUID = 0L;
         proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder> platformBuilder_;
     /**
      * <code>.proto.Platform platform = 8;</code>
+     * @return Whether the platform field is set.
      */
     public boolean hasPlatform() {
       return platformBuilder_ != null || platform_ != null;
     }
     /**
      * <code>.proto.Platform platform = 8;</code>
+     * @return The platform.
      */
     public proto.Platform getPlatform() {
       if (platformBuilder_ == null) {
@@ -1178,21 +1262,27 @@ private static final long serialVersionUID = 0L;
     private int region_ = 0;
     /**
      * <code>.proto.RegionRegionEnum region = 9;</code>
+     * @return The enum numeric value on the wire for region.
      */
-    public int getRegionValue() {
+    @java.lang.Override public int getRegionValue() {
       return region_;
     }
     /**
      * <code>.proto.RegionRegionEnum region = 9;</code>
+     * @param value The enum numeric value on the wire for region to set.
+     * @return This builder for chaining.
      */
     public Builder setRegionValue(int value) {
+      
       region_ = value;
       onChanged();
       return this;
     }
     /**
      * <code>.proto.RegionRegionEnum region = 9;</code>
+     * @return The region.
      */
+    @java.lang.Override
     public proto.RegionRegionEnum getRegion() {
       @SuppressWarnings("deprecation")
       proto.RegionRegionEnum result = proto.RegionRegionEnum.valueOf(region_);
@@ -1200,6 +1290,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.RegionRegionEnum region = 9;</code>
+     * @param value The region to set.
+     * @return This builder for chaining.
      */
     public Builder setRegion(proto.RegionRegionEnum value) {
       if (value == null) {
@@ -1212,6 +1304,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>.proto.RegionRegionEnum region = 9;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRegion() {
       
@@ -1225,12 +1318,14 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+     * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
       return updatedAtBuilder_ != null || updatedAt_ != null;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+     * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
       if (updatedAtBuilder_ == null) {
@@ -1340,12 +1435,16 @@ private static final long serialVersionUID = 0L;
     private int y_ ;
     /**
      * <code>int32 y = 11;</code>
+     * @return The y.
      */
+    @java.lang.Override
     public int getY() {
       return y_;
     }
     /**
      * <code>int32 y = 11;</code>
+     * @param value The y to set.
+     * @return This builder for chaining.
      */
     public Builder setY(int value) {
       
@@ -1355,6 +1454,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 y = 11;</code>
+     * @return This builder for chaining.
      */
     public Builder clearY() {
       
@@ -1366,6 +1466,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object checksum_ = "";
     /**
      * <code>string checksum = 12;</code>
+     * @return The checksum.
      */
     public java.lang.String getChecksum() {
       java.lang.Object ref = checksum_;
@@ -1381,6 +1482,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 12;</code>
+     * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
         getChecksumBytes() {
@@ -1397,6 +1499,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 12;</code>
+     * @param value The checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksum(
         java.lang.String value) {
@@ -1410,6 +1514,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 12;</code>
+     * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       
@@ -1419,6 +1524,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string checksum = 12;</code>
+     * @param value The bytes for checksum to set.
+     * @return This builder for chaining.
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
