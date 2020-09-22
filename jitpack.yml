@@ -4,4 +4,4 @@ install:
   - echo "Running custom install"
   - ./gradlew clean publish -xtest
   - echo "Copying the build files to Jitpack repositories"
-  - cp -R ./build/repository/com ~/.m2/repository
+  - cp -R ./build/repository/com $HOME/.m2/repository/
