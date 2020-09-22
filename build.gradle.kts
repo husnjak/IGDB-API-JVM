@@ -53,9 +53,9 @@ tasks {
         outputFormat = "html"
         outputDirectory = "$buildDir/javadoc"
     }
-    withType<GenerateProtoTask> {
-        dependsOn(downloadProtoFiles)
-    }
+//    withType<GenerateProtoTask> {
+//        dependsOn(downloadProtoFiles)
+//    }
 }
 
 protobuf.protobuf.run {
