@@ -71,6 +71,13 @@ val downloadProtoFiles by tasks.creating(Download::class) {
     overwrite(true)
 }
 
+val dokkaJar by tasks.creating(Jar::class) {
+    group = JavaBasePlugin.DOCUMENTATION_GROUP
+    description = "Assembles Kotlin docs with Dokka"
+    archiveClassifier.set("javadoc")
+    from(tasks.dokka)
+}
+
 val sourcesJar by tasks.creating(Jar::class) {
     manifest {
         attributes("Main-Class" to "com.api.igdb.ApiRequesterKt")
@@ -79,4 +86,36 @@ val sourcesJar by tasks.creating(Jar::class) {
     description = "Assembles sources jar"
     archiveClassifier.set("sources")
     from(sourceSets["main"].allSource)
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("default") {
+            from(components["kotlin"])
+            artifact(dokkaJar)
+            artifact(sourcesJar)
+
+            // Custom POM
+            pom {
+                description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")
+                url.set("https://github.com/husnjak/IGDB-API-JVM")
+                licenses {
+                    license {
+                        name.set("The MIT License (MIT)")
+                        url.set("https://mit-license.org")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("husnjak")
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url = uri("$buildDir/repository")
+        }
+    }
 }
