@@ -10,7 +10,7 @@ plugins {
     id("com.google.protobuf") version "0.8.12"
 }
 
-group = "com.igdb"
+group = "com.api.igdb"
 version = "1.0"
 
 repositories {
@@ -67,7 +67,7 @@ protobuf.protobuf.run {
 
 val downloadProtoFiles by tasks.creating(Download::class) {
     src("https://api.igdb.com/v4/igdbapi.proto")
-    dest("$projectDir/src/resources/com/igdb/igdbproto.proto")
+    dest("$projectDir/src/resources/com/api/igdb/igdbproto.proto")
     overwrite(true)
 }
 
