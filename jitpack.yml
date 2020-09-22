@@ -3,5 +3,5 @@ jdk:
 install:
   - echo "Running custom install"
   - ./gradlew clean publish -xtest
-  - echo "check repo"
-  - ls
+  - echo "Copying the build files to Jitpack repositories"
+  - cp -R ./build/repository/com ~/.m2/repository
