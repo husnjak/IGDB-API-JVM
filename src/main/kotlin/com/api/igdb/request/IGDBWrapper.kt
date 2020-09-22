@@ -8,7 +8,7 @@ import com.github.kittinunf.fuel.httpPost
  * The ApiRequester object holds the API Key and uses it to request the IGDB API.
  */
 private const val IGDB_API_URL = "https://api.igdb.com/v4"
-object ApiRequester {
+object IGDBWrapper {
     private var requestHeaders: Map<String, Any> = mapOf("x-user-agent" to "igdb-api-jvm")
 
     /**

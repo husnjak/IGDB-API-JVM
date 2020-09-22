@@ -3,7 +3,7 @@ package com.api.igdb;
 import com.api.igdb.apicalypse.ApiCalypse;
 import com.api.igdb.apicalypse.Sort;
 import com.api.igdb.exceptions.RequestException;
-import com.api.igdb.request.ApiRequester;
+import com.api.igdb.request.IGDBWrapper;
 import com.api.igdb.request.JsonRequestKt;
 import com.api.igdb.request.ProtoRequestKt;
 import com.api.igdb.utils.ImageBuilderKt;
@@ -17,7 +17,7 @@ import proto.Search;
 import java.util.List;
 
 class TestJavaWrapper {
-    private final ApiRequester wrapper = ApiRequester.INSTANCE;
+    private final IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
 
     TestJavaWrapper() {
         wrapper.setCredentials(System.getenv("client-id"), System.getenv("bearer"));

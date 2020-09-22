@@ -3,15 +3,15 @@ package com.api.igdb
 import com.api.igdb.apicalypse.ApiCalypse
 import com.api.igdb.apicalypse.Sort
 import com.api.igdb.exceptions.RequestException
-import com.api.igdb.request.ApiRequester
+import com.api.igdb.request.IGDBWrapper
 import com.api.igdb.request.games
 import com.api.igdb.request.search
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class TestApiRequester {
+class TestIGDBWrapper {
 
-    private val wrapper = ApiRequester
+    private val wrapper = IGDBWrapper
 
     @BeforeEach
     fun setup() {
