@@ -88,10 +88,6 @@ val sourcesJar by tasks.creating(Jar::class) {
     from(sourceSets["main"].allSource)
 }
 
-tasks.register("install") {
-    publishing
-}
-
 publishing {
     publications {
         create<MavenPublication>("default") {
