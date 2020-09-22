@@ -3,3 +3,5 @@ jdk:
 install:
   - echo "Running custom install"
   - ./gradlew clean publish -xtest
+  - echo "check repo"
+  - ls
