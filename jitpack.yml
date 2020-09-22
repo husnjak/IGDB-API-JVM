@@ -3,5 +3,3 @@ jdk:
 install:
   - echo "Running custom install"
   - ./gradlew clean publish -xtest
-  - echo "Copy published repo"
-  - cp ./build/repository ~/.m2/repository/com/api/igdb/IGDB-API-JVM
