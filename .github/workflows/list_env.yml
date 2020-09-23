@@ -24,5 +24,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: lists all env
         run: printenv
-      - name: lists all env
-        run: echo $GITHUB_REF
+      - name: tag?
+        run: echo ${{ github.event.release.tag_name }}
