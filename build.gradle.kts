@@ -90,6 +90,28 @@ val sourcesJar by tasks.creating(Jar::class) {
 
 publishing {
     publications {
+        create<MavenPublication>("gpr") {
+            from(components["kotlin"])
+            artifact(dokkaJar)
+            artifact(sourcesJar)
+
+            // Custom POM
+            pom {
+                description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")
+                url.set("https://github.com/husnjak/IGDB-API-JVM")
+                licenses {
+                    license {
+                        name.set("The MIT License (MIT)")
+                        url.set("https://mit-license.org")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("husnjak")
+                    }
+                }
+            }
+        }
         create<MavenPublication>("default") {
             from(components["kotlin"])
             artifact(dokkaJar)
@@ -115,6 +137,15 @@ publishing {
     }
     repositories {
         maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/husnjak/IGDB-API-JVM")
+            credentials {
+                username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
+                password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+        maven {
+            name = "Internal"
             url = uri("$buildDir/repository")
         }
     }
