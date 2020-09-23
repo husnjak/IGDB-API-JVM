@@ -102,6 +102,9 @@ IGDBWrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 ```
 You can use the access_token from the token object.
 
+### Android projects
+Do not use the `TwitchAuthenticator` in your Android applications, you don't want to create multiple access_tokens for each device.  
+It is recommended to create your token on a server and then use a proxy api to call the IGDB api, where you append the Bearer token for each request.
 # How to use the wrapper
 The wrapper has two "wrapping" functions, and a lot of helper functions (one for each endpoint)  
 The two main functions called `apiProtoRequest` and `apiJsonRequest` and they handle all the requests to the api.  
