@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "com.api.igdb"
-version = "1.0"
+version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 repositories {
     mavenCentral()
@@ -94,6 +94,15 @@ publishing {
             from(components["kotlin"])
             artifact(dokkaJar)
             artifact(sourcesJar)
+
+            versionMapping {
+                usage("java-api") {
+                    fromResolutionOf("runtimeClasspath")
+                }
+                usage("java-runtime") {
+                    fromResolutionResult()
+                }
+            }
 
             pom {
                 description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")

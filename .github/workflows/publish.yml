@@ -5,10 +5,9 @@ name: Publish package
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  push:
-    branches: [ version4 ]
-  pull_request:
-    branches: [ version4 ]
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,3 +27,4 @@ jobs:
         run: gradle publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
