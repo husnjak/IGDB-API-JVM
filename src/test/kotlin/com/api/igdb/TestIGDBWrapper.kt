@@ -1,6 +1,6 @@
 package com.api.igdb
 
-import com.api.igdb.apicalypse.ApiCalypse
+import com.api.igdb.apicalypse.APICalypse
 import com.api.igdb.apicalypse.Sort
 import com.api.igdb.exceptions.RequestException
 import com.api.igdb.request.IGDBWrapper
@@ -15,14 +15,14 @@ class TestIGDBWrapper {
 
     @BeforeEach
     fun setup() {
-        wrapper.setCredentials(System.getenv("client-id"), System.getenv("bearer"))
+        wrapper.setCredentials(System.getenv("client_id"), System.getenv("bearer"))
     }
 
     //Get all Coming Soon PS4 games
     @Test
     fun testComingSoonPS4Games() {
         val date = (System.currentTimeMillis() / 1000).toString()
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("*")
             .where("platforms = 48 & release_dates.date > $date")
             .sort("release_dates.date", Sort.ASCENDING)
@@ -39,7 +39,7 @@ class TestIGDBWrapper {
     @Test
     fun testRecentlyReleasedPS4Games() {
         val date = (System.currentTimeMillis() / 1000).toString()
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("*")
             .where("platforms = 48 & release_dates.date < $date")
             .sort("release_dates.date", Sort.DESCENDING)
@@ -55,7 +55,7 @@ class TestIGDBWrapper {
     //Get all Recently released PS4 games
     @Test
     fun testSearch() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .search("Assassins Creed")
             .fields("game.name,game.involved_companies")
             .where("game != null & game.version_parent = null")
@@ -72,7 +72,7 @@ class TestIGDBWrapper {
     //Get all Recently released PS4 games
     @Test
     fun testPS4Exclusives() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("name,category,platforms")
             .where("category = 0 & platforms = 48")
 

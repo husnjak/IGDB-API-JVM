@@ -1,6 +1,6 @@
 package com.api.igdb
 
-import com.api.igdb.apicalypse.ApiCalypse
+import com.api.igdb.apicalypse.APICalypse
 import com.api.igdb.exceptions.RequestException
 import com.api.igdb.request.IGDBWrapper
 import com.api.igdb.request.games
@@ -15,7 +15,7 @@ class TestRequestExceptions {
     @Test
     fun testNoKeyException() {
         try {
-            wrapper.games(ApiCalypse())
+            wrapper.games(APICalypse())
         } catch (e: RequestException){
             Assertions.assertEquals(401, e.statusCode)
         }
@@ -24,7 +24,7 @@ class TestRequestExceptions {
     @Test
     fun testException() {
         assertThrows<RequestException> {
-            wrapper.jsonGameModes(ApiCalypse())
+            wrapper.jsonGameModes(APICalypse())
         }
     }
 

@@ -1,10 +1,10 @@
 [![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
-# IGDB API-JVM (V3)
+# IGDB API-JVM (V4)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
 
 __IMPORTANT__
 
-This wrapper is compatible with ONLY their newest release V3.
+This wrapper is compatible with ONLY their newest release V4.
 
 ## About IGDB
 One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.
@@ -19,9 +19,9 @@ Information about the Querying language APICalypse:
 * [apicalypse.io](https://apicalypse.io/)
 
 ## About the wrapper
-This wrapper is written in Kotlin which uses the JVM and works with both Koltin & Java projects. I have not tested it on other JVM languages but it should work for these languages as well. The examples below showcase this wrapper in both Kotlin and Java.
+This wrapper is written in Kotlin which uses the JVM and works with both Kotlin & Java projects. I have not tested it on other JVM languages but it should work for these languages as well. The examples below showcase this wrapper in both Kotlin and Java.
 
-Feel free to test it on other languages yourselves :)
+Feel free to test it on other languages yourselves 😀
 
 The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have chosen to make the API's Generated classes ([Protocol Buffers](https://developers.google.com/protocol-buffers/)) the standard way because it will make it easier to use as you don't have to create your own classes to hold the information.
 
@@ -40,7 +40,7 @@ __Maven__
 <dependency>
     <groupId>com.github.husnjak</groupId>
     <artifactId>IGDB-API-JVM</artifactId>
-    <version>0.7</version>
+    <version>1.0</version>
 </dependency>
 ```
 
@@ -55,16 +55,29 @@ repositories {
   Step 2. Add the dependency
 ``` Gradle
 dependencies {
-    implementation 'com.github.husnjak:IGDB-API-JVM:0.7'
+    implementation 'com.github.husnjak:IGDB-API-JVM:1.0'
 }
 ```
-  Optional Step 3 (Android). Add internet permissions in the manifest
+  Optional Step 3 (Android). Add internet permissions in the manifest.
 ``` xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
-## Using your API key
-* Create a new IGDBWrapper object and give it your API key.
+## Using your Twitch Developer Credentials
+* Create a new TwitchToken object
+``` java
+// Java Example
+TwitchAuthenticator tAuth = TwitchAuthenticator.INSTANCE
+tAuth.setCredentials("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET")
+
+TwitchTokenRequest token = tAuth.requestTwitchToken()
+
+// Kotlin Example
+TwitchAuthenticator.setCredentials("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET")
+
+val token = tAuth.requestTwitchToken()
+```
+
 ``` java
 // Java Example
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;

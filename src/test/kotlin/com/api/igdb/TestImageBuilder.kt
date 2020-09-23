@@ -1,6 +1,6 @@
 package com.api.igdb
 
-import com.api.igdb.apicalypse.ApiCalypse
+import com.api.igdb.apicalypse.APICalypse
 import com.api.igdb.exceptions.RequestException
 import com.api.igdb.request.IGDBWrapper
 import com.api.igdb.request.covers
@@ -16,12 +16,12 @@ class TestImageBuilder {
 
     @BeforeEach
     fun setup() {
-        wrapper.setCredentials(System.getenv("client-id"), System.getenv("bearer"))
+        wrapper.setCredentials(System.getenv("client_id"), System.getenv("bearer"))
     }
 
     @Test
     fun testJPEGImg() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("image_id")
             .where("image_id != n")
         try {
@@ -39,7 +39,7 @@ class TestImageBuilder {
 
     @Test
     fun testPNGImg() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("image_id")
             .where("image_id != n")
         try {
@@ -57,7 +57,7 @@ class TestImageBuilder {
 
     @Test
     fun testGIFImg() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("image_id")
             .where("image_id != n")
         try {
@@ -75,7 +75,7 @@ class TestImageBuilder {
 
     @Test
     fun testWEBPImg() {
-        val query = ApiCalypse()
+        val query = APICalypse()
             .fields("image_id")
             .where("image_id != n")
         try {

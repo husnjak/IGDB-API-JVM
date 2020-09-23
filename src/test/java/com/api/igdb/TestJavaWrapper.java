@@ -1,6 +1,6 @@
 package com.api.igdb;
 
-import com.api.igdb.apicalypse.ApiCalypse;
+import com.api.igdb.apicalypse.APICalypse;
 import com.api.igdb.apicalypse.Sort;
 import com.api.igdb.exceptions.RequestException;
 import com.api.igdb.request.IGDBWrapper;
@@ -20,7 +20,7 @@ class TestJavaWrapper {
     private final IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
 
     TestJavaWrapper() {
-        wrapper.setCredentials(System.getenv("client-id"), System.getenv("bearer"));
+        wrapper.setCredentials(System.getenv("client_id"), System.getenv("bearer"));
     }
 
     /*
@@ -29,13 +29,13 @@ class TestJavaWrapper {
 
     @Test
     void testGetProtoGames() throws RequestException {
-        List<Game> result = ProtoRequestKt.games(wrapper, new ApiCalypse());
+        List<Game> result = ProtoRequestKt.games(wrapper, new APICalypse());
         assert(!result.isEmpty());
     }
 
     @Test
     void testGetJsonGames() throws RequestException {
-        String result = JsonRequestKt.jsonGames(wrapper, new ApiCalypse());
+        String result = JsonRequestKt.jsonGames(wrapper, new APICalypse());
         assert(!result.isEmpty());
     }
 
@@ -47,7 +47,7 @@ class TestJavaWrapper {
     @Test
     void testComingSoonPS4Games() {
         String date = String.valueOf((System.currentTimeMillis() / 1000));
-        ApiCalypse query = new ApiCalypse()
+        APICalypse query = new APICalypse()
                 .fields("*")
                 .where("platforms = 48 & release_dates.date > " + date)
                 .sort("release_dates.date", Sort.ASCENDING);
@@ -64,7 +64,7 @@ class TestJavaWrapper {
     @Test
     void testRecentlyReleasedPS4Games() {
         String date = String.valueOf((System.currentTimeMillis() / 1000));
-        ApiCalypse query = new ApiCalypse()
+        APICalypse query = new APICalypse()
                 .fields("*")
                 .where("platforms = 48 & release_dates.date < " + date)
                 .sort("release_dates.date", Sort.DESCENDING);
@@ -80,7 +80,7 @@ class TestJavaWrapper {
     //Get all Recently released PS4 games
     @Test
     void testSearch() {
-        ApiCalypse query = new ApiCalypse()
+        APICalypse query = new APICalypse()
                 .search("Assassins Creed")
                 .fields("game.name,game.involved_companies")
                 .where("game != null & game.version_parent = null");
@@ -96,7 +96,7 @@ class TestJavaWrapper {
     //Get all Recently released PS4 games
     @Test
     void testPS4Exclusives() {
-        ApiCalypse query = new ApiCalypse()
+        APICalypse query = new APICalypse()
                 .fields("name,category,platforms")
                 .where("category = 0 & platforms = 48");
 
@@ -110,7 +110,7 @@ class TestJavaWrapper {
 
     @Test
     void testJPEGImg() {
-        ApiCalypse query = new ApiCalypse()
+        APICalypse query = new APICalypse()
                 .fields("image_id")
                 .where("image_id != n");
         try {

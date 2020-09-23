@@ -1,6 +1,6 @@
 package com.api.igdb
 
-import com.api.igdb.apicalypse.ApiCalypse
+import com.api.igdb.apicalypse.APICalypse
 import com.api.igdb.request.IGDBWrapper
 import com.api.igdb.request.*
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -14,90 +14,90 @@ class TestProtobufRequest {
 
     @BeforeEach
     fun setup() {
-        wrapper.setCredentials(System.getenv("client-id"), System.getenv("bearer"))
+        wrapper.setCredentials(System.getenv("client_id"), System.getenv("bearer"))
     }
 
     @Test
     fun testAgeRating() {
-        val result = wrapper.ageRatings(ApiCalypse())
+        val result = wrapper.ageRatings(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testAgeRatingContentDescriptions() {
-        val result = wrapper.ageRatingContentDescriptions(ApiCalypse())
+        val result = wrapper.ageRatingContentDescriptions(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testAlternativeNames() {
-        val result = wrapper.alternativeNames(ApiCalypse())
+        val result = wrapper.alternativeNames(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testArtwork() {
-        val result = wrapper.artworks(ApiCalypse())
+        val result = wrapper.artworks(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCharacters() {
-        val result = wrapper.characters(ApiCalypse())
+        val result = wrapper.characters(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCollections() {
-        val result = wrapper.collections(ApiCalypse())
+        val result = wrapper.collections(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCharacterMugShots() {
-        val result = wrapper.characterMugShots(ApiCalypse())
+        val result = wrapper.characterMugShots(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCompanies() {
-        val result = wrapper.companies(ApiCalypse())
+        val result = wrapper.companies(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testComapnyWebsites() {
-        val result = wrapper.companyWebsites(ApiCalypse())
+        val result = wrapper.companyWebsites(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCompantLogos() {
-        val result = wrapper.companyLogos(ApiCalypse())
+        val result = wrapper.companyLogos(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testCover() {
-        val result = wrapper.covers(ApiCalypse())
+        val result = wrapper.covers(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testExternalGames() {
-        val result = wrapper.externalGames(ApiCalypse())
+        val result = wrapper.externalGames(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testFranschises() {
-        val result = wrapper.franchises(ApiCalypse())
+        val result = wrapper.franchises(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGames() {
-        val result = wrapper.games(ApiCalypse()
+        val result = wrapper.games(APICalypse()
                 .fields("*,age_ratings.*,alternative_names.*,cover.*, external_games.*,franchises.*, genres.*, screenshots.*, videos.*")
                 .where("id = 1942"))
         assert(result.isNotEmpty())
@@ -160,145 +160,145 @@ class TestProtobufRequest {
 
     @Test
     fun testGameEngines() {
-        val result = wrapper.gameEngines(ApiCalypse())
+        val result = wrapper.gameEngines(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameEngineLogos() {
-        val result = wrapper.gameEngineLogos(ApiCalypse())
+        val result = wrapper.gameEngineLogos(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameModes() {
-        val result = wrapper.gameModes(ApiCalypse())
+        val result = wrapper.gameModes(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameVersions() {
-        val result = wrapper.gameVersion(ApiCalypse())
+        val result = wrapper.gameVersion(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameVersionFeatures() {
-        val result = wrapper.gameVersionFeatures(ApiCalypse())
+        val result = wrapper.gameVersionFeatures(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameVersionFeatureValues() {
-        val result = wrapper.gameVersionFeatureValues(ApiCalypse())
+        val result = wrapper.gameVersionFeatureValues(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGameVideos() {
-        val result = wrapper.gameVideos(ApiCalypse())
+        val result = wrapper.gameVideos(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testGenres() {
-        val result = wrapper.genres(ApiCalypse())
+        val result = wrapper.genres(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testInvolvedCompanies() {
-        val result = wrapper.involvedCompanies(ApiCalypse())
+        val result = wrapper.involvedCompanies(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testKeywords() {
-        val result = wrapper.keywords(ApiCalypse())
+        val result = wrapper.keywords(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testMultiplayerModes() {
-        val result = wrapper.multiplayerModes(ApiCalypse())
+        val result = wrapper.multiplayerModes(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatforms() {
-        val result = wrapper.platforms(ApiCalypse())
+        val result = wrapper.platforms(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatformLogos() {
-        val result = wrapper.platformLogos(ApiCalypse())
+        val result = wrapper.platformLogos(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatformVersions() {
-        val result = wrapper.platformVersions(ApiCalypse())
+        val result = wrapper.platformVersions(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatformVerisonCompanies() {
-        val result = wrapper.platformVersionCompanies(ApiCalypse())
+        val result = wrapper.platformVersionCompanies(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatformVersionReleaseDates() {
-        val result = wrapper.platformVersionReleaseDates(ApiCalypse())
+        val result = wrapper.platformVersionReleaseDates(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlatformWebsites() {
-        val result = wrapper.platformWebsites(ApiCalypse())
+        val result = wrapper.platformWebsites(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testPlayerPerspectives() {
-        val result = wrapper.playerPerspectives(ApiCalypse())
+        val result = wrapper.playerPerspectives(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testProductFamilies() {
-        val result = wrapper.platformFamilies(ApiCalypse())
+        val result = wrapper.platformFamilies(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testReleaseDates() {
-        val result = wrapper.releaseDates(ApiCalypse())
+        val result = wrapper.releaseDates(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testScreenshots() {
-        val result = wrapper.screenshots(ApiCalypse())
+        val result = wrapper.screenshots(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testSearch() {
-        val result = wrapper.search(ApiCalypse())
+        val result = wrapper.search(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testThemes() {
-        val result = wrapper.themes(ApiCalypse())
+        val result = wrapper.themes(APICalypse())
         assert(result.isNotEmpty())
     }
 
     @Test
     fun testWebsites() {
-        val result = wrapper.websites(ApiCalypse())
+        val result = wrapper.websites(APICalypse())
         assert(result.isNotEmpty())
     }
     

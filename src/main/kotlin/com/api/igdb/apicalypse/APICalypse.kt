@@ -3,7 +3,7 @@ package com.api.igdb.apicalypse
 /**
  * The ApiCalypse class uses it's functions to build out the query
  */
-class ApiCalypse {
+class APICalypse {
     private var search = ""
     private var fields = ""
     private var exclude = ""
@@ -19,7 +19,7 @@ class ApiCalypse {
      * @property order The sorting order; Ascending | Descending
      * @return ApiCalypse object with set sort query.
      */
-    fun sort(field: String, order: Sort): ApiCalypse {
+    fun sort(field: String, order: Sort): APICalypse {
         this.sort = "s $field ${order.apiName};"
         return this
     }
@@ -30,7 +30,7 @@ class ApiCalypse {
      * @property fields The fields to select
      * @return ApiCalypse object with set field query.
      */
-    fun fields(fields: String): ApiCalypse {
+    fun fields(fields: String): APICalypse {
         this.fields = "f $fields;"
         return this
     }
@@ -41,7 +41,7 @@ class ApiCalypse {
      * @property fields The fields to exclude
      * @return ApiCalypse object with set exclude query.
      */
-    fun exclude(fields: String): ApiCalypse {
+    fun exclude(fields: String): APICalypse {
         this.exclude = "x $fields;"
         return this
     }
@@ -52,7 +52,7 @@ class ApiCalypse {
      * @property limit The number of items in the query
      * @return ApiCalypse object with set limit query.
      */
-    fun limit(limit: Int): ApiCalypse {
+    fun limit(limit: Int): APICalypse {
         this.limit = "l $limit;"
         return this
     }
@@ -63,7 +63,7 @@ class ApiCalypse {
      * @property offset The number of items to offset in the query
      * @return ApiCalypse object with set offset query.
      */
-    fun offset(offset: Int): ApiCalypse {
+    fun offset(offset: Int): APICalypse {
         this.offset = "o $offset;"
         return this
     }
@@ -74,7 +74,7 @@ class ApiCalypse {
      * @property searchQuery The query to search for
      * @return ApiCalypse object with set search query.
      */
-    fun search(searchQuery: String): ApiCalypse {
+    fun search(searchQuery: String): APICalypse {
         this.search = "search \"$searchQuery\";"
         return this
     }
@@ -85,7 +85,7 @@ class ApiCalypse {
      * @property where The logic to filter the request by
      * @return ApiCalypse object with set where query.
      */
-    fun where(where: String): ApiCalypse {
+    fun where(where: String): APICalypse {
         if (where.contains("where ") || where.contains("w ")) {
             this.where = where
         } else {
