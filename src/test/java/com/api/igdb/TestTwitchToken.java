@@ -13,9 +13,9 @@ public class TestTwitchToken {
         // request a new Twitch Authentication token
         TwitchToken token = tAuth.requestTwitchToken(System.getenv("client_id"), System.getenv("client_secret"));
 
+        assert(token != null);
         assert(token.getExpires_in() > 5000000);
         Long tokenFutureDate = System.currentTimeMillis() + 5000000; // 57 days
         assert(tokenFutureDate > token.getExpiresUnix());
-        assert(token != null);
     }
 }

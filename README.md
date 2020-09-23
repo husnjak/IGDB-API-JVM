@@ -67,42 +67,56 @@ dependencies {
 * Create a new TwitchToken object
 ``` java
 // Java Example
-TwitchAuthenticator tAuth = TwitchAuthenticator.INSTANCE
-tAuth.setCredentials("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET")
+TwitchAuthenticator tAuth = TwitchAuthenticator.INSTANCE;
+TwitchToken token = tAuth.requestTwitchToken("CLIENT_ID", "CLIENT_SECRET");
 
-TwitchTokenRequest token = tAuth.requestTwitchToken()
+// The instance stores the token in the object untill a new one is requested
+TwitchToken token = tAuth.getTwitchToken()
 
-// Kotlin Example
-TwitchAuthenticator.setCredentials("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET")
+```
+``` kotlin
+// Kotlin example
+val token = TwitchAuthenticator.requestTwitchToken("CLIENT_ID", "CLIENT_SECRET")
 
-val token = tAuth.requestTwitchToken()
+// The instance stores the token in the object untill a new one is requested
+TwitchAuthenticator.twitchToken
+```
+The `TwitchToken` object looks like this
+``` json
+{
+  "access_token": "ACCESS_TOKEN",
+  "expires_in": 5135439,
+  "token_type": "bearer"
+}
 ```
 
+* Authenticating requests for the IGDB API
 ``` java
 // Java Example
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
-wrapper.setUserkey("YOUR_API_KEY");
+wrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 ```
 ``` kotlin
 // Kotlin Example
-IGDBWrapper.userkey = "YOUR_API_KEY"
+IGDBWrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 ```
+You can use the access_token from the token object.
 
 # How to use the wrapper
-The wrapper has two "wrapping" functions and a lot of helper functions (one for each endpoint..)  
-The two main functions are called `apiRequest` and `apiJsonRequest` and they handle all of the requests to the api.  
+The wrapper has two "wrapping" functions, and a lot of helper functions (one for each endpoint)  
+The two main functions called `apiProtoRequest` and `apiJsonRequest` and they handle all the requests to the api.  
 The class `APICalypse` handles the new querying language, so that you don't need to care about structure and syntax as much.
 
-* `apiRequest`  
+* `apiProtoRequest`  
   This method handles IGDB generated proto classes which returns an ByteArray to be used to fill the appropriate class.  
   ```kotlin
   // Kotlin Example
-  val bytes = apiRequest(endpoint: Endpoint.GAMES, apicalypseQuery: "fields *;")
+  val bytes = apiProtoRequest(endpoint: Endpoints.GAMES, apicalypseQuery: "fields *;")
   val listOfGames: List<Games> = GamesResult.parseFrom(bytes).gamesList
   ```
   ```java
   // Java Example
-  byte[] bytes = wrapper.apiRequest(endpoint: Endpoint.GAMES, apicalypseQuery: "fields *;");
+  byte[] bytes = wrapper.apiRequest(endpoint: Endpoints.GAMES, apicalypseQuery: "fields *;");
   List<Game> listOfGames = GameResult.parseFrom(bytes).getGamesList();
   ```
   returns a list of Game objects.
@@ -112,11 +126,11 @@ The class `APICalypse` handles the new querying language, so that you don't need
   Example:  
   ```kotlin
   // Kotlin Example
-  val json: String = apiJsonRequest(endpoint: Endpoint.GAMES, APICalypseQuery: "fields *;")
+  val json: String = apiJsonRequest(endpoint: Endpoints.GAMES, APICalypseQuery: "fields *;")
   ```
   ```java
   // Java Example
-  String json = wrapper.apiJsonRequest(endpoint: Endpoint.GAMES, "fields *;");
+  String json = wrapper.apiJsonRequest(endpoint: Endpoints.GAMES, "fields *;");
   ```
   returns a String.
   
@@ -143,10 +157,10 @@ The class `APICalypse` handles the new querying language, so that you don't need
                 .sort("release_dates.date", Sort.ASCENDING)
                 .where("platforms = 48");
   ```
-  Here are all of the options, this creates a query for you. To get a String query from APICalypse just add `.buildQuery()`.
+  Here are all the options, this creates a query for you. To get a String query from APICalypse just add `.buildQuery()`.
   
 __NOTE__  
-These examples above are only here to show you how to use the "manual" part of the wrapper. This wrapper comes with complete functions for each endpoint in the API :) so you don't have to deal with the manual stuff..
+These examples above are only here to show you how to use the "manual" part of the wrapper. This wrapper comes with complete functions for each endpoint in the API, so you don't have to deal with the manual implementation.
 
 There are two functions for each endpoint, one for classes and one for json, for quick access. The difference between them is the name see the examples below:  
 ```kotlin
@@ -173,7 +187,7 @@ JsonRequestKt.jsonGenres(IGDBWrapper.INSTANCE, new APICalypse())
 ```
 
 ## ImageBuilder
-To simplify the process of building the image URLs for IGDB images there is a new function called `imageBuilder` which is a helping tool in requesting the perfect sized images for your project. The function requires you to get the `image_id` then set your desired size (resolution), set your desired image format (default is set to PNG).  
+To simplify the process of building the image URLs for IGDBs images there is a function called `imageBuilder` which is a helping tool in requesting the perfect sized images for your project. The function requires you to get the `image_id` then set your desired size (resolution), set your desired image format (default is set to PNG).  
 ```kotlin
 // Kotlin Example
 val image_id = "mnljdjtrh44x4snmierh"
@@ -207,7 +221,7 @@ Request and Response come directly from the HTTP library [Fuel](https://github.c
 * Request games from the API:
 ```kotlin
 // Kotlin
-IGDBWrapper.userKey = "YOUR_API_KEY"
+IGDBWrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 val apicalypse = APICalypse().fields("*").sort("release_dates.date", Sort.DESCENDING)
 try{
   val games: List<Game> = IGDBWrapper.games(apicalypse) 
@@ -228,10 +242,11 @@ try{
 ```
 * Search in the API:
 __NOTE__  
-Search objects contain the objects from search ex: Characters, Collections, Games, People, Platforms, and Themes. 
+Search objects contain the objects from search ex: Characters, Collections, Games, Platforms, and Themes.  
+Search does not work with Sorting! 
 ```kotlin
 // Kotlin
-IGDBWrapper.userKey = "YOUR_API_KEY"
+IGDBWrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 val apicalypse = APICalypse().search("Halo").fields("*")
 try{
   val searchResult: List<Search> = IGDBWrapper.search(apicalypse) 
@@ -253,7 +268,7 @@ try{
 * Request filtered results:
 ```kotlin
 // Kotlin
-IGDBWrapper.userKey = "YOUR_API_KEY"
+IGDBWrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 val apicalypse = APICalypse().fields("*")
     .sort("release_dates.date", Sort.DESCENDING).where("themes != 42")
 try{
