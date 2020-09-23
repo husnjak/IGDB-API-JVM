@@ -232,7 +232,7 @@ try{
 ```java
 // Java
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
-wrapper.setUserkey("YOUR_API_KEY");
+wrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 APICalypse apicalypse = new APICalypse().fields("*").sort("release_dates.date", Sort.DESCENDING);
 try{
   List<Game> games = ProtoRequestKt.games(wrapper, apicalypse);
@@ -257,7 +257,7 @@ try{
 ```java
 // Java
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
-wrapper.setUserkey("YOUR_API_KEY");
+wrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 APICalypse apicalypse = new APICalypse().search("Halo").fields("*")
 try{
   List<Search> searchResult = ProtoRequestKt.search(wrapper, apicalypse);
@@ -280,7 +280,7 @@ try{
 ```java
 // Java
 IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
-wrapper.setUserkey("YOUR_API_KEY");
+wrapper.setCredentials("CLIENT_ID", "ACCESS_TOKEN")
 APICalypse apicalypse = new APICalypse().fields("*")
     .sort("release_dates.date", Sort.DESCENDING).where("themes != 42");
 try{
