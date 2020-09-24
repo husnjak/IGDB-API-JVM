@@ -119,7 +119,7 @@ The class `APICalypse` handles the new querying language, so that you don't need
   ```
   ```java
   // Java Example
-  byte[] bytes = wrapper.apiRequest(endpoint: Endpoints.GAMES, apicalypseQuery: "fields *;");
+  byte[] bytes = wrapper.apiProtoRequest(endpoint: Endpoints.GAMES, apicalypseQuery: "fields *;");
   List<Game> listOfGames = GameResult.parseFrom(bytes).getGamesList();
   ```
   returns a list of Game objects.
