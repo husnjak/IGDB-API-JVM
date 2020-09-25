@@ -40,7 +40,7 @@ __Maven__
 <dependency>
     <groupId>com.github.husnjak</groupId>
     <artifactId>IGDB-API-JVM</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
