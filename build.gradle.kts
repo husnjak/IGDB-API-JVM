@@ -23,6 +23,7 @@ dependencies {
     // HTTP
     implementation("com.github.kittinunf.fuel:fuel:2.2.3")
     implementation("com.github.kittinunf.fuel:fuel-gson:2.2.3")
+    implementation("com.github.kittinunf.fuel:fuel-android:2.2.3")
     // Protocol Buffers
     implementation("com.google.protobuf:protobuf-java:3.11.0")
     // Tests
