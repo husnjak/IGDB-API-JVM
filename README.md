@@ -55,7 +55,7 @@ repositories {
   Step 2. Add the dependency
 ``` Gradle
 dependencies {
-    implementation 'com.github.husnjak:IGDB-API-JVM:1.0.0'
+    implementation 'com.github.husnjak:IGDB-API-JVM:1.0.1'
 }
 ```
   Optional Step 3 (Android). Add internet permissions in the manifest.
