@@ -58,7 +58,7 @@ dependencies {
     implementation 'com.github.husnjak:IGDB-API-JVM:1.0.1'
 }
 ```
-  Optional Step 3 (Android). Add internet permissions in the manifest.
+  Optional Step 3 (Android, SDK: 19+). Add internet permissions in the manifest.
 ``` xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
