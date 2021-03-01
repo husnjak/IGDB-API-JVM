@@ -3,11 +3,11 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.4.0"
+    kotlin("jvm") version "1.4.31"
     id("org.jetbrains.dokka") version "0.10.1"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
-    id("com.google.protobuf") version "0.8.13"
+    id("com.google.protobuf") version "0.8.14"
 }
 
 group = "com.api.igdb"
@@ -21,15 +21,15 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     // HTTP
-    implementation("com.github.kittinunf.fuel:fuel:2.2.3")
-    implementation("com.github.kittinunf.fuel:fuel-gson:2.2.3")
-    implementation("com.github.kittinunf.fuel:fuel-android:2.2.3")
+    implementation("com.github.kittinunf.fuel:fuel:2.3.1")
+    implementation("com.github.kittinunf.fuel:fuel-gson:2.3.1")
+    implementation("com.github.kittinunf.fuel:fuel-android:2.3.1")
     // Protocol Buffers
-    implementation("com.google.protobuf:protobuf-java:3.11.0")
+    implementation("com.google.protobuf:protobuf-java:3.15.3")
     // Tests
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.6.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.1")
 }
 
 sourceSets {
@@ -61,7 +61,7 @@ tasks {
 
 protobuf.protobuf.run {
     protoc(delegateClosureOf<ExecutableLocator> {
-        artifact = "com.google.protobuf:protoc:3.13.0"
+        artifact = "com.google.protobuf:protoc:3.15.3"
     })
     generatedFilesBaseDir = "$projectDir/src"
 }
