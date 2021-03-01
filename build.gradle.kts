@@ -13,6 +13,11 @@ plugins {
 group = "com.api.igdb"
 version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
+val fuelVersion = "2.3.1"
+val protobufJavaVersion = "3.15.3"
+val junitJupiterVersion = "5.7.1"
+val junitPlatformVersion = "1.7.1"
+
 repositories {
     mavenCentral()
     jcenter()
@@ -21,15 +26,15 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     // HTTP
-    implementation("com.github.kittinunf.fuel:fuel:2.3.1")
-    implementation("com.github.kittinunf.fuel:fuel-gson:2.3.1")
-    implementation("com.github.kittinunf.fuel:fuel-android:2.3.1")
+    implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
+    implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
+    implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     // Protocol Buffers
-    implementation("com.google.protobuf:protobuf-java:3.15.3")
+    implementation("com.google.protobuf:protobuf-java:$protobufJavaVersion")
     // Tests
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:$junitPlatformVersion")
 }
 
 sourceSets {
@@ -61,7 +66,7 @@ tasks {
 
 protobuf.protobuf.run {
     protoc(delegateClosureOf<ExecutableLocator> {
-        artifact = "com.google.protobuf:protoc:3.15.3"
+        artifact = "com.google.protobuf:protoc:$protobufJavaVersion"
     })
     generatedFilesBaseDir = "$projectDir/src"
 }
