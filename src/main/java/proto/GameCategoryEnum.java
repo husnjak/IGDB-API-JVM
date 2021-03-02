@@ -40,6 +40,26 @@ public enum GameCategoryEnum
    * <code>SEASON = 7;</code>
    */
   SEASON(7),
+  /**
+   * <code>REMAKE = 8;</code>
+   */
+  REMAKE(8),
+  /**
+   * <code>REMASTER = 9;</code>
+   */
+  REMASTER(9),
+  /**
+   * <code>EXPANDED_GAME = 10;</code>
+   */
+  EXPANDED_GAME(10),
+  /**
+   * <code>PORT = 11;</code>
+   */
+  PORT(11),
+  /**
+   * <code>FORK = 12;</code>
+   */
+  FORK(12),
   UNRECOGNIZED(-1),
   ;
 
@@ -75,6 +95,26 @@ public enum GameCategoryEnum
    * <code>SEASON = 7;</code>
    */
   public static final int SEASON_VALUE = 7;
+  /**
+   * <code>REMAKE = 8;</code>
+   */
+  public static final int REMAKE_VALUE = 8;
+  /**
+   * <code>REMASTER = 9;</code>
+   */
+  public static final int REMASTER_VALUE = 9;
+  /**
+   * <code>EXPANDED_GAME = 10;</code>
+   */
+  public static final int EXPANDED_GAME_VALUE = 10;
+  /**
+   * <code>PORT = 11;</code>
+   */
+  public static final int PORT_VALUE = 11;
+  /**
+   * <code>FORK = 12;</code>
+   */
+  public static final int FORK_VALUE = 12;
 
 
   public final int getNumber() {
@@ -109,6 +149,11 @@ public enum GameCategoryEnum
       case 5: return MOD;
       case 6: return EPISODE;
       case 7: return SEASON;
+      case 8: return REMAKE;
+      case 9: return REMASTER;
+      case 10: return EXPANDED_GAME;
+      case 11: return PORT;
+      case 12: return FORK;
       default: return null;
     }
   }

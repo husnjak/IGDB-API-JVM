@@ -49,6 +49,11 @@ private static final long serialVersionUID = 0L;
     videos_ = java.util.Collections.emptyList();
     websites_ = java.util.Collections.emptyList();
     checksum_ = "";
+    remakes_ = java.util.Collections.emptyList();
+    remasters_ = java.util.Collections.emptyList();
+    expandedGames_ = java.util.Collections.emptyList();
+    ports_ = java.util.Collections.emptyList();
+    forks_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -1635,6 +1640,206 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int REMAKES_FIELD_NUMBER = 51;
+  private java.util.List<proto.Game> remakes_;
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.Game> getRemakesList() {
+    return remakes_;
+  }
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getRemakesOrBuilderList() {
+    return remakes_;
+  }
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  @java.lang.Override
+  public int getRemakesCount() {
+    return remakes_.size();
+  }
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  @java.lang.Override
+  public proto.Game getRemakes(int index) {
+    return remakes_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  @java.lang.Override
+  public proto.GameOrBuilder getRemakesOrBuilder(
+      int index) {
+    return remakes_.get(index);
+  }
+
+  public static final int REMASTERS_FIELD_NUMBER = 52;
+  private java.util.List<proto.Game> remasters_;
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.Game> getRemastersList() {
+    return remasters_;
+  }
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getRemastersOrBuilderList() {
+    return remasters_;
+  }
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  @java.lang.Override
+  public int getRemastersCount() {
+    return remasters_.size();
+  }
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  @java.lang.Override
+  public proto.Game getRemasters(int index) {
+    return remasters_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  @java.lang.Override
+  public proto.GameOrBuilder getRemastersOrBuilder(
+      int index) {
+    return remasters_.get(index);
+  }
+
+  public static final int EXPANDED_GAMES_FIELD_NUMBER = 53;
+  private java.util.List<proto.Game> expandedGames_;
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.Game> getExpandedGamesList() {
+    return expandedGames_;
+  }
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getExpandedGamesOrBuilderList() {
+    return expandedGames_;
+  }
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  @java.lang.Override
+  public int getExpandedGamesCount() {
+    return expandedGames_.size();
+  }
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  @java.lang.Override
+  public proto.Game getExpandedGames(int index) {
+    return expandedGames_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  @java.lang.Override
+  public proto.GameOrBuilder getExpandedGamesOrBuilder(
+      int index) {
+    return expandedGames_.get(index);
+  }
+
+  public static final int PORTS_FIELD_NUMBER = 54;
+  private java.util.List<proto.Game> ports_;
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.Game> getPortsList() {
+    return ports_;
+  }
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getPortsOrBuilderList() {
+    return ports_;
+  }
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  @java.lang.Override
+  public int getPortsCount() {
+    return ports_.size();
+  }
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  @java.lang.Override
+  public proto.Game getPorts(int index) {
+    return ports_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  @java.lang.Override
+  public proto.GameOrBuilder getPortsOrBuilder(
+      int index) {
+    return ports_.get(index);
+  }
+
+  public static final int FORKS_FIELD_NUMBER = 55;
+  private java.util.List<proto.Game> forks_;
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.Game> getForksList() {
+    return forks_;
+  }
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameOrBuilder> 
+      getForksOrBuilderList() {
+    return forks_;
+  }
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  @java.lang.Override
+  public int getForksCount() {
+    return forks_.size();
+  }
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  @java.lang.Override
+  public proto.Game getForks(int index) {
+    return forks_.get(index);
+  }
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  @java.lang.Override
+  public proto.GameOrBuilder getForksOrBuilder(
+      int index) {
+    return forks_.get(index);
+  }
+
   public static proto.Game parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1781,6 +1986,11 @@ private static final long serialVersionUID = 0L;
         getThemesFieldBuilder();
         getVideosFieldBuilder();
         getWebsitesFieldBuilder();
+        getRemakesFieldBuilder();
+        getRemastersFieldBuilder();
+        getExpandedGamesFieldBuilder();
+        getPortsFieldBuilder();
+        getForksFieldBuilder();
       }
     }
     @java.lang.Override
@@ -2010,6 +2220,36 @@ private static final long serialVersionUID = 0L;
       }
       checksum_ = "";
 
+      if (remakesBuilder_ == null) {
+        remakes_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x01000000);
+      } else {
+        remakesBuilder_.clear();
+      }
+      if (remastersBuilder_ == null) {
+        remasters_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x02000000);
+      } else {
+        remastersBuilder_.clear();
+      }
+      if (expandedGamesBuilder_ == null) {
+        expandedGames_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x04000000);
+      } else {
+        expandedGamesBuilder_.clear();
+      }
+      if (portsBuilder_ == null) {
+        ports_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x08000000);
+      } else {
+        portsBuilder_.clear();
+      }
+      if (forksBuilder_ == null) {
+        forks_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x10000000);
+      } else {
+        forksBuilder_.clear();
+      }
       return this;
     }
 
@@ -2307,6 +2547,51 @@ private static final long serialVersionUID = 0L;
         result.websites_ = websitesBuilder_.build();
       }
       result.checksum_ = checksum_;
+      if (remakesBuilder_ == null) {
+        if (((bitField0_ & 0x01000000) != 0)) {
+          remakes_ = java.util.Collections.unmodifiableList(remakes_);
+          bitField0_ = (bitField0_ & ~0x01000000);
+        }
+        result.remakes_ = remakes_;
+      } else {
+        result.remakes_ = remakesBuilder_.build();
+      }
+      if (remastersBuilder_ == null) {
+        if (((bitField0_ & 0x02000000) != 0)) {
+          remasters_ = java.util.Collections.unmodifiableList(remasters_);
+          bitField0_ = (bitField0_ & ~0x02000000);
+        }
+        result.remasters_ = remasters_;
+      } else {
+        result.remasters_ = remastersBuilder_.build();
+      }
+      if (expandedGamesBuilder_ == null) {
+        if (((bitField0_ & 0x04000000) != 0)) {
+          expandedGames_ = java.util.Collections.unmodifiableList(expandedGames_);
+          bitField0_ = (bitField0_ & ~0x04000000);
+        }
+        result.expandedGames_ = expandedGames_;
+      } else {
+        result.expandedGames_ = expandedGamesBuilder_.build();
+      }
+      if (portsBuilder_ == null) {
+        if (((bitField0_ & 0x08000000) != 0)) {
+          ports_ = java.util.Collections.unmodifiableList(ports_);
+          bitField0_ = (bitField0_ & ~0x08000000);
+        }
+        result.ports_ = ports_;
+      } else {
+        result.ports_ = portsBuilder_.build();
+      }
+      if (forksBuilder_ == null) {
+        if (((bitField0_ & 0x10000000) != 0)) {
+          forks_ = java.util.Collections.unmodifiableList(forks_);
+          bitField0_ = (bitField0_ & ~0x10000000);
+        }
+        result.forks_ = forks_;
+      } else {
+        result.forks_ = forksBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -9813,6 +10098,1206 @@ private static final long serialVersionUID = 0L;
       checksum_ = value;
       onChanged();
       return this;
+    }
+
+    private java.util.List<proto.Game> remakes_ =
+      java.util.Collections.emptyList();
+    private void ensureRemakesIsMutable() {
+      if (!((bitField0_ & 0x01000000) != 0)) {
+        remakes_ = new java.util.ArrayList<proto.Game>(remakes_);
+        bitField0_ |= 0x01000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> remakesBuilder_;
+
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public java.util.List<proto.Game> getRemakesList() {
+      if (remakesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(remakes_);
+      } else {
+        return remakesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public int getRemakesCount() {
+      if (remakesBuilder_ == null) {
+        return remakes_.size();
+      } else {
+        return remakesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public proto.Game getRemakes(int index) {
+      if (remakesBuilder_ == null) {
+        return remakes_.get(index);
+      } else {
+        return remakesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder setRemakes(
+        int index, proto.Game value) {
+      if (remakesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemakesIsMutable();
+        remakes_.set(index, value);
+        onChanged();
+      } else {
+        remakesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder setRemakes(
+        int index, proto.Game.Builder builderForValue) {
+      if (remakesBuilder_ == null) {
+        ensureRemakesIsMutable();
+        remakes_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        remakesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder addRemakes(proto.Game value) {
+      if (remakesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemakesIsMutable();
+        remakes_.add(value);
+        onChanged();
+      } else {
+        remakesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder addRemakes(
+        int index, proto.Game value) {
+      if (remakesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemakesIsMutable();
+        remakes_.add(index, value);
+        onChanged();
+      } else {
+        remakesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder addRemakes(
+        proto.Game.Builder builderForValue) {
+      if (remakesBuilder_ == null) {
+        ensureRemakesIsMutable();
+        remakes_.add(builderForValue.build());
+        onChanged();
+      } else {
+        remakesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder addRemakes(
+        int index, proto.Game.Builder builderForValue) {
+      if (remakesBuilder_ == null) {
+        ensureRemakesIsMutable();
+        remakes_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        remakesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder addAllRemakes(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (remakesBuilder_ == null) {
+        ensureRemakesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, remakes_);
+        onChanged();
+      } else {
+        remakesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder clearRemakes() {
+      if (remakesBuilder_ == null) {
+        remakes_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x01000000);
+        onChanged();
+      } else {
+        remakesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public Builder removeRemakes(int index) {
+      if (remakesBuilder_ == null) {
+        ensureRemakesIsMutable();
+        remakes_.remove(index);
+        onChanged();
+      } else {
+        remakesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public proto.Game.Builder getRemakesBuilder(
+        int index) {
+      return getRemakesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public proto.GameOrBuilder getRemakesOrBuilder(
+        int index) {
+      if (remakesBuilder_ == null) {
+        return remakes_.get(index);  } else {
+        return remakesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getRemakesOrBuilderList() {
+      if (remakesBuilder_ != null) {
+        return remakesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(remakes_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public proto.Game.Builder addRemakesBuilder() {
+      return getRemakesFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public proto.Game.Builder addRemakesBuilder(
+        int index) {
+      return getRemakesFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game remakes = 51;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getRemakesBuilderList() {
+      return getRemakesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getRemakesFieldBuilder() {
+      if (remakesBuilder_ == null) {
+        remakesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                remakes_,
+                ((bitField0_ & 0x01000000) != 0),
+                getParentForChildren(),
+                isClean());
+        remakes_ = null;
+      }
+      return remakesBuilder_;
+    }
+
+    private java.util.List<proto.Game> remasters_ =
+      java.util.Collections.emptyList();
+    private void ensureRemastersIsMutable() {
+      if (!((bitField0_ & 0x02000000) != 0)) {
+        remasters_ = new java.util.ArrayList<proto.Game>(remasters_);
+        bitField0_ |= 0x02000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> remastersBuilder_;
+
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public java.util.List<proto.Game> getRemastersList() {
+      if (remastersBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(remasters_);
+      } else {
+        return remastersBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public int getRemastersCount() {
+      if (remastersBuilder_ == null) {
+        return remasters_.size();
+      } else {
+        return remastersBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public proto.Game getRemasters(int index) {
+      if (remastersBuilder_ == null) {
+        return remasters_.get(index);
+      } else {
+        return remastersBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder setRemasters(
+        int index, proto.Game value) {
+      if (remastersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemastersIsMutable();
+        remasters_.set(index, value);
+        onChanged();
+      } else {
+        remastersBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder setRemasters(
+        int index, proto.Game.Builder builderForValue) {
+      if (remastersBuilder_ == null) {
+        ensureRemastersIsMutable();
+        remasters_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        remastersBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder addRemasters(proto.Game value) {
+      if (remastersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemastersIsMutable();
+        remasters_.add(value);
+        onChanged();
+      } else {
+        remastersBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder addRemasters(
+        int index, proto.Game value) {
+      if (remastersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureRemastersIsMutable();
+        remasters_.add(index, value);
+        onChanged();
+      } else {
+        remastersBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder addRemasters(
+        proto.Game.Builder builderForValue) {
+      if (remastersBuilder_ == null) {
+        ensureRemastersIsMutable();
+        remasters_.add(builderForValue.build());
+        onChanged();
+      } else {
+        remastersBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder addRemasters(
+        int index, proto.Game.Builder builderForValue) {
+      if (remastersBuilder_ == null) {
+        ensureRemastersIsMutable();
+        remasters_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        remastersBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder addAllRemasters(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (remastersBuilder_ == null) {
+        ensureRemastersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, remasters_);
+        onChanged();
+      } else {
+        remastersBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder clearRemasters() {
+      if (remastersBuilder_ == null) {
+        remasters_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x02000000);
+        onChanged();
+      } else {
+        remastersBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public Builder removeRemasters(int index) {
+      if (remastersBuilder_ == null) {
+        ensureRemastersIsMutable();
+        remasters_.remove(index);
+        onChanged();
+      } else {
+        remastersBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public proto.Game.Builder getRemastersBuilder(
+        int index) {
+      return getRemastersFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public proto.GameOrBuilder getRemastersOrBuilder(
+        int index) {
+      if (remastersBuilder_ == null) {
+        return remasters_.get(index);  } else {
+        return remastersBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getRemastersOrBuilderList() {
+      if (remastersBuilder_ != null) {
+        return remastersBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(remasters_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public proto.Game.Builder addRemastersBuilder() {
+      return getRemastersFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public proto.Game.Builder addRemastersBuilder(
+        int index) {
+      return getRemastersFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game remasters = 52;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getRemastersBuilderList() {
+      return getRemastersFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getRemastersFieldBuilder() {
+      if (remastersBuilder_ == null) {
+        remastersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                remasters_,
+                ((bitField0_ & 0x02000000) != 0),
+                getParentForChildren(),
+                isClean());
+        remasters_ = null;
+      }
+      return remastersBuilder_;
+    }
+
+    private java.util.List<proto.Game> expandedGames_ =
+      java.util.Collections.emptyList();
+    private void ensureExpandedGamesIsMutable() {
+      if (!((bitField0_ & 0x04000000) != 0)) {
+        expandedGames_ = new java.util.ArrayList<proto.Game>(expandedGames_);
+        bitField0_ |= 0x04000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> expandedGamesBuilder_;
+
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public java.util.List<proto.Game> getExpandedGamesList() {
+      if (expandedGamesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(expandedGames_);
+      } else {
+        return expandedGamesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public int getExpandedGamesCount() {
+      if (expandedGamesBuilder_ == null) {
+        return expandedGames_.size();
+      } else {
+        return expandedGamesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public proto.Game getExpandedGames(int index) {
+      if (expandedGamesBuilder_ == null) {
+        return expandedGames_.get(index);
+      } else {
+        return expandedGamesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder setExpandedGames(
+        int index, proto.Game value) {
+      if (expandedGamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureExpandedGamesIsMutable();
+        expandedGames_.set(index, value);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder setExpandedGames(
+        int index, proto.Game.Builder builderForValue) {
+      if (expandedGamesBuilder_ == null) {
+        ensureExpandedGamesIsMutable();
+        expandedGames_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        expandedGamesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder addExpandedGames(proto.Game value) {
+      if (expandedGamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureExpandedGamesIsMutable();
+        expandedGames_.add(value);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder addExpandedGames(
+        int index, proto.Game value) {
+      if (expandedGamesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureExpandedGamesIsMutable();
+        expandedGames_.add(index, value);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder addExpandedGames(
+        proto.Game.Builder builderForValue) {
+      if (expandedGamesBuilder_ == null) {
+        ensureExpandedGamesIsMutable();
+        expandedGames_.add(builderForValue.build());
+        onChanged();
+      } else {
+        expandedGamesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder addExpandedGames(
+        int index, proto.Game.Builder builderForValue) {
+      if (expandedGamesBuilder_ == null) {
+        ensureExpandedGamesIsMutable();
+        expandedGames_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        expandedGamesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder addAllExpandedGames(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (expandedGamesBuilder_ == null) {
+        ensureExpandedGamesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, expandedGames_);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder clearExpandedGames() {
+      if (expandedGamesBuilder_ == null) {
+        expandedGames_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x04000000);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public Builder removeExpandedGames(int index) {
+      if (expandedGamesBuilder_ == null) {
+        ensureExpandedGamesIsMutable();
+        expandedGames_.remove(index);
+        onChanged();
+      } else {
+        expandedGamesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public proto.Game.Builder getExpandedGamesBuilder(
+        int index) {
+      return getExpandedGamesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public proto.GameOrBuilder getExpandedGamesOrBuilder(
+        int index) {
+      if (expandedGamesBuilder_ == null) {
+        return expandedGames_.get(index);  } else {
+        return expandedGamesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getExpandedGamesOrBuilderList() {
+      if (expandedGamesBuilder_ != null) {
+        return expandedGamesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(expandedGames_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public proto.Game.Builder addExpandedGamesBuilder() {
+      return getExpandedGamesFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public proto.Game.Builder addExpandedGamesBuilder(
+        int index) {
+      return getExpandedGamesFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game expanded_games = 53;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getExpandedGamesBuilderList() {
+      return getExpandedGamesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getExpandedGamesFieldBuilder() {
+      if (expandedGamesBuilder_ == null) {
+        expandedGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                expandedGames_,
+                ((bitField0_ & 0x04000000) != 0),
+                getParentForChildren(),
+                isClean());
+        expandedGames_ = null;
+      }
+      return expandedGamesBuilder_;
+    }
+
+    private java.util.List<proto.Game> ports_ =
+      java.util.Collections.emptyList();
+    private void ensurePortsIsMutable() {
+      if (!((bitField0_ & 0x08000000) != 0)) {
+        ports_ = new java.util.ArrayList<proto.Game>(ports_);
+        bitField0_ |= 0x08000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> portsBuilder_;
+
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public java.util.List<proto.Game> getPortsList() {
+      if (portsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(ports_);
+      } else {
+        return portsBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public int getPortsCount() {
+      if (portsBuilder_ == null) {
+        return ports_.size();
+      } else {
+        return portsBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public proto.Game getPorts(int index) {
+      if (portsBuilder_ == null) {
+        return ports_.get(index);
+      } else {
+        return portsBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder setPorts(
+        int index, proto.Game value) {
+      if (portsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensurePortsIsMutable();
+        ports_.set(index, value);
+        onChanged();
+      } else {
+        portsBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder setPorts(
+        int index, proto.Game.Builder builderForValue) {
+      if (portsBuilder_ == null) {
+        ensurePortsIsMutable();
+        ports_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        portsBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder addPorts(proto.Game value) {
+      if (portsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensurePortsIsMutable();
+        ports_.add(value);
+        onChanged();
+      } else {
+        portsBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder addPorts(
+        int index, proto.Game value) {
+      if (portsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensurePortsIsMutable();
+        ports_.add(index, value);
+        onChanged();
+      } else {
+        portsBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder addPorts(
+        proto.Game.Builder builderForValue) {
+      if (portsBuilder_ == null) {
+        ensurePortsIsMutable();
+        ports_.add(builderForValue.build());
+        onChanged();
+      } else {
+        portsBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder addPorts(
+        int index, proto.Game.Builder builderForValue) {
+      if (portsBuilder_ == null) {
+        ensurePortsIsMutable();
+        ports_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        portsBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder addAllPorts(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (portsBuilder_ == null) {
+        ensurePortsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, ports_);
+        onChanged();
+      } else {
+        portsBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder clearPorts() {
+      if (portsBuilder_ == null) {
+        ports_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x08000000);
+        onChanged();
+      } else {
+        portsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public Builder removePorts(int index) {
+      if (portsBuilder_ == null) {
+        ensurePortsIsMutable();
+        ports_.remove(index);
+        onChanged();
+      } else {
+        portsBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public proto.Game.Builder getPortsBuilder(
+        int index) {
+      return getPortsFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public proto.GameOrBuilder getPortsOrBuilder(
+        int index) {
+      if (portsBuilder_ == null) {
+        return ports_.get(index);  } else {
+        return portsBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getPortsOrBuilderList() {
+      if (portsBuilder_ != null) {
+        return portsBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(ports_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public proto.Game.Builder addPortsBuilder() {
+      return getPortsFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public proto.Game.Builder addPortsBuilder(
+        int index) {
+      return getPortsFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game ports = 54;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getPortsBuilderList() {
+      return getPortsFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getPortsFieldBuilder() {
+      if (portsBuilder_ == null) {
+        portsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                ports_,
+                ((bitField0_ & 0x08000000) != 0),
+                getParentForChildren(),
+                isClean());
+        ports_ = null;
+      }
+      return portsBuilder_;
+    }
+
+    private java.util.List<proto.Game> forks_ =
+      java.util.Collections.emptyList();
+    private void ensureForksIsMutable() {
+      if (!((bitField0_ & 0x10000000) != 0)) {
+        forks_ = new java.util.ArrayList<proto.Game>(forks_);
+        bitField0_ |= 0x10000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> forksBuilder_;
+
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public java.util.List<proto.Game> getForksList() {
+      if (forksBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(forks_);
+      } else {
+        return forksBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public int getForksCount() {
+      if (forksBuilder_ == null) {
+        return forks_.size();
+      } else {
+        return forksBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public proto.Game getForks(int index) {
+      if (forksBuilder_ == null) {
+        return forks_.get(index);
+      } else {
+        return forksBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder setForks(
+        int index, proto.Game value) {
+      if (forksBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureForksIsMutable();
+        forks_.set(index, value);
+        onChanged();
+      } else {
+        forksBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder setForks(
+        int index, proto.Game.Builder builderForValue) {
+      if (forksBuilder_ == null) {
+        ensureForksIsMutable();
+        forks_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        forksBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder addForks(proto.Game value) {
+      if (forksBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureForksIsMutable();
+        forks_.add(value);
+        onChanged();
+      } else {
+        forksBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder addForks(
+        int index, proto.Game value) {
+      if (forksBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureForksIsMutable();
+        forks_.add(index, value);
+        onChanged();
+      } else {
+        forksBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder addForks(
+        proto.Game.Builder builderForValue) {
+      if (forksBuilder_ == null) {
+        ensureForksIsMutable();
+        forks_.add(builderForValue.build());
+        onChanged();
+      } else {
+        forksBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder addForks(
+        int index, proto.Game.Builder builderForValue) {
+      if (forksBuilder_ == null) {
+        ensureForksIsMutable();
+        forks_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        forksBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder addAllForks(
+        java.lang.Iterable<? extends proto.Game> values) {
+      if (forksBuilder_ == null) {
+        ensureForksIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, forks_);
+        onChanged();
+      } else {
+        forksBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder clearForks() {
+      if (forksBuilder_ == null) {
+        forks_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x10000000);
+        onChanged();
+      } else {
+        forksBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public Builder removeForks(int index) {
+      if (forksBuilder_ == null) {
+        ensureForksIsMutable();
+        forks_.remove(index);
+        onChanged();
+      } else {
+        forksBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public proto.Game.Builder getForksBuilder(
+        int index) {
+      return getForksFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public proto.GameOrBuilder getForksOrBuilder(
+        int index) {
+      if (forksBuilder_ == null) {
+        return forks_.get(index);  } else {
+        return forksBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public java.util.List<? extends proto.GameOrBuilder> 
+         getForksOrBuilderList() {
+      if (forksBuilder_ != null) {
+        return forksBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(forks_);
+      }
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public proto.Game.Builder addForksBuilder() {
+      return getForksFieldBuilder().addBuilder(
+          proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public proto.Game.Builder addForksBuilder(
+        int index) {
+      return getForksFieldBuilder().addBuilder(
+          index, proto.Game.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.Game forks = 55;</code>
+     */
+    public java.util.List<proto.Game.Builder> 
+         getForksBuilderList() {
+      return getForksFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
+        getForksFieldBuilder() {
+      if (forksBuilder_ == null) {
+        forksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
+                forks_,
+                ((bitField0_ & 0x10000000) != 0),
+                getParentForChildren(),
+                isClean());
+        forks_ = null;
+      }
+      return forksBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

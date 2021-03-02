@@ -855,4 +855,124 @@ public interface GameOrBuilder extends
    */
   com.google.protobuf.ByteString
       getChecksumBytes();
+
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  java.util.List<proto.Game> 
+      getRemakesList();
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  proto.Game getRemakes(int index);
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  int getRemakesCount();
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getRemakesOrBuilderList();
+  /**
+   * <code>repeated .proto.Game remakes = 51;</code>
+   */
+  proto.GameOrBuilder getRemakesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  java.util.List<proto.Game> 
+      getRemastersList();
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  proto.Game getRemasters(int index);
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  int getRemastersCount();
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getRemastersOrBuilderList();
+  /**
+   * <code>repeated .proto.Game remasters = 52;</code>
+   */
+  proto.GameOrBuilder getRemastersOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  java.util.List<proto.Game> 
+      getExpandedGamesList();
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  proto.Game getExpandedGames(int index);
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  int getExpandedGamesCount();
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getExpandedGamesOrBuilderList();
+  /**
+   * <code>repeated .proto.Game expanded_games = 53;</code>
+   */
+  proto.GameOrBuilder getExpandedGamesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  java.util.List<proto.Game> 
+      getPortsList();
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  proto.Game getPorts(int index);
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  int getPortsCount();
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getPortsOrBuilderList();
+  /**
+   * <code>repeated .proto.Game ports = 54;</code>
+   */
+  proto.GameOrBuilder getPortsOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  java.util.List<proto.Game> 
+      getForksList();
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  proto.Game getForks(int index);
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  int getForksCount();
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  java.util.List<? extends proto.GameOrBuilder> 
+      getForksOrBuilderList();
+  /**
+   * <code>repeated .proto.Game forks = 55;</code>
+   */
+  proto.GameOrBuilder getForksOrBuilder(
+      int index);
 }
