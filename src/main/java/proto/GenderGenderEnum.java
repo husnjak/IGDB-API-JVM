@@ -9,40 +9,32 @@ package proto;
 public enum GenderGenderEnum
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>GENDER_GENDER_NULL = 0;</code>
+   * <code>MALE = 0;</code>
    */
-  GENDER_GENDER_NULL(0),
+  MALE(0),
   /**
-   * <code>MALE = 1;</code>
+   * <code>FEMALE = 1;</code>
    */
-  MALE(1),
+  FEMALE(1),
   /**
-   * <code>FEMALE = 2;</code>
+   * <code>OTHER = 2;</code>
    */
-  FEMALE(2),
-  /**
-   * <code>OTHER = 3;</code>
-   */
-  OTHER(3),
+  OTHER(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>GENDER_GENDER_NULL = 0;</code>
+   * <code>MALE = 0;</code>
    */
-  public static final int GENDER_GENDER_NULL_VALUE = 0;
+  public static final int MALE_VALUE = 0;
   /**
-   * <code>MALE = 1;</code>
+   * <code>FEMALE = 1;</code>
    */
-  public static final int MALE_VALUE = 1;
+  public static final int FEMALE_VALUE = 1;
   /**
-   * <code>FEMALE = 2;</code>
+   * <code>OTHER = 2;</code>
    */
-  public static final int FEMALE_VALUE = 2;
-  /**
-   * <code>OTHER = 3;</code>
-   */
-  public static final int OTHER_VALUE = 3;
+  public static final int OTHER_VALUE = 2;
 
 
   public final int getNumber() {
@@ -69,10 +61,9 @@ public enum GenderGenderEnum
    */
   public static GenderGenderEnum forNumber(int value) {
     switch (value) {
-      case 0: return GENDER_GENDER_NULL;
-      case 1: return MALE;
-      case 2: return FEMALE;
-      case 3: return OTHER;
+      case 0: return MALE;
+      case 1: return FEMALE;
+      case 2: return OTHER;
       default: return null;
     }
   }

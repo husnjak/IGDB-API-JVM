@@ -122,10 +122,9 @@ message Character {
 
 
 enum GenderGenderEnum {
-    GENDER_GENDER_NULL = 0;
-    MALE = 1;
-    FEMALE = 2;
-    OTHER = 3;
+    MALE = 0;
+    FEMALE = 1;
+    OTHER = 2;
 }
 
 
@@ -380,6 +379,11 @@ message Game {
     repeated GameVideo videos = 48; 
     repeated Website websites = 49; 
     string checksum = 50; 
+    repeated Game remakes = 51; 
+    repeated Game remasters = 52; 
+    repeated Game expanded_games = 53; 
+    repeated Game ports = 54; 
+    repeated Game forks = 55; 
 }
 
 
@@ -392,6 +396,11 @@ enum GameCategoryEnum {
     MOD = 5;
     EPISODE = 6;
     SEASON = 7;
+    REMAKE = 8;
+    REMASTER = 9;
+    EXPANDED_GAME = 10;
+    PORT = 11;
+    FORK = 12;
 }
 
 
