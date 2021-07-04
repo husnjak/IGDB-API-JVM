@@ -3,7 +3,7 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.5.20"
     id("org.jetbrains.dokka") version "0.10.1"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
@@ -50,10 +50,12 @@ sourceSets {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.useIR = true
+
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "11"
     }
     dokka {
         outputFormat = "html"
@@ -61,6 +63,9 @@ tasks {
     }
     withType<GenerateProtoTask> {
         dependsOn(downloadProtoFiles)
+    }
+    processResources{
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
 
