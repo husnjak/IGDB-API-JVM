@@ -3,8 +3,8 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.4.31"
-    id("org.jetbrains.dokka") version "0.10.1"
+    kotlin("jvm") version "1.5.20"
+    id("org.jetbrains.dokka") version "1.4.30"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
     id("com.google.protobuf") version "0.8.14"
@@ -55,9 +55,8 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
-    dokka {
-        outputFormat = "html"
-        outputDirectory = "$buildDir/javadoc"
+    dokkaJavadoc {
+        outputDirectory.set(buildDir.resolve("javadoc"))
     }
     withType<GenerateProtoTask> {
         dependsOn(downloadProtoFiles)
@@ -81,7 +80,7 @@ val dokkaJar by tasks.creating(Jar::class) {
     group = JavaBasePlugin.DOCUMENTATION_GROUP
     description = "Assembles Kotlin docs with Dokka"
     archiveClassifier.set("javadoc")
-    from(tasks.dokka)
+    from(tasks.dokkaJavadoc)
 }
 
 val sourcesJar by tasks.creating(Jar::class) {
