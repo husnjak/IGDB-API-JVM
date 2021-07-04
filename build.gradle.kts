@@ -50,16 +50,21 @@ sourceSets {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.useIR = true
+
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "11"
     }
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
     }
     withType<GenerateProtoTask> {
         dependsOn(downloadProtoFiles)
+    }
+    processResources{
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
 

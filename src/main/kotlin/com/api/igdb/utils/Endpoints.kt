@@ -12,7 +12,7 @@ enum class Endpoints : Endpoint {
     PLATFORM_FAMILIES, RELEASE_DATES, SCREENSHOTS, SEARCH, THEMES, WEBSITES;
 
     override fun url(): String {
-        return "/${this.name.toLowerCase()}"
+        return "/${this.name.lowercase()}"
     }
 
 }
