@@ -6,6 +6,11 @@ name: Publish package
 # events but only for the master branch
 on:
   workflow_dispatch:
+    inputs:
+      packagePrefix:
+        required: true
+        default: 'test'
+        description: "Packages require a package version"
   release:
     types: # This configuration does not affect the page_build event above
       - created
@@ -33,4 +38,4 @@ jobs:
         run: gradle publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name }} || "${{ github.event.inputs.packagePrefix }}-${{ github.run_id }}"
