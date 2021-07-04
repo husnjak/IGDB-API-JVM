@@ -39,7 +39,7 @@ jobs:
         run: gradle publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_VERSION: "${{ github.event.inputs.packagePrefix }}-${{ github.run_id }}"
+          RELEASE_VERSION: ${{ github.run_id }}
       - if: github.event.inputs.packagePrefix == ''
         name: Publish package
         run: gradle publish
