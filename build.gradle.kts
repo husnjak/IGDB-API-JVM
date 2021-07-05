@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "com.api.igdb"
-version = "3-dev"//project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
+version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.15.3"
