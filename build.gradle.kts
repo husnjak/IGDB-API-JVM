@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "com.api.igdb"
-version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
+version = "3-dev"//project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.15.3"
@@ -51,8 +51,6 @@ sourceSets {
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = "11"
-        kotlinOptions.useIR = true
-
     }
     compileTestKotlin {
         kotlinOptions.jvmTarget = "11"
@@ -116,7 +114,7 @@ publishing {
 
             pom {
                 description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")
-                url.set("https://github.com/husnjak/IGDB-API-JVM.git")
+                url.set("https://github.com/husnjak/igdb-api-jvm.git")
                 licenses {
                     license {
                         name.set("The MIT License (MIT)")
@@ -134,7 +132,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/husnjak/IGDB-API-JVM")
+            url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
                 username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
                 password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")

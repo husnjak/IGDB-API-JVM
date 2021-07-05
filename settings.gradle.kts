@@ -1,1 +1,1 @@
-rootProject.name = "IGDB-API-JVM"
+rootProject.name = "igdb-api-jvm"
