@@ -30,7 +30,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     // Protocol Buffers
-    implementation("com.google.protobuf:protobuf-java:$protobufJavaVersion")
+    api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
@@ -94,6 +94,7 @@ val sourcesJar by tasks.creating(Jar::class) {
     description = "Assembles sources jar"
     archiveClassifier.set("sources")
     from(sourceSets["main"].allSource)
+//    from(configurations.runtimeClasspath.get().map({ println(it); if (it.isDirectory){ it }else{ zipTree(it)} }))
 }
 
 publishing {
