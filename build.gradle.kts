@@ -29,6 +29,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     // Protocol Buffers
+      // set to api() to add protobuf to client classpath
     api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
