@@ -20,7 +20,6 @@ val junitPlatformVersion = "1.7.1"
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -94,7 +93,6 @@ val sourcesJar by tasks.creating(Jar::class) {
     description = "Assembles sources jar"
     archiveClassifier.set("sources")
     from(sourceSets["main"].allSource)
-//    from(configurations.runtimeClasspath.get().map({ println(it); if (it.isDirectory){ it }else{ zipTree(it)} }))
 }
 
 publishing {
