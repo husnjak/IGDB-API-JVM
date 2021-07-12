@@ -20,7 +20,6 @@ val junitPlatformVersion = "1.7.1"
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -30,7 +29,8 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     // Protocol Buffers
-    implementation("com.google.protobuf:protobuf-java:$protobufJavaVersion")
+      // set to api() to add protobuf to client classpath
+    api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
