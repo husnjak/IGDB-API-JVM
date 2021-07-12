@@ -20,6 +20,7 @@ val junitPlatformVersion = "1.7.1"
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
 }
 
 dependencies {
