@@ -44,6 +44,14 @@ public enum RegionRegionEnum
    * <code>WORLDWIDE = 8;</code>
    */
   WORLDWIDE(8),
+  /**
+   * <code>KOREA = 9;</code>
+   */
+  KOREA(9),
+  /**
+   * <code>BRAZIL = 10;</code>
+   */
+  BRAZIL(10),
   UNRECOGNIZED(-1),
   ;
 
@@ -83,6 +91,14 @@ public enum RegionRegionEnum
    * <code>WORLDWIDE = 8;</code>
    */
   public static final int WORLDWIDE_VALUE = 8;
+  /**
+   * <code>KOREA = 9;</code>
+   */
+  public static final int KOREA_VALUE = 9;
+  /**
+   * <code>BRAZIL = 10;</code>
+   */
+  public static final int BRAZIL_VALUE = 10;
 
 
   public final int getNumber() {
@@ -118,6 +134,8 @@ public enum RegionRegionEnum
       case 6: return CHINA;
       case 7: return ASIA;
       case 8: return WORLDWIDE;
+      case 9: return KOREA;
+      case 10: return BRAZIL;
       default: return null;
     }
   }

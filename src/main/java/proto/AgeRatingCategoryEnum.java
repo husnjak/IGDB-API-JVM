@@ -20,6 +20,26 @@ public enum AgeRatingCategoryEnum
    * <code>PEGI = 2;</code>
    */
   PEGI(2),
+  /**
+   * <code>CERO = 3;</code>
+   */
+  CERO(3),
+  /**
+   * <code>USK = 4;</code>
+   */
+  USK(4),
+  /**
+   * <code>GRAC = 5;</code>
+   */
+  GRAC(5),
+  /**
+   * <code>CLASS_IND = 6;</code>
+   */
+  CLASS_IND(6),
+  /**
+   * <code>ACB = 7;</code>
+   */
+  ACB(7),
   UNRECOGNIZED(-1),
   ;
 
@@ -35,6 +55,26 @@ public enum AgeRatingCategoryEnum
    * <code>PEGI = 2;</code>
    */
   public static final int PEGI_VALUE = 2;
+  /**
+   * <code>CERO = 3;</code>
+   */
+  public static final int CERO_VALUE = 3;
+  /**
+   * <code>USK = 4;</code>
+   */
+  public static final int USK_VALUE = 4;
+  /**
+   * <code>GRAC = 5;</code>
+   */
+  public static final int GRAC_VALUE = 5;
+  /**
+   * <code>CLASS_IND = 6;</code>
+   */
+  public static final int CLASS_IND_VALUE = 6;
+  /**
+   * <code>ACB = 7;</code>
+   */
+  public static final int ACB_VALUE = 7;
 
 
   public final int getNumber() {
@@ -64,6 +104,11 @@ public enum AgeRatingCategoryEnum
       case 0: return AGERATING_CATEGORY_NULL;
       case 1: return ESRB;
       case 2: return PEGI;
+      case 3: return CERO;
+      case 4: return USK;
+      case 5: return GRAC;
+      case 6: return CLASS_IND;
+      case 7: return ACB;
       default: return null;
     }
   }

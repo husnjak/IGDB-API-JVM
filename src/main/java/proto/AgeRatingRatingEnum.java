@@ -60,6 +60,110 @@ public enum AgeRatingRatingEnum
    * <code>AO = 12;</code>
    */
   AO(12),
+  /**
+   * <code>CERO_A = 13;</code>
+   */
+  CERO_A(13),
+  /**
+   * <code>CERO_B = 14;</code>
+   */
+  CERO_B(14),
+  /**
+   * <code>CERO_C = 15;</code>
+   */
+  CERO_C(15),
+  /**
+   * <code>CERO_D = 16;</code>
+   */
+  CERO_D(16),
+  /**
+   * <code>CERO_Z = 17;</code>
+   */
+  CERO_Z(17),
+  /**
+   * <code>USK_0 = 18;</code>
+   */
+  USK_0(18),
+  /**
+   * <code>USK_6 = 19;</code>
+   */
+  USK_6(19),
+  /**
+   * <code>USK_12 = 20;</code>
+   */
+  USK_12(20),
+  /**
+   * <code>USK_18 = 21;</code>
+   */
+  USK_18(21),
+  /**
+   * <code>GRAC_ALL = 22;</code>
+   */
+  GRAC_ALL(22),
+  /**
+   * <code>GRAC_TWELVE = 23;</code>
+   */
+  GRAC_TWELVE(23),
+  /**
+   * <code>GRAC_FIFTEEN = 24;</code>
+   */
+  GRAC_FIFTEEN(24),
+  /**
+   * <code>GRAC_EIGHTEEN = 25;</code>
+   */
+  GRAC_EIGHTEEN(25),
+  /**
+   * <code>GRAC_TESTING = 26;</code>
+   */
+  GRAC_TESTING(26),
+  /**
+   * <code>CLASS_IND_L = 27;</code>
+   */
+  CLASS_IND_L(27),
+  /**
+   * <code>CLASS_IND_TEN = 28;</code>
+   */
+  CLASS_IND_TEN(28),
+  /**
+   * <code>CLASS_IND_TWELVE = 29;</code>
+   */
+  CLASS_IND_TWELVE(29),
+  /**
+   * <code>CLASS_IND_FOURTEEN = 30;</code>
+   */
+  CLASS_IND_FOURTEEN(30),
+  /**
+   * <code>CLASS_IND_SIXTEEN = 31;</code>
+   */
+  CLASS_IND_SIXTEEN(31),
+  /**
+   * <code>CLASS_IND_EIGHTEEN = 32;</code>
+   */
+  CLASS_IND_EIGHTEEN(32),
+  /**
+   * <code>ACB_G = 33;</code>
+   */
+  ACB_G(33),
+  /**
+   * <code>ACB_PG = 34;</code>
+   */
+  ACB_PG(34),
+  /**
+   * <code>ACB_M = 35;</code>
+   */
+  ACB_M(35),
+  /**
+   * <code>ACB_MA15 = 36;</code>
+   */
+  ACB_MA15(36),
+  /**
+   * <code>ACB_R18 = 37;</code>
+   */
+  ACB_R18(37),
+  /**
+   * <code>ACB_RC = 38;</code>
+   */
+  ACB_RC(38),
   UNRECOGNIZED(-1),
   ;
 
@@ -115,6 +219,110 @@ public enum AgeRatingRatingEnum
    * <code>AO = 12;</code>
    */
   public static final int AO_VALUE = 12;
+  /**
+   * <code>CERO_A = 13;</code>
+   */
+  public static final int CERO_A_VALUE = 13;
+  /**
+   * <code>CERO_B = 14;</code>
+   */
+  public static final int CERO_B_VALUE = 14;
+  /**
+   * <code>CERO_C = 15;</code>
+   */
+  public static final int CERO_C_VALUE = 15;
+  /**
+   * <code>CERO_D = 16;</code>
+   */
+  public static final int CERO_D_VALUE = 16;
+  /**
+   * <code>CERO_Z = 17;</code>
+   */
+  public static final int CERO_Z_VALUE = 17;
+  /**
+   * <code>USK_0 = 18;</code>
+   */
+  public static final int USK_0_VALUE = 18;
+  /**
+   * <code>USK_6 = 19;</code>
+   */
+  public static final int USK_6_VALUE = 19;
+  /**
+   * <code>USK_12 = 20;</code>
+   */
+  public static final int USK_12_VALUE = 20;
+  /**
+   * <code>USK_18 = 21;</code>
+   */
+  public static final int USK_18_VALUE = 21;
+  /**
+   * <code>GRAC_ALL = 22;</code>
+   */
+  public static final int GRAC_ALL_VALUE = 22;
+  /**
+   * <code>GRAC_TWELVE = 23;</code>
+   */
+  public static final int GRAC_TWELVE_VALUE = 23;
+  /**
+   * <code>GRAC_FIFTEEN = 24;</code>
+   */
+  public static final int GRAC_FIFTEEN_VALUE = 24;
+  /**
+   * <code>GRAC_EIGHTEEN = 25;</code>
+   */
+  public static final int GRAC_EIGHTEEN_VALUE = 25;
+  /**
+   * <code>GRAC_TESTING = 26;</code>
+   */
+  public static final int GRAC_TESTING_VALUE = 26;
+  /**
+   * <code>CLASS_IND_L = 27;</code>
+   */
+  public static final int CLASS_IND_L_VALUE = 27;
+  /**
+   * <code>CLASS_IND_TEN = 28;</code>
+   */
+  public static final int CLASS_IND_TEN_VALUE = 28;
+  /**
+   * <code>CLASS_IND_TWELVE = 29;</code>
+   */
+  public static final int CLASS_IND_TWELVE_VALUE = 29;
+  /**
+   * <code>CLASS_IND_FOURTEEN = 30;</code>
+   */
+  public static final int CLASS_IND_FOURTEEN_VALUE = 30;
+  /**
+   * <code>CLASS_IND_SIXTEEN = 31;</code>
+   */
+  public static final int CLASS_IND_SIXTEEN_VALUE = 31;
+  /**
+   * <code>CLASS_IND_EIGHTEEN = 32;</code>
+   */
+  public static final int CLASS_IND_EIGHTEEN_VALUE = 32;
+  /**
+   * <code>ACB_G = 33;</code>
+   */
+  public static final int ACB_G_VALUE = 33;
+  /**
+   * <code>ACB_PG = 34;</code>
+   */
+  public static final int ACB_PG_VALUE = 34;
+  /**
+   * <code>ACB_M = 35;</code>
+   */
+  public static final int ACB_M_VALUE = 35;
+  /**
+   * <code>ACB_MA15 = 36;</code>
+   */
+  public static final int ACB_MA15_VALUE = 36;
+  /**
+   * <code>ACB_R18 = 37;</code>
+   */
+  public static final int ACB_R18_VALUE = 37;
+  /**
+   * <code>ACB_RC = 38;</code>
+   */
+  public static final int ACB_RC_VALUE = 38;
 
 
   public final int getNumber() {
@@ -154,6 +362,32 @@ public enum AgeRatingRatingEnum
       case 10: return T;
       case 11: return M;
       case 12: return AO;
+      case 13: return CERO_A;
+      case 14: return CERO_B;
+      case 15: return CERO_C;
+      case 16: return CERO_D;
+      case 17: return CERO_Z;
+      case 18: return USK_0;
+      case 19: return USK_6;
+      case 20: return USK_12;
+      case 21: return USK_18;
+      case 22: return GRAC_ALL;
+      case 23: return GRAC_TWELVE;
+      case 24: return GRAC_FIFTEEN;
+      case 25: return GRAC_EIGHTEEN;
+      case 26: return GRAC_TESTING;
+      case 27: return CLASS_IND_L;
+      case 28: return CLASS_IND_TEN;
+      case 29: return CLASS_IND_TWELVE;
+      case 30: return CLASS_IND_FOURTEEN;
+      case 31: return CLASS_IND_SIXTEEN;
+      case 32: return CLASS_IND_EIGHTEEN;
+      case 33: return ACB_G;
+      case 34: return ACB_PG;
+      case 35: return ACB_M;
+      case 36: return ACB_MA15;
+      case 37: return ACB_R18;
+      case 38: return ACB_RC;
       default: return null;
     }
   }
