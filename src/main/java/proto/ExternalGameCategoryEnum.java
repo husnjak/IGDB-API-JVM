@@ -40,6 +40,26 @@ public enum ExternalGameCategoryEnum
    * <code>EXTERNALGAME_ANDROID = 15;</code>
    */
   EXTERNALGAME_ANDROID(15),
+  /**
+   * <code>EXTERNALGAME_AMAZON_ASIN = 20;</code>
+   */
+  EXTERNALGAME_AMAZON_ASIN(20),
+  /**
+   * <code>EXTERNALGAME_AMAZON_LUNA = 22;</code>
+   */
+  EXTERNALGAME_AMAZON_LUNA(22),
+  /**
+   * <code>EXTERNALGAME_AMAZON_ADG = 23;</code>
+   */
+  EXTERNALGAME_AMAZON_ADG(23),
+  /**
+   * <code>EXTERNALGAME_EPIC_GAME_STORE = 26;</code>
+   */
+  EXTERNALGAME_EPIC_GAME_STORE(26),
+  /**
+   * <code>EXTERNALGAME_OCULUS = 28;</code>
+   */
+  EXTERNALGAME_OCULUS(28),
   UNRECOGNIZED(-1),
   ;
 
@@ -75,6 +95,26 @@ public enum ExternalGameCategoryEnum
    * <code>EXTERNALGAME_ANDROID = 15;</code>
    */
   public static final int EXTERNALGAME_ANDROID_VALUE = 15;
+  /**
+   * <code>EXTERNALGAME_AMAZON_ASIN = 20;</code>
+   */
+  public static final int EXTERNALGAME_AMAZON_ASIN_VALUE = 20;
+  /**
+   * <code>EXTERNALGAME_AMAZON_LUNA = 22;</code>
+   */
+  public static final int EXTERNALGAME_AMAZON_LUNA_VALUE = 22;
+  /**
+   * <code>EXTERNALGAME_AMAZON_ADG = 23;</code>
+   */
+  public static final int EXTERNALGAME_AMAZON_ADG_VALUE = 23;
+  /**
+   * <code>EXTERNALGAME_EPIC_GAME_STORE = 26;</code>
+   */
+  public static final int EXTERNALGAME_EPIC_GAME_STORE_VALUE = 26;
+  /**
+   * <code>EXTERNALGAME_OCULUS = 28;</code>
+   */
+  public static final int EXTERNALGAME_OCULUS_VALUE = 28;
 
 
   public final int getNumber() {
@@ -109,6 +149,11 @@ public enum ExternalGameCategoryEnum
       case 13: return EXTERNALGAME_APPLE;
       case 14: return EXTERNALGAME_TWITCH;
       case 15: return EXTERNALGAME_ANDROID;
+      case 20: return EXTERNALGAME_AMAZON_ASIN;
+      case 22: return EXTERNALGAME_AMAZON_LUNA;
+      case 23: return EXTERNALGAME_AMAZON_ADG;
+      case 26: return EXTERNALGAME_EPIC_GAME_STORE;
+      case 28: return EXTERNALGAME_OCULUS;
       default: return null;
     }
   }

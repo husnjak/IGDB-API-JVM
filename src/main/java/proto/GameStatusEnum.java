@@ -36,6 +36,10 @@ public enum GameStatusEnum
    * <code>RUMORED = 7;</code>
    */
   RUMORED(7),
+  /**
+   * <code>DELISTED = 8;</code>
+   */
+  DELISTED(8),
   UNRECOGNIZED(-1),
   ;
 
@@ -67,6 +71,10 @@ public enum GameStatusEnum
    * <code>RUMORED = 7;</code>
    */
   public static final int RUMORED_VALUE = 7;
+  /**
+   * <code>DELISTED = 8;</code>
+   */
+  public static final int DELISTED_VALUE = 8;
 
 
   public final int getNumber() {
@@ -100,6 +108,7 @@ public enum GameStatusEnum
       case 5: return OFFLINE;
       case 6: return CANCELLED;
       case 7: return RUMORED;
+      case 8: return DELISTED;
       default: return null;
     }
   }
