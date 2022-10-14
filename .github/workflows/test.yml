@@ -6,7 +6,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment: apitesting
     steps:
       - uses: actions/checkout@v3
       - name: Setup JKD 11
@@ -21,4 +21,4 @@ jobs:
         env:
           client_id: "${{ secrets.CLIENT_ID }}"
           client_secret: "${{ secrets.CLIENT_SECRET }}"
-          bearer: "${{ secrets.BEARER }}"
+          bearer: "${{ secrets.BEARER_TOKEN }}"
