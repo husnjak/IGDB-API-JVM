@@ -3,7 +3,7 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.5.20"
+    kotlin("jvm") version "1.7.20"
     id("org.jetbrains.dokka") version "1.4.30"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
@@ -14,9 +14,9 @@ group = "com.api.igdb"
 version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.15.3"
-val junitJupiterVersion = "5.7.1"
-val junitPlatformVersion = "1.7.1"
+val protobufJavaVersion = "3.21.7"
+val junitJupiterVersion = "5.9.0"
+val junitPlatformVersion = "1.9.0"
 
 repositories {
     mavenCentral()

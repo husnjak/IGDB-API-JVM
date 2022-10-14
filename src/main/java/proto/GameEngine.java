@@ -521,20 +521,13 @@ private static final long serialVersionUID = 0L;
 
     // Construct using proto.GameEngine.newBuilder()
     private Builder() {
-      maybeForceBuilderInitialization();
+
     }
 
     private Builder(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
-      maybeForceBuilderInitialization();
-    }
-    private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessageV3
-              .alwaysUseFieldBuilders) {
-        getCompaniesFieldBuilder();
-        getPlatformsFieldBuilder();
-      }
+
     }
     @java.lang.Override
     public Builder clear() {
@@ -543,10 +536,11 @@ private static final long serialVersionUID = 0L;
 
       if (companiesBuilder_ == null) {
         companies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
+        companies_ = null;
         companiesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000001);
       if (createdAtBuilder_ == null) {
         createdAt_ = null;
       } else {
@@ -565,10 +559,11 @@ private static final long serialVersionUID = 0L;
 
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
+        platforms_ = null;
         platformsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000002);
       slug_ = "";
 
       if (updatedAtBuilder_ == null) {
@@ -1970,10 +1965,11 @@ private static final long serialVersionUID = 0L;
         builder.mergeFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(builder.buildPartial());
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(
-                builder.buildPartial());
+        throw new com.google.protobuf.InvalidProtocolBufferException(e)
+            .setUnfinishedMessage(builder.buildPartial());
       }
       return builder.buildPartial();
     }

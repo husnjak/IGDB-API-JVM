@@ -975,4 +975,28 @@ public interface GameOrBuilder extends
    */
   proto.GameOrBuilder getForksOrBuilder(
       int index);
+
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  java.util.List<proto.LanguageSupport> 
+      getLanguageSupportsList();
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  proto.LanguageSupport getLanguageSupports(int index);
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  int getLanguageSupportsCount();
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  java.util.List<? extends proto.LanguageSupportOrBuilder> 
+      getLanguageSupportsOrBuilderList();
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  proto.LanguageSupportOrBuilder getLanguageSupportsOrBuilder(
+      int index);
 }
