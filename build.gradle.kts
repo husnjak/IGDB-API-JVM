@@ -36,6 +36,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:$junitPlatformVersion")
+
 }
 
 sourceSets {
@@ -64,6 +65,9 @@ tasks {
     }
     processResources{
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    }
+    test {
+        useJUnitPlatform()
     }
 }
 
