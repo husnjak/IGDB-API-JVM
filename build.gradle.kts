@@ -64,10 +64,12 @@ tasks {
         dependsOn(downloadProtoFiles)
     }
     processResources{
+        dependsOn(getTasksByName("generateProto", true))
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
     test {
         useJUnitPlatform()
+        setForkEvery(1)
     }
 }
 
