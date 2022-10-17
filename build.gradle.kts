@@ -4,7 +4,7 @@ import de.undercouch.gradle.tasks.download.Download
 
 plugins {
     kotlin("jvm") version "1.7.20"
-    id("org.jetbrains.dokka") version "1.4.30"
+    id("org.jetbrains.dokka") version "1.7.20"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
     id("com.google.protobuf") version "0.8.14"
@@ -51,6 +51,10 @@ sourceSets {
 }
 
 tasks {
+    compileJava {
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
+    }
     compileKotlin {
         kotlinOptions.jvmTarget = "11"
     }
