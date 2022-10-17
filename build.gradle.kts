@@ -71,10 +71,6 @@ tasks {
         dependsOn(getTasksByName("generateProto", true))
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
-    test {
-        useJUnitPlatform()
-        setForkEvery(1)
-    }
 }
 
 protobuf.protobuf.run {
