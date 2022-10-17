@@ -3,20 +3,20 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.5.20"
-    id("org.jetbrains.dokka") version "1.4.30"
+    kotlin("jvm") version "1.7.20"
+    id("org.jetbrains.dokka") version "1.7.20"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
-    id("com.google.protobuf") version "0.8.14"
+    id("com.google.protobuf") version "0.8.19"
 }
 
 group = "com.api.igdb"
 version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.15.3"
-val junitJupiterVersion = "5.7.1"
-val junitPlatformVersion = "1.7.1"
+val protobufJavaVersion = "3.21.7"
+val junitJupiterVersion = "5.9.0"
+val junitPlatformVersion = "1.9.0"
 
 repositories {
     mavenCentral()
@@ -36,6 +36,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:$junitPlatformVersion")
+
 }
 
 sourceSets {
@@ -63,6 +64,7 @@ tasks {
         dependsOn(downloadProtoFiles)
     }
     processResources{
+        dependsOn(getTasksByName("generateProto", true))
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }

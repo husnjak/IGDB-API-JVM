@@ -152,6 +152,24 @@ fun IGDBWrapper.keywords(APICalypse: APICalypse): List<Keyword> {
 }
 
 @Throws(RequestException::class)
+fun IGDBWrapper.languages(APICalypse: APICalypse): List<Language> {
+    val bytes = apiProtoRequest(Endpoints.LANGUAGES, APICalypse.buildQuery())
+    return LanguageResult.parseFrom(bytes).languagesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.languageSupports(APICalypse: APICalypse): List<LanguageSupport> {
+    val bytes = apiProtoRequest(Endpoints.LANGUAGE_SUPPORT, APICalypse.buildQuery())
+    return LanguageSupportResult.parseFrom(bytes).languagesupportsList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.langaugeSupportTypes(APICalypse: APICalypse): List<LanguageSupportType> {
+    val bytes = apiProtoRequest(Endpoints.LANGUAGE_SUPPORT_TYPES, APICalypse.buildQuery())
+    return LanguageSupportTypeResult.parseFrom(bytes).languagesupporttypesList
+}
+
+@Throws(RequestException::class)
 fun IGDBWrapper.multiplayerModes(APICalypse: APICalypse): List<MultiplayerMode> {
     val bytes = apiProtoRequest(Endpoints.MULTIPLAYER_MODES, APICalypse.buildQuery())
     return MultiplayerModeResult.parseFrom(bytes).multiplayermodesList

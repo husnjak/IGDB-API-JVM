@@ -54,6 +54,7 @@ private static final long serialVersionUID = 0L;
     expandedGames_ = java.util.Collections.emptyList();
     ports_ = java.util.Collections.emptyList();
     forks_ = java.util.Collections.emptyList();
+    languageSupports_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -1840,6 +1841,46 @@ private static final long serialVersionUID = 0L;
     return forks_.get(index);
   }
 
+  public static final int LANGUAGE_SUPPORTS_FIELD_NUMBER = 56;
+  private java.util.List<proto.LanguageSupport> languageSupports_;
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.LanguageSupport> getLanguageSupportsList() {
+    return languageSupports_;
+  }
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.LanguageSupportOrBuilder> 
+      getLanguageSupportsOrBuilderList() {
+    return languageSupports_;
+  }
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  @java.lang.Override
+  public int getLanguageSupportsCount() {
+    return languageSupports_.size();
+  }
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  @java.lang.Override
+  public proto.LanguageSupport getLanguageSupports(int index) {
+    return languageSupports_.get(index);
+  }
+  /**
+   * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+   */
+  @java.lang.Override
+  public proto.LanguageSupportOrBuilder getLanguageSupportsOrBuilder(
+      int index) {
+    return languageSupports_.get(index);
+  }
+
   public static proto.Game parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1952,46 +1993,13 @@ private static final long serialVersionUID = 0L;
 
     // Construct using proto.Game.newBuilder()
     private Builder() {
-      maybeForceBuilderInitialization();
+
     }
 
     private Builder(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
-      maybeForceBuilderInitialization();
-    }
-    private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessageV3
-              .alwaysUseFieldBuilders) {
-        getAgeRatingsFieldBuilder();
-        getAlternativeNamesFieldBuilder();
-        getArtworksFieldBuilder();
-        getBundlesFieldBuilder();
-        getDlcsFieldBuilder();
-        getExpansionsFieldBuilder();
-        getExternalGamesFieldBuilder();
-        getFranchisesFieldBuilder();
-        getGameEnginesFieldBuilder();
-        getGameModesFieldBuilder();
-        getGenresFieldBuilder();
-        getInvolvedCompaniesFieldBuilder();
-        getKeywordsFieldBuilder();
-        getMultiplayerModesFieldBuilder();
-        getPlatformsFieldBuilder();
-        getPlayerPerspectivesFieldBuilder();
-        getReleaseDatesFieldBuilder();
-        getScreenshotsFieldBuilder();
-        getSimilarGamesFieldBuilder();
-        getStandaloneExpansionsFieldBuilder();
-        getThemesFieldBuilder();
-        getVideosFieldBuilder();
-        getWebsitesFieldBuilder();
-        getRemakesFieldBuilder();
-        getRemastersFieldBuilder();
-        getExpandedGamesFieldBuilder();
-        getPortsFieldBuilder();
-        getForksFieldBuilder();
-      }
+
     }
     @java.lang.Override
     public Builder clear() {
@@ -2000,32 +2008,36 @@ private static final long serialVersionUID = 0L;
 
       if (ageRatingsBuilder_ == null) {
         ageRatings_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
+        ageRatings_ = null;
         ageRatingsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000001);
       aggregatedRating_ = 0D;
 
       aggregatedRatingCount_ = 0;
 
       if (alternativeNamesBuilder_ == null) {
         alternativeNames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
+        alternativeNames_ = null;
         alternativeNamesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000002);
       if (artworksBuilder_ == null) {
         artworks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
       } else {
+        artworks_ = null;
         artworksBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000004);
       if (bundlesBuilder_ == null) {
         bundles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);
       } else {
+        bundles_ = null;
         bundlesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000008);
       category_ = 0;
 
       if (collectionBuilder_ == null) {
@@ -2048,22 +2060,25 @@ private static final long serialVersionUID = 0L;
       }
       if (dlcsBuilder_ == null) {
         dlcs_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
       } else {
+        dlcs_ = null;
         dlcsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000010);
       if (expansionsBuilder_ == null) {
         expansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
       } else {
+        expansions_ = null;
         expansionsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000020);
       if (externalGamesBuilder_ == null) {
         externalGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
       } else {
+        externalGames_ = null;
         externalGamesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000040);
       if (firstReleaseDateBuilder_ == null) {
         firstReleaseDate_ = null;
       } else {
@@ -2080,48 +2095,55 @@ private static final long serialVersionUID = 0L;
       }
       if (franchisesBuilder_ == null) {
         franchises_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000080);
       } else {
+        franchises_ = null;
         franchisesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000080);
       if (gameEnginesBuilder_ == null) {
         gameEngines_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000100);
       } else {
+        gameEngines_ = null;
         gameEnginesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000100);
       if (gameModesBuilder_ == null) {
         gameModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000200);
       } else {
+        gameModes_ = null;
         gameModesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000200);
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000400);
       } else {
+        genres_ = null;
         genresBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000400);
       hypes_ = 0;
 
       if (involvedCompaniesBuilder_ == null) {
         involvedCompanies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
       } else {
+        involvedCompanies_ = null;
         involvedCompaniesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00000800);
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00001000);
       } else {
+        keywords_ = null;
         keywordsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00001000);
       if (multiplayerModesBuilder_ == null) {
         multiplayerModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
       } else {
+        multiplayerModes_ = null;
         multiplayerModesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00002000);
       name_ = "";
 
       if (parentGameBuilder_ == null) {
@@ -2132,46 +2154,52 @@ private static final long serialVersionUID = 0L;
       }
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00004000);
       } else {
+        platforms_ = null;
         platformsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00004000);
       if (playerPerspectivesBuilder_ == null) {
         playerPerspectives_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00008000);
       } else {
+        playerPerspectives_ = null;
         playerPerspectivesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00008000);
       rating_ = 0D;
 
       ratingCount_ = 0;
 
       if (releaseDatesBuilder_ == null) {
         releaseDates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00010000);
       } else {
+        releaseDates_ = null;
         releaseDatesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00010000);
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00020000);
       } else {
+        screenshots_ = null;
         screenshotsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00020000);
       if (similarGamesBuilder_ == null) {
         similarGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00040000);
       } else {
+        similarGames_ = null;
         similarGamesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00040000);
       slug_ = "";
 
       if (standaloneExpansionsBuilder_ == null) {
         standaloneExpansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00080000);
       } else {
+        standaloneExpansions_ = null;
         standaloneExpansionsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00080000);
       status_ = 0;
 
       storyline_ = "";
@@ -2182,10 +2210,11 @@ private static final long serialVersionUID = 0L;
       bitField0_ = (bitField0_ & ~0x00100000);
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00200000);
       } else {
+        themes_ = null;
         themesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00200000);
       totalRating_ = 0D;
 
       totalRatingCount_ = 0;
@@ -2208,48 +2237,62 @@ private static final long serialVersionUID = 0L;
 
       if (videosBuilder_ == null) {
         videos_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00400000);
       } else {
+        videos_ = null;
         videosBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00400000);
       if (websitesBuilder_ == null) {
         websites_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00800000);
       } else {
+        websites_ = null;
         websitesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x00800000);
       checksum_ = "";
 
       if (remakesBuilder_ == null) {
         remakes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x01000000);
       } else {
+        remakes_ = null;
         remakesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x01000000);
       if (remastersBuilder_ == null) {
         remasters_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x02000000);
       } else {
+        remasters_ = null;
         remastersBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x02000000);
       if (expandedGamesBuilder_ == null) {
         expandedGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x04000000);
       } else {
+        expandedGames_ = null;
         expandedGamesBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x04000000);
       if (portsBuilder_ == null) {
         ports_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x08000000);
       } else {
+        ports_ = null;
         portsBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x08000000);
       if (forksBuilder_ == null) {
         forks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x10000000);
       } else {
+        forks_ = null;
         forksBuilder_.clear();
       }
+      bitField0_ = (bitField0_ & ~0x10000000);
+      if (languageSupportsBuilder_ == null) {
+        languageSupports_ = java.util.Collections.emptyList();
+      } else {
+        languageSupports_ = null;
+        languageSupportsBuilder_.clear();
+      }
+      bitField0_ = (bitField0_ & ~0x20000000);
       return this;
     }
 
@@ -2591,6 +2634,15 @@ private static final long serialVersionUID = 0L;
         result.forks_ = forks_;
       } else {
         result.forks_ = forksBuilder_.build();
+      }
+      if (languageSupportsBuilder_ == null) {
+        if (((bitField0_ & 0x20000000) != 0)) {
+          languageSupports_ = java.util.Collections.unmodifiableList(languageSupports_);
+          bitField0_ = (bitField0_ & ~0x20000000);
+        }
+        result.languageSupports_ = languageSupports_;
+      } else {
+        result.languageSupports_ = languageSupportsBuilder_.build();
       }
       onBuilt();
       return result;
@@ -11299,6 +11351,246 @@ private static final long serialVersionUID = 0L;
       }
       return forksBuilder_;
     }
+
+    private java.util.List<proto.LanguageSupport> languageSupports_ =
+      java.util.Collections.emptyList();
+    private void ensureLanguageSupportsIsMutable() {
+      if (!((bitField0_ & 0x20000000) != 0)) {
+        languageSupports_ = new java.util.ArrayList<proto.LanguageSupport>(languageSupports_);
+        bitField0_ |= 0x20000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.LanguageSupport, proto.LanguageSupport.Builder, proto.LanguageSupportOrBuilder> languageSupportsBuilder_;
+
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public java.util.List<proto.LanguageSupport> getLanguageSupportsList() {
+      if (languageSupportsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(languageSupports_);
+      } else {
+        return languageSupportsBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public int getLanguageSupportsCount() {
+      if (languageSupportsBuilder_ == null) {
+        return languageSupports_.size();
+      } else {
+        return languageSupportsBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public proto.LanguageSupport getLanguageSupports(int index) {
+      if (languageSupportsBuilder_ == null) {
+        return languageSupports_.get(index);
+      } else {
+        return languageSupportsBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder setLanguageSupports(
+        int index, proto.LanguageSupport value) {
+      if (languageSupportsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.set(index, value);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder setLanguageSupports(
+        int index, proto.LanguageSupport.Builder builderForValue) {
+      if (languageSupportsBuilder_ == null) {
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        languageSupportsBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder addLanguageSupports(proto.LanguageSupport value) {
+      if (languageSupportsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.add(value);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder addLanguageSupports(
+        int index, proto.LanguageSupport value) {
+      if (languageSupportsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.add(index, value);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder addLanguageSupports(
+        proto.LanguageSupport.Builder builderForValue) {
+      if (languageSupportsBuilder_ == null) {
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.add(builderForValue.build());
+        onChanged();
+      } else {
+        languageSupportsBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder addLanguageSupports(
+        int index, proto.LanguageSupport.Builder builderForValue) {
+      if (languageSupportsBuilder_ == null) {
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        languageSupportsBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder addAllLanguageSupports(
+        java.lang.Iterable<? extends proto.LanguageSupport> values) {
+      if (languageSupportsBuilder_ == null) {
+        ensureLanguageSupportsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, languageSupports_);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder clearLanguageSupports() {
+      if (languageSupportsBuilder_ == null) {
+        languageSupports_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x20000000);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public Builder removeLanguageSupports(int index) {
+      if (languageSupportsBuilder_ == null) {
+        ensureLanguageSupportsIsMutable();
+        languageSupports_.remove(index);
+        onChanged();
+      } else {
+        languageSupportsBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public proto.LanguageSupport.Builder getLanguageSupportsBuilder(
+        int index) {
+      return getLanguageSupportsFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public proto.LanguageSupportOrBuilder getLanguageSupportsOrBuilder(
+        int index) {
+      if (languageSupportsBuilder_ == null) {
+        return languageSupports_.get(index);  } else {
+        return languageSupportsBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public java.util.List<? extends proto.LanguageSupportOrBuilder> 
+         getLanguageSupportsOrBuilderList() {
+      if (languageSupportsBuilder_ != null) {
+        return languageSupportsBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(languageSupports_);
+      }
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public proto.LanguageSupport.Builder addLanguageSupportsBuilder() {
+      return getLanguageSupportsFieldBuilder().addBuilder(
+          proto.LanguageSupport.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public proto.LanguageSupport.Builder addLanguageSupportsBuilder(
+        int index) {
+      return getLanguageSupportsFieldBuilder().addBuilder(
+          index, proto.LanguageSupport.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
+     */
+    public java.util.List<proto.LanguageSupport.Builder> 
+         getLanguageSupportsBuilderList() {
+      return getLanguageSupportsFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.LanguageSupport, proto.LanguageSupport.Builder, proto.LanguageSupportOrBuilder> 
+        getLanguageSupportsFieldBuilder() {
+      if (languageSupportsBuilder_ == null) {
+        languageSupportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.LanguageSupport, proto.LanguageSupport.Builder, proto.LanguageSupportOrBuilder>(
+                languageSupports_,
+                ((bitField0_ & 0x20000000) != 0),
+                getParentForChildren(),
+                isClean());
+        languageSupports_ = null;
+      }
+      return languageSupportsBuilder_;
+    }
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -11337,10 +11629,11 @@ private static final long serialVersionUID = 0L;
         builder.mergeFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(builder.buildPartial());
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(
-                builder.buildPartial());
+        throw new com.google.protobuf.InvalidProtocolBufferException(e)
+            .setUnfinishedMessage(builder.buildPartial());
       }
       return builder.buildPartial();
     }

@@ -1,0 +1,24 @@
+
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: apitesting
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup JKD 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - name: Execute Gradle build
+        run: ./gradlew build
+        env:
+          client_id: "${{ secrets.CLIENT_ID }}"
+          client_secret: "${{ secrets.CLIENT_SECRET }}"
+          bearer: "${{ secrets.BEARER_TOKEN }}"

@@ -60,6 +60,38 @@ public enum ExternalGameCategoryEnum
    * <code>EXTERNALGAME_OCULUS = 28;</code>
    */
   EXTERNALGAME_OCULUS(28),
+  /**
+   * <code>EXTERNALGAME_UTOMIK = 29;</code>
+   */
+  EXTERNALGAME_UTOMIK(29),
+  /**
+   * <code>EXTERNALGAME_ITCH_IO = 30;</code>
+   */
+  EXTERNALGAME_ITCH_IO(30),
+  /**
+   * <code>EXTERNALGAME_XBOX_MARKETPLACE = 31;</code>
+   */
+  EXTERNALGAME_XBOX_MARKETPLACE(31),
+  /**
+   * <code>EXTERNALGAME_KARTRIDGE = 32;</code>
+   */
+  EXTERNALGAME_KARTRIDGE(32),
+  /**
+   * <code>EXTERNALGAME_PLAYSTATION_STORE_US = 36;</code>
+   */
+  EXTERNALGAME_PLAYSTATION_STORE_US(36),
+  /**
+   * <code>EXTERNALGAME_FOCUS_ENTERTAINMENT = 37;</code>
+   */
+  EXTERNALGAME_FOCUS_ENTERTAINMENT(37),
+  /**
+   * <code>EXTERNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD = 54;</code>
+   */
+  EXTERNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD(54),
+  /**
+   * <code>EXTERNALGAME_GAMEJOLT = 55;</code>
+   */
+  EXTERNALGAME_GAMEJOLT(55),
   UNRECOGNIZED(-1),
   ;
 
@@ -115,6 +147,38 @@ public enum ExternalGameCategoryEnum
    * <code>EXTERNALGAME_OCULUS = 28;</code>
    */
   public static final int EXTERNALGAME_OCULUS_VALUE = 28;
+  /**
+   * <code>EXTERNALGAME_UTOMIK = 29;</code>
+   */
+  public static final int EXTERNALGAME_UTOMIK_VALUE = 29;
+  /**
+   * <code>EXTERNALGAME_ITCH_IO = 30;</code>
+   */
+  public static final int EXTERNALGAME_ITCH_IO_VALUE = 30;
+  /**
+   * <code>EXTERNALGAME_XBOX_MARKETPLACE = 31;</code>
+   */
+  public static final int EXTERNALGAME_XBOX_MARKETPLACE_VALUE = 31;
+  /**
+   * <code>EXTERNALGAME_KARTRIDGE = 32;</code>
+   */
+  public static final int EXTERNALGAME_KARTRIDGE_VALUE = 32;
+  /**
+   * <code>EXTERNALGAME_PLAYSTATION_STORE_US = 36;</code>
+   */
+  public static final int EXTERNALGAME_PLAYSTATION_STORE_US_VALUE = 36;
+  /**
+   * <code>EXTERNALGAME_FOCUS_ENTERTAINMENT = 37;</code>
+   */
+  public static final int EXTERNALGAME_FOCUS_ENTERTAINMENT_VALUE = 37;
+  /**
+   * <code>EXTERNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD = 54;</code>
+   */
+  public static final int EXTERNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD_VALUE = 54;
+  /**
+   * <code>EXTERNALGAME_GAMEJOLT = 55;</code>
+   */
+  public static final int EXTERNALGAME_GAMEJOLT_VALUE = 55;
 
 
   public final int getNumber() {
@@ -154,6 +218,14 @@ public enum ExternalGameCategoryEnum
       case 23: return EXTERNALGAME_AMAZON_ADG;
       case 26: return EXTERNALGAME_EPIC_GAME_STORE;
       case 28: return EXTERNALGAME_OCULUS;
+      case 29: return EXTERNALGAME_UTOMIK;
+      case 30: return EXTERNALGAME_ITCH_IO;
+      case 31: return EXTERNALGAME_XBOX_MARKETPLACE;
+      case 32: return EXTERNALGAME_KARTRIDGE;
+      case 36: return EXTERNALGAME_PLAYSTATION_STORE_US;
+      case 37: return EXTERNALGAME_FOCUS_ENTERTAINMENT;
+      case 54: return EXTERNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD;
+      case 55: return EXTERNALGAME_GAMEJOLT;
       default: return null;
     }
   }

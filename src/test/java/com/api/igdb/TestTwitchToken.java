@@ -3,6 +3,8 @@ package com.api.igdb;
 import com.api.igdb.request.TwitchAuthenticator;
 import com.api.igdb.utils.TwitchToken;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestTwitchToken {
 
@@ -13,9 +15,10 @@ public class TestTwitchToken {
         // request a new Twitch Authentication token
         TwitchToken token = tAuth.requestTwitchToken(System.getenv("client_id"), System.getenv("client_secret"));
 
-        assert(token != null);
-        assert(token.getExpires_in() > 5000000);
-        Long tokenFutureDate = System.currentTimeMillis() + 5000000; // 57 days
-        assert(tokenFutureDate > token.getExpiresUnix());
+        assertNotNull(token);
+        System.out.println(token.getExpires_in());
+        assertTrue(token.getExpires_in() > 5000000);
+        long tokenFutureDate = System.currentTimeMillis() + 5000000; // 57 days
+        assertTrue(tokenFutureDate > token.getExpiresUnix());
     }
 }

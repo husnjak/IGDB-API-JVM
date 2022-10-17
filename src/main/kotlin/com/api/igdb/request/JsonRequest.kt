@@ -125,6 +125,21 @@ fun IGDBWrapper.jsonKeywords(APICalypse: APICalypse): String {
 }
 
 @Throws(RequestException::class)
+fun IGDBWrapper.jsonLanguages(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.LANGUAGES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonLanguageSupports(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.LANGUAGE_SUPPORT, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonLanguageSupportTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.LANGUAGE_SUPPORT_TYPES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
 fun IGDBWrapper.jsonMultiplayerModes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.MULTIPLAYER_MODES, APICalypse.buildQuery())
 }

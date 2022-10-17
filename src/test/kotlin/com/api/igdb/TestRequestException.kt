@@ -6,11 +6,20 @@ import com.api.igdb.request.IGDBWrapper
 import com.api.igdb.request.games
 import com.api.igdb.request.jsonGameModes
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.assertThrows
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class TestRequestExceptions {
-    val wrapper = IGDBWrapper
+    private val wrapper = IGDBWrapper
+
+    @BeforeAll
+    internal fun beforeAll() {
+        wrapper.setCredentials("", "")
+    }
 
     @Test
     fun testNoKeyException() {
