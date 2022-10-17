@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.dokka") version "1.7.20"
     id("maven-publish")
     id("de.undercouch.download") version "4.0.4"
-    id("com.google.protobuf") version "0.8.14"
+    id("com.google.protobuf") version "0.8.19"
 }
 
 group = "com.api.igdb"
