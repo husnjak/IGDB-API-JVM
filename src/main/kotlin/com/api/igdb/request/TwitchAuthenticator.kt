@@ -13,7 +13,7 @@ object TwitchAuthenticator {
 
     private var twitchClientID: String = ""
     private var twitchClientSecret: String = ""
-    var twitchToken: TwitchToken? = null
+    private var twitchToken: TwitchToken? = null
 
     /**
      * The Twitch OAuth request function

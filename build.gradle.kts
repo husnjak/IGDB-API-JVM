@@ -6,11 +6,12 @@ plugins {
     kotlin("jvm") version "1.7.20"
     id("org.jetbrains.dokka") version "1.7.20"
     id("maven-publish")
+    id("signing")
     id("de.undercouch.download") version "4.0.4"
     id("com.google.protobuf") version "0.8.19"
 }
 
-group = "com.api.igdb"
+group = "io.github.husnjak"
 version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
@@ -116,6 +117,7 @@ publishing {
             }
 
             pom {
+                name.set("igdb-api-jvm")
                 description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")
                 url.set("https://github.com/husnjak/igdb-api-jvm.git")
                 licenses {
@@ -129,6 +131,11 @@ publishing {
                         id.set("husnjak")
                     }
                 }
+                scm {
+                    connection.set("scm:git:https://github.com/husnjak/IGDB-API-JVM.git")
+                    developerConnection.set("scm:git:git@github.com:husnjak/IGDB-API-JVM.git")
+                    url.set("https://github.com/husnjak/IGDB-API-JVM")
+                }
             }
         }
     }
@@ -141,5 +148,22 @@ publishing {
                 password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
             }
         }
+        maven {
+            name = "Sonatype"
+            val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+            val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+            url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            credentials {
+                username = findProperty("oss.user") as String? ?: System.getenv("SONATYPE_USERNAME")
+                password = findProperty("oss.key") as String? ?: System.getenv("SONATYPE_TOKEN")
+            }
+        }
     }
+}
+
+signing {
+    val signingKey: String? = findProperty("signing.keyId")?.toString()
+    val signingPassword: String? = findProperty("signing.password")?.toString()
+    useInMemoryPgpKeys(signingKey, signingPassword)
+    sign(publishing.publications["gpr"])
 }
