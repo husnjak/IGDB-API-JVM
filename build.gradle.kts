@@ -144,8 +144,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
-                username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
-                password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+                username = project.property("github_actor").toString()
+                password = project.property("github_token").toString()
             }
         }
         maven {
@@ -154,10 +154,8 @@ publishing {
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
-                val ossrhUsername = project.property("ossrhUsername").toString()
-                val ossrhPassword = project.property("ossrhPassword").toString()
-                username = ossrhUsername ?: System.getenv("SONATYPE_USERNAME")
-                password = ossrhPassword ?: System.getenv("SONATYPE_TOKEN")
+                username = project.property("sonatypeUsername").toString()
+                password = project.property("sonatypePassword").toString()
             }
         }
     }
@@ -169,8 +167,8 @@ publishing {
 //}
 
 signing {
-    val signingKey = project.property("signing.gnupg.keyName").toString()
-    val signingPassword = project.property("signing.gnupg.passphrase").toString()
+    val signingKey = project.property("signingKey").toString()
+    val signingPassword = project.property("signingPassphrase").toString()
     useInMemoryPgpKeys(signingKey, signingPassword)
     sign(configurations.archives.get())
 }
