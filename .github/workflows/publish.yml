@@ -45,7 +45,7 @@ jobs:
           ORG_GRADLE_PROJECT_sonatype_password: ${{ secrets.SONATYPE_PASSWORD }}
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.PGP_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.PGP_PASSPHRASE }}
-          ORG_GRADLE_PROJECT_version: ${{GITHUB_REF##*/}}-${{ github.run_id }}-SNAPSHOT
+          ORG_GRADLE_PROJECT_version: ${GITHUB_REF##*/}-${{ github.run_id }}-SNAPSHOT
       - if: github.event.inputs.packagePrefix == ''
         name: Publish package
         run: ./gradlew publish --no-daemon
