@@ -1,3 +1,4 @@
+![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm)
 [![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
 # IGDB API-JVM (V4)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
@@ -30,35 +31,22 @@ The Wrapper can handle both the IGDB generated classes and JSON (Strings), I hav
 __Maven__
 
 ```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-
 <dependency>
-    <groupId>com.github.husnjak</groupId>
-    <artifactId>IGDB-API-JVM</artifactId>
-    <version>1.0.6</version>
+  <groupId>io.github.husnjak</groupId>
+  <artifactId>igdb-api-jvm</artifactId>
+  <version>1.0.7</version>
 </dependency>
 ```
 
 __Gradle__
-  
-Step 1. Add this in your root build.gradle at the end of the repositories:
-```Gradle
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-```
-  Step 2. Add the dependency
-``` Gradle
+
+``` gradle
 dependencies {
-    implementation 'com.github.husnjak:IGDB-API-JVM:1.0.6'
+    implementation 'io.github.husnjak:igdb-api-jvm:1.0.7'
 }
 ```
-  Optional Step 3 (Android, SDK: 19+). Add internet permissions in the manifest.
+
+  Optional for Android (SDK: 19+). Add internet permissions in the manifest.
 ``` xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
@@ -105,6 +93,22 @@ You can use the access_token from the token object.
 ### Android projects
 Do not use the `TwitchAuthenticator` in your Android applications, you don't want to create multiple access_tokens for each device.  
 It is recommended to create your token on a server and then use a proxy api to call the IGDB api, where you append the Bearer token for each request.
+
+IGDB provides a [free AWS CloudFormation template](https://api-docs.igdb.com/#proxy) that you can deploy for this purpose with instructions on how to use it.
+* Create a new IGDBWrapper Object connected to the AWS Proxy server.
+``` java
+// Java Example
+IGDBWrapper wrapper = IGDBWrapper.INSTANCE;
+Map<String, String> proxyHeaders = new HashMap<String, String>() {{
+    put("x-api-key", "PROXY_API_KEY");
+}};
+wrapper.setupProxy("PROXY_URL/v4", proxyHeaders);
+```
+``` kotlin
+// Kotlin Example
+IGDBWrapper.setupProxy("PROXY_URL/v4", mapOf("x-api-key" to "PROXY_API_KEY"))
+```
+
 # How to use the wrapper
 The wrapper has two "wrapping" functions, and a lot of helper functions (one for each endpoint)  
 The two main functions called `apiProtoRequest` and `apiJsonRequest` and they handle all the requests to the api.  

@@ -17,8 +17,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Execute Gradle build
-        run: ./gradlew build
+        run: ./gradlew build --no-daemon -x publish -x sign
         env:
           client_id: "${{ secrets.CLIENT_ID }}"
           client_secret: "${{ secrets.CLIENT_SECRET }}"
           bearer: "${{ secrets.BEARER_TOKEN }}"
+          ORG_GRADLE_PROJECT_version: Build-${{ github.run_id }}"

@@ -6,12 +6,13 @@ plugins {
     kotlin("jvm") version "1.7.20"
     id("org.jetbrains.dokka") version "1.7.20"
     id("maven-publish")
+    id("signing")
     id("de.undercouch.download") version "4.0.4"
     id("com.google.protobuf") version "0.8.19"
 }
 
-group = "com.api.igdb"
-version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
+group = "io.github.husnjak"
+version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.21.7"
@@ -90,6 +91,7 @@ val dokkaJar by tasks.creating(Jar::class) {
 }
 
 val sourcesJar by tasks.creating(Jar::class) {
+    dependsOn("generateProto")
     manifest {
         attributes("Main-Class" to "com.api.igdb.ApiRequesterKt")
     }
@@ -101,7 +103,7 @@ val sourcesJar by tasks.creating(Jar::class) {
 
 publishing {
     publications {
-        register<MavenPublication>("gpr") {
+        create<MavenPublication>("maven") {
             from(components["kotlin"])
             artifact(dokkaJar)
             artifact(sourcesJar)
@@ -116,6 +118,7 @@ publishing {
             }
 
             pom {
+                name.set("igdb-api-jvm")
                 description.set("Kotlin wrapper for the IGDB API compiled for the JVM.")
                 url.set("https://github.com/husnjak/igdb-api-jvm.git")
                 licenses {
@@ -129,6 +132,11 @@ publishing {
                         id.set("husnjak")
                     }
                 }
+                scm {
+                    connection.set("scm:git:https://github.com/husnjak/IGDB-API-JVM.git")
+                    developerConnection.set("scm:git:git@github.com:husnjak/IGDB-API-JVM.git")
+                    url.set("https://github.com/husnjak/IGDB-API-JVM")
+                }
             }
         }
     }
@@ -137,9 +145,31 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
-                username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
-                password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+                username = findProperty("github_actor") as String?
+                password = findProperty("github_token") as String?
+            }
+        }
+        maven {
+            name = "Sonatype"
+            val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+            val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+            url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            println("Sonatype release version: $version using: $url")
+            credentials {
+                username = findProperty("sonatype_username") as String?
+                password = findProperty("sonatype_password") as String?
             }
         }
     }
+}
+
+signing {
+    if (version.toString().contains("local")) {
+        useGpgCmd()
+    } else {
+        val signingKey: String? by project
+        val signingPassword: String? by project
+        useInMemoryPgpKeys(signingKey, signingPassword)
+    }
+    sign(publishing.publications["maven"])
 }

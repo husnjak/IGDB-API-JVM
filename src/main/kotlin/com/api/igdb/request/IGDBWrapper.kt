@@ -7,21 +7,33 @@ import com.github.kittinunf.fuel.httpPost
 /**
  * The ApiRequester object holds the API Key and uses it to request the IGDB API.
  */
-private const val IGDB_API_URL = "https://api.igdb.com/v4"
+private var IGDB_API_URL = "https://api.igdb.com/v4"
 object IGDBWrapper {
     private var requestHeaders: Map<String, Any> = mapOf("x-user-agent" to "igdb-api-jvm")
 
     /**
      * The Set method for API Credentials
      *
-     * @property endpoint The endpoint the request
-     * @property query The Api query to request with
-     * @return The raw ByteArray to use with generated proto files
+     * @property clientID The IGDB ClientID
+     * @property accessToken The IGDB AccessToken
      */
     fun setCredentials(clientID: String, accessToken: String) {
         requestHeaders = mapOf(
             "client-id" to clientID,
-            "authorization" to "Bearer $accessToken", "x-user-agent" to "igdb-api-jvm")
+            "authorization" to "Bearer $accessToken",
+            "x-user-agent" to "igdb-api-jvm")
+    }
+
+    /**
+     * The set method for Proxy credentials
+     *
+     * @property proxyURL The url of the Proxy Server
+     * @property proxyHeaders The headers to send to the Proxy Server
+     */
+    fun setupProxy(proxyURL: String, proxyHeaders: Map<String, String>) {
+        IGDB_API_URL = proxyURL
+        proxyHeaders.toMutableMap()["x-user-agent"] = "igdb-api-jvm"
+        requestHeaders = proxyHeaders.toMap()
     }
 
     /**
