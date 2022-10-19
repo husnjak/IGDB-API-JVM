@@ -153,7 +153,7 @@ publishing {
             val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
-            println("Sonatype release version: ${version.toString()} using: $url")
+            println("Sonatype release version: $version using: $url")
             credentials {
                 username = findProperty("sonatype_username") as String?
                 password = findProperty("sonatype_password") as String?
