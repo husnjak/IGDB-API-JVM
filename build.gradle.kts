@@ -91,6 +91,7 @@ val dokkaJar by tasks.creating(Jar::class) {
 }
 
 val sourcesJar by tasks.creating(Jar::class) {
+    dependsOn("generateProto")
     manifest {
         attributes("Main-Class" to "com.api.igdb.ApiRequesterKt")
     }
@@ -102,7 +103,7 @@ val sourcesJar by tasks.creating(Jar::class) {
 
 publishing {
     publications {
-        register<MavenPublication>("Maven") {
+        create<MavenPublication>("maven") {
             from(components["kotlin"])
             artifact(dokkaJar)
             artifact(sourcesJar)
@@ -170,6 +171,5 @@ signing {
         val signingPassword: String? by project
         useInMemoryPgpKeys(signingKey, signingPassword)
     }
-
-    sign(configurations.archives.get())
+    sign(publishing.publications["maven"])
 }
