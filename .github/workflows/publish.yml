@@ -45,10 +45,10 @@ jobs:
         name: Publish package
         run: ./gradlew publish
         env:
-          ORG_GRADLE_PROJECT_github_token: ${{ secrets.GITHUB_TOKEN }}
-          ORG_GRADLE_PROJECT_github_actor: ${ GITHUB_ACTOR }
-          ORG_GRADLE_PROJECT_sonatypeUsername: ${{ secrets.SONATYPE_USERNAME }}
-          ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.SONATYPE_PASSWORD }}
-          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.PGP_KEY }}
-          ORG_GRADLE_PROJECT_signingPassphrase: ${{ secrets.PGP_PASSPHRASE }}
+          ORG_GRADLE_PROJECT_github.token: ${{ secrets.GITHUB_TOKEN }}
+          ORG_GRADLE_PROJECT_github.actor: ${ GITHUB_ACTOR }
+          ORG_GRADLE_PROJECT_sonatype.username: ${{ secrets.SONATYPE_USERNAME }}
+          ORG_GRADLE_PROJECT_sonatype.password: ${{ secrets.SONATYPE_PASSWORD }}
+          ORG_GRADLE_PROJECT_signing.gnupg.keyName: ${{ secrets.PGP_KEY_NAME }}
+          ORG_GRADLE_PROJECT_signing.gnupg.passphrase: ${{ secrets.PGP_PASSPHRASE }}
           RELEASE_VERSION: ${{ github.event.release.tag_name }} || "${ GITHUB_REF##*/ }-${{ github.run_id }}-SNAPSHOT"

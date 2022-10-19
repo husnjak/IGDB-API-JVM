@@ -144,8 +144,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
-                username = project.property("github_actor").toString()
-                password = project.property("github_token").toString()
+                username = project.property("github.actor").toString()
+                password = project.property("github.token").toString()
             }
         }
         maven {
@@ -154,21 +154,21 @@ publishing {
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
-                username = project.property("sonatypeUsername").toString()
-                password = project.property("sonatypePassword").toString()
+                username = project.property("sonatype.username").toString()
+                password = project.property("sonatype.password").toString()
             }
         }
     }
 }
 
-//signing {
-//    useGpgCmd()
-//    sign(configurations.archives.get())
-//}
-
 signing {
-    val signingKey = project.property("signingKey").toString()
-    val signingPassword = project.property("signingPassphrase").toString()
-    useInMemoryPgpKeys(signingKey, signingPassword)
+    useGpgCmd()
     sign(configurations.archives.get())
 }
+
+//signing {
+//    val signingKey = project.property("signingKey").toString()
+//    val signingPassword = project.property("signingPassphrase").toString()
+//    useInMemoryPgpKeys(signingKey, signingPassword)
+//    sign(configurations.archives.get())
+//}
