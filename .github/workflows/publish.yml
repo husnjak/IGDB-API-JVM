@@ -43,7 +43,7 @@ jobs:
 #          RELEASE_VERSION: ${{ github.run_id }}
       - if: ${{ github.event.inputs.packagePrefix == '' || github.event.release.tag_name == '' }}
         name: Publish package
-        run: ./gradlew publish
+        run: ./gradlew publish --no-daemon
         env:
           ORG_GRADLE_PROJECT_github.token: ${{ secrets.GITHUB_TOKEN }}
           ORG_GRADLE_PROJECT_github.actor: ${ GITHUB_ACTOR }

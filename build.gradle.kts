@@ -144,8 +144,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
-                username = project.property("github.actor").toString()
-                password = project.property("github.token").toString()
+                username = findProperty("github.actor") as String?
+                password = findProperty("github.token") as String?
             }
         }
         maven {
@@ -154,8 +154,8 @@ publishing {
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
-                username = project.property("sonatype.username").toString()
-                password = project.property("sonatype.password").toString()
+                username = findProperty("sonatype.username") as String?
+                password = findProperty("sonatype.password") as String?
             }
         }
     }
