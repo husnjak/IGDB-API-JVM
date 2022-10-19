@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "io.github.husnjak"
-version = project.property("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
+version = project.property("version").toString()
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.21.7"

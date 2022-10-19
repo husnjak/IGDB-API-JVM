@@ -22,3 +22,4 @@ jobs:
           client_id: "${{ secrets.CLIENT_ID }}"
           client_secret: "${{ secrets.CLIENT_SECRET }}"
           bearer: "${{ secrets.BEARER_TOKEN }}"
+          ORG_GRADLE_PROJECT_version: ${{ github.event.release.tag_name }} || "${ GITHUB_REF##*/ }-${{ github.run_id }}-SNAPSHOT"
