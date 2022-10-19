@@ -9,7 +9,7 @@ on:
     inputs:
       packagePrefix:
         required: true
-        default: 'test'
+        default: 'SNAPSHOT'
         description: "Packages require a package version"
   release:
     types: # This configuration does not affect the page_build event above
@@ -40,8 +40,8 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
       - if: github.event.release.tag_name == ''
-        name: Publish release package
-        run: gradle publish
+        name: Publish SNAPSHOT package
+        run: ./gradlew publish --no-daemon
         env:
           ORG_GRADLE_PROJECT_github_token: ${{ secrets.GITHUB_TOKEN }}
           ORG_GRADLE_PROJECT_github_actor: ${ GITHUB_ACTOR }
@@ -49,9 +49,9 @@ jobs:
           ORG_GRADLE_PROJECT_sonatype_password: ${{ secrets.SONATYPE_PASSWORD }}
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.PGP_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.PGP_PASSPHRASE }}
-          ORG_GRADLE_PROJECT_version: ${{ steps.extract_branch.outputs.branch }}-${{ github.run_id }}-SNAPSHOT
+          ORG_GRADLE_PROJECT_version: ${{ steps.extract_branch.outputs.branch }}-${{ github.run_id }}-${{ github.event.inputs.packagePrefix }}
       - if: github.event.inputs.packagePrefix == ''
-        name: Publish package
+        name: Publish Release package
         run: ./gradlew publish --no-daemon
         env:
           ORG_GRADLE_PROJECT_github_token: ${{ secrets.GITHUB_TOKEN }}
