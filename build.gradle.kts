@@ -102,7 +102,7 @@ val sourcesJar by tasks.creating(Jar::class) {
 
 publishing {
     publications {
-        register<MavenPublication>("gpr") {
+        register<MavenPublication>("Maven") {
             from(components["kotlin"])
             artifact(dokkaJar)
             artifact(sourcesJar)
@@ -153,6 +153,7 @@ publishing {
             val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            println("Sonatype release version: ${version.toString()} using: $url")
             credentials {
                 username = findProperty("sonatype_username") as String?
                 password = findProperty("sonatype_password") as String?
@@ -172,10 +173,3 @@ signing {
 
     sign(configurations.archives.get())
 }
-
-//signing {
-//    val signingKey = project.property("signingKey").toString()
-//    val signingPassword = project.property("signingPassphrase").toString()
-//    useInMemoryPgpKeys(signingKey, signingPassword)
-//    sign(configurations.archives.get())
-//}

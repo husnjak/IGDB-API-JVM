@@ -35,12 +35,17 @@ jobs:
           distribution: 'adopt'
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-#      - if: github.event.release.tag_name == ''
-#        name: Publish release package
-#        run: gradle publish
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          RELEASE_VERSION: ${{ github.run_id }}
+      - if: github.event.release.tag_name == ''
+        name: Publish release package
+        run: gradle publish
+        env:
+          ORG_GRADLE_PROJECT_github_token: ${{ secrets.GITHUB_TOKEN }}
+          ORG_GRADLE_PROJECT_github_actor: ${ GITHUB_ACTOR }
+          ORG_GRADLE_PROJECT_sonatype_username: ${{ secrets.SONATYPE_USERNAME }}
+          ORG_GRADLE_PROJECT_sonatype_password: ${{ secrets.SONATYPE_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.PGP_KEY }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.PGP_PASSPHRASE }}
+          ORG_GRADLE_PROJECT_version: "${GITHUB_REF##*/}-${{ github.run_id }}-SNAPSHOT"
       - if: ${{ github.event.inputs.packagePrefix == '' || github.event.release.tag_name == '' }}
         name: Publish package
         run: ./gradlew publish --no-daemon
@@ -51,4 +56,4 @@ jobs:
           ORG_GRADLE_PROJECT_sonatype_password: ${{ secrets.SONATYPE_PASSWORD }}
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.PGP_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.PGP_PASSPHRASE }}
-          RELEASE_VERSION: ${{ github.event.release.tag_name }} || "${ GITHUB_REF##*/ }-${{ github.run_id }}-SNAPSHOT"
+          ORG_GRADLE_PROJECT_version: ${{ github.event.release.tag_name }}
