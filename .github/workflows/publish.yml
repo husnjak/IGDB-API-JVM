@@ -10,7 +10,7 @@ on:
       packagePrefix:
         required: true
         default: 'SNAPSHOT'
-        description: "Packages require a package version"
+        description: "Packages require a package version, Keep SNAPSHOT for snapshot upload. Replace SNAPSHOT for staging deploy."
   release:
     types: # This configuration does not affect the page_build event above
       - created

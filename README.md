@@ -1,3 +1,4 @@
+![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm)
 [![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
 # IGDB API-JVM (V4)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
@@ -45,7 +46,7 @@ dependencies {
 }
 ```
 
-  Optional (Android, SDK: 19+). Add internet permissions in the manifest.
+  Optional for Android (SDK: 19+). Add internet permissions in the manifest.
 ``` xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
