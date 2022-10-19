@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "io.github.husnjak"
-version = project.findProperty("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
+version = project.property("com.api.igdb.version") ?: System.getenv("RELEASE_VERSION")
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.21.7"
@@ -152,18 +152,25 @@ publishing {
             name = "Sonatype"
             val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
-            url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
-                username = findProperty("oss.user") as String? ?: System.getenv("SONATYPE_USERNAME")
-                password = findProperty("oss.key") as String? ?: System.getenv("SONATYPE_TOKEN")
+                val ossrhUsername = project.property("ossrhUsername").toString()
+                val ossrhPassword = project.property("ossrhPassword").toString()
+                username = ossrhUsername ?: System.getenv("SONATYPE_USERNAME")
+                password = ossrhPassword ?: System.getenv("SONATYPE_TOKEN")
             }
         }
     }
 }
 
+//signing {
+//    useGpgCmd()
+//    sign(configurations.archives.get())
+//}
+
 signing {
-    val signingKey: String? = findProperty("signing.keyId")?.toString()
-    val signingPassword: String? = findProperty("signing.password")?.toString()
+    val signingKey = project.property("signing.gnupg.keyName").toString()
+    val signingPassword = project.property("signing.gnupg.passphrase").toString()
     useInMemoryPgpKeys(signingKey, signingPassword)
-    sign(publishing.publications["gpr"])
+    sign(configurations.archives.get())
 }
