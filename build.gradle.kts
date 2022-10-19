@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "io.github.husnjak"
-version = project.property("version").toString()
+version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.21.7"
@@ -144,8 +144,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/husnjak/igdb-api-jvm")
             credentials {
-                username = findProperty("github.actor") as String?
-                password = findProperty("github.token") as String?
+                username = findProperty("github_actor") as String?
+                password = findProperty("github_token") as String?
             }
         }
         maven {
@@ -154,15 +154,22 @@ publishing {
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
             url = if (version.toString().contains("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
-                username = findProperty("sonatype.username") as String?
-                password = findProperty("sonatype.password") as String?
+                username = findProperty("sonatype_username") as String?
+                password = findProperty("sonatype_password") as String?
             }
         }
     }
 }
 
 signing {
-    useGpgCmd()
+    if (version.toString().contains("local")) {
+        useGpgCmd()
+    } else {
+        val signingKey: String? by project
+        val signingPassword: String? by project
+        useInMemoryPgpKeys(signingKey, signingPassword)
+    }
+
     sign(configurations.archives.get())
 }
 
