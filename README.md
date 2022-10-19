@@ -1,4 +1,4 @@
-![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm)
+![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm?versionPrefix=1.0.7)
 [![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
 # IGDB API-JVM (V4)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
