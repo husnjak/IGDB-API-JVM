@@ -171,6 +171,12 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testGameLocalizations() {
+        val result = wrapper.gameLocalizations(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testGameModes() {
         val result = wrapper.gameModes(APICalypse())
         assert(result.isNotEmpty())
@@ -272,6 +278,11 @@ class TestProtobufRequest {
         assert(result.isNotEmpty())
     }
 
+    @Test
+    fun testRegions() {
+        val result = wrapper.regions(APICalypse())
+        assert(result.isNotEmpty())
+    }
     @Test
     fun testReleaseDates() {
         val result = wrapper.releaseDates(APICalypse())
