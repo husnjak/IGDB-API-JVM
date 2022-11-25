@@ -999,4 +999,28 @@ public interface GameOrBuilder extends
    */
   proto.LanguageSupportOrBuilder getLanguageSupportsOrBuilder(
       int index);
+
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  java.util.List<proto.GameLocalization> 
+      getGameLocalizationsList();
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  proto.GameLocalization getGameLocalizations(int index);
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  int getGameLocalizationsCount();
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  java.util.List<? extends proto.GameLocalizationOrBuilder> 
+      getGameLocalizationsOrBuilderList();
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  proto.GameLocalizationOrBuilder getGameLocalizationsOrBuilder(
+      int index);
 }

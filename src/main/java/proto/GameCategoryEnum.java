@@ -60,6 +60,14 @@ public enum GameCategoryEnum
    * <code>FORK = 12;</code>
    */
   FORK(12),
+  /**
+   * <code>PACK = 13;</code>
+   */
+  PACK(13),
+  /**
+   * <code>UPDATE = 14;</code>
+   */
+  UPDATE(14),
   UNRECOGNIZED(-1),
   ;
 
@@ -115,6 +123,14 @@ public enum GameCategoryEnum
    * <code>FORK = 12;</code>
    */
   public static final int FORK_VALUE = 12;
+  /**
+   * <code>PACK = 13;</code>
+   */
+  public static final int PACK_VALUE = 13;
+  /**
+   * <code>UPDATE = 14;</code>
+   */
+  public static final int UPDATE_VALUE = 14;
 
 
   public final int getNumber() {
@@ -154,6 +170,8 @@ public enum GameCategoryEnum
       case 10: return EXPANDED_GAME;
       case 11: return PORT;
       case 12: return FORK;
+      case 13: return PACK;
+      case 14: return UPDATE;
       default: return null;
     }
   }

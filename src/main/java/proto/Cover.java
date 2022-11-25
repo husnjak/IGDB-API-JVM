@@ -241,6 +241,32 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int GAME_LOCALIZATION_FIELD_NUMBER = 10;
+  private proto.GameLocalization gameLocalization_;
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   * @return Whether the gameLocalization field is set.
+   */
+  @java.lang.Override
+  public boolean hasGameLocalization() {
+    return gameLocalization_ != null;
+  }
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   * @return The gameLocalization.
+   */
+  @java.lang.Override
+  public proto.GameLocalization getGameLocalization() {
+    return gameLocalization_ == null ? proto.GameLocalization.getDefaultInstance() : gameLocalization_;
+  }
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   */
+  @java.lang.Override
+  public proto.GameLocalizationOrBuilder getGameLocalizationOrBuilder() {
+    return getGameLocalization();
+  }
+
   public static proto.Cover parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -386,6 +412,12 @@ private static final long serialVersionUID = 0L;
 
       checksum_ = "";
 
+      if (gameLocalizationBuilder_ == null) {
+        gameLocalization_ = null;
+      } else {
+        gameLocalization_ = null;
+        gameLocalizationBuilder_ = null;
+      }
       return this;
     }
 
@@ -425,6 +457,11 @@ private static final long serialVersionUID = 0L;
       result.url_ = url_;
       result.width_ = width_;
       result.checksum_ = checksum_;
+      if (gameLocalizationBuilder_ == null) {
+        result.gameLocalization_ = gameLocalization_;
+      } else {
+        result.gameLocalization_ = gameLocalizationBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -962,6 +999,125 @@ private static final long serialVersionUID = 0L;
       checksum_ = value;
       onChanged();
       return this;
+    }
+
+    private proto.GameLocalization gameLocalization_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder> gameLocalizationBuilder_;
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     * @return Whether the gameLocalization field is set.
+     */
+    public boolean hasGameLocalization() {
+      return gameLocalizationBuilder_ != null || gameLocalization_ != null;
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     * @return The gameLocalization.
+     */
+    public proto.GameLocalization getGameLocalization() {
+      if (gameLocalizationBuilder_ == null) {
+        return gameLocalization_ == null ? proto.GameLocalization.getDefaultInstance() : gameLocalization_;
+      } else {
+        return gameLocalizationBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public Builder setGameLocalization(proto.GameLocalization value) {
+      if (gameLocalizationBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        gameLocalization_ = value;
+        onChanged();
+      } else {
+        gameLocalizationBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public Builder setGameLocalization(
+        proto.GameLocalization.Builder builderForValue) {
+      if (gameLocalizationBuilder_ == null) {
+        gameLocalization_ = builderForValue.build();
+        onChanged();
+      } else {
+        gameLocalizationBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public Builder mergeGameLocalization(proto.GameLocalization value) {
+      if (gameLocalizationBuilder_ == null) {
+        if (gameLocalization_ != null) {
+          gameLocalization_ =
+            proto.GameLocalization.newBuilder(gameLocalization_).mergeFrom(value).buildPartial();
+        } else {
+          gameLocalization_ = value;
+        }
+        onChanged();
+      } else {
+        gameLocalizationBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public Builder clearGameLocalization() {
+      if (gameLocalizationBuilder_ == null) {
+        gameLocalization_ = null;
+        onChanged();
+      } else {
+        gameLocalization_ = null;
+        gameLocalizationBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public proto.GameLocalization.Builder getGameLocalizationBuilder() {
+      
+      onChanged();
+      return getGameLocalizationFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    public proto.GameLocalizationOrBuilder getGameLocalizationOrBuilder() {
+      if (gameLocalizationBuilder_ != null) {
+        return gameLocalizationBuilder_.getMessageOrBuilder();
+      } else {
+        return gameLocalization_ == null ?
+            proto.GameLocalization.getDefaultInstance() : gameLocalization_;
+      }
+    }
+    /**
+     * <code>.proto.GameLocalization game_localization = 10;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder> 
+        getGameLocalizationFieldBuilder() {
+      if (gameLocalizationBuilder_ == null) {
+        gameLocalizationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder>(
+                getGameLocalization(),
+                getParentForChildren(),
+                isClean());
+        gameLocalization_ = null;
+      }
+      return gameLocalizationBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
