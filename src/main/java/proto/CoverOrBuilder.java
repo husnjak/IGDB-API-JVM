@@ -87,4 +87,19 @@ public interface CoverOrBuilder extends
    */
   com.google.protobuf.ByteString
       getChecksumBytes();
+
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   * @return Whether the gameLocalization field is set.
+   */
+  boolean hasGameLocalization();
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   * @return The gameLocalization.
+   */
+  proto.GameLocalization getGameLocalization();
+  /**
+   * <code>.proto.GameLocalization game_localization = 10;</code>
+   */
+  proto.GameLocalizationOrBuilder getGameLocalizationOrBuilder();
 }

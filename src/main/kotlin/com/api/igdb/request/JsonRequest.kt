@@ -85,6 +85,11 @@ fun IGDBWrapper.jsonGameEngineLogos(APICalypse: APICalypse): String {
 }
 
 @Throws(RequestException::class)
+fun IGDBWrapper.jsonGameLocalizations(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.GAME_LOCALIZATIONS, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
 fun IGDBWrapper.jsonGameModes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.GAME_MODES, APICalypse.buildQuery())
 }
@@ -131,7 +136,7 @@ fun IGDBWrapper.jsonLanguages(APICalypse: APICalypse): String {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonLanguageSupports(APICalypse: APICalypse): String {
-    return apiJsonRequest(Endpoints.LANGUAGE_SUPPORT, APICalypse.buildQuery())
+    return apiJsonRequest(Endpoints.LANGUAGE_SUPPORTS, APICalypse.buildQuery())
 }
 
 @Throws(RequestException::class)
@@ -162,6 +167,11 @@ fun IGDBWrapper.jsonPlatformVersions(APICalypse: APICalypse): String {
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonPlatformVersionCompanies(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.PLATFORM_VERSION_COMPANIES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonRegions(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.REGIONS, APICalypse.buildQuery())
 }
 
 @Throws(RequestException::class)

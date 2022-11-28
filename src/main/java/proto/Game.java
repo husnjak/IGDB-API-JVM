@@ -55,6 +55,7 @@ private static final long serialVersionUID = 0L;
     ports_ = java.util.Collections.emptyList();
     forks_ = java.util.Collections.emptyList();
     languageSupports_ = java.util.Collections.emptyList();
+    gameLocalizations_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -1881,6 +1882,46 @@ private static final long serialVersionUID = 0L;
     return languageSupports_.get(index);
   }
 
+  public static final int GAME_LOCALIZATIONS_FIELD_NUMBER = 57;
+  private java.util.List<proto.GameLocalization> gameLocalizations_;
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  @java.lang.Override
+  public java.util.List<proto.GameLocalization> getGameLocalizationsList() {
+    return gameLocalizations_;
+  }
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends proto.GameLocalizationOrBuilder> 
+      getGameLocalizationsOrBuilderList() {
+    return gameLocalizations_;
+  }
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  @java.lang.Override
+  public int getGameLocalizationsCount() {
+    return gameLocalizations_.size();
+  }
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  @java.lang.Override
+  public proto.GameLocalization getGameLocalizations(int index) {
+    return gameLocalizations_.get(index);
+  }
+  /**
+   * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+   */
+  @java.lang.Override
+  public proto.GameLocalizationOrBuilder getGameLocalizationsOrBuilder(
+      int index) {
+    return gameLocalizations_.get(index);
+  }
+
   public static proto.Game parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2293,6 +2334,13 @@ private static final long serialVersionUID = 0L;
         languageSupportsBuilder_.clear();
       }
       bitField0_ = (bitField0_ & ~0x20000000);
+      if (gameLocalizationsBuilder_ == null) {
+        gameLocalizations_ = java.util.Collections.emptyList();
+      } else {
+        gameLocalizations_ = null;
+        gameLocalizationsBuilder_.clear();
+      }
+      bitField0_ = (bitField0_ & ~0x40000000);
       return this;
     }
 
@@ -2643,6 +2691,15 @@ private static final long serialVersionUID = 0L;
         result.languageSupports_ = languageSupports_;
       } else {
         result.languageSupports_ = languageSupportsBuilder_.build();
+      }
+      if (gameLocalizationsBuilder_ == null) {
+        if (((bitField0_ & 0x40000000) != 0)) {
+          gameLocalizations_ = java.util.Collections.unmodifiableList(gameLocalizations_);
+          bitField0_ = (bitField0_ & ~0x40000000);
+        }
+        result.gameLocalizations_ = gameLocalizations_;
+      } else {
+        result.gameLocalizations_ = gameLocalizationsBuilder_.build();
       }
       onBuilt();
       return result;
@@ -11590,6 +11647,246 @@ private static final long serialVersionUID = 0L;
         languageSupports_ = null;
       }
       return languageSupportsBuilder_;
+    }
+
+    private java.util.List<proto.GameLocalization> gameLocalizations_ =
+      java.util.Collections.emptyList();
+    private void ensureGameLocalizationsIsMutable() {
+      if (!((bitField0_ & 0x40000000) != 0)) {
+        gameLocalizations_ = new java.util.ArrayList<proto.GameLocalization>(gameLocalizations_);
+        bitField0_ |= 0x40000000;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder> gameLocalizationsBuilder_;
+
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public java.util.List<proto.GameLocalization> getGameLocalizationsList() {
+      if (gameLocalizationsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(gameLocalizations_);
+      } else {
+        return gameLocalizationsBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public int getGameLocalizationsCount() {
+      if (gameLocalizationsBuilder_ == null) {
+        return gameLocalizations_.size();
+      } else {
+        return gameLocalizationsBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public proto.GameLocalization getGameLocalizations(int index) {
+      if (gameLocalizationsBuilder_ == null) {
+        return gameLocalizations_.get(index);
+      } else {
+        return gameLocalizationsBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder setGameLocalizations(
+        int index, proto.GameLocalization value) {
+      if (gameLocalizationsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.set(index, value);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder setGameLocalizations(
+        int index, proto.GameLocalization.Builder builderForValue) {
+      if (gameLocalizationsBuilder_ == null) {
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder addGameLocalizations(proto.GameLocalization value) {
+      if (gameLocalizationsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.add(value);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder addGameLocalizations(
+        int index, proto.GameLocalization value) {
+      if (gameLocalizationsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.add(index, value);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder addGameLocalizations(
+        proto.GameLocalization.Builder builderForValue) {
+      if (gameLocalizationsBuilder_ == null) {
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.add(builderForValue.build());
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder addGameLocalizations(
+        int index, proto.GameLocalization.Builder builderForValue) {
+      if (gameLocalizationsBuilder_ == null) {
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder addAllGameLocalizations(
+        java.lang.Iterable<? extends proto.GameLocalization> values) {
+      if (gameLocalizationsBuilder_ == null) {
+        ensureGameLocalizationsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, gameLocalizations_);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder clearGameLocalizations() {
+      if (gameLocalizationsBuilder_ == null) {
+        gameLocalizations_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x40000000);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public Builder removeGameLocalizations(int index) {
+      if (gameLocalizationsBuilder_ == null) {
+        ensureGameLocalizationsIsMutable();
+        gameLocalizations_.remove(index);
+        onChanged();
+      } else {
+        gameLocalizationsBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public proto.GameLocalization.Builder getGameLocalizationsBuilder(
+        int index) {
+      return getGameLocalizationsFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public proto.GameLocalizationOrBuilder getGameLocalizationsOrBuilder(
+        int index) {
+      if (gameLocalizationsBuilder_ == null) {
+        return gameLocalizations_.get(index);  } else {
+        return gameLocalizationsBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public java.util.List<? extends proto.GameLocalizationOrBuilder> 
+         getGameLocalizationsOrBuilderList() {
+      if (gameLocalizationsBuilder_ != null) {
+        return gameLocalizationsBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(gameLocalizations_);
+      }
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public proto.GameLocalization.Builder addGameLocalizationsBuilder() {
+      return getGameLocalizationsFieldBuilder().addBuilder(
+          proto.GameLocalization.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public proto.GameLocalization.Builder addGameLocalizationsBuilder(
+        int index) {
+      return getGameLocalizationsFieldBuilder().addBuilder(
+          index, proto.GameLocalization.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
+     */
+    public java.util.List<proto.GameLocalization.Builder> 
+         getGameLocalizationsBuilderList() {
+      return getGameLocalizationsFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder> 
+        getGameLocalizationsFieldBuilder() {
+      if (gameLocalizationsBuilder_ == null) {
+        gameLocalizationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder>(
+                gameLocalizations_,
+                ((bitField0_ & 0x40000000) != 0),
+                getParentForChildren(),
+                isClean());
+        gameLocalizations_ = null;
+      }
+      return gameLocalizationsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

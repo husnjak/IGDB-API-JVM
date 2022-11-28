@@ -190,6 +190,16 @@ public final class Igdbproto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_GameEngineLogo_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_GameLocalizationResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_GameLocalizationResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_GameLocalization_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_GameLocalization_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_GameModeResult_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -390,6 +400,16 @@ public final class Igdbproto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_PlayerPerspective_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_RegionResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_RegionResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_Region_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_Region_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_ReleaseDateResult_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -540,372 +560,389 @@ public final class Igdbproto {
       " \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.WebsiteCa" +
       "tegoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t" +
       "\022\020\n\010checksum\030\005 \001(\t\"+\n\013CoverResult\022\034\n\006cov" +
-      "ers\030\001 \003(\0132\014.proto.Cover\"\247\001\n\005Cover\022\n\n\002id\030" +
+      "ers\030\001 \003(\0132\014.proto.Cover\"\333\001\n\005Cover\022\n\n\002id\030" +
       "\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated" +
       "\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006hei" +
       "ght\030\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007 \001(\t" +
-      "\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\"@\n\022Ext" +
-      "ernalGameResult\022*\n\rexternalgames\030\001 \003(\0132\023" +
-      ".proto.ExternalGame\"\363\002\n\014ExternalGame\022\n\n\002" +
-      "id\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037.proto.Exter" +
-      "nalGameCategoryEnum\022.\n\ncreated_at\030\003 \001(\0132" +
-      "\032.google.protobuf.Timestamp\022\031\n\004game\030\004 \001(" +
-      "\0132\013.proto.Game\022\014\n\004name\030\005 \001(\t\022\013\n\003uid\030\006 \001(" +
-      "\t\022.\n\nupdated_at\030\007 \001(\0132\032.google.protobuf." +
-      "Timestamp\022\013\n\003url\030\010 \001(\t\022\014\n\004year\030\t \001(\005\022+\n\005" +
-      "media\030\n \001(\0162\034.proto.ExternalGameMediaEnu" +
-      "m\022!\n\010platform\030\013 \001(\0132\017.proto.Platform\022\021\n\t" +
-      "countries\030\014 \003(\005\022\020\n\010checksum\030\r \001(\t\"7\n\017Fra" +
-      "nchiseResult\022$\n\nfranchises\030\001 \003(\0132\020.proto" +
-      ".Franchise\"\316\001\n\tFranchise\022\n\n\002id\030\001 \001(\004\022.\n\n" +
-      "created_at\030\002 \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\032\n\005games\030\003 \003(\0132\013.proto.Game\022\014\n\004name" +
-      "\030\004 \001(\t\022\014\n\004slug\030\005 \001(\t\022.\n\nupdated_at\030\006 \001(\013" +
-      "2\032.google.protobuf.Timestamp\022\013\n\003url\030\007 \001(" +
-      "\t\022\020\n\010checksum\030\010 \001(\t\"(\n\nGameResult\022\032\n\005gam" +
-      "es\030\001 \003(\0132\013.proto.Game\"\260\016\n\004Game\022\n\n\002id\030\001 \001" +
-      "(\004\022%\n\013age_ratings\030\002 \003(\0132\020.proto.AgeRatin" +
-      "g\022\031\n\021aggregated_rating\030\003 \001(\001\022\037\n\027aggregat" +
-      "ed_rating_count\030\004 \001(\005\0221\n\021alternative_nam" +
-      "es\030\005 \003(\0132\026.proto.AlternativeName\022 \n\010artw" +
-      "orks\030\006 \003(\0132\016.proto.Artwork\022\034\n\007bundles\030\007 " +
-      "\003(\0132\013.proto.Game\022)\n\010category\030\010 \001(\0162\027.pro" +
-      "to.GameCategoryEnum\022%\n\ncollection\030\t \001(\0132" +
-      "\021.proto.Collection\022\033\n\005cover\030\n \001(\0132\014.prot" +
-      "o.Cover\022.\n\ncreated_at\030\013 \001(\0132\032.google.pro" +
-      "tobuf.Timestamp\022\031\n\004dlcs\030\014 \003(\0132\013.proto.Ga" +
-      "me\022\037\n\nexpansions\030\r \003(\0132\013.proto.Game\022+\n\016e" +
-      "xternal_games\030\016 \003(\0132\023.proto.ExternalGame" +
-      "\0226\n\022first_release_date\030\017 \001(\0132\032.google.pr" +
-      "otobuf.Timestamp\022\017\n\007follows\030\020 \001(\005\022#\n\tfra" +
-      "nchise\030\021 \001(\0132\020.proto.Franchise\022$\n\nfranch" +
-      "ises\030\022 \003(\0132\020.proto.Franchise\022\'\n\014game_eng" +
-      "ines\030\023 \003(\0132\021.proto.GameEngine\022#\n\ngame_mo" +
-      "des\030\024 \003(\0132\017.proto.GameMode\022\034\n\006genres\030\025 \003" +
-      "(\0132\014.proto.Genre\022\r\n\005hypes\030\026 \001(\005\0222\n\022invol" +
-      "ved_companies\030\027 \003(\0132\026.proto.InvolvedComp" +
-      "any\022 \n\010keywords\030\030 \003(\0132\016.proto.Keyword\0221\n" +
-      "\021multiplayer_modes\030\031 \003(\0132\026.proto.Multipl" +
-      "ayerMode\022\014\n\004name\030\032 \001(\t\022 \n\013parent_game\030\033 " +
-      "\001(\0132\013.proto.Game\022\"\n\tplatforms\030\034 \003(\0132\017.pr" +
-      "oto.Platform\0225\n\023player_perspectives\030\035 \003(" +
-      "\0132\030.proto.PlayerPerspective\022\016\n\006rating\030\036 " +
-      "\001(\001\022\024\n\014rating_count\030\037 \001(\005\022)\n\rrelease_dat" +
-      "es\030  \003(\0132\022.proto.ReleaseDate\022&\n\013screensh" +
-      "ots\030! \003(\0132\021.proto.Screenshot\022\"\n\rsimilar_" +
-      "games\030\" \003(\0132\013.proto.Game\022\014\n\004slug\030# \001(\t\022*" +
-      "\n\025standalone_expansions\030$ \003(\0132\013.proto.Ga" +
-      "me\022%\n\006status\030% \001(\0162\025.proto.GameStatusEnu" +
-      "m\022\021\n\tstoryline\030& \001(\t\022\017\n\007summary\030\' \001(\t\022\014\n" +
-      "\004tags\030( \003(\005\022\034\n\006themes\030) \003(\0132\014.proto.Them" +
-      "e\022\024\n\014total_rating\030* \001(\001\022\032\n\022total_rating_" +
-      "count\030+ \001(\005\022.\n\nupdated_at\030, \001(\0132\032.google" +
-      ".protobuf.Timestamp\022\013\n\003url\030- \001(\t\022#\n\016vers" +
-      "ion_parent\030. \001(\0132\013.proto.Game\022\025\n\rversion" +
-      "_title\030/ \001(\t\022 \n\006videos\0300 \003(\0132\020.proto.Gam" +
-      "eVideo\022 \n\010websites\0301 \003(\0132\016.proto.Website" +
-      "\022\020\n\010checksum\0302 \001(\t\022\034\n\007remakes\0303 \003(\0132\013.pr" +
-      "oto.Game\022\036\n\tremasters\0304 \003(\0132\013.proto.Game" +
-      "\022#\n\016expanded_games\0305 \003(\0132\013.proto.Game\022\032\n" +
-      "\005ports\0306 \003(\0132\013.proto.Game\022\032\n\005forks\0307 \003(\013" +
-      "2\013.proto.Game\0221\n\021language_supports\0308 \003(\013" +
-      "2\026.proto.LanguageSupport\":\n\020GameEngineRe" +
-      "sult\022&\n\013gameengines\030\001 \003(\0132\021.proto.GameEn" +
-      "gine\"\264\002\n\nGameEngine\022\n\n\002id\030\001 \001(\004\022!\n\tcompa" +
-      "nies\030\002 \003(\0132\016.proto.Company\022.\n\ncreated_at" +
-      "\030\003 \001(\0132\032.google.protobuf.Timestamp\022\023\n\013de" +
-      "scription\030\004 \001(\t\022#\n\004logo\030\005 \001(\0132\025.proto.Ga" +
-      "meEngineLogo\022\014\n\004name\030\006 \001(\t\022\"\n\tplatforms\030" +
-      "\007 \003(\0132\017.proto.Platform\022\014\n\004slug\030\010 \001(\t\022.\n\n" +
-      "updated_at\030\t \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\013\n\003url\030\n \001(\t\022\020\n\010checksum\030\013 \001(\t\"F\n\024G" +
-      "ameEngineLogoResult\022.\n\017gameenginelogos\030\001" +
-      " \003(\0132\025.proto.GameEngineLogo\"\225\001\n\016GameEngi" +
-      "neLogo\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(" +
-      "\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010i" +
-      "mage_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(" +
-      "\005\022\020\n\010checksum\030\010 \001(\t\"4\n\016GameModeResult\022\"\n" +
-      "\tgamemodes\030\001 \003(\0132\017.proto.GameMode\"\261\001\n\010Ga" +
-      "meMode\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032" +
-      ".google.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t" +
-      "\022\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.goo" +
-      "gle.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010c" +
-      "hecksum\030\007 \001(\t\"=\n\021GameVersionResult\022(\n\014ga" +
-      "meversions\030\001 \003(\0132\022.proto.GameVersion\"\374\001\n" +
-      "\013GameVersion\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002" +
-      " \001(\0132\032.google.protobuf.Timestamp\022+\n\010feat" +
-      "ures\030\003 \003(\0132\031.proto.GameVersionFeature\022\031\n" +
-      "\004game\030\004 \001(\0132\013.proto.Game\022\032\n\005games\030\005 \003(\0132" +
-      "\013.proto.Game\022.\n\nupdated_at\030\006 \001(\0132\032.googl" +
-      "e.protobuf.Timestamp\022\013\n\003url\030\007 \001(\t\022\020\n\010che" +
-      "cksum\030\010 \001(\t\"R\n\030GameVersionFeatureResult\022" +
-      "6\n\023gameversionfeatures\030\001 \003(\0132\031.proto.Gam" +
-      "eVersionFeature\"\321\001\n\022GameVersionFeature\022\n" +
-      "\n\002id\030\001 \001(\004\0227\n\010category\030\002 \001(\0162%.proto.Gam" +
-      "eVersionFeatureCategoryEnum\022\023\n\013descripti" +
-      "on\030\003 \001(\t\022\020\n\010position\030\004 \001(\005\022\r\n\005title\030\005 \001(" +
-      "\t\022.\n\006values\030\006 \003(\0132\036.proto.GameVersionFea" +
-      "tureValue\022\020\n\010checksum\030\007 \001(\t\"a\n\035GameVersi" +
-      "onFeatureValueResult\022@\n\030gameversionfeatu" +
-      "revalues\030\001 \003(\0132\036.proto.GameVersionFeatur" +
-      "eValue\"\336\001\n\027GameVersionFeatureValue\022\n\n\002id" +
-      "\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.proto.Game\022/\n\014gam" +
-      "e_feature\030\003 \001(\0132\031.proto.GameVersionFeatu" +
-      "re\022K\n\020included_feature\030\004 \001(\01621.proto.Gam" +
-      "eVersionFeatureValueIncludedFeatureEnum\022" +
-      "\014\n\004note\030\005 \001(\t\022\020\n\010checksum\030\006 \001(\t\"7\n\017GameV" +
-      "ideoResult\022$\n\ngamevideos\030\001 \003(\0132\020.proto.G" +
-      "ameVideo\"d\n\tGameVideo\022\n\n\002id\030\001 \001(\004\022\031\n\004gam" +
-      "e\030\002 \001(\0132\013.proto.Game\022\014\n\004name\030\003 \001(\t\022\020\n\010vi" +
-      "deo_id\030\004 \001(\t\022\020\n\010checksum\030\005 \001(\t\"+\n\013GenreR" +
-      "esult\022\034\n\006genres\030\001 \003(\0132\014.proto.Genre\"\256\001\n\005" +
-      "Genre\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032." +
-      "google.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022" +
-      "\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010ch" +
-      "ecksum\030\007 \001(\t\"J\n\025InvolvedCompanyResult\0221\n" +
-      "\021involvedcompanies\030\001 \003(\0132\026.proto.Involve" +
-      "dCompany\"\226\002\n\017InvolvedCompany\022\n\n\002id\030\001 \001(\004" +
-      "\022\037\n\007company\030\002 \001(\0132\016.proto.Company\022.\n\ncre" +
-      "ated_at\030\003 \001(\0132\032.google.protobuf.Timestam" +
-      "p\022\021\n\tdeveloper\030\004 \001(\010\022\031\n\004game\030\005 \001(\0132\013.pro" +
-      "to.Game\022\017\n\007porting\030\006 \001(\010\022\021\n\tpublisher\030\007 " +
-      "\001(\010\022\022\n\nsupporting\030\010 \001(\010\022.\n\nupdated_at\030\t " +
-      "\001(\0132\032.google.protobuf.Timestamp\022\020\n\010check" +
-      "sum\030\n \001(\t\"1\n\rKeywordResult\022 \n\010keywords\030\001" +
-      " \003(\0132\016.proto.Keyword\"\260\001\n\007Keyword\022\n\n\002id\030\001" +
-      " \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.protob" +
-      "uf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t" +
-      "\022.\n\nupdated_at\030\005 \001(\0132\032.google.protobuf.T" +
-      "imestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"" +
-      "4\n\016LanguageResult\022\"\n\tlanguages\030\001 \003(\0132\017.p" +
-      "roto.Language\"\273\001\n\010Language\022\n\n\002id\030\001 \001(\004\022\014" +
-      "\n\004name\030\002 \001(\t\022\023\n\013native_name\030\003 \001(\t\022\016\n\006loc" +
-      "ale\030\004 \001(\t\022.\n\ncreated_at\030\005 \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022.\n\nupdated_at\030\006 \001(\0132\032." +
-      "google.protobuf.Timestamp\022\020\n\010checksum\030\007 " +
-      "\001(\t\"I\n\025LanguageSupportResult\0220\n\020language" +
-      "supports\030\001 \003(\0132\026.proto.LanguageSupport\"\210" +
-      "\002\n\017LanguageSupport\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002" +
-      " \001(\0132\013.proto.Game\022!\n\010language\030\003 \001(\0132\017.pr" +
-      "oto.Language\0229\n\025language_support_type\030\004 " +
-      "\001(\0132\032.proto.LanguageSupportType\022.\n\ncreat" +
+      "\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\0222\n\021gam" +
+      "e_localization\030\n \001(\0132\027.proto.GameLocaliz" +
+      "ation\"@\n\022ExternalGameResult\022*\n\rexternalg" +
+      "ames\030\001 \003(\0132\023.proto.ExternalGame\"\363\002\n\014Exte" +
+      "rnalGame\022\n\n\002id\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037" +
+      ".proto.ExternalGameCategoryEnum\022.\n\ncreat" +
+      "ed_at\030\003 \001(\0132\032.google.protobuf.Timestamp\022" +
+      "\031\n\004game\030\004 \001(\0132\013.proto.Game\022\014\n\004name\030\005 \001(\t" +
+      "\022\013\n\003uid\030\006 \001(\t\022.\n\nupdated_at\030\007 \001(\0132\032.goog" +
+      "le.protobuf.Timestamp\022\013\n\003url\030\010 \001(\t\022\014\n\004ye" +
+      "ar\030\t \001(\005\022+\n\005media\030\n \001(\0162\034.proto.External" +
+      "GameMediaEnum\022!\n\010platform\030\013 \001(\0132\017.proto." +
+      "Platform\022\021\n\tcountries\030\014 \003(\005\022\020\n\010checksum\030" +
+      "\r \001(\t\"7\n\017FranchiseResult\022$\n\nfranchises\030\001" +
+      " \003(\0132\020.proto.Franchise\"\316\001\n\tFranchise\022\n\n\002" +
+      "id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\032\n\005games\030\003 \003(\0132\013.proto." +
+      "Game\022\014\n\004name\030\004 \001(\t\022\014\n\004slug\030\005 \001(\t\022.\n\nupda" +
+      "ted_at\030\006 \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\013\n\003url\030\007 \001(\t\022\020\n\010checksum\030\010 \001(\t\"(\n\nGameR" +
+      "esult\022\032\n\005games\030\001 \003(\0132\013.proto.Game\"\345\016\n\004Ga" +
+      "me\022\n\n\002id\030\001 \001(\004\022%\n\013age_ratings\030\002 \003(\0132\020.pr" +
+      "oto.AgeRating\022\031\n\021aggregated_rating\030\003 \001(\001" +
+      "\022\037\n\027aggregated_rating_count\030\004 \001(\005\0221\n\021alt" +
+      "ernative_names\030\005 \003(\0132\026.proto.Alternative" +
+      "Name\022 \n\010artworks\030\006 \003(\0132\016.proto.Artwork\022\034" +
+      "\n\007bundles\030\007 \003(\0132\013.proto.Game\022)\n\010category" +
+      "\030\010 \001(\0162\027.proto.GameCategoryEnum\022%\n\ncolle" +
+      "ction\030\t \001(\0132\021.proto.Collection\022\033\n\005cover\030" +
+      "\n \001(\0132\014.proto.Cover\022.\n\ncreated_at\030\013 \001(\0132" +
+      "\032.google.protobuf.Timestamp\022\031\n\004dlcs\030\014 \003(" +
+      "\0132\013.proto.Game\022\037\n\nexpansions\030\r \003(\0132\013.pro" +
+      "to.Game\022+\n\016external_games\030\016 \003(\0132\023.proto." +
+      "ExternalGame\0226\n\022first_release_date\030\017 \001(\013" +
+      "2\032.google.protobuf.Timestamp\022\017\n\007follows\030" +
+      "\020 \001(\005\022#\n\tfranchise\030\021 \001(\0132\020.proto.Franchi" +
+      "se\022$\n\nfranchises\030\022 \003(\0132\020.proto.Franchise" +
+      "\022\'\n\014game_engines\030\023 \003(\0132\021.proto.GameEngin" +
+      "e\022#\n\ngame_modes\030\024 \003(\0132\017.proto.GameMode\022\034" +
+      "\n\006genres\030\025 \003(\0132\014.proto.Genre\022\r\n\005hypes\030\026 " +
+      "\001(\005\0222\n\022involved_companies\030\027 \003(\0132\026.proto." +
+      "InvolvedCompany\022 \n\010keywords\030\030 \003(\0132\016.prot" +
+      "o.Keyword\0221\n\021multiplayer_modes\030\031 \003(\0132\026.p" +
+      "roto.MultiplayerMode\022\014\n\004name\030\032 \001(\t\022 \n\013pa" +
+      "rent_game\030\033 \001(\0132\013.proto.Game\022\"\n\tplatform" +
+      "s\030\034 \003(\0132\017.proto.Platform\0225\n\023player_persp" +
+      "ectives\030\035 \003(\0132\030.proto.PlayerPerspective\022" +
+      "\016\n\006rating\030\036 \001(\001\022\024\n\014rating_count\030\037 \001(\005\022)\n" +
+      "\rrelease_dates\030  \003(\0132\022.proto.ReleaseDate" +
+      "\022&\n\013screenshots\030! \003(\0132\021.proto.Screenshot" +
+      "\022\"\n\rsimilar_games\030\" \003(\0132\013.proto.Game\022\014\n\004" +
+      "slug\030# \001(\t\022*\n\025standalone_expansions\030$ \003(" +
+      "\0132\013.proto.Game\022%\n\006status\030% \001(\0162\025.proto.G" +
+      "ameStatusEnum\022\021\n\tstoryline\030& \001(\t\022\017\n\007summ" +
+      "ary\030\' \001(\t\022\014\n\004tags\030( \003(\005\022\034\n\006themes\030) \003(\0132" +
+      "\014.proto.Theme\022\024\n\014total_rating\030* \001(\001\022\032\n\022t" +
+      "otal_rating_count\030+ \001(\005\022.\n\nupdated_at\030, " +
+      "\001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030-" +
+      " \001(\t\022#\n\016version_parent\030. \001(\0132\013.proto.Gam" +
+      "e\022\025\n\rversion_title\030/ \001(\t\022 \n\006videos\0300 \003(\013" +
+      "2\020.proto.GameVideo\022 \n\010websites\0301 \003(\0132\016.p" +
+      "roto.Website\022\020\n\010checksum\0302 \001(\t\022\034\n\007remake" +
+      "s\0303 \003(\0132\013.proto.Game\022\036\n\tremasters\0304 \003(\0132" +
+      "\013.proto.Game\022#\n\016expanded_games\0305 \003(\0132\013.p" +
+      "roto.Game\022\032\n\005ports\0306 \003(\0132\013.proto.Game\022\032\n" +
+      "\005forks\0307 \003(\0132\013.proto.Game\0221\n\021language_su" +
+      "pports\0308 \003(\0132\026.proto.LanguageSupport\0223\n\022" +
+      "game_localizations\0309 \003(\0132\027.proto.GameLoc" +
+      "alization\":\n\020GameEngineResult\022&\n\013gameeng" +
+      "ines\030\001 \003(\0132\021.proto.GameEngine\"\264\002\n\nGameEn" +
+      "gine\022\n\n\002id\030\001 \001(\004\022!\n\tcompanies\030\002 \003(\0132\016.pr" +
+      "oto.Company\022.\n\ncreated_at\030\003 \001(\0132\032.google" +
+      ".protobuf.Timestamp\022\023\n\013description\030\004 \001(\t" +
+      "\022#\n\004logo\030\005 \001(\0132\025.proto.GameEngineLogo\022\014\n" +
+      "\004name\030\006 \001(\t\022\"\n\tplatforms\030\007 \003(\0132\017.proto.P" +
+      "latform\022\014\n\004slug\030\010 \001(\t\022.\n\nupdated_at\030\t \001(" +
+      "\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\n \001" +
+      "(\t\022\020\n\010checksum\030\013 \001(\t\"F\n\024GameEngineLogoRe" +
+      "sult\022.\n\017gameenginelogos\030\001 \003(\0132\025.proto.Ga" +
+      "meEngineLogo\"\225\001\n\016GameEngineLogo\022\n\n\002id\030\001 " +
+      "\001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003" +
+      " \001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013" +
+      "\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010" +
+      " \001(\t\"L\n\026GameLocalizationResult\0222\n\021gamelo" +
+      "calizations\030\001 \003(\0132\027.proto.GameLocalizati" +
+      "on\"\365\001\n\020GameLocalization\022\n\n\002id\030\001 \001(\004\022\014\n\004n" +
+      "ame\030\002 \001(\t\022\033\n\005cover\030\003 \001(\0132\014.proto.Cover\022\031" +
+      "\n\004game\030\004 \001(\0132\013.proto.Game\022\035\n\006region\030\005 \001(" +
+      "\0132\r.proto.Region\022.\n\ncreated_at\030\006 \001(\0132\032.g" +
+      "oogle.protobuf.Timestamp\022.\n\nupdated_at\030\007" +
+      " \001(\0132\032.google.protobuf.Timestamp\022\020\n\010chec" +
+      "ksum\030\010 \001(\t\"4\n\016GameModeResult\022\"\n\tgamemode" +
+      "s\030\001 \003(\0132\017.proto.GameMode\"\261\001\n\010GameMode\022\n\n" +
+      "\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.p" +
+      "rotobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030" +
+      "\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007" +
+      " \001(\t\"=\n\021GameVersionResult\022(\n\014gameversion" +
+      "s\030\001 \003(\0132\022.proto.GameVersion\"\374\001\n\013GameVers" +
+      "ion\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.go" +
+      "ogle.protobuf.Timestamp\022+\n\010features\030\003 \003(" +
+      "\0132\031.proto.GameVersionFeature\022\031\n\004game\030\004 \001" +
+      "(\0132\013.proto.Game\022\032\n\005games\030\005 \003(\0132\013.proto.G" +
+      "ame\022.\n\nupdated_at\030\006 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022\013\n\003url\030\007 \001(\t\022\020\n\010checksum\030\010 \001" +
+      "(\t\"R\n\030GameVersionFeatureResult\0226\n\023gameve" +
+      "rsionfeatures\030\001 \003(\0132\031.proto.GameVersionF" +
+      "eature\"\321\001\n\022GameVersionFeature\022\n\n\002id\030\001 \001(" +
+      "\004\0227\n\010category\030\002 \001(\0162%.proto.GameVersionF" +
+      "eatureCategoryEnum\022\023\n\013description\030\003 \001(\t\022" +
+      "\020\n\010position\030\004 \001(\005\022\r\n\005title\030\005 \001(\t\022.\n\006valu" +
+      "es\030\006 \003(\0132\036.proto.GameVersionFeatureValue" +
+      "\022\020\n\010checksum\030\007 \001(\t\"a\n\035GameVersionFeature" +
+      "ValueResult\022@\n\030gameversionfeaturevalues\030" +
+      "\001 \003(\0132\036.proto.GameVersionFeatureValue\"\336\001" +
+      "\n\027GameVersionFeatureValue\022\n\n\002id\030\001 \001(\004\022\031\n" +
+      "\004game\030\002 \001(\0132\013.proto.Game\022/\n\014game_feature" +
+      "\030\003 \001(\0132\031.proto.GameVersionFeature\022K\n\020inc" +
+      "luded_feature\030\004 \001(\01621.proto.GameVersionF" +
+      "eatureValueIncludedFeatureEnum\022\014\n\004note\030\005" +
+      " \001(\t\022\020\n\010checksum\030\006 \001(\t\"7\n\017GameVideoResul" +
+      "t\022$\n\ngamevideos\030\001 \003(\0132\020.proto.GameVideo\"" +
+      "d\n\tGameVideo\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013" +
+      ".proto.Game\022\014\n\004name\030\003 \001(\t\022\020\n\010video_id\030\004 " +
+      "\001(\t\022\020\n\010checksum\030\005 \001(\t\"+\n\013GenreResult\022\034\n\006" +
+      "genres\030\001 \003(\0132\014.proto.Genre\"\256\001\n\005Genre\022\n\n\002" +
+      "id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004" +
+      " \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 " +
+      "\001(\t\"J\n\025InvolvedCompanyResult\0221\n\021involved" +
+      "companies\030\001 \003(\0132\026.proto.InvolvedCompany\"" +
+      "\226\002\n\017InvolvedCompany\022\n\n\002id\030\001 \001(\004\022\037\n\007compa" +
+      "ny\030\002 \001(\0132\016.proto.Company\022.\n\ncreated_at\030\003" +
+      " \001(\0132\032.google.protobuf.Timestamp\022\021\n\tdeve" +
+      "loper\030\004 \001(\010\022\031\n\004game\030\005 \001(\0132\013.proto.Game\022\017" +
+      "\n\007porting\030\006 \001(\010\022\021\n\tpublisher\030\007 \001(\010\022\022\n\nsu" +
+      "pporting\030\010 \001(\010\022.\n\nupdated_at\030\t \001(\0132\032.goo" +
+      "gle.protobuf.Timestamp\022\020\n\010checksum\030\n \001(\t" +
+      "\"1\n\rKeywordResult\022 \n\010keywords\030\001 \003(\0132\016.pr" +
+      "oto.Keyword\"\260\001\n\007Keyword\022\n\n\002id\030\001 \001(\004\022.\n\nc" +
+      "reated_at\030\002 \001(\0132\032.google.protobuf.Timest" +
+      "amp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdat" +
       "ed_at\030\005 \001(\0132\032.google.protobuf.Timestamp\022" +
-      ".\n\nupdated_at\030\006 \001(\0132\032.google.protobuf.Ti" +
-      "mestamp\022\020\n\010checksum\030\007 \001(\t\"U\n\031LanguageSup" +
-      "portTypeResult\0228\n\024languagesupporttypes\030\001" +
-      " \003(\0132\032.proto.LanguageSupportType\"\241\001\n\023Lan" +
-      "guageSupportType\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001" +
-      "(\t\022.\n\ncreated_at\030\003 \001(\0132\032.google.protobuf" +
-      ".Timestamp\022.\n\nupdated_at\030\004 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\020\n\010checksum\030\005 \001(\t\"I\n\025" +
-      "MultiplayerModeResult\0220\n\020multiplayermode" +
-      "s\030\001 \003(\0132\026.proto.MultiplayerMode\"\323\002\n\017Mult" +
-      "iplayerMode\022\n\n\002id\030\001 \001(\004\022\024\n\014campaigncoop\030" +
-      "\002 \001(\010\022\016\n\006dropin\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.pr" +
-      "oto.Game\022\017\n\007lancoop\030\005 \001(\010\022\023\n\013offlinecoop" +
-      "\030\006 \001(\010\022\026\n\016offlinecoopmax\030\007 \001(\005\022\022\n\nofflin" +
-      "emax\030\010 \001(\005\022\022\n\nonlinecoop\030\t \001(\010\022\025\n\ronline" +
-      "coopmax\030\n \001(\005\022\021\n\tonlinemax\030\013 \001(\005\022!\n\010plat" +
-      "form\030\014 \001(\0132\017.proto.Platform\022\023\n\013splitscre" +
-      "en\030\r \001(\010\022\031\n\021splitscreenonline\030\016 \001(\010\022\020\n\010c" +
-      "hecksum\030\017 \001(\t\"4\n\016PlatformResult\022\"\n\tplatf" +
-      "orms\030\001 \003(\0132\017.proto.Platform\"\345\003\n\010Platform" +
-      "\022\n\n\002id\030\001 \001(\004\022\024\n\014abbreviation\030\002 \001(\t\022\030\n\020al" +
-      "ternative_name\030\003 \001(\t\022-\n\010category\030\004 \001(\0162\033" +
-      ".proto.PlatformCategoryEnum\022.\n\ncreated_a" +
-      "t\030\005 \001(\0132\032.google.protobuf.Timestamp\022\022\n\ng" +
-      "eneration\030\006 \001(\005\022\014\n\004name\030\007 \001(\t\022*\n\rplatfor" +
-      "m_logo\030\010 \001(\0132\023.proto.PlatformLogo\022.\n\017pla" +
-      "tform_family\030\t \001(\0132\025.proto.PlatformFamil" +
-      "y\022\014\n\004slug\030\n \001(\t\022\017\n\007summary\030\013 \001(\t\022.\n\nupda" +
-      "ted_at\030\014 \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\013\n\003url\030\r \001(\t\022(\n\010versions\030\016 \003(\0132\026.proto." +
-      "PlatformVersion\022(\n\010websites\030\017 \003(\0132\026.prot" +
-      "o.PlatformWebsite\022\020\n\010checksum\030\020 \001(\t\"G\n\024P" +
-      "latformFamilyResult\022/\n\020platformfamilies\030" +
-      "\001 \003(\0132\025.proto.PlatformFamily\"J\n\016Platform" +
-      "Family\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\014\n\004slug" +
-      "\030\003 \001(\t\022\020\n\010checksum\030\004 \001(\t\"@\n\022PlatformLogo" +
-      "Result\022*\n\rplatformlogos\030\001 \003(\0132\023.proto.Pl" +
-      "atformLogo\"\223\001\n\014PlatformLogo\022\n\n\002id\030\001 \001(\004\022" +
-      "\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010" +
-      "\022\016\n\006height\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013\n\003ur" +
-      "l\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010 \001(\t" +
-      "\"I\n\025PlatformVersionResult\0220\n\020platformver" +
-      "sions\030\001 \003(\0132\026.proto.PlatformVersion\"\201\004\n\017" +
-      "PlatformVersion\022\n\n\002id\030\001 \001(\004\0220\n\tcompanies" +
-      "\030\002 \003(\0132\035.proto.PlatformVersionCompany\022\024\n" +
-      "\014connectivity\030\003 \001(\t\022\013\n\003cpu\030\004 \001(\t\022\020\n\010grap" +
-      "hics\030\005 \001(\t\0228\n\021main_manufacturer\030\006 \001(\0132\035." +
-      "proto.PlatformVersionCompany\022\r\n\005media\030\007 " +
-      "\001(\t\022\016\n\006memory\030\010 \001(\t\022\014\n\004name\030\t \001(\t\022\016\n\006onl" +
-      "ine\030\n \001(\t\022\n\n\002os\030\013 \001(\t\022\016\n\006output\030\014 \001(\t\022*\n" +
-      "\rplatform_logo\030\r \001(\0132\023.proto.PlatformLog" +
-      "o\022I\n\036platform_version_release_dates\030\016 \003(" +
-      "\0132!.proto.PlatformVersionReleaseDate\022\023\n\013" +
-      "resolutions\030\017 \001(\t\022\014\n\004slug\030\020 \001(\t\022\r\n\005sound" +
-      "\030\021 \001(\t\022\017\n\007storage\030\022 \001(\t\022\017\n\007summary\030\023 \001(\t" +
-      "\022\013\n\003url\030\024 \001(\t\022\020\n\010checksum\030\025 \001(\t\"_\n\034Platf" +
-      "ormVersionCompanyResult\022?\n\030platformversi" +
-      "oncompanies\030\001 \003(\0132\035.proto.PlatformVersio" +
-      "nCompany\"\221\001\n\026PlatformVersionCompany\022\n\n\002i" +
-      "d\030\001 \001(\004\022\017\n\007comment\030\002 \001(\t\022\037\n\007company\030\003 \001(" +
-      "\0132\016.proto.Company\022\021\n\tdeveloper\030\004 \001(\010\022\024\n\014" +
-      "manufacturer\030\005 \001(\010\022\020\n\010checksum\030\006 \001(\t\"j\n " +
-      "PlatformVersionReleaseDateResult\022F\n\033plat" +
-      "formversionreleasedates\030\001 \003(\0132!.proto.Pl" +
-      "atformVersionReleaseDate\"\377\002\n\032PlatformVer" +
-      "sionReleaseDate\022\n\n\002id\030\001 \001(\004\0229\n\010category\030" +
-      "\002 \001(\0162\'.proto.DateFormatChangeDateCatego" +
-      "ryEnum\022.\n\ncreated_at\030\003 \001(\0132\032.google.prot" +
-      "obuf.Timestamp\022(\n\004date\030\004 \001(\0132\032.google.pr" +
-      "otobuf.Timestamp\022\r\n\005human\030\005 \001(\t\022\t\n\001m\030\006 \001" +
-      "(\005\0220\n\020platform_version\030\007 \001(\0132\026.proto.Pla" +
-      "tformVersion\022\'\n\006region\030\010 \001(\0162\027.proto.Reg" +
-      "ionRegionEnum\022.\n\nupdated_at\030\t \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\t\n\001y\030\n \001(\005\022\020\n\010chec" +
-      "ksum\030\013 \001(\t\"I\n\025PlatformWebsiteResult\0220\n\020p" +
-      "latformwebsites\030\001 \003(\0132\026.proto.PlatformWe" +
-      "bsite\"{\n\017PlatformWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010" +
-      "category\030\002 \001(\0162\032.proto.WebsiteCategoryEn" +
-      "um\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\022\020\n\010chec" +
-      "ksum\030\005 \001(\t\"O\n\027PlayerPerspectiveResult\0224\n" +
-      "\022playerperspectives\030\001 \003(\0132\030.proto.Player" +
-      "Perspective\"\272\001\n\021PlayerPerspective\022\n\n\002id\030" +
-      "\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.proto" +
-      "buf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(" +
-      "\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.protobuf." +
-      "Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t" +
-      "\"=\n\021ReleaseDateResult\022(\n\014releasedates\030\001 " +
-      "\003(\0132\022.proto.ReleaseDate\"\374\002\n\013ReleaseDate\022" +
-      "\n\n\002id\030\001 \001(\004\0229\n\010category\030\002 \001(\0162\'.proto.Da" +
-      "teFormatChangeDateCategoryEnum\022.\n\ncreate" +
-      "d_at\030\003 \001(\0132\032.google.protobuf.Timestamp\022(" +
-      "\n\004date\030\004 \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\031\n\004game\030\005 \001(\0132\013.proto.Game\022\r\n\005human\030\006 \001" +
-      "(\t\022\t\n\001m\030\007 \001(\005\022!\n\010platform\030\010 \001(\0132\017.proto." +
-      "Platform\022\'\n\006region\030\t \001(\0162\027.proto.RegionR" +
-      "egionEnum\022.\n\nupdated_at\030\n \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022\t\n\001y\030\013 \001(\005\022\020\n\010checksum" +
-      "\030\014 \001(\t\":\n\020ScreenshotResult\022&\n\013screenshot" +
-      "s\030\001 \003(\0132\021.proto.Screenshot\"\254\001\n\nScreensho" +
-      "t\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010" +
-      "animated\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Gam" +
-      "e\022\016\n\006height\030\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003u" +
-      "rl\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(" +
-      "\t\"/\n\014SearchResult\022\037\n\010searches\030\001 \003(\0132\r.pr" +
-      "oto.Search\"\203\003\n\006Search\022\n\n\002id\030\001 \001(\004\022\030\n\020alt" +
-      "ernative_name\030\002 \001(\t\022#\n\tcharacter\030\003 \001(\0132\020" +
-      ".proto.Character\022%\n\ncollection\030\004 \001(\0132\021.p" +
-      "roto.Collection\022\037\n\007company\030\005 \001(\0132\016.proto" +
-      ".Company\022\023\n\013description\030\006 \001(\t\022\031\n\004game\030\007 " +
-      "\001(\0132\013.proto.Game\022\014\n\004name\030\010 \001(\t\022!\n\010platfo" +
-      "rm\030\t \001(\0132\017.proto.Platform\0220\n\014published_a" +
-      "t\030\n \001(\0132\032.google.protobuf.Timestamp\022$\n\nt" +
-      "est_dummy\030\013 \001(\0132\020.proto.TestDummy\022\033\n\005the" +
-      "me\030\014 \001(\0132\014.proto.Theme\022\020\n\010checksum\030\r \001(\t" +
-      "\"8\n\017TestDummyResult\022%\n\013testdummies\030\001 \003(\013" +
-      "2\020.proto.TestDummy\"\345\003\n\tTestDummy\022\n\n\002id\030\001" +
-      " \001(\004\022\022\n\nbool_value\030\002 \001(\010\022.\n\ncreated_at\030\003" +
-      " \001(\0132\032.google.protobuf.Timestamp\022/\n\tenum" +
-      "_test\030\004 \001(\0162\034.proto.TestDummyEnumTestEnu" +
-      "m\022\023\n\013float_value\030\005 \001(\001\022\031\n\004game\030\006 \001(\0132\013.p" +
-      "roto.Game\022\025\n\rinteger_array\030\007 \003(\005\022\025\n\rinte" +
-      "ger_value\030\010 \001(\005\022\014\n\004name\030\t \001(\t\022\031\n\021new_int" +
-      "eger_value\030\n \001(\005\022\017\n\007private\030\013 \001(\010\022\014\n\004slu" +
-      "g\030\014 \001(\t\022\024\n\014string_array\030\r \003(\t\022&\n\014test_du" +
-      "mmies\030\016 \003(\0132\020.proto.TestDummy\022$\n\ntest_du" +
-      "mmy\030\017 \001(\0132\020.proto.TestDummy\022.\n\nupdated_a" +
-      "t\030\020 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003u" +
-      "rl\030\021 \001(\t\022\020\n\010checksum\030\022 \001(\t\"+\n\013ThemeResul" +
-      "t\022\034\n\006themes\030\001 \003(\0132\014.proto.Theme\"\256\001\n\005Them" +
-      "e\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004s" +
-      "lug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checks" +
-      "um\030\007 \001(\t\"1\n\rWebsiteResult\022 \n\010websites\030\001 " +
-      "\003(\0132\016.proto.Website\"\216\001\n\007Website\022\n\n\002id\030\001 " +
-      "\001(\004\022,\n\010category\030\002 \001(\0162\032.proto.WebsiteCat" +
-      "egoryEnum\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022\017\n\007" +
-      "trusted\030\004 \001(\010\022\013\n\003url\030\005 \001(\t\022\020\n\010checksum\030\006" +
-      " \001(\t*}\n\025AgeRatingCategoryEnum\022\033\n\027AGERATI" +
-      "NG_CATEGORY_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002\022\010" +
-      "\n\004CERO\020\003\022\007\n\003USK\020\004\022\010\n\004GRAC\020\005\022\r\n\tCLASS_IND" +
-      "\020\006\022\007\n\003ACB\020\007*\255\004\n\023AgeRatingRatingEnum\022\031\n\025A" +
-      "GERATING_RATING_NULL\020\000\022\t\n\005THREE\020\001\022\t\n\005SEV" +
-      "EN\020\002\022\n\n\006TWELVE\020\003\022\013\n\007SIXTEEN\020\004\022\014\n\010EIGHTEE" +
-      "N\020\005\022\006\n\002RP\020\006\022\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E10\020\t\022\005\n\001T" +
-      "\020\n\022\005\n\001M\020\013\022\006\n\002AO\020\014\022\n\n\006CERO_A\020\r\022\n\n\006CERO_B\020" +
-      "\016\022\n\n\006CERO_C\020\017\022\n\n\006CERO_D\020\020\022\n\n\006CERO_Z\020\021\022\t\n" +
-      "\005USK_0\020\022\022\t\n\005USK_6\020\023\022\n\n\006USK_12\020\024\022\n\n\006USK_1" +
-      "8\020\025\022\014\n\010GRAC_ALL\020\026\022\017\n\013GRAC_TWELVE\020\027\022\020\n\014GR" +
-      "AC_FIFTEEN\020\030\022\021\n\rGRAC_EIGHTEEN\020\031\022\020\n\014GRAC_" +
-      "TESTING\020\032\022\017\n\013CLASS_IND_L\020\033\022\021\n\rCLASS_IND_" +
-      "TEN\020\034\022\024\n\020CLASS_IND_TWELVE\020\035\022\026\n\022CLASS_IND" +
-      "_FOURTEEN\020\036\022\025\n\021CLASS_IND_SIXTEEN\020\037\022\026\n\022CL" +
-      "ASS_IND_EIGHTEEN\020 \022\t\n\005ACB_G\020!\022\n\n\006ACB_PG\020" +
-      "\"\022\t\n\005ACB_M\020#\022\014\n\010ACB_MA15\020$\022\013\n\007ACB_R18\020%\022" +
-      "\n\n\006ACB_RC\020&*3\n\020GenderGenderEnum\022\010\n\004MALE\020" +
-      "\000\022\n\n\006FEMALE\020\001\022\t\n\005OTHER\020\002*n\n\024CharacterSpe" +
-      "ciesEnum\022\032\n\026CHARACTER_SPECIES_NULL\020\000\022\t\n\005" +
-      "HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDROI" +
-      "D\020\004\022\013\n\007UNKNOWN\020\005*\203\001\n DateFormatChangeDat" +
-      "eCategoryEnum\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYMMM" +
-      "M\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022\n\n" +
-      "\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023Websi" +
-      "teCategoryEnum\022\031\n\025WEBSITE_CATEGORY_NULL\020" +
-      "\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n\rWEBSITE_WIKIA" +
-      "\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022\024\n\020WEBSITE_FAC" +
-      "EBOOK\020\004\022\023\n\017WEBSITE_TWITTER\020\005\022\022\n\016WEBSITE_",
-      "TWITCH\020\006\022\025\n\021WEBSITE_INSTAGRAM\020\010\022\023\n\017WEBSI" +
-      "TE_YOUTUBE\020\t\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WEBS" +
-      "ITE_IPAD\020\013\022\023\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEBSI" +
-      "TE_STEAM\020\r\022\022\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBSIT" +
-      "E_ITCH\020\017\022\025\n\021WEBSITE_EPICGAMES\020\020\022\017\n\013WEBSI" +
-      "TE_GOG\020\021\022\023\n\017WEBSITE_DISCORD\020\022*\207\005\n\030Extern" +
-      "alGameCategoryEnum\022\036\n\032EXTERNALGAME_CATEG" +
-      "ORY_NULL\020\000\022\026\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020EX" +
-      "TERNALGAME_GOG\020\005\022\030\n\024EXTERNALGAME_YOUTUBE" +
-      "\020\n\022\032\n\026EXTERNALGAME_MICROSOFT\020\013\022\026\n\022EXTERN" +
-      "ALGAME_APPLE\020\r\022\027\n\023EXTERNALGAME_TWITCH\020\016\022" +
-      "\030\n\024EXTERNALGAME_ANDROID\020\017\022\034\n\030EXTERNALGAM" +
-      "E_AMAZON_ASIN\020\024\022\034\n\030EXTERNALGAME_AMAZON_L" +
-      "UNA\020\026\022\033\n\027EXTERNALGAME_AMAZON_ADG\020\027\022 \n\034EX" +
-      "TERNALGAME_EPIC_GAME_STORE\020\032\022\027\n\023EXTERNAL" +
-      "GAME_OCULUS\020\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035\022\030" +
-      "\n\024EXTERNALGAME_ITCH_IO\020\036\022!\n\035EXTERNALGAME" +
-      "_XBOX_MARKETPLACE\020\037\022\032\n\026EXTERNALGAME_KART" +
-      "RIDGE\020 \022%\n!EXTERNALGAME_PLAYSTATION_STOR" +
-      "E_US\020$\022$\n EXTERNALGAME_FOCUS_ENTERTAINME" +
-      "NT\020%\022.\n*EXTERNALGAME_XBOX_GAME_PASS_ULTI" +
-      "MATE_CLOUD\0206\022\031\n\025EXTERNALGAME_GAMEJOLT\0207*" +
-      "i\n\025ExternalGameMediaEnum\022\033\n\027EXTERNALGAME" +
-      "_MEDIA_NULL\020\000\022\030\n\024EXTERNALGAME_DIGITAL\020\001\022" +
-      "\031\n\025EXTERNALGAME_PHYSICAL\020\002*\310\001\n\020GameCateg" +
-      "oryEnum\022\r\n\tMAIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r\n" +
-      "\tEXPANSION\020\002\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE_E" +
-      "XPANSION\020\004\022\007\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SEAS" +
-      "ON\020\007\022\n\n\006REMAKE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPAND" +
-      "ED_GAME\020\n\022\010\n\004PORT\020\013\022\010\n\004FORK\020\014*|\n\016GameSta" +
-      "tusEnum\022\014\n\010RELEASED\020\000\022\t\n\005ALPHA\020\002\022\010\n\004BETA" +
-      "\020\003\022\020\n\014EARLY_ACCESS\020\004\022\013\n\007OFFLINE\020\005\022\r\n\tCAN" +
-      "CELLED\020\006\022\013\n\007RUMORED\020\007\022\014\n\010DELISTED\020\010*>\n\036G" +
-      "ameVersionFeatureCategoryEnum\022\013\n\007BOOLEAN" +
-      "\020\000\022\017\n\013DESCRIPTION\020\001*`\n*GameVersionFeatur" +
-      "eValueIncludedFeatureEnum\022\020\n\014NOT_INCLUDE" +
-      "D\020\000\022\014\n\010INCLUDED\020\001\022\022\n\016PRE_ORDER_ONLY\020\002*\223\001" +
-      "\n\024PlatformCategoryEnum\022\032\n\026PLATFORM_CATEG" +
-      "ORY_NULL\020\000\022\013\n\007CONSOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010P" +
-      "LATFORM\020\003\022\024\n\020OPERATING_SYSTEM\020\004\022\024\n\020PORTA" +
-      "BLE_CONSOLE\020\005\022\014\n\010COMPUTER\020\006*\257\001\n\020RegionRe" +
-      "gionEnum\022\026\n\022REGION_REGION_NULL\020\000\022\n\n\006EURO" +
-      "PE\020\001\022\021\n\rNORTH_AMERICA\020\002\022\r\n\tAUSTRALIA\020\003\022\017" +
-      "\n\013NEW_ZEALAND\020\004\022\t\n\005JAPAN\020\005\022\t\n\005CHINA\020\006\022\010\n" +
-      "\004ASIA\020\007\022\r\n\tWORLDWIDE\020\010\022\t\n\005KOREA\020\t\022\n\n\006BRA" +
-      "ZIL\020\n*K\n\025TestDummyEnumTestEnum\022\034\n\030TESTDU" +
-      "MMY_ENUM_TEST_NULL\020\000\022\t\n\005ENUM1\020\001\022\t\n\005ENUM2" +
-      "\020\002B\004H\002P\001b\006proto3"
+      "\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"4\n\016Langua" +
+      "geResult\022\"\n\tlanguages\030\001 \003(\0132\017.proto.Lang" +
+      "uage\"\273\001\n\010Language\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 " +
+      "\001(\t\022\023\n\013native_name\030\003 \001(\t\022\016\n\006locale\030\004 \001(\t" +
+      "\022.\n\ncreated_at\030\005 \001(\0132\032.google.protobuf.T" +
+      "imestamp\022.\n\nupdated_at\030\006 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\020\n\010checksum\030\007 \001(\t\"I\n\025La" +
+      "nguageSupportResult\0220\n\020languagesupports\030" +
+      "\001 \003(\0132\026.proto.LanguageSupport\"\210\002\n\017Langua" +
+      "geSupport\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.pr" +
+      "oto.Game\022!\n\010language\030\003 \001(\0132\017.proto.Langu" +
+      "age\0229\n\025language_support_type\030\004 \001(\0132\032.pro" +
+      "to.LanguageSupportType\022.\n\ncreated_at\030\005 \001" +
+      "(\0132\032.google.protobuf.Timestamp\022.\n\nupdate" +
+      "d_at\030\006 \001(\0132\032.google.protobuf.Timestamp\022\020" +
+      "\n\010checksum\030\007 \001(\t\"U\n\031LanguageSupportTypeR" +
+      "esult\0228\n\024languagesupporttypes\030\001 \003(\0132\032.pr" +
+      "oto.LanguageSupportType\"\241\001\n\023LanguageSupp" +
+      "ortType\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022.\n\ncre" +
+      "ated_at\030\003 \001(\0132\032.google.protobuf.Timestam" +
+      "p\022.\n\nupdated_at\030\004 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\020\n\010checksum\030\005 \001(\t\"I\n\025Multiplay" +
+      "erModeResult\0220\n\020multiplayermodes\030\001 \003(\0132\026" +
+      ".proto.MultiplayerMode\"\323\002\n\017MultiplayerMo" +
+      "de\022\n\n\002id\030\001 \001(\004\022\024\n\014campaigncoop\030\002 \001(\010\022\016\n\006" +
+      "dropin\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022" +
+      "\017\n\007lancoop\030\005 \001(\010\022\023\n\013offlinecoop\030\006 \001(\010\022\026\n" +
+      "\016offlinecoopmax\030\007 \001(\005\022\022\n\nofflinemax\030\010 \001(" +
+      "\005\022\022\n\nonlinecoop\030\t \001(\010\022\025\n\ronlinecoopmax\030\n" +
+      " \001(\005\022\021\n\tonlinemax\030\013 \001(\005\022!\n\010platform\030\014 \001(" +
+      "\0132\017.proto.Platform\022\023\n\013splitscreen\030\r \001(\010\022" +
+      "\031\n\021splitscreenonline\030\016 \001(\010\022\020\n\010checksum\030\017" +
+      " \001(\t\"4\n\016PlatformResult\022\"\n\tplatforms\030\001 \003(" +
+      "\0132\017.proto.Platform\"\345\003\n\010Platform\022\n\n\002id\030\001 " +
+      "\001(\004\022\024\n\014abbreviation\030\002 \001(\t\022\030\n\020alternative" +
+      "_name\030\003 \001(\t\022-\n\010category\030\004 \001(\0162\033.proto.Pl" +
+      "atformCategoryEnum\022.\n\ncreated_at\030\005 \001(\0132\032" +
+      ".google.protobuf.Timestamp\022\022\n\ngeneration" +
+      "\030\006 \001(\005\022\014\n\004name\030\007 \001(\t\022*\n\rplatform_logo\030\010 " +
+      "\001(\0132\023.proto.PlatformLogo\022.\n\017platform_fam" +
+      "ily\030\t \001(\0132\025.proto.PlatformFamily\022\014\n\004slug" +
+      "\030\n \001(\t\022\017\n\007summary\030\013 \001(\t\022.\n\nupdated_at\030\014 " +
+      "\001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\r" +
+      " \001(\t\022(\n\010versions\030\016 \003(\0132\026.proto.PlatformV" +
+      "ersion\022(\n\010websites\030\017 \003(\0132\026.proto.Platfor" +
+      "mWebsite\022\020\n\010checksum\030\020 \001(\t\"G\n\024PlatformFa" +
+      "milyResult\022/\n\020platformfamilies\030\001 \003(\0132\025.p" +
+      "roto.PlatformFamily\"J\n\016PlatformFamily\022\n\n" +
+      "\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\014\n\004slug\030\003 \001(\t\022\020\n" +
+      "\010checksum\030\004 \001(\t\"@\n\022PlatformLogoResult\022*\n" +
+      "\rplatformlogos\030\001 \003(\0132\023.proto.PlatformLog" +
+      "o\"\223\001\n\014PlatformLogo\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_" +
+      "channel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006heigh" +
+      "t\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r" +
+      "\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010 \001(\t\"I\n\025Platf" +
+      "ormVersionResult\0220\n\020platformversions\030\001 \003" +
+      "(\0132\026.proto.PlatformVersion\"\201\004\n\017PlatformV" +
+      "ersion\022\n\n\002id\030\001 \001(\004\0220\n\tcompanies\030\002 \003(\0132\035." +
+      "proto.PlatformVersionCompany\022\024\n\014connecti" +
+      "vity\030\003 \001(\t\022\013\n\003cpu\030\004 \001(\t\022\020\n\010graphics\030\005 \001(" +
+      "\t\0228\n\021main_manufacturer\030\006 \001(\0132\035.proto.Pla" +
+      "tformVersionCompany\022\r\n\005media\030\007 \001(\t\022\016\n\006me" +
+      "mory\030\010 \001(\t\022\014\n\004name\030\t \001(\t\022\016\n\006online\030\n \001(\t" +
+      "\022\n\n\002os\030\013 \001(\t\022\016\n\006output\030\014 \001(\t\022*\n\rplatform" +
+      "_logo\030\r \001(\0132\023.proto.PlatformLogo\022I\n\036plat" +
+      "form_version_release_dates\030\016 \003(\0132!.proto" +
+      ".PlatformVersionReleaseDate\022\023\n\013resolutio" +
+      "ns\030\017 \001(\t\022\014\n\004slug\030\020 \001(\t\022\r\n\005sound\030\021 \001(\t\022\017\n" +
+      "\007storage\030\022 \001(\t\022\017\n\007summary\030\023 \001(\t\022\013\n\003url\030\024" +
+      " \001(\t\022\020\n\010checksum\030\025 \001(\t\"_\n\034PlatformVersio" +
+      "nCompanyResult\022?\n\030platformversioncompani" +
+      "es\030\001 \003(\0132\035.proto.PlatformVersionCompany\"" +
+      "\221\001\n\026PlatformVersionCompany\022\n\n\002id\030\001 \001(\004\022\017" +
+      "\n\007comment\030\002 \001(\t\022\037\n\007company\030\003 \001(\0132\016.proto" +
+      ".Company\022\021\n\tdeveloper\030\004 \001(\010\022\024\n\014manufactu" +
+      "rer\030\005 \001(\010\022\020\n\010checksum\030\006 \001(\t\"j\n PlatformV" +
+      "ersionReleaseDateResult\022F\n\033platformversi" +
+      "onreleasedates\030\001 \003(\0132!.proto.PlatformVer" +
+      "sionReleaseDate\"\377\002\n\032PlatformVersionRelea" +
+      "seDate\022\n\n\002id\030\001 \001(\004\0229\n\010category\030\002 \001(\0162\'.p" +
+      "roto.DateFormatChangeDateCategoryEnum\022.\n" +
+      "\ncreated_at\030\003 \001(\0132\032.google.protobuf.Time" +
+      "stamp\022(\n\004date\030\004 \001(\0132\032.google.protobuf.Ti" +
+      "mestamp\022\r\n\005human\030\005 \001(\t\022\t\n\001m\030\006 \001(\005\0220\n\020pla" +
+      "tform_version\030\007 \001(\0132\026.proto.PlatformVers" +
+      "ion\022\'\n\006region\030\010 \001(\0162\027.proto.RegionRegion" +
+      "Enum\022.\n\nupdated_at\030\t \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\t\n\001y\030\n \001(\005\022\020\n\010checksum\030\013 \001(" +
+      "\t\"I\n\025PlatformWebsiteResult\0220\n\020platformwe" +
+      "bsites\030\001 \003(\0132\026.proto.PlatformWebsite\"{\n\017" +
+      "PlatformWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010category\030" +
+      "\002 \001(\0162\032.proto.WebsiteCategoryEnum\022\017\n\007tru" +
+      "sted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\022\020\n\010checksum\030\005 \001(" +
+      "\t\"O\n\027PlayerPerspectiveResult\0224\n\022playerpe" +
+      "rspectives\030\001 \003(\0132\030.proto.PlayerPerspecti" +
+      "ve\"\272\001\n\021PlayerPerspective\022\n\n\002id\030\001 \001(\004\022.\n\n" +
+      "created_at\030\002 \001(\0132\032.google.protobuf.Times" +
+      "tamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupda" +
+      "ted_at\030\005 \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\".\n\014Regio" +
+      "nResult\022\036\n\007regions\030\001 \003(\0132\r.proto.Region\"" +
+      "\272\001\n\006Region\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\020\n\010" +
+      "category\030\003 \001(\t\022\022\n\nidentifier\030\004 \001(\t\022.\n\ncr" +
+      "eated_at\030\005 \001(\0132\032.google.protobuf.Timesta" +
+      "mp\022.\n\nupdated_at\030\006 \001(\0132\032.google.protobuf" +
+      ".Timestamp\022\020\n\010checksum\030\007 \001(\t\"=\n\021ReleaseD" +
+      "ateResult\022(\n\014releasedates\030\001 \003(\0132\022.proto." +
+      "ReleaseDate\"\374\002\n\013ReleaseDate\022\n\n\002id\030\001 \001(\004\022" +
+      "9\n\010category\030\002 \001(\0162\'.proto.DateFormatChan" +
+      "geDateCategoryEnum\022.\n\ncreated_at\030\003 \001(\0132\032" +
+      ".google.protobuf.Timestamp\022(\n\004date\030\004 \001(\013" +
+      "2\032.google.protobuf.Timestamp\022\031\n\004game\030\005 \001" +
+      "(\0132\013.proto.Game\022\r\n\005human\030\006 \001(\t\022\t\n\001m\030\007 \001(" +
+      "\005\022!\n\010platform\030\010 \001(\0132\017.proto.Platform\022\'\n\006" +
+      "region\030\t \001(\0162\027.proto.RegionRegionEnum\022.\n" +
+      "\nupdated_at\030\n \001(\0132\032.google.protobuf.Time" +
+      "stamp\022\t\n\001y\030\013 \001(\005\022\020\n\010checksum\030\014 \001(\t\":\n\020Sc" +
+      "reenshotResult\022&\n\013screenshots\030\001 \003(\0132\021.pr" +
+      "oto.Screenshot\"\254\001\n\nScreenshot\022\n\n\002id\030\001 \001(" +
+      "\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003 \001" +
+      "(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006height\030" +
+      "\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005" +
+      "width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\"/\n\014SearchR" +
+      "esult\022\037\n\010searches\030\001 \003(\0132\r.proto.Search\"\203" +
+      "\003\n\006Search\022\n\n\002id\030\001 \001(\004\022\030\n\020alternative_nam" +
+      "e\030\002 \001(\t\022#\n\tcharacter\030\003 \001(\0132\020.proto.Chara" +
+      "cter\022%\n\ncollection\030\004 \001(\0132\021.proto.Collect" +
+      "ion\022\037\n\007company\030\005 \001(\0132\016.proto.Company\022\023\n\013" +
+      "description\030\006 \001(\t\022\031\n\004game\030\007 \001(\0132\013.proto." +
+      "Game\022\014\n\004name\030\010 \001(\t\022!\n\010platform\030\t \001(\0132\017.p" +
+      "roto.Platform\0220\n\014published_at\030\n \001(\0132\032.go" +
+      "ogle.protobuf.Timestamp\022$\n\ntest_dummy\030\013 " +
+      "\001(\0132\020.proto.TestDummy\022\033\n\005theme\030\014 \001(\0132\014.p" +
+      "roto.Theme\022\020\n\010checksum\030\r \001(\t\"8\n\017TestDumm" +
+      "yResult\022%\n\013testdummies\030\001 \003(\0132\020.proto.Tes" +
+      "tDummy\"\345\003\n\tTestDummy\022\n\n\002id\030\001 \001(\004\022\022\n\nbool" +
+      "_value\030\002 \001(\010\022.\n\ncreated_at\030\003 \001(\0132\032.googl" +
+      "e.protobuf.Timestamp\022/\n\tenum_test\030\004 \001(\0162" +
+      "\034.proto.TestDummyEnumTestEnum\022\023\n\013float_v" +
+      "alue\030\005 \001(\001\022\031\n\004game\030\006 \001(\0132\013.proto.Game\022\025\n" +
+      "\rinteger_array\030\007 \003(\005\022\025\n\rinteger_value\030\010 " +
+      "\001(\005\022\014\n\004name\030\t \001(\t\022\031\n\021new_integer_value\030\n" +
+      " \001(\005\022\017\n\007private\030\013 \001(\010\022\014\n\004slug\030\014 \001(\t\022\024\n\014s" +
+      "tring_array\030\r \003(\t\022&\n\014test_dummies\030\016 \003(\0132" +
+      "\020.proto.TestDummy\022$\n\ntest_dummy\030\017 \001(\0132\020." +
+      "proto.TestDummy\022.\n\nupdated_at\030\020 \001(\0132\032.go" +
+      "ogle.protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\020\n\010" +
+      "checksum\030\022 \001(\t\"+\n\013ThemeResult\022\034\n\006themes\030" +
+      "\001 \003(\0132\014.proto.Theme\"\256\001\n\005Theme\022\n\n\002id\030\001 \001(" +
+      "\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n" +
+      "\nupdated_at\030\005 \001(\0132\032.google.protobuf.Time" +
+      "stamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"1\n\r" +
+      "WebsiteResult\022 \n\010websites\030\001 \003(\0132\016.proto." +
+      "Website\"\216\001\n\007Website\022\n\n\002id\030\001 \001(\004\022,\n\010categ" +
+      "ory\030\002 \001(\0162\032.proto.WebsiteCategoryEnum\022\031\n" +
+      "\004game\030\003 \001(\0132\013.proto.Game\022\017\n\007trusted\030\004 \001(" +
+      "\010\022\013\n\003url\030\005 \001(\t\022\020\n\010checksum\030\006 \001(\t*}\n\025AgeR" +
+      "atingCategoryEnum\022\033\n\027AGERATING_CATEGORY_" +
+      "NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002\022\010\n\004CERO\020\003\022\007\n\003" +
+      "USK\020\004\022\010\n\004GRAC\020\005\022\r\n\tCLASS_IND\020\006\022\007\n\003ACB\020\007*" +
+      "\255\004\n\023AgeRatingRatingEnum\022\031\n\025AGERATING_RAT" +
+      "ING_NULL\020\000\022\t\n\005THREE\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWEL" +
+      "VE\020\003\022\013\n\007SIXTEEN\020\004\022\014\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022" +
+      "\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n" +
+      "\002AO\020\014\022\n\n\006CERO_A\020\r\022\n\n\006CERO_B\020\016\022\n\n\006CERO_C\020" +
+      "\017\022\n\n\006CERO_D\020\020\022\n\n\006CERO_Z\020\021\022\t\n\005USK_0\020\022\022\t\n\005" +
+      "USK_6\020\023\022\n\n\006USK_12\020\024\022\n\n\006USK_18\020\025\022\014\n\010GRAC_" +
+      "ALL\020\026\022\017\n\013GRAC_TWELVE\020\027\022\020\n\014GRAC_FIFTEEN\020\030" +
+      "\022\021\n\rGRAC_EIGHTEEN\020\031\022\020\n\014GRAC_TESTING\020\032\022\017\n",
+      "\013CLASS_IND_L\020\033\022\021\n\rCLASS_IND_TEN\020\034\022\024\n\020CLA" +
+      "SS_IND_TWELVE\020\035\022\026\n\022CLASS_IND_FOURTEEN\020\036\022" +
+      "\025\n\021CLASS_IND_SIXTEEN\020\037\022\026\n\022CLASS_IND_EIGH" +
+      "TEEN\020 \022\t\n\005ACB_G\020!\022\n\n\006ACB_PG\020\"\022\t\n\005ACB_M\020#" +
+      "\022\014\n\010ACB_MA15\020$\022\013\n\007ACB_R18\020%\022\n\n\006ACB_RC\020&*" +
+      "3\n\020GenderGenderEnum\022\010\n\004MALE\020\000\022\n\n\006FEMALE\020" +
+      "\001\022\t\n\005OTHER\020\002*n\n\024CharacterSpeciesEnum\022\032\n\026" +
+      "CHARACTER_SPECIES_NULL\020\000\022\t\n\005HUMAN\020\001\022\t\n\005A" +
+      "LIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDROID\020\004\022\013\n\007UNKNO" +
+      "WN\020\005*\203\001\n DateFormatChangeDateCategoryEnu" +
+      "m\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYMMMM\020\001\022\010\n\004YYYY\020" +
+      "\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022\n\n\006YYYYQ3\020\005\022\n\n" +
+      "\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023WebsiteCategoryEn" +
+      "um\022\031\n\025WEBSITE_CATEGORY_NULL\020\000\022\024\n\020WEBSITE" +
+      "_OFFICIAL\020\001\022\021\n\rWEBSITE_WIKIA\020\002\022\025\n\021WEBSIT" +
+      "E_WIKIPEDIA\020\003\022\024\n\020WEBSITE_FACEBOOK\020\004\022\023\n\017W" +
+      "EBSITE_TWITTER\020\005\022\022\n\016WEBSITE_TWITCH\020\006\022\025\n\021" +
+      "WEBSITE_INSTAGRAM\020\010\022\023\n\017WEBSITE_YOUTUBE\020\t" +
+      "\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WEBSITE_IPAD\020\013\022\023" +
+      "\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEBSITE_STEAM\020\r\022\022" +
+      "\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBSITE_ITCH\020\017\022\025\n\021" +
+      "WEBSITE_EPICGAMES\020\020\022\017\n\013WEBSITE_GOG\020\021\022\023\n\017" +
+      "WEBSITE_DISCORD\020\022*\207\005\n\030ExternalGameCatego" +
+      "ryEnum\022\036\n\032EXTERNALGAME_CATEGORY_NULL\020\000\022\026" +
+      "\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020EXTERNALGAME_G" +
+      "OG\020\005\022\030\n\024EXTERNALGAME_YOUTUBE\020\n\022\032\n\026EXTERN" +
+      "ALGAME_MICROSOFT\020\013\022\026\n\022EXTERNALGAME_APPLE" +
+      "\020\r\022\027\n\023EXTERNALGAME_TWITCH\020\016\022\030\n\024EXTERNALG" +
+      "AME_ANDROID\020\017\022\034\n\030EXTERNALGAME_AMAZON_ASI" +
+      "N\020\024\022\034\n\030EXTERNALGAME_AMAZON_LUNA\020\026\022\033\n\027EXT" +
+      "ERNALGAME_AMAZON_ADG\020\027\022 \n\034EXTERNALGAME_E" +
+      "PIC_GAME_STORE\020\032\022\027\n\023EXTERNALGAME_OCULUS\020" +
+      "\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035\022\030\n\024EXTERNALGA" +
+      "ME_ITCH_IO\020\036\022!\n\035EXTERNALGAME_XBOX_MARKET" +
+      "PLACE\020\037\022\032\n\026EXTERNALGAME_KARTRIDGE\020 \022%\n!E" +
+      "XTERNALGAME_PLAYSTATION_STORE_US\020$\022$\n EX" +
+      "TERNALGAME_FOCUS_ENTERTAINMENT\020%\022.\n*EXTE" +
+      "RNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD\0206" +
+      "\022\031\n\025EXTERNALGAME_GAMEJOLT\0207*i\n\025ExternalG" +
+      "ameMediaEnum\022\033\n\027EXTERNALGAME_MEDIA_NULL\020" +
+      "\000\022\030\n\024EXTERNALGAME_DIGITAL\020\001\022\031\n\025EXTERNALG" +
+      "AME_PHYSICAL\020\002*\336\001\n\020GameCategoryEnum\022\r\n\tM" +
+      "AIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r\n\tEXPANSION\020\002" +
+      "\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE_EXPANSION\020\004\022\007" +
+      "\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SEASON\020\007\022\n\n\006REMA" +
+      "KE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPANDED_GAME\020\n\022\010\n" +
+      "\004PORT\020\013\022\010\n\004FORK\020\014\022\010\n\004PACK\020\r\022\n\n\006UPDATE\020\016*" +
+      "|\n\016GameStatusEnum\022\014\n\010RELEASED\020\000\022\t\n\005ALPHA" +
+      "\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCESS\020\004\022\013\n\007OFFLIN" +
+      "E\020\005\022\r\n\tCANCELLED\020\006\022\013\n\007RUMORED\020\007\022\014\n\010DELIS" +
+      "TED\020\010*>\n\036GameVersionFeatureCategoryEnum\022" +
+      "\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTION\020\001*`\n*GameVer" +
+      "sionFeatureValueIncludedFeatureEnum\022\020\n\014N" +
+      "OT_INCLUDED\020\000\022\014\n\010INCLUDED\020\001\022\022\n\016PRE_ORDER" +
+      "_ONLY\020\002*\223\001\n\024PlatformCategoryEnum\022\032\n\026PLAT" +
+      "FORM_CATEGORY_NULL\020\000\022\013\n\007CONSOLE\020\001\022\n\n\006ARC" +
+      "ADE\020\002\022\014\n\010PLATFORM\020\003\022\024\n\020OPERATING_SYSTEM\020" +
+      "\004\022\024\n\020PORTABLE_CONSOLE\020\005\022\014\n\010COMPUTER\020\006*\257\001" +
+      "\n\020RegionRegionEnum\022\026\n\022REGION_REGION_NULL" +
+      "\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AMERICA\020\002\022\r\n\tAUS" +
+      "TRALIA\020\003\022\017\n\013NEW_ZEALAND\020\004\022\t\n\005JAPAN\020\005\022\t\n\005" +
+      "CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLDWIDE\020\010\022\t\n\005KORE" +
+      "A\020\t\022\n\n\006BRAZIL\020\n*K\n\025TestDummyEnumTestEnum" +
+      "\022\034\n\030TESTDUMMY_ENUM_TEST_NULL\020\000\022\t\n\005ENUM1\020" +
+      "\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1061,7 +1098,7 @@ public final class Igdbproto {
     internal_static_proto_Cover_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Cover_descriptor,
-        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", "Checksum", });
+        new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", "Checksum", "GameLocalization", });
     internal_static_proto_ExternalGameResult_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_proto_ExternalGameResult_fieldAccessorTable = new
@@ -1097,7 +1134,7 @@ public final class Igdbproto {
     internal_static_proto_Game_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Game_descriptor,
-        new java.lang.String[] { "Id", "AgeRatings", "AggregatedRating", "AggregatedRatingCount", "AlternativeNames", "Artworks", "Bundles", "Category", "Collection", "Cover", "CreatedAt", "Dlcs", "Expansions", "ExternalGames", "FirstReleaseDate", "Follows", "Franchise", "Franchises", "GameEngines", "GameModes", "Genres", "Hypes", "InvolvedCompanies", "Keywords", "MultiplayerModes", "Name", "ParentGame", "Platforms", "PlayerPerspectives", "Rating", "RatingCount", "ReleaseDates", "Screenshots", "SimilarGames", "Slug", "StandaloneExpansions", "Status", "Storyline", "Summary", "Tags", "Themes", "TotalRating", "TotalRatingCount", "UpdatedAt", "Url", "VersionParent", "VersionTitle", "Videos", "Websites", "Checksum", "Remakes", "Remasters", "ExpandedGames", "Ports", "Forks", "LanguageSupports", });
+        new java.lang.String[] { "Id", "AgeRatings", "AggregatedRating", "AggregatedRatingCount", "AlternativeNames", "Artworks", "Bundles", "Category", "Collection", "Cover", "CreatedAt", "Dlcs", "Expansions", "ExternalGames", "FirstReleaseDate", "Follows", "Franchise", "Franchises", "GameEngines", "GameModes", "Genres", "Hypes", "InvolvedCompanies", "Keywords", "MultiplayerModes", "Name", "ParentGame", "Platforms", "PlayerPerspectives", "Rating", "RatingCount", "ReleaseDates", "Screenshots", "SimilarGames", "Slug", "StandaloneExpansions", "Status", "Storyline", "Summary", "Tags", "Themes", "TotalRating", "TotalRatingCount", "UpdatedAt", "Url", "VersionParent", "VersionTitle", "Videos", "Websites", "Checksum", "Remakes", "Remasters", "ExpandedGames", "Ports", "Forks", "LanguageSupports", "GameLocalizations", });
     internal_static_proto_GameEngineResult_descriptor =
       getDescriptor().getMessageTypes().get(31);
     internal_static_proto_GameEngineResult_fieldAccessorTable = new
@@ -1122,314 +1159,338 @@ public final class Igdbproto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameEngineLogo_descriptor,
         new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Height", "ImageId", "Url", "Width", "Checksum", });
-    internal_static_proto_GameModeResult_descriptor =
+    internal_static_proto_GameLocalizationResult_descriptor =
       getDescriptor().getMessageTypes().get(35);
+    internal_static_proto_GameLocalizationResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_GameLocalizationResult_descriptor,
+        new java.lang.String[] { "Gamelocalizations", });
+    internal_static_proto_GameLocalization_descriptor =
+      getDescriptor().getMessageTypes().get(36);
+    internal_static_proto_GameLocalization_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_GameLocalization_descriptor,
+        new java.lang.String[] { "Id", "Name", "Cover", "Game", "Region", "CreatedAt", "UpdatedAt", "Checksum", });
+    internal_static_proto_GameModeResult_descriptor =
+      getDescriptor().getMessageTypes().get(37);
     internal_static_proto_GameModeResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameModeResult_descriptor,
         new java.lang.String[] { "Gamemodes", });
     internal_static_proto_GameMode_descriptor =
-      getDescriptor().getMessageTypes().get(36);
+      getDescriptor().getMessageTypes().get(38);
     internal_static_proto_GameMode_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameMode_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_GameVersionResult_descriptor =
-      getDescriptor().getMessageTypes().get(37);
+      getDescriptor().getMessageTypes().get(39);
     internal_static_proto_GameVersionResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersionResult_descriptor,
         new java.lang.String[] { "Gameversions", });
     internal_static_proto_GameVersion_descriptor =
-      getDescriptor().getMessageTypes().get(38);
+      getDescriptor().getMessageTypes().get(40);
     internal_static_proto_GameVersion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersion_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Features", "Game", "Games", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_GameVersionFeatureResult_descriptor =
-      getDescriptor().getMessageTypes().get(39);
+      getDescriptor().getMessageTypes().get(41);
     internal_static_proto_GameVersionFeatureResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersionFeatureResult_descriptor,
         new java.lang.String[] { "Gameversionfeatures", });
     internal_static_proto_GameVersionFeature_descriptor =
-      getDescriptor().getMessageTypes().get(40);
+      getDescriptor().getMessageTypes().get(42);
     internal_static_proto_GameVersionFeature_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersionFeature_descriptor,
         new java.lang.String[] { "Id", "Category", "Description", "Position", "Title", "Values", "Checksum", });
     internal_static_proto_GameVersionFeatureValueResult_descriptor =
-      getDescriptor().getMessageTypes().get(41);
+      getDescriptor().getMessageTypes().get(43);
     internal_static_proto_GameVersionFeatureValueResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersionFeatureValueResult_descriptor,
         new java.lang.String[] { "Gameversionfeaturevalues", });
     internal_static_proto_GameVersionFeatureValue_descriptor =
-      getDescriptor().getMessageTypes().get(42);
+      getDescriptor().getMessageTypes().get(44);
     internal_static_proto_GameVersionFeatureValue_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVersionFeatureValue_descriptor,
         new java.lang.String[] { "Id", "Game", "GameFeature", "IncludedFeature", "Note", "Checksum", });
     internal_static_proto_GameVideoResult_descriptor =
-      getDescriptor().getMessageTypes().get(43);
+      getDescriptor().getMessageTypes().get(45);
     internal_static_proto_GameVideoResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVideoResult_descriptor,
         new java.lang.String[] { "Gamevideos", });
     internal_static_proto_GameVideo_descriptor =
-      getDescriptor().getMessageTypes().get(44);
+      getDescriptor().getMessageTypes().get(46);
     internal_static_proto_GameVideo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GameVideo_descriptor,
         new java.lang.String[] { "Id", "Game", "Name", "VideoId", "Checksum", });
     internal_static_proto_GenreResult_descriptor =
-      getDescriptor().getMessageTypes().get(45);
+      getDescriptor().getMessageTypes().get(47);
     internal_static_proto_GenreResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_GenreResult_descriptor,
         new java.lang.String[] { "Genres", });
     internal_static_proto_Genre_descriptor =
-      getDescriptor().getMessageTypes().get(46);
+      getDescriptor().getMessageTypes().get(48);
     internal_static_proto_Genre_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Genre_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_InvolvedCompanyResult_descriptor =
-      getDescriptor().getMessageTypes().get(47);
+      getDescriptor().getMessageTypes().get(49);
     internal_static_proto_InvolvedCompanyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_InvolvedCompanyResult_descriptor,
         new java.lang.String[] { "Involvedcompanies", });
     internal_static_proto_InvolvedCompany_descriptor =
-      getDescriptor().getMessageTypes().get(48);
+      getDescriptor().getMessageTypes().get(50);
     internal_static_proto_InvolvedCompany_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_InvolvedCompany_descriptor,
         new java.lang.String[] { "Id", "Company", "CreatedAt", "Developer", "Game", "Porting", "Publisher", "Supporting", "UpdatedAt", "Checksum", });
     internal_static_proto_KeywordResult_descriptor =
-      getDescriptor().getMessageTypes().get(49);
+      getDescriptor().getMessageTypes().get(51);
     internal_static_proto_KeywordResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_KeywordResult_descriptor,
         new java.lang.String[] { "Keywords", });
     internal_static_proto_Keyword_descriptor =
-      getDescriptor().getMessageTypes().get(50);
+      getDescriptor().getMessageTypes().get(52);
     internal_static_proto_Keyword_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Keyword_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_LanguageResult_descriptor =
-      getDescriptor().getMessageTypes().get(51);
+      getDescriptor().getMessageTypes().get(53);
     internal_static_proto_LanguageResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_LanguageResult_descriptor,
         new java.lang.String[] { "Languages", });
     internal_static_proto_Language_descriptor =
-      getDescriptor().getMessageTypes().get(52);
+      getDescriptor().getMessageTypes().get(54);
     internal_static_proto_Language_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Language_descriptor,
         new java.lang.String[] { "Id", "Name", "NativeName", "Locale", "CreatedAt", "UpdatedAt", "Checksum", });
     internal_static_proto_LanguageSupportResult_descriptor =
-      getDescriptor().getMessageTypes().get(53);
+      getDescriptor().getMessageTypes().get(55);
     internal_static_proto_LanguageSupportResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_LanguageSupportResult_descriptor,
         new java.lang.String[] { "Languagesupports", });
     internal_static_proto_LanguageSupport_descriptor =
-      getDescriptor().getMessageTypes().get(54);
+      getDescriptor().getMessageTypes().get(56);
     internal_static_proto_LanguageSupport_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_LanguageSupport_descriptor,
         new java.lang.String[] { "Id", "Game", "Language", "LanguageSupportType", "CreatedAt", "UpdatedAt", "Checksum", });
     internal_static_proto_LanguageSupportTypeResult_descriptor =
-      getDescriptor().getMessageTypes().get(55);
+      getDescriptor().getMessageTypes().get(57);
     internal_static_proto_LanguageSupportTypeResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_LanguageSupportTypeResult_descriptor,
         new java.lang.String[] { "Languagesupporttypes", });
     internal_static_proto_LanguageSupportType_descriptor =
-      getDescriptor().getMessageTypes().get(56);
+      getDescriptor().getMessageTypes().get(58);
     internal_static_proto_LanguageSupportType_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_LanguageSupportType_descriptor,
         new java.lang.String[] { "Id", "Name", "CreatedAt", "UpdatedAt", "Checksum", });
     internal_static_proto_MultiplayerModeResult_descriptor =
-      getDescriptor().getMessageTypes().get(57);
+      getDescriptor().getMessageTypes().get(59);
     internal_static_proto_MultiplayerModeResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_MultiplayerModeResult_descriptor,
         new java.lang.String[] { "Multiplayermodes", });
     internal_static_proto_MultiplayerMode_descriptor =
-      getDescriptor().getMessageTypes().get(58);
+      getDescriptor().getMessageTypes().get(60);
     internal_static_proto_MultiplayerMode_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_MultiplayerMode_descriptor,
         new java.lang.String[] { "Id", "Campaigncoop", "Dropin", "Game", "Lancoop", "Offlinecoop", "Offlinecoopmax", "Offlinemax", "Onlinecoop", "Onlinecoopmax", "Onlinemax", "Platform", "Splitscreen", "Splitscreenonline", "Checksum", });
     internal_static_proto_PlatformResult_descriptor =
-      getDescriptor().getMessageTypes().get(59);
+      getDescriptor().getMessageTypes().get(61);
     internal_static_proto_PlatformResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformResult_descriptor,
         new java.lang.String[] { "Platforms", });
     internal_static_proto_Platform_descriptor =
-      getDescriptor().getMessageTypes().get(60);
+      getDescriptor().getMessageTypes().get(62);
     internal_static_proto_Platform_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Platform_descriptor,
         new java.lang.String[] { "Id", "Abbreviation", "AlternativeName", "Category", "CreatedAt", "Generation", "Name", "PlatformLogo", "PlatformFamily", "Slug", "Summary", "UpdatedAt", "Url", "Versions", "Websites", "Checksum", });
     internal_static_proto_PlatformFamilyResult_descriptor =
-      getDescriptor().getMessageTypes().get(61);
+      getDescriptor().getMessageTypes().get(63);
     internal_static_proto_PlatformFamilyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformFamilyResult_descriptor,
         new java.lang.String[] { "Platformfamilies", });
     internal_static_proto_PlatformFamily_descriptor =
-      getDescriptor().getMessageTypes().get(62);
+      getDescriptor().getMessageTypes().get(64);
     internal_static_proto_PlatformFamily_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformFamily_descriptor,
         new java.lang.String[] { "Id", "Name", "Slug", "Checksum", });
     internal_static_proto_PlatformLogoResult_descriptor =
-      getDescriptor().getMessageTypes().get(63);
+      getDescriptor().getMessageTypes().get(65);
     internal_static_proto_PlatformLogoResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformLogoResult_descriptor,
         new java.lang.String[] { "Platformlogos", });
     internal_static_proto_PlatformLogo_descriptor =
-      getDescriptor().getMessageTypes().get(64);
+      getDescriptor().getMessageTypes().get(66);
     internal_static_proto_PlatformLogo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformLogo_descriptor,
         new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Height", "ImageId", "Url", "Width", "Checksum", });
     internal_static_proto_PlatformVersionResult_descriptor =
-      getDescriptor().getMessageTypes().get(65);
+      getDescriptor().getMessageTypes().get(67);
     internal_static_proto_PlatformVersionResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersionResult_descriptor,
         new java.lang.String[] { "Platformversions", });
     internal_static_proto_PlatformVersion_descriptor =
-      getDescriptor().getMessageTypes().get(66);
+      getDescriptor().getMessageTypes().get(68);
     internal_static_proto_PlatformVersion_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersion_descriptor,
         new java.lang.String[] { "Id", "Companies", "Connectivity", "Cpu", "Graphics", "MainManufacturer", "Media", "Memory", "Name", "Online", "Os", "Output", "PlatformLogo", "PlatformVersionReleaseDates", "Resolutions", "Slug", "Sound", "Storage", "Summary", "Url", "Checksum", });
     internal_static_proto_PlatformVersionCompanyResult_descriptor =
-      getDescriptor().getMessageTypes().get(67);
+      getDescriptor().getMessageTypes().get(69);
     internal_static_proto_PlatformVersionCompanyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersionCompanyResult_descriptor,
         new java.lang.String[] { "Platformversioncompanies", });
     internal_static_proto_PlatformVersionCompany_descriptor =
-      getDescriptor().getMessageTypes().get(68);
+      getDescriptor().getMessageTypes().get(70);
     internal_static_proto_PlatformVersionCompany_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersionCompany_descriptor,
         new java.lang.String[] { "Id", "Comment", "Company", "Developer", "Manufacturer", "Checksum", });
     internal_static_proto_PlatformVersionReleaseDateResult_descriptor =
-      getDescriptor().getMessageTypes().get(69);
+      getDescriptor().getMessageTypes().get(71);
     internal_static_proto_PlatformVersionReleaseDateResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersionReleaseDateResult_descriptor,
         new java.lang.String[] { "Platformversionreleasedates", });
     internal_static_proto_PlatformVersionReleaseDate_descriptor =
-      getDescriptor().getMessageTypes().get(70);
+      getDescriptor().getMessageTypes().get(72);
     internal_static_proto_PlatformVersionReleaseDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformVersionReleaseDate_descriptor,
         new java.lang.String[] { "Id", "Category", "CreatedAt", "Date", "Human", "M", "PlatformVersion", "Region", "UpdatedAt", "Y", "Checksum", });
     internal_static_proto_PlatformWebsiteResult_descriptor =
-      getDescriptor().getMessageTypes().get(71);
+      getDescriptor().getMessageTypes().get(73);
     internal_static_proto_PlatformWebsiteResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformWebsiteResult_descriptor,
         new java.lang.String[] { "Platformwebsites", });
     internal_static_proto_PlatformWebsite_descriptor =
-      getDescriptor().getMessageTypes().get(72);
+      getDescriptor().getMessageTypes().get(74);
     internal_static_proto_PlatformWebsite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlatformWebsite_descriptor,
         new java.lang.String[] { "Id", "Category", "Trusted", "Url", "Checksum", });
     internal_static_proto_PlayerPerspectiveResult_descriptor =
-      getDescriptor().getMessageTypes().get(73);
+      getDescriptor().getMessageTypes().get(75);
     internal_static_proto_PlayerPerspectiveResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlayerPerspectiveResult_descriptor,
         new java.lang.String[] { "Playerperspectives", });
     internal_static_proto_PlayerPerspective_descriptor =
-      getDescriptor().getMessageTypes().get(74);
+      getDescriptor().getMessageTypes().get(76);
     internal_static_proto_PlayerPerspective_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_PlayerPerspective_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
+    internal_static_proto_RegionResult_descriptor =
+      getDescriptor().getMessageTypes().get(77);
+    internal_static_proto_RegionResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_RegionResult_descriptor,
+        new java.lang.String[] { "Regions", });
+    internal_static_proto_Region_descriptor =
+      getDescriptor().getMessageTypes().get(78);
+    internal_static_proto_Region_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_Region_descriptor,
+        new java.lang.String[] { "Id", "Name", "Category", "Identifier", "CreatedAt", "UpdatedAt", "Checksum", });
     internal_static_proto_ReleaseDateResult_descriptor =
-      getDescriptor().getMessageTypes().get(75);
+      getDescriptor().getMessageTypes().get(79);
     internal_static_proto_ReleaseDateResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ReleaseDateResult_descriptor,
         new java.lang.String[] { "Releasedates", });
     internal_static_proto_ReleaseDate_descriptor =
-      getDescriptor().getMessageTypes().get(76);
+      getDescriptor().getMessageTypes().get(80);
     internal_static_proto_ReleaseDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ReleaseDate_descriptor,
         new java.lang.String[] { "Id", "Category", "CreatedAt", "Date", "Game", "Human", "M", "Platform", "Region", "UpdatedAt", "Y", "Checksum", });
     internal_static_proto_ScreenshotResult_descriptor =
-      getDescriptor().getMessageTypes().get(77);
+      getDescriptor().getMessageTypes().get(81);
     internal_static_proto_ScreenshotResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ScreenshotResult_descriptor,
         new java.lang.String[] { "Screenshots", });
     internal_static_proto_Screenshot_descriptor =
-      getDescriptor().getMessageTypes().get(78);
+      getDescriptor().getMessageTypes().get(82);
     internal_static_proto_Screenshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Screenshot_descriptor,
         new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", "Checksum", });
     internal_static_proto_SearchResult_descriptor =
-      getDescriptor().getMessageTypes().get(79);
+      getDescriptor().getMessageTypes().get(83);
     internal_static_proto_SearchResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_SearchResult_descriptor,
         new java.lang.String[] { "Searches", });
     internal_static_proto_Search_descriptor =
-      getDescriptor().getMessageTypes().get(80);
+      getDescriptor().getMessageTypes().get(84);
     internal_static_proto_Search_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Search_descriptor,
         new java.lang.String[] { "Id", "AlternativeName", "Character", "Collection", "Company", "Description", "Game", "Name", "Platform", "PublishedAt", "TestDummy", "Theme", "Checksum", });
     internal_static_proto_TestDummyResult_descriptor =
-      getDescriptor().getMessageTypes().get(81);
+      getDescriptor().getMessageTypes().get(85);
     internal_static_proto_TestDummyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_TestDummyResult_descriptor,
         new java.lang.String[] { "Testdummies", });
     internal_static_proto_TestDummy_descriptor =
-      getDescriptor().getMessageTypes().get(82);
+      getDescriptor().getMessageTypes().get(86);
     internal_static_proto_TestDummy_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_TestDummy_descriptor,
         new java.lang.String[] { "Id", "BoolValue", "CreatedAt", "EnumTest", "FloatValue", "Game", "IntegerArray", "IntegerValue", "Name", "NewIntegerValue", "Private", "Slug", "StringArray", "TestDummies", "TestDummy", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_ThemeResult_descriptor =
-      getDescriptor().getMessageTypes().get(83);
+      getDescriptor().getMessageTypes().get(87);
     internal_static_proto_ThemeResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ThemeResult_descriptor,
         new java.lang.String[] { "Themes", });
     internal_static_proto_Theme_descriptor =
-      getDescriptor().getMessageTypes().get(84);
+      getDescriptor().getMessageTypes().get(88);
     internal_static_proto_Theme_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Theme_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_WebsiteResult_descriptor =
-      getDescriptor().getMessageTypes().get(85);
+      getDescriptor().getMessageTypes().get(89);
     internal_static_proto_WebsiteResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_WebsiteResult_descriptor,
         new java.lang.String[] { "Websites", });
     internal_static_proto_Website_descriptor =
-      getDescriptor().getMessageTypes().get(86);
+      getDescriptor().getMessageTypes().get(90);
     internal_static_proto_Website_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Website_descriptor,

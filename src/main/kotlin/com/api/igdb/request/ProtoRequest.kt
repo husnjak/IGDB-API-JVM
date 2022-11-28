@@ -104,6 +104,12 @@ fun IGDBWrapper.gameEngineLogos(APICalypse: APICalypse): List<GameEngineLogo> {
 }
 
 @Throws(RequestException::class)
+fun IGDBWrapper.gameLocalizations(APICalypse: APICalypse): List<GameLocalization> {
+    val bytes = apiProtoRequest(Endpoints.GAME_LOCALIZATIONS, APICalypse.buildQuery())
+    return GameLocalizationResult.parseFrom(bytes).gamelocalizationsList
+}
+
+@Throws(RequestException::class)
 fun IGDBWrapper.gameModes(APICalypse: APICalypse): List<GameMode> {
     val bytes = apiProtoRequest(Endpoints.GAME_MODES, APICalypse.buildQuery())
     return GameModeResult.parseFrom(bytes).gamemodesList
@@ -159,12 +165,12 @@ fun IGDBWrapper.languages(APICalypse: APICalypse): List<Language> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.languageSupports(APICalypse: APICalypse): List<LanguageSupport> {
-    val bytes = apiProtoRequest(Endpoints.LANGUAGE_SUPPORT, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.LANGUAGE_SUPPORTS, APICalypse.buildQuery())
     return LanguageSupportResult.parseFrom(bytes).languagesupportsList
 }
 
 @Throws(RequestException::class)
-fun IGDBWrapper.langaugeSupportTypes(APICalypse: APICalypse): List<LanguageSupportType> {
+fun IGDBWrapper.languageSupportTypes(APICalypse: APICalypse): List<LanguageSupportType> {
     val bytes = apiProtoRequest(Endpoints.LANGUAGE_SUPPORT_TYPES, APICalypse.buildQuery())
     return LanguageSupportTypeResult.parseFrom(bytes).languagesupporttypesList
 }
@@ -221,6 +227,12 @@ fun IGDBWrapper.playerPerspectives(APICalypse: APICalypse): List<PlayerPerspecti
 fun IGDBWrapper.platformFamilies(APICalypse: APICalypse): List<PlatformFamily> {
     val bytes = apiProtoRequest(Endpoints.PLATFORM_FAMILIES, APICalypse.buildQuery())
     return PlatformFamilyResult.parseFrom(bytes).platformfamiliesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.regions(APICalypse: APICalypse): List<Region> {
+    val bytes = apiProtoRequest(Endpoints.REGIONS, APICalypse.buildQuery())
+    return RegionResult.parseFrom(bytes).regionsList
 }
 
 @Throws(RequestException::class)
