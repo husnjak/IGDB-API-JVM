@@ -121,7 +121,7 @@ public enum CharacterSpeciesEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(3);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(4);
   }
 
   private static final CharacterSpeciesEnum[] VALUES = values();

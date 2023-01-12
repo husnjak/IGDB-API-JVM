@@ -46,7 +46,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object name_ = "";
   /**
    * <code>string name = 1;</code>
    * @return The name.
@@ -84,6 +85,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RESULTS_FIELD_NUMBER = 2;
+  @SuppressWarnings("serial")
   private java.util.List<com.google.protobuf.ByteString> results_;
   /**
    * <code>repeated bytes results = 2;</code>
@@ -111,7 +113,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COUNT_FIELD_NUMBER = 3;
-  private long count_;
+  private long count_ = 0L;
   /**
    * <code>int64 count = 3;</code>
    * @return The count.
@@ -244,12 +246,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       name_ = "";
-
       results_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000001);
       count_ = 0L;
-
       return this;
     }
 
@@ -276,16 +276,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.MultiQueryResult buildPartial() {
       proto.MultiQueryResult result = new proto.MultiQueryResult(this);
-      int from_bitField0_ = bitField0_;
-      result.name_ = name_;
-      if (((bitField0_ & 0x00000001) != 0)) {
-        results_ = java.util.Collections.unmodifiableList(results_);
-        bitField0_ = (bitField0_ & ~0x00000001);
-      }
-      result.results_ = results_;
-      result.count_ = count_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.MultiQueryResult result) {
+      if (((bitField0_ & 0x00000002) != 0)) {
+        results_ = java.util.Collections.unmodifiableList(results_);
+        bitField0_ = (bitField0_ & ~0x00000002);
+      }
+      result.results_ = results_;
+    }
+
+    private void buildPartial0(proto.MultiQueryResult result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.name_ = name_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.count_ = count_;
+      }
     }
 
     @java.lang.Override
@@ -363,11 +375,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setName(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       name_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -376,8 +386,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearName() {
-      
       name_ = getDefaultInstance().getName();
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -388,22 +398,20 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       name_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
 
     private java.util.List<com.google.protobuf.ByteString> results_ = java.util.Collections.emptyList();
     private void ensureResultsIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         results_ = new java.util.ArrayList<com.google.protobuf.ByteString>(results_);
-        bitField0_ |= 0x00000001;
-       }
+        bitField0_ |= 0x00000002;
+      }
     }
     /**
      * <code>repeated bytes results = 2;</code>
@@ -411,7 +419,7 @@ private static final long serialVersionUID = 0L;
      */
     public java.util.List<com.google.protobuf.ByteString>
         getResultsList() {
-      return ((bitField0_ & 0x00000001) != 0) ?
+      return ((bitField0_ & 0x00000002) != 0) ?
                java.util.Collections.unmodifiableList(results_) : results_;
     }
     /**
@@ -437,10 +445,8 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setResults(
         int index, com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureResultsIsMutable();
+      if (value == null) { throw new NullPointerException(); }
+      ensureResultsIsMutable();
       results_.set(index, value);
       onChanged();
       return this;
@@ -451,10 +457,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addResults(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureResultsIsMutable();
+      if (value == null) { throw new NullPointerException(); }
+      ensureResultsIsMutable();
       results_.add(value);
       onChanged();
       return this;
@@ -478,7 +482,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearResults() {
       results_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000001);
+      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -500,6 +504,7 @@ private static final long serialVersionUID = 0L;
     public Builder setCount(long value) {
       
       count_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -508,7 +513,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCount() {
-      
+      bitField0_ = (bitField0_ & ~0x00000004);
       count_ = 0L;
       onChanged();
       return this;

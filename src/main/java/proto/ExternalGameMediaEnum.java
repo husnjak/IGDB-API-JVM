@@ -94,7 +94,7 @@ public enum ExternalGameMediaEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(7);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(8);
   }
 
   private static final ExternalGameMediaEnum[] VALUES = values();

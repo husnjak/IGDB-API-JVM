@@ -166,7 +166,7 @@ public enum RegionRegionEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(13);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(14);
   }
 
   private static final RegionRegionEnum[] VALUES = values();

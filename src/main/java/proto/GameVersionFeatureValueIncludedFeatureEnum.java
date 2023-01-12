@@ -94,7 +94,7 @@ public enum GameVersionFeatureValueIncludedFeatureEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(11);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(12);
   }
 
   private static final GameVersionFeatureValueIncludedFeatureEnum[] VALUES = values();

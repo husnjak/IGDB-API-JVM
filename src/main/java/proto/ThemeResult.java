@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int THEMES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Theme> themes_;
   /**
    * <code>repeated .proto.Theme themes = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.ThemeResult buildPartial() {
       proto.ThemeResult result = new proto.ThemeResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.ThemeResult result) {
       if (themesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           themes_ = java.util.Collections.unmodifiableList(themes_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.themes_ = themesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.ThemeResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

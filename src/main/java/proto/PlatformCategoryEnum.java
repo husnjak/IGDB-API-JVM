@@ -130,7 +130,7 @@ public enum PlatformCategoryEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(12);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(13);
   }
 
   private static final PlatformCategoryEnum[] VALUES = values();

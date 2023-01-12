@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -57,7 +57,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COMMENT_FIELD_NUMBER = 2;
-  private volatile java.lang.Object comment_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object comment_ = "";
   /**
    * <code>string comment = 2;</code>
    * @return The comment.
@@ -117,11 +118,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.CompanyOrBuilder getCompanyOrBuilder() {
-    return getCompany();
+    return company_ == null ? proto.Company.getDefaultInstance() : company_;
   }
 
   public static final int DEVELOPER_FIELD_NUMBER = 4;
-  private boolean developer_;
+  private boolean developer_ = false;
   /**
    * <code>bool developer = 4;</code>
    * @return The developer.
@@ -132,7 +133,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MANUFACTURER_FIELD_NUMBER = 5;
-  private boolean manufacturer_;
+  private boolean manufacturer_ = false;
   /**
    * <code>bool manufacturer = 5;</code>
    * @return The manufacturer.
@@ -143,7 +144,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 6;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 6;</code>
    * @return The checksum.
@@ -303,22 +305,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
       comment_ = "";
-
-      if (companyBuilder_ == null) {
-        company_ = null;
-      } else {
-        company_ = null;
+      company_ = null;
+      if (companyBuilder_ != null) {
+        companyBuilder_.dispose();
         companyBuilder_ = null;
       }
       developer_ = false;
-
       manufacturer_ = false;
-
       checksum_ = "";
-
       return this;
     }
 
@@ -345,18 +342,33 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlatformVersionCompany buildPartial() {
       proto.PlatformVersionCompany result = new proto.PlatformVersionCompany(this);
-      result.id_ = id_;
-      result.comment_ = comment_;
-      if (companyBuilder_ == null) {
-        result.company_ = company_;
-      } else {
-        result.company_ = companyBuilder_.build();
-      }
-      result.developer_ = developer_;
-      result.manufacturer_ = manufacturer_;
-      result.checksum_ = checksum_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(proto.PlatformVersionCompany result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.comment_ = comment_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.company_ = companyBuilder_ == null
+            ? company_
+            : companyBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.developer_ = developer_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.manufacturer_ = manufacturer_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -391,6 +403,7 @@ private static final long serialVersionUID = 0L;
         java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
+    private int bitField0_;
 
     private long id_ ;
     /**
@@ -409,6 +422,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -417,7 +431,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -464,11 +478,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setComment(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       comment_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -477,8 +489,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearComment() {
-      
       comment_ = getDefaultInstance().getComment();
+      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -489,12 +501,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setCommentBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       comment_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -507,7 +517,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the company field is set.
      */
     public boolean hasCompany() {
-      return companyBuilder_ != null || company_ != null;
+      return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>.proto.Company company = 3;</code>
@@ -529,11 +539,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         company_ = value;
-        onChanged();
       } else {
         companyBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -543,11 +553,11 @@ private static final long serialVersionUID = 0L;
         proto.Company.Builder builderForValue) {
       if (companyBuilder_ == null) {
         company_ = builderForValue.build();
-        onChanged();
       } else {
         companyBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -555,38 +565,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCompany(proto.Company value) {
       if (companyBuilder_ == null) {
-        if (company_ != null) {
-          company_ =
-            proto.Company.newBuilder(company_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000004) != 0) &&
+          company_ != null &&
+          company_ != proto.Company.getDefaultInstance()) {
+          getCompanyBuilder().mergeFrom(value);
         } else {
           company_ = value;
         }
-        onChanged();
       } else {
         companyBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Company company = 3;</code>
      */
     public Builder clearCompany() {
-      if (companyBuilder_ == null) {
-        company_ = null;
-        onChanged();
-      } else {
-        company_ = null;
+      bitField0_ = (bitField0_ & ~0x00000004);
+      company_ = null;
+      if (companyBuilder_ != null) {
+        companyBuilder_.dispose();
         companyBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Company company = 3;</code>
      */
     public proto.Company.Builder getCompanyBuilder() {
-      
+      bitField0_ |= 0x00000004;
       onChanged();
       return getCompanyFieldBuilder().getBuilder();
     }
@@ -635,6 +645,7 @@ private static final long serialVersionUID = 0L;
     public Builder setDeveloper(boolean value) {
       
       developer_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -643,7 +654,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDeveloper() {
-      
+      bitField0_ = (bitField0_ & ~0x00000008);
       developer_ = false;
       onChanged();
       return this;
@@ -666,6 +677,7 @@ private static final long serialVersionUID = 0L;
     public Builder setManufacturer(boolean value) {
       
       manufacturer_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -674,7 +686,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearManufacturer() {
-      
+      bitField0_ = (bitField0_ & ~0x00000010);
       manufacturer_ = false;
       onChanged();
       return this;
@@ -721,11 +733,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -734,8 +744,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00000020);
       onChanged();
       return this;
     }
@@ -746,12 +756,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }

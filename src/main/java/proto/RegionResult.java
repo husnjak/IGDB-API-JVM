@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int REGIONS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Region> regions_;
   /**
    * <code>repeated .proto.Region regions = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (regionsBuilder_ == null) {
         regions_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.RegionResult buildPartial() {
       proto.RegionResult result = new proto.RegionResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.RegionResult result) {
       if (regionsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           regions_ = java.util.Collections.unmodifiableList(regions_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.regions_ = regionsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.RegionResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

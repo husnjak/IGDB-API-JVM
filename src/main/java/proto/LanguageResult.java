@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LANGUAGES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Language> languages_;
   /**
    * <code>repeated .proto.Language languages = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (languagesBuilder_ == null) {
         languages_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.LanguageResult buildPartial() {
       proto.LanguageResult result = new proto.LanguageResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.LanguageResult result) {
       if (languagesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           languages_ = java.util.Collections.unmodifiableList(languages_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.languages_ = languagesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.LanguageResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

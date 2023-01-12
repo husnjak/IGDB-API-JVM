@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ALTERNATIVENAMES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.AlternativeName> alternativenames_;
   /**
    * <code>repeated .proto.AlternativeName alternativenames = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (alternativenamesBuilder_ == null) {
         alternativenames_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.AlternativeNameResult buildPartial() {
       proto.AlternativeNameResult result = new proto.AlternativeNameResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.AlternativeNameResult result) {
       if (alternativenamesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           alternativenames_ = java.util.Collections.unmodifiableList(alternativenames_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.alternativenames_ = alternativenamesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.AlternativeNameResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

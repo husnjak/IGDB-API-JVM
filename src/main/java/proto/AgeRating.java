@@ -50,7 +50,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -61,7 +61,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CATEGORY_FIELD_NUMBER = 2;
-  private int category_;
+  private int category_ = 0;
   /**
    * <code>.proto.AgeRatingCategoryEnum category = 2;</code>
    * @return The enum numeric value on the wire for category.
@@ -74,12 +74,12 @@ private static final long serialVersionUID = 0L;
    * @return The category.
    */
   @java.lang.Override public proto.AgeRatingCategoryEnum getCategory() {
-    @SuppressWarnings("deprecation")
-    proto.AgeRatingCategoryEnum result = proto.AgeRatingCategoryEnum.valueOf(category_);
+    proto.AgeRatingCategoryEnum result = proto.AgeRatingCategoryEnum.forNumber(category_);
     return result == null ? proto.AgeRatingCategoryEnum.UNRECOGNIZED : result;
   }
 
   public static final int CONTENT_DESCRIPTIONS_FIELD_NUMBER = 3;
+  @SuppressWarnings("serial")
   private java.util.List<proto.AgeRatingContentDescription> contentDescriptions_;
   /**
    * <code>repeated .proto.AgeRatingContentDescription content_descriptions = 3;</code>
@@ -120,7 +120,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RATING_FIELD_NUMBER = 4;
-  private int rating_;
+  private int rating_ = 0;
   /**
    * <code>.proto.AgeRatingRatingEnum rating = 4;</code>
    * @return The enum numeric value on the wire for rating.
@@ -133,13 +133,13 @@ private static final long serialVersionUID = 0L;
    * @return The rating.
    */
   @java.lang.Override public proto.AgeRatingRatingEnum getRating() {
-    @SuppressWarnings("deprecation")
-    proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(rating_);
+    proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.forNumber(rating_);
     return result == null ? proto.AgeRatingRatingEnum.UNRECOGNIZED : result;
   }
 
   public static final int RATING_COVER_URL_FIELD_NUMBER = 5;
-  private volatile java.lang.Object ratingCoverUrl_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object ratingCoverUrl_ = "";
   /**
    * <code>string rating_cover_url = 5;</code>
    * @return The ratingCoverUrl.
@@ -177,7 +177,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SYNOPSIS_FIELD_NUMBER = 6;
-  private volatile java.lang.Object synopsis_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object synopsis_ = "";
   /**
    * <code>string synopsis = 6;</code>
    * @return The synopsis.
@@ -215,7 +216,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 7;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 7;</code>
    * @return The checksum.
@@ -375,25 +377,20 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
       category_ = 0;
-
       if (contentDescriptionsBuilder_ == null) {
         contentDescriptions_ = java.util.Collections.emptyList();
       } else {
         contentDescriptions_ = null;
         contentDescriptionsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000001);
+      bitField0_ = (bitField0_ & ~0x00000004);
       rating_ = 0;
-
       ratingCoverUrl_ = "";
-
       synopsis_ = "";
-
       checksum_ = "";
-
       return this;
     }
 
@@ -420,24 +417,44 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.AgeRating buildPartial() {
       proto.AgeRating result = new proto.AgeRating(this);
-      int from_bitField0_ = bitField0_;
-      result.id_ = id_;
-      result.category_ = category_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.AgeRating result) {
       if (contentDescriptionsBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           contentDescriptions_ = java.util.Collections.unmodifiableList(contentDescriptions_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.contentDescriptions_ = contentDescriptions_;
       } else {
         result.contentDescriptions_ = contentDescriptionsBuilder_.build();
       }
-      result.rating_ = rating_;
-      result.ratingCoverUrl_ = ratingCoverUrl_;
-      result.synopsis_ = synopsis_;
-      result.checksum_ = checksum_;
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.AgeRating result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.category_ = category_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.rating_ = rating_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.ratingCoverUrl_ = ratingCoverUrl_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.synopsis_ = synopsis_;
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -491,6 +508,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -499,7 +517,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -519,8 +537,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
-      
       category_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -530,8 +548,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.AgeRatingCategoryEnum getCategory() {
-      @SuppressWarnings("deprecation")
-      proto.AgeRatingCategoryEnum result = proto.AgeRatingCategoryEnum.valueOf(category_);
+      proto.AgeRatingCategoryEnum result = proto.AgeRatingCategoryEnum.forNumber(category_);
       return result == null ? proto.AgeRatingCategoryEnum.UNRECOGNIZED : result;
     }
     /**
@@ -543,7 +560,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000002;
       category_ = value.getNumber();
       onChanged();
       return this;
@@ -553,7 +570,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCategory() {
-      
+      bitField0_ = (bitField0_ & ~0x00000002);
       category_ = 0;
       onChanged();
       return this;
@@ -562,9 +579,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.AgeRatingContentDescription> contentDescriptions_ =
       java.util.Collections.emptyList();
     private void ensureContentDescriptionsIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         contentDescriptions_ = new java.util.ArrayList<proto.AgeRatingContentDescription>(contentDescriptions_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000004;
        }
     }
 
@@ -714,7 +731,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearContentDescriptions() {
       if (contentDescriptionsBuilder_ == null) {
         contentDescriptions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         contentDescriptionsBuilder_.clear();
@@ -791,7 +808,7 @@ private static final long serialVersionUID = 0L;
         contentDescriptionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.AgeRatingContentDescription, proto.AgeRatingContentDescription.Builder, proto.AgeRatingContentDescriptionOrBuilder>(
                 contentDescriptions_,
-                ((bitField0_ & 0x00000001) != 0),
+                ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
                 isClean());
         contentDescriptions_ = null;
@@ -813,8 +830,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRatingValue(int value) {
-      
       rating_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -824,8 +841,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.AgeRatingRatingEnum getRating() {
-      @SuppressWarnings("deprecation")
-      proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(rating_);
+      proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.forNumber(rating_);
       return result == null ? proto.AgeRatingRatingEnum.UNRECOGNIZED : result;
     }
     /**
@@ -837,7 +853,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000008;
       rating_ = value.getNumber();
       onChanged();
       return this;
@@ -847,7 +863,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRating() {
-      
+      bitField0_ = (bitField0_ & ~0x00000008);
       rating_ = 0;
       onChanged();
       return this;
@@ -894,11 +910,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setRatingCoverUrl(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       ratingCoverUrl_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -907,8 +921,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRatingCoverUrl() {
-      
       ratingCoverUrl_ = getDefaultInstance().getRatingCoverUrl();
+      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -919,12 +933,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setRatingCoverUrlBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       ratingCoverUrl_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -970,11 +982,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSynopsis(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       synopsis_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -983,8 +993,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSynopsis() {
-      
       synopsis_ = getDefaultInstance().getSynopsis();
+      bitField0_ = (bitField0_ & ~0x00000020);
       onChanged();
       return this;
     }
@@ -995,12 +1005,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSynopsisBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       synopsis_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -1046,11 +1054,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -1059,8 +1065,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00000040);
       onChanged();
       return this;
     }
@@ -1071,12 +1077,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }

@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAMELOCALIZATIONS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameLocalization> gamelocalizations_;
   /**
    * <code>repeated .proto.GameLocalization gamelocalizations = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (gamelocalizationsBuilder_ == null) {
         gamelocalizations_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.GameLocalizationResult buildPartial() {
       proto.GameLocalizationResult result = new proto.GameLocalizationResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.GameLocalizationResult result) {
       if (gamelocalizationsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           gamelocalizations_ = java.util.Collections.unmodifiableList(gamelocalizations_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.gamelocalizations_ = gamelocalizationsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.GameLocalizationResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SCREENSHOTS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Screenshot> screenshots_;
   /**
    * <code>repeated .proto.Screenshot screenshots = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.ScreenshotResult buildPartial() {
       proto.ScreenshotResult result = new proto.ScreenshotResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.ScreenshotResult result) {
       if (screenshotsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           screenshots_ = java.util.Collections.unmodifiableList(screenshots_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.screenshots_ = screenshotsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.ScreenshotResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

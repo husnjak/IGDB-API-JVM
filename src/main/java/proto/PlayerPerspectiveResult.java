@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PLAYERPERSPECTIVES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.PlayerPerspective> playerperspectives_;
   /**
    * <code>repeated .proto.PlayerPerspective playerperspectives = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (playerperspectivesBuilder_ == null) {
         playerperspectives_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlayerPerspectiveResult buildPartial() {
       proto.PlayerPerspectiveResult result = new proto.PlayerPerspectiveResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.PlayerPerspectiveResult result) {
       if (playerperspectivesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           playerperspectives_ = java.util.Collections.unmodifiableList(playerperspectives_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.playerperspectives_ = playerperspectivesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.PlayerPerspectiveResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

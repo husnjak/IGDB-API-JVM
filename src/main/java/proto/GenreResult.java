@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GENRES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Genre> genres_;
   /**
    * <code>repeated .proto.Genre genres = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.GenreResult buildPartial() {
       proto.GenreResult result = new proto.GenreResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.GenreResult result) {
       if (genresBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           genres_ = java.util.Collections.unmodifiableList(genres_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.genres_ = genresBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.GenreResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

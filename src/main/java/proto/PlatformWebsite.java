@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -58,7 +58,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CATEGORY_FIELD_NUMBER = 2;
-  private int category_;
+  private int category_ = 0;
   /**
    * <code>.proto.WebsiteCategoryEnum category = 2;</code>
    * @return The enum numeric value on the wire for category.
@@ -71,13 +71,12 @@ private static final long serialVersionUID = 0L;
    * @return The category.
    */
   @java.lang.Override public proto.WebsiteCategoryEnum getCategory() {
-    @SuppressWarnings("deprecation")
-    proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.valueOf(category_);
+    proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.forNumber(category_);
     return result == null ? proto.WebsiteCategoryEnum.UNRECOGNIZED : result;
   }
 
   public static final int TRUSTED_FIELD_NUMBER = 3;
-  private boolean trusted_;
+  private boolean trusted_ = false;
   /**
    * <code>bool trusted = 3;</code>
    * @return The trusted.
@@ -88,7 +87,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int URL_FIELD_NUMBER = 4;
-  private volatile java.lang.Object url_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object url_ = "";
   /**
    * <code>string url = 4;</code>
    * @return The url.
@@ -126,7 +126,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 5;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 5;</code>
    * @return The checksum.
@@ -286,16 +287,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
       category_ = 0;
-
       trusted_ = false;
-
       url_ = "";
-
       checksum_ = "";
-
       return this;
     }
 
@@ -322,13 +319,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlatformWebsite buildPartial() {
       proto.PlatformWebsite result = new proto.PlatformWebsite(this);
-      result.id_ = id_;
-      result.category_ = category_;
-      result.trusted_ = trusted_;
-      result.url_ = url_;
-      result.checksum_ = checksum_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(proto.PlatformWebsite result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.category_ = category_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.trusted_ = trusted_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.url_ = url_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -363,6 +375,7 @@ private static final long serialVersionUID = 0L;
         java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
+    private int bitField0_;
 
     private long id_ ;
     /**
@@ -381,6 +394,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -389,7 +403,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -409,8 +423,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
-      
       category_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -420,8 +434,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.WebsiteCategoryEnum getCategory() {
-      @SuppressWarnings("deprecation")
-      proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.valueOf(category_);
+      proto.WebsiteCategoryEnum result = proto.WebsiteCategoryEnum.forNumber(category_);
       return result == null ? proto.WebsiteCategoryEnum.UNRECOGNIZED : result;
     }
     /**
@@ -433,7 +446,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000002;
       category_ = value.getNumber();
       onChanged();
       return this;
@@ -443,7 +456,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCategory() {
-      
+      bitField0_ = (bitField0_ & ~0x00000002);
       category_ = 0;
       onChanged();
       return this;
@@ -466,6 +479,7 @@ private static final long serialVersionUID = 0L;
     public Builder setTrusted(boolean value) {
       
       trusted_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -474,7 +488,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTrusted() {
-      
+      bitField0_ = (bitField0_ & ~0x00000004);
       trusted_ = false;
       onChanged();
       return this;
@@ -521,11 +535,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrl(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       url_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -534,8 +546,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearUrl() {
-      
       url_ = getDefaultInstance().getUrl();
+      bitField0_ = (bitField0_ & ~0x00000008);
       onChanged();
       return this;
     }
@@ -546,12 +558,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       url_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -597,11 +607,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -610,8 +618,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -622,12 +630,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }

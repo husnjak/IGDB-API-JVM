@@ -48,7 +48,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -59,7 +59,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CATEGORY_FIELD_NUMBER = 2;
-  private int category_;
+  private int category_ = 0;
   /**
    * <code>.proto.DateFormatChangeDateCategoryEnum category = 2;</code>
    * @return The enum numeric value on the wire for category.
@@ -72,8 +72,7 @@ private static final long serialVersionUID = 0L;
    * @return The category.
    */
   @java.lang.Override public proto.DateFormatChangeDateCategoryEnum getCategory() {
-    @SuppressWarnings("deprecation")
-    proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.valueOf(category_);
+    proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.forNumber(category_);
     return result == null ? proto.DateFormatChangeDateCategoryEnum.UNRECOGNIZED : result;
   }
 
@@ -100,7 +99,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
-    return getCreatedAt();
+    return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
 
   public static final int DATE_FIELD_NUMBER = 4;
@@ -126,11 +125,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getDateOrBuilder() {
-    return getDate();
+    return date_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : date_;
   }
 
   public static final int HUMAN_FIELD_NUMBER = 5;
-  private volatile java.lang.Object human_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object human_ = "";
   /**
    * <code>string human = 5;</code>
    * @return The human.
@@ -168,7 +168,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int M_FIELD_NUMBER = 6;
-  private int m_;
+  private int m_ = 0;
   /**
    * <code>int32 m = 6;</code>
    * @return The m.
@@ -201,11 +201,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.PlatformVersionOrBuilder getPlatformVersionOrBuilder() {
-    return getPlatformVersion();
+    return platformVersion_ == null ? proto.PlatformVersion.getDefaultInstance() : platformVersion_;
   }
 
   public static final int REGION_FIELD_NUMBER = 8;
-  private int region_;
+  private int region_ = 0;
   /**
    * <code>.proto.RegionRegionEnum region = 8;</code>
    * @return The enum numeric value on the wire for region.
@@ -218,8 +218,7 @@ private static final long serialVersionUID = 0L;
    * @return The region.
    */
   @java.lang.Override public proto.RegionRegionEnum getRegion() {
-    @SuppressWarnings("deprecation")
-    proto.RegionRegionEnum result = proto.RegionRegionEnum.valueOf(region_);
+    proto.RegionRegionEnum result = proto.RegionRegionEnum.forNumber(region_);
     return result == null ? proto.RegionRegionEnum.UNRECOGNIZED : result;
   }
 
@@ -246,11 +245,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
-    return getUpdatedAt();
+    return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
 
   public static final int Y_FIELD_NUMBER = 10;
-  private int y_;
+  private int y_ = 0;
   /**
    * <code>int32 y = 10;</code>
    * @return The y.
@@ -261,7 +260,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 11;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 11;</code>
    * @return The checksum.
@@ -421,44 +421,34 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
       category_ = 0;
-
-      if (createdAtBuilder_ == null) {
-        createdAt_ = null;
-      } else {
-        createdAt_ = null;
+      createdAt_ = null;
+      if (createdAtBuilder_ != null) {
+        createdAtBuilder_.dispose();
         createdAtBuilder_ = null;
       }
-      if (dateBuilder_ == null) {
-        date_ = null;
-      } else {
-        date_ = null;
+      date_ = null;
+      if (dateBuilder_ != null) {
+        dateBuilder_.dispose();
         dateBuilder_ = null;
       }
       human_ = "";
-
       m_ = 0;
-
-      if (platformVersionBuilder_ == null) {
-        platformVersion_ = null;
-      } else {
-        platformVersion_ = null;
+      platformVersion_ = null;
+      if (platformVersionBuilder_ != null) {
+        platformVersionBuilder_.dispose();
         platformVersionBuilder_ = null;
       }
       region_ = 0;
-
-      if (updatedAtBuilder_ == null) {
-        updatedAt_ = null;
-      } else {
-        updatedAt_ = null;
+      updatedAt_ = null;
+      if (updatedAtBuilder_ != null) {
+        updatedAtBuilder_.dispose();
         updatedAtBuilder_ = null;
       }
       y_ = 0;
-
       checksum_ = "";
-
       return this;
     }
 
@@ -485,35 +475,54 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlatformVersionReleaseDate buildPartial() {
       proto.PlatformVersionReleaseDate result = new proto.PlatformVersionReleaseDate(this);
-      result.id_ = id_;
-      result.category_ = category_;
-      if (createdAtBuilder_ == null) {
-        result.createdAt_ = createdAt_;
-      } else {
-        result.createdAt_ = createdAtBuilder_.build();
-      }
-      if (dateBuilder_ == null) {
-        result.date_ = date_;
-      } else {
-        result.date_ = dateBuilder_.build();
-      }
-      result.human_ = human_;
-      result.m_ = m_;
-      if (platformVersionBuilder_ == null) {
-        result.platformVersion_ = platformVersion_;
-      } else {
-        result.platformVersion_ = platformVersionBuilder_.build();
-      }
-      result.region_ = region_;
-      if (updatedAtBuilder_ == null) {
-        result.updatedAt_ = updatedAt_;
-      } else {
-        result.updatedAt_ = updatedAtBuilder_.build();
-      }
-      result.y_ = y_;
-      result.checksum_ = checksum_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(proto.PlatformVersionReleaseDate result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.category_ = category_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.createdAt_ = createdAtBuilder_ == null
+            ? createdAt_
+            : createdAtBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.date_ = dateBuilder_ == null
+            ? date_
+            : dateBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.human_ = human_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.m_ = m_;
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.platformVersion_ = platformVersionBuilder_ == null
+            ? platformVersion_
+            : platformVersionBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000080) != 0)) {
+        result.region_ = region_;
+      }
+      if (((from_bitField0_ & 0x00000100) != 0)) {
+        result.updatedAt_ = updatedAtBuilder_ == null
+            ? updatedAt_
+            : updatedAtBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000200) != 0)) {
+        result.y_ = y_;
+      }
+      if (((from_bitField0_ & 0x00000400) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -548,6 +557,7 @@ private static final long serialVersionUID = 0L;
         java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
+    private int bitField0_;
 
     private long id_ ;
     /**
@@ -566,6 +576,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -574,7 +585,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -594,8 +605,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
-      
       category_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -605,8 +616,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.DateFormatChangeDateCategoryEnum getCategory() {
-      @SuppressWarnings("deprecation")
-      proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.valueOf(category_);
+      proto.DateFormatChangeDateCategoryEnum result = proto.DateFormatChangeDateCategoryEnum.forNumber(category_);
       return result == null ? proto.DateFormatChangeDateCategoryEnum.UNRECOGNIZED : result;
     }
     /**
@@ -618,7 +628,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000002;
       category_ = value.getNumber();
       onChanged();
       return this;
@@ -628,7 +638,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCategory() {
-      
+      bitField0_ = (bitField0_ & ~0x00000002);
       category_ = 0;
       onChanged();
       return this;
@@ -642,7 +652,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
-      return createdAtBuilder_ != null || createdAt_ != null;
+      return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
@@ -664,11 +674,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         createdAt_ = value;
-        onChanged();
       } else {
         createdAtBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -678,11 +688,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (createdAtBuilder_ == null) {
         createdAt_ = builderForValue.build();
-        onChanged();
       } else {
         createdAtBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -690,38 +700,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
       if (createdAtBuilder_ == null) {
-        if (createdAt_ != null) {
-          createdAt_ =
-            com.google.protobuf.Timestamp.newBuilder(createdAt_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000004) != 0) &&
+          createdAt_ != null &&
+          createdAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getCreatedAtBuilder().mergeFrom(value);
         } else {
           createdAt_ = value;
         }
-        onChanged();
       } else {
         createdAtBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
      */
     public Builder clearCreatedAt() {
-      if (createdAtBuilder_ == null) {
-        createdAt_ = null;
-        onChanged();
-      } else {
-        createdAt_ = null;
+      bitField0_ = (bitField0_ & ~0x00000004);
+      createdAt_ = null;
+      if (createdAtBuilder_ != null) {
+        createdAtBuilder_.dispose();
         createdAtBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 3;</code>
      */
     public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
-      
+      bitField0_ |= 0x00000004;
       onChanged();
       return getCreatedAtFieldBuilder().getBuilder();
     }
@@ -761,7 +771,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the date field is set.
      */
     public boolean hasDate() {
-      return dateBuilder_ != null || date_ != null;
+      return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp date = 4;</code>
@@ -783,11 +793,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         date_ = value;
-        onChanged();
       } else {
         dateBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
@@ -797,11 +807,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (dateBuilder_ == null) {
         date_ = builderForValue.build();
-        onChanged();
       } else {
         dateBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
@@ -809,38 +819,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeDate(com.google.protobuf.Timestamp value) {
       if (dateBuilder_ == null) {
-        if (date_ != null) {
-          date_ =
-            com.google.protobuf.Timestamp.newBuilder(date_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000008) != 0) &&
+          date_ != null &&
+          date_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getDateBuilder().mergeFrom(value);
         } else {
           date_ = value;
         }
-        onChanged();
       } else {
         dateBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000008;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp date = 4;</code>
      */
     public Builder clearDate() {
-      if (dateBuilder_ == null) {
-        date_ = null;
-        onChanged();
-      } else {
-        date_ = null;
+      bitField0_ = (bitField0_ & ~0x00000008);
+      date_ = null;
+      if (dateBuilder_ != null) {
+        dateBuilder_.dispose();
         dateBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp date = 4;</code>
      */
     public com.google.protobuf.Timestamp.Builder getDateBuilder() {
-      
+      bitField0_ |= 0x00000008;
       onChanged();
       return getDateFieldBuilder().getBuilder();
     }
@@ -913,11 +923,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setHuman(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       human_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -926,8 +934,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearHuman() {
-      
       human_ = getDefaultInstance().getHuman();
+      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -938,12 +946,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setHumanBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       human_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -965,6 +971,7 @@ private static final long serialVersionUID = 0L;
     public Builder setM(int value) {
       
       m_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -973,7 +980,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearM() {
-      
+      bitField0_ = (bitField0_ & ~0x00000020);
       m_ = 0;
       onChanged();
       return this;
@@ -987,7 +994,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the platformVersion field is set.
      */
     public boolean hasPlatformVersion() {
-      return platformVersionBuilder_ != null || platformVersion_ != null;
+      return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      * <code>.proto.PlatformVersion platform_version = 7;</code>
@@ -1009,11 +1016,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         platformVersion_ = value;
-        onChanged();
       } else {
         platformVersionBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
@@ -1023,11 +1030,11 @@ private static final long serialVersionUID = 0L;
         proto.PlatformVersion.Builder builderForValue) {
       if (platformVersionBuilder_ == null) {
         platformVersion_ = builderForValue.build();
-        onChanged();
       } else {
         platformVersionBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
@@ -1035,38 +1042,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePlatformVersion(proto.PlatformVersion value) {
       if (platformVersionBuilder_ == null) {
-        if (platformVersion_ != null) {
-          platformVersion_ =
-            proto.PlatformVersion.newBuilder(platformVersion_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000040) != 0) &&
+          platformVersion_ != null &&
+          platformVersion_ != proto.PlatformVersion.getDefaultInstance()) {
+          getPlatformVersionBuilder().mergeFrom(value);
         } else {
           platformVersion_ = value;
         }
-        onChanged();
       } else {
         platformVersionBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000040;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformVersion platform_version = 7;</code>
      */
     public Builder clearPlatformVersion() {
-      if (platformVersionBuilder_ == null) {
-        platformVersion_ = null;
-        onChanged();
-      } else {
-        platformVersion_ = null;
+      bitField0_ = (bitField0_ & ~0x00000040);
+      platformVersion_ = null;
+      if (platformVersionBuilder_ != null) {
+        platformVersionBuilder_.dispose();
         platformVersionBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformVersion platform_version = 7;</code>
      */
     public proto.PlatformVersion.Builder getPlatformVersionBuilder() {
-      
+      bitField0_ |= 0x00000040;
       onChanged();
       return getPlatformVersionFieldBuilder().getBuilder();
     }
@@ -1112,8 +1119,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRegionValue(int value) {
-      
       region_ = value;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -1123,8 +1130,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.RegionRegionEnum getRegion() {
-      @SuppressWarnings("deprecation")
-      proto.RegionRegionEnum result = proto.RegionRegionEnum.valueOf(region_);
+      proto.RegionRegionEnum result = proto.RegionRegionEnum.forNumber(region_);
       return result == null ? proto.RegionRegionEnum.UNRECOGNIZED : result;
     }
     /**
@@ -1136,7 +1142,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000080;
       region_ = value.getNumber();
       onChanged();
       return this;
@@ -1146,7 +1152,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRegion() {
-      
+      bitField0_ = (bitField0_ & ~0x00000080);
       region_ = 0;
       onChanged();
       return this;
@@ -1160,7 +1166,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
-      return updatedAtBuilder_ != null || updatedAt_ != null;
+      return ((bitField0_ & 0x00000100) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
@@ -1182,11 +1188,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         updatedAt_ = value;
-        onChanged();
       } else {
         updatedAtBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
@@ -1196,11 +1202,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (updatedAtBuilder_ == null) {
         updatedAt_ = builderForValue.build();
-        onChanged();
       } else {
         updatedAtBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
@@ -1208,38 +1214,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
-        if (updatedAt_ != null) {
-          updatedAt_ =
-            com.google.protobuf.Timestamp.newBuilder(updatedAt_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000100) != 0) &&
+          updatedAt_ != null &&
+          updatedAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getUpdatedAtBuilder().mergeFrom(value);
         } else {
           updatedAt_ = value;
         }
-        onChanged();
       } else {
         updatedAtBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
      */
     public Builder clearUpdatedAt() {
-      if (updatedAtBuilder_ == null) {
-        updatedAt_ = null;
-        onChanged();
-      } else {
-        updatedAt_ = null;
+      bitField0_ = (bitField0_ & ~0x00000100);
+      updatedAt_ = null;
+      if (updatedAtBuilder_ != null) {
+        updatedAtBuilder_.dispose();
         updatedAtBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 9;</code>
      */
     public com.google.protobuf.Timestamp.Builder getUpdatedAtBuilder() {
-      
+      bitField0_ |= 0x00000100;
       onChanged();
       return getUpdatedAtFieldBuilder().getBuilder();
     }
@@ -1288,6 +1294,7 @@ private static final long serialVersionUID = 0L;
     public Builder setY(int value) {
       
       y_ = value;
+      bitField0_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -1296,7 +1303,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearY() {
-      
+      bitField0_ = (bitField0_ & ~0x00000200);
       y_ = 0;
       onChanged();
       return this;
@@ -1343,11 +1350,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -1356,8 +1361,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00000400);
       onChanged();
       return this;
     }
@@ -1368,12 +1373,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }

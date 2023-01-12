@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAMEVERSIONFEATUREVALUES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameVersionFeatureValue> gameversionfeaturevalues_;
   /**
    * <code>repeated .proto.GameVersionFeatureValue gameversionfeaturevalues = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (gameversionfeaturevaluesBuilder_ == null) {
         gameversionfeaturevalues_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.GameVersionFeatureValueResult buildPartial() {
       proto.GameVersionFeatureValueResult result = new proto.GameVersionFeatureValueResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.GameVersionFeatureValueResult result) {
       if (gameversionfeaturevaluesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           gameversionfeaturevalues_ = java.util.Collections.unmodifiableList(gameversionfeaturevalues_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.gameversionfeaturevalues_ = gameversionfeaturevaluesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.GameVersionFeatureValueResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

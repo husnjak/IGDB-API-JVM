@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AGERATINGS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.AgeRating> ageratings_;
   /**
    * <code>repeated .proto.AgeRating ageratings = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (ageratingsBuilder_ == null) {
         ageratings_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.AgeRatingResult buildPartial() {
       proto.AgeRatingResult result = new proto.AgeRatingResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.AgeRatingResult result) {
       if (ageratingsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           ageratings_ = java.util.Collections.unmodifiableList(ageratings_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.ageratings_ = ageratingsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.AgeRatingResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

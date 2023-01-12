@@ -15,7 +15,7 @@ group = "io.github.husnjak"
 version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.21.7"
+val protobufJavaVersion = "3.21.12"
 val junitJupiterVersion = "5.9.0"
 val junitPlatformVersion = "1.9.0"
 

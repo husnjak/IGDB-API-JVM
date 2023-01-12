@@ -84,7 +84,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -95,6 +95,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AGE_RATINGS_FIELD_NUMBER = 2;
+  @SuppressWarnings("serial")
   private java.util.List<proto.AgeRating> ageRatings_;
   /**
    * <code>repeated .proto.AgeRating age_ratings = 2;</code>
@@ -135,7 +136,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AGGREGATED_RATING_FIELD_NUMBER = 3;
-  private double aggregatedRating_;
+  private double aggregatedRating_ = 0D;
   /**
    * <code>double aggregated_rating = 3;</code>
    * @return The aggregatedRating.
@@ -146,7 +147,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AGGREGATED_RATING_COUNT_FIELD_NUMBER = 4;
-  private int aggregatedRatingCount_;
+  private int aggregatedRatingCount_ = 0;
   /**
    * <code>int32 aggregated_rating_count = 4;</code>
    * @return The aggregatedRatingCount.
@@ -157,6 +158,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ALTERNATIVE_NAMES_FIELD_NUMBER = 5;
+  @SuppressWarnings("serial")
   private java.util.List<proto.AlternativeName> alternativeNames_;
   /**
    * <code>repeated .proto.AlternativeName alternative_names = 5;</code>
@@ -197,6 +199,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ARTWORKS_FIELD_NUMBER = 6;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Artwork> artworks_;
   /**
    * <code>repeated .proto.Artwork artworks = 6;</code>
@@ -237,6 +240,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BUNDLES_FIELD_NUMBER = 7;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> bundles_;
   /**
    * <code>repeated .proto.Game bundles = 7;</code>
@@ -277,7 +281,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CATEGORY_FIELD_NUMBER = 8;
-  private int category_;
+  private int category_ = 0;
   /**
    * <code>.proto.GameCategoryEnum category = 8;</code>
    * @return The enum numeric value on the wire for category.
@@ -290,8 +294,7 @@ private static final long serialVersionUID = 0L;
    * @return The category.
    */
   @java.lang.Override public proto.GameCategoryEnum getCategory() {
-    @SuppressWarnings("deprecation")
-    proto.GameCategoryEnum result = proto.GameCategoryEnum.valueOf(category_);
+    proto.GameCategoryEnum result = proto.GameCategoryEnum.forNumber(category_);
     return result == null ? proto.GameCategoryEnum.UNRECOGNIZED : result;
   }
 
@@ -318,7 +321,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.CollectionOrBuilder getCollectionOrBuilder() {
-    return getCollection();
+    return collection_ == null ? proto.Collection.getDefaultInstance() : collection_;
   }
 
   public static final int COVER_FIELD_NUMBER = 10;
@@ -344,7 +347,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.CoverOrBuilder getCoverOrBuilder() {
-    return getCover();
+    return cover_ == null ? proto.Cover.getDefaultInstance() : cover_;
   }
 
   public static final int CREATED_AT_FIELD_NUMBER = 11;
@@ -370,10 +373,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
-    return getCreatedAt();
+    return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
 
   public static final int DLCS_FIELD_NUMBER = 12;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> dlcs_;
   /**
    * <code>repeated .proto.Game dlcs = 12;</code>
@@ -414,6 +418,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EXPANSIONS_FIELD_NUMBER = 13;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> expansions_;
   /**
    * <code>repeated .proto.Game expansions = 13;</code>
@@ -454,6 +459,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EXTERNAL_GAMES_FIELD_NUMBER = 14;
+  @SuppressWarnings("serial")
   private java.util.List<proto.ExternalGame> externalGames_;
   /**
    * <code>repeated .proto.ExternalGame external_games = 14;</code>
@@ -516,11 +522,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getFirstReleaseDateOrBuilder() {
-    return getFirstReleaseDate();
+    return firstReleaseDate_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : firstReleaseDate_;
   }
 
   public static final int FOLLOWS_FIELD_NUMBER = 16;
-  private int follows_;
+  private int follows_ = 0;
   /**
    * <code>int32 follows = 16;</code>
    * @return The follows.
@@ -553,10 +559,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.FranchiseOrBuilder getFranchiseOrBuilder() {
-    return getFranchise();
+    return franchise_ == null ? proto.Franchise.getDefaultInstance() : franchise_;
   }
 
   public static final int FRANCHISES_FIELD_NUMBER = 18;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Franchise> franchises_;
   /**
    * <code>repeated .proto.Franchise franchises = 18;</code>
@@ -597,6 +604,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAME_ENGINES_FIELD_NUMBER = 19;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameEngine> gameEngines_;
   /**
    * <code>repeated .proto.GameEngine game_engines = 19;</code>
@@ -637,6 +645,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAME_MODES_FIELD_NUMBER = 20;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameMode> gameModes_;
   /**
    * <code>repeated .proto.GameMode game_modes = 20;</code>
@@ -677,6 +686,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GENRES_FIELD_NUMBER = 21;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Genre> genres_;
   /**
    * <code>repeated .proto.Genre genres = 21;</code>
@@ -717,7 +727,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int HYPES_FIELD_NUMBER = 22;
-  private int hypes_;
+  private int hypes_ = 0;
   /**
    * <code>int32 hypes = 22;</code>
    * @return The hypes.
@@ -728,6 +738,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int INVOLVED_COMPANIES_FIELD_NUMBER = 23;
+  @SuppressWarnings("serial")
   private java.util.List<proto.InvolvedCompany> involvedCompanies_;
   /**
    * <code>repeated .proto.InvolvedCompany involved_companies = 23;</code>
@@ -768,6 +779,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int KEYWORDS_FIELD_NUMBER = 24;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Keyword> keywords_;
   /**
    * <code>repeated .proto.Keyword keywords = 24;</code>
@@ -808,6 +820,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MULTIPLAYER_MODES_FIELD_NUMBER = 25;
+  @SuppressWarnings("serial")
   private java.util.List<proto.MultiplayerMode> multiplayerModes_;
   /**
    * <code>repeated .proto.MultiplayerMode multiplayer_modes = 25;</code>
@@ -848,7 +861,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NAME_FIELD_NUMBER = 26;
-  private volatile java.lang.Object name_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object name_ = "";
   /**
    * <code>string name = 26;</code>
    * @return The name.
@@ -908,10 +922,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.GameOrBuilder getParentGameOrBuilder() {
-    return getParentGame();
+    return parentGame_ == null ? proto.Game.getDefaultInstance() : parentGame_;
   }
 
   public static final int PLATFORMS_FIELD_NUMBER = 28;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Platform> platforms_;
   /**
    * <code>repeated .proto.Platform platforms = 28;</code>
@@ -952,6 +967,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PLAYER_PERSPECTIVES_FIELD_NUMBER = 29;
+  @SuppressWarnings("serial")
   private java.util.List<proto.PlayerPerspective> playerPerspectives_;
   /**
    * <code>repeated .proto.PlayerPerspective player_perspectives = 29;</code>
@@ -992,7 +1008,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RATING_FIELD_NUMBER = 30;
-  private double rating_;
+  private double rating_ = 0D;
   /**
    * <code>double rating = 30;</code>
    * @return The rating.
@@ -1003,7 +1019,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RATING_COUNT_FIELD_NUMBER = 31;
-  private int ratingCount_;
+  private int ratingCount_ = 0;
   /**
    * <code>int32 rating_count = 31;</code>
    * @return The ratingCount.
@@ -1014,6 +1030,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RELEASE_DATES_FIELD_NUMBER = 32;
+  @SuppressWarnings("serial")
   private java.util.List<proto.ReleaseDate> releaseDates_;
   /**
    * <code>repeated .proto.ReleaseDate release_dates = 32;</code>
@@ -1054,6 +1071,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SCREENSHOTS_FIELD_NUMBER = 33;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Screenshot> screenshots_;
   /**
    * <code>repeated .proto.Screenshot screenshots = 33;</code>
@@ -1094,6 +1112,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SIMILAR_GAMES_FIELD_NUMBER = 34;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> similarGames_;
   /**
    * <code>repeated .proto.Game similar_games = 34;</code>
@@ -1134,7 +1153,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SLUG_FIELD_NUMBER = 35;
-  private volatile java.lang.Object slug_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object slug_ = "";
   /**
    * <code>string slug = 35;</code>
    * @return The slug.
@@ -1172,6 +1192,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int STANDALONE_EXPANSIONS_FIELD_NUMBER = 36;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> standaloneExpansions_;
   /**
    * <code>repeated .proto.Game standalone_expansions = 36;</code>
@@ -1212,7 +1233,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int STATUS_FIELD_NUMBER = 37;
-  private int status_;
+  private int status_ = 0;
   /**
    * <code>.proto.GameStatusEnum status = 37;</code>
    * @return The enum numeric value on the wire for status.
@@ -1225,13 +1246,13 @@ private static final long serialVersionUID = 0L;
    * @return The status.
    */
   @java.lang.Override public proto.GameStatusEnum getStatus() {
-    @SuppressWarnings("deprecation")
-    proto.GameStatusEnum result = proto.GameStatusEnum.valueOf(status_);
+    proto.GameStatusEnum result = proto.GameStatusEnum.forNumber(status_);
     return result == null ? proto.GameStatusEnum.UNRECOGNIZED : result;
   }
 
   public static final int STORYLINE_FIELD_NUMBER = 38;
-  private volatile java.lang.Object storyline_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object storyline_ = "";
   /**
    * <code>string storyline = 38;</code>
    * @return The storyline.
@@ -1269,7 +1290,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SUMMARY_FIELD_NUMBER = 39;
-  private volatile java.lang.Object summary_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object summary_ = "";
   /**
    * <code>string summary = 39;</code>
    * @return The summary.
@@ -1307,6 +1329,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TAGS_FIELD_NUMBER = 40;
+  @SuppressWarnings("serial")
   private com.google.protobuf.Internal.IntList tags_;
   /**
    * <code>repeated int32 tags = 40;</code>
@@ -1335,6 +1358,7 @@ private static final long serialVersionUID = 0L;
   private int tagsMemoizedSerializedSize = -1;
 
   public static final int THEMES_FIELD_NUMBER = 41;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Theme> themes_;
   /**
    * <code>repeated .proto.Theme themes = 41;</code>
@@ -1375,7 +1399,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TOTAL_RATING_FIELD_NUMBER = 42;
-  private double totalRating_;
+  private double totalRating_ = 0D;
   /**
    * <code>double total_rating = 42;</code>
    * @return The totalRating.
@@ -1386,7 +1410,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TOTAL_RATING_COUNT_FIELD_NUMBER = 43;
-  private int totalRatingCount_;
+  private int totalRatingCount_ = 0;
   /**
    * <code>int32 total_rating_count = 43;</code>
    * @return The totalRatingCount.
@@ -1419,11 +1443,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
-    return getUpdatedAt();
+    return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
 
   public static final int URL_FIELD_NUMBER = 45;
-  private volatile java.lang.Object url_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object url_ = "";
   /**
    * <code>string url = 45;</code>
    * @return The url.
@@ -1483,11 +1508,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.GameOrBuilder getVersionParentOrBuilder() {
-    return getVersionParent();
+    return versionParent_ == null ? proto.Game.getDefaultInstance() : versionParent_;
   }
 
   public static final int VERSION_TITLE_FIELD_NUMBER = 47;
-  private volatile java.lang.Object versionTitle_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object versionTitle_ = "";
   /**
    * <code>string version_title = 47;</code>
    * @return The versionTitle.
@@ -1525,6 +1551,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int VIDEOS_FIELD_NUMBER = 48;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameVideo> videos_;
   /**
    * <code>repeated .proto.GameVideo videos = 48;</code>
@@ -1565,6 +1592,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int WEBSITES_FIELD_NUMBER = 49;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Website> websites_;
   /**
    * <code>repeated .proto.Website websites = 49;</code>
@@ -1605,7 +1633,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 50;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 50;</code>
    * @return The checksum.
@@ -1643,6 +1672,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int REMAKES_FIELD_NUMBER = 51;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> remakes_;
   /**
    * <code>repeated .proto.Game remakes = 51;</code>
@@ -1683,6 +1713,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int REMASTERS_FIELD_NUMBER = 52;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> remasters_;
   /**
    * <code>repeated .proto.Game remasters = 52;</code>
@@ -1723,6 +1754,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EXPANDED_GAMES_FIELD_NUMBER = 53;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> expandedGames_;
   /**
    * <code>repeated .proto.Game expanded_games = 53;</code>
@@ -1763,6 +1795,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PORTS_FIELD_NUMBER = 54;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> ports_;
   /**
    * <code>repeated .proto.Game ports = 54;</code>
@@ -1803,6 +1836,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FORKS_FIELD_NUMBER = 55;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Game> forks_;
   /**
    * <code>repeated .proto.Game forks = 55;</code>
@@ -1843,6 +1877,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LANGUAGE_SUPPORTS_FIELD_NUMBER = 56;
+  @SuppressWarnings("serial")
   private java.util.List<proto.LanguageSupport> languageSupports_;
   /**
    * <code>repeated .proto.LanguageSupport language_supports = 56;</code>
@@ -1883,6 +1918,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAME_LOCALIZATIONS_FIELD_NUMBER = 57;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameLocalization> gameLocalizations_;
   /**
    * <code>repeated .proto.GameLocalization game_localizations = 57;</code>
@@ -2045,58 +2081,53 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
+      bitField1_ = 0;
       id_ = 0L;
-
       if (ageRatingsBuilder_ == null) {
         ageRatings_ = java.util.Collections.emptyList();
       } else {
         ageRatings_ = null;
         ageRatingsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000001);
+      bitField0_ = (bitField0_ & ~0x00000002);
       aggregatedRating_ = 0D;
-
       aggregatedRatingCount_ = 0;
-
       if (alternativeNamesBuilder_ == null) {
         alternativeNames_ = java.util.Collections.emptyList();
       } else {
         alternativeNames_ = null;
         alternativeNamesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000010);
       if (artworksBuilder_ == null) {
         artworks_ = java.util.Collections.emptyList();
       } else {
         artworks_ = null;
         artworksBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000004);
+      bitField0_ = (bitField0_ & ~0x00000020);
       if (bundlesBuilder_ == null) {
         bundles_ = java.util.Collections.emptyList();
       } else {
         bundles_ = null;
         bundlesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000008);
+      bitField0_ = (bitField0_ & ~0x00000040);
       category_ = 0;
-
-      if (collectionBuilder_ == null) {
-        collection_ = null;
-      } else {
-        collection_ = null;
+      collection_ = null;
+      if (collectionBuilder_ != null) {
+        collectionBuilder_.dispose();
         collectionBuilder_ = null;
       }
-      if (coverBuilder_ == null) {
-        cover_ = null;
-      } else {
-        cover_ = null;
+      cover_ = null;
+      if (coverBuilder_ != null) {
+        coverBuilder_.dispose();
         coverBuilder_ = null;
       }
-      if (createdAtBuilder_ == null) {
-        createdAt_ = null;
-      } else {
-        createdAt_ = null;
+      createdAt_ = null;
+      if (createdAtBuilder_ != null) {
+        createdAtBuilder_.dispose();
         createdAtBuilder_ = null;
       }
       if (dlcsBuilder_ == null) {
@@ -2105,33 +2136,30 @@ private static final long serialVersionUID = 0L;
         dlcs_ = null;
         dlcsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000010);
+      bitField0_ = (bitField0_ & ~0x00000800);
       if (expansionsBuilder_ == null) {
         expansions_ = java.util.Collections.emptyList();
       } else {
         expansions_ = null;
         expansionsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000020);
+      bitField0_ = (bitField0_ & ~0x00001000);
       if (externalGamesBuilder_ == null) {
         externalGames_ = java.util.Collections.emptyList();
       } else {
         externalGames_ = null;
         externalGamesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000040);
-      if (firstReleaseDateBuilder_ == null) {
-        firstReleaseDate_ = null;
-      } else {
-        firstReleaseDate_ = null;
+      bitField0_ = (bitField0_ & ~0x00002000);
+      firstReleaseDate_ = null;
+      if (firstReleaseDateBuilder_ != null) {
+        firstReleaseDateBuilder_.dispose();
         firstReleaseDateBuilder_ = null;
       }
       follows_ = 0;
-
-      if (franchiseBuilder_ == null) {
-        franchise_ = null;
-      } else {
-        franchise_ = null;
+      franchise_ = null;
+      if (franchiseBuilder_ != null) {
+        franchiseBuilder_.dispose();
         franchiseBuilder_ = null;
       }
       if (franchisesBuilder_ == null) {
@@ -2140,57 +2168,54 @@ private static final long serialVersionUID = 0L;
         franchises_ = null;
         franchisesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000080);
+      bitField0_ = (bitField0_ & ~0x00020000);
       if (gameEnginesBuilder_ == null) {
         gameEngines_ = java.util.Collections.emptyList();
       } else {
         gameEngines_ = null;
         gameEnginesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000100);
+      bitField0_ = (bitField0_ & ~0x00040000);
       if (gameModesBuilder_ == null) {
         gameModes_ = java.util.Collections.emptyList();
       } else {
         gameModes_ = null;
         gameModesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000200);
+      bitField0_ = (bitField0_ & ~0x00080000);
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
       } else {
         genres_ = null;
         genresBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000400);
+      bitField0_ = (bitField0_ & ~0x00100000);
       hypes_ = 0;
-
       if (involvedCompaniesBuilder_ == null) {
         involvedCompanies_ = java.util.Collections.emptyList();
       } else {
         involvedCompanies_ = null;
         involvedCompaniesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000800);
+      bitField0_ = (bitField0_ & ~0x00400000);
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
       } else {
         keywords_ = null;
         keywordsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00001000);
+      bitField0_ = (bitField0_ & ~0x00800000);
       if (multiplayerModesBuilder_ == null) {
         multiplayerModes_ = java.util.Collections.emptyList();
       } else {
         multiplayerModes_ = null;
         multiplayerModesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00002000);
+      bitField0_ = (bitField0_ & ~0x01000000);
       name_ = "";
-
-      if (parentGameBuilder_ == null) {
-        parentGame_ = null;
-      } else {
-        parentGame_ = null;
+      parentGame_ = null;
+      if (parentGameBuilder_ != null) {
+        parentGameBuilder_.dispose();
         parentGameBuilder_ = null;
       }
       if (platformsBuilder_ == null) {
@@ -2199,148 +2224,134 @@ private static final long serialVersionUID = 0L;
         platforms_ = null;
         platformsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00004000);
+      bitField0_ = (bitField0_ & ~0x08000000);
       if (playerPerspectivesBuilder_ == null) {
         playerPerspectives_ = java.util.Collections.emptyList();
       } else {
         playerPerspectives_ = null;
         playerPerspectivesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00008000);
+      bitField0_ = (bitField0_ & ~0x10000000);
       rating_ = 0D;
-
       ratingCount_ = 0;
-
       if (releaseDatesBuilder_ == null) {
         releaseDates_ = java.util.Collections.emptyList();
       } else {
         releaseDates_ = null;
         releaseDatesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00010000);
+      bitField0_ = (bitField0_ & ~0x80000000);
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
       } else {
         screenshots_ = null;
         screenshotsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00020000);
+      bitField1_ = (bitField1_ & ~0x00000001);
       if (similarGamesBuilder_ == null) {
         similarGames_ = java.util.Collections.emptyList();
       } else {
         similarGames_ = null;
         similarGamesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00040000);
+      bitField1_ = (bitField1_ & ~0x00000002);
       slug_ = "";
-
       if (standaloneExpansionsBuilder_ == null) {
         standaloneExpansions_ = java.util.Collections.emptyList();
       } else {
         standaloneExpansions_ = null;
         standaloneExpansionsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00080000);
+      bitField1_ = (bitField1_ & ~0x00000008);
       status_ = 0;
-
       storyline_ = "";
-
       summary_ = "";
-
       tags_ = emptyIntList();
-      bitField0_ = (bitField0_ & ~0x00100000);
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
       } else {
         themes_ = null;
         themesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00200000);
+      bitField1_ = (bitField1_ & ~0x00000100);
       totalRating_ = 0D;
-
       totalRatingCount_ = 0;
-
-      if (updatedAtBuilder_ == null) {
-        updatedAt_ = null;
-      } else {
-        updatedAt_ = null;
+      updatedAt_ = null;
+      if (updatedAtBuilder_ != null) {
+        updatedAtBuilder_.dispose();
         updatedAtBuilder_ = null;
       }
       url_ = "";
-
-      if (versionParentBuilder_ == null) {
-        versionParent_ = null;
-      } else {
-        versionParent_ = null;
+      versionParent_ = null;
+      if (versionParentBuilder_ != null) {
+        versionParentBuilder_.dispose();
         versionParentBuilder_ = null;
       }
       versionTitle_ = "";
-
       if (videosBuilder_ == null) {
         videos_ = java.util.Collections.emptyList();
       } else {
         videos_ = null;
         videosBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00400000);
+      bitField1_ = (bitField1_ & ~0x00008000);
       if (websitesBuilder_ == null) {
         websites_ = java.util.Collections.emptyList();
       } else {
         websites_ = null;
         websitesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00800000);
+      bitField1_ = (bitField1_ & ~0x00010000);
       checksum_ = "";
-
       if (remakesBuilder_ == null) {
         remakes_ = java.util.Collections.emptyList();
       } else {
         remakes_ = null;
         remakesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x01000000);
+      bitField1_ = (bitField1_ & ~0x00040000);
       if (remastersBuilder_ == null) {
         remasters_ = java.util.Collections.emptyList();
       } else {
         remasters_ = null;
         remastersBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x02000000);
+      bitField1_ = (bitField1_ & ~0x00080000);
       if (expandedGamesBuilder_ == null) {
         expandedGames_ = java.util.Collections.emptyList();
       } else {
         expandedGames_ = null;
         expandedGamesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x04000000);
+      bitField1_ = (bitField1_ & ~0x00100000);
       if (portsBuilder_ == null) {
         ports_ = java.util.Collections.emptyList();
       } else {
         ports_ = null;
         portsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x08000000);
+      bitField1_ = (bitField1_ & ~0x00200000);
       if (forksBuilder_ == null) {
         forks_ = java.util.Collections.emptyList();
       } else {
         forks_ = null;
         forksBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x10000000);
+      bitField1_ = (bitField1_ & ~0x00400000);
       if (languageSupportsBuilder_ == null) {
         languageSupports_ = java.util.Collections.emptyList();
       } else {
         languageSupports_ = null;
         languageSupportsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x20000000);
+      bitField1_ = (bitField1_ & ~0x00800000);
       if (gameLocalizationsBuilder_ == null) {
         gameLocalizations_ = java.util.Collections.emptyList();
       } else {
         gameLocalizations_ = null;
         gameLocalizationsBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x40000000);
+      bitField1_ = (bitField1_ & ~0x01000000);
       return this;
     }
 
@@ -2367,342 +2378,391 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.Game buildPartial() {
       proto.Game result = new proto.Game(this);
-      int from_bitField0_ = bitField0_;
-      result.id_ = id_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      if (bitField1_ != 0) { buildPartial1(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.Game result) {
       if (ageRatingsBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           ageRatings_ = java.util.Collections.unmodifiableList(ageRatings_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.ageRatings_ = ageRatings_;
       } else {
         result.ageRatings_ = ageRatingsBuilder_.build();
       }
-      result.aggregatedRating_ = aggregatedRating_;
-      result.aggregatedRatingCount_ = aggregatedRatingCount_;
       if (alternativeNamesBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000010) != 0)) {
           alternativeNames_ = java.util.Collections.unmodifiableList(alternativeNames_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.alternativeNames_ = alternativeNames_;
       } else {
         result.alternativeNames_ = alternativeNamesBuilder_.build();
       }
       if (artworksBuilder_ == null) {
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000020) != 0)) {
           artworks_ = java.util.Collections.unmodifiableList(artworks_);
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000020);
         }
         result.artworks_ = artworks_;
       } else {
         result.artworks_ = artworksBuilder_.build();
       }
       if (bundlesBuilder_ == null) {
-        if (((bitField0_ & 0x00000008) != 0)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           bundles_ = java.util.Collections.unmodifiableList(bundles_);
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
         result.bundles_ = bundles_;
       } else {
         result.bundles_ = bundlesBuilder_.build();
       }
-      result.category_ = category_;
-      if (collectionBuilder_ == null) {
-        result.collection_ = collection_;
-      } else {
-        result.collection_ = collectionBuilder_.build();
-      }
-      if (coverBuilder_ == null) {
-        result.cover_ = cover_;
-      } else {
-        result.cover_ = coverBuilder_.build();
-      }
-      if (createdAtBuilder_ == null) {
-        result.createdAt_ = createdAt_;
-      } else {
-        result.createdAt_ = createdAtBuilder_.build();
-      }
       if (dlcsBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0)) {
+        if (((bitField0_ & 0x00000800) != 0)) {
           dlcs_ = java.util.Collections.unmodifiableList(dlcs_);
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000800);
         }
         result.dlcs_ = dlcs_;
       } else {
         result.dlcs_ = dlcsBuilder_.build();
       }
       if (expansionsBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00001000) != 0)) {
           expansions_ = java.util.Collections.unmodifiableList(expansions_);
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00001000);
         }
         result.expansions_ = expansions_;
       } else {
         result.expansions_ = expansionsBuilder_.build();
       }
       if (externalGamesBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0)) {
+        if (((bitField0_ & 0x00002000) != 0)) {
           externalGames_ = java.util.Collections.unmodifiableList(externalGames_);
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00002000);
         }
         result.externalGames_ = externalGames_;
       } else {
         result.externalGames_ = externalGamesBuilder_.build();
       }
-      if (firstReleaseDateBuilder_ == null) {
-        result.firstReleaseDate_ = firstReleaseDate_;
-      } else {
-        result.firstReleaseDate_ = firstReleaseDateBuilder_.build();
-      }
-      result.follows_ = follows_;
-      if (franchiseBuilder_ == null) {
-        result.franchise_ = franchise_;
-      } else {
-        result.franchise_ = franchiseBuilder_.build();
-      }
       if (franchisesBuilder_ == null) {
-        if (((bitField0_ & 0x00000080) != 0)) {
+        if (((bitField0_ & 0x00020000) != 0)) {
           franchises_ = java.util.Collections.unmodifiableList(franchises_);
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00020000);
         }
         result.franchises_ = franchises_;
       } else {
         result.franchises_ = franchisesBuilder_.build();
       }
       if (gameEnginesBuilder_ == null) {
-        if (((bitField0_ & 0x00000100) != 0)) {
+        if (((bitField0_ & 0x00040000) != 0)) {
           gameEngines_ = java.util.Collections.unmodifiableList(gameEngines_);
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00040000);
         }
         result.gameEngines_ = gameEngines_;
       } else {
         result.gameEngines_ = gameEnginesBuilder_.build();
       }
       if (gameModesBuilder_ == null) {
-        if (((bitField0_ & 0x00000200) != 0)) {
+        if (((bitField0_ & 0x00080000) != 0)) {
           gameModes_ = java.util.Collections.unmodifiableList(gameModes_);
-          bitField0_ = (bitField0_ & ~0x00000200);
+          bitField0_ = (bitField0_ & ~0x00080000);
         }
         result.gameModes_ = gameModes_;
       } else {
         result.gameModes_ = gameModesBuilder_.build();
       }
       if (genresBuilder_ == null) {
-        if (((bitField0_ & 0x00000400) != 0)) {
+        if (((bitField0_ & 0x00100000) != 0)) {
           genres_ = java.util.Collections.unmodifiableList(genres_);
-          bitField0_ = (bitField0_ & ~0x00000400);
+          bitField0_ = (bitField0_ & ~0x00100000);
         }
         result.genres_ = genres_;
       } else {
         result.genres_ = genresBuilder_.build();
       }
-      result.hypes_ = hypes_;
       if (involvedCompaniesBuilder_ == null) {
-        if (((bitField0_ & 0x00000800) != 0)) {
+        if (((bitField0_ & 0x00400000) != 0)) {
           involvedCompanies_ = java.util.Collections.unmodifiableList(involvedCompanies_);
-          bitField0_ = (bitField0_ & ~0x00000800);
+          bitField0_ = (bitField0_ & ~0x00400000);
         }
         result.involvedCompanies_ = involvedCompanies_;
       } else {
         result.involvedCompanies_ = involvedCompaniesBuilder_.build();
       }
       if (keywordsBuilder_ == null) {
-        if (((bitField0_ & 0x00001000) != 0)) {
+        if (((bitField0_ & 0x00800000) != 0)) {
           keywords_ = java.util.Collections.unmodifiableList(keywords_);
-          bitField0_ = (bitField0_ & ~0x00001000);
+          bitField0_ = (bitField0_ & ~0x00800000);
         }
         result.keywords_ = keywords_;
       } else {
         result.keywords_ = keywordsBuilder_.build();
       }
       if (multiplayerModesBuilder_ == null) {
-        if (((bitField0_ & 0x00002000) != 0)) {
+        if (((bitField0_ & 0x01000000) != 0)) {
           multiplayerModes_ = java.util.Collections.unmodifiableList(multiplayerModes_);
-          bitField0_ = (bitField0_ & ~0x00002000);
+          bitField0_ = (bitField0_ & ~0x01000000);
         }
         result.multiplayerModes_ = multiplayerModes_;
       } else {
         result.multiplayerModes_ = multiplayerModesBuilder_.build();
       }
-      result.name_ = name_;
-      if (parentGameBuilder_ == null) {
-        result.parentGame_ = parentGame_;
-      } else {
-        result.parentGame_ = parentGameBuilder_.build();
-      }
       if (platformsBuilder_ == null) {
-        if (((bitField0_ & 0x00004000) != 0)) {
+        if (((bitField0_ & 0x08000000) != 0)) {
           platforms_ = java.util.Collections.unmodifiableList(platforms_);
-          bitField0_ = (bitField0_ & ~0x00004000);
+          bitField0_ = (bitField0_ & ~0x08000000);
         }
         result.platforms_ = platforms_;
       } else {
         result.platforms_ = platformsBuilder_.build();
       }
       if (playerPerspectivesBuilder_ == null) {
-        if (((bitField0_ & 0x00008000) != 0)) {
+        if (((bitField0_ & 0x10000000) != 0)) {
           playerPerspectives_ = java.util.Collections.unmodifiableList(playerPerspectives_);
-          bitField0_ = (bitField0_ & ~0x00008000);
+          bitField0_ = (bitField0_ & ~0x10000000);
         }
         result.playerPerspectives_ = playerPerspectives_;
       } else {
         result.playerPerspectives_ = playerPerspectivesBuilder_.build();
       }
-      result.rating_ = rating_;
-      result.ratingCount_ = ratingCount_;
       if (releaseDatesBuilder_ == null) {
-        if (((bitField0_ & 0x00010000) != 0)) {
+        if (((bitField0_ & 0x80000000) != 0)) {
           releaseDates_ = java.util.Collections.unmodifiableList(releaseDates_);
-          bitField0_ = (bitField0_ & ~0x00010000);
+          bitField0_ = (bitField0_ & ~0x80000000);
         }
         result.releaseDates_ = releaseDates_;
       } else {
         result.releaseDates_ = releaseDatesBuilder_.build();
       }
       if (screenshotsBuilder_ == null) {
-        if (((bitField0_ & 0x00020000) != 0)) {
+        if (((bitField1_ & 0x00000001) != 0)) {
           screenshots_ = java.util.Collections.unmodifiableList(screenshots_);
-          bitField0_ = (bitField0_ & ~0x00020000);
+          bitField1_ = (bitField1_ & ~0x00000001);
         }
         result.screenshots_ = screenshots_;
       } else {
         result.screenshots_ = screenshotsBuilder_.build();
       }
       if (similarGamesBuilder_ == null) {
-        if (((bitField0_ & 0x00040000) != 0)) {
+        if (((bitField1_ & 0x00000002) != 0)) {
           similarGames_ = java.util.Collections.unmodifiableList(similarGames_);
-          bitField0_ = (bitField0_ & ~0x00040000);
+          bitField1_ = (bitField1_ & ~0x00000002);
         }
         result.similarGames_ = similarGames_;
       } else {
         result.similarGames_ = similarGamesBuilder_.build();
       }
-      result.slug_ = slug_;
       if (standaloneExpansionsBuilder_ == null) {
-        if (((bitField0_ & 0x00080000) != 0)) {
+        if (((bitField1_ & 0x00000008) != 0)) {
           standaloneExpansions_ = java.util.Collections.unmodifiableList(standaloneExpansions_);
-          bitField0_ = (bitField0_ & ~0x00080000);
+          bitField1_ = (bitField1_ & ~0x00000008);
         }
         result.standaloneExpansions_ = standaloneExpansions_;
       } else {
         result.standaloneExpansions_ = standaloneExpansionsBuilder_.build();
       }
-      result.status_ = status_;
-      result.storyline_ = storyline_;
-      result.summary_ = summary_;
-      if (((bitField0_ & 0x00100000) != 0)) {
+      if (((bitField1_ & 0x00000080) != 0)) {
         tags_.makeImmutable();
-        bitField0_ = (bitField0_ & ~0x00100000);
+        bitField1_ = (bitField1_ & ~0x00000080);
       }
       result.tags_ = tags_;
       if (themesBuilder_ == null) {
-        if (((bitField0_ & 0x00200000) != 0)) {
+        if (((bitField1_ & 0x00000100) != 0)) {
           themes_ = java.util.Collections.unmodifiableList(themes_);
-          bitField0_ = (bitField0_ & ~0x00200000);
+          bitField1_ = (bitField1_ & ~0x00000100);
         }
         result.themes_ = themes_;
       } else {
         result.themes_ = themesBuilder_.build();
       }
-      result.totalRating_ = totalRating_;
-      result.totalRatingCount_ = totalRatingCount_;
-      if (updatedAtBuilder_ == null) {
-        result.updatedAt_ = updatedAt_;
-      } else {
-        result.updatedAt_ = updatedAtBuilder_.build();
-      }
-      result.url_ = url_;
-      if (versionParentBuilder_ == null) {
-        result.versionParent_ = versionParent_;
-      } else {
-        result.versionParent_ = versionParentBuilder_.build();
-      }
-      result.versionTitle_ = versionTitle_;
       if (videosBuilder_ == null) {
-        if (((bitField0_ & 0x00400000) != 0)) {
+        if (((bitField1_ & 0x00008000) != 0)) {
           videos_ = java.util.Collections.unmodifiableList(videos_);
-          bitField0_ = (bitField0_ & ~0x00400000);
+          bitField1_ = (bitField1_ & ~0x00008000);
         }
         result.videos_ = videos_;
       } else {
         result.videos_ = videosBuilder_.build();
       }
       if (websitesBuilder_ == null) {
-        if (((bitField0_ & 0x00800000) != 0)) {
+        if (((bitField1_ & 0x00010000) != 0)) {
           websites_ = java.util.Collections.unmodifiableList(websites_);
-          bitField0_ = (bitField0_ & ~0x00800000);
+          bitField1_ = (bitField1_ & ~0x00010000);
         }
         result.websites_ = websites_;
       } else {
         result.websites_ = websitesBuilder_.build();
       }
-      result.checksum_ = checksum_;
       if (remakesBuilder_ == null) {
-        if (((bitField0_ & 0x01000000) != 0)) {
+        if (((bitField1_ & 0x00040000) != 0)) {
           remakes_ = java.util.Collections.unmodifiableList(remakes_);
-          bitField0_ = (bitField0_ & ~0x01000000);
+          bitField1_ = (bitField1_ & ~0x00040000);
         }
         result.remakes_ = remakes_;
       } else {
         result.remakes_ = remakesBuilder_.build();
       }
       if (remastersBuilder_ == null) {
-        if (((bitField0_ & 0x02000000) != 0)) {
+        if (((bitField1_ & 0x00080000) != 0)) {
           remasters_ = java.util.Collections.unmodifiableList(remasters_);
-          bitField0_ = (bitField0_ & ~0x02000000);
+          bitField1_ = (bitField1_ & ~0x00080000);
         }
         result.remasters_ = remasters_;
       } else {
         result.remasters_ = remastersBuilder_.build();
       }
       if (expandedGamesBuilder_ == null) {
-        if (((bitField0_ & 0x04000000) != 0)) {
+        if (((bitField1_ & 0x00100000) != 0)) {
           expandedGames_ = java.util.Collections.unmodifiableList(expandedGames_);
-          bitField0_ = (bitField0_ & ~0x04000000);
+          bitField1_ = (bitField1_ & ~0x00100000);
         }
         result.expandedGames_ = expandedGames_;
       } else {
         result.expandedGames_ = expandedGamesBuilder_.build();
       }
       if (portsBuilder_ == null) {
-        if (((bitField0_ & 0x08000000) != 0)) {
+        if (((bitField1_ & 0x00200000) != 0)) {
           ports_ = java.util.Collections.unmodifiableList(ports_);
-          bitField0_ = (bitField0_ & ~0x08000000);
+          bitField1_ = (bitField1_ & ~0x00200000);
         }
         result.ports_ = ports_;
       } else {
         result.ports_ = portsBuilder_.build();
       }
       if (forksBuilder_ == null) {
-        if (((bitField0_ & 0x10000000) != 0)) {
+        if (((bitField1_ & 0x00400000) != 0)) {
           forks_ = java.util.Collections.unmodifiableList(forks_);
-          bitField0_ = (bitField0_ & ~0x10000000);
+          bitField1_ = (bitField1_ & ~0x00400000);
         }
         result.forks_ = forks_;
       } else {
         result.forks_ = forksBuilder_.build();
       }
       if (languageSupportsBuilder_ == null) {
-        if (((bitField0_ & 0x20000000) != 0)) {
+        if (((bitField1_ & 0x00800000) != 0)) {
           languageSupports_ = java.util.Collections.unmodifiableList(languageSupports_);
-          bitField0_ = (bitField0_ & ~0x20000000);
+          bitField1_ = (bitField1_ & ~0x00800000);
         }
         result.languageSupports_ = languageSupports_;
       } else {
         result.languageSupports_ = languageSupportsBuilder_.build();
       }
       if (gameLocalizationsBuilder_ == null) {
-        if (((bitField0_ & 0x40000000) != 0)) {
+        if (((bitField1_ & 0x01000000) != 0)) {
           gameLocalizations_ = java.util.Collections.unmodifiableList(gameLocalizations_);
-          bitField0_ = (bitField0_ & ~0x40000000);
+          bitField1_ = (bitField1_ & ~0x01000000);
         }
         result.gameLocalizations_ = gameLocalizations_;
       } else {
         result.gameLocalizations_ = gameLocalizationsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.Game result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.aggregatedRating_ = aggregatedRating_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.aggregatedRatingCount_ = aggregatedRatingCount_;
+      }
+      if (((from_bitField0_ & 0x00000080) != 0)) {
+        result.category_ = category_;
+      }
+      if (((from_bitField0_ & 0x00000100) != 0)) {
+        result.collection_ = collectionBuilder_ == null
+            ? collection_
+            : collectionBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000200) != 0)) {
+        result.cover_ = coverBuilder_ == null
+            ? cover_
+            : coverBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000400) != 0)) {
+        result.createdAt_ = createdAtBuilder_ == null
+            ? createdAt_
+            : createdAtBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00004000) != 0)) {
+        result.firstReleaseDate_ = firstReleaseDateBuilder_ == null
+            ? firstReleaseDate_
+            : firstReleaseDateBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00008000) != 0)) {
+        result.follows_ = follows_;
+      }
+      if (((from_bitField0_ & 0x00010000) != 0)) {
+        result.franchise_ = franchiseBuilder_ == null
+            ? franchise_
+            : franchiseBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00200000) != 0)) {
+        result.hypes_ = hypes_;
+      }
+      if (((from_bitField0_ & 0x02000000) != 0)) {
+        result.name_ = name_;
+      }
+      if (((from_bitField0_ & 0x04000000) != 0)) {
+        result.parentGame_ = parentGameBuilder_ == null
+            ? parentGame_
+            : parentGameBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x20000000) != 0)) {
+        result.rating_ = rating_;
+      }
+      if (((from_bitField0_ & 0x40000000) != 0)) {
+        result.ratingCount_ = ratingCount_;
+      }
+    }
+
+    private void buildPartial1(proto.Game result) {
+      int from_bitField1_ = bitField1_;
+      if (((from_bitField1_ & 0x00000004) != 0)) {
+        result.slug_ = slug_;
+      }
+      if (((from_bitField1_ & 0x00000010) != 0)) {
+        result.status_ = status_;
+      }
+      if (((from_bitField1_ & 0x00000020) != 0)) {
+        result.storyline_ = storyline_;
+      }
+      if (((from_bitField1_ & 0x00000040) != 0)) {
+        result.summary_ = summary_;
+      }
+      if (((from_bitField1_ & 0x00000200) != 0)) {
+        result.totalRating_ = totalRating_;
+      }
+      if (((from_bitField1_ & 0x00000400) != 0)) {
+        result.totalRatingCount_ = totalRatingCount_;
+      }
+      if (((from_bitField1_ & 0x00000800) != 0)) {
+        result.updatedAt_ = updatedAtBuilder_ == null
+            ? updatedAt_
+            : updatedAtBuilder_.build();
+      }
+      if (((from_bitField1_ & 0x00001000) != 0)) {
+        result.url_ = url_;
+      }
+      if (((from_bitField1_ & 0x00002000) != 0)) {
+        result.versionParent_ = versionParentBuilder_ == null
+            ? versionParent_
+            : versionParentBuilder_.build();
+      }
+      if (((from_bitField1_ & 0x00004000) != 0)) {
+        result.versionTitle_ = versionTitle_;
+      }
+      if (((from_bitField1_ & 0x00020000) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -2738,6 +2798,7 @@ private static final long serialVersionUID = 0L;
       return super.addRepeatedField(field, value);
     }
     private int bitField0_;
+    private int bitField1_;
 
     private long id_ ;
     /**
@@ -2756,6 +2817,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -2764,7 +2826,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -2773,9 +2835,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.AgeRating> ageRatings_ =
       java.util.Collections.emptyList();
     private void ensureAgeRatingsIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         ageRatings_ = new java.util.ArrayList<proto.AgeRating>(ageRatings_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
        }
     }
 
@@ -2925,7 +2987,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearAgeRatings() {
       if (ageRatingsBuilder_ == null) {
         ageRatings_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         ageRatingsBuilder_.clear();
@@ -3002,7 +3064,7 @@ private static final long serialVersionUID = 0L;
         ageRatingsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.AgeRating, proto.AgeRating.Builder, proto.AgeRatingOrBuilder>(
                 ageRatings_,
-                ((bitField0_ & 0x00000001) != 0),
+                ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
         ageRatings_ = null;
@@ -3027,6 +3089,7 @@ private static final long serialVersionUID = 0L;
     public Builder setAggregatedRating(double value) {
       
       aggregatedRating_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -3035,7 +3098,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAggregatedRating() {
-      
+      bitField0_ = (bitField0_ & ~0x00000004);
       aggregatedRating_ = 0D;
       onChanged();
       return this;
@@ -3058,6 +3121,7 @@ private static final long serialVersionUID = 0L;
     public Builder setAggregatedRatingCount(int value) {
       
       aggregatedRatingCount_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -3066,7 +3130,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAggregatedRatingCount() {
-      
+      bitField0_ = (bitField0_ & ~0x00000008);
       aggregatedRatingCount_ = 0;
       onChanged();
       return this;
@@ -3075,9 +3139,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.AlternativeName> alternativeNames_ =
       java.util.Collections.emptyList();
     private void ensureAlternativeNamesIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00000010) != 0)) {
         alternativeNames_ = new java.util.ArrayList<proto.AlternativeName>(alternativeNames_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000010;
        }
     }
 
@@ -3227,7 +3291,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearAlternativeNames() {
       if (alternativeNamesBuilder_ == null) {
         alternativeNames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
       } else {
         alternativeNamesBuilder_.clear();
@@ -3304,7 +3368,7 @@ private static final long serialVersionUID = 0L;
         alternativeNamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.AlternativeName, proto.AlternativeName.Builder, proto.AlternativeNameOrBuilder>(
                 alternativeNames_,
-                ((bitField0_ & 0x00000002) != 0),
+                ((bitField0_ & 0x00000010) != 0),
                 getParentForChildren(),
                 isClean());
         alternativeNames_ = null;
@@ -3315,9 +3379,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Artwork> artworks_ =
       java.util.Collections.emptyList();
     private void ensureArtworksIsMutable() {
-      if (!((bitField0_ & 0x00000004) != 0)) {
+      if (!((bitField0_ & 0x00000020) != 0)) {
         artworks_ = new java.util.ArrayList<proto.Artwork>(artworks_);
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000020;
        }
     }
 
@@ -3467,7 +3531,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearArtworks() {
       if (artworksBuilder_ == null) {
         artworks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
       } else {
         artworksBuilder_.clear();
@@ -3544,7 +3608,7 @@ private static final long serialVersionUID = 0L;
         artworksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Artwork, proto.Artwork.Builder, proto.ArtworkOrBuilder>(
                 artworks_,
-                ((bitField0_ & 0x00000004) != 0),
+                ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
                 isClean());
         artworks_ = null;
@@ -3555,9 +3619,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> bundles_ =
       java.util.Collections.emptyList();
     private void ensureBundlesIsMutable() {
-      if (!((bitField0_ & 0x00000008) != 0)) {
+      if (!((bitField0_ & 0x00000040) != 0)) {
         bundles_ = new java.util.ArrayList<proto.Game>(bundles_);
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000040;
        }
     }
 
@@ -3707,7 +3771,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearBundles() {
       if (bundlesBuilder_ == null) {
         bundles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
       } else {
         bundlesBuilder_.clear();
@@ -3784,7 +3848,7 @@ private static final long serialVersionUID = 0L;
         bundlesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 bundles_,
-                ((bitField0_ & 0x00000008) != 0),
+                ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
                 isClean());
         bundles_ = null;
@@ -3806,8 +3870,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCategoryValue(int value) {
-      
       category_ = value;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -3817,8 +3881,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.GameCategoryEnum getCategory() {
-      @SuppressWarnings("deprecation")
-      proto.GameCategoryEnum result = proto.GameCategoryEnum.valueOf(category_);
+      proto.GameCategoryEnum result = proto.GameCategoryEnum.forNumber(category_);
       return result == null ? proto.GameCategoryEnum.UNRECOGNIZED : result;
     }
     /**
@@ -3830,7 +3893,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000080;
       category_ = value.getNumber();
       onChanged();
       return this;
@@ -3840,7 +3903,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCategory() {
-      
+      bitField0_ = (bitField0_ & ~0x00000080);
       category_ = 0;
       onChanged();
       return this;
@@ -3854,7 +3917,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the collection field is set.
      */
     public boolean hasCollection() {
-      return collectionBuilder_ != null || collection_ != null;
+      return ((bitField0_ & 0x00000100) != 0);
     }
     /**
      * <code>.proto.Collection collection = 9;</code>
@@ -3876,11 +3939,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         collection_ = value;
-        onChanged();
       } else {
         collectionBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
@@ -3890,11 +3953,11 @@ private static final long serialVersionUID = 0L;
         proto.Collection.Builder builderForValue) {
       if (collectionBuilder_ == null) {
         collection_ = builderForValue.build();
-        onChanged();
       } else {
         collectionBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
@@ -3902,38 +3965,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCollection(proto.Collection value) {
       if (collectionBuilder_ == null) {
-        if (collection_ != null) {
-          collection_ =
-            proto.Collection.newBuilder(collection_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000100) != 0) &&
+          collection_ != null &&
+          collection_ != proto.Collection.getDefaultInstance()) {
+          getCollectionBuilder().mergeFrom(value);
         } else {
           collection_ = value;
         }
-        onChanged();
       } else {
         collectionBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000100;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Collection collection = 9;</code>
      */
     public Builder clearCollection() {
-      if (collectionBuilder_ == null) {
-        collection_ = null;
-        onChanged();
-      } else {
-        collection_ = null;
+      bitField0_ = (bitField0_ & ~0x00000100);
+      collection_ = null;
+      if (collectionBuilder_ != null) {
+        collectionBuilder_.dispose();
         collectionBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Collection collection = 9;</code>
      */
     public proto.Collection.Builder getCollectionBuilder() {
-      
+      bitField0_ |= 0x00000100;
       onChanged();
       return getCollectionFieldBuilder().getBuilder();
     }
@@ -3973,7 +4036,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the cover field is set.
      */
     public boolean hasCover() {
-      return coverBuilder_ != null || cover_ != null;
+      return ((bitField0_ & 0x00000200) != 0);
     }
     /**
      * <code>.proto.Cover cover = 10;</code>
@@ -3995,11 +4058,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         cover_ = value;
-        onChanged();
       } else {
         coverBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000200;
+      onChanged();
       return this;
     }
     /**
@@ -4009,11 +4072,11 @@ private static final long serialVersionUID = 0L;
         proto.Cover.Builder builderForValue) {
       if (coverBuilder_ == null) {
         cover_ = builderForValue.build();
-        onChanged();
       } else {
         coverBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000200;
+      onChanged();
       return this;
     }
     /**
@@ -4021,38 +4084,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCover(proto.Cover value) {
       if (coverBuilder_ == null) {
-        if (cover_ != null) {
-          cover_ =
-            proto.Cover.newBuilder(cover_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000200) != 0) &&
+          cover_ != null &&
+          cover_ != proto.Cover.getDefaultInstance()) {
+          getCoverBuilder().mergeFrom(value);
         } else {
           cover_ = value;
         }
-        onChanged();
       } else {
         coverBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000200;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Cover cover = 10;</code>
      */
     public Builder clearCover() {
-      if (coverBuilder_ == null) {
-        cover_ = null;
-        onChanged();
-      } else {
-        cover_ = null;
+      bitField0_ = (bitField0_ & ~0x00000200);
+      cover_ = null;
+      if (coverBuilder_ != null) {
+        coverBuilder_.dispose();
         coverBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Cover cover = 10;</code>
      */
     public proto.Cover.Builder getCoverBuilder() {
-      
+      bitField0_ |= 0x00000200;
       onChanged();
       return getCoverFieldBuilder().getBuilder();
     }
@@ -4092,7 +4155,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
-      return createdAtBuilder_ != null || createdAt_ != null;
+      return ((bitField0_ & 0x00000400) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
@@ -4114,11 +4177,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         createdAt_ = value;
-        onChanged();
       } else {
         createdAtBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000400;
+      onChanged();
       return this;
     }
     /**
@@ -4128,11 +4191,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (createdAtBuilder_ == null) {
         createdAt_ = builderForValue.build();
-        onChanged();
       } else {
         createdAtBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000400;
+      onChanged();
       return this;
     }
     /**
@@ -4140,38 +4203,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
       if (createdAtBuilder_ == null) {
-        if (createdAt_ != null) {
-          createdAt_ =
-            com.google.protobuf.Timestamp.newBuilder(createdAt_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000400) != 0) &&
+          createdAt_ != null &&
+          createdAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getCreatedAtBuilder().mergeFrom(value);
         } else {
           createdAt_ = value;
         }
-        onChanged();
       } else {
         createdAtBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000400;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
      */
     public Builder clearCreatedAt() {
-      if (createdAtBuilder_ == null) {
-        createdAt_ = null;
-        onChanged();
-      } else {
-        createdAt_ = null;
+      bitField0_ = (bitField0_ & ~0x00000400);
+      createdAt_ = null;
+      if (createdAtBuilder_ != null) {
+        createdAtBuilder_.dispose();
         createdAtBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
      */
     public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
-      
+      bitField0_ |= 0x00000400;
       onChanged();
       return getCreatedAtFieldBuilder().getBuilder();
     }
@@ -4206,9 +4269,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> dlcs_ =
       java.util.Collections.emptyList();
     private void ensureDlcsIsMutable() {
-      if (!((bitField0_ & 0x00000010) != 0)) {
+      if (!((bitField0_ & 0x00000800) != 0)) {
         dlcs_ = new java.util.ArrayList<proto.Game>(dlcs_);
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000800;
        }
     }
 
@@ -4358,7 +4421,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearDlcs() {
       if (dlcsBuilder_ == null) {
         dlcs_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000800);
         onChanged();
       } else {
         dlcsBuilder_.clear();
@@ -4435,7 +4498,7 @@ private static final long serialVersionUID = 0L;
         dlcsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 dlcs_,
-                ((bitField0_ & 0x00000010) != 0),
+                ((bitField0_ & 0x00000800) != 0),
                 getParentForChildren(),
                 isClean());
         dlcs_ = null;
@@ -4446,9 +4509,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> expansions_ =
       java.util.Collections.emptyList();
     private void ensureExpansionsIsMutable() {
-      if (!((bitField0_ & 0x00000020) != 0)) {
+      if (!((bitField0_ & 0x00001000) != 0)) {
         expansions_ = new java.util.ArrayList<proto.Game>(expansions_);
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00001000;
        }
     }
 
@@ -4598,7 +4661,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearExpansions() {
       if (expansionsBuilder_ == null) {
         expansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00001000);
         onChanged();
       } else {
         expansionsBuilder_.clear();
@@ -4675,7 +4738,7 @@ private static final long serialVersionUID = 0L;
         expansionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 expansions_,
-                ((bitField0_ & 0x00000020) != 0),
+                ((bitField0_ & 0x00001000) != 0),
                 getParentForChildren(),
                 isClean());
         expansions_ = null;
@@ -4686,9 +4749,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.ExternalGame> externalGames_ =
       java.util.Collections.emptyList();
     private void ensureExternalGamesIsMutable() {
-      if (!((bitField0_ & 0x00000040) != 0)) {
+      if (!((bitField0_ & 0x00002000) != 0)) {
         externalGames_ = new java.util.ArrayList<proto.ExternalGame>(externalGames_);
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00002000;
        }
     }
 
@@ -4838,7 +4901,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearExternalGames() {
       if (externalGamesBuilder_ == null) {
         externalGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00002000);
         onChanged();
       } else {
         externalGamesBuilder_.clear();
@@ -4915,7 +4978,7 @@ private static final long serialVersionUID = 0L;
         externalGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.ExternalGame, proto.ExternalGame.Builder, proto.ExternalGameOrBuilder>(
                 externalGames_,
-                ((bitField0_ & 0x00000040) != 0),
+                ((bitField0_ & 0x00002000) != 0),
                 getParentForChildren(),
                 isClean());
         externalGames_ = null;
@@ -4931,7 +4994,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the firstReleaseDate field is set.
      */
     public boolean hasFirstReleaseDate() {
-      return firstReleaseDateBuilder_ != null || firstReleaseDate_ != null;
+      return ((bitField0_ & 0x00004000) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
@@ -4953,11 +5016,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         firstReleaseDate_ = value;
-        onChanged();
       } else {
         firstReleaseDateBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00004000;
+      onChanged();
       return this;
     }
     /**
@@ -4967,11 +5030,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (firstReleaseDateBuilder_ == null) {
         firstReleaseDate_ = builderForValue.build();
-        onChanged();
       } else {
         firstReleaseDateBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00004000;
+      onChanged();
       return this;
     }
     /**
@@ -4979,38 +5042,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFirstReleaseDate(com.google.protobuf.Timestamp value) {
       if (firstReleaseDateBuilder_ == null) {
-        if (firstReleaseDate_ != null) {
-          firstReleaseDate_ =
-            com.google.protobuf.Timestamp.newBuilder(firstReleaseDate_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00004000) != 0) &&
+          firstReleaseDate_ != null &&
+          firstReleaseDate_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getFirstReleaseDateBuilder().mergeFrom(value);
         } else {
           firstReleaseDate_ = value;
         }
-        onChanged();
       } else {
         firstReleaseDateBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00004000;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
      */
     public Builder clearFirstReleaseDate() {
-      if (firstReleaseDateBuilder_ == null) {
-        firstReleaseDate_ = null;
-        onChanged();
-      } else {
-        firstReleaseDate_ = null;
+      bitField0_ = (bitField0_ & ~0x00004000);
+      firstReleaseDate_ = null;
+      if (firstReleaseDateBuilder_ != null) {
+        firstReleaseDateBuilder_.dispose();
         firstReleaseDateBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp first_release_date = 15;</code>
      */
     public com.google.protobuf.Timestamp.Builder getFirstReleaseDateBuilder() {
-      
+      bitField0_ |= 0x00004000;
       onChanged();
       return getFirstReleaseDateFieldBuilder().getBuilder();
     }
@@ -5059,6 +5122,7 @@ private static final long serialVersionUID = 0L;
     public Builder setFollows(int value) {
       
       follows_ = value;
+      bitField0_ |= 0x00008000;
       onChanged();
       return this;
     }
@@ -5067,7 +5131,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFollows() {
-      
+      bitField0_ = (bitField0_ & ~0x00008000);
       follows_ = 0;
       onChanged();
       return this;
@@ -5081,7 +5145,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the franchise field is set.
      */
     public boolean hasFranchise() {
-      return franchiseBuilder_ != null || franchise_ != null;
+      return ((bitField0_ & 0x00010000) != 0);
     }
     /**
      * <code>.proto.Franchise franchise = 17;</code>
@@ -5103,11 +5167,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         franchise_ = value;
-        onChanged();
       } else {
         franchiseBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00010000;
+      onChanged();
       return this;
     }
     /**
@@ -5117,11 +5181,11 @@ private static final long serialVersionUID = 0L;
         proto.Franchise.Builder builderForValue) {
       if (franchiseBuilder_ == null) {
         franchise_ = builderForValue.build();
-        onChanged();
       } else {
         franchiseBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00010000;
+      onChanged();
       return this;
     }
     /**
@@ -5129,38 +5193,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFranchise(proto.Franchise value) {
       if (franchiseBuilder_ == null) {
-        if (franchise_ != null) {
-          franchise_ =
-            proto.Franchise.newBuilder(franchise_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00010000) != 0) &&
+          franchise_ != null &&
+          franchise_ != proto.Franchise.getDefaultInstance()) {
+          getFranchiseBuilder().mergeFrom(value);
         } else {
           franchise_ = value;
         }
-        onChanged();
       } else {
         franchiseBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00010000;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Franchise franchise = 17;</code>
      */
     public Builder clearFranchise() {
-      if (franchiseBuilder_ == null) {
-        franchise_ = null;
-        onChanged();
-      } else {
-        franchise_ = null;
+      bitField0_ = (bitField0_ & ~0x00010000);
+      franchise_ = null;
+      if (franchiseBuilder_ != null) {
+        franchiseBuilder_.dispose();
         franchiseBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Franchise franchise = 17;</code>
      */
     public proto.Franchise.Builder getFranchiseBuilder() {
-      
+      bitField0_ |= 0x00010000;
       onChanged();
       return getFranchiseFieldBuilder().getBuilder();
     }
@@ -5195,9 +5259,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Franchise> franchises_ =
       java.util.Collections.emptyList();
     private void ensureFranchisesIsMutable() {
-      if (!((bitField0_ & 0x00000080) != 0)) {
+      if (!((bitField0_ & 0x00020000) != 0)) {
         franchises_ = new java.util.ArrayList<proto.Franchise>(franchises_);
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00020000;
        }
     }
 
@@ -5347,7 +5411,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearFranchises() {
       if (franchisesBuilder_ == null) {
         franchises_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00020000);
         onChanged();
       } else {
         franchisesBuilder_.clear();
@@ -5424,7 +5488,7 @@ private static final long serialVersionUID = 0L;
         franchisesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Franchise, proto.Franchise.Builder, proto.FranchiseOrBuilder>(
                 franchises_,
-                ((bitField0_ & 0x00000080) != 0),
+                ((bitField0_ & 0x00020000) != 0),
                 getParentForChildren(),
                 isClean());
         franchises_ = null;
@@ -5435,9 +5499,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameEngine> gameEngines_ =
       java.util.Collections.emptyList();
     private void ensureGameEnginesIsMutable() {
-      if (!((bitField0_ & 0x00000100) != 0)) {
+      if (!((bitField0_ & 0x00040000) != 0)) {
         gameEngines_ = new java.util.ArrayList<proto.GameEngine>(gameEngines_);
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00040000;
        }
     }
 
@@ -5587,7 +5651,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGameEngines() {
       if (gameEnginesBuilder_ == null) {
         gameEngines_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00040000);
         onChanged();
       } else {
         gameEnginesBuilder_.clear();
@@ -5664,7 +5728,7 @@ private static final long serialVersionUID = 0L;
         gameEnginesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameEngine, proto.GameEngine.Builder, proto.GameEngineOrBuilder>(
                 gameEngines_,
-                ((bitField0_ & 0x00000100) != 0),
+                ((bitField0_ & 0x00040000) != 0),
                 getParentForChildren(),
                 isClean());
         gameEngines_ = null;
@@ -5675,9 +5739,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameMode> gameModes_ =
       java.util.Collections.emptyList();
     private void ensureGameModesIsMutable() {
-      if (!((bitField0_ & 0x00000200) != 0)) {
+      if (!((bitField0_ & 0x00080000) != 0)) {
         gameModes_ = new java.util.ArrayList<proto.GameMode>(gameModes_);
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00080000;
        }
     }
 
@@ -5827,7 +5891,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGameModes() {
       if (gameModesBuilder_ == null) {
         gameModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00080000);
         onChanged();
       } else {
         gameModesBuilder_.clear();
@@ -5904,7 +5968,7 @@ private static final long serialVersionUID = 0L;
         gameModesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameMode, proto.GameMode.Builder, proto.GameModeOrBuilder>(
                 gameModes_,
-                ((bitField0_ & 0x00000200) != 0),
+                ((bitField0_ & 0x00080000) != 0),
                 getParentForChildren(),
                 isClean());
         gameModes_ = null;
@@ -5915,9 +5979,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Genre> genres_ =
       java.util.Collections.emptyList();
     private void ensureGenresIsMutable() {
-      if (!((bitField0_ & 0x00000400) != 0)) {
+      if (!((bitField0_ & 0x00100000) != 0)) {
         genres_ = new java.util.ArrayList<proto.Genre>(genres_);
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00100000;
        }
     }
 
@@ -6067,7 +6131,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGenres() {
       if (genresBuilder_ == null) {
         genres_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00100000);
         onChanged();
       } else {
         genresBuilder_.clear();
@@ -6144,7 +6208,7 @@ private static final long serialVersionUID = 0L;
         genresBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Genre, proto.Genre.Builder, proto.GenreOrBuilder>(
                 genres_,
-                ((bitField0_ & 0x00000400) != 0),
+                ((bitField0_ & 0x00100000) != 0),
                 getParentForChildren(),
                 isClean());
         genres_ = null;
@@ -6169,6 +6233,7 @@ private static final long serialVersionUID = 0L;
     public Builder setHypes(int value) {
       
       hypes_ = value;
+      bitField0_ |= 0x00200000;
       onChanged();
       return this;
     }
@@ -6177,7 +6242,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearHypes() {
-      
+      bitField0_ = (bitField0_ & ~0x00200000);
       hypes_ = 0;
       onChanged();
       return this;
@@ -6186,9 +6251,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.InvolvedCompany> involvedCompanies_ =
       java.util.Collections.emptyList();
     private void ensureInvolvedCompaniesIsMutable() {
-      if (!((bitField0_ & 0x00000800) != 0)) {
+      if (!((bitField0_ & 0x00400000) != 0)) {
         involvedCompanies_ = new java.util.ArrayList<proto.InvolvedCompany>(involvedCompanies_);
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00400000;
        }
     }
 
@@ -6338,7 +6403,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearInvolvedCompanies() {
       if (involvedCompaniesBuilder_ == null) {
         involvedCompanies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00400000);
         onChanged();
       } else {
         involvedCompaniesBuilder_.clear();
@@ -6415,7 +6480,7 @@ private static final long serialVersionUID = 0L;
         involvedCompaniesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.InvolvedCompany, proto.InvolvedCompany.Builder, proto.InvolvedCompanyOrBuilder>(
                 involvedCompanies_,
-                ((bitField0_ & 0x00000800) != 0),
+                ((bitField0_ & 0x00400000) != 0),
                 getParentForChildren(),
                 isClean());
         involvedCompanies_ = null;
@@ -6426,9 +6491,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Keyword> keywords_ =
       java.util.Collections.emptyList();
     private void ensureKeywordsIsMutable() {
-      if (!((bitField0_ & 0x00001000) != 0)) {
+      if (!((bitField0_ & 0x00800000) != 0)) {
         keywords_ = new java.util.ArrayList<proto.Keyword>(keywords_);
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00800000;
        }
     }
 
@@ -6578,7 +6643,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearKeywords() {
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00800000);
         onChanged();
       } else {
         keywordsBuilder_.clear();
@@ -6655,7 +6720,7 @@ private static final long serialVersionUID = 0L;
         keywordsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Keyword, proto.Keyword.Builder, proto.KeywordOrBuilder>(
                 keywords_,
-                ((bitField0_ & 0x00001000) != 0),
+                ((bitField0_ & 0x00800000) != 0),
                 getParentForChildren(),
                 isClean());
         keywords_ = null;
@@ -6666,9 +6731,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.MultiplayerMode> multiplayerModes_ =
       java.util.Collections.emptyList();
     private void ensureMultiplayerModesIsMutable() {
-      if (!((bitField0_ & 0x00002000) != 0)) {
+      if (!((bitField0_ & 0x01000000) != 0)) {
         multiplayerModes_ = new java.util.ArrayList<proto.MultiplayerMode>(multiplayerModes_);
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x01000000;
        }
     }
 
@@ -6818,7 +6883,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearMultiplayerModes() {
       if (multiplayerModesBuilder_ == null) {
         multiplayerModes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x01000000);
         onChanged();
       } else {
         multiplayerModesBuilder_.clear();
@@ -6895,7 +6960,7 @@ private static final long serialVersionUID = 0L;
         multiplayerModesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.MultiplayerMode, proto.MultiplayerMode.Builder, proto.MultiplayerModeOrBuilder>(
                 multiplayerModes_,
-                ((bitField0_ & 0x00002000) != 0),
+                ((bitField0_ & 0x01000000) != 0),
                 getParentForChildren(),
                 isClean());
         multiplayerModes_ = null;
@@ -6944,11 +7009,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setName(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       name_ = value;
+      bitField0_ |= 0x02000000;
       onChanged();
       return this;
     }
@@ -6957,8 +7020,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearName() {
-      
       name_ = getDefaultInstance().getName();
+      bitField0_ = (bitField0_ & ~0x02000000);
       onChanged();
       return this;
     }
@@ -6969,12 +7032,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       name_ = value;
+      bitField0_ |= 0x02000000;
       onChanged();
       return this;
     }
@@ -6987,7 +7048,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the parentGame field is set.
      */
     public boolean hasParentGame() {
-      return parentGameBuilder_ != null || parentGame_ != null;
+      return ((bitField0_ & 0x04000000) != 0);
     }
     /**
      * <code>.proto.Game parent_game = 27;</code>
@@ -7009,11 +7070,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         parentGame_ = value;
-        onChanged();
       } else {
         parentGameBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x04000000;
+      onChanged();
       return this;
     }
     /**
@@ -7023,11 +7084,11 @@ private static final long serialVersionUID = 0L;
         proto.Game.Builder builderForValue) {
       if (parentGameBuilder_ == null) {
         parentGame_ = builderForValue.build();
-        onChanged();
       } else {
         parentGameBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x04000000;
+      onChanged();
       return this;
     }
     /**
@@ -7035,38 +7096,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeParentGame(proto.Game value) {
       if (parentGameBuilder_ == null) {
-        if (parentGame_ != null) {
-          parentGame_ =
-            proto.Game.newBuilder(parentGame_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x04000000) != 0) &&
+          parentGame_ != null &&
+          parentGame_ != proto.Game.getDefaultInstance()) {
+          getParentGameBuilder().mergeFrom(value);
         } else {
           parentGame_ = value;
         }
-        onChanged();
       } else {
         parentGameBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x04000000;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game parent_game = 27;</code>
      */
     public Builder clearParentGame() {
-      if (parentGameBuilder_ == null) {
-        parentGame_ = null;
-        onChanged();
-      } else {
-        parentGame_ = null;
+      bitField0_ = (bitField0_ & ~0x04000000);
+      parentGame_ = null;
+      if (parentGameBuilder_ != null) {
+        parentGameBuilder_.dispose();
         parentGameBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game parent_game = 27;</code>
      */
     public proto.Game.Builder getParentGameBuilder() {
-      
+      bitField0_ |= 0x04000000;
       onChanged();
       return getParentGameFieldBuilder().getBuilder();
     }
@@ -7101,9 +7162,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Platform> platforms_ =
       java.util.Collections.emptyList();
     private void ensurePlatformsIsMutable() {
-      if (!((bitField0_ & 0x00004000) != 0)) {
+      if (!((bitField0_ & 0x08000000) != 0)) {
         platforms_ = new java.util.ArrayList<proto.Platform>(platforms_);
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x08000000;
        }
     }
 
@@ -7253,7 +7314,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlatforms() {
       if (platformsBuilder_ == null) {
         platforms_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x08000000);
         onChanged();
       } else {
         platformsBuilder_.clear();
@@ -7330,7 +7391,7 @@ private static final long serialVersionUID = 0L;
         platformsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Platform, proto.Platform.Builder, proto.PlatformOrBuilder>(
                 platforms_,
-                ((bitField0_ & 0x00004000) != 0),
+                ((bitField0_ & 0x08000000) != 0),
                 getParentForChildren(),
                 isClean());
         platforms_ = null;
@@ -7341,9 +7402,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.PlayerPerspective> playerPerspectives_ =
       java.util.Collections.emptyList();
     private void ensurePlayerPerspectivesIsMutable() {
-      if (!((bitField0_ & 0x00008000) != 0)) {
+      if (!((bitField0_ & 0x10000000) != 0)) {
         playerPerspectives_ = new java.util.ArrayList<proto.PlayerPerspective>(playerPerspectives_);
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x10000000;
        }
     }
 
@@ -7493,7 +7554,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlayerPerspectives() {
       if (playerPerspectivesBuilder_ == null) {
         playerPerspectives_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x10000000);
         onChanged();
       } else {
         playerPerspectivesBuilder_.clear();
@@ -7570,7 +7631,7 @@ private static final long serialVersionUID = 0L;
         playerPerspectivesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.PlayerPerspective, proto.PlayerPerspective.Builder, proto.PlayerPerspectiveOrBuilder>(
                 playerPerspectives_,
-                ((bitField0_ & 0x00008000) != 0),
+                ((bitField0_ & 0x10000000) != 0),
                 getParentForChildren(),
                 isClean());
         playerPerspectives_ = null;
@@ -7595,6 +7656,7 @@ private static final long serialVersionUID = 0L;
     public Builder setRating(double value) {
       
       rating_ = value;
+      bitField0_ |= 0x20000000;
       onChanged();
       return this;
     }
@@ -7603,7 +7665,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRating() {
-      
+      bitField0_ = (bitField0_ & ~0x20000000);
       rating_ = 0D;
       onChanged();
       return this;
@@ -7626,6 +7688,7 @@ private static final long serialVersionUID = 0L;
     public Builder setRatingCount(int value) {
       
       ratingCount_ = value;
+      bitField0_ |= 0x40000000;
       onChanged();
       return this;
     }
@@ -7634,7 +7697,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRatingCount() {
-      
+      bitField0_ = (bitField0_ & ~0x40000000);
       ratingCount_ = 0;
       onChanged();
       return this;
@@ -7643,9 +7706,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.ReleaseDate> releaseDates_ =
       java.util.Collections.emptyList();
     private void ensureReleaseDatesIsMutable() {
-      if (!((bitField0_ & 0x00010000) != 0)) {
+      if (!((bitField0_ & 0x80000000) != 0)) {
         releaseDates_ = new java.util.ArrayList<proto.ReleaseDate>(releaseDates_);
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x80000000;
        }
     }
 
@@ -7795,7 +7858,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearReleaseDates() {
       if (releaseDatesBuilder_ == null) {
         releaseDates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x80000000);
         onChanged();
       } else {
         releaseDatesBuilder_.clear();
@@ -7872,7 +7935,7 @@ private static final long serialVersionUID = 0L;
         releaseDatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.ReleaseDate, proto.ReleaseDate.Builder, proto.ReleaseDateOrBuilder>(
                 releaseDates_,
-                ((bitField0_ & 0x00010000) != 0),
+                ((bitField0_ & 0x80000000) != 0),
                 getParentForChildren(),
                 isClean());
         releaseDates_ = null;
@@ -7883,9 +7946,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Screenshot> screenshots_ =
       java.util.Collections.emptyList();
     private void ensureScreenshotsIsMutable() {
-      if (!((bitField0_ & 0x00020000) != 0)) {
+      if (!((bitField1_ & 0x00000001) != 0)) {
         screenshots_ = new java.util.ArrayList<proto.Screenshot>(screenshots_);
-        bitField0_ |= 0x00020000;
+        bitField1_ |= 0x00000001;
        }
     }
 
@@ -8035,7 +8098,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearScreenshots() {
       if (screenshotsBuilder_ == null) {
         screenshots_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField1_ = (bitField1_ & ~0x00000001);
         onChanged();
       } else {
         screenshotsBuilder_.clear();
@@ -8112,7 +8175,7 @@ private static final long serialVersionUID = 0L;
         screenshotsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Screenshot, proto.Screenshot.Builder, proto.ScreenshotOrBuilder>(
                 screenshots_,
-                ((bitField0_ & 0x00020000) != 0),
+                ((bitField1_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         screenshots_ = null;
@@ -8123,9 +8186,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> similarGames_ =
       java.util.Collections.emptyList();
     private void ensureSimilarGamesIsMutable() {
-      if (!((bitField0_ & 0x00040000) != 0)) {
+      if (!((bitField1_ & 0x00000002) != 0)) {
         similarGames_ = new java.util.ArrayList<proto.Game>(similarGames_);
-        bitField0_ |= 0x00040000;
+        bitField1_ |= 0x00000002;
        }
     }
 
@@ -8275,7 +8338,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearSimilarGames() {
       if (similarGamesBuilder_ == null) {
         similarGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00040000);
+        bitField1_ = (bitField1_ & ~0x00000002);
         onChanged();
       } else {
         similarGamesBuilder_.clear();
@@ -8352,7 +8415,7 @@ private static final long serialVersionUID = 0L;
         similarGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 similarGames_,
-                ((bitField0_ & 0x00040000) != 0),
+                ((bitField1_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
         similarGames_ = null;
@@ -8401,11 +8464,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSlug(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       slug_ = value;
+      bitField1_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -8414,8 +8475,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSlug() {
-      
       slug_ = getDefaultInstance().getSlug();
+      bitField1_ = (bitField1_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -8426,12 +8487,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       slug_ = value;
+      bitField1_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -8439,9 +8498,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> standaloneExpansions_ =
       java.util.Collections.emptyList();
     private void ensureStandaloneExpansionsIsMutable() {
-      if (!((bitField0_ & 0x00080000) != 0)) {
+      if (!((bitField1_ & 0x00000008) != 0)) {
         standaloneExpansions_ = new java.util.ArrayList<proto.Game>(standaloneExpansions_);
-        bitField0_ |= 0x00080000;
+        bitField1_ |= 0x00000008;
        }
     }
 
@@ -8591,7 +8650,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearStandaloneExpansions() {
       if (standaloneExpansionsBuilder_ == null) {
         standaloneExpansions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00080000);
+        bitField1_ = (bitField1_ & ~0x00000008);
         onChanged();
       } else {
         standaloneExpansionsBuilder_.clear();
@@ -8668,7 +8727,7 @@ private static final long serialVersionUID = 0L;
         standaloneExpansionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 standaloneExpansions_,
-                ((bitField0_ & 0x00080000) != 0),
+                ((bitField1_ & 0x00000008) != 0),
                 getParentForChildren(),
                 isClean());
         standaloneExpansions_ = null;
@@ -8690,8 +8749,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
+      bitField1_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -8701,8 +8760,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.GameStatusEnum getStatus() {
-      @SuppressWarnings("deprecation")
-      proto.GameStatusEnum result = proto.GameStatusEnum.valueOf(status_);
+      proto.GameStatusEnum result = proto.GameStatusEnum.forNumber(status_);
       return result == null ? proto.GameStatusEnum.UNRECOGNIZED : result;
     }
     /**
@@ -8714,7 +8772,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField1_ |= 0x00000010;
       status_ = value.getNumber();
       onChanged();
       return this;
@@ -8724,7 +8782,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStatus() {
-      
+      bitField1_ = (bitField1_ & ~0x00000010);
       status_ = 0;
       onChanged();
       return this;
@@ -8771,11 +8829,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setStoryline(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       storyline_ = value;
+      bitField1_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -8784,8 +8840,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStoryline() {
-      
       storyline_ = getDefaultInstance().getStoryline();
+      bitField1_ = (bitField1_ & ~0x00000020);
       onChanged();
       return this;
     }
@@ -8796,12 +8852,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setStorylineBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       storyline_ = value;
+      bitField1_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -8847,11 +8901,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSummary(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       summary_ = value;
+      bitField1_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -8860,8 +8912,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSummary() {
-      
       summary_ = getDefaultInstance().getSummary();
+      bitField1_ = (bitField1_ & ~0x00000040);
       onChanged();
       return this;
     }
@@ -8872,22 +8924,20 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSummaryBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       summary_ = value;
+      bitField1_ |= 0x00000040;
       onChanged();
       return this;
     }
 
     private com.google.protobuf.Internal.IntList tags_ = emptyIntList();
     private void ensureTagsIsMutable() {
-      if (!((bitField0_ & 0x00100000) != 0)) {
+      if (!((bitField1_ & 0x00000080) != 0)) {
         tags_ = mutableCopy(tags_);
-        bitField0_ |= 0x00100000;
-       }
+        bitField1_ |= 0x00000080;
+      }
     }
     /**
      * <code>repeated int32 tags = 40;</code>
@@ -8895,7 +8945,7 @@ private static final long serialVersionUID = 0L;
      */
     public java.util.List<java.lang.Integer>
         getTagsList() {
-      return ((bitField0_ & 0x00100000) != 0) ?
+      return ((bitField1_ & 0x00000080) != 0) ?
                java.util.Collections.unmodifiableList(tags_) : tags_;
     }
     /**
@@ -8921,6 +8971,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTags(
         int index, int value) {
+      
       ensureTagsIsMutable();
       tags_.setInt(index, value);
       onChanged();
@@ -8932,6 +8983,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addTags(int value) {
+      
       ensureTagsIsMutable();
       tags_.addInt(value);
       onChanged();
@@ -8956,7 +9008,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearTags() {
       tags_ = emptyIntList();
-      bitField0_ = (bitField0_ & ~0x00100000);
+      bitField1_ = (bitField1_ & ~0x00000080);
       onChanged();
       return this;
     }
@@ -8964,9 +9016,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Theme> themes_ =
       java.util.Collections.emptyList();
     private void ensureThemesIsMutable() {
-      if (!((bitField0_ & 0x00200000) != 0)) {
+      if (!((bitField1_ & 0x00000100) != 0)) {
         themes_ = new java.util.ArrayList<proto.Theme>(themes_);
-        bitField0_ |= 0x00200000;
+        bitField1_ |= 0x00000100;
        }
     }
 
@@ -9116,7 +9168,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearThemes() {
       if (themesBuilder_ == null) {
         themes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00200000);
+        bitField1_ = (bitField1_ & ~0x00000100);
         onChanged();
       } else {
         themesBuilder_.clear();
@@ -9193,7 +9245,7 @@ private static final long serialVersionUID = 0L;
         themesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Theme, proto.Theme.Builder, proto.ThemeOrBuilder>(
                 themes_,
-                ((bitField0_ & 0x00200000) != 0),
+                ((bitField1_ & 0x00000100) != 0),
                 getParentForChildren(),
                 isClean());
         themes_ = null;
@@ -9218,6 +9270,7 @@ private static final long serialVersionUID = 0L;
     public Builder setTotalRating(double value) {
       
       totalRating_ = value;
+      bitField1_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -9226,7 +9279,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTotalRating() {
-      
+      bitField1_ = (bitField1_ & ~0x00000200);
       totalRating_ = 0D;
       onChanged();
       return this;
@@ -9249,6 +9302,7 @@ private static final long serialVersionUID = 0L;
     public Builder setTotalRatingCount(int value) {
       
       totalRatingCount_ = value;
+      bitField1_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -9257,7 +9311,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTotalRatingCount() {
-      
+      bitField1_ = (bitField1_ & ~0x00000400);
       totalRatingCount_ = 0;
       onChanged();
       return this;
@@ -9271,7 +9325,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
-      return updatedAtBuilder_ != null || updatedAt_ != null;
+      return ((bitField1_ & 0x00000800) != 0);
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 44;</code>
@@ -9293,11 +9347,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         updatedAt_ = value;
-        onChanged();
       } else {
         updatedAtBuilder_.setMessage(value);
       }
-
+      bitField1_ |= 0x00000800;
+      onChanged();
       return this;
     }
     /**
@@ -9307,11 +9361,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.Timestamp.Builder builderForValue) {
       if (updatedAtBuilder_ == null) {
         updatedAt_ = builderForValue.build();
-        onChanged();
       } else {
         updatedAtBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField1_ |= 0x00000800;
+      onChanged();
       return this;
     }
     /**
@@ -9319,38 +9373,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
-        if (updatedAt_ != null) {
-          updatedAt_ =
-            com.google.protobuf.Timestamp.newBuilder(updatedAt_).mergeFrom(value).buildPartial();
+        if (((bitField1_ & 0x00000800) != 0) &&
+          updatedAt_ != null &&
+          updatedAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
+          getUpdatedAtBuilder().mergeFrom(value);
         } else {
           updatedAt_ = value;
         }
-        onChanged();
       } else {
         updatedAtBuilder_.mergeFrom(value);
       }
-
+      bitField1_ |= 0x00000800;
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 44;</code>
      */
     public Builder clearUpdatedAt() {
-      if (updatedAtBuilder_ == null) {
-        updatedAt_ = null;
-        onChanged();
-      } else {
-        updatedAt_ = null;
+      bitField1_ = (bitField1_ & ~0x00000800);
+      updatedAt_ = null;
+      if (updatedAtBuilder_ != null) {
+        updatedAtBuilder_.dispose();
         updatedAtBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.google.protobuf.Timestamp updated_at = 44;</code>
      */
     public com.google.protobuf.Timestamp.Builder getUpdatedAtBuilder() {
-      
+      bitField1_ |= 0x00000800;
       onChanged();
       return getUpdatedAtFieldBuilder().getBuilder();
     }
@@ -9423,11 +9477,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrl(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       url_ = value;
+      bitField1_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -9436,8 +9488,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearUrl() {
-      
       url_ = getDefaultInstance().getUrl();
+      bitField1_ = (bitField1_ & ~0x00001000);
       onChanged();
       return this;
     }
@@ -9448,12 +9500,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       url_ = value;
+      bitField1_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -9466,7 +9516,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the versionParent field is set.
      */
     public boolean hasVersionParent() {
-      return versionParentBuilder_ != null || versionParent_ != null;
+      return ((bitField1_ & 0x00002000) != 0);
     }
     /**
      * <code>.proto.Game version_parent = 46;</code>
@@ -9488,11 +9538,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         versionParent_ = value;
-        onChanged();
       } else {
         versionParentBuilder_.setMessage(value);
       }
-
+      bitField1_ |= 0x00002000;
+      onChanged();
       return this;
     }
     /**
@@ -9502,11 +9552,11 @@ private static final long serialVersionUID = 0L;
         proto.Game.Builder builderForValue) {
       if (versionParentBuilder_ == null) {
         versionParent_ = builderForValue.build();
-        onChanged();
       } else {
         versionParentBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField1_ |= 0x00002000;
+      onChanged();
       return this;
     }
     /**
@@ -9514,38 +9564,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeVersionParent(proto.Game value) {
       if (versionParentBuilder_ == null) {
-        if (versionParent_ != null) {
-          versionParent_ =
-            proto.Game.newBuilder(versionParent_).mergeFrom(value).buildPartial();
+        if (((bitField1_ & 0x00002000) != 0) &&
+          versionParent_ != null &&
+          versionParent_ != proto.Game.getDefaultInstance()) {
+          getVersionParentBuilder().mergeFrom(value);
         } else {
           versionParent_ = value;
         }
-        onChanged();
       } else {
         versionParentBuilder_.mergeFrom(value);
       }
-
+      bitField1_ |= 0x00002000;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game version_parent = 46;</code>
      */
     public Builder clearVersionParent() {
-      if (versionParentBuilder_ == null) {
-        versionParent_ = null;
-        onChanged();
-      } else {
-        versionParent_ = null;
+      bitField1_ = (bitField1_ & ~0x00002000);
+      versionParent_ = null;
+      if (versionParentBuilder_ != null) {
+        versionParentBuilder_.dispose();
         versionParentBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game version_parent = 46;</code>
      */
     public proto.Game.Builder getVersionParentBuilder() {
-      
+      bitField1_ |= 0x00002000;
       onChanged();
       return getVersionParentFieldBuilder().getBuilder();
     }
@@ -9618,11 +9668,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setVersionTitle(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       versionTitle_ = value;
+      bitField1_ |= 0x00004000;
       onChanged();
       return this;
     }
@@ -9631,8 +9679,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearVersionTitle() {
-      
       versionTitle_ = getDefaultInstance().getVersionTitle();
+      bitField1_ = (bitField1_ & ~0x00004000);
       onChanged();
       return this;
     }
@@ -9643,12 +9691,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setVersionTitleBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       versionTitle_ = value;
+      bitField1_ |= 0x00004000;
       onChanged();
       return this;
     }
@@ -9656,9 +9702,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameVideo> videos_ =
       java.util.Collections.emptyList();
     private void ensureVideosIsMutable() {
-      if (!((bitField0_ & 0x00400000) != 0)) {
+      if (!((bitField1_ & 0x00008000) != 0)) {
         videos_ = new java.util.ArrayList<proto.GameVideo>(videos_);
-        bitField0_ |= 0x00400000;
+        bitField1_ |= 0x00008000;
        }
     }
 
@@ -9808,7 +9854,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearVideos() {
       if (videosBuilder_ == null) {
         videos_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00400000);
+        bitField1_ = (bitField1_ & ~0x00008000);
         onChanged();
       } else {
         videosBuilder_.clear();
@@ -9885,7 +9931,7 @@ private static final long serialVersionUID = 0L;
         videosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameVideo, proto.GameVideo.Builder, proto.GameVideoOrBuilder>(
                 videos_,
-                ((bitField0_ & 0x00400000) != 0),
+                ((bitField1_ & 0x00008000) != 0),
                 getParentForChildren(),
                 isClean());
         videos_ = null;
@@ -9896,9 +9942,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Website> websites_ =
       java.util.Collections.emptyList();
     private void ensureWebsitesIsMutable() {
-      if (!((bitField0_ & 0x00800000) != 0)) {
+      if (!((bitField1_ & 0x00010000) != 0)) {
         websites_ = new java.util.ArrayList<proto.Website>(websites_);
-        bitField0_ |= 0x00800000;
+        bitField1_ |= 0x00010000;
        }
     }
 
@@ -10048,7 +10094,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearWebsites() {
       if (websitesBuilder_ == null) {
         websites_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00800000);
+        bitField1_ = (bitField1_ & ~0x00010000);
         onChanged();
       } else {
         websitesBuilder_.clear();
@@ -10125,7 +10171,7 @@ private static final long serialVersionUID = 0L;
         websitesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Website, proto.Website.Builder, proto.WebsiteOrBuilder>(
                 websites_,
-                ((bitField0_ & 0x00800000) != 0),
+                ((bitField1_ & 0x00010000) != 0),
                 getParentForChildren(),
                 isClean());
         websites_ = null;
@@ -10174,11 +10220,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField1_ |= 0x00020000;
       onChanged();
       return this;
     }
@@ -10187,8 +10231,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField1_ = (bitField1_ & ~0x00020000);
       onChanged();
       return this;
     }
@@ -10199,12 +10243,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField1_ |= 0x00020000;
       onChanged();
       return this;
     }
@@ -10212,9 +10254,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> remakes_ =
       java.util.Collections.emptyList();
     private void ensureRemakesIsMutable() {
-      if (!((bitField0_ & 0x01000000) != 0)) {
+      if (!((bitField1_ & 0x00040000) != 0)) {
         remakes_ = new java.util.ArrayList<proto.Game>(remakes_);
-        bitField0_ |= 0x01000000;
+        bitField1_ |= 0x00040000;
        }
     }
 
@@ -10364,7 +10406,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearRemakes() {
       if (remakesBuilder_ == null) {
         remakes_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x01000000);
+        bitField1_ = (bitField1_ & ~0x00040000);
         onChanged();
       } else {
         remakesBuilder_.clear();
@@ -10441,7 +10483,7 @@ private static final long serialVersionUID = 0L;
         remakesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 remakes_,
-                ((bitField0_ & 0x01000000) != 0),
+                ((bitField1_ & 0x00040000) != 0),
                 getParentForChildren(),
                 isClean());
         remakes_ = null;
@@ -10452,9 +10494,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> remasters_ =
       java.util.Collections.emptyList();
     private void ensureRemastersIsMutable() {
-      if (!((bitField0_ & 0x02000000) != 0)) {
+      if (!((bitField1_ & 0x00080000) != 0)) {
         remasters_ = new java.util.ArrayList<proto.Game>(remasters_);
-        bitField0_ |= 0x02000000;
+        bitField1_ |= 0x00080000;
        }
     }
 
@@ -10604,7 +10646,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearRemasters() {
       if (remastersBuilder_ == null) {
         remasters_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x02000000);
+        bitField1_ = (bitField1_ & ~0x00080000);
         onChanged();
       } else {
         remastersBuilder_.clear();
@@ -10681,7 +10723,7 @@ private static final long serialVersionUID = 0L;
         remastersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 remasters_,
-                ((bitField0_ & 0x02000000) != 0),
+                ((bitField1_ & 0x00080000) != 0),
                 getParentForChildren(),
                 isClean());
         remasters_ = null;
@@ -10692,9 +10734,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> expandedGames_ =
       java.util.Collections.emptyList();
     private void ensureExpandedGamesIsMutable() {
-      if (!((bitField0_ & 0x04000000) != 0)) {
+      if (!((bitField1_ & 0x00100000) != 0)) {
         expandedGames_ = new java.util.ArrayList<proto.Game>(expandedGames_);
-        bitField0_ |= 0x04000000;
+        bitField1_ |= 0x00100000;
        }
     }
 
@@ -10844,7 +10886,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearExpandedGames() {
       if (expandedGamesBuilder_ == null) {
         expandedGames_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x04000000);
+        bitField1_ = (bitField1_ & ~0x00100000);
         onChanged();
       } else {
         expandedGamesBuilder_.clear();
@@ -10921,7 +10963,7 @@ private static final long serialVersionUID = 0L;
         expandedGamesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 expandedGames_,
-                ((bitField0_ & 0x04000000) != 0),
+                ((bitField1_ & 0x00100000) != 0),
                 getParentForChildren(),
                 isClean());
         expandedGames_ = null;
@@ -10932,9 +10974,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> ports_ =
       java.util.Collections.emptyList();
     private void ensurePortsIsMutable() {
-      if (!((bitField0_ & 0x08000000) != 0)) {
+      if (!((bitField1_ & 0x00200000) != 0)) {
         ports_ = new java.util.ArrayList<proto.Game>(ports_);
-        bitField0_ |= 0x08000000;
+        bitField1_ |= 0x00200000;
        }
     }
 
@@ -11084,7 +11126,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPorts() {
       if (portsBuilder_ == null) {
         ports_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x08000000);
+        bitField1_ = (bitField1_ & ~0x00200000);
         onChanged();
       } else {
         portsBuilder_.clear();
@@ -11161,7 +11203,7 @@ private static final long serialVersionUID = 0L;
         portsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 ports_,
-                ((bitField0_ & 0x08000000) != 0),
+                ((bitField1_ & 0x00200000) != 0),
                 getParentForChildren(),
                 isClean());
         ports_ = null;
@@ -11172,9 +11214,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.Game> forks_ =
       java.util.Collections.emptyList();
     private void ensureForksIsMutable() {
-      if (!((bitField0_ & 0x10000000) != 0)) {
+      if (!((bitField1_ & 0x00400000) != 0)) {
         forks_ = new java.util.ArrayList<proto.Game>(forks_);
-        bitField0_ |= 0x10000000;
+        bitField1_ |= 0x00400000;
        }
     }
 
@@ -11324,7 +11366,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearForks() {
       if (forksBuilder_ == null) {
         forks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x10000000);
+        bitField1_ = (bitField1_ & ~0x00400000);
         onChanged();
       } else {
         forksBuilder_.clear();
@@ -11401,7 +11443,7 @@ private static final long serialVersionUID = 0L;
         forksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
                 forks_,
-                ((bitField0_ & 0x10000000) != 0),
+                ((bitField1_ & 0x00400000) != 0),
                 getParentForChildren(),
                 isClean());
         forks_ = null;
@@ -11412,9 +11454,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.LanguageSupport> languageSupports_ =
       java.util.Collections.emptyList();
     private void ensureLanguageSupportsIsMutable() {
-      if (!((bitField0_ & 0x20000000) != 0)) {
+      if (!((bitField1_ & 0x00800000) != 0)) {
         languageSupports_ = new java.util.ArrayList<proto.LanguageSupport>(languageSupports_);
-        bitField0_ |= 0x20000000;
+        bitField1_ |= 0x00800000;
        }
     }
 
@@ -11564,7 +11606,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearLanguageSupports() {
       if (languageSupportsBuilder_ == null) {
         languageSupports_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x20000000);
+        bitField1_ = (bitField1_ & ~0x00800000);
         onChanged();
       } else {
         languageSupportsBuilder_.clear();
@@ -11641,7 +11683,7 @@ private static final long serialVersionUID = 0L;
         languageSupportsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.LanguageSupport, proto.LanguageSupport.Builder, proto.LanguageSupportOrBuilder>(
                 languageSupports_,
-                ((bitField0_ & 0x20000000) != 0),
+                ((bitField1_ & 0x00800000) != 0),
                 getParentForChildren(),
                 isClean());
         languageSupports_ = null;
@@ -11652,9 +11694,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.GameLocalization> gameLocalizations_ =
       java.util.Collections.emptyList();
     private void ensureGameLocalizationsIsMutable() {
-      if (!((bitField0_ & 0x40000000) != 0)) {
+      if (!((bitField1_ & 0x01000000) != 0)) {
         gameLocalizations_ = new java.util.ArrayList<proto.GameLocalization>(gameLocalizations_);
-        bitField0_ |= 0x40000000;
+        bitField1_ |= 0x01000000;
        }
     }
 
@@ -11804,7 +11846,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearGameLocalizations() {
       if (gameLocalizationsBuilder_ == null) {
         gameLocalizations_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x40000000);
+        bitField1_ = (bitField1_ & ~0x01000000);
         onChanged();
       } else {
         gameLocalizationsBuilder_.clear();
@@ -11881,7 +11923,7 @@ private static final long serialVersionUID = 0L;
         gameLocalizationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.GameLocalization, proto.GameLocalization.Builder, proto.GameLocalizationOrBuilder>(
                 gameLocalizations_,
-                ((bitField0_ & 0x40000000) != 0),
+                ((bitField1_ & 0x01000000) != 0),
                 getParentForChildren(),
                 isClean());
         gameLocalizations_ = null;
