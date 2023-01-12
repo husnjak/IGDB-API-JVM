@@ -60,20 +60,20 @@ private static final long serialVersionUID = 0L;
   public static final int CATEGORY_FIELD_NUMBER = 2;
   private int category_;
   /**
-   * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
    * @return The enum numeric value on the wire for category.
    */
   @java.lang.Override public int getCategoryValue() {
     return category_;
   }
   /**
-   * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
    * @return The category.
    */
-  @java.lang.Override public proto.AgeRatingRatingEnum getCategory() {
+  @java.lang.Override public proto.AgeRatingContentDescriptionCategoryEnum getCategory() {
     @SuppressWarnings("deprecation")
-    proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(category_);
-    return result == null ? proto.AgeRatingRatingEnum.UNRECOGNIZED : result;
+    proto.AgeRatingContentDescriptionCategoryEnum result = proto.AgeRatingContentDescriptionCategoryEnum.valueOf(category_);
+    return result == null ? proto.AgeRatingContentDescriptionCategoryEnum.UNRECOGNIZED : result;
   }
 
   public static final int DESCRIPTION_FIELD_NUMBER = 3;
@@ -383,14 +383,14 @@ private static final long serialVersionUID = 0L;
 
     private int category_ = 0;
     /**
-     * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
      * @return The enum numeric value on the wire for category.
      */
     @java.lang.Override public int getCategoryValue() {
       return category_;
     }
     /**
-     * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
      * @param value The enum numeric value on the wire for category to set.
      * @return This builder for chaining.
      */
@@ -401,21 +401,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
      * @return The category.
      */
     @java.lang.Override
-    public proto.AgeRatingRatingEnum getCategory() {
+    public proto.AgeRatingContentDescriptionCategoryEnum getCategory() {
       @SuppressWarnings("deprecation")
-      proto.AgeRatingRatingEnum result = proto.AgeRatingRatingEnum.valueOf(category_);
-      return result == null ? proto.AgeRatingRatingEnum.UNRECOGNIZED : result;
+      proto.AgeRatingContentDescriptionCategoryEnum result = proto.AgeRatingContentDescriptionCategoryEnum.valueOf(category_);
+      return result == null ? proto.AgeRatingContentDescriptionCategoryEnum.UNRECOGNIZED : result;
     }
     /**
-     * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
      * @param value The category to set.
      * @return This builder for chaining.
      */
-    public Builder setCategory(proto.AgeRatingRatingEnum value) {
+    public Builder setCategory(proto.AgeRatingContentDescriptionCategoryEnum value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -425,7 +425,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+     * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearCategory() {

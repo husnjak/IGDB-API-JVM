@@ -14,15 +14,15 @@ public interface AgeRatingContentDescriptionOrBuilder extends
   long getId();
 
   /**
-   * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
    * @return The enum numeric value on the wire for category.
    */
   int getCategoryValue();
   /**
-   * <code>.proto.AgeRatingRatingEnum category = 2;</code>
+   * <code>.proto.AgeRatingContentDescriptionCategoryEnum category = 2;</code>
    * @return The category.
    */
-  proto.AgeRatingRatingEnum getCategory();
+  proto.AgeRatingContentDescriptionCategoryEnum getCategory();
 
   /**
    * <code>string description = 3;</code>

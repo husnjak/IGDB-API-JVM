@@ -494,455 +494,512 @@ public final class Igdbproto {
       "sum\030\007 \001(\t\"m\n!AgeRatingContentDescription" +
       "Result\022H\n\034ageratingcontentdescriptions\030\001" +
       " \003(\0132\".proto.AgeRatingContentDescription" +
-      "\"~\n\033AgeRatingContentDescription\022\n\n\002id\030\001 " +
-      "\001(\004\022,\n\010category\030\002 \001(\0162\032.proto.AgeRatingR" +
-      "atingEnum\022\023\n\013description\030\003 \001(\t\022\020\n\010checks" +
-      "um\030\004 \001(\t\"I\n\025AlternativeNameResult\0220\n\020alt" +
-      "ernativenames\030\001 \003(\0132\026.proto.AlternativeN" +
-      "ame\"i\n\017AlternativeName\022\n\n\002id\030\001 \001(\004\022\017\n\007co" +
-      "mment\030\002 \001(\t\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022\014" +
-      "\n\004name\030\004 \001(\t\022\020\n\010checksum\030\005 \001(\t\"1\n\rArtwor" +
-      "kResult\022 \n\010artworks\030\001 \003(\0132\016.proto.Artwor" +
-      "k\"\251\001\n\007Artwork\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_chann" +
-      "el\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\031\n\004game\030\004 \001(\013" +
-      "2\013.proto.Game\022\016\n\006height\030\005 \001(\005\022\020\n\010image_i" +
-      "d\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010c" +
-      "hecksum\030\t \001(\t\"7\n\017CharacterResult\022$\n\nchar" +
-      "acters\030\001 \003(\0132\020.proto.Character\"\211\003\n\tChara" +
-      "cter\022\n\n\002id\030\001 \001(\004\022\014\n\004akas\030\002 \003(\t\022\024\n\014countr" +
-      "y_name\030\003 \001(\t\022.\n\ncreated_at\030\004 \001(\0132\032.googl" +
-      "e.protobuf.Timestamp\022\023\n\013description\030\005 \001(" +
-      "\t\022\032\n\005games\030\006 \003(\0132\013.proto.Game\022\'\n\006gender\030" +
-      "\007 \001(\0162\027.proto.GenderGenderEnum\022)\n\010mug_sh" +
-      "ot\030\010 \001(\0132\027.proto.CharacterMugShot\022\014\n\004nam" +
-      "e\030\t \001(\t\022\014\n\004slug\030\n \001(\t\022,\n\007species\030\013 \001(\0162\033" +
-      ".proto.CharacterSpeciesEnum\022.\n\nupdated_a" +
-      "t\030\014 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003u" +
-      "rl\030\r \001(\t\022\020\n\010checksum\030\016 \001(\t\"L\n\026CharacterM" +
-      "ugShotResult\0222\n\021charactermugshots\030\001 \003(\0132" +
-      "\027.proto.CharacterMugShot\"\227\001\n\020CharacterMu" +
-      "gShot\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010" +
-      "\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010im" +
-      "age_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005" +
-      "\022\020\n\010checksum\030\010 \001(\t\":\n\020CollectionResult\022&" +
-      "\n\013collections\030\001 \003(\0132\021.proto.Collection\"\317" +
-      "\001\n\nCollection\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030" +
-      "\002 \001(\0132\032.google.protobuf.Timestamp\022\032\n\005gam" +
-      "es\030\003 \003(\0132\013.proto.Game\022\014\n\004name\030\004 \001(\t\022\014\n\004s" +
-      "lug\030\005 \001(\t\022.\n\nupdated_at\030\006 \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022\013\n\003url\030\007 \001(\t\022\020\n\010checks" +
-      "um\030\010 \001(\t\"2\n\rCompanyResult\022!\n\tcompanies\030\001" +
-      " \003(\0132\016.proto.Company\"\233\005\n\007Company\022\n\n\002id\030\001" +
-      " \001(\004\022/\n\013change_date\030\002 \001(\0132\032.google.proto" +
-      "buf.Timestamp\022E\n\024change_date_category\030\003 " +
-      "\001(\0162\'.proto.DateFormatChangeDateCategory" +
-      "Enum\022*\n\022changed_company_id\030\004 \001(\0132\016.proto" +
-      ".Company\022\017\n\007country\030\005 \001(\005\022.\n\ncreated_at\030" +
-      "\006 \001(\0132\032.google.protobuf.Timestamp\022\023\n\013des" +
-      "cription\030\007 \001(\t\022\036\n\tdeveloped\030\010 \003(\0132\013.prot" +
-      "o.Game\022 \n\004logo\030\t \001(\0132\022.proto.CompanyLogo" +
-      "\022\014\n\004name\030\n \001(\t\022\036\n\006parent\030\013 \001(\0132\016.proto.C" +
-      "ompany\022\036\n\tpublished\030\014 \003(\0132\013.proto.Game\022\014" +
-      "\n\004slug\030\r \001(\t\022.\n\nstart_date\030\016 \001(\0132\032.googl" +
-      "e.protobuf.Timestamp\022D\n\023start_date_categ" +
-      "ory\030\017 \001(\0162\'.proto.DateFormatChangeDateCa" +
-      "tegoryEnum\022.\n\nupdated_at\030\020 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\'\n\010websi" +
-      "tes\030\022 \003(\0132\025.proto.CompanyWebsite\022\020\n\010chec" +
-      "ksum\030\023 \001(\t\"=\n\021CompanyLogoResult\022(\n\014compa" +
-      "nylogos\030\001 \003(\0132\022.proto.CompanyLogo\"\222\001\n\013Co" +
-      "mpanyLogo\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002" +
-      " \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\020" +
-      "\n\010image_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007" +
-      " \001(\005\022\020\n\010checksum\030\010 \001(\t\"F\n\024CompanyWebsite" +
-      "Result\022.\n\017companywebsites\030\001 \003(\0132\025.proto." +
-      "CompanyWebsite\"z\n\016CompanyWebsite\022\n\n\002id\030\001" +
-      " \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.WebsiteCa" +
-      "tegoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t" +
-      "\022\020\n\010checksum\030\005 \001(\t\"+\n\013CoverResult\022\034\n\006cov" +
-      "ers\030\001 \003(\0132\014.proto.Cover\"\333\001\n\005Cover\022\n\n\002id\030" +
-      "\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated" +
-      "\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006hei" +
-      "ght\030\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007 \001(\t" +
-      "\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\0222\n\021gam" +
-      "e_localization\030\n \001(\0132\027.proto.GameLocaliz" +
-      "ation\"@\n\022ExternalGameResult\022*\n\rexternalg" +
-      "ames\030\001 \003(\0132\023.proto.ExternalGame\"\363\002\n\014Exte" +
-      "rnalGame\022\n\n\002id\030\001 \001(\004\0221\n\010category\030\002 \001(\0162\037" +
-      ".proto.ExternalGameCategoryEnum\022.\n\ncreat" +
-      "ed_at\030\003 \001(\0132\032.google.protobuf.Timestamp\022" +
-      "\031\n\004game\030\004 \001(\0132\013.proto.Game\022\014\n\004name\030\005 \001(\t" +
-      "\022\013\n\003uid\030\006 \001(\t\022.\n\nupdated_at\030\007 \001(\0132\032.goog" +
-      "le.protobuf.Timestamp\022\013\n\003url\030\010 \001(\t\022\014\n\004ye" +
-      "ar\030\t \001(\005\022+\n\005media\030\n \001(\0162\034.proto.External" +
-      "GameMediaEnum\022!\n\010platform\030\013 \001(\0132\017.proto." +
-      "Platform\022\021\n\tcountries\030\014 \003(\005\022\020\n\010checksum\030" +
-      "\r \001(\t\"7\n\017FranchiseResult\022$\n\nfranchises\030\001" +
-      " \003(\0132\020.proto.Franchise\"\316\001\n\tFranchise\022\n\n\002" +
-      "id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.pr" +
-      "otobuf.Timestamp\022\032\n\005games\030\003 \003(\0132\013.proto." +
-      "Game\022\014\n\004name\030\004 \001(\t\022\014\n\004slug\030\005 \001(\t\022.\n\nupda" +
-      "ted_at\030\006 \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\013\n\003url\030\007 \001(\t\022\020\n\010checksum\030\010 \001(\t\"(\n\nGameR" +
-      "esult\022\032\n\005games\030\001 \003(\0132\013.proto.Game\"\345\016\n\004Ga" +
-      "me\022\n\n\002id\030\001 \001(\004\022%\n\013age_ratings\030\002 \003(\0132\020.pr" +
-      "oto.AgeRating\022\031\n\021aggregated_rating\030\003 \001(\001" +
-      "\022\037\n\027aggregated_rating_count\030\004 \001(\005\0221\n\021alt" +
-      "ernative_names\030\005 \003(\0132\026.proto.Alternative" +
-      "Name\022 \n\010artworks\030\006 \003(\0132\016.proto.Artwork\022\034" +
-      "\n\007bundles\030\007 \003(\0132\013.proto.Game\022)\n\010category" +
-      "\030\010 \001(\0162\027.proto.GameCategoryEnum\022%\n\ncolle" +
-      "ction\030\t \001(\0132\021.proto.Collection\022\033\n\005cover\030" +
-      "\n \001(\0132\014.proto.Cover\022.\n\ncreated_at\030\013 \001(\0132" +
-      "\032.google.protobuf.Timestamp\022\031\n\004dlcs\030\014 \003(" +
-      "\0132\013.proto.Game\022\037\n\nexpansions\030\r \003(\0132\013.pro" +
-      "to.Game\022+\n\016external_games\030\016 \003(\0132\023.proto." +
-      "ExternalGame\0226\n\022first_release_date\030\017 \001(\013" +
-      "2\032.google.protobuf.Timestamp\022\017\n\007follows\030" +
-      "\020 \001(\005\022#\n\tfranchise\030\021 \001(\0132\020.proto.Franchi" +
-      "se\022$\n\nfranchises\030\022 \003(\0132\020.proto.Franchise" +
-      "\022\'\n\014game_engines\030\023 \003(\0132\021.proto.GameEngin" +
-      "e\022#\n\ngame_modes\030\024 \003(\0132\017.proto.GameMode\022\034" +
-      "\n\006genres\030\025 \003(\0132\014.proto.Genre\022\r\n\005hypes\030\026 " +
-      "\001(\005\0222\n\022involved_companies\030\027 \003(\0132\026.proto." +
-      "InvolvedCompany\022 \n\010keywords\030\030 \003(\0132\016.prot" +
-      "o.Keyword\0221\n\021multiplayer_modes\030\031 \003(\0132\026.p" +
-      "roto.MultiplayerMode\022\014\n\004name\030\032 \001(\t\022 \n\013pa" +
-      "rent_game\030\033 \001(\0132\013.proto.Game\022\"\n\tplatform" +
-      "s\030\034 \003(\0132\017.proto.Platform\0225\n\023player_persp" +
-      "ectives\030\035 \003(\0132\030.proto.PlayerPerspective\022" +
-      "\016\n\006rating\030\036 \001(\001\022\024\n\014rating_count\030\037 \001(\005\022)\n" +
-      "\rrelease_dates\030  \003(\0132\022.proto.ReleaseDate" +
-      "\022&\n\013screenshots\030! \003(\0132\021.proto.Screenshot" +
-      "\022\"\n\rsimilar_games\030\" \003(\0132\013.proto.Game\022\014\n\004" +
-      "slug\030# \001(\t\022*\n\025standalone_expansions\030$ \003(" +
-      "\0132\013.proto.Game\022%\n\006status\030% \001(\0162\025.proto.G" +
-      "ameStatusEnum\022\021\n\tstoryline\030& \001(\t\022\017\n\007summ" +
-      "ary\030\' \001(\t\022\014\n\004tags\030( \003(\005\022\034\n\006themes\030) \003(\0132" +
-      "\014.proto.Theme\022\024\n\014total_rating\030* \001(\001\022\032\n\022t" +
-      "otal_rating_count\030+ \001(\005\022.\n\nupdated_at\030, " +
-      "\001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030-" +
-      " \001(\t\022#\n\016version_parent\030. \001(\0132\013.proto.Gam" +
-      "e\022\025\n\rversion_title\030/ \001(\t\022 \n\006videos\0300 \003(\013" +
-      "2\020.proto.GameVideo\022 \n\010websites\0301 \003(\0132\016.p" +
-      "roto.Website\022\020\n\010checksum\0302 \001(\t\022\034\n\007remake" +
-      "s\0303 \003(\0132\013.proto.Game\022\036\n\tremasters\0304 \003(\0132" +
-      "\013.proto.Game\022#\n\016expanded_games\0305 \003(\0132\013.p" +
-      "roto.Game\022\032\n\005ports\0306 \003(\0132\013.proto.Game\022\032\n" +
-      "\005forks\0307 \003(\0132\013.proto.Game\0221\n\021language_su" +
-      "pports\0308 \003(\0132\026.proto.LanguageSupport\0223\n\022" +
-      "game_localizations\0309 \003(\0132\027.proto.GameLoc" +
-      "alization\":\n\020GameEngineResult\022&\n\013gameeng" +
-      "ines\030\001 \003(\0132\021.proto.GameEngine\"\264\002\n\nGameEn" +
-      "gine\022\n\n\002id\030\001 \001(\004\022!\n\tcompanies\030\002 \003(\0132\016.pr" +
-      "oto.Company\022.\n\ncreated_at\030\003 \001(\0132\032.google" +
-      ".protobuf.Timestamp\022\023\n\013description\030\004 \001(\t" +
-      "\022#\n\004logo\030\005 \001(\0132\025.proto.GameEngineLogo\022\014\n" +
-      "\004name\030\006 \001(\t\022\"\n\tplatforms\030\007 \003(\0132\017.proto.P" +
-      "latform\022\014\n\004slug\030\010 \001(\t\022.\n\nupdated_at\030\t \001(" +
-      "\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\n \001" +
-      "(\t\022\020\n\010checksum\030\013 \001(\t\"F\n\024GameEngineLogoRe" +
-      "sult\022.\n\017gameenginelogos\030\001 \003(\0132\025.proto.Ga" +
-      "meEngineLogo\"\225\001\n\016GameEngineLogo\022\n\n\002id\030\001 " +
-      "\001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003" +
-      " \001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013" +
-      "\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010" +
-      " \001(\t\"L\n\026GameLocalizationResult\0222\n\021gamelo" +
-      "calizations\030\001 \003(\0132\027.proto.GameLocalizati" +
-      "on\"\365\001\n\020GameLocalization\022\n\n\002id\030\001 \001(\004\022\014\n\004n" +
-      "ame\030\002 \001(\t\022\033\n\005cover\030\003 \001(\0132\014.proto.Cover\022\031" +
-      "\n\004game\030\004 \001(\0132\013.proto.Game\022\035\n\006region\030\005 \001(" +
-      "\0132\r.proto.Region\022.\n\ncreated_at\030\006 \001(\0132\032.g" +
-      "oogle.protobuf.Timestamp\022.\n\nupdated_at\030\007" +
-      " \001(\0132\032.google.protobuf.Timestamp\022\020\n\010chec" +
-      "ksum\030\010 \001(\t\"4\n\016GameModeResult\022\"\n\tgamemode" +
-      "s\030\001 \003(\0132\017.proto.GameMode\"\261\001\n\010GameMode\022\n\n" +
-      "\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.p" +
-      "rotobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030" +
-      "\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.proto" +
-      "buf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007" +
-      " \001(\t\"=\n\021GameVersionResult\022(\n\014gameversion" +
-      "s\030\001 \003(\0132\022.proto.GameVersion\"\374\001\n\013GameVers" +
-      "ion\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022+\n\010features\030\003 \003(" +
-      "\0132\031.proto.GameVersionFeature\022\031\n\004game\030\004 \001" +
-      "(\0132\013.proto.Game\022\032\n\005games\030\005 \003(\0132\013.proto.G" +
-      "ame\022.\n\nupdated_at\030\006 \001(\0132\032.google.protobu" +
-      "f.Timestamp\022\013\n\003url\030\007 \001(\t\022\020\n\010checksum\030\010 \001" +
-      "(\t\"R\n\030GameVersionFeatureResult\0226\n\023gameve" +
-      "rsionfeatures\030\001 \003(\0132\031.proto.GameVersionF" +
-      "eature\"\321\001\n\022GameVersionFeature\022\n\n\002id\030\001 \001(" +
-      "\004\0227\n\010category\030\002 \001(\0162%.proto.GameVersionF" +
-      "eatureCategoryEnum\022\023\n\013description\030\003 \001(\t\022" +
-      "\020\n\010position\030\004 \001(\005\022\r\n\005title\030\005 \001(\t\022.\n\006valu" +
-      "es\030\006 \003(\0132\036.proto.GameVersionFeatureValue" +
-      "\022\020\n\010checksum\030\007 \001(\t\"a\n\035GameVersionFeature" +
-      "ValueResult\022@\n\030gameversionfeaturevalues\030" +
-      "\001 \003(\0132\036.proto.GameVersionFeatureValue\"\336\001" +
-      "\n\027GameVersionFeatureValue\022\n\n\002id\030\001 \001(\004\022\031\n" +
-      "\004game\030\002 \001(\0132\013.proto.Game\022/\n\014game_feature" +
-      "\030\003 \001(\0132\031.proto.GameVersionFeature\022K\n\020inc" +
-      "luded_feature\030\004 \001(\01621.proto.GameVersionF" +
-      "eatureValueIncludedFeatureEnum\022\014\n\004note\030\005" +
-      " \001(\t\022\020\n\010checksum\030\006 \001(\t\"7\n\017GameVideoResul" +
-      "t\022$\n\ngamevideos\030\001 \003(\0132\020.proto.GameVideo\"" +
-      "d\n\tGameVideo\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013" +
-      ".proto.Game\022\014\n\004name\030\003 \001(\t\022\020\n\010video_id\030\004 " +
-      "\001(\t\022\020\n\010checksum\030\005 \001(\t\"+\n\013GenreResult\022\034\n\006" +
-      "genres\030\001 \003(\0132\014.proto.Genre\"\256\001\n\005Genre\022\n\n\002" +
-      "id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.pr" +
-      "otobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004" +
-      " \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.protob" +
-      "uf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 " +
-      "\001(\t\"J\n\025InvolvedCompanyResult\0221\n\021involved" +
-      "companies\030\001 \003(\0132\026.proto.InvolvedCompany\"" +
-      "\226\002\n\017InvolvedCompany\022\n\n\002id\030\001 \001(\004\022\037\n\007compa" +
-      "ny\030\002 \001(\0132\016.proto.Company\022.\n\ncreated_at\030\003" +
-      " \001(\0132\032.google.protobuf.Timestamp\022\021\n\tdeve" +
-      "loper\030\004 \001(\010\022\031\n\004game\030\005 \001(\0132\013.proto.Game\022\017" +
-      "\n\007porting\030\006 \001(\010\022\021\n\tpublisher\030\007 \001(\010\022\022\n\nsu" +
-      "pporting\030\010 \001(\010\022.\n\nupdated_at\030\t \001(\0132\032.goo" +
-      "gle.protobuf.Timestamp\022\020\n\010checksum\030\n \001(\t" +
-      "\"1\n\rKeywordResult\022 \n\010keywords\030\001 \003(\0132\016.pr" +
-      "oto.Keyword\"\260\001\n\007Keyword\022\n\n\002id\030\001 \001(\004\022.\n\nc" +
-      "reated_at\030\002 \001(\0132\032.google.protobuf.Timest" +
-      "amp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdat" +
-      "ed_at\030\005 \001(\0132\032.google.protobuf.Timestamp\022" +
-      "\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"4\n\016Langua" +
-      "geResult\022\"\n\tlanguages\030\001 \003(\0132\017.proto.Lang" +
-      "uage\"\273\001\n\010Language\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 " +
-      "\001(\t\022\023\n\013native_name\030\003 \001(\t\022\016\n\006locale\030\004 \001(\t" +
-      "\022.\n\ncreated_at\030\005 \001(\0132\032.google.protobuf.T" +
-      "imestamp\022.\n\nupdated_at\030\006 \001(\0132\032.google.pr" +
-      "otobuf.Timestamp\022\020\n\010checksum\030\007 \001(\t\"I\n\025La" +
-      "nguageSupportResult\0220\n\020languagesupports\030" +
-      "\001 \003(\0132\026.proto.LanguageSupport\"\210\002\n\017Langua" +
-      "geSupport\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.pr" +
-      "oto.Game\022!\n\010language\030\003 \001(\0132\017.proto.Langu" +
-      "age\0229\n\025language_support_type\030\004 \001(\0132\032.pro" +
-      "to.LanguageSupportType\022.\n\ncreated_at\030\005 \001" +
-      "(\0132\032.google.protobuf.Timestamp\022.\n\nupdate" +
-      "d_at\030\006 \001(\0132\032.google.protobuf.Timestamp\022\020" +
-      "\n\010checksum\030\007 \001(\t\"U\n\031LanguageSupportTypeR" +
-      "esult\0228\n\024languagesupporttypes\030\001 \003(\0132\032.pr" +
-      "oto.LanguageSupportType\"\241\001\n\023LanguageSupp" +
-      "ortType\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022.\n\ncre" +
-      "ated_at\030\003 \001(\0132\032.google.protobuf.Timestam" +
-      "p\022.\n\nupdated_at\030\004 \001(\0132\032.google.protobuf." +
-      "Timestamp\022\020\n\010checksum\030\005 \001(\t\"I\n\025Multiplay" +
-      "erModeResult\0220\n\020multiplayermodes\030\001 \003(\0132\026" +
-      ".proto.MultiplayerMode\"\323\002\n\017MultiplayerMo" +
-      "de\022\n\n\002id\030\001 \001(\004\022\024\n\014campaigncoop\030\002 \001(\010\022\016\n\006" +
-      "dropin\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022" +
-      "\017\n\007lancoop\030\005 \001(\010\022\023\n\013offlinecoop\030\006 \001(\010\022\026\n" +
-      "\016offlinecoopmax\030\007 \001(\005\022\022\n\nofflinemax\030\010 \001(" +
-      "\005\022\022\n\nonlinecoop\030\t \001(\010\022\025\n\ronlinecoopmax\030\n" +
-      " \001(\005\022\021\n\tonlinemax\030\013 \001(\005\022!\n\010platform\030\014 \001(" +
-      "\0132\017.proto.Platform\022\023\n\013splitscreen\030\r \001(\010\022" +
-      "\031\n\021splitscreenonline\030\016 \001(\010\022\020\n\010checksum\030\017" +
-      " \001(\t\"4\n\016PlatformResult\022\"\n\tplatforms\030\001 \003(" +
-      "\0132\017.proto.Platform\"\345\003\n\010Platform\022\n\n\002id\030\001 " +
-      "\001(\004\022\024\n\014abbreviation\030\002 \001(\t\022\030\n\020alternative" +
-      "_name\030\003 \001(\t\022-\n\010category\030\004 \001(\0162\033.proto.Pl" +
-      "atformCategoryEnum\022.\n\ncreated_at\030\005 \001(\0132\032" +
-      ".google.protobuf.Timestamp\022\022\n\ngeneration" +
-      "\030\006 \001(\005\022\014\n\004name\030\007 \001(\t\022*\n\rplatform_logo\030\010 " +
-      "\001(\0132\023.proto.PlatformLogo\022.\n\017platform_fam" +
-      "ily\030\t \001(\0132\025.proto.PlatformFamily\022\014\n\004slug" +
-      "\030\n \001(\t\022\017\n\007summary\030\013 \001(\t\022.\n\nupdated_at\030\014 " +
-      "\001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\r" +
-      " \001(\t\022(\n\010versions\030\016 \003(\0132\026.proto.PlatformV" +
-      "ersion\022(\n\010websites\030\017 \003(\0132\026.proto.Platfor" +
-      "mWebsite\022\020\n\010checksum\030\020 \001(\t\"G\n\024PlatformFa" +
-      "milyResult\022/\n\020platformfamilies\030\001 \003(\0132\025.p" +
-      "roto.PlatformFamily\"J\n\016PlatformFamily\022\n\n" +
-      "\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\014\n\004slug\030\003 \001(\t\022\020\n" +
-      "\010checksum\030\004 \001(\t\"@\n\022PlatformLogoResult\022*\n" +
-      "\rplatformlogos\030\001 \003(\0132\023.proto.PlatformLog" +
-      "o\"\223\001\n\014PlatformLogo\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_" +
-      "channel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006heigh" +
-      "t\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r" +
-      "\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010 \001(\t\"I\n\025Platf" +
-      "ormVersionResult\0220\n\020platformversions\030\001 \003" +
-      "(\0132\026.proto.PlatformVersion\"\201\004\n\017PlatformV" +
-      "ersion\022\n\n\002id\030\001 \001(\004\0220\n\tcompanies\030\002 \003(\0132\035." +
-      "proto.PlatformVersionCompany\022\024\n\014connecti" +
-      "vity\030\003 \001(\t\022\013\n\003cpu\030\004 \001(\t\022\020\n\010graphics\030\005 \001(" +
-      "\t\0228\n\021main_manufacturer\030\006 \001(\0132\035.proto.Pla" +
-      "tformVersionCompany\022\r\n\005media\030\007 \001(\t\022\016\n\006me" +
-      "mory\030\010 \001(\t\022\014\n\004name\030\t \001(\t\022\016\n\006online\030\n \001(\t" +
-      "\022\n\n\002os\030\013 \001(\t\022\016\n\006output\030\014 \001(\t\022*\n\rplatform" +
-      "_logo\030\r \001(\0132\023.proto.PlatformLogo\022I\n\036plat" +
-      "form_version_release_dates\030\016 \003(\0132!.proto" +
-      ".PlatformVersionReleaseDate\022\023\n\013resolutio" +
-      "ns\030\017 \001(\t\022\014\n\004slug\030\020 \001(\t\022\r\n\005sound\030\021 \001(\t\022\017\n" +
-      "\007storage\030\022 \001(\t\022\017\n\007summary\030\023 \001(\t\022\013\n\003url\030\024" +
-      " \001(\t\022\020\n\010checksum\030\025 \001(\t\"_\n\034PlatformVersio" +
-      "nCompanyResult\022?\n\030platformversioncompani" +
-      "es\030\001 \003(\0132\035.proto.PlatformVersionCompany\"" +
-      "\221\001\n\026PlatformVersionCompany\022\n\n\002id\030\001 \001(\004\022\017" +
-      "\n\007comment\030\002 \001(\t\022\037\n\007company\030\003 \001(\0132\016.proto" +
-      ".Company\022\021\n\tdeveloper\030\004 \001(\010\022\024\n\014manufactu" +
-      "rer\030\005 \001(\010\022\020\n\010checksum\030\006 \001(\t\"j\n PlatformV" +
-      "ersionReleaseDateResult\022F\n\033platformversi" +
-      "onreleasedates\030\001 \003(\0132!.proto.PlatformVer" +
-      "sionReleaseDate\"\377\002\n\032PlatformVersionRelea" +
-      "seDate\022\n\n\002id\030\001 \001(\004\0229\n\010category\030\002 \001(\0162\'.p" +
-      "roto.DateFormatChangeDateCategoryEnum\022.\n" +
-      "\ncreated_at\030\003 \001(\0132\032.google.protobuf.Time" +
-      "stamp\022(\n\004date\030\004 \001(\0132\032.google.protobuf.Ti" +
-      "mestamp\022\r\n\005human\030\005 \001(\t\022\t\n\001m\030\006 \001(\005\0220\n\020pla" +
-      "tform_version\030\007 \001(\0132\026.proto.PlatformVers" +
-      "ion\022\'\n\006region\030\010 \001(\0162\027.proto.RegionRegion" +
-      "Enum\022.\n\nupdated_at\030\t \001(\0132\032.google.protob" +
-      "uf.Timestamp\022\t\n\001y\030\n \001(\005\022\020\n\010checksum\030\013 \001(" +
-      "\t\"I\n\025PlatformWebsiteResult\0220\n\020platformwe" +
-      "bsites\030\001 \003(\0132\026.proto.PlatformWebsite\"{\n\017" +
-      "PlatformWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010category\030" +
-      "\002 \001(\0162\032.proto.WebsiteCategoryEnum\022\017\n\007tru" +
-      "sted\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\022\020\n\010checksum\030\005 \001(" +
-      "\t\"O\n\027PlayerPerspectiveResult\0224\n\022playerpe" +
-      "rspectives\030\001 \003(\0132\030.proto.PlayerPerspecti" +
-      "ve\"\272\001\n\021PlayerPerspective\022\n\n\002id\030\001 \001(\004\022.\n\n" +
+      "\"\222\001\n\033AgeRatingContentDescription\022\n\n\002id\030\001" +
+      " \001(\004\022@\n\010category\030\002 \001(\0162..proto.AgeRating" +
+      "ContentDescriptionCategoryEnum\022\023\n\013descri" +
+      "ption\030\003 \001(\t\022\020\n\010checksum\030\004 \001(\t\"I\n\025Alterna" +
+      "tiveNameResult\0220\n\020alternativenames\030\001 \003(\013" +
+      "2\026.proto.AlternativeName\"i\n\017AlternativeN" +
+      "ame\022\n\n\002id\030\001 \001(\004\022\017\n\007comment\030\002 \001(\t\022\031\n\004game" +
+      "\030\003 \001(\0132\013.proto.Game\022\014\n\004name\030\004 \001(\t\022\020\n\010che" +
+      "cksum\030\005 \001(\t\"1\n\rArtworkResult\022 \n\010artworks" +
+      "\030\001 \003(\0132\016.proto.Artwork\"\251\001\n\007Artwork\022\n\n\002id" +
+      "\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animate" +
+      "d\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006he" +
+      "ight\030\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007 \001(" +
+      "\t\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\"7\n\017Ch" +
+      "aracterResult\022$\n\ncharacters\030\001 \003(\0132\020.prot" +
+      "o.Character\"\211\003\n\tCharacter\022\n\n\002id\030\001 \001(\004\022\014\n" +
+      "\004akas\030\002 \003(\t\022\024\n\014country_name\030\003 \001(\t\022.\n\ncre" +
+      "ated_at\030\004 \001(\0132\032.google.protobuf.Timestam" +
+      "p\022\023\n\013description\030\005 \001(\t\022\032\n\005games\030\006 \003(\0132\013." +
+      "proto.Game\022\'\n\006gender\030\007 \001(\0162\027.proto.Gende" +
+      "rGenderEnum\022)\n\010mug_shot\030\010 \001(\0132\027.proto.Ch" +
+      "aracterMugShot\022\014\n\004name\030\t \001(\t\022\014\n\004slug\030\n \001" +
+      "(\t\022,\n\007species\030\013 \001(\0162\033.proto.CharacterSpe" +
+      "ciesEnum\022.\n\nupdated_at\030\014 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022\013\n\003url\030\r \001(\t\022\020\n\010checksu" +
+      "m\030\016 \001(\t\"L\n\026CharacterMugShotResult\0222\n\021cha" +
+      "ractermugshots\030\001 \003(\0132\027.proto.CharacterMu" +
+      "gShot\"\227\001\n\020CharacterMugShot\022\n\n\002id\030\001 \001(\004\022\025" +
+      "\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022" +
+      "\016\n\006height\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013\n\003url" +
+      "\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010 \001(\t\"" +
+      ":\n\020CollectionResult\022&\n\013collections\030\001 \003(\013" +
+      "2\021.proto.Collection\"\317\001\n\nCollection\022\n\n\002id" +
+      "\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.prot" +
+      "obuf.Timestamp\022\032\n\005games\030\003 \003(\0132\013.proto.Ga" +
+      "me\022\014\n\004name\030\004 \001(\t\022\014\n\004slug\030\005 \001(\t\022.\n\nupdate" +
+      "d_at\030\006 \001(\0132\032.google.protobuf.Timestamp\022\013" +
+      "\n\003url\030\007 \001(\t\022\020\n\010checksum\030\010 \001(\t\"2\n\rCompany" +
+      "Result\022!\n\tcompanies\030\001 \003(\0132\016.proto.Compan" +
+      "y\"\233\005\n\007Company\022\n\n\002id\030\001 \001(\004\022/\n\013change_date" +
+      "\030\002 \001(\0132\032.google.protobuf.Timestamp\022E\n\024ch" +
+      "ange_date_category\030\003 \001(\0162\'.proto.DateFor" +
+      "matChangeDateCategoryEnum\022*\n\022changed_com" +
+      "pany_id\030\004 \001(\0132\016.proto.Company\022\017\n\007country" +
+      "\030\005 \001(\005\022.\n\ncreated_at\030\006 \001(\0132\032.google.prot" +
+      "obuf.Timestamp\022\023\n\013description\030\007 \001(\t\022\036\n\td" +
+      "eveloped\030\010 \003(\0132\013.proto.Game\022 \n\004logo\030\t \001(" +
+      "\0132\022.proto.CompanyLogo\022\014\n\004name\030\n \001(\t\022\036\n\006p" +
+      "arent\030\013 \001(\0132\016.proto.Company\022\036\n\tpublished" +
+      "\030\014 \003(\0132\013.proto.Game\022\014\n\004slug\030\r \001(\t\022.\n\nsta" +
+      "rt_date\030\016 \001(\0132\032.google.protobuf.Timestam" +
+      "p\022D\n\023start_date_category\030\017 \001(\0162\'.proto.D" +
+      "ateFormatChangeDateCategoryEnum\022.\n\nupdat" +
+      "ed_at\030\020 \001(\0132\032.google.protobuf.Timestamp\022" +
+      "\013\n\003url\030\021 \001(\t\022\'\n\010websites\030\022 \003(\0132\025.proto.C" +
+      "ompanyWebsite\022\020\n\010checksum\030\023 \001(\t\"=\n\021Compa" +
+      "nyLogoResult\022(\n\014companylogos\030\001 \003(\0132\022.pro" +
+      "to.CompanyLogo\"\222\001\n\013CompanyLogo\022\n\n\002id\030\001 \001" +
+      "(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003 " +
+      "\001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010image_id\030\005 \001(\t\022\013\n" +
+      "\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010checksum\030\010 " +
+      "\001(\t\"F\n\024CompanyWebsiteResult\022.\n\017companywe" +
+      "bsites\030\001 \003(\0132\025.proto.CompanyWebsite\"z\n\016C" +
+      "ompanyWebsite\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 " +
+      "\001(\0162\032.proto.WebsiteCategoryEnum\022\017\n\007trust" +
+      "ed\030\003 \001(\010\022\013\n\003url\030\004 \001(\t\022\020\n\010checksum\030\005 \001(\t\"" +
+      "+\n\013CoverResult\022\034\n\006covers\030\001 \003(\0132\014.proto.C" +
+      "over\"\333\001\n\005Cover\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_chan" +
+      "nel\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\031\n\004game\030\004 \001(" +
+      "\0132\013.proto.Game\022\016\n\006height\030\005 \001(\005\022\020\n\010image_" +
+      "id\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010" +
+      "checksum\030\t \001(\t\0222\n\021game_localization\030\n \001(" +
+      "\0132\027.proto.GameLocalization\"@\n\022ExternalGa" +
+      "meResult\022*\n\rexternalgames\030\001 \003(\0132\023.proto." +
+      "ExternalGame\"\363\002\n\014ExternalGame\022\n\n\002id\030\001 \001(" +
+      "\004\0221\n\010category\030\002 \001(\0162\037.proto.ExternalGame" +
+      "CategoryEnum\022.\n\ncreated_at\030\003 \001(\0132\032.googl" +
+      "e.protobuf.Timestamp\022\031\n\004game\030\004 \001(\0132\013.pro" +
+      "to.Game\022\014\n\004name\030\005 \001(\t\022\013\n\003uid\030\006 \001(\t\022.\n\nup" +
+      "dated_at\030\007 \001(\0132\032.google.protobuf.Timesta" +
+      "mp\022\013\n\003url\030\010 \001(\t\022\014\n\004year\030\t \001(\005\022+\n\005media\030\n" +
+      " \001(\0162\034.proto.ExternalGameMediaEnum\022!\n\010pl" +
+      "atform\030\013 \001(\0132\017.proto.Platform\022\021\n\tcountri" +
+      "es\030\014 \003(\005\022\020\n\010checksum\030\r \001(\t\"7\n\017FranchiseR" +
+      "esult\022$\n\nfranchises\030\001 \003(\0132\020.proto.Franch" +
+      "ise\"\316\001\n\tFranchise\022\n\n\002id\030\001 \001(\004\022.\n\ncreated" +
+      "_at\030\002 \001(\0132\032.google.protobuf.Timestamp\022\032\n" +
+      "\005games\030\003 \003(\0132\013.proto.Game\022\014\n\004name\030\004 \001(\t\022" +
+      "\014\n\004slug\030\005 \001(\t\022.\n\nupdated_at\030\006 \001(\0132\032.goog" +
+      "le.protobuf.Timestamp\022\013\n\003url\030\007 \001(\t\022\020\n\010ch" +
+      "ecksum\030\010 \001(\t\"(\n\nGameResult\022\032\n\005games\030\001 \003(" +
+      "\0132\013.proto.Game\"\345\016\n\004Game\022\n\n\002id\030\001 \001(\004\022%\n\013a" +
+      "ge_ratings\030\002 \003(\0132\020.proto.AgeRating\022\031\n\021ag" +
+      "gregated_rating\030\003 \001(\001\022\037\n\027aggregated_rati" +
+      "ng_count\030\004 \001(\005\0221\n\021alternative_names\030\005 \003(" +
+      "\0132\026.proto.AlternativeName\022 \n\010artworks\030\006 " +
+      "\003(\0132\016.proto.Artwork\022\034\n\007bundles\030\007 \003(\0132\013.p" +
+      "roto.Game\022)\n\010category\030\010 \001(\0162\027.proto.Game" +
+      "CategoryEnum\022%\n\ncollection\030\t \001(\0132\021.proto" +
+      ".Collection\022\033\n\005cover\030\n \001(\0132\014.proto.Cover" +
+      "\022.\n\ncreated_at\030\013 \001(\0132\032.google.protobuf.T" +
+      "imestamp\022\031\n\004dlcs\030\014 \003(\0132\013.proto.Game\022\037\n\ne" +
+      "xpansions\030\r \003(\0132\013.proto.Game\022+\n\016external" +
+      "_games\030\016 \003(\0132\023.proto.ExternalGame\0226\n\022fir" +
+      "st_release_date\030\017 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\017\n\007follows\030\020 \001(\005\022#\n\tfranchise\030" +
+      "\021 \001(\0132\020.proto.Franchise\022$\n\nfranchises\030\022 " +
+      "\003(\0132\020.proto.Franchise\022\'\n\014game_engines\030\023 " +
+      "\003(\0132\021.proto.GameEngine\022#\n\ngame_modes\030\024 \003" +
+      "(\0132\017.proto.GameMode\022\034\n\006genres\030\025 \003(\0132\014.pr" +
+      "oto.Genre\022\r\n\005hypes\030\026 \001(\005\0222\n\022involved_com" +
+      "panies\030\027 \003(\0132\026.proto.InvolvedCompany\022 \n\010" +
+      "keywords\030\030 \003(\0132\016.proto.Keyword\0221\n\021multip" +
+      "layer_modes\030\031 \003(\0132\026.proto.MultiplayerMod" +
+      "e\022\014\n\004name\030\032 \001(\t\022 \n\013parent_game\030\033 \001(\0132\013.p" +
+      "roto.Game\022\"\n\tplatforms\030\034 \003(\0132\017.proto.Pla" +
+      "tform\0225\n\023player_perspectives\030\035 \003(\0132\030.pro" +
+      "to.PlayerPerspective\022\016\n\006rating\030\036 \001(\001\022\024\n\014" +
+      "rating_count\030\037 \001(\005\022)\n\rrelease_dates\030  \003(" +
+      "\0132\022.proto.ReleaseDate\022&\n\013screenshots\030! \003" +
+      "(\0132\021.proto.Screenshot\022\"\n\rsimilar_games\030\"" +
+      " \003(\0132\013.proto.Game\022\014\n\004slug\030# \001(\t\022*\n\025stand" +
+      "alone_expansions\030$ \003(\0132\013.proto.Game\022%\n\006s" +
+      "tatus\030% \001(\0162\025.proto.GameStatusEnum\022\021\n\tst" +
+      "oryline\030& \001(\t\022\017\n\007summary\030\' \001(\t\022\014\n\004tags\030(" +
+      " \003(\005\022\034\n\006themes\030) \003(\0132\014.proto.Theme\022\024\n\014to" +
+      "tal_rating\030* \001(\001\022\032\n\022total_rating_count\030+" +
+      " \001(\005\022.\n\nupdated_at\030, \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\013\n\003url\030- \001(\t\022#\n\016version_par" +
+      "ent\030. \001(\0132\013.proto.Game\022\025\n\rversion_title\030" +
+      "/ \001(\t\022 \n\006videos\0300 \003(\0132\020.proto.GameVideo\022" +
+      " \n\010websites\0301 \003(\0132\016.proto.Website\022\020\n\010che" +
+      "cksum\0302 \001(\t\022\034\n\007remakes\0303 \003(\0132\013.proto.Gam" +
+      "e\022\036\n\tremasters\0304 \003(\0132\013.proto.Game\022#\n\016exp" +
+      "anded_games\0305 \003(\0132\013.proto.Game\022\032\n\005ports\030" +
+      "6 \003(\0132\013.proto.Game\022\032\n\005forks\0307 \003(\0132\013.prot" +
+      "o.Game\0221\n\021language_supports\0308 \003(\0132\026.prot" +
+      "o.LanguageSupport\0223\n\022game_localizations\030" +
+      "9 \003(\0132\027.proto.GameLocalization\":\n\020GameEn" +
+      "gineResult\022&\n\013gameengines\030\001 \003(\0132\021.proto." +
+      "GameEngine\"\264\002\n\nGameEngine\022\n\n\002id\030\001 \001(\004\022!\n" +
+      "\tcompanies\030\002 \003(\0132\016.proto.Company\022.\n\ncrea" +
+      "ted_at\030\003 \001(\0132\032.google.protobuf.Timestamp" +
+      "\022\023\n\013description\030\004 \001(\t\022#\n\004logo\030\005 \001(\0132\025.pr" +
+      "oto.GameEngineLogo\022\014\n\004name\030\006 \001(\t\022\"\n\tplat" +
+      "forms\030\007 \003(\0132\017.proto.Platform\022\014\n\004slug\030\010 \001" +
+      "(\t\022.\n\nupdated_at\030\t \001(\0132\032.google.protobuf" +
+      ".Timestamp\022\013\n\003url\030\n \001(\t\022\020\n\010checksum\030\013 \001(" +
+      "\t\"F\n\024GameEngineLogoResult\022.\n\017gameenginel" +
+      "ogos\030\001 \003(\0132\025.proto.GameEngineLogo\"\225\001\n\016Ga" +
+      "meEngineLogo\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channe" +
+      "l\030\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\016\n\006height\030\004 \001(" +
+      "\005\022\020\n\010image_id\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005widt" +
+      "h\030\007 \001(\005\022\020\n\010checksum\030\010 \001(\t\"L\n\026GameLocaliz" +
+      "ationResult\0222\n\021gamelocalizations\030\001 \003(\0132\027" +
+      ".proto.GameLocalization\"\365\001\n\020GameLocaliza" +
+      "tion\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\033\n\005cover\030" +
+      "\003 \001(\0132\014.proto.Cover\022\031\n\004game\030\004 \001(\0132\013.prot" +
+      "o.Game\022\035\n\006region\030\005 \001(\0132\r.proto.Region\022.\n" +
+      "\ncreated_at\030\006 \001(\0132\032.google.protobuf.Time" +
+      "stamp\022.\n\nupdated_at\030\007 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022\020\n\010checksum\030\010 \001(\t\"4\n\016GameM" +
+      "odeResult\022\"\n\tgamemodes\030\001 \003(\0132\017.proto.Gam" +
+      "eMode\"\261\001\n\010GameMode\022\n\n\002id\030\001 \001(\004\022.\n\ncreate" +
+      "d_at\030\002 \001(\0132\032.google.protobuf.Timestamp\022\014" +
+      "\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at" +
+      "\030\005 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003ur" +
+      "l\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"=\n\021GameVersion" +
+      "Result\022(\n\014gameversions\030\001 \003(\0132\022.proto.Gam" +
+      "eVersion\"\374\001\n\013GameVersion\022\n\n\002id\030\001 \001(\004\022.\n\n" +
       "created_at\030\002 \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupda" +
-      "ted_at\030\005 \001(\0132\032.google.protobuf.Timestamp" +
-      "\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\".\n\014Regio" +
-      "nResult\022\036\n\007regions\030\001 \003(\0132\r.proto.Region\"" +
-      "\272\001\n\006Region\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\020\n\010" +
-      "category\030\003 \001(\t\022\022\n\nidentifier\030\004 \001(\t\022.\n\ncr" +
-      "eated_at\030\005 \001(\0132\032.google.protobuf.Timesta" +
-      "mp\022.\n\nupdated_at\030\006 \001(\0132\032.google.protobuf" +
-      ".Timestamp\022\020\n\010checksum\030\007 \001(\t\"=\n\021ReleaseD" +
-      "ateResult\022(\n\014releasedates\030\001 \003(\0132\022.proto." +
-      "ReleaseDate\"\374\002\n\013ReleaseDate\022\n\n\002id\030\001 \001(\004\022" +
+      "tamp\022+\n\010features\030\003 \003(\0132\031.proto.GameVersi" +
+      "onFeature\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\032\n\005" +
+      "games\030\005 \003(\0132\013.proto.Game\022.\n\nupdated_at\030\006" +
+      " \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030" +
+      "\007 \001(\t\022\020\n\010checksum\030\010 \001(\t\"R\n\030GameVersionFe" +
+      "atureResult\0226\n\023gameversionfeatures\030\001 \003(\013" +
+      "2\031.proto.GameVersionFeature\"\321\001\n\022GameVers" +
+      "ionFeature\022\n\n\002id\030\001 \001(\004\0227\n\010category\030\002 \001(\016" +
+      "2%.proto.GameVersionFeatureCategoryEnum\022" +
+      "\023\n\013description\030\003 \001(\t\022\020\n\010position\030\004 \001(\005\022\r" +
+      "\n\005title\030\005 \001(\t\022.\n\006values\030\006 \003(\0132\036.proto.Ga" +
+      "meVersionFeatureValue\022\020\n\010checksum\030\007 \001(\t\"" +
+      "a\n\035GameVersionFeatureValueResult\022@\n\030game" +
+      "versionfeaturevalues\030\001 \003(\0132\036.proto.GameV" +
+      "ersionFeatureValue\"\336\001\n\027GameVersionFeatur" +
+      "eValue\022\n\n\002id\030\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.proto" +
+      ".Game\022/\n\014game_feature\030\003 \001(\0132\031.proto.Game" +
+      "VersionFeature\022K\n\020included_feature\030\004 \001(\016" +
+      "21.proto.GameVersionFeatureValueIncluded" +
+      "FeatureEnum\022\014\n\004note\030\005 \001(\t\022\020\n\010checksum\030\006 " +
+      "\001(\t\"7\n\017GameVideoResult\022$\n\ngamevideos\030\001 \003" +
+      "(\0132\020.proto.GameVideo\"d\n\tGameVideo\022\n\n\002id\030" +
+      "\001 \001(\004\022\031\n\004game\030\002 \001(\0132\013.proto.Game\022\014\n\004name" +
+      "\030\003 \001(\t\022\020\n\010video_id\030\004 \001(\t\022\020\n\010checksum\030\005 \001" +
+      "(\t\"+\n\013GenreResult\022\034\n\006genres\030\001 \003(\0132\014.prot" +
+      "o.Genre\"\256\001\n\005Genre\022\n\n\002id\030\001 \001(\004\022.\n\ncreated" +
+      "_at\030\002 \001(\0132\032.google.protobuf.Timestamp\022\014\n" +
+      "\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030" +
+      "\005 \001(\0132\032.google.protobuf.Timestamp\022\013\n\003url" +
+      "\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"J\n\025InvolvedComp" +
+      "anyResult\0221\n\021involvedcompanies\030\001 \003(\0132\026.p" +
+      "roto.InvolvedCompany\"\226\002\n\017InvolvedCompany" +
+      "\022\n\n\002id\030\001 \001(\004\022\037\n\007company\030\002 \001(\0132\016.proto.Co" +
+      "mpany\022.\n\ncreated_at\030\003 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022\021\n\tdeveloper\030\004 \001(\010\022\031\n\004game" +
+      "\030\005 \001(\0132\013.proto.Game\022\017\n\007porting\030\006 \001(\010\022\021\n\t" +
+      "publisher\030\007 \001(\010\022\022\n\nsupporting\030\010 \001(\010\022.\n\nu" +
+      "pdated_at\030\t \001(\0132\032.google.protobuf.Timest" +
+      "amp\022\020\n\010checksum\030\n \001(\t\"1\n\rKeywordResult\022 " +
+      "\n\010keywords\030\001 \003(\0132\016.proto.Keyword\"\260\001\n\007Key" +
+      "word\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.g" +
+      "oogle.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014" +
+      "\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.googl" +
+      "e.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010che" +
+      "cksum\030\007 \001(\t\"4\n\016LanguageResult\022\"\n\tlanguag" +
+      "es\030\001 \003(\0132\017.proto.Language\"\273\001\n\010Language\022\n" +
+      "\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\023\n\013native_name\030" +
+      "\003 \001(\t\022\016\n\006locale\030\004 \001(\t\022.\n\ncreated_at\030\005 \001(" +
+      "\0132\032.google.protobuf.Timestamp\022.\n\nupdated" +
+      "_at\030\006 \001(\0132\032.google.protobuf.Timestamp\022\020\n" +
+      "\010checksum\030\007 \001(\t\"I\n\025LanguageSupportResult" +
+      "\0220\n\020languagesupports\030\001 \003(\0132\026.proto.Langu" +
+      "ageSupport\"\210\002\n\017LanguageSupport\022\n\n\002id\030\001 \001" +
+      "(\004\022\031\n\004game\030\002 \001(\0132\013.proto.Game\022!\n\010languag" +
+      "e\030\003 \001(\0132\017.proto.Language\0229\n\025language_sup" +
+      "port_type\030\004 \001(\0132\032.proto.LanguageSupportT" +
+      "ype\022.\n\ncreated_at\030\005 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022.\n\nupdated_at\030\006 \001(\0132\032.google" +
+      ".protobuf.Timestamp\022\020\n\010checksum\030\007 \001(\t\"U\n" +
+      "\031LanguageSupportTypeResult\0228\n\024languagesu" +
+      "pporttypes\030\001 \003(\0132\032.proto.LanguageSupport" +
+      "Type\"\241\001\n\023LanguageSupportType\022\n\n\002id\030\001 \001(\004" +
+      "\022\014\n\004name\030\002 \001(\t\022.\n\ncreated_at\030\003 \001(\0132\032.goo" +
+      "gle.protobuf.Timestamp\022.\n\nupdated_at\030\004 \001" +
+      "(\0132\032.google.protobuf.Timestamp\022\020\n\010checks" +
+      "um\030\005 \001(\t\"I\n\025MultiplayerModeResult\0220\n\020mul" +
+      "tiplayermodes\030\001 \003(\0132\026.proto.MultiplayerM" +
+      "ode\"\323\002\n\017MultiplayerMode\022\n\n\002id\030\001 \001(\004\022\024\n\014c" +
+      "ampaigncoop\030\002 \001(\010\022\016\n\006dropin\030\003 \001(\010\022\031\n\004gam" +
+      "e\030\004 \001(\0132\013.proto.Game\022\017\n\007lancoop\030\005 \001(\010\022\023\n" +
+      "\013offlinecoop\030\006 \001(\010\022\026\n\016offlinecoopmax\030\007 \001" +
+      "(\005\022\022\n\nofflinemax\030\010 \001(\005\022\022\n\nonlinecoop\030\t \001" +
+      "(\010\022\025\n\ronlinecoopmax\030\n \001(\005\022\021\n\tonlinemax\030\013" +
+      " \001(\005\022!\n\010platform\030\014 \001(\0132\017.proto.Platform\022" +
+      "\023\n\013splitscreen\030\r \001(\010\022\031\n\021splitscreenonlin" +
+      "e\030\016 \001(\010\022\020\n\010checksum\030\017 \001(\t\"4\n\016PlatformRes" +
+      "ult\022\"\n\tplatforms\030\001 \003(\0132\017.proto.Platform\"" +
+      "\345\003\n\010Platform\022\n\n\002id\030\001 \001(\004\022\024\n\014abbreviation" +
+      "\030\002 \001(\t\022\030\n\020alternative_name\030\003 \001(\t\022-\n\010cate" +
+      "gory\030\004 \001(\0162\033.proto.PlatformCategoryEnum\022" +
+      ".\n\ncreated_at\030\005 \001(\0132\032.google.protobuf.Ti" +
+      "mestamp\022\022\n\ngeneration\030\006 \001(\005\022\014\n\004name\030\007 \001(" +
+      "\t\022*\n\rplatform_logo\030\010 \001(\0132\023.proto.Platfor" +
+      "mLogo\022.\n\017platform_family\030\t \001(\0132\025.proto.P" +
+      "latformFamily\022\014\n\004slug\030\n \001(\t\022\017\n\007summary\030\013" +
+      " \001(\t\022.\n\nupdated_at\030\014 \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\013\n\003url\030\r \001(\t\022(\n\010versions\030\016 " +
+      "\003(\0132\026.proto.PlatformVersion\022(\n\010websites\030" +
+      "\017 \003(\0132\026.proto.PlatformWebsite\022\020\n\010checksu" +
+      "m\030\020 \001(\t\"G\n\024PlatformFamilyResult\022/\n\020platf" +
+      "ormfamilies\030\001 \003(\0132\025.proto.PlatformFamily" +
+      "\"J\n\016PlatformFamily\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002" +
+      " \001(\t\022\014\n\004slug\030\003 \001(\t\022\020\n\010checksum\030\004 \001(\t\"@\n\022" +
+      "PlatformLogoResult\022*\n\rplatformlogos\030\001 \003(" +
+      "\0132\023.proto.PlatformLogo\"\223\001\n\014PlatformLogo\022" +
+      "\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010an" +
+      "imated\030\003 \001(\010\022\016\n\006height\030\004 \001(\005\022\020\n\010image_id" +
+      "\030\005 \001(\t\022\013\n\003url\030\006 \001(\t\022\r\n\005width\030\007 \001(\005\022\020\n\010ch" +
+      "ecksum\030\010 \001(\t\"I\n\025PlatformVersionResult\0220\n" +
+      "\020platformversions\030\001 \003(\0132\026.proto.Platform" +
+      "Version\"\201\004\n\017PlatformVersion\022\n\n\002id\030\001 \001(\004\022" +
+      "0\n\tcompanies\030\002 \003(\0132\035.proto.PlatformVersi" +
+      "onCompany\022\024\n\014connectivity\030\003 \001(\t\022\013\n\003cpu\030\004" +
+      " \001(\t\022\020\n\010graphics\030\005 \001(\t\0228\n\021main_manufactu" +
+      "rer\030\006 \001(\0132\035.proto.PlatformVersionCompany" +
+      "\022\r\n\005media\030\007 \001(\t\022\016\n\006memory\030\010 \001(\t\022\014\n\004name\030" +
+      "\t \001(\t\022\016\n\006online\030\n \001(\t\022\n\n\002os\030\013 \001(\t\022\016\n\006out" +
+      "put\030\014 \001(\t\022*\n\rplatform_logo\030\r \001(\0132\023.proto" +
+      ".PlatformLogo\022I\n\036platform_version_releas" +
+      "e_dates\030\016 \003(\0132!.proto.PlatformVersionRel" +
+      "easeDate\022\023\n\013resolutions\030\017 \001(\t\022\014\n\004slug\030\020 " +
+      "\001(\t\022\r\n\005sound\030\021 \001(\t\022\017\n\007storage\030\022 \001(\t\022\017\n\007s" +
+      "ummary\030\023 \001(\t\022\013\n\003url\030\024 \001(\t\022\020\n\010checksum\030\025 " +
+      "\001(\t\"_\n\034PlatformVersionCompanyResult\022?\n\030p" +
+      "latformversioncompanies\030\001 \003(\0132\035.proto.Pl" +
+      "atformVersionCompany\"\221\001\n\026PlatformVersion" +
+      "Company\022\n\n\002id\030\001 \001(\004\022\017\n\007comment\030\002 \001(\t\022\037\n\007" +
+      "company\030\003 \001(\0132\016.proto.Company\022\021\n\tdevelop" +
+      "er\030\004 \001(\010\022\024\n\014manufacturer\030\005 \001(\010\022\020\n\010checks" +
+      "um\030\006 \001(\t\"j\n PlatformVersionReleaseDateRe" +
+      "sult\022F\n\033platformversionreleasedates\030\001 \003(" +
+      "\0132!.proto.PlatformVersionReleaseDate\"\377\002\n" +
+      "\032PlatformVersionReleaseDate\022\n\n\002id\030\001 \001(\004\022" +
       "9\n\010category\030\002 \001(\0162\'.proto.DateFormatChan" +
       "geDateCategoryEnum\022.\n\ncreated_at\030\003 \001(\0132\032" +
       ".google.protobuf.Timestamp\022(\n\004date\030\004 \001(\013" +
-      "2\032.google.protobuf.Timestamp\022\031\n\004game\030\005 \001" +
-      "(\0132\013.proto.Game\022\r\n\005human\030\006 \001(\t\022\t\n\001m\030\007 \001(" +
-      "\005\022!\n\010platform\030\010 \001(\0132\017.proto.Platform\022\'\n\006" +
-      "region\030\t \001(\0162\027.proto.RegionRegionEnum\022.\n" +
-      "\nupdated_at\030\n \001(\0132\032.google.protobuf.Time" +
-      "stamp\022\t\n\001y\030\013 \001(\005\022\020\n\010checksum\030\014 \001(\t\":\n\020Sc" +
-      "reenshotResult\022&\n\013screenshots\030\001 \003(\0132\021.pr" +
-      "oto.Screenshot\"\254\001\n\nScreenshot\022\n\n\002id\030\001 \001(" +
-      "\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010animated\030\003 \001" +
-      "(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n\006height\030" +
-      "\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005" +
-      "width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\"/\n\014SearchR" +
-      "esult\022\037\n\010searches\030\001 \003(\0132\r.proto.Search\"\203" +
-      "\003\n\006Search\022\n\n\002id\030\001 \001(\004\022\030\n\020alternative_nam" +
-      "e\030\002 \001(\t\022#\n\tcharacter\030\003 \001(\0132\020.proto.Chara" +
-      "cter\022%\n\ncollection\030\004 \001(\0132\021.proto.Collect" +
-      "ion\022\037\n\007company\030\005 \001(\0132\016.proto.Company\022\023\n\013" +
-      "description\030\006 \001(\t\022\031\n\004game\030\007 \001(\0132\013.proto." +
-      "Game\022\014\n\004name\030\010 \001(\t\022!\n\010platform\030\t \001(\0132\017.p" +
-      "roto.Platform\0220\n\014published_at\030\n \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022$\n\ntest_dummy\030\013 " +
-      "\001(\0132\020.proto.TestDummy\022\033\n\005theme\030\014 \001(\0132\014.p" +
-      "roto.Theme\022\020\n\010checksum\030\r \001(\t\"8\n\017TestDumm" +
-      "yResult\022%\n\013testdummies\030\001 \003(\0132\020.proto.Tes" +
-      "tDummy\"\345\003\n\tTestDummy\022\n\n\002id\030\001 \001(\004\022\022\n\nbool" +
-      "_value\030\002 \001(\010\022.\n\ncreated_at\030\003 \001(\0132\032.googl" +
-      "e.protobuf.Timestamp\022/\n\tenum_test\030\004 \001(\0162" +
-      "\034.proto.TestDummyEnumTestEnum\022\023\n\013float_v" +
-      "alue\030\005 \001(\001\022\031\n\004game\030\006 \001(\0132\013.proto.Game\022\025\n" +
-      "\rinteger_array\030\007 \003(\005\022\025\n\rinteger_value\030\010 " +
-      "\001(\005\022\014\n\004name\030\t \001(\t\022\031\n\021new_integer_value\030\n" +
-      " \001(\005\022\017\n\007private\030\013 \001(\010\022\014\n\004slug\030\014 \001(\t\022\024\n\014s" +
-      "tring_array\030\r \003(\t\022&\n\014test_dummies\030\016 \003(\0132" +
-      "\020.proto.TestDummy\022$\n\ntest_dummy\030\017 \001(\0132\020." +
-      "proto.TestDummy\022.\n\nupdated_at\030\020 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022\013\n\003url\030\021 \001(\t\022\020\n\010" +
-      "checksum\030\022 \001(\t\"+\n\013ThemeResult\022\034\n\006themes\030" +
-      "\001 \003(\0132\014.proto.Theme\"\256\001\n\005Theme\022\n\n\002id\030\001 \001(" +
-      "\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.protobuf." +
-      "Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n" +
-      "\nupdated_at\030\005 \001(\0132\032.google.protobuf.Time" +
-      "stamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007 \001(\t\"1\n\r" +
-      "WebsiteResult\022 \n\010websites\030\001 \003(\0132\016.proto." +
-      "Website\"\216\001\n\007Website\022\n\n\002id\030\001 \001(\004\022,\n\010categ" +
-      "ory\030\002 \001(\0162\032.proto.WebsiteCategoryEnum\022\031\n" +
-      "\004game\030\003 \001(\0132\013.proto.Game\022\017\n\007trusted\030\004 \001(" +
-      "\010\022\013\n\003url\030\005 \001(\t\022\020\n\010checksum\030\006 \001(\t*}\n\025AgeR" +
-      "atingCategoryEnum\022\033\n\027AGERATING_CATEGORY_" +
-      "NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002\022\010\n\004CERO\020\003\022\007\n\003" +
-      "USK\020\004\022\010\n\004GRAC\020\005\022\r\n\tCLASS_IND\020\006\022\007\n\003ACB\020\007*" +
-      "\255\004\n\023AgeRatingRatingEnum\022\031\n\025AGERATING_RAT" +
-      "ING_NULL\020\000\022\t\n\005THREE\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWEL" +
-      "VE\020\003\022\013\n\007SIXTEEN\020\004\022\014\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022" +
-      "\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n" +
-      "\002AO\020\014\022\n\n\006CERO_A\020\r\022\n\n\006CERO_B\020\016\022\n\n\006CERO_C\020" +
-      "\017\022\n\n\006CERO_D\020\020\022\n\n\006CERO_Z\020\021\022\t\n\005USK_0\020\022\022\t\n\005" +
-      "USK_6\020\023\022\n\n\006USK_12\020\024\022\n\n\006USK_18\020\025\022\014\n\010GRAC_" +
-      "ALL\020\026\022\017\n\013GRAC_TWELVE\020\027\022\020\n\014GRAC_FIFTEEN\020\030" +
-      "\022\021\n\rGRAC_EIGHTEEN\020\031\022\020\n\014GRAC_TESTING\020\032\022\017\n",
-      "\013CLASS_IND_L\020\033\022\021\n\rCLASS_IND_TEN\020\034\022\024\n\020CLA" +
-      "SS_IND_TWELVE\020\035\022\026\n\022CLASS_IND_FOURTEEN\020\036\022" +
-      "\025\n\021CLASS_IND_SIXTEEN\020\037\022\026\n\022CLASS_IND_EIGH" +
-      "TEEN\020 \022\t\n\005ACB_G\020!\022\n\n\006ACB_PG\020\"\022\t\n\005ACB_M\020#" +
-      "\022\014\n\010ACB_MA15\020$\022\013\n\007ACB_R18\020%\022\n\n\006ACB_RC\020&*" +
-      "3\n\020GenderGenderEnum\022\010\n\004MALE\020\000\022\n\n\006FEMALE\020" +
-      "\001\022\t\n\005OTHER\020\002*n\n\024CharacterSpeciesEnum\022\032\n\026" +
-      "CHARACTER_SPECIES_NULL\020\000\022\t\n\005HUMAN\020\001\022\t\n\005A" +
-      "LIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDROID\020\004\022\013\n\007UNKNO" +
-      "WN\020\005*\203\001\n DateFormatChangeDateCategoryEnu" +
-      "m\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYMMMM\020\001\022\010\n\004YYYY\020" +
-      "\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022\n\n\006YYYYQ3\020\005\022\n\n" +
-      "\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023WebsiteCategoryEn" +
-      "um\022\031\n\025WEBSITE_CATEGORY_NULL\020\000\022\024\n\020WEBSITE" +
-      "_OFFICIAL\020\001\022\021\n\rWEBSITE_WIKIA\020\002\022\025\n\021WEBSIT" +
-      "E_WIKIPEDIA\020\003\022\024\n\020WEBSITE_FACEBOOK\020\004\022\023\n\017W" +
-      "EBSITE_TWITTER\020\005\022\022\n\016WEBSITE_TWITCH\020\006\022\025\n\021" +
-      "WEBSITE_INSTAGRAM\020\010\022\023\n\017WEBSITE_YOUTUBE\020\t" +
-      "\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WEBSITE_IPAD\020\013\022\023" +
-      "\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEBSITE_STEAM\020\r\022\022" +
-      "\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBSITE_ITCH\020\017\022\025\n\021" +
-      "WEBSITE_EPICGAMES\020\020\022\017\n\013WEBSITE_GOG\020\021\022\023\n\017" +
-      "WEBSITE_DISCORD\020\022*\207\005\n\030ExternalGameCatego" +
-      "ryEnum\022\036\n\032EXTERNALGAME_CATEGORY_NULL\020\000\022\026" +
-      "\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020EXTERNALGAME_G" +
-      "OG\020\005\022\030\n\024EXTERNALGAME_YOUTUBE\020\n\022\032\n\026EXTERN" +
-      "ALGAME_MICROSOFT\020\013\022\026\n\022EXTERNALGAME_APPLE" +
-      "\020\r\022\027\n\023EXTERNALGAME_TWITCH\020\016\022\030\n\024EXTERNALG" +
-      "AME_ANDROID\020\017\022\034\n\030EXTERNALGAME_AMAZON_ASI" +
-      "N\020\024\022\034\n\030EXTERNALGAME_AMAZON_LUNA\020\026\022\033\n\027EXT" +
-      "ERNALGAME_AMAZON_ADG\020\027\022 \n\034EXTERNALGAME_E" +
-      "PIC_GAME_STORE\020\032\022\027\n\023EXTERNALGAME_OCULUS\020" +
-      "\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035\022\030\n\024EXTERNALGA" +
-      "ME_ITCH_IO\020\036\022!\n\035EXTERNALGAME_XBOX_MARKET" +
-      "PLACE\020\037\022\032\n\026EXTERNALGAME_KARTRIDGE\020 \022%\n!E" +
-      "XTERNALGAME_PLAYSTATION_STORE_US\020$\022$\n EX" +
-      "TERNALGAME_FOCUS_ENTERTAINMENT\020%\022.\n*EXTE" +
-      "RNALGAME_XBOX_GAME_PASS_ULTIMATE_CLOUD\0206" +
-      "\022\031\n\025EXTERNALGAME_GAMEJOLT\0207*i\n\025ExternalG" +
-      "ameMediaEnum\022\033\n\027EXTERNALGAME_MEDIA_NULL\020" +
-      "\000\022\030\n\024EXTERNALGAME_DIGITAL\020\001\022\031\n\025EXTERNALG" +
-      "AME_PHYSICAL\020\002*\336\001\n\020GameCategoryEnum\022\r\n\tM" +
-      "AIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r\n\tEXPANSION\020\002" +
-      "\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE_EXPANSION\020\004\022\007" +
-      "\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SEASON\020\007\022\n\n\006REMA" +
-      "KE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPANDED_GAME\020\n\022\010\n" +
-      "\004PORT\020\013\022\010\n\004FORK\020\014\022\010\n\004PACK\020\r\022\n\n\006UPDATE\020\016*" +
-      "|\n\016GameStatusEnum\022\014\n\010RELEASED\020\000\022\t\n\005ALPHA" +
-      "\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCESS\020\004\022\013\n\007OFFLIN" +
-      "E\020\005\022\r\n\tCANCELLED\020\006\022\013\n\007RUMORED\020\007\022\014\n\010DELIS" +
-      "TED\020\010*>\n\036GameVersionFeatureCategoryEnum\022" +
-      "\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTION\020\001*`\n*GameVer" +
-      "sionFeatureValueIncludedFeatureEnum\022\020\n\014N" +
-      "OT_INCLUDED\020\000\022\014\n\010INCLUDED\020\001\022\022\n\016PRE_ORDER" +
-      "_ONLY\020\002*\223\001\n\024PlatformCategoryEnum\022\032\n\026PLAT" +
-      "FORM_CATEGORY_NULL\020\000\022\013\n\007CONSOLE\020\001\022\n\n\006ARC" +
-      "ADE\020\002\022\014\n\010PLATFORM\020\003\022\024\n\020OPERATING_SYSTEM\020" +
-      "\004\022\024\n\020PORTABLE_CONSOLE\020\005\022\014\n\010COMPUTER\020\006*\257\001" +
-      "\n\020RegionRegionEnum\022\026\n\022REGION_REGION_NULL" +
-      "\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AMERICA\020\002\022\r\n\tAUS" +
-      "TRALIA\020\003\022\017\n\013NEW_ZEALAND\020\004\022\t\n\005JAPAN\020\005\022\t\n\005" +
-      "CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLDWIDE\020\010\022\t\n\005KORE" +
-      "A\020\t\022\n\n\006BRAZIL\020\n*K\n\025TestDummyEnumTestEnum" +
-      "\022\034\n\030TESTDUMMY_ENUM_TEST_NULL\020\000\022\t\n\005ENUM1\020" +
-      "\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
+      "2\032.google.protobuf.Timestamp\022\r\n\005human\030\005 " +
+      "\001(\t\022\t\n\001m\030\006 \001(\005\0220\n\020platform_version\030\007 \001(\013" +
+      "2\026.proto.PlatformVersion\022\'\n\006region\030\010 \001(\016" +
+      "2\027.proto.RegionRegionEnum\022.\n\nupdated_at\030" +
+      "\t \001(\0132\032.google.protobuf.Timestamp\022\t\n\001y\030\n" +
+      " \001(\005\022\020\n\010checksum\030\013 \001(\t\"I\n\025PlatformWebsit" +
+      "eResult\0220\n\020platformwebsites\030\001 \003(\0132\026.prot" +
+      "o.PlatformWebsite\"{\n\017PlatformWebsite\022\n\n\002" +
+      "id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.Websi" +
+      "teCategoryEnum\022\017\n\007trusted\030\003 \001(\010\022\013\n\003url\030\004" +
+      " \001(\t\022\020\n\010checksum\030\005 \001(\t\"O\n\027PlayerPerspect" +
+      "iveResult\0224\n\022playerperspectives\030\001 \003(\0132\030." +
+      "proto.PlayerPerspective\"\272\001\n\021PlayerPerspe" +
+      "ctive\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032." +
+      "google.protobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022" +
+      "\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.goog" +
+      "le.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010ch" +
+      "ecksum\030\007 \001(\t\".\n\014RegionResult\022\036\n\007regions\030" +
+      "\001 \003(\0132\r.proto.Region\"\272\001\n\006Region\022\n\n\002id\030\001 " +
+      "\001(\004\022\014\n\004name\030\002 \001(\t\022\020\n\010category\030\003 \001(\t\022\022\n\ni" +
+      "dentifier\030\004 \001(\t\022.\n\ncreated_at\030\005 \001(\0132\032.go" +
+      "ogle.protobuf.Timestamp\022.\n\nupdated_at\030\006 " +
+      "\001(\0132\032.google.protobuf.Timestamp\022\020\n\010check" +
+      "sum\030\007 \001(\t\"=\n\021ReleaseDateResult\022(\n\014releas" +
+      "edates\030\001 \003(\0132\022.proto.ReleaseDate\"\374\002\n\013Rel" +
+      "easeDate\022\n\n\002id\030\001 \001(\004\0229\n\010category\030\002 \001(\0162\'" +
+      ".proto.DateFormatChangeDateCategoryEnum\022" +
+      ".\n\ncreated_at\030\003 \001(\0132\032.google.protobuf.Ti" +
+      "mestamp\022(\n\004date\030\004 \001(\0132\032.google.protobuf." +
+      "Timestamp\022\031\n\004game\030\005 \001(\0132\013.proto.Game\022\r\n\005" +
+      "human\030\006 \001(\t\022\t\n\001m\030\007 \001(\005\022!\n\010platform\030\010 \001(\013" +
+      "2\017.proto.Platform\022\'\n\006region\030\t \001(\0162\027.prot" +
+      "o.RegionRegionEnum\022.\n\nupdated_at\030\n \001(\0132\032" +
+      ".google.protobuf.Timestamp\022\t\n\001y\030\013 \001(\005\022\020\n" +
+      "\010checksum\030\014 \001(\t\":\n\020ScreenshotResult\022&\n\013s" +
+      "creenshots\030\001 \003(\0132\021.proto.Screenshot\"\254\001\n\n" +
+      "Screenshot\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030" +
+      "\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013." +
+      "proto.Game\022\016\n\006height\030\005 \001(\005\022\020\n\010image_id\030\006" +
+      " \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010chec" +
+      "ksum\030\t \001(\t\"/\n\014SearchResult\022\037\n\010searches\030\001" +
+      " \003(\0132\r.proto.Search\"\203\003\n\006Search\022\n\n\002id\030\001 \001" +
+      "(\004\022\030\n\020alternative_name\030\002 \001(\t\022#\n\tcharacte" +
+      "r\030\003 \001(\0132\020.proto.Character\022%\n\ncollection\030" +
+      "\004 \001(\0132\021.proto.Collection\022\037\n\007company\030\005 \001(" +
+      "\0132\016.proto.Company\022\023\n\013description\030\006 \001(\t\022\031" +
+      "\n\004game\030\007 \001(\0132\013.proto.Game\022\014\n\004name\030\010 \001(\t\022" +
+      "!\n\010platform\030\t \001(\0132\017.proto.Platform\0220\n\014pu" +
+      "blished_at\030\n \001(\0132\032.google.protobuf.Times" +
+      "tamp\022$\n\ntest_dummy\030\013 \001(\0132\020.proto.TestDum" +
+      "my\022\033\n\005theme\030\014 \001(\0132\014.proto.Theme\022\020\n\010check" +
+      "sum\030\r \001(\t\"8\n\017TestDummyResult\022%\n\013testdumm" +
+      "ies\030\001 \003(\0132\020.proto.TestDummy\"\345\003\n\tTestDumm" +
+      "y\022\n\n\002id\030\001 \001(\004\022\022\n\nbool_value\030\002 \001(\010\022.\n\ncre" +
+      "ated_at\030\003 \001(\0132\032.google.protobuf.Timestam" +
+      "p\022/\n\tenum_test\030\004 \001(\0162\034.proto.TestDummyEn" +
+      "umTestEnum\022\023\n\013float_value\030\005 \001(\001\022\031\n\004game\030" +
+      "\006 \001(\0132\013.proto.Game\022\025\n\rinteger_array\030\007 \003(" +
+      "\005\022\025\n\rinteger_value\030\010 \001(\005\022\014\n\004name\030\t \001(\t\022\031" +
+      "\n\021new_integer_value\030\n \001(\005\022\017\n\007private\030\013 \001" +
+      "(\010\022\014\n\004slug\030\014 \001(\t\022\024\n\014string_array\030\r \003(\t\022&" +
+      "\n\014test_dummies\030\016 \003(\0132\020.proto.TestDummy\022$" +
+      "\n\ntest_dummy\030\017 \001(\0132\020.proto.TestDummy\022.\n\n" +
+      "updated_at\030\020 \001(\0132\032.google.protobuf.Times" +
+      "tamp\022\013\n\003url\030\021 \001(\t\022\020\n\010checksum\030\022 \001(\t\"+\n\013T" +
+      "hemeResult\022\034\n\006themes\030\001 \003(\0132\014.proto.Theme" +
+      "\"\256\001\n\005Theme\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001" +
+      "(\0132\032.google.protobuf.Timestamp\022\014\n\004name\030\003" +
+      " \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032" +
+      ".google.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022" +
+      "\020\n\010checksum\030\007 \001(\t\"1\n\rWebsiteResult\022 \n\010we" +
+      "bsites\030\001 \003(\0132\016.proto.Website\"\216\001\n\007Website" +
+      "\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.W" +
+      "ebsiteCategoryEnum\022\031\n\004game\030\003 \001(\0132\013.proto" +
+      ".Game\022\017\n\007trusted\030\004 \001(\010\022\013\n\003url\030\005 \001(\t\022\020\n\010c" +
+      "hecksum\030\006 \001(\t*}\n\025AgeRatingCategoryEnum\022\033" +
+      "\n\027AGERATING_CATEGORY_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n" +
+      "\004PEGI\020\002\022\010\n\004CERO\020\003\022\007\n\003USK\020\004\022\010\n\004GRAC\020\005\022\r\n\t" +
+      "CLASS_IND\020\006\022\007\n\003ACB\020\007*\255\004\n\023AgeRatingRating" +
+      "Enum\022\031\n\025AGERATING_RATING_NULL\020\000\022\t\n\005THREE" +
+      "\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWELVE\020\003\022\013\n\007SIXTEEN\020\004\022\014" +
+      "\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E" +
+      "10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n\002AO\020\014\022\n\n\006CERO_A\020\r\022\n" +
+      "\n\006CERO_B\020\016\022\n\n\006CERO_C\020\017\022\n\n\006CERO_D\020\020\022\n\n\006CE" +
+      "RO_Z\020\021\022\t\n\005USK_0\020\022\022\t\n\005USK_6\020\023\022\n\n\006USK_12\020\024" +
+      "\022\n\n\006USK_18\020\025\022\014\n\010GRAC_ALL\020\026\022\017\n\013GRAC_TWELV" +
+      "E\020\027\022\020\n\014GRAC_FIFTEEN\020\030\022\021\n\rGRAC_EIGHTEEN\020\031",
+      "\022\020\n\014GRAC_TESTING\020\032\022\017\n\013CLASS_IND_L\020\033\022\021\n\rC" +
+      "LASS_IND_TEN\020\034\022\024\n\020CLASS_IND_TWELVE\020\035\022\026\n\022" +
+      "CLASS_IND_FOURTEEN\020\036\022\025\n\021CLASS_IND_SIXTEE" +
+      "N\020\037\022\026\n\022CLASS_IND_EIGHTEEN\020 \022\t\n\005ACB_G\020!\022\n" +
+      "\n\006ACB_PG\020\"\022\t\n\005ACB_M\020#\022\014\n\010ACB_MA15\020$\022\013\n\007A" +
+      "CB_R18\020%\022\n\n\006ACB_RC\020&*\336\021\n\'AgeRatingConten" +
+      "tDescriptionCategoryEnum\022-\n)AGERATINGCON" +
+      "TENTDESCRIPTION_CATEGORY_NULL\020\000\022\032\n\026ESRB_" +
+      "ALCOHOL_REFERENCE\020\001\022\027\n\023ESRB_ANIMATED_BLO" +
+      "OD\020\002\022\016\n\nESRB_BLOOD\020\003\022\027\n\023ESRB_BLOOD_AND_G" +
+      "ORE\020\004\022\031\n\025ESRB_CARTOON_VIOLENCE\020\005\022\027\n\023ESRB" +
+      "_COMIC_MISCHIEF\020\006\022\024\n\020ESRB_CRUDE_HUMOR\020\007\022" +
+      "\027\n\023ESRB_DRUG_REFERENCE\020\010\022\031\n\025ESRB_FANTASY" +
+      "_VIOLENCE\020\t\022\031\n\025ESRB_INTENSE_VIOLENCE\020\n\022\021" +
+      "\n\rESRB_LANGUAGE\020\013\022\017\n\013ESRB_LYRICS\020\014\022\025\n\021ES" +
+      "RB_MATURE_HUMOR\020\r\022\017\n\013ESRB_NUDITY\020\016\022\027\n\023ES" +
+      "RB_PARTIAL_NUDITY\020\017\022\026\n\022ESRB_REAL_GAMBLIN" +
+      "G\020\020\022\027\n\023ESRB_SEXUAL_CONTENT\020\021\022\026\n\022ESRB_SEX" +
+      "UAL_THEMES\020\022\022\030\n\024ESRB_SEXUAL_VIOLENCE\020\023\022\033" +
+      "\n\027ESRB_SIMULATED_GAMBLING\020\024\022\030\n\024ESRB_STRO" +
+      "NG_LANGUAGE\020\025\022\026\n\022ESRB_STRONG_LYRICS\020\026\022\036\n" +
+      "\032ESRB_STRONG_SEXUAL_CONTENT\020\027\022\032\n\026ESRB_SU" +
+      "GGESTIVE_THEMES\020\030\022\032\n\026ESRB_TOBACCO_REFERE" +
+      "NCE\020\031\022\027\n\023ESRB_USE_OF_ALCOHOL\020\032\022\025\n\021ESRB_U" +
+      "SE_OF_DRUGS\020\033\022\027\n\023ESRB_USE_OF_TOBACCO\020\034\022\021" +
+      "\n\rESRB_VIOLENCE\020\035\022\033\n\027ESRB_VIOLENT_REFERE" +
+      "NCES\020\036\022\032\n\026ESRB_ANIMATED_VIOLENCE\020\037\022\026\n\022ES" +
+      "RB_MILD_LANGUAGE\020 \022\026\n\022ESRB_MILD_VIOLENCE" +
+      "\020!\022!\n\035ESRB_USE_OF_DRUGS_AND_ALCOHOL\020\"\022#\n" +
+      "\037ESRB_DRUG_AND_ALCOHOL_REFERENCE\020#\022\037\n\033ES" +
+      "RB_MILD_SUGGESTIVE_THEMES\020$\022\036\n\032ESRB_MILD" +
+      "_CARTOON_VIOLENCE\020%\022\023\n\017ESRB_MILD_BLOOD\020&" +
+      "\022!\n\035ESRB_REALISTIC_BLOOD_AND_GORE\020\'\022\033\n\027E" +
+      "SRB_REALISTIC_VIOLENCE\020(\022&\n\"ESRB_ALCOHOL" +
+      "_AND_TOBACCO_REFERENCE\020)\022\035\n\031ESRB_MATURE_" +
+      "SEXUAL_THEMES\020*\022\037\n\033ESRB_MILD_ANIMATED_VI" +
+      "OLENCE\020+\022\033\n\027ESRB_MILD_SEXUAL_THEMES\020,\022#\n" +
+      "\037ESRB_USE_OF_ALCOHOL_AND_TOBACCO\020-\022 \n\034ES" +
+      "RB_ANIMATED_BLOOD_AND_GORE\020.\022\036\n\032ESRB_MIL" +
+      "D_FANTASY_VIOLENCE\020/\022\024\n\020ESRB_MILD_LYRICS" +
+      "\0200\022\030\n\024ESRB_REALISTIC_BLOOD\0201\022\021\n\rPEGI_VIO" +
+      "LENCE\0202\022\014\n\010PEGI_SEX\0203\022\016\n\nPEGI_DRUGS\0204\022\r\n" +
+      "\tPEGI_FEAR\0205\022\027\n\023PEGI_DISCRIMINATION\0206\022\025\n" +
+      "\021PEGI_BAD_LANGUAGE\0207\022\021\n\rPEGI_GAMBLING\0208\022" +
+      "\030\n\024PEGI_ONLINE_GAMEPLAY\0209\022\032\n\026PEGI_IN_GAM" +
+      "E_PURCHASES\020:\022\r\n\tCERO_LOVE\020;\022\027\n\023CERO_SEX" +
+      "UAL_CONTENT\020<\022\021\n\rCERO_VIOLENCE\020=\022\017\n\013CERO" +
+      "_HORROR\020>\022\031\n\025CERO_DRINKING_SMOKING\020?\022\021\n\r" +
+      "CERO_GAMBLING\020@\022\016\n\nCERO_CRIME\020A\022\036\n\032CERO_" +
+      "CONTROLLED_SUBSTANCES\020B\022\035\n\031CERO_LANGUAGE" +
+      "S_AND_OTHERS\020C\022\022\n\016GRAC_SEXUALITY\020D\022\021\n\rGR" +
+      "AC_VIOLENCE\020E\022 \n\034GRAC_FEAR_HORROR_THREAT" +
+      "ENING\020F\022\021\n\rGRAC_LANGUAGE\020G\022\035\n\031GRAC_ALCOH" +
+      "OL_TOBACCO_DRUG\020H\022\032\n\026GRAC_CRIME_ANTI_SOC" +
+      "IAL\020I\022\021\n\rGRAC_GAMBLING\020J\022\027\n\023CLASS_IND_VI" +
+      "OLENCIA\020K\022\037\n\033CLASS_IND_VIOLENCIA_EXTREMA" +
+      "\020L\022\035\n\031CLASS_IND_CONTEUDO_SEXUAL\020M\022\023\n\017CLA" +
+      "SS_IND_NUDEZ\020N\022\022\n\016CLASS_IND_SEXO\020O\022\034\n\030CL" +
+      "ASS_IND_SEXO_EXPLICITO\020P\022\024\n\020CLASS_IND_DR" +
+      "OGAS\020Q\022\034\n\030CLASS_IND_DROGAS_LICITAS\020R\022\035\n\031" +
+      "CLASS_IND_DROGAS_ILICITAS\020S\022!\n\035CLASS_IND" +
+      "_LINGUAGEM_IMPROPRIA\020T\022\035\n\031CLASS_IND_ATOS" +
+      "_CRIMINOSOS\020U*3\n\020GenderGenderEnum\022\010\n\004MAL" +
+      "E\020\000\022\n\n\006FEMALE\020\001\022\t\n\005OTHER\020\002*n\n\024CharacterS" +
+      "peciesEnum\022\032\n\026CHARACTER_SPECIES_NULL\020\000\022\t" +
+      "\n\005HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDR" +
+      "OID\020\004\022\013\n\007UNKNOWN\020\005*\203\001\n DateFormatChangeD" +
+      "ateCategoryEnum\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYM" +
+      "MMM\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022" +
+      "\n\n\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023Web" +
+      "siteCategoryEnum\022\031\n\025WEBSITE_CATEGORY_NUL" +
+      "L\020\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n\rWEBSITE_WIK" +
+      "IA\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022\024\n\020WEBSITE_F" +
+      "ACEBOOK\020\004\022\023\n\017WEBSITE_TWITTER\020\005\022\022\n\016WEBSIT" +
+      "E_TWITCH\020\006\022\025\n\021WEBSITE_INSTAGRAM\020\010\022\023\n\017WEB" +
+      "SITE_YOUTUBE\020\t\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WE" +
+      "BSITE_IPAD\020\013\022\023\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEB" +
+      "SITE_STEAM\020\r\022\022\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBS" +
+      "ITE_ITCH\020\017\022\025\n\021WEBSITE_EPICGAMES\020\020\022\017\n\013WEB" +
+      "SITE_GOG\020\021\022\023\n\017WEBSITE_DISCORD\020\022*\207\005\n\030Exte" +
+      "rnalGameCategoryEnum\022\036\n\032EXTERNALGAME_CAT" +
+      "EGORY_NULL\020\000\022\026\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020" +
+      "EXTERNALGAME_GOG\020\005\022\030\n\024EXTERNALGAME_YOUTU" +
+      "BE\020\n\022\032\n\026EXTERNALGAME_MICROSOFT\020\013\022\026\n\022EXTE" +
+      "RNALGAME_APPLE\020\r\022\027\n\023EXTERNALGAME_TWITCH\020" +
+      "\016\022\030\n\024EXTERNALGAME_ANDROID\020\017\022\034\n\030EXTERNALG" +
+      "AME_AMAZON_ASIN\020\024\022\034\n\030EXTERNALGAME_AMAZON" +
+      "_LUNA\020\026\022\033\n\027EXTERNALGAME_AMAZON_ADG\020\027\022 \n\034" +
+      "EXTERNALGAME_EPIC_GAME_STORE\020\032\022\027\n\023EXTERN" +
+      "ALGAME_OCULUS\020\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035" +
+      "\022\030\n\024EXTERNALGAME_ITCH_IO\020\036\022!\n\035EXTERNALGA" +
+      "ME_XBOX_MARKETPLACE\020\037\022\032\n\026EXTERNALGAME_KA" +
+      "RTRIDGE\020 \022%\n!EXTERNALGAME_PLAYSTATION_ST" +
+      "ORE_US\020$\022$\n EXTERNALGAME_FOCUS_ENTERTAIN" +
+      "MENT\020%\022.\n*EXTERNALGAME_XBOX_GAME_PASS_UL" +
+      "TIMATE_CLOUD\0206\022\031\n\025EXTERNALGAME_GAMEJOLT\020" +
+      "7*i\n\025ExternalGameMediaEnum\022\033\n\027EXTERNALGA" +
+      "ME_MEDIA_NULL\020\000\022\030\n\024EXTERNALGAME_DIGITAL\020" +
+      "\001\022\031\n\025EXTERNALGAME_PHYSICAL\020\002*\336\001\n\020GameCat" +
+      "egoryEnum\022\r\n\tMAIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022" +
+      "\r\n\tEXPANSION\020\002\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE" +
+      "_EXPANSION\020\004\022\007\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SE" +
+      "ASON\020\007\022\n\n\006REMAKE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPA" +
+      "NDED_GAME\020\n\022\010\n\004PORT\020\013\022\010\n\004FORK\020\014\022\010\n\004PACK\020" +
+      "\r\022\n\n\006UPDATE\020\016*|\n\016GameStatusEnum\022\014\n\010RELEA" +
+      "SED\020\000\022\t\n\005ALPHA\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCE" +
+      "SS\020\004\022\013\n\007OFFLINE\020\005\022\r\n\tCANCELLED\020\006\022\013\n\007RUMO" +
+      "RED\020\007\022\014\n\010DELISTED\020\010*>\n\036GameVersionFeatur" +
+      "eCategoryEnum\022\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTIO" +
+      "N\020\001*`\n*GameVersionFeatureValueIncludedFe" +
+      "atureEnum\022\020\n\014NOT_INCLUDED\020\000\022\014\n\010INCLUDED\020" +
+      "\001\022\022\n\016PRE_ORDER_ONLY\020\002*\223\001\n\024PlatformCatego" +
+      "ryEnum\022\032\n\026PLATFORM_CATEGORY_NULL\020\000\022\013\n\007CO" +
+      "NSOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010PLATFORM\020\003\022\024\n\020OPE" +
+      "RATING_SYSTEM\020\004\022\024\n\020PORTABLE_CONSOLE\020\005\022\014\n" +
+      "\010COMPUTER\020\006*\257\001\n\020RegionRegionEnum\022\026\n\022REGI" +
+      "ON_REGION_NULL\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AM" +
+      "ERICA\020\002\022\r\n\tAUSTRALIA\020\003\022\017\n\013NEW_ZEALAND\020\004\022" +
+      "\t\n\005JAPAN\020\005\022\t\n\005CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLD" +
+      "WIDE\020\010\022\t\n\005KOREA\020\t\022\n\n\006BRAZIL\020\n*K\n\025TestDum" +
+      "myEnumTestEnum\022\034\n\030TESTDUMMY_ENUM_TEST_NU" +
+      "LL\020\000\022\t\n\005ENUM1\020\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

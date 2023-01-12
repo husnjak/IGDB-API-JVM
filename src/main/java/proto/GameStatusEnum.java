@@ -139,7 +139,7 @@ public enum GameStatusEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(9);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(10);
   }
 
   private static final GameStatusEnum[] VALUES = values();

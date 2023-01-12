@@ -229,7 +229,7 @@ public enum WebsiteCategoryEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(5);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(6);
   }
 
   private static final WebsiteCategoryEnum[] VALUES = values();

@@ -139,7 +139,7 @@ public enum DateFormatChangeDateCategoryEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(4);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(5);
   }
 
   private static final DateFormatChangeDateCategoryEnum[] VALUES = values();

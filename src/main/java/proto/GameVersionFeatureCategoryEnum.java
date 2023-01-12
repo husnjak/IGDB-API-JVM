@@ -85,7 +85,7 @@ public enum GameVersionFeatureCategoryEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(10);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(11);
   }
 
   private static final GameVersionFeatureCategoryEnum[] VALUES = values();

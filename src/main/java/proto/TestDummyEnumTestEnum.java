@@ -94,7 +94,7 @@ public enum TestDummyEnumTestEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(14);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(15);
   }
 
   private static final TestDummyEnumTestEnum[] VALUES = values();

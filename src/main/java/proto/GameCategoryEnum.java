@@ -202,7 +202,7 @@ public enum GameCategoryEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(8);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(9);
   }
 
   private static final GameCategoryEnum[] VALUES = values();

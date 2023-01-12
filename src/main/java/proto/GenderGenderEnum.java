@@ -94,7 +94,7 @@ public enum GenderGenderEnum
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return proto.Igdbproto.getDescriptor().getEnumTypes().get(2);
+    return proto.Igdbproto.getDescriptor().getEnumTypes().get(3);
   }
 
   private static final GenderGenderEnum[] VALUES = values();
