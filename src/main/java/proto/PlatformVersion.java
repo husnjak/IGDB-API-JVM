@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -73,6 +73,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COMPANIES_FIELD_NUMBER = 2;
+  @SuppressWarnings("serial")
   private java.util.List<proto.PlatformVersionCompany> companies_;
   /**
    * <code>repeated .proto.PlatformVersionCompany companies = 2;</code>
@@ -113,7 +114,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CONNECTIVITY_FIELD_NUMBER = 3;
-  private volatile java.lang.Object connectivity_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object connectivity_ = "";
   /**
    * <code>string connectivity = 3;</code>
    * @return The connectivity.
@@ -151,7 +153,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CPU_FIELD_NUMBER = 4;
-  private volatile java.lang.Object cpu_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object cpu_ = "";
   /**
    * <code>string cpu = 4;</code>
    * @return The cpu.
@@ -189,7 +192,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GRAPHICS_FIELD_NUMBER = 5;
-  private volatile java.lang.Object graphics_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object graphics_ = "";
   /**
    * <code>string graphics = 5;</code>
    * @return The graphics.
@@ -249,11 +253,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.PlatformVersionCompanyOrBuilder getMainManufacturerOrBuilder() {
-    return getMainManufacturer();
+    return mainManufacturer_ == null ? proto.PlatformVersionCompany.getDefaultInstance() : mainManufacturer_;
   }
 
   public static final int MEDIA_FIELD_NUMBER = 7;
-  private volatile java.lang.Object media_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object media_ = "";
   /**
    * <code>string media = 7;</code>
    * @return The media.
@@ -291,7 +296,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MEMORY_FIELD_NUMBER = 8;
-  private volatile java.lang.Object memory_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object memory_ = "";
   /**
    * <code>string memory = 8;</code>
    * @return The memory.
@@ -329,7 +335,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NAME_FIELD_NUMBER = 9;
-  private volatile java.lang.Object name_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object name_ = "";
   /**
    * <code>string name = 9;</code>
    * @return The name.
@@ -367,7 +374,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ONLINE_FIELD_NUMBER = 10;
-  private volatile java.lang.Object online_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object online_ = "";
   /**
    * <code>string online = 10;</code>
    * @return The online.
@@ -405,7 +413,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OS_FIELD_NUMBER = 11;
-  private volatile java.lang.Object os_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object os_ = "";
   /**
    * <code>string os = 11;</code>
    * @return The os.
@@ -443,7 +452,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OUTPUT_FIELD_NUMBER = 12;
-  private volatile java.lang.Object output_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object output_ = "";
   /**
    * <code>string output = 12;</code>
    * @return The output.
@@ -503,10 +513,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.PlatformLogoOrBuilder getPlatformLogoOrBuilder() {
-    return getPlatformLogo();
+    return platformLogo_ == null ? proto.PlatformLogo.getDefaultInstance() : platformLogo_;
   }
 
   public static final int PLATFORM_VERSION_RELEASE_DATES_FIELD_NUMBER = 14;
+  @SuppressWarnings("serial")
   private java.util.List<proto.PlatformVersionReleaseDate> platformVersionReleaseDates_;
   /**
    * <code>repeated .proto.PlatformVersionReleaseDate platform_version_release_dates = 14;</code>
@@ -547,7 +558,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RESOLUTIONS_FIELD_NUMBER = 15;
-  private volatile java.lang.Object resolutions_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object resolutions_ = "";
   /**
    * <code>string resolutions = 15;</code>
    * @return The resolutions.
@@ -585,7 +597,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SLUG_FIELD_NUMBER = 16;
-  private volatile java.lang.Object slug_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object slug_ = "";
   /**
    * <code>string slug = 16;</code>
    * @return The slug.
@@ -623,7 +636,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SOUND_FIELD_NUMBER = 17;
-  private volatile java.lang.Object sound_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object sound_ = "";
   /**
    * <code>string sound = 17;</code>
    * @return The sound.
@@ -661,7 +675,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int STORAGE_FIELD_NUMBER = 18;
-  private volatile java.lang.Object storage_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object storage_ = "";
   /**
    * <code>string storage = 18;</code>
    * @return The storage.
@@ -699,7 +714,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SUMMARY_FIELD_NUMBER = 19;
-  private volatile java.lang.Object summary_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object summary_ = "";
   /**
    * <code>string summary = 19;</code>
    * @return The summary.
@@ -737,7 +753,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int URL_FIELD_NUMBER = 20;
-  private volatile java.lang.Object url_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object url_ = "";
   /**
    * <code>string url = 20;</code>
    * @return The url.
@@ -775,7 +792,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 21;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 21;</code>
    * @return The checksum.
@@ -935,43 +953,32 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
       if (companiesBuilder_ == null) {
         companies_ = java.util.Collections.emptyList();
       } else {
         companies_ = null;
         companiesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000001);
+      bitField0_ = (bitField0_ & ~0x00000002);
       connectivity_ = "";
-
       cpu_ = "";
-
       graphics_ = "";
-
-      if (mainManufacturerBuilder_ == null) {
-        mainManufacturer_ = null;
-      } else {
-        mainManufacturer_ = null;
+      mainManufacturer_ = null;
+      if (mainManufacturerBuilder_ != null) {
+        mainManufacturerBuilder_.dispose();
         mainManufacturerBuilder_ = null;
       }
       media_ = "";
-
       memory_ = "";
-
       name_ = "";
-
       online_ = "";
-
       os_ = "";
-
       output_ = "";
-
-      if (platformLogoBuilder_ == null) {
-        platformLogo_ = null;
-      } else {
-        platformLogo_ = null;
+      platformLogo_ = null;
+      if (platformLogoBuilder_ != null) {
+        platformLogoBuilder_.dispose();
         platformLogoBuilder_ = null;
       }
       if (platformVersionReleaseDatesBuilder_ == null) {
@@ -980,21 +987,14 @@ private static final long serialVersionUID = 0L;
         platformVersionReleaseDates_ = null;
         platformVersionReleaseDatesBuilder_.clear();
       }
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00002000);
       resolutions_ = "";
-
       slug_ = "";
-
       sound_ = "";
-
       storage_ = "";
-
       summary_ = "";
-
       url_ = "";
-
       checksum_ = "";
-
       return this;
     }
 
@@ -1021,54 +1021,96 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlatformVersion buildPartial() {
       proto.PlatformVersion result = new proto.PlatformVersion(this);
-      int from_bitField0_ = bitField0_;
-      result.id_ = id_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.PlatformVersion result) {
       if (companiesBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           companies_ = java.util.Collections.unmodifiableList(companies_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.companies_ = companies_;
       } else {
         result.companies_ = companiesBuilder_.build();
       }
-      result.connectivity_ = connectivity_;
-      result.cpu_ = cpu_;
-      result.graphics_ = graphics_;
-      if (mainManufacturerBuilder_ == null) {
-        result.mainManufacturer_ = mainManufacturer_;
-      } else {
-        result.mainManufacturer_ = mainManufacturerBuilder_.build();
-      }
-      result.media_ = media_;
-      result.memory_ = memory_;
-      result.name_ = name_;
-      result.online_ = online_;
-      result.os_ = os_;
-      result.output_ = output_;
-      if (platformLogoBuilder_ == null) {
-        result.platformLogo_ = platformLogo_;
-      } else {
-        result.platformLogo_ = platformLogoBuilder_.build();
-      }
       if (platformVersionReleaseDatesBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00002000) != 0)) {
           platformVersionReleaseDates_ = java.util.Collections.unmodifiableList(platformVersionReleaseDates_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00002000);
         }
         result.platformVersionReleaseDates_ = platformVersionReleaseDates_;
       } else {
         result.platformVersionReleaseDates_ = platformVersionReleaseDatesBuilder_.build();
       }
-      result.resolutions_ = resolutions_;
-      result.slug_ = slug_;
-      result.sound_ = sound_;
-      result.storage_ = storage_;
-      result.summary_ = summary_;
-      result.url_ = url_;
-      result.checksum_ = checksum_;
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.PlatformVersion result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.connectivity_ = connectivity_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.cpu_ = cpu_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.graphics_ = graphics_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.mainManufacturer_ = mainManufacturerBuilder_ == null
+            ? mainManufacturer_
+            : mainManufacturerBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000040) != 0)) {
+        result.media_ = media_;
+      }
+      if (((from_bitField0_ & 0x00000080) != 0)) {
+        result.memory_ = memory_;
+      }
+      if (((from_bitField0_ & 0x00000100) != 0)) {
+        result.name_ = name_;
+      }
+      if (((from_bitField0_ & 0x00000200) != 0)) {
+        result.online_ = online_;
+      }
+      if (((from_bitField0_ & 0x00000400) != 0)) {
+        result.os_ = os_;
+      }
+      if (((from_bitField0_ & 0x00000800) != 0)) {
+        result.output_ = output_;
+      }
+      if (((from_bitField0_ & 0x00001000) != 0)) {
+        result.platformLogo_ = platformLogoBuilder_ == null
+            ? platformLogo_
+            : platformLogoBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00004000) != 0)) {
+        result.resolutions_ = resolutions_;
+      }
+      if (((from_bitField0_ & 0x00008000) != 0)) {
+        result.slug_ = slug_;
+      }
+      if (((from_bitField0_ & 0x00010000) != 0)) {
+        result.sound_ = sound_;
+      }
+      if (((from_bitField0_ & 0x00020000) != 0)) {
+        result.storage_ = storage_;
+      }
+      if (((from_bitField0_ & 0x00040000) != 0)) {
+        result.summary_ = summary_;
+      }
+      if (((from_bitField0_ & 0x00080000) != 0)) {
+        result.url_ = url_;
+      }
+      if (((from_bitField0_ & 0x00100000) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -1122,6 +1164,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -1130,7 +1173,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -1139,9 +1182,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.PlatformVersionCompany> companies_ =
       java.util.Collections.emptyList();
     private void ensureCompaniesIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         companies_ = new java.util.ArrayList<proto.PlatformVersionCompany>(companies_);
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
        }
     }
 
@@ -1291,7 +1334,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearCompanies() {
       if (companiesBuilder_ == null) {
         companies_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         companiesBuilder_.clear();
@@ -1368,7 +1411,7 @@ private static final long serialVersionUID = 0L;
         companiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.PlatformVersionCompany, proto.PlatformVersionCompany.Builder, proto.PlatformVersionCompanyOrBuilder>(
                 companies_,
-                ((bitField0_ & 0x00000001) != 0),
+                ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
         companies_ = null;
@@ -1417,11 +1460,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setConnectivity(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       connectivity_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1430,8 +1471,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearConnectivity() {
-      
       connectivity_ = getDefaultInstance().getConnectivity();
+      bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;
     }
@@ -1442,12 +1483,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setConnectivityBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       connectivity_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -1493,11 +1532,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setCpu(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       cpu_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -1506,8 +1543,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearCpu() {
-      
       cpu_ = getDefaultInstance().getCpu();
+      bitField0_ = (bitField0_ & ~0x00000008);
       onChanged();
       return this;
     }
@@ -1518,12 +1555,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setCpuBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       cpu_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -1569,11 +1604,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setGraphics(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       graphics_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -1582,8 +1615,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearGraphics() {
-      
       graphics_ = getDefaultInstance().getGraphics();
+      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -1594,12 +1627,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setGraphicsBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       graphics_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -1612,7 +1643,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mainManufacturer field is set.
      */
     public boolean hasMainManufacturer() {
-      return mainManufacturerBuilder_ != null || mainManufacturer_ != null;
+      return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      * <code>.proto.PlatformVersionCompany main_manufacturer = 6;</code>
@@ -1634,11 +1665,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         mainManufacturer_ = value;
-        onChanged();
       } else {
         mainManufacturerBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
@@ -1648,11 +1679,11 @@ private static final long serialVersionUID = 0L;
         proto.PlatformVersionCompany.Builder builderForValue) {
       if (mainManufacturerBuilder_ == null) {
         mainManufacturer_ = builderForValue.build();
-        onChanged();
       } else {
         mainManufacturerBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
@@ -1660,38 +1691,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMainManufacturer(proto.PlatformVersionCompany value) {
       if (mainManufacturerBuilder_ == null) {
-        if (mainManufacturer_ != null) {
-          mainManufacturer_ =
-            proto.PlatformVersionCompany.newBuilder(mainManufacturer_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000020) != 0) &&
+          mainManufacturer_ != null &&
+          mainManufacturer_ != proto.PlatformVersionCompany.getDefaultInstance()) {
+          getMainManufacturerBuilder().mergeFrom(value);
         } else {
           mainManufacturer_ = value;
         }
-        onChanged();
       } else {
         mainManufacturerBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000020;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformVersionCompany main_manufacturer = 6;</code>
      */
     public Builder clearMainManufacturer() {
-      if (mainManufacturerBuilder_ == null) {
-        mainManufacturer_ = null;
-        onChanged();
-      } else {
-        mainManufacturer_ = null;
+      bitField0_ = (bitField0_ & ~0x00000020);
+      mainManufacturer_ = null;
+      if (mainManufacturerBuilder_ != null) {
+        mainManufacturerBuilder_.dispose();
         mainManufacturerBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformVersionCompany main_manufacturer = 6;</code>
      */
     public proto.PlatformVersionCompany.Builder getMainManufacturerBuilder() {
-      
+      bitField0_ |= 0x00000020;
       onChanged();
       return getMainManufacturerFieldBuilder().getBuilder();
     }
@@ -1764,11 +1795,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMedia(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       media_ = value;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -1777,8 +1806,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMedia() {
-      
       media_ = getDefaultInstance().getMedia();
+      bitField0_ = (bitField0_ & ~0x00000040);
       onChanged();
       return this;
     }
@@ -1789,12 +1818,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMediaBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       media_ = value;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -1840,11 +1867,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMemory(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       memory_ = value;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -1853,8 +1878,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMemory() {
-      
       memory_ = getDefaultInstance().getMemory();
+      bitField0_ = (bitField0_ & ~0x00000080);
       onChanged();
       return this;
     }
@@ -1865,12 +1890,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setMemoryBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       memory_ = value;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -1916,11 +1939,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setName(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       name_ = value;
+      bitField0_ |= 0x00000100;
       onChanged();
       return this;
     }
@@ -1929,8 +1950,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearName() {
-      
       name_ = getDefaultInstance().getName();
+      bitField0_ = (bitField0_ & ~0x00000100);
       onChanged();
       return this;
     }
@@ -1941,12 +1962,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       name_ = value;
+      bitField0_ |= 0x00000100;
       onChanged();
       return this;
     }
@@ -1992,11 +2011,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOnline(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       online_ = value;
+      bitField0_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -2005,8 +2022,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearOnline() {
-      
       online_ = getDefaultInstance().getOnline();
+      bitField0_ = (bitField0_ & ~0x00000200);
       onChanged();
       return this;
     }
@@ -2017,12 +2034,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOnlineBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       online_ = value;
+      bitField0_ |= 0x00000200;
       onChanged();
       return this;
     }
@@ -2068,11 +2083,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOs(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       os_ = value;
+      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -2081,8 +2094,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearOs() {
-      
       os_ = getDefaultInstance().getOs();
+      bitField0_ = (bitField0_ & ~0x00000400);
       onChanged();
       return this;
     }
@@ -2093,12 +2106,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOsBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       os_ = value;
+      bitField0_ |= 0x00000400;
       onChanged();
       return this;
     }
@@ -2144,11 +2155,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOutput(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       output_ = value;
+      bitField0_ |= 0x00000800;
       onChanged();
       return this;
     }
@@ -2157,8 +2166,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearOutput() {
-      
       output_ = getDefaultInstance().getOutput();
+      bitField0_ = (bitField0_ & ~0x00000800);
       onChanged();
       return this;
     }
@@ -2169,12 +2178,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setOutputBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       output_ = value;
+      bitField0_ |= 0x00000800;
       onChanged();
       return this;
     }
@@ -2187,7 +2194,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the platformLogo field is set.
      */
     public boolean hasPlatformLogo() {
-      return platformLogoBuilder_ != null || platformLogo_ != null;
+      return ((bitField0_ & 0x00001000) != 0);
     }
     /**
      * <code>.proto.PlatformLogo platform_logo = 13;</code>
@@ -2209,11 +2216,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         platformLogo_ = value;
-        onChanged();
       } else {
         platformLogoBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00001000;
+      onChanged();
       return this;
     }
     /**
@@ -2223,11 +2230,11 @@ private static final long serialVersionUID = 0L;
         proto.PlatformLogo.Builder builderForValue) {
       if (platformLogoBuilder_ == null) {
         platformLogo_ = builderForValue.build();
-        onChanged();
       } else {
         platformLogoBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00001000;
+      onChanged();
       return this;
     }
     /**
@@ -2235,38 +2242,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePlatformLogo(proto.PlatformLogo value) {
       if (platformLogoBuilder_ == null) {
-        if (platformLogo_ != null) {
-          platformLogo_ =
-            proto.PlatformLogo.newBuilder(platformLogo_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00001000) != 0) &&
+          platformLogo_ != null &&
+          platformLogo_ != proto.PlatformLogo.getDefaultInstance()) {
+          getPlatformLogoBuilder().mergeFrom(value);
         } else {
           platformLogo_ = value;
         }
-        onChanged();
       } else {
         platformLogoBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00001000;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformLogo platform_logo = 13;</code>
      */
     public Builder clearPlatformLogo() {
-      if (platformLogoBuilder_ == null) {
-        platformLogo_ = null;
-        onChanged();
-      } else {
-        platformLogo_ = null;
+      bitField0_ = (bitField0_ & ~0x00001000);
+      platformLogo_ = null;
+      if (platformLogoBuilder_ != null) {
+        platformLogoBuilder_.dispose();
         platformLogoBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.PlatformLogo platform_logo = 13;</code>
      */
     public proto.PlatformLogo.Builder getPlatformLogoBuilder() {
-      
+      bitField0_ |= 0x00001000;
       onChanged();
       return getPlatformLogoFieldBuilder().getBuilder();
     }
@@ -2301,9 +2308,9 @@ private static final long serialVersionUID = 0L;
     private java.util.List<proto.PlatformVersionReleaseDate> platformVersionReleaseDates_ =
       java.util.Collections.emptyList();
     private void ensurePlatformVersionReleaseDatesIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00002000) != 0)) {
         platformVersionReleaseDates_ = new java.util.ArrayList<proto.PlatformVersionReleaseDate>(platformVersionReleaseDates_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00002000;
        }
     }
 
@@ -2453,7 +2460,7 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlatformVersionReleaseDates() {
       if (platformVersionReleaseDatesBuilder_ == null) {
         platformVersionReleaseDates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00002000);
         onChanged();
       } else {
         platformVersionReleaseDatesBuilder_.clear();
@@ -2530,7 +2537,7 @@ private static final long serialVersionUID = 0L;
         platformVersionReleaseDatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             proto.PlatformVersionReleaseDate, proto.PlatformVersionReleaseDate.Builder, proto.PlatformVersionReleaseDateOrBuilder>(
                 platformVersionReleaseDates_,
-                ((bitField0_ & 0x00000002) != 0),
+                ((bitField0_ & 0x00002000) != 0),
                 getParentForChildren(),
                 isClean());
         platformVersionReleaseDates_ = null;
@@ -2579,11 +2586,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setResolutions(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       resolutions_ = value;
+      bitField0_ |= 0x00004000;
       onChanged();
       return this;
     }
@@ -2592,8 +2597,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearResolutions() {
-      
       resolutions_ = getDefaultInstance().getResolutions();
+      bitField0_ = (bitField0_ & ~0x00004000);
       onChanged();
       return this;
     }
@@ -2604,12 +2609,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setResolutionsBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       resolutions_ = value;
+      bitField0_ |= 0x00004000;
       onChanged();
       return this;
     }
@@ -2655,11 +2658,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSlug(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       slug_ = value;
+      bitField0_ |= 0x00008000;
       onChanged();
       return this;
     }
@@ -2668,8 +2669,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSlug() {
-      
       slug_ = getDefaultInstance().getSlug();
+      bitField0_ = (bitField0_ & ~0x00008000);
       onChanged();
       return this;
     }
@@ -2680,12 +2681,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSlugBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       slug_ = value;
+      bitField0_ |= 0x00008000;
       onChanged();
       return this;
     }
@@ -2731,11 +2730,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSound(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       sound_ = value;
+      bitField0_ |= 0x00010000;
       onChanged();
       return this;
     }
@@ -2744,8 +2741,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSound() {
-      
       sound_ = getDefaultInstance().getSound();
+      bitField0_ = (bitField0_ & ~0x00010000);
       onChanged();
       return this;
     }
@@ -2756,12 +2753,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSoundBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       sound_ = value;
+      bitField0_ |= 0x00010000;
       onChanged();
       return this;
     }
@@ -2807,11 +2802,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setStorage(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       storage_ = value;
+      bitField0_ |= 0x00020000;
       onChanged();
       return this;
     }
@@ -2820,8 +2813,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStorage() {
-      
       storage_ = getDefaultInstance().getStorage();
+      bitField0_ = (bitField0_ & ~0x00020000);
       onChanged();
       return this;
     }
@@ -2832,12 +2825,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setStorageBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       storage_ = value;
+      bitField0_ |= 0x00020000;
       onChanged();
       return this;
     }
@@ -2883,11 +2874,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSummary(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       summary_ = value;
+      bitField0_ |= 0x00040000;
       onChanged();
       return this;
     }
@@ -2896,8 +2885,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearSummary() {
-      
       summary_ = getDefaultInstance().getSummary();
+      bitField0_ = (bitField0_ & ~0x00040000);
       onChanged();
       return this;
     }
@@ -2908,12 +2897,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setSummaryBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       summary_ = value;
+      bitField0_ |= 0x00040000;
       onChanged();
       return this;
     }
@@ -2959,11 +2946,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrl(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       url_ = value;
+      bitField0_ |= 0x00080000;
       onChanged();
       return this;
     }
@@ -2972,8 +2957,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearUrl() {
-      
       url_ = getDefaultInstance().getUrl();
+      bitField0_ = (bitField0_ & ~0x00080000);
       onChanged();
       return this;
     }
@@ -2984,12 +2969,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       url_ = value;
+      bitField0_ |= 0x00080000;
       onChanged();
       return this;
     }
@@ -3035,11 +3018,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00100000;
       onChanged();
       return this;
     }
@@ -3048,8 +3029,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00100000);
       onChanged();
       return this;
     }
@@ -3060,12 +3041,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00100000;
       onChanged();
       return this;
     }

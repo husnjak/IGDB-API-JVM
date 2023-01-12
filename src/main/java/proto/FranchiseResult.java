@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FRANCHISES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Franchise> franchises_;
   /**
    * <code>repeated .proto.Franchise franchises = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (franchisesBuilder_ == null) {
         franchises_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.FranchiseResult buildPartial() {
       proto.FranchiseResult result = new proto.FranchiseResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.FranchiseResult result) {
       if (franchisesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           franchises_ = java.util.Collections.unmodifiableList(franchises_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.franchises_ = franchisesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.FranchiseResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

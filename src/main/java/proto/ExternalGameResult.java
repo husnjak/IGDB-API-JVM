@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EXTERNALGAMES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.ExternalGame> externalgames_;
   /**
    * <code>repeated .proto.ExternalGame externalgames = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (externalgamesBuilder_ == null) {
         externalgames_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.ExternalGameResult buildPartial() {
       proto.ExternalGameResult result = new proto.ExternalGameResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.ExternalGameResult result) {
       if (externalgamesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           externalgames_ = java.util.Collections.unmodifiableList(externalgames_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.externalgames_ = externalgamesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.ExternalGameResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

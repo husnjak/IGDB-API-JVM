@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SEARCHES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Search> searches_;
   /**
    * <code>repeated .proto.Search searches = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (searchesBuilder_ == null) {
         searches_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.SearchResult buildPartial() {
       proto.SearchResult result = new proto.SearchResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.SearchResult result) {
       if (searchesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           searches_ = java.util.Collections.unmodifiableList(searches_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.searches_ = searchesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.SearchResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

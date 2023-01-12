@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PLATFORMVERSIONCOMPANIES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.PlatformVersionCompany> platformversioncompanies_;
   /**
    * <code>repeated .proto.PlatformVersionCompany platformversioncompanies = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (platformversioncompaniesBuilder_ == null) {
         platformversioncompanies_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.PlatformVersionCompanyResult buildPartial() {
       proto.PlatformVersionCompanyResult result = new proto.PlatformVersionCompanyResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.PlatformVersionCompanyResult result) {
       if (platformversioncompaniesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           platformversioncompanies_ = java.util.Collections.unmodifiableList(platformversioncompanies_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.platformversioncompanies_ = platformversioncompaniesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.PlatformVersionCompanyResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

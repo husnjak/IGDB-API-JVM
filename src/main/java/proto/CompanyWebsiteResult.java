@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COMPANYWEBSITES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.CompanyWebsite> companywebsites_;
   /**
    * <code>repeated .proto.CompanyWebsite companywebsites = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (companywebsitesBuilder_ == null) {
         companywebsites_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.CompanyWebsiteResult buildPartial() {
       proto.CompanyWebsiteResult result = new proto.CompanyWebsiteResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.CompanyWebsiteResult result) {
       if (companywebsitesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           companywebsites_ = java.util.Collections.unmodifiableList(companywebsites_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.companywebsites_ = companywebsitesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.CompanyWebsiteResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

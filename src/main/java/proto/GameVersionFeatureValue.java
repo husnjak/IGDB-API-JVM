@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ID_FIELD_NUMBER = 1;
-  private long id_;
+  private long id_ = 0L;
   /**
    * <code>uint64 id = 1;</code>
    * @return The id.
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.GameOrBuilder getGameOrBuilder() {
-    return getGame();
+    return game_ == null ? proto.Game.getDefaultInstance() : game_;
   }
 
   public static final int GAME_FEATURE_FIELD_NUMBER = 3;
@@ -106,11 +106,11 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public proto.GameVersionFeatureOrBuilder getGameFeatureOrBuilder() {
-    return getGameFeature();
+    return gameFeature_ == null ? proto.GameVersionFeature.getDefaultInstance() : gameFeature_;
   }
 
   public static final int INCLUDED_FEATURE_FIELD_NUMBER = 4;
-  private int includedFeature_;
+  private int includedFeature_ = 0;
   /**
    * <code>.proto.GameVersionFeatureValueIncludedFeatureEnum included_feature = 4;</code>
    * @return The enum numeric value on the wire for includedFeature.
@@ -123,13 +123,13 @@ private static final long serialVersionUID = 0L;
    * @return The includedFeature.
    */
   @java.lang.Override public proto.GameVersionFeatureValueIncludedFeatureEnum getIncludedFeature() {
-    @SuppressWarnings("deprecation")
-    proto.GameVersionFeatureValueIncludedFeatureEnum result = proto.GameVersionFeatureValueIncludedFeatureEnum.valueOf(includedFeature_);
+    proto.GameVersionFeatureValueIncludedFeatureEnum result = proto.GameVersionFeatureValueIncludedFeatureEnum.forNumber(includedFeature_);
     return result == null ? proto.GameVersionFeatureValueIncludedFeatureEnum.UNRECOGNIZED : result;
   }
 
   public static final int NOTE_FIELD_NUMBER = 5;
-  private volatile java.lang.Object note_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object note_ = "";
   /**
    * <code>string note = 5;</code>
    * @return The note.
@@ -167,7 +167,8 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CHECKSUM_FIELD_NUMBER = 6;
-  private volatile java.lang.Object checksum_;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object checksum_ = "";
   /**
    * <code>string checksum = 6;</code>
    * @return The checksum.
@@ -327,26 +328,21 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       id_ = 0L;
-
-      if (gameBuilder_ == null) {
-        game_ = null;
-      } else {
-        game_ = null;
+      game_ = null;
+      if (gameBuilder_ != null) {
+        gameBuilder_.dispose();
         gameBuilder_ = null;
       }
-      if (gameFeatureBuilder_ == null) {
-        gameFeature_ = null;
-      } else {
-        gameFeature_ = null;
+      gameFeature_ = null;
+      if (gameFeatureBuilder_ != null) {
+        gameFeatureBuilder_.dispose();
         gameFeatureBuilder_ = null;
       }
       includedFeature_ = 0;
-
       note_ = "";
-
       checksum_ = "";
-
       return this;
     }
 
@@ -373,22 +369,35 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.GameVersionFeatureValue buildPartial() {
       proto.GameVersionFeatureValue result = new proto.GameVersionFeatureValue(this);
-      result.id_ = id_;
-      if (gameBuilder_ == null) {
-        result.game_ = game_;
-      } else {
-        result.game_ = gameBuilder_.build();
-      }
-      if (gameFeatureBuilder_ == null) {
-        result.gameFeature_ = gameFeature_;
-      } else {
-        result.gameFeature_ = gameFeatureBuilder_.build();
-      }
-      result.includedFeature_ = includedFeature_;
-      result.note_ = note_;
-      result.checksum_ = checksum_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
+    }
+
+    private void buildPartial0(proto.GameVersionFeatureValue result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.game_ = gameBuilder_ == null
+            ? game_
+            : gameBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.gameFeature_ = gameFeatureBuilder_ == null
+            ? gameFeature_
+            : gameFeatureBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.includedFeature_ = includedFeature_;
+      }
+      if (((from_bitField0_ & 0x00000010) != 0)) {
+        result.note_ = note_;
+      }
+      if (((from_bitField0_ & 0x00000020) != 0)) {
+        result.checksum_ = checksum_;
+      }
     }
 
     @java.lang.Override
@@ -423,6 +432,7 @@ private static final long serialVersionUID = 0L;
         java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
+    private int bitField0_;
 
     private long id_ ;
     /**
@@ -441,6 +451,7 @@ private static final long serialVersionUID = 0L;
     public Builder setId(long value) {
       
       id_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -449,7 +460,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       id_ = 0L;
       onChanged();
       return this;
@@ -463,7 +474,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the game field is set.
      */
     public boolean hasGame() {
-      return gameBuilder_ != null || game_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>.proto.Game game = 2;</code>
@@ -485,11 +496,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         game_ = value;
-        onChanged();
       } else {
         gameBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -499,11 +510,11 @@ private static final long serialVersionUID = 0L;
         proto.Game.Builder builderForValue) {
       if (gameBuilder_ == null) {
         game_ = builderForValue.build();
-        onChanged();
       } else {
         gameBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -511,38 +522,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeGame(proto.Game value) {
       if (gameBuilder_ == null) {
-        if (game_ != null) {
-          game_ =
-            proto.Game.newBuilder(game_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          game_ != null &&
+          game_ != proto.Game.getDefaultInstance()) {
+          getGameBuilder().mergeFrom(value);
         } else {
           game_ = value;
         }
-        onChanged();
       } else {
         gameBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game game = 2;</code>
      */
     public Builder clearGame() {
-      if (gameBuilder_ == null) {
-        game_ = null;
-        onChanged();
-      } else {
-        game_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      game_ = null;
+      if (gameBuilder_ != null) {
+        gameBuilder_.dispose();
         gameBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.Game game = 2;</code>
      */
     public proto.Game.Builder getGameBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
       return getGameFieldBuilder().getBuilder();
     }
@@ -582,7 +593,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the gameFeature field is set.
      */
     public boolean hasGameFeature() {
-      return gameFeatureBuilder_ != null || gameFeature_ != null;
+      return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>.proto.GameVersionFeature game_feature = 3;</code>
@@ -604,11 +615,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         gameFeature_ = value;
-        onChanged();
       } else {
         gameFeatureBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -618,11 +629,11 @@ private static final long serialVersionUID = 0L;
         proto.GameVersionFeature.Builder builderForValue) {
       if (gameFeatureBuilder_ == null) {
         gameFeature_ = builderForValue.build();
-        onChanged();
       } else {
         gameFeatureBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
@@ -630,38 +641,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeGameFeature(proto.GameVersionFeature value) {
       if (gameFeatureBuilder_ == null) {
-        if (gameFeature_ != null) {
-          gameFeature_ =
-            proto.GameVersionFeature.newBuilder(gameFeature_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000004) != 0) &&
+          gameFeature_ != null &&
+          gameFeature_ != proto.GameVersionFeature.getDefaultInstance()) {
+          getGameFeatureBuilder().mergeFrom(value);
         } else {
           gameFeature_ = value;
         }
-        onChanged();
       } else {
         gameFeatureBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000004;
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.GameVersionFeature game_feature = 3;</code>
      */
     public Builder clearGameFeature() {
-      if (gameFeatureBuilder_ == null) {
-        gameFeature_ = null;
-        onChanged();
-      } else {
-        gameFeature_ = null;
+      bitField0_ = (bitField0_ & ~0x00000004);
+      gameFeature_ = null;
+      if (gameFeatureBuilder_ != null) {
+        gameFeatureBuilder_.dispose();
         gameFeatureBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.proto.GameVersionFeature game_feature = 3;</code>
      */
     public proto.GameVersionFeature.Builder getGameFeatureBuilder() {
-      
+      bitField0_ |= 0x00000004;
       onChanged();
       return getGameFeatureFieldBuilder().getBuilder();
     }
@@ -707,8 +718,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setIncludedFeatureValue(int value) {
-      
       includedFeature_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -718,8 +729,7 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     public proto.GameVersionFeatureValueIncludedFeatureEnum getIncludedFeature() {
-      @SuppressWarnings("deprecation")
-      proto.GameVersionFeatureValueIncludedFeatureEnum result = proto.GameVersionFeatureValueIncludedFeatureEnum.valueOf(includedFeature_);
+      proto.GameVersionFeatureValueIncludedFeatureEnum result = proto.GameVersionFeatureValueIncludedFeatureEnum.forNumber(includedFeature_);
       return result == null ? proto.GameVersionFeatureValueIncludedFeatureEnum.UNRECOGNIZED : result;
     }
     /**
@@ -731,7 +741,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+      bitField0_ |= 0x00000008;
       includedFeature_ = value.getNumber();
       onChanged();
       return this;
@@ -741,7 +751,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearIncludedFeature() {
-      
+      bitField0_ = (bitField0_ & ~0x00000008);
       includedFeature_ = 0;
       onChanged();
       return this;
@@ -788,11 +798,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setNote(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       note_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -801,8 +809,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearNote() {
-      
       note_ = getDefaultInstance().getNote();
+      bitField0_ = (bitField0_ & ~0x00000010);
       onChanged();
       return this;
     }
@@ -813,12 +821,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setNoteBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       note_ = value;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
@@ -864,11 +870,9 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksum(
         java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -877,8 +881,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
-      
       checksum_ = getDefaultInstance().getChecksum();
+      bitField0_ = (bitField0_ & ~0x00000020);
       onChanged();
       return this;
     }
@@ -889,12 +893,10 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setChecksumBytes(
         com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
       checksum_ = value;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }

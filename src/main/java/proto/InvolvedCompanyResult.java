@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int INVOLVEDCOMPANIES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.InvolvedCompany> involvedcompanies_;
   /**
    * <code>repeated .proto.InvolvedCompany involvedcompanies = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (involvedcompaniesBuilder_ == null) {
         involvedcompanies_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.InvolvedCompanyResult buildPartial() {
       proto.InvolvedCompanyResult result = new proto.InvolvedCompanyResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.InvolvedCompanyResult result) {
       if (involvedcompaniesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           involvedcompanies_ = java.util.Collections.unmodifiableList(involvedcompanies_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.involvedcompanies_ = involvedcompaniesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.InvolvedCompanyResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

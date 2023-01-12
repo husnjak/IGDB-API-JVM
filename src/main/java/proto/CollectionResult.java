@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int COLLECTIONS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Collection> collections_;
   /**
    * <code>repeated .proto.Collection collections = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (collectionsBuilder_ == null) {
         collections_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.CollectionResult buildPartial() {
       proto.CollectionResult result = new proto.CollectionResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.CollectionResult result) {
       if (collectionsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           collections_ = java.util.Collections.unmodifiableList(collections_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.collections_ = collectionsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.CollectionResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

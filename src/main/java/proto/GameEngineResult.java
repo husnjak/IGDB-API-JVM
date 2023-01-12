@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GAMEENGINES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.GameEngine> gameengines_;
   /**
    * <code>repeated .proto.GameEngine gameengines = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (gameenginesBuilder_ == null) {
         gameengines_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.GameEngineResult buildPartial() {
       proto.GameEngineResult result = new proto.GameEngineResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.GameEngineResult result) {
       if (gameenginesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           gameengines_ = java.util.Collections.unmodifiableList(gameengines_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.gameengines_ = gameenginesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.GameEngineResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

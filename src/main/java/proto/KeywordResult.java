@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int KEYWORDS_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.Keyword> keywords_;
   /**
    * <code>repeated .proto.Keyword keywords = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (keywordsBuilder_ == null) {
         keywords_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.KeywordResult buildPartial() {
       proto.KeywordResult result = new proto.KeywordResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.KeywordResult result) {
       if (keywordsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           keywords_ = java.util.Collections.unmodifiableList(keywords_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.keywords_ = keywordsBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.KeywordResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

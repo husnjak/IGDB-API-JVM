@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TESTDUMMIES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.TestDummy> testdummies_;
   /**
    * <code>repeated .proto.TestDummy testdummies = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (testdummiesBuilder_ == null) {
         testdummies_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.TestDummyResult buildPartial() {
       proto.TestDummyResult result = new proto.TestDummyResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.TestDummyResult result) {
       if (testdummiesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           testdummies_ = java.util.Collections.unmodifiableList(testdummies_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.testdummies_ = testdummiesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.TestDummyResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

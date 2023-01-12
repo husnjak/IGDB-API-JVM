@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RESULT_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.MultiQueryResult> result_;
   /**
    * <code>repeated .proto.MultiQueryResult result = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (resultBuilder_ == null) {
         result_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.MultiQueryResultArray buildPartial() {
       proto.MultiQueryResultArray result = new proto.MultiQueryResultArray(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.MultiQueryResultArray result) {
       if (resultBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           result_ = java.util.Collections.unmodifiableList(result_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.result_ = resultBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.MultiQueryResultArray result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override

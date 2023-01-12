@@ -45,6 +45,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LANGUAGESUPPORTTYPES_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<proto.LanguageSupportType> languagesupporttypes_;
   /**
    * <code>repeated .proto.LanguageSupportType languagesupporttypes = 1;</code>
@@ -207,6 +208,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (languagesupporttypesBuilder_ == null) {
         languagesupporttypes_ = java.util.Collections.emptyList();
       } else {
@@ -240,7 +242,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public proto.LanguageSupportTypeResult buildPartial() {
       proto.LanguageSupportTypeResult result = new proto.LanguageSupportTypeResult(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(proto.LanguageSupportTypeResult result) {
       if (languagesupporttypesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           languagesupporttypes_ = java.util.Collections.unmodifiableList(languagesupporttypes_);
@@ -250,8 +258,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.languagesupporttypes_ = languagesupporttypesBuilder_.build();
       }
-      onBuilt();
-      return result;
+    }
+
+    private void buildPartial0(proto.LanguageSupportTypeResult result) {
+      int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override
