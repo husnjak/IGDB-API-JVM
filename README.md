@@ -34,7 +34,7 @@ __Maven__
 <dependency>
   <groupId>io.github.husnjak</groupId>
   <artifactId>igdb-api-jvm</artifactId>
-  <version>1.0.9</version>
+  <version>1.0.10</version>
 </dependency>
 ```
 
@@ -42,7 +42,7 @@ __Gradle__
 
 ``` gradle
 dependencies {
-    implementation 'io.github.husnjak:igdb-api-jvm:1.0.9'
+    implementation 'io.github.husnjak:igdb-api-jvm:1.0.10'
 }
 ```
 
