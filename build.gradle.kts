@@ -53,13 +53,14 @@ sourceSets {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     }
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
+        dependsOn(getTasksByName("generateProto", true))
     }
     withType<GenerateProtoTask> {
         dependsOn(downloadProtoFiles)
@@ -164,6 +165,11 @@ publishing {
 }
 
 signing {
+    val isJitpack = System.getenv("JITPACK") ?: ""
+    if (isJitpack == "true"){
+        return@signing
+    }
+
     if (version.toString().contains("local")) {
         useGpgCmd()
     } else {
