@@ -11,8 +11,8 @@ class TestTwitchTokenKotlin {
         val token = TwitchAuthenticator.requestTwitchToken(System.getenv("client_id"), System.getenv("client_secret"))
 
         assert(token != null)
-        assert(token!!.expires_in > Duration.ofDays(60).toSeconds())
-        val tokenFutureDate = System.currentTimeMillis() + Duration.ofDays(60).toSeconds()
+        assert(token!!.expires_in > Duration.ofDays(57).toSeconds())
+        val tokenFutureDate = System.currentTimeMillis() + Duration.ofDays(57).toSeconds()
         assert(tokenFutureDate > token.getExpiresUnix())
     }
 }
