@@ -16,7 +16,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private Character() {
-    akas_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    akas_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
     countryName_ = "";
     description_ = "";
     games_ = java.util.Collections.emptyList();
@@ -35,11 +36,6 @@ private static final long serialVersionUID = 0L;
     return new Character();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return proto.Igdbproto.internal_static_proto_Character_descriptor;
@@ -66,7 +62,8 @@ private static final long serialVersionUID = 0L;
 
   public static final int AKAS_FIELD_NUMBER = 2;
   @SuppressWarnings("serial")
-  private com.google.protobuf.LazyStringList akas_;
+  private com.google.protobuf.LazyStringArrayList akas_ =
+      com.google.protobuf.LazyStringArrayList.emptyList();
   /**
    * <code>repeated string akas = 2;</code>
    * @return A list containing the akas.
@@ -533,11 +530,13 @@ private static final long serialVersionUID = 0L;
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
+
   public static proto.Character parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
+
   public static proto.Character parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -614,8 +613,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       bitField0_ = 0;
       id_ = 0L;
-      akas_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      akas_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
       countryName_ = "";
       createdAt_ = null;
       if (createdAtBuilder_ != null) {
@@ -679,11 +678,6 @@ private static final long serialVersionUID = 0L;
     }
 
     private void buildPartialRepeatedFields(proto.Character result) {
-      if (((bitField0_ & 0x00000002) != 0)) {
-        akas_ = akas_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000002);
-      }
-      result.akas_ = akas_;
       if (gamesBuilder_ == null) {
         if (((bitField0_ & 0x00000020) != 0)) {
           games_ = java.util.Collections.unmodifiableList(games_);
@@ -699,6 +693,10 @@ private static final long serialVersionUID = 0L;
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.id_ = id_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        akas_.makeImmutable();
+        result.akas_ = akas_;
       }
       if (((from_bitField0_ & 0x00000004) != 0)) {
         result.countryName_ = countryName_;
@@ -741,38 +739,6 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
     private int bitField0_;
 
     private long id_ ;
@@ -790,7 +756,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setId(long value) {
-      
+
       id_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
@@ -807,12 +773,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.LazyStringList akas_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private com.google.protobuf.LazyStringArrayList akas_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
     private void ensureAkasIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!akas_.isModifiable()) {
         akas_ = new com.google.protobuf.LazyStringArrayList(akas_);
-        bitField0_ |= 0x00000002;
-       }
+      }
+      bitField0_ |= 0x00000002;
     }
     /**
      * <code>repeated string akas = 2;</code>
@@ -820,7 +787,8 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ProtocolStringList
         getAkasList() {
-      return akas_.getUnmodifiableView();
+      akas_.makeImmutable();
+      return akas_;
     }
     /**
      * <code>repeated string akas = 2;</code>
@@ -857,6 +825,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) { throw new NullPointerException(); }
       ensureAkasIsMutable();
       akas_.set(index, value);
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -870,6 +839,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) { throw new NullPointerException(); }
       ensureAkasIsMutable();
       akas_.add(value);
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -883,6 +853,7 @@ private static final long serialVersionUID = 0L;
       ensureAkasIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, akas_);
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -891,8 +862,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAkas() {
-      akas_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      akas_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000002);;
       onChanged();
       return this;
     }
@@ -907,6 +879,7 @@ private static final long serialVersionUID = 0L;
       checkByteStringIsUtf8(value);
       ensureAkasIsMutable();
       akas_.add(value);
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }

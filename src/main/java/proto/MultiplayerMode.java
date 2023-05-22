@@ -26,11 +26,6 @@ private static final long serialVersionUID = 0L;
     return new MultiplayerMode();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return proto.Igdbproto.internal_static_proto_MultiplayerMode_descriptor;
@@ -311,11 +306,13 @@ private static final long serialVersionUID = 0L;
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
+
   public static proto.MultiplayerMode parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
+
   public static proto.MultiplayerMode parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -498,38 +495,6 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
     private int bitField0_;
 
     private long id_ ;
@@ -547,7 +512,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setId(long value) {
-      
+
       id_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
@@ -579,7 +544,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCampaigncoop(boolean value) {
-      
+
       campaigncoop_ = value;
       bitField0_ |= 0x00000002;
       onChanged();
@@ -611,7 +576,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDropin(boolean value) {
-      
+
       dropin_ = value;
       bitField0_ |= 0x00000004;
       onChanged();
@@ -762,7 +727,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLancoop(boolean value) {
-      
+
       lancoop_ = value;
       bitField0_ |= 0x00000010;
       onChanged();
@@ -794,7 +759,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOfflinecoop(boolean value) {
-      
+
       offlinecoop_ = value;
       bitField0_ |= 0x00000020;
       onChanged();
@@ -826,7 +791,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOfflinecoopmax(int value) {
-      
+
       offlinecoopmax_ = value;
       bitField0_ |= 0x00000040;
       onChanged();
@@ -858,7 +823,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOfflinemax(int value) {
-      
+
       offlinemax_ = value;
       bitField0_ |= 0x00000080;
       onChanged();
@@ -890,7 +855,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOnlinecoop(boolean value) {
-      
+
       onlinecoop_ = value;
       bitField0_ |= 0x00000100;
       onChanged();
@@ -922,7 +887,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOnlinecoopmax(int value) {
-      
+
       onlinecoopmax_ = value;
       bitField0_ |= 0x00000200;
       onChanged();
@@ -954,7 +919,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOnlinemax(int value) {
-      
+
       onlinemax_ = value;
       bitField0_ |= 0x00000400;
       onChanged();
@@ -1105,7 +1070,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSplitscreen(boolean value) {
-      
+
       splitscreen_ = value;
       bitField0_ |= 0x00001000;
       onChanged();
@@ -1137,7 +1102,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSplitscreenonline(boolean value) {
-      
+
       splitscreenonline_ = value;
       bitField0_ |= 0x00002000;
       onChanged();

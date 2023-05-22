@@ -4,19 +4,20 @@
 package proto;
 
 /**
- * Protobuf type {@code proto.GameLocalization}
+ * Protobuf type {@code proto.ReleaseDateStatus}
  */
-public final class GameLocalization extends
+public final class ReleaseDateStatus extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:proto.GameLocalization)
-    GameLocalizationOrBuilder {
+    // @@protoc_insertion_point(message_implements:proto.ReleaseDateStatus)
+    ReleaseDateStatusOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use GameLocalization.newBuilder() to construct.
-  private GameLocalization(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use ReleaseDateStatus.newBuilder() to construct.
+  private ReleaseDateStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private GameLocalization() {
+  private ReleaseDateStatus() {
     name_ = "";
+    description_ = "";
     checksum_ = "";
   }
 
@@ -24,20 +25,20 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new GameLocalization();
+    return new ReleaseDateStatus();
   }
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return proto.Igdbproto.internal_static_proto_GameLocalization_descriptor;
+    return proto.Igdbproto.internal_static_proto_ReleaseDateStatus_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return proto.Igdbproto.internal_static_proto_GameLocalization_fieldAccessorTable
+    return proto.Igdbproto.internal_static_proto_ReleaseDateStatus_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            proto.GameLocalization.class, proto.GameLocalization.Builder.class);
+            proto.ReleaseDateStatus.class, proto.ReleaseDateStatus.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
@@ -90,88 +91,49 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int COVER_FIELD_NUMBER = 3;
-  private proto.Cover cover_;
+  public static final int DESCRIPTION_FIELD_NUMBER = 3;
+  @SuppressWarnings("serial")
+  private volatile java.lang.Object description_ = "";
   /**
-   * <code>.proto.Cover cover = 3;</code>
-   * @return Whether the cover field is set.
+   * <code>string description = 3;</code>
+   * @return The description.
    */
   @java.lang.Override
-  public boolean hasCover() {
-    return cover_ != null;
+  public java.lang.String getDescription() {
+    java.lang.Object ref = description_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      description_ = s;
+      return s;
+    }
   }
   /**
-   * <code>.proto.Cover cover = 3;</code>
-   * @return The cover.
+   * <code>string description = 3;</code>
+   * @return The bytes for description.
    */
   @java.lang.Override
-  public proto.Cover getCover() {
-    return cover_ == null ? proto.Cover.getDefaultInstance() : cover_;
-  }
-  /**
-   * <code>.proto.Cover cover = 3;</code>
-   */
-  @java.lang.Override
-  public proto.CoverOrBuilder getCoverOrBuilder() {
-    return cover_ == null ? proto.Cover.getDefaultInstance() : cover_;
-  }
-
-  public static final int GAME_FIELD_NUMBER = 4;
-  private proto.Game game_;
-  /**
-   * <code>.proto.Game game = 4;</code>
-   * @return Whether the game field is set.
-   */
-  @java.lang.Override
-  public boolean hasGame() {
-    return game_ != null;
-  }
-  /**
-   * <code>.proto.Game game = 4;</code>
-   * @return The game.
-   */
-  @java.lang.Override
-  public proto.Game getGame() {
-    return game_ == null ? proto.Game.getDefaultInstance() : game_;
-  }
-  /**
-   * <code>.proto.Game game = 4;</code>
-   */
-  @java.lang.Override
-  public proto.GameOrBuilder getGameOrBuilder() {
-    return game_ == null ? proto.Game.getDefaultInstance() : game_;
+  public com.google.protobuf.ByteString
+      getDescriptionBytes() {
+    java.lang.Object ref = description_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      description_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
-  public static final int REGION_FIELD_NUMBER = 5;
-  private proto.Region region_;
-  /**
-   * <code>.proto.Region region = 5;</code>
-   * @return Whether the region field is set.
-   */
-  @java.lang.Override
-  public boolean hasRegion() {
-    return region_ != null;
-  }
-  /**
-   * <code>.proto.Region region = 5;</code>
-   * @return The region.
-   */
-  @java.lang.Override
-  public proto.Region getRegion() {
-    return region_ == null ? proto.Region.getDefaultInstance() : region_;
-  }
-  /**
-   * <code>.proto.Region region = 5;</code>
-   */
-  @java.lang.Override
-  public proto.RegionOrBuilder getRegionOrBuilder() {
-    return region_ == null ? proto.Region.getDefaultInstance() : region_;
-  }
-
-  public static final int CREATED_AT_FIELD_NUMBER = 6;
+  public static final int CREATED_AT_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp createdAt_;
   /**
-   * <code>.google.protobuf.Timestamp created_at = 6;</code>
+   * <code>.google.protobuf.Timestamp created_at = 4;</code>
    * @return Whether the createdAt field is set.
    */
   @java.lang.Override
@@ -179,7 +141,7 @@ private static final long serialVersionUID = 0L;
     return createdAt_ != null;
   }
   /**
-   * <code>.google.protobuf.Timestamp created_at = 6;</code>
+   * <code>.google.protobuf.Timestamp created_at = 4;</code>
    * @return The createdAt.
    */
   @java.lang.Override
@@ -187,17 +149,17 @@ private static final long serialVersionUID = 0L;
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
   /**
-   * <code>.google.protobuf.Timestamp created_at = 6;</code>
+   * <code>.google.protobuf.Timestamp created_at = 4;</code>
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
     return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
   }
 
-  public static final int UPDATED_AT_FIELD_NUMBER = 7;
+  public static final int UPDATED_AT_FIELD_NUMBER = 5;
   private com.google.protobuf.Timestamp updatedAt_;
   /**
-   * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+   * <code>.google.protobuf.Timestamp updated_at = 5;</code>
    * @return Whether the updatedAt field is set.
    */
   @java.lang.Override
@@ -205,7 +167,7 @@ private static final long serialVersionUID = 0L;
     return updatedAt_ != null;
   }
   /**
-   * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+   * <code>.google.protobuf.Timestamp updated_at = 5;</code>
    * @return The updatedAt.
    */
   @java.lang.Override
@@ -213,18 +175,18 @@ private static final long serialVersionUID = 0L;
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
   /**
-   * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+   * <code>.google.protobuf.Timestamp updated_at = 5;</code>
    */
   @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
     return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
   }
 
-  public static final int CHECKSUM_FIELD_NUMBER = 8;
+  public static final int CHECKSUM_FIELD_NUMBER = 6;
   @SuppressWarnings("serial")
   private volatile java.lang.Object checksum_ = "";
   /**
-   * <code>string checksum = 8;</code>
+   * <code>string checksum = 6;</code>
    * @return The checksum.
    */
   @java.lang.Override
@@ -241,7 +203,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string checksum = 8;</code>
+   * <code>string checksum = 6;</code>
    * @return The bytes for checksum.
    */
   @java.lang.Override
@@ -259,44 +221,44 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static proto.GameLocalization parseFrom(byte[] data)
+  public static proto.ReleaseDateStatus parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static proto.GameLocalization parseFrom(java.io.InputStream input)
+  public static proto.ReleaseDateStatus parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -304,26 +266,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static proto.GameLocalization parseDelimitedFrom(java.io.InputStream input)
+  public static proto.ReleaseDateStatus parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static proto.GameLocalization parseDelimitedFrom(
+  public static proto.ReleaseDateStatus parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static proto.GameLocalization parseFrom(
+  public static proto.ReleaseDateStatus parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -336,7 +298,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(proto.GameLocalization prototype) {
+  public static Builder newBuilder(proto.ReleaseDateStatus prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -352,26 +314,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code proto.GameLocalization}
+   * Protobuf type {@code proto.ReleaseDateStatus}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:proto.GameLocalization)
-      proto.GameLocalizationOrBuilder {
+      // @@protoc_insertion_point(builder_implements:proto.ReleaseDateStatus)
+      proto.ReleaseDateStatusOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return proto.Igdbproto.internal_static_proto_GameLocalization_descriptor;
+      return proto.Igdbproto.internal_static_proto_ReleaseDateStatus_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return proto.Igdbproto.internal_static_proto_GameLocalization_fieldAccessorTable
+      return proto.Igdbproto.internal_static_proto_ReleaseDateStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              proto.GameLocalization.class, proto.GameLocalization.Builder.class);
+              proto.ReleaseDateStatus.class, proto.ReleaseDateStatus.Builder.class);
     }
 
-    // Construct using proto.GameLocalization.newBuilder()
+    // Construct using proto.ReleaseDateStatus.newBuilder()
     private Builder() {
 
     }
@@ -387,21 +349,7 @@ private static final long serialVersionUID = 0L;
       bitField0_ = 0;
       id_ = 0L;
       name_ = "";
-      cover_ = null;
-      if (coverBuilder_ != null) {
-        coverBuilder_.dispose();
-        coverBuilder_ = null;
-      }
-      game_ = null;
-      if (gameBuilder_ != null) {
-        gameBuilder_.dispose();
-        gameBuilder_ = null;
-      }
-      region_ = null;
-      if (regionBuilder_ != null) {
-        regionBuilder_.dispose();
-        regionBuilder_ = null;
-      }
+      description_ = "";
       createdAt_ = null;
       if (createdAtBuilder_ != null) {
         createdAtBuilder_.dispose();
@@ -419,17 +367,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return proto.Igdbproto.internal_static_proto_GameLocalization_descriptor;
+      return proto.Igdbproto.internal_static_proto_ReleaseDateStatus_descriptor;
     }
 
     @java.lang.Override
-    public proto.GameLocalization getDefaultInstanceForType() {
-      return proto.GameLocalization.getDefaultInstance();
+    public proto.ReleaseDateStatus getDefaultInstanceForType() {
+      return proto.ReleaseDateStatus.getDefaultInstance();
     }
 
     @java.lang.Override
-    public proto.GameLocalization build() {
-      proto.GameLocalization result = buildPartial();
+    public proto.ReleaseDateStatus build() {
+      proto.ReleaseDateStatus result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -437,14 +385,14 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public proto.GameLocalization buildPartial() {
-      proto.GameLocalization result = new proto.GameLocalization(this);
+    public proto.ReleaseDateStatus buildPartial() {
+      proto.ReleaseDateStatus result = new proto.ReleaseDateStatus(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(proto.GameLocalization result) {
+    private void buildPartial0(proto.ReleaseDateStatus result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.id_ = id_;
@@ -453,31 +401,19 @@ private static final long serialVersionUID = 0L;
         result.name_ = name_;
       }
       if (((from_bitField0_ & 0x00000004) != 0)) {
-        result.cover_ = coverBuilder_ == null
-            ? cover_
-            : coverBuilder_.build();
+        result.description_ = description_;
       }
       if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.game_ = gameBuilder_ == null
-            ? game_
-            : gameBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
-        result.region_ = regionBuilder_ == null
-            ? region_
-            : regionBuilder_.build();
-      }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
         result.createdAt_ = createdAtBuilder_ == null
             ? createdAt_
             : createdAtBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
+      if (((from_bitField0_ & 0x00000010) != 0)) {
         result.updatedAt_ = updatedAtBuilder_ == null
             ? updatedAt_
             : updatedAtBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000080) != 0)) {
+      if (((from_bitField0_ & 0x00000020) != 0)) {
         result.checksum_ = checksum_;
       }
     }
@@ -588,375 +524,90 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private proto.Cover cover_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Cover, proto.Cover.Builder, proto.CoverOrBuilder> coverBuilder_;
+    private java.lang.Object description_ = "";
     /**
-     * <code>.proto.Cover cover = 3;</code>
-     * @return Whether the cover field is set.
+     * <code>string description = 3;</code>
+     * @return The description.
      */
-    public boolean hasCover() {
-      return ((bitField0_ & 0x00000004) != 0);
-    }
-    /**
-     * <code>.proto.Cover cover = 3;</code>
-     * @return The cover.
-     */
-    public proto.Cover getCover() {
-      if (coverBuilder_ == null) {
-        return cover_ == null ? proto.Cover.getDefaultInstance() : cover_;
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        description_ = s;
+        return s;
       } else {
-        return coverBuilder_.getMessage();
+        return (java.lang.String) ref;
       }
     }
     /**
-     * <code>.proto.Cover cover = 3;</code>
+     * <code>string description = 3;</code>
+     * @return The bytes for description.
      */
-    public Builder setCover(proto.Cover value) {
-      if (coverBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        cover_ = value;
+    public com.google.protobuf.ByteString
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        description_ = b;
+        return b;
       } else {
-        coverBuilder_.setMessage(value);
+        return (com.google.protobuf.ByteString) ref;
       }
+    }
+    /**
+     * <code>string description = 3;</code>
+     * @param value The description to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDescription(
+        java.lang.String value) {
+      if (value == null) { throw new NullPointerException(); }
+      description_ = value;
       bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
     /**
-     * <code>.proto.Cover cover = 3;</code>
+     * <code>string description = 3;</code>
+     * @return This builder for chaining.
      */
-    public Builder setCover(
-        proto.Cover.Builder builderForValue) {
-      if (coverBuilder_ == null) {
-        cover_ = builderForValue.build();
-      } else {
-        coverBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000004;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Cover cover = 3;</code>
-     */
-    public Builder mergeCover(proto.Cover value) {
-      if (coverBuilder_ == null) {
-        if (((bitField0_ & 0x00000004) != 0) &&
-          cover_ != null &&
-          cover_ != proto.Cover.getDefaultInstance()) {
-          getCoverBuilder().mergeFrom(value);
-        } else {
-          cover_ = value;
-        }
-      } else {
-        coverBuilder_.mergeFrom(value);
-      }
-      bitField0_ |= 0x00000004;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Cover cover = 3;</code>
-     */
-    public Builder clearCover() {
+    public Builder clearDescription() {
+      description_ = getDefaultInstance().getDescription();
       bitField0_ = (bitField0_ & ~0x00000004);
-      cover_ = null;
-      if (coverBuilder_ != null) {
-        coverBuilder_.dispose();
-        coverBuilder_ = null;
-      }
       onChanged();
       return this;
     }
     /**
-     * <code>.proto.Cover cover = 3;</code>
+     * <code>string description = 3;</code>
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
-    public proto.Cover.Builder getCoverBuilder() {
+    public Builder setDescriptionBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) { throw new NullPointerException(); }
+      checkByteStringIsUtf8(value);
+      description_ = value;
       bitField0_ |= 0x00000004;
       onChanged();
-      return getCoverFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.proto.Cover cover = 3;</code>
-     */
-    public proto.CoverOrBuilder getCoverOrBuilder() {
-      if (coverBuilder_ != null) {
-        return coverBuilder_.getMessageOrBuilder();
-      } else {
-        return cover_ == null ?
-            proto.Cover.getDefaultInstance() : cover_;
-      }
-    }
-    /**
-     * <code>.proto.Cover cover = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Cover, proto.Cover.Builder, proto.CoverOrBuilder> 
-        getCoverFieldBuilder() {
-      if (coverBuilder_ == null) {
-        coverBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            proto.Cover, proto.Cover.Builder, proto.CoverOrBuilder>(
-                getCover(),
-                getParentForChildren(),
-                isClean());
-        cover_ = null;
-      }
-      return coverBuilder_;
-    }
-
-    private proto.Game game_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Game, proto.Game.Builder, proto.GameOrBuilder> gameBuilder_;
-    /**
-     * <code>.proto.Game game = 4;</code>
-     * @return Whether the game field is set.
-     */
-    public boolean hasGame() {
-      return ((bitField0_ & 0x00000008) != 0);
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     * @return The game.
-     */
-    public proto.Game getGame() {
-      if (gameBuilder_ == null) {
-        return game_ == null ? proto.Game.getDefaultInstance() : game_;
-      } else {
-        return gameBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public Builder setGame(proto.Game value) {
-      if (gameBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        game_ = value;
-      } else {
-        gameBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
       return this;
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public Builder setGame(
-        proto.Game.Builder builderForValue) {
-      if (gameBuilder_ == null) {
-        game_ = builderForValue.build();
-      } else {
-        gameBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public Builder mergeGame(proto.Game value) {
-      if (gameBuilder_ == null) {
-        if (((bitField0_ & 0x00000008) != 0) &&
-          game_ != null &&
-          game_ != proto.Game.getDefaultInstance()) {
-          getGameBuilder().mergeFrom(value);
-        } else {
-          game_ = value;
-        }
-      } else {
-        gameBuilder_.mergeFrom(value);
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public Builder clearGame() {
-      bitField0_ = (bitField0_ & ~0x00000008);
-      game_ = null;
-      if (gameBuilder_ != null) {
-        gameBuilder_.dispose();
-        gameBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public proto.Game.Builder getGameBuilder() {
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return getGameFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    public proto.GameOrBuilder getGameOrBuilder() {
-      if (gameBuilder_ != null) {
-        return gameBuilder_.getMessageOrBuilder();
-      } else {
-        return game_ == null ?
-            proto.Game.getDefaultInstance() : game_;
-      }
-    }
-    /**
-     * <code>.proto.Game game = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Game, proto.Game.Builder, proto.GameOrBuilder> 
-        getGameFieldBuilder() {
-      if (gameBuilder_ == null) {
-        gameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            proto.Game, proto.Game.Builder, proto.GameOrBuilder>(
-                getGame(),
-                getParentForChildren(),
-                isClean());
-        game_ = null;
-      }
-      return gameBuilder_;
-    }
-
-    private proto.Region region_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Region, proto.Region.Builder, proto.RegionOrBuilder> regionBuilder_;
-    /**
-     * <code>.proto.Region region = 5;</code>
-     * @return Whether the region field is set.
-     */
-    public boolean hasRegion() {
-      return ((bitField0_ & 0x00000010) != 0);
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     * @return The region.
-     */
-    public proto.Region getRegion() {
-      if (regionBuilder_ == null) {
-        return region_ == null ? proto.Region.getDefaultInstance() : region_;
-      } else {
-        return regionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public Builder setRegion(proto.Region value) {
-      if (regionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        region_ = value;
-      } else {
-        regionBuilder_.setMessage(value);
-      }
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public Builder setRegion(
-        proto.Region.Builder builderForValue) {
-      if (regionBuilder_ == null) {
-        region_ = builderForValue.build();
-      } else {
-        regionBuilder_.setMessage(builderForValue.build());
-      }
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public Builder mergeRegion(proto.Region value) {
-      if (regionBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0) &&
-          region_ != null &&
-          region_ != proto.Region.getDefaultInstance()) {
-          getRegionBuilder().mergeFrom(value);
-        } else {
-          region_ = value;
-        }
-      } else {
-        regionBuilder_.mergeFrom(value);
-      }
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public Builder clearRegion() {
-      bitField0_ = (bitField0_ & ~0x00000010);
-      region_ = null;
-      if (regionBuilder_ != null) {
-        regionBuilder_.dispose();
-        regionBuilder_ = null;
-      }
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public proto.Region.Builder getRegionBuilder() {
-      bitField0_ |= 0x00000010;
-      onChanged();
-      return getRegionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    public proto.RegionOrBuilder getRegionOrBuilder() {
-      if (regionBuilder_ != null) {
-        return regionBuilder_.getMessageOrBuilder();
-      } else {
-        return region_ == null ?
-            proto.Region.getDefaultInstance() : region_;
-      }
-    }
-    /**
-     * <code>.proto.Region region = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        proto.Region, proto.Region.Builder, proto.RegionOrBuilder> 
-        getRegionFieldBuilder() {
-      if (regionBuilder_ == null) {
-        regionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            proto.Region, proto.Region.Builder, proto.RegionOrBuilder>(
-                getRegion(),
-                getParentForChildren(),
-                isClean());
-        region_ = null;
-      }
-      return regionBuilder_;
     }
 
     private com.google.protobuf.Timestamp createdAt_;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createdAtBuilder_;
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      * @return Whether the createdAt field is set.
      */
     public boolean hasCreatedAt() {
-      return ((bitField0_ & 0x00000020) != 0);
+      return ((bitField0_ & 0x00000008) != 0);
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      * @return The createdAt.
      */
     public com.google.protobuf.Timestamp getCreatedAt() {
@@ -967,7 +618,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public Builder setCreatedAt(com.google.protobuf.Timestamp value) {
       if (createdAtBuilder_ == null) {
@@ -978,12 +629,12 @@ private static final long serialVersionUID = 0L;
       } else {
         createdAtBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public Builder setCreatedAt(
         com.google.protobuf.Timestamp.Builder builderForValue) {
@@ -992,16 +643,16 @@ private static final long serialVersionUID = 0L;
       } else {
         createdAtBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
       if (createdAtBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0) &&
+        if (((bitField0_ & 0x00000008) != 0) &&
           createdAt_ != null &&
           createdAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
           getCreatedAtBuilder().mergeFrom(value);
@@ -1011,15 +662,15 @@ private static final long serialVersionUID = 0L;
       } else {
         createdAtBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public Builder clearCreatedAt() {
-      bitField0_ = (bitField0_ & ~0x00000020);
+      bitField0_ = (bitField0_ & ~0x00000008);
       createdAt_ = null;
       if (createdAtBuilder_ != null) {
         createdAtBuilder_.dispose();
@@ -1029,15 +680,15 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000008;
       onChanged();
       return getCreatedAtFieldBuilder().getBuilder();
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
       if (createdAtBuilder_ != null) {
@@ -1048,7 +699,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp created_at = 6;</code>
+     * <code>.google.protobuf.Timestamp created_at = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
@@ -1068,14 +719,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> updatedAtBuilder_;
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      * @return Whether the updatedAt field is set.
      */
     public boolean hasUpdatedAt() {
-      return ((bitField0_ & 0x00000040) != 0);
+      return ((bitField0_ & 0x00000010) != 0);
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      * @return The updatedAt.
      */
     public com.google.protobuf.Timestamp getUpdatedAt() {
@@ -1086,7 +737,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public Builder setUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
@@ -1097,12 +748,12 @@ private static final long serialVersionUID = 0L;
       } else {
         updatedAtBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public Builder setUpdatedAt(
         com.google.protobuf.Timestamp.Builder builderForValue) {
@@ -1111,16 +762,16 @@ private static final long serialVersionUID = 0L;
       } else {
         updatedAtBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public Builder mergeUpdatedAt(com.google.protobuf.Timestamp value) {
       if (updatedAtBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0) &&
+        if (((bitField0_ & 0x00000010) != 0) &&
           updatedAt_ != null &&
           updatedAt_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
           getUpdatedAtBuilder().mergeFrom(value);
@@ -1130,15 +781,15 @@ private static final long serialVersionUID = 0L;
       } else {
         updatedAtBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       onChanged();
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public Builder clearUpdatedAt() {
-      bitField0_ = (bitField0_ & ~0x00000040);
+      bitField0_ = (bitField0_ & ~0x00000010);
       updatedAt_ = null;
       if (updatedAtBuilder_ != null) {
         updatedAtBuilder_.dispose();
@@ -1148,15 +799,15 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public com.google.protobuf.Timestamp.Builder getUpdatedAtBuilder() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000010;
       onChanged();
       return getUpdatedAtFieldBuilder().getBuilder();
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
       if (updatedAtBuilder_ != null) {
@@ -1167,7 +818,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.Timestamp updated_at = 7;</code>
+     * <code>.google.protobuf.Timestamp updated_at = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
@@ -1185,7 +836,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object checksum_ = "";
     /**
-     * <code>string checksum = 8;</code>
+     * <code>string checksum = 6;</code>
      * @return The checksum.
      */
     public java.lang.String getChecksum() {
@@ -1201,7 +852,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string checksum = 8;</code>
+     * <code>string checksum = 6;</code>
      * @return The bytes for checksum.
      */
     public com.google.protobuf.ByteString
@@ -1218,7 +869,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string checksum = 8;</code>
+     * <code>string checksum = 6;</code>
      * @param value The checksum to set.
      * @return This builder for chaining.
      */
@@ -1226,22 +877,22 @@ private static final long serialVersionUID = 0L;
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
       checksum_ = value;
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
     /**
-     * <code>string checksum = 8;</code>
+     * <code>string checksum = 6;</code>
      * @return This builder for chaining.
      */
     public Builder clearChecksum() {
       checksum_ = getDefaultInstance().getChecksum();
-      bitField0_ = (bitField0_ & ~0x00000080);
+      bitField0_ = (bitField0_ & ~0x00000020);
       onChanged();
       return this;
     }
     /**
-     * <code>string checksum = 8;</code>
+     * <code>string checksum = 6;</code>
      * @param value The bytes for checksum to set.
      * @return This builder for chaining.
      */
@@ -1250,7 +901,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
       checksum_ = value;
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -1267,23 +918,23 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:proto.GameLocalization)
+    // @@protoc_insertion_point(builder_scope:proto.ReleaseDateStatus)
   }
 
-  // @@protoc_insertion_point(class_scope:proto.GameLocalization)
-  private static final proto.GameLocalization DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:proto.ReleaseDateStatus)
+  private static final proto.ReleaseDateStatus DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new proto.GameLocalization();
+    DEFAULT_INSTANCE = new proto.ReleaseDateStatus();
   }
 
-  public static proto.GameLocalization getDefaultInstance() {
+  public static proto.ReleaseDateStatus getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<GameLocalization>
-      PARSER = new com.google.protobuf.AbstractParser<GameLocalization>() {
+  private static final com.google.protobuf.Parser<ReleaseDateStatus>
+      PARSER = new com.google.protobuf.AbstractParser<ReleaseDateStatus>() {
     @java.lang.Override
-    public GameLocalization parsePartialFrom(
+    public ReleaseDateStatus parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1302,17 +953,17 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public static com.google.protobuf.Parser<GameLocalization> parser() {
+  public static com.google.protobuf.Parser<ReleaseDateStatus> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<GameLocalization> getParserForType() {
+  public com.google.protobuf.Parser<ReleaseDateStatus> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public proto.GameLocalization getDefaultInstanceForType() {
+  public proto.ReleaseDateStatus getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
