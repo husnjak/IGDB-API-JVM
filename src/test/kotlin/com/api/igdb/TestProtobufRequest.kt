@@ -98,7 +98,7 @@ class TestProtobufRequest {
     @Test
     fun testGames() {
         val result = wrapper.games(APICalypse()
-                .fields("*,age_ratings.*,alternative_names.*,cover.*, external_games.*,franchises.*, genres.*, screenshots.*, videos.*")
+                .fields("*, age_ratings.*, alternative_names.*, cover.*, external_games.*, franchises.*, genres.*, screenshots.*, videos.*")
                 .where("id = 1942"))
         assert(result.isNotEmpty())
         val game = result.first()

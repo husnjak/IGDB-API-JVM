@@ -420,6 +420,16 @@ public final class Igdbproto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_proto_ReleaseDate_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_ReleaseDateStatusResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_ReleaseDateStatusResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_proto_ReleaseDateStatus_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_proto_ReleaseDateStatus_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_ScreenshotResult_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -815,7 +825,7 @@ public final class Igdbproto {
       "ogle.protobuf.Timestamp\022.\n\nupdated_at\030\006 " +
       "\001(\0132\032.google.protobuf.Timestamp\022\020\n\010check" +
       "sum\030\007 \001(\t\"=\n\021ReleaseDateResult\022(\n\014releas" +
-      "edates\030\001 \003(\0132\022.proto.ReleaseDate\"\374\002\n\013Rel" +
+      "edates\030\001 \003(\0132\022.proto.ReleaseDate\"\246\003\n\013Rel" +
       "easeDate\022\n\n\002id\030\001 \001(\004\0229\n\010category\030\002 \001(\0162\'" +
       ".proto.DateFormatChangeDateCategoryEnum\022" +
       ".\n\ncreated_at\030\003 \001(\0132\032.google.protobuf.Ti" +
@@ -825,181 +835,189 @@ public final class Igdbproto {
       "2\017.proto.Platform\022\'\n\006region\030\t \001(\0162\027.prot" +
       "o.RegionRegionEnum\022.\n\nupdated_at\030\n \001(\0132\032" +
       ".google.protobuf.Timestamp\022\t\n\001y\030\013 \001(\005\022\020\n" +
-      "\010checksum\030\014 \001(\t\":\n\020ScreenshotResult\022&\n\013s" +
-      "creenshots\030\001 \003(\0132\021.proto.Screenshot\"\254\001\n\n" +
-      "Screenshot\022\n\n\002id\030\001 \001(\004\022\025\n\ralpha_channel\030" +
-      "\002 \001(\010\022\020\n\010animated\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013." +
-      "proto.Game\022\016\n\006height\030\005 \001(\005\022\020\n\010image_id\030\006" +
-      " \001(\t\022\013\n\003url\030\007 \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010chec" +
-      "ksum\030\t \001(\t\"/\n\014SearchResult\022\037\n\010searches\030\001" +
-      " \003(\0132\r.proto.Search\"\203\003\n\006Search\022\n\n\002id\030\001 \001" +
-      "(\004\022\030\n\020alternative_name\030\002 \001(\t\022#\n\tcharacte" +
-      "r\030\003 \001(\0132\020.proto.Character\022%\n\ncollection\030" +
-      "\004 \001(\0132\021.proto.Collection\022\037\n\007company\030\005 \001(" +
-      "\0132\016.proto.Company\022\023\n\013description\030\006 \001(\t\022\031" +
-      "\n\004game\030\007 \001(\0132\013.proto.Game\022\014\n\004name\030\010 \001(\t\022" +
-      "!\n\010platform\030\t \001(\0132\017.proto.Platform\0220\n\014pu" +
-      "blished_at\030\n \001(\0132\032.google.protobuf.Times" +
-      "tamp\022$\n\ntest_dummy\030\013 \001(\0132\020.proto.TestDum" +
-      "my\022\033\n\005theme\030\014 \001(\0132\014.proto.Theme\022\020\n\010check" +
-      "sum\030\r \001(\t\"8\n\017TestDummyResult\022%\n\013testdumm" +
-      "ies\030\001 \003(\0132\020.proto.TestDummy\"\345\003\n\tTestDumm" +
-      "y\022\n\n\002id\030\001 \001(\004\022\022\n\nbool_value\030\002 \001(\010\022.\n\ncre" +
-      "ated_at\030\003 \001(\0132\032.google.protobuf.Timestam" +
-      "p\022/\n\tenum_test\030\004 \001(\0162\034.proto.TestDummyEn" +
-      "umTestEnum\022\023\n\013float_value\030\005 \001(\001\022\031\n\004game\030" +
-      "\006 \001(\0132\013.proto.Game\022\025\n\rinteger_array\030\007 \003(" +
-      "\005\022\025\n\rinteger_value\030\010 \001(\005\022\014\n\004name\030\t \001(\t\022\031" +
-      "\n\021new_integer_value\030\n \001(\005\022\017\n\007private\030\013 \001" +
-      "(\010\022\014\n\004slug\030\014 \001(\t\022\024\n\014string_array\030\r \003(\t\022&" +
-      "\n\014test_dummies\030\016 \003(\0132\020.proto.TestDummy\022$" +
-      "\n\ntest_dummy\030\017 \001(\0132\020.proto.TestDummy\022.\n\n" +
-      "updated_at\030\020 \001(\0132\032.google.protobuf.Times" +
-      "tamp\022\013\n\003url\030\021 \001(\t\022\020\n\010checksum\030\022 \001(\t\"+\n\013T" +
-      "hemeResult\022\034\n\006themes\030\001 \003(\0132\014.proto.Theme" +
-      "\"\256\001\n\005Theme\022\n\n\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001" +
-      "(\0132\032.google.protobuf.Timestamp\022\014\n\004name\030\003" +
-      " \001(\t\022\014\n\004slug\030\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032" +
-      ".google.protobuf.Timestamp\022\013\n\003url\030\006 \001(\t\022" +
-      "\020\n\010checksum\030\007 \001(\t\"1\n\rWebsiteResult\022 \n\010we" +
-      "bsites\030\001 \003(\0132\016.proto.Website\"\216\001\n\007Website" +
-      "\022\n\n\002id\030\001 \001(\004\022,\n\010category\030\002 \001(\0162\032.proto.W" +
-      "ebsiteCategoryEnum\022\031\n\004game\030\003 \001(\0132\013.proto" +
-      ".Game\022\017\n\007trusted\030\004 \001(\010\022\013\n\003url\030\005 \001(\t\022\020\n\010c" +
-      "hecksum\030\006 \001(\t*}\n\025AgeRatingCategoryEnum\022\033" +
-      "\n\027AGERATING_CATEGORY_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n" +
-      "\004PEGI\020\002\022\010\n\004CERO\020\003\022\007\n\003USK\020\004\022\010\n\004GRAC\020\005\022\r\n\t" +
-      "CLASS_IND\020\006\022\007\n\003ACB\020\007*\255\004\n\023AgeRatingRating" +
-      "Enum\022\031\n\025AGERATING_RATING_NULL\020\000\022\t\n\005THREE" +
-      "\020\001\022\t\n\005SEVEN\020\002\022\n\n\006TWELVE\020\003\022\013\n\007SIXTEEN\020\004\022\014" +
-      "\n\010EIGHTEEN\020\005\022\006\n\002RP\020\006\022\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E" +
-      "10\020\t\022\005\n\001T\020\n\022\005\n\001M\020\013\022\006\n\002AO\020\014\022\n\n\006CERO_A\020\r\022\n" +
-      "\n\006CERO_B\020\016\022\n\n\006CERO_C\020\017\022\n\n\006CERO_D\020\020\022\n\n\006CE" +
-      "RO_Z\020\021\022\t\n\005USK_0\020\022\022\t\n\005USK_6\020\023\022\n\n\006USK_12\020\024" +
-      "\022\n\n\006USK_18\020\025\022\014\n\010GRAC_ALL\020\026\022\017\n\013GRAC_TWELV" +
-      "E\020\027\022\020\n\014GRAC_FIFTEEN\020\030\022\021\n\rGRAC_EIGHTEEN\020\031",
-      "\022\020\n\014GRAC_TESTING\020\032\022\017\n\013CLASS_IND_L\020\033\022\021\n\rC" +
-      "LASS_IND_TEN\020\034\022\024\n\020CLASS_IND_TWELVE\020\035\022\026\n\022" +
-      "CLASS_IND_FOURTEEN\020\036\022\025\n\021CLASS_IND_SIXTEE" +
-      "N\020\037\022\026\n\022CLASS_IND_EIGHTEEN\020 \022\t\n\005ACB_G\020!\022\n" +
-      "\n\006ACB_PG\020\"\022\t\n\005ACB_M\020#\022\014\n\010ACB_MA15\020$\022\013\n\007A" +
-      "CB_R18\020%\022\n\n\006ACB_RC\020&*\336\021\n\'AgeRatingConten" +
-      "tDescriptionCategoryEnum\022-\n)AGERATINGCON" +
-      "TENTDESCRIPTION_CATEGORY_NULL\020\000\022\032\n\026ESRB_" +
-      "ALCOHOL_REFERENCE\020\001\022\027\n\023ESRB_ANIMATED_BLO" +
-      "OD\020\002\022\016\n\nESRB_BLOOD\020\003\022\027\n\023ESRB_BLOOD_AND_G" +
-      "ORE\020\004\022\031\n\025ESRB_CARTOON_VIOLENCE\020\005\022\027\n\023ESRB" +
-      "_COMIC_MISCHIEF\020\006\022\024\n\020ESRB_CRUDE_HUMOR\020\007\022" +
-      "\027\n\023ESRB_DRUG_REFERENCE\020\010\022\031\n\025ESRB_FANTASY" +
-      "_VIOLENCE\020\t\022\031\n\025ESRB_INTENSE_VIOLENCE\020\n\022\021" +
-      "\n\rESRB_LANGUAGE\020\013\022\017\n\013ESRB_LYRICS\020\014\022\025\n\021ES" +
-      "RB_MATURE_HUMOR\020\r\022\017\n\013ESRB_NUDITY\020\016\022\027\n\023ES" +
-      "RB_PARTIAL_NUDITY\020\017\022\026\n\022ESRB_REAL_GAMBLIN" +
-      "G\020\020\022\027\n\023ESRB_SEXUAL_CONTENT\020\021\022\026\n\022ESRB_SEX" +
-      "UAL_THEMES\020\022\022\030\n\024ESRB_SEXUAL_VIOLENCE\020\023\022\033" +
-      "\n\027ESRB_SIMULATED_GAMBLING\020\024\022\030\n\024ESRB_STRO" +
-      "NG_LANGUAGE\020\025\022\026\n\022ESRB_STRONG_LYRICS\020\026\022\036\n" +
-      "\032ESRB_STRONG_SEXUAL_CONTENT\020\027\022\032\n\026ESRB_SU" +
-      "GGESTIVE_THEMES\020\030\022\032\n\026ESRB_TOBACCO_REFERE" +
-      "NCE\020\031\022\027\n\023ESRB_USE_OF_ALCOHOL\020\032\022\025\n\021ESRB_U" +
-      "SE_OF_DRUGS\020\033\022\027\n\023ESRB_USE_OF_TOBACCO\020\034\022\021" +
-      "\n\rESRB_VIOLENCE\020\035\022\033\n\027ESRB_VIOLENT_REFERE" +
-      "NCES\020\036\022\032\n\026ESRB_ANIMATED_VIOLENCE\020\037\022\026\n\022ES" +
-      "RB_MILD_LANGUAGE\020 \022\026\n\022ESRB_MILD_VIOLENCE" +
-      "\020!\022!\n\035ESRB_USE_OF_DRUGS_AND_ALCOHOL\020\"\022#\n" +
-      "\037ESRB_DRUG_AND_ALCOHOL_REFERENCE\020#\022\037\n\033ES" +
-      "RB_MILD_SUGGESTIVE_THEMES\020$\022\036\n\032ESRB_MILD" +
-      "_CARTOON_VIOLENCE\020%\022\023\n\017ESRB_MILD_BLOOD\020&" +
-      "\022!\n\035ESRB_REALISTIC_BLOOD_AND_GORE\020\'\022\033\n\027E" +
-      "SRB_REALISTIC_VIOLENCE\020(\022&\n\"ESRB_ALCOHOL" +
-      "_AND_TOBACCO_REFERENCE\020)\022\035\n\031ESRB_MATURE_" +
-      "SEXUAL_THEMES\020*\022\037\n\033ESRB_MILD_ANIMATED_VI" +
-      "OLENCE\020+\022\033\n\027ESRB_MILD_SEXUAL_THEMES\020,\022#\n" +
-      "\037ESRB_USE_OF_ALCOHOL_AND_TOBACCO\020-\022 \n\034ES" +
-      "RB_ANIMATED_BLOOD_AND_GORE\020.\022\036\n\032ESRB_MIL" +
-      "D_FANTASY_VIOLENCE\020/\022\024\n\020ESRB_MILD_LYRICS" +
-      "\0200\022\030\n\024ESRB_REALISTIC_BLOOD\0201\022\021\n\rPEGI_VIO" +
-      "LENCE\0202\022\014\n\010PEGI_SEX\0203\022\016\n\nPEGI_DRUGS\0204\022\r\n" +
-      "\tPEGI_FEAR\0205\022\027\n\023PEGI_DISCRIMINATION\0206\022\025\n" +
-      "\021PEGI_BAD_LANGUAGE\0207\022\021\n\rPEGI_GAMBLING\0208\022" +
-      "\030\n\024PEGI_ONLINE_GAMEPLAY\0209\022\032\n\026PEGI_IN_GAM" +
-      "E_PURCHASES\020:\022\r\n\tCERO_LOVE\020;\022\027\n\023CERO_SEX" +
-      "UAL_CONTENT\020<\022\021\n\rCERO_VIOLENCE\020=\022\017\n\013CERO" +
-      "_HORROR\020>\022\031\n\025CERO_DRINKING_SMOKING\020?\022\021\n\r" +
-      "CERO_GAMBLING\020@\022\016\n\nCERO_CRIME\020A\022\036\n\032CERO_" +
-      "CONTROLLED_SUBSTANCES\020B\022\035\n\031CERO_LANGUAGE" +
-      "S_AND_OTHERS\020C\022\022\n\016GRAC_SEXUALITY\020D\022\021\n\rGR" +
-      "AC_VIOLENCE\020E\022 \n\034GRAC_FEAR_HORROR_THREAT" +
-      "ENING\020F\022\021\n\rGRAC_LANGUAGE\020G\022\035\n\031GRAC_ALCOH" +
-      "OL_TOBACCO_DRUG\020H\022\032\n\026GRAC_CRIME_ANTI_SOC" +
-      "IAL\020I\022\021\n\rGRAC_GAMBLING\020J\022\027\n\023CLASS_IND_VI" +
-      "OLENCIA\020K\022\037\n\033CLASS_IND_VIOLENCIA_EXTREMA" +
-      "\020L\022\035\n\031CLASS_IND_CONTEUDO_SEXUAL\020M\022\023\n\017CLA" +
-      "SS_IND_NUDEZ\020N\022\022\n\016CLASS_IND_SEXO\020O\022\034\n\030CL" +
-      "ASS_IND_SEXO_EXPLICITO\020P\022\024\n\020CLASS_IND_DR" +
-      "OGAS\020Q\022\034\n\030CLASS_IND_DROGAS_LICITAS\020R\022\035\n\031" +
-      "CLASS_IND_DROGAS_ILICITAS\020S\022!\n\035CLASS_IND" +
-      "_LINGUAGEM_IMPROPRIA\020T\022\035\n\031CLASS_IND_ATOS" +
-      "_CRIMINOSOS\020U*3\n\020GenderGenderEnum\022\010\n\004MAL" +
-      "E\020\000\022\n\n\006FEMALE\020\001\022\t\n\005OTHER\020\002*n\n\024CharacterS" +
-      "peciesEnum\022\032\n\026CHARACTER_SPECIES_NULL\020\000\022\t" +
-      "\n\005HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDR" +
-      "OID\020\004\022\013\n\007UNKNOWN\020\005*\203\001\n DateFormatChangeD" +
-      "ateCategoryEnum\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYM" +
-      "MMM\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022" +
-      "\n\n\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023Web" +
-      "siteCategoryEnum\022\031\n\025WEBSITE_CATEGORY_NUL" +
-      "L\020\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n\rWEBSITE_WIK" +
-      "IA\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022\024\n\020WEBSITE_F" +
-      "ACEBOOK\020\004\022\023\n\017WEBSITE_TWITTER\020\005\022\022\n\016WEBSIT" +
-      "E_TWITCH\020\006\022\025\n\021WEBSITE_INSTAGRAM\020\010\022\023\n\017WEB" +
-      "SITE_YOUTUBE\020\t\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WE" +
-      "BSITE_IPAD\020\013\022\023\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEB" +
-      "SITE_STEAM\020\r\022\022\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBS" +
-      "ITE_ITCH\020\017\022\025\n\021WEBSITE_EPICGAMES\020\020\022\017\n\013WEB" +
-      "SITE_GOG\020\021\022\023\n\017WEBSITE_DISCORD\020\022*\207\005\n\030Exte" +
-      "rnalGameCategoryEnum\022\036\n\032EXTERNALGAME_CAT" +
-      "EGORY_NULL\020\000\022\026\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020" +
-      "EXTERNALGAME_GOG\020\005\022\030\n\024EXTERNALGAME_YOUTU" +
-      "BE\020\n\022\032\n\026EXTERNALGAME_MICROSOFT\020\013\022\026\n\022EXTE" +
-      "RNALGAME_APPLE\020\r\022\027\n\023EXTERNALGAME_TWITCH\020" +
-      "\016\022\030\n\024EXTERNALGAME_ANDROID\020\017\022\034\n\030EXTERNALG" +
-      "AME_AMAZON_ASIN\020\024\022\034\n\030EXTERNALGAME_AMAZON" +
-      "_LUNA\020\026\022\033\n\027EXTERNALGAME_AMAZON_ADG\020\027\022 \n\034" +
-      "EXTERNALGAME_EPIC_GAME_STORE\020\032\022\027\n\023EXTERN" +
-      "ALGAME_OCULUS\020\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035" +
-      "\022\030\n\024EXTERNALGAME_ITCH_IO\020\036\022!\n\035EXTERNALGA" +
-      "ME_XBOX_MARKETPLACE\020\037\022\032\n\026EXTERNALGAME_KA" +
-      "RTRIDGE\020 \022%\n!EXTERNALGAME_PLAYSTATION_ST" +
-      "ORE_US\020$\022$\n EXTERNALGAME_FOCUS_ENTERTAIN" +
-      "MENT\020%\022.\n*EXTERNALGAME_XBOX_GAME_PASS_UL" +
-      "TIMATE_CLOUD\0206\022\031\n\025EXTERNALGAME_GAMEJOLT\020" +
-      "7*i\n\025ExternalGameMediaEnum\022\033\n\027EXTERNALGA" +
-      "ME_MEDIA_NULL\020\000\022\030\n\024EXTERNALGAME_DIGITAL\020" +
-      "\001\022\031\n\025EXTERNALGAME_PHYSICAL\020\002*\336\001\n\020GameCat" +
-      "egoryEnum\022\r\n\tMAIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022" +
-      "\r\n\tEXPANSION\020\002\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE" +
-      "_EXPANSION\020\004\022\007\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SE" +
-      "ASON\020\007\022\n\n\006REMAKE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPA" +
-      "NDED_GAME\020\n\022\010\n\004PORT\020\013\022\010\n\004FORK\020\014\022\010\n\004PACK\020" +
-      "\r\022\n\n\006UPDATE\020\016*|\n\016GameStatusEnum\022\014\n\010RELEA" +
-      "SED\020\000\022\t\n\005ALPHA\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCE" +
-      "SS\020\004\022\013\n\007OFFLINE\020\005\022\r\n\tCANCELLED\020\006\022\013\n\007RUMO" +
-      "RED\020\007\022\014\n\010DELISTED\020\010*>\n\036GameVersionFeatur" +
-      "eCategoryEnum\022\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTIO" +
-      "N\020\001*`\n*GameVersionFeatureValueIncludedFe" +
-      "atureEnum\022\020\n\014NOT_INCLUDED\020\000\022\014\n\010INCLUDED\020" +
-      "\001\022\022\n\016PRE_ORDER_ONLY\020\002*\223\001\n\024PlatformCatego" +
-      "ryEnum\022\032\n\026PLATFORM_CATEGORY_NULL\020\000\022\013\n\007CO" +
-      "NSOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010PLATFORM\020\003\022\024\n\020OPE" +
-      "RATING_SYSTEM\020\004\022\024\n\020PORTABLE_CONSOLE\020\005\022\014\n" +
-      "\010COMPUTER\020\006*\257\001\n\020RegionRegionEnum\022\026\n\022REGI" +
-      "ON_REGION_NULL\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AM" +
-      "ERICA\020\002\022\r\n\tAUSTRALIA\020\003\022\017\n\013NEW_ZEALAND\020\004\022" +
-      "\t\n\005JAPAN\020\005\022\t\n\005CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLD" +
-      "WIDE\020\010\022\t\n\005KOREA\020\t\022\n\n\006BRAZIL\020\n*K\n\025TestDum" +
-      "myEnumTestEnum\022\034\n\030TESTDUMMY_ENUM_TEST_NU" +
-      "LL\020\000\022\t\n\005ENUM1\020\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
+      "\010checksum\030\014 \001(\t\022(\n\006status\030\r \001(\0132\030.proto." +
+      "ReleaseDateStatus\"P\n\027ReleaseDateStatusRe" +
+      "sult\0225\n\023releasedatestatuses\030\001 \003(\0132\030.prot" +
+      "o.ReleaseDateStatus\"\264\001\n\021ReleaseDateStatu" +
+      "s\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\023\n\013descripti" +
+      "on\030\003 \001(\t\022.\n\ncreated_at\030\004 \001(\0132\032.google.pr" +
+      "otobuf.Timestamp\022.\n\nupdated_at\030\005 \001(\0132\032.g" +
+      "oogle.protobuf.Timestamp\022\020\n\010checksum\030\006 \001" +
+      "(\t\":\n\020ScreenshotResult\022&\n\013screenshots\030\001 " +
+      "\003(\0132\021.proto.Screenshot\"\254\001\n\nScreenshot\022\n\n" +
+      "\002id\030\001 \001(\004\022\025\n\ralpha_channel\030\002 \001(\010\022\020\n\010anim" +
+      "ated\030\003 \001(\010\022\031\n\004game\030\004 \001(\0132\013.proto.Game\022\016\n" +
+      "\006height\030\005 \001(\005\022\020\n\010image_id\030\006 \001(\t\022\013\n\003url\030\007" +
+      " \001(\t\022\r\n\005width\030\010 \001(\005\022\020\n\010checksum\030\t \001(\t\"/\n" +
+      "\014SearchResult\022\037\n\010searches\030\001 \003(\0132\r.proto." +
+      "Search\"\203\003\n\006Search\022\n\n\002id\030\001 \001(\004\022\030\n\020alterna" +
+      "tive_name\030\002 \001(\t\022#\n\tcharacter\030\003 \001(\0132\020.pro" +
+      "to.Character\022%\n\ncollection\030\004 \001(\0132\021.proto" +
+      ".Collection\022\037\n\007company\030\005 \001(\0132\016.proto.Com" +
+      "pany\022\023\n\013description\030\006 \001(\t\022\031\n\004game\030\007 \001(\0132" +
+      "\013.proto.Game\022\014\n\004name\030\010 \001(\t\022!\n\010platform\030\t" +
+      " \001(\0132\017.proto.Platform\0220\n\014published_at\030\n " +
+      "\001(\0132\032.google.protobuf.Timestamp\022$\n\ntest_" +
+      "dummy\030\013 \001(\0132\020.proto.TestDummy\022\033\n\005theme\030\014" +
+      " \001(\0132\014.proto.Theme\022\020\n\010checksum\030\r \001(\t\"8\n\017" +
+      "TestDummyResult\022%\n\013testdummies\030\001 \003(\0132\020.p" +
+      "roto.TestDummy\"\345\003\n\tTestDummy\022\n\n\002id\030\001 \001(\004" +
+      "\022\022\n\nbool_value\030\002 \001(\010\022.\n\ncreated_at\030\003 \001(\013" +
+      "2\032.google.protobuf.Timestamp\022/\n\tenum_tes" +
+      "t\030\004 \001(\0162\034.proto.TestDummyEnumTestEnum\022\023\n" +
+      "\013float_value\030\005 \001(\001\022\031\n\004game\030\006 \001(\0132\013.proto" +
+      ".Game\022\025\n\rinteger_array\030\007 \003(\005\022\025\n\rinteger_" +
+      "value\030\010 \001(\005\022\014\n\004name\030\t \001(\t\022\031\n\021new_integer" +
+      "_value\030\n \001(\005\022\017\n\007private\030\013 \001(\010\022\014\n\004slug\030\014 " +
+      "\001(\t\022\024\n\014string_array\030\r \003(\t\022&\n\014test_dummie" +
+      "s\030\016 \003(\0132\020.proto.TestDummy\022$\n\ntest_dummy\030" +
+      "\017 \001(\0132\020.proto.TestDummy\022.\n\nupdated_at\030\020 " +
+      "\001(\0132\032.google.protobuf.Timestamp\022\013\n\003url\030\021" +
+      " \001(\t\022\020\n\010checksum\030\022 \001(\t\"+\n\013ThemeResult\022\034\n" +
+      "\006themes\030\001 \003(\0132\014.proto.Theme\"\256\001\n\005Theme\022\n\n" +
+      "\002id\030\001 \001(\004\022.\n\ncreated_at\030\002 \001(\0132\032.google.p" +
+      "rotobuf.Timestamp\022\014\n\004name\030\003 \001(\t\022\014\n\004slug\030" +
+      "\004 \001(\t\022.\n\nupdated_at\030\005 \001(\0132\032.google.proto" +
+      "buf.Timestamp\022\013\n\003url\030\006 \001(\t\022\020\n\010checksum\030\007" +
+      " \001(\t\"1\n\rWebsiteResult\022 \n\010websites\030\001 \003(\0132" +
+      "\016.proto.Website\"\216\001\n\007Website\022\n\n\002id\030\001 \001(\004\022" +
+      ",\n\010category\030\002 \001(\0162\032.proto.WebsiteCategor" +
+      "yEnum\022\031\n\004game\030\003 \001(\0132\013.proto.Game\022\017\n\007trus" +
+      "ted\030\004 \001(\010\022\013\n\003url\030\005 \001(\t\022\020\n\010checksum\030\006 \001(\t" +
+      "*}\n\025AgeRatingCategoryEnum\022\033\n\027AGERATING_C" +
+      "ATEGORY_NULL\020\000\022\010\n\004ESRB\020\001\022\010\n\004PEGI\020\002\022\010\n\004CE" +
+      "RO\020\003\022\007\n\003USK\020\004\022\010\n\004GRAC\020\005\022\r\n\tCLASS_IND\020\006\022\007" +
+      "\n\003ACB\020\007*\271\004\n\023AgeRatingRatingEnum\022\031\n\025AGERA",
+      "TING_RATING_NULL\020\000\022\t\n\005THREE\020\001\022\t\n\005SEVEN\020\002" +
+      "\022\n\n\006TWELVE\020\003\022\013\n\007SIXTEEN\020\004\022\014\n\010EIGHTEEN\020\005\022" +
+      "\006\n\002RP\020\006\022\006\n\002EC\020\007\022\005\n\001E\020\010\022\007\n\003E10\020\t\022\005\n\001T\020\n\022\005" +
+      "\n\001M\020\013\022\006\n\002AO\020\014\022\n\n\006CERO_A\020\r\022\n\n\006CERO_B\020\016\022\n\n" +
+      "\006CERO_C\020\017\022\n\n\006CERO_D\020\020\022\n\n\006CERO_Z\020\021\022\t\n\005USK" +
+      "_0\020\022\022\t\n\005USK_6\020\023\022\n\n\006USK_12\020\024\022\n\n\006USK_16\020\025\022" +
+      "\n\n\006USK_18\020\026\022\014\n\010GRAC_ALL\020\027\022\017\n\013GRAC_TWELVE" +
+      "\020\030\022\020\n\014GRAC_FIFTEEN\020\031\022\021\n\rGRAC_EIGHTEEN\020\032\022" +
+      "\020\n\014GRAC_TESTING\020\033\022\017\n\013CLASS_IND_L\020\034\022\021\n\rCL" +
+      "ASS_IND_TEN\020\035\022\024\n\020CLASS_IND_TWELVE\020\036\022\026\n\022C" +
+      "LASS_IND_FOURTEEN\020\037\022\025\n\021CLASS_IND_SIXTEEN" +
+      "\020 \022\026\n\022CLASS_IND_EIGHTEEN\020!\022\t\n\005ACB_G\020\"\022\n\n" +
+      "\006ACB_PG\020#\022\t\n\005ACB_M\020$\022\014\n\010ACB_MA15\020%\022\013\n\007AC" +
+      "B_R18\020&\022\n\n\006ACB_RC\020\'*\336\021\n\'AgeRatingContent" +
+      "DescriptionCategoryEnum\022-\n)AGERATINGCONT" +
+      "ENTDESCRIPTION_CATEGORY_NULL\020\000\022\032\n\026ESRB_A" +
+      "LCOHOL_REFERENCE\020\001\022\027\n\023ESRB_ANIMATED_BLOO" +
+      "D\020\002\022\016\n\nESRB_BLOOD\020\003\022\027\n\023ESRB_BLOOD_AND_GO" +
+      "RE\020\004\022\031\n\025ESRB_CARTOON_VIOLENCE\020\005\022\027\n\023ESRB_" +
+      "COMIC_MISCHIEF\020\006\022\024\n\020ESRB_CRUDE_HUMOR\020\007\022\027" +
+      "\n\023ESRB_DRUG_REFERENCE\020\010\022\031\n\025ESRB_FANTASY_" +
+      "VIOLENCE\020\t\022\031\n\025ESRB_INTENSE_VIOLENCE\020\n\022\021\n" +
+      "\rESRB_LANGUAGE\020\013\022\017\n\013ESRB_LYRICS\020\014\022\025\n\021ESR" +
+      "B_MATURE_HUMOR\020\r\022\017\n\013ESRB_NUDITY\020\016\022\027\n\023ESR" +
+      "B_PARTIAL_NUDITY\020\017\022\026\n\022ESRB_REAL_GAMBLING" +
+      "\020\020\022\027\n\023ESRB_SEXUAL_CONTENT\020\021\022\026\n\022ESRB_SEXU" +
+      "AL_THEMES\020\022\022\030\n\024ESRB_SEXUAL_VIOLENCE\020\023\022\033\n" +
+      "\027ESRB_SIMULATED_GAMBLING\020\024\022\030\n\024ESRB_STRON" +
+      "G_LANGUAGE\020\025\022\026\n\022ESRB_STRONG_LYRICS\020\026\022\036\n\032" +
+      "ESRB_STRONG_SEXUAL_CONTENT\020\027\022\032\n\026ESRB_SUG" +
+      "GESTIVE_THEMES\020\030\022\032\n\026ESRB_TOBACCO_REFEREN" +
+      "CE\020\031\022\027\n\023ESRB_USE_OF_ALCOHOL\020\032\022\025\n\021ESRB_US" +
+      "E_OF_DRUGS\020\033\022\027\n\023ESRB_USE_OF_TOBACCO\020\034\022\021\n" +
+      "\rESRB_VIOLENCE\020\035\022\033\n\027ESRB_VIOLENT_REFEREN" +
+      "CES\020\036\022\032\n\026ESRB_ANIMATED_VIOLENCE\020\037\022\026\n\022ESR" +
+      "B_MILD_LANGUAGE\020 \022\026\n\022ESRB_MILD_VIOLENCE\020" +
+      "!\022!\n\035ESRB_USE_OF_DRUGS_AND_ALCOHOL\020\"\022#\n\037" +
+      "ESRB_DRUG_AND_ALCOHOL_REFERENCE\020#\022\037\n\033ESR" +
+      "B_MILD_SUGGESTIVE_THEMES\020$\022\036\n\032ESRB_MILD_" +
+      "CARTOON_VIOLENCE\020%\022\023\n\017ESRB_MILD_BLOOD\020&\022" +
+      "!\n\035ESRB_REALISTIC_BLOOD_AND_GORE\020\'\022\033\n\027ES" +
+      "RB_REALISTIC_VIOLENCE\020(\022&\n\"ESRB_ALCOHOL_" +
+      "AND_TOBACCO_REFERENCE\020)\022\035\n\031ESRB_MATURE_S" +
+      "EXUAL_THEMES\020*\022\037\n\033ESRB_MILD_ANIMATED_VIO" +
+      "LENCE\020+\022\033\n\027ESRB_MILD_SEXUAL_THEMES\020,\022#\n\037" +
+      "ESRB_USE_OF_ALCOHOL_AND_TOBACCO\020-\022 \n\034ESR" +
+      "B_ANIMATED_BLOOD_AND_GORE\020.\022\036\n\032ESRB_MILD" +
+      "_FANTASY_VIOLENCE\020/\022\024\n\020ESRB_MILD_LYRICS\020" +
+      "0\022\030\n\024ESRB_REALISTIC_BLOOD\0201\022\021\n\rPEGI_VIOL" +
+      "ENCE\0202\022\014\n\010PEGI_SEX\0203\022\016\n\nPEGI_DRUGS\0204\022\r\n\t" +
+      "PEGI_FEAR\0205\022\027\n\023PEGI_DISCRIMINATION\0206\022\025\n\021" +
+      "PEGI_BAD_LANGUAGE\0207\022\021\n\rPEGI_GAMBLING\0208\022\030" +
+      "\n\024PEGI_ONLINE_GAMEPLAY\0209\022\032\n\026PEGI_IN_GAME" +
+      "_PURCHASES\020:\022\r\n\tCERO_LOVE\020;\022\027\n\023CERO_SEXU" +
+      "AL_CONTENT\020<\022\021\n\rCERO_VIOLENCE\020=\022\017\n\013CERO_" +
+      "HORROR\020>\022\031\n\025CERO_DRINKING_SMOKING\020?\022\021\n\rC" +
+      "ERO_GAMBLING\020@\022\016\n\nCERO_CRIME\020A\022\036\n\032CERO_C" +
+      "ONTROLLED_SUBSTANCES\020B\022\035\n\031CERO_LANGUAGES" +
+      "_AND_OTHERS\020C\022\022\n\016GRAC_SEXUALITY\020D\022\021\n\rGRA" +
+      "C_VIOLENCE\020E\022 \n\034GRAC_FEAR_HORROR_THREATE" +
+      "NING\020F\022\021\n\rGRAC_LANGUAGE\020G\022\035\n\031GRAC_ALCOHO" +
+      "L_TOBACCO_DRUG\020H\022\032\n\026GRAC_CRIME_ANTI_SOCI" +
+      "AL\020I\022\021\n\rGRAC_GAMBLING\020J\022\027\n\023CLASS_IND_VIO" +
+      "LENCIA\020K\022\037\n\033CLASS_IND_VIOLENCIA_EXTREMA\020" +
+      "L\022\035\n\031CLASS_IND_CONTEUDO_SEXUAL\020M\022\023\n\017CLAS" +
+      "S_IND_NUDEZ\020N\022\022\n\016CLASS_IND_SEXO\020O\022\034\n\030CLA" +
+      "SS_IND_SEXO_EXPLICITO\020P\022\024\n\020CLASS_IND_DRO" +
+      "GAS\020Q\022\034\n\030CLASS_IND_DROGAS_LICITAS\020R\022\035\n\031C" +
+      "LASS_IND_DROGAS_ILICITAS\020S\022!\n\035CLASS_IND_" +
+      "LINGUAGEM_IMPROPRIA\020T\022\035\n\031CLASS_IND_ATOS_" +
+      "CRIMINOSOS\020U*3\n\020GenderGenderEnum\022\010\n\004MALE" +
+      "\020\000\022\n\n\006FEMALE\020\001\022\t\n\005OTHER\020\002*n\n\024CharacterSp" +
+      "eciesEnum\022\032\n\026CHARACTER_SPECIES_NULL\020\000\022\t\n" +
+      "\005HUMAN\020\001\022\t\n\005ALIEN\020\002\022\n\n\006ANIMAL\020\003\022\013\n\007ANDRO" +
+      "ID\020\004\022\013\n\007UNKNOWN\020\005*\203\001\n DateFormatChangeDa" +
+      "teCategoryEnum\022\016\n\nYYYYMMMMDD\020\000\022\014\n\010YYYYMM" +
+      "MM\020\001\022\010\n\004YYYY\020\002\022\n\n\006YYYYQ1\020\003\022\n\n\006YYYYQ2\020\004\022\n" +
+      "\n\006YYYYQ3\020\005\022\n\n\006YYYYQ4\020\006\022\007\n\003TBD\020\007*\214\003\n\023Webs" +
+      "iteCategoryEnum\022\031\n\025WEBSITE_CATEGORY_NULL" +
+      "\020\000\022\024\n\020WEBSITE_OFFICIAL\020\001\022\021\n\rWEBSITE_WIKI" +
+      "A\020\002\022\025\n\021WEBSITE_WIKIPEDIA\020\003\022\024\n\020WEBSITE_FA" +
+      "CEBOOK\020\004\022\023\n\017WEBSITE_TWITTER\020\005\022\022\n\016WEBSITE" +
+      "_TWITCH\020\006\022\025\n\021WEBSITE_INSTAGRAM\020\010\022\023\n\017WEBS" +
+      "ITE_YOUTUBE\020\t\022\022\n\016WEBSITE_IPHONE\020\n\022\020\n\014WEB" +
+      "SITE_IPAD\020\013\022\023\n\017WEBSITE_ANDROID\020\014\022\021\n\rWEBS" +
+      "ITE_STEAM\020\r\022\022\n\016WEBSITE_REDDIT\020\016\022\020\n\014WEBSI" +
+      "TE_ITCH\020\017\022\025\n\021WEBSITE_EPICGAMES\020\020\022\017\n\013WEBS" +
+      "ITE_GOG\020\021\022\023\n\017WEBSITE_DISCORD\020\022*\207\005\n\030Exter" +
+      "nalGameCategoryEnum\022\036\n\032EXTERNALGAME_CATE" +
+      "GORY_NULL\020\000\022\026\n\022EXTERNALGAME_STEAM\020\001\022\024\n\020E" +
+      "XTERNALGAME_GOG\020\005\022\030\n\024EXTERNALGAME_YOUTUB" +
+      "E\020\n\022\032\n\026EXTERNALGAME_MICROSOFT\020\013\022\026\n\022EXTER" +
+      "NALGAME_APPLE\020\r\022\027\n\023EXTERNALGAME_TWITCH\020\016" +
+      "\022\030\n\024EXTERNALGAME_ANDROID\020\017\022\034\n\030EXTERNALGA" +
+      "ME_AMAZON_ASIN\020\024\022\034\n\030EXTERNALGAME_AMAZON_" +
+      "LUNA\020\026\022\033\n\027EXTERNALGAME_AMAZON_ADG\020\027\022 \n\034E" +
+      "XTERNALGAME_EPIC_GAME_STORE\020\032\022\027\n\023EXTERNA" +
+      "LGAME_OCULUS\020\034\022\027\n\023EXTERNALGAME_UTOMIK\020\035\022" +
+      "\030\n\024EXTERNALGAME_ITCH_IO\020\036\022!\n\035EXTERNALGAM" +
+      "E_XBOX_MARKETPLACE\020\037\022\032\n\026EXTERNALGAME_KAR" +
+      "TRIDGE\020 \022%\n!EXTERNALGAME_PLAYSTATION_STO" +
+      "RE_US\020$\022$\n EXTERNALGAME_FOCUS_ENTERTAINM" +
+      "ENT\020%\022.\n*EXTERNALGAME_XBOX_GAME_PASS_ULT" +
+      "IMATE_CLOUD\0206\022\031\n\025EXTERNALGAME_GAMEJOLT\0207" +
+      "*i\n\025ExternalGameMediaEnum\022\033\n\027EXTERNALGAM" +
+      "E_MEDIA_NULL\020\000\022\030\n\024EXTERNALGAME_DIGITAL\020\001" +
+      "\022\031\n\025EXTERNALGAME_PHYSICAL\020\002*\336\001\n\020GameCate" +
+      "goryEnum\022\r\n\tMAIN_GAME\020\000\022\r\n\tDLC_ADDON\020\001\022\r" +
+      "\n\tEXPANSION\020\002\022\n\n\006BUNDLE\020\003\022\030\n\024STANDALONE_" +
+      "EXPANSION\020\004\022\007\n\003MOD\020\005\022\013\n\007EPISODE\020\006\022\n\n\006SEA" +
+      "SON\020\007\022\n\n\006REMAKE\020\010\022\014\n\010REMASTER\020\t\022\021\n\rEXPAN" +
+      "DED_GAME\020\n\022\010\n\004PORT\020\013\022\010\n\004FORK\020\014\022\010\n\004PACK\020\r" +
+      "\022\n\n\006UPDATE\020\016*|\n\016GameStatusEnum\022\014\n\010RELEAS" +
+      "ED\020\000\022\t\n\005ALPHA\020\002\022\010\n\004BETA\020\003\022\020\n\014EARLY_ACCES" +
+      "S\020\004\022\013\n\007OFFLINE\020\005\022\r\n\tCANCELLED\020\006\022\013\n\007RUMOR" +
+      "ED\020\007\022\014\n\010DELISTED\020\010*>\n\036GameVersionFeature" +
+      "CategoryEnum\022\013\n\007BOOLEAN\020\000\022\017\n\013DESCRIPTION" +
+      "\020\001*`\n*GameVersionFeatureValueIncludedFea" +
+      "tureEnum\022\020\n\014NOT_INCLUDED\020\000\022\014\n\010INCLUDED\020\001" +
+      "\022\022\n\016PRE_ORDER_ONLY\020\002*\223\001\n\024PlatformCategor" +
+      "yEnum\022\032\n\026PLATFORM_CATEGORY_NULL\020\000\022\013\n\007CON" +
+      "SOLE\020\001\022\n\n\006ARCADE\020\002\022\014\n\010PLATFORM\020\003\022\024\n\020OPER" +
+      "ATING_SYSTEM\020\004\022\024\n\020PORTABLE_CONSOLE\020\005\022\014\n\010" +
+      "COMPUTER\020\006*\257\001\n\020RegionRegionEnum\022\026\n\022REGIO" +
+      "N_REGION_NULL\020\000\022\n\n\006EUROPE\020\001\022\021\n\rNORTH_AME" +
+      "RICA\020\002\022\r\n\tAUSTRALIA\020\003\022\017\n\013NEW_ZEALAND\020\004\022\t" +
+      "\n\005JAPAN\020\005\022\t\n\005CHINA\020\006\022\010\n\004ASIA\020\007\022\r\n\tWORLDW" +
+      "IDE\020\010\022\t\n\005KOREA\020\t\022\n\n\006BRAZIL\020\n*K\n\025TestDumm" +
+      "yEnumTestEnum\022\034\n\030TESTDUMMY_ENUM_TEST_NUL" +
+      "L\020\000\022\t\n\005ENUM1\020\001\022\t\n\005ENUM2\020\002B\004H\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1491,63 +1509,75 @@ public final class Igdbproto {
     internal_static_proto_ReleaseDate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ReleaseDate_descriptor,
-        new java.lang.String[] { "Id", "Category", "CreatedAt", "Date", "Game", "Human", "M", "Platform", "Region", "UpdatedAt", "Y", "Checksum", });
-    internal_static_proto_ScreenshotResult_descriptor =
+        new java.lang.String[] { "Id", "Category", "CreatedAt", "Date", "Game", "Human", "M", "Platform", "Region", "UpdatedAt", "Y", "Checksum", "Status", });
+    internal_static_proto_ReleaseDateStatusResult_descriptor =
       getDescriptor().getMessageTypes().get(81);
+    internal_static_proto_ReleaseDateStatusResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_ReleaseDateStatusResult_descriptor,
+        new java.lang.String[] { "Releasedatestatuses", });
+    internal_static_proto_ReleaseDateStatus_descriptor =
+      getDescriptor().getMessageTypes().get(82);
+    internal_static_proto_ReleaseDateStatus_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_proto_ReleaseDateStatus_descriptor,
+        new java.lang.String[] { "Id", "Name", "Description", "CreatedAt", "UpdatedAt", "Checksum", });
+    internal_static_proto_ScreenshotResult_descriptor =
+      getDescriptor().getMessageTypes().get(83);
     internal_static_proto_ScreenshotResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ScreenshotResult_descriptor,
         new java.lang.String[] { "Screenshots", });
     internal_static_proto_Screenshot_descriptor =
-      getDescriptor().getMessageTypes().get(82);
+      getDescriptor().getMessageTypes().get(84);
     internal_static_proto_Screenshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Screenshot_descriptor,
         new java.lang.String[] { "Id", "AlphaChannel", "Animated", "Game", "Height", "ImageId", "Url", "Width", "Checksum", });
     internal_static_proto_SearchResult_descriptor =
-      getDescriptor().getMessageTypes().get(83);
+      getDescriptor().getMessageTypes().get(85);
     internal_static_proto_SearchResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_SearchResult_descriptor,
         new java.lang.String[] { "Searches", });
     internal_static_proto_Search_descriptor =
-      getDescriptor().getMessageTypes().get(84);
+      getDescriptor().getMessageTypes().get(86);
     internal_static_proto_Search_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Search_descriptor,
         new java.lang.String[] { "Id", "AlternativeName", "Character", "Collection", "Company", "Description", "Game", "Name", "Platform", "PublishedAt", "TestDummy", "Theme", "Checksum", });
     internal_static_proto_TestDummyResult_descriptor =
-      getDescriptor().getMessageTypes().get(85);
+      getDescriptor().getMessageTypes().get(87);
     internal_static_proto_TestDummyResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_TestDummyResult_descriptor,
         new java.lang.String[] { "Testdummies", });
     internal_static_proto_TestDummy_descriptor =
-      getDescriptor().getMessageTypes().get(86);
+      getDescriptor().getMessageTypes().get(88);
     internal_static_proto_TestDummy_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_TestDummy_descriptor,
         new java.lang.String[] { "Id", "BoolValue", "CreatedAt", "EnumTest", "FloatValue", "Game", "IntegerArray", "IntegerValue", "Name", "NewIntegerValue", "Private", "Slug", "StringArray", "TestDummies", "TestDummy", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_ThemeResult_descriptor =
-      getDescriptor().getMessageTypes().get(87);
+      getDescriptor().getMessageTypes().get(89);
     internal_static_proto_ThemeResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_ThemeResult_descriptor,
         new java.lang.String[] { "Themes", });
     internal_static_proto_Theme_descriptor =
-      getDescriptor().getMessageTypes().get(88);
+      getDescriptor().getMessageTypes().get(90);
     internal_static_proto_Theme_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Theme_descriptor,
         new java.lang.String[] { "Id", "CreatedAt", "Name", "Slug", "UpdatedAt", "Url", "Checksum", });
     internal_static_proto_WebsiteResult_descriptor =
-      getDescriptor().getMessageTypes().get(89);
+      getDescriptor().getMessageTypes().get(91);
     internal_static_proto_WebsiteResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_WebsiteResult_descriptor,
         new java.lang.String[] { "Websites", });
     internal_static_proto_Website_descriptor =
-      getDescriptor().getMessageTypes().get(90);
+      getDescriptor().getMessageTypes().get(92);
     internal_static_proto_Website_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_proto_Website_descriptor,

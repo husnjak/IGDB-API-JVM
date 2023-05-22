@@ -145,4 +145,19 @@ public interface ReleaseDateOrBuilder extends
    */
   com.google.protobuf.ByteString
       getChecksumBytes();
+
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   * @return Whether the status field is set.
+   */
+  boolean hasStatus();
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   * @return The status.
+   */
+  proto.ReleaseDateStatus getStatus();
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   */
+  proto.ReleaseDateStatusOrBuilder getStatusOrBuilder();
 }

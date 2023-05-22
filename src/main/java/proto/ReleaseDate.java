@@ -29,11 +29,6 @@ private static final long serialVersionUID = 0L;
     return new ReleaseDate();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return proto.Igdbproto.internal_static_proto_ReleaseDate_descriptor;
@@ -324,6 +319,32 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int STATUS_FIELD_NUMBER = 13;
+  private proto.ReleaseDateStatus status_;
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   * @return Whether the status field is set.
+   */
+  @java.lang.Override
+  public boolean hasStatus() {
+    return status_ != null;
+  }
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   * @return The status.
+   */
+  @java.lang.Override
+  public proto.ReleaseDateStatus getStatus() {
+    return status_ == null ? proto.ReleaseDateStatus.getDefaultInstance() : status_;
+  }
+  /**
+   * <code>.proto.ReleaseDateStatus status = 13;</code>
+   */
+  @java.lang.Override
+  public proto.ReleaseDateStatusOrBuilder getStatusOrBuilder() {
+    return status_ == null ? proto.ReleaseDateStatus.getDefaultInstance() : status_;
+  }
+
   public static proto.ReleaseDate parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -368,11 +389,13 @@ private static final long serialVersionUID = 0L;
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
+
   public static proto.ReleaseDate parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
+
   public static proto.ReleaseDate parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -480,6 +503,11 @@ private static final long serialVersionUID = 0L;
       }
       y_ = 0;
       checksum_ = "";
+      status_ = null;
+      if (statusBuilder_ != null) {
+        statusBuilder_.dispose();
+        statusBuilder_ = null;
+      }
       return this;
     }
 
@@ -559,40 +587,13 @@ private static final long serialVersionUID = 0L;
       if (((from_bitField0_ & 0x00000800) != 0)) {
         result.checksum_ = checksum_;
       }
+      if (((from_bitField0_ & 0x00001000) != 0)) {
+        result.status_ = statusBuilder_ == null
+            ? status_
+            : statusBuilder_.build();
+      }
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
     private int bitField0_;
 
     private long id_ ;
@@ -610,7 +611,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setId(long value) {
-      
+
       id_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
@@ -1124,7 +1125,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setM(int value) {
-      
+
       m_ = value;
       bitField0_ |= 0x00000040;
       onChanged();
@@ -1447,7 +1448,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setY(int value) {
-      
+
       y_ = value;
       bitField0_ |= 0x00000400;
       onChanged();
@@ -1534,6 +1535,125 @@ private static final long serialVersionUID = 0L;
       bitField0_ |= 0x00000800;
       onChanged();
       return this;
+    }
+
+    private proto.ReleaseDateStatus status_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.ReleaseDateStatus, proto.ReleaseDateStatus.Builder, proto.ReleaseDateStatusOrBuilder> statusBuilder_;
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     * @return Whether the status field is set.
+     */
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00001000) != 0);
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     * @return The status.
+     */
+    public proto.ReleaseDateStatus getStatus() {
+      if (statusBuilder_ == null) {
+        return status_ == null ? proto.ReleaseDateStatus.getDefaultInstance() : status_;
+      } else {
+        return statusBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public Builder setStatus(proto.ReleaseDateStatus value) {
+      if (statusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        status_ = value;
+      } else {
+        statusBuilder_.setMessage(value);
+      }
+      bitField0_ |= 0x00001000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public Builder setStatus(
+        proto.ReleaseDateStatus.Builder builderForValue) {
+      if (statusBuilder_ == null) {
+        status_ = builderForValue.build();
+      } else {
+        statusBuilder_.setMessage(builderForValue.build());
+      }
+      bitField0_ |= 0x00001000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public Builder mergeStatus(proto.ReleaseDateStatus value) {
+      if (statusBuilder_ == null) {
+        if (((bitField0_ & 0x00001000) != 0) &&
+          status_ != null &&
+          status_ != proto.ReleaseDateStatus.getDefaultInstance()) {
+          getStatusBuilder().mergeFrom(value);
+        } else {
+          status_ = value;
+        }
+      } else {
+        statusBuilder_.mergeFrom(value);
+      }
+      bitField0_ |= 0x00001000;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public Builder clearStatus() {
+      bitField0_ = (bitField0_ & ~0x00001000);
+      status_ = null;
+      if (statusBuilder_ != null) {
+        statusBuilder_.dispose();
+        statusBuilder_ = null;
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public proto.ReleaseDateStatus.Builder getStatusBuilder() {
+      bitField0_ |= 0x00001000;
+      onChanged();
+      return getStatusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    public proto.ReleaseDateStatusOrBuilder getStatusOrBuilder() {
+      if (statusBuilder_ != null) {
+        return statusBuilder_.getMessageOrBuilder();
+      } else {
+        return status_ == null ?
+            proto.ReleaseDateStatus.getDefaultInstance() : status_;
+      }
+    }
+    /**
+     * <code>.proto.ReleaseDateStatus status = 13;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        proto.ReleaseDateStatus, proto.ReleaseDateStatus.Builder, proto.ReleaseDateStatusOrBuilder> 
+        getStatusFieldBuilder() {
+      if (statusBuilder_ == null) {
+        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            proto.ReleaseDateStatus, proto.ReleaseDateStatus.Builder, proto.ReleaseDateStatusOrBuilder>(
+                getStatus(),
+                getParentForChildren(),
+                isClean());
+        status_ = null;
+      }
+      return statusBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

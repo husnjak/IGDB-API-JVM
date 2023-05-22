@@ -93,77 +93,81 @@ public enum AgeRatingRatingEnum
    */
   USK_12(20),
   /**
-   * <code>USK_18 = 21;</code>
+   * <code>USK_16 = 21;</code>
    */
-  USK_18(21),
+  USK_16(21),
   /**
-   * <code>GRAC_ALL = 22;</code>
+   * <code>USK_18 = 22;</code>
    */
-  GRAC_ALL(22),
+  USK_18(22),
   /**
-   * <code>GRAC_TWELVE = 23;</code>
+   * <code>GRAC_ALL = 23;</code>
    */
-  GRAC_TWELVE(23),
+  GRAC_ALL(23),
   /**
-   * <code>GRAC_FIFTEEN = 24;</code>
+   * <code>GRAC_TWELVE = 24;</code>
    */
-  GRAC_FIFTEEN(24),
+  GRAC_TWELVE(24),
   /**
-   * <code>GRAC_EIGHTEEN = 25;</code>
+   * <code>GRAC_FIFTEEN = 25;</code>
    */
-  GRAC_EIGHTEEN(25),
+  GRAC_FIFTEEN(25),
   /**
-   * <code>GRAC_TESTING = 26;</code>
+   * <code>GRAC_EIGHTEEN = 26;</code>
    */
-  GRAC_TESTING(26),
+  GRAC_EIGHTEEN(26),
   /**
-   * <code>CLASS_IND_L = 27;</code>
+   * <code>GRAC_TESTING = 27;</code>
    */
-  CLASS_IND_L(27),
+  GRAC_TESTING(27),
   /**
-   * <code>CLASS_IND_TEN = 28;</code>
+   * <code>CLASS_IND_L = 28;</code>
    */
-  CLASS_IND_TEN(28),
+  CLASS_IND_L(28),
   /**
-   * <code>CLASS_IND_TWELVE = 29;</code>
+   * <code>CLASS_IND_TEN = 29;</code>
    */
-  CLASS_IND_TWELVE(29),
+  CLASS_IND_TEN(29),
   /**
-   * <code>CLASS_IND_FOURTEEN = 30;</code>
+   * <code>CLASS_IND_TWELVE = 30;</code>
    */
-  CLASS_IND_FOURTEEN(30),
+  CLASS_IND_TWELVE(30),
   /**
-   * <code>CLASS_IND_SIXTEEN = 31;</code>
+   * <code>CLASS_IND_FOURTEEN = 31;</code>
    */
-  CLASS_IND_SIXTEEN(31),
+  CLASS_IND_FOURTEEN(31),
   /**
-   * <code>CLASS_IND_EIGHTEEN = 32;</code>
+   * <code>CLASS_IND_SIXTEEN = 32;</code>
    */
-  CLASS_IND_EIGHTEEN(32),
+  CLASS_IND_SIXTEEN(32),
   /**
-   * <code>ACB_G = 33;</code>
+   * <code>CLASS_IND_EIGHTEEN = 33;</code>
    */
-  ACB_G(33),
+  CLASS_IND_EIGHTEEN(33),
   /**
-   * <code>ACB_PG = 34;</code>
+   * <code>ACB_G = 34;</code>
    */
-  ACB_PG(34),
+  ACB_G(34),
   /**
-   * <code>ACB_M = 35;</code>
+   * <code>ACB_PG = 35;</code>
    */
-  ACB_M(35),
+  ACB_PG(35),
   /**
-   * <code>ACB_MA15 = 36;</code>
+   * <code>ACB_M = 36;</code>
    */
-  ACB_MA15(36),
+  ACB_M(36),
   /**
-   * <code>ACB_R18 = 37;</code>
+   * <code>ACB_MA15 = 37;</code>
    */
-  ACB_R18(37),
+  ACB_MA15(37),
   /**
-   * <code>ACB_RC = 38;</code>
+   * <code>ACB_R18 = 38;</code>
    */
-  ACB_RC(38),
+  ACB_R18(38),
+  /**
+   * <code>ACB_RC = 39;</code>
+   */
+  ACB_RC(39),
   UNRECOGNIZED(-1),
   ;
 
@@ -252,77 +256,81 @@ public enum AgeRatingRatingEnum
    */
   public static final int USK_12_VALUE = 20;
   /**
-   * <code>USK_18 = 21;</code>
+   * <code>USK_16 = 21;</code>
    */
-  public static final int USK_18_VALUE = 21;
+  public static final int USK_16_VALUE = 21;
   /**
-   * <code>GRAC_ALL = 22;</code>
+   * <code>USK_18 = 22;</code>
    */
-  public static final int GRAC_ALL_VALUE = 22;
+  public static final int USK_18_VALUE = 22;
   /**
-   * <code>GRAC_TWELVE = 23;</code>
+   * <code>GRAC_ALL = 23;</code>
    */
-  public static final int GRAC_TWELVE_VALUE = 23;
+  public static final int GRAC_ALL_VALUE = 23;
   /**
-   * <code>GRAC_FIFTEEN = 24;</code>
+   * <code>GRAC_TWELVE = 24;</code>
    */
-  public static final int GRAC_FIFTEEN_VALUE = 24;
+  public static final int GRAC_TWELVE_VALUE = 24;
   /**
-   * <code>GRAC_EIGHTEEN = 25;</code>
+   * <code>GRAC_FIFTEEN = 25;</code>
    */
-  public static final int GRAC_EIGHTEEN_VALUE = 25;
+  public static final int GRAC_FIFTEEN_VALUE = 25;
   /**
-   * <code>GRAC_TESTING = 26;</code>
+   * <code>GRAC_EIGHTEEN = 26;</code>
    */
-  public static final int GRAC_TESTING_VALUE = 26;
+  public static final int GRAC_EIGHTEEN_VALUE = 26;
   /**
-   * <code>CLASS_IND_L = 27;</code>
+   * <code>GRAC_TESTING = 27;</code>
    */
-  public static final int CLASS_IND_L_VALUE = 27;
+  public static final int GRAC_TESTING_VALUE = 27;
   /**
-   * <code>CLASS_IND_TEN = 28;</code>
+   * <code>CLASS_IND_L = 28;</code>
    */
-  public static final int CLASS_IND_TEN_VALUE = 28;
+  public static final int CLASS_IND_L_VALUE = 28;
   /**
-   * <code>CLASS_IND_TWELVE = 29;</code>
+   * <code>CLASS_IND_TEN = 29;</code>
    */
-  public static final int CLASS_IND_TWELVE_VALUE = 29;
+  public static final int CLASS_IND_TEN_VALUE = 29;
   /**
-   * <code>CLASS_IND_FOURTEEN = 30;</code>
+   * <code>CLASS_IND_TWELVE = 30;</code>
    */
-  public static final int CLASS_IND_FOURTEEN_VALUE = 30;
+  public static final int CLASS_IND_TWELVE_VALUE = 30;
   /**
-   * <code>CLASS_IND_SIXTEEN = 31;</code>
+   * <code>CLASS_IND_FOURTEEN = 31;</code>
    */
-  public static final int CLASS_IND_SIXTEEN_VALUE = 31;
+  public static final int CLASS_IND_FOURTEEN_VALUE = 31;
   /**
-   * <code>CLASS_IND_EIGHTEEN = 32;</code>
+   * <code>CLASS_IND_SIXTEEN = 32;</code>
    */
-  public static final int CLASS_IND_EIGHTEEN_VALUE = 32;
+  public static final int CLASS_IND_SIXTEEN_VALUE = 32;
   /**
-   * <code>ACB_G = 33;</code>
+   * <code>CLASS_IND_EIGHTEEN = 33;</code>
    */
-  public static final int ACB_G_VALUE = 33;
+  public static final int CLASS_IND_EIGHTEEN_VALUE = 33;
   /**
-   * <code>ACB_PG = 34;</code>
+   * <code>ACB_G = 34;</code>
    */
-  public static final int ACB_PG_VALUE = 34;
+  public static final int ACB_G_VALUE = 34;
   /**
-   * <code>ACB_M = 35;</code>
+   * <code>ACB_PG = 35;</code>
    */
-  public static final int ACB_M_VALUE = 35;
+  public static final int ACB_PG_VALUE = 35;
   /**
-   * <code>ACB_MA15 = 36;</code>
+   * <code>ACB_M = 36;</code>
    */
-  public static final int ACB_MA15_VALUE = 36;
+  public static final int ACB_M_VALUE = 36;
   /**
-   * <code>ACB_R18 = 37;</code>
+   * <code>ACB_MA15 = 37;</code>
    */
-  public static final int ACB_R18_VALUE = 37;
+  public static final int ACB_MA15_VALUE = 37;
   /**
-   * <code>ACB_RC = 38;</code>
+   * <code>ACB_R18 = 38;</code>
    */
-  public static final int ACB_RC_VALUE = 38;
+  public static final int ACB_R18_VALUE = 38;
+  /**
+   * <code>ACB_RC = 39;</code>
+   */
+  public static final int ACB_RC_VALUE = 39;
 
 
   public final int getNumber() {
@@ -370,24 +378,25 @@ public enum AgeRatingRatingEnum
       case 18: return USK_0;
       case 19: return USK_6;
       case 20: return USK_12;
-      case 21: return USK_18;
-      case 22: return GRAC_ALL;
-      case 23: return GRAC_TWELVE;
-      case 24: return GRAC_FIFTEEN;
-      case 25: return GRAC_EIGHTEEN;
-      case 26: return GRAC_TESTING;
-      case 27: return CLASS_IND_L;
-      case 28: return CLASS_IND_TEN;
-      case 29: return CLASS_IND_TWELVE;
-      case 30: return CLASS_IND_FOURTEEN;
-      case 31: return CLASS_IND_SIXTEEN;
-      case 32: return CLASS_IND_EIGHTEEN;
-      case 33: return ACB_G;
-      case 34: return ACB_PG;
-      case 35: return ACB_M;
-      case 36: return ACB_MA15;
-      case 37: return ACB_R18;
-      case 38: return ACB_RC;
+      case 21: return USK_16;
+      case 22: return USK_18;
+      case 23: return GRAC_ALL;
+      case 24: return GRAC_TWELVE;
+      case 25: return GRAC_FIFTEEN;
+      case 26: return GRAC_EIGHTEEN;
+      case 27: return GRAC_TESTING;
+      case 28: return CLASS_IND_L;
+      case 29: return CLASS_IND_TEN;
+      case 30: return CLASS_IND_TWELVE;
+      case 31: return CLASS_IND_FOURTEEN;
+      case 32: return CLASS_IND_SIXTEEN;
+      case 33: return CLASS_IND_EIGHTEEN;
+      case 34: return ACB_G;
+      case 35: return ACB_PG;
+      case 36: return ACB_M;
+      case 37: return ACB_MA15;
+      case 38: return ACB_R18;
+      case 39: return ACB_RC;
       default: return null;
     }
   }

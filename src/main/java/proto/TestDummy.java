@@ -20,7 +20,8 @@ private static final long serialVersionUID = 0L;
     integerArray_ = emptyIntList();
     name_ = "";
     slug_ = "";
-    stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    stringArray_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
     testDummies_ = java.util.Collections.emptyList();
     url_ = "";
     checksum_ = "";
@@ -33,11 +34,6 @@ private static final long serialVersionUID = 0L;
     return new TestDummy();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return proto.Igdbproto.internal_static_proto_TestDummy_descriptor;
@@ -296,7 +292,8 @@ private static final long serialVersionUID = 0L;
 
   public static final int STRING_ARRAY_FIELD_NUMBER = 13;
   @SuppressWarnings("serial")
-  private com.google.protobuf.LazyStringList stringArray_;
+  private com.google.protobuf.LazyStringArrayList stringArray_ =
+      com.google.protobuf.LazyStringArrayList.emptyList();
   /**
    * <code>repeated string string_array = 13;</code>
    * @return A list containing the stringArray.
@@ -545,11 +542,13 @@ private static final long serialVersionUID = 0L;
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
+
   public static proto.TestDummy parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
+
   public static proto.TestDummy parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -645,8 +644,8 @@ private static final long serialVersionUID = 0L;
       newIntegerValue_ = 0;
       private_ = false;
       slug_ = "";
-      stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00001000);
+      stringArray_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
       if (testDummiesBuilder_ == null) {
         testDummies_ = java.util.Collections.emptyList();
       } else {
@@ -704,11 +703,6 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00000040);
       }
       result.integerArray_ = integerArray_;
-      if (((bitField0_ & 0x00001000) != 0)) {
-        stringArray_ = stringArray_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00001000);
-      }
-      result.stringArray_ = stringArray_;
       if (testDummiesBuilder_ == null) {
         if (((bitField0_ & 0x00002000) != 0)) {
           testDummies_ = java.util.Collections.unmodifiableList(testDummies_);
@@ -759,6 +753,10 @@ private static final long serialVersionUID = 0L;
       if (((from_bitField0_ & 0x00000800) != 0)) {
         result.slug_ = slug_;
       }
+      if (((from_bitField0_ & 0x00001000) != 0)) {
+        stringArray_.makeImmutable();
+        result.stringArray_ = stringArray_;
+      }
       if (((from_bitField0_ & 0x00004000) != 0)) {
         result.testDummy_ = testDummyBuilder_ == null
             ? testDummy_
@@ -777,38 +775,6 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
     private int bitField0_;
 
     private long id_ ;
@@ -826,7 +792,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setId(long value) {
-      
+
       id_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
@@ -858,7 +824,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBoolValue(boolean value) {
-      
+
       boolValue_ = value;
       bitField0_ |= 0x00000002;
       onChanged();
@@ -1062,7 +1028,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFloatValue(double value) {
-      
+
       floatValue_ = value;
       bitField0_ |= 0x00000010;
       onChanged();
@@ -1237,7 +1203,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setIntegerArray(
         int index, int value) {
-      
+
       ensureIntegerArrayIsMutable();
       integerArray_.setInt(index, value);
       onChanged();
@@ -1249,7 +1215,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addIntegerArray(int value) {
-      
+
       ensureIntegerArrayIsMutable();
       integerArray_.addInt(value);
       onChanged();
@@ -1294,7 +1260,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setIntegerValue(int value) {
-      
+
       integerValue_ = value;
       bitField0_ |= 0x00000080;
       onChanged();
@@ -1398,7 +1364,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setNewIntegerValue(int value) {
-      
+
       newIntegerValue_ = value;
       bitField0_ |= 0x00000200;
       onChanged();
@@ -1430,7 +1396,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPrivate(boolean value) {
-      
+
       private_ = value;
       bitField0_ |= 0x00000400;
       onChanged();
@@ -1519,12 +1485,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.LazyStringList stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private com.google.protobuf.LazyStringArrayList stringArray_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
     private void ensureStringArrayIsMutable() {
-      if (!((bitField0_ & 0x00001000) != 0)) {
+      if (!stringArray_.isModifiable()) {
         stringArray_ = new com.google.protobuf.LazyStringArrayList(stringArray_);
-        bitField0_ |= 0x00001000;
-       }
+      }
+      bitField0_ |= 0x00001000;
     }
     /**
      * <code>repeated string string_array = 13;</code>
@@ -1532,7 +1499,8 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ProtocolStringList
         getStringArrayList() {
-      return stringArray_.getUnmodifiableView();
+      stringArray_.makeImmutable();
+      return stringArray_;
     }
     /**
      * <code>repeated string string_array = 13;</code>
@@ -1569,6 +1537,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) { throw new NullPointerException(); }
       ensureStringArrayIsMutable();
       stringArray_.set(index, value);
+      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -1582,6 +1551,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) { throw new NullPointerException(); }
       ensureStringArrayIsMutable();
       stringArray_.add(value);
+      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -1595,6 +1565,7 @@ private static final long serialVersionUID = 0L;
       ensureStringArrayIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
           values, stringArray_);
+      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }
@@ -1603,8 +1574,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStringArray() {
-      stringArray_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00001000);
+      stringArray_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+      bitField0_ = (bitField0_ & ~0x00001000);;
       onChanged();
       return this;
     }
@@ -1619,6 +1591,7 @@ private static final long serialVersionUID = 0L;
       checkByteStringIsUtf8(value);
       ensureStringArrayIsMutable();
       stringArray_.add(value);
+      bitField0_ |= 0x00001000;
       onChanged();
       return this;
     }

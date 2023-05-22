@@ -3,11 +3,11 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.7.20"
-    id("org.jetbrains.dokka") version "1.7.20"
+    kotlin("jvm") version "1.8.21"
+    id("org.jetbrains.dokka") version "1.8.10"
     id("maven-publish")
     id("signing")
-    id("de.undercouch.download") version "4.0.4"
+    id("de.undercouch.download") version "5.4.0"
     id("com.google.protobuf") version "0.8.19"
 }
 
@@ -15,9 +15,9 @@ group = "io.github.husnjak"
 version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.21.12"
-val junitJupiterVersion = "5.9.0"
-val junitPlatformVersion = "1.9.0"
+val protobufJavaVersion = "3.23.1"
+val junitJupiterVersion = "5.9.3"
+val junitPlatformVersion = "1.9.3"
 
 repositories {
     mavenCentral()
@@ -53,13 +53,14 @@ sourceSets {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     }
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
+        dependsOn(getTasksByName("generateProto", true))
     }
     withType<GenerateProtoTask> {
         dependsOn(downloadProtoFiles)
@@ -164,6 +165,11 @@ publishing {
 }
 
 signing {
+    val isJitpack = System.getenv("JITPACK") ?: ""
+    if (isJitpack == "true"){
+        return@signing
+    }
+
     if (version.toString().contains("local")) {
         useGpgCmd()
     } else {

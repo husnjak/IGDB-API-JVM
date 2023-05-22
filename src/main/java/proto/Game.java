@@ -65,11 +65,6 @@ private static final long serialVersionUID = 0L;
     return new Game();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return proto.Igdbproto.internal_static_proto_Game_descriptor;
@@ -2002,11 +1997,13 @@ private static final long serialVersionUID = 0L;
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
+
   public static proto.Game parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
+
   public static proto.Game parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2765,38 +2762,6 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
     private int bitField0_;
     private int bitField1_;
 
@@ -2815,7 +2780,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setId(long value) {
-      
+
       id_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
@@ -3087,7 +3052,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAggregatedRating(double value) {
-      
+
       aggregatedRating_ = value;
       bitField0_ |= 0x00000004;
       onChanged();
@@ -3119,7 +3084,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAggregatedRatingCount(int value) {
-      
+
       aggregatedRatingCount_ = value;
       bitField0_ |= 0x00000008;
       onChanged();
@@ -5120,7 +5085,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFollows(int value) {
-      
+
       follows_ = value;
       bitField0_ |= 0x00008000;
       onChanged();
@@ -6231,7 +6196,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setHypes(int value) {
-      
+
       hypes_ = value;
       bitField0_ |= 0x00200000;
       onChanged();
@@ -7654,7 +7619,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRating(double value) {
-      
+
       rating_ = value;
       bitField0_ |= 0x20000000;
       onChanged();
@@ -7686,7 +7651,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRatingCount(int value) {
-      
+
       ratingCount_ = value;
       bitField0_ |= 0x40000000;
       onChanged();
@@ -8971,7 +8936,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder setTags(
         int index, int value) {
-      
+
       ensureTagsIsMutable();
       tags_.setInt(index, value);
       onChanged();
@@ -8983,7 +8948,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addTags(int value) {
-      
+
       ensureTagsIsMutable();
       tags_.addInt(value);
       onChanged();
@@ -9268,7 +9233,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTotalRating(double value) {
-      
+
       totalRating_ = value;
       bitField1_ |= 0x00000200;
       onChanged();
@@ -9300,7 +9265,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTotalRatingCount(int value) {
-      
+
       totalRatingCount_ = value;
       bitField1_ |= 0x00000400;
       onChanged();
