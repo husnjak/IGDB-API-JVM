@@ -3,11 +3,11 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.9.10"
-    id("org.jetbrains.dokka") version "1.8.10"
+    kotlin("jvm") version "1.9.20"
+    id("org.jetbrains.dokka") version "1.9.10"
     id("maven-publish")
     id("signing")
-    id("de.undercouch.download") version "5.4.0"
+    id("de.undercouch.download") version "5.5.0"
     id("com.google.protobuf") version "0.9.4"
 }
 
@@ -18,6 +18,7 @@ val fuelVersion = "2.3.1"
 val protobufJavaVersion = "3.24.3"
 val junitJupiterVersion = "5.10.0"
 val junitPlatformVersion = "1.10.0"
+val protobufPluginVersion = "0.9.4"
 
 repositories {
     mavenCentral()
@@ -33,7 +34,7 @@ dependencies {
     // Protocol Buffers
       // set to api() to add protobuf to client classpath
     api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
-    implementation("com.google.protobuf:protobuf-gradle-plugin:0.9.4")
+    implementation("com.google.protobuf:protobuf-gradle-plugin:$protobufPluginVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
