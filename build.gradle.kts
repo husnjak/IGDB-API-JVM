@@ -77,7 +77,6 @@ protobuf {
     protoc {
         artifact = "com.google.protobuf:protoc:$protobufJavaVersion"
     }
-    generatedFilesBaseDir = "$projectDir/generatedProtoFiles"
 }
 
  tasks.register("downloadProtoFiles",Download::class) {
