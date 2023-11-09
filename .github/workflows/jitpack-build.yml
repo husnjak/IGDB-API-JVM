@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Branch Name
-        run: echo running on branch ${{ github.head_ref }}
+        run: echo running on branch ${BRANCH_NAME}
+        env: 
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
       - name: Trigger Jitpack Build
         run: curl https://jitpack.io/com/github/husnjak/IGDB-API-JVM/${BRANCH_NAME}-SNAPSHOT/build.log -L | grep -o 'BUILD SUCCESSFUL'
         env: 
