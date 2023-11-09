@@ -264,3 +264,59 @@ fun IGDBWrapper.websites(APICalypse: APICalypse): List<Website> {
     val bytes = apiProtoRequest(Endpoints.WEBSITES, APICalypse.buildQuery())
     return WebsiteResult.parseFrom(bytes).websitesList
 }
+
+@Throws(RequestException::class)
+fun IGDBWrapper.events(APICalypse: APICalypse): List<Event> {
+    val bytes = apiProtoRequest(Endpoints.EVENTS, APICalypse.buildQuery())
+    return EventResult.parseFrom(bytes).eventsList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.eventLogos(APICalypse: APICalypse): List<EventLogo> {
+    val bytes = apiProtoRequest(Endpoints.EVENT_LOGOS, APICalypse.buildQuery())
+    return EventLogoResult.parseFrom(bytes).eventlogosList
+}
+
+
+@Throws(RequestException::class)
+fun IGDBWrapper.eventNetworks(APICalypse: APICalypse): List<EventNetwork> {
+    val bytes = apiProtoRequest(Endpoints.EVENT_NETWORKS, APICalypse.buildQuery())
+    return EventNetworkResult.parseFrom(bytes).eventnetworksList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.networkTypes(APICalypse: APICalypse): List<NetworkType> {
+    val bytes = apiProtoRequest(Endpoints.NETWORK_TYPES, APICalypse.buildQuery())
+    return NetworkTypeResult.parseFrom(bytes).networktypesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.collectionRelations(APICalypse: APICalypse): List<CollectionRelation> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_RELATIONS, APICalypse.buildQuery())
+    return CollectionRelationResult.parseFrom(bytes).collectionrelationsList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.collectionRelationTypes(APICalypse: APICalypse): List<CollectionRelationType> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_RELATION_TYPES, APICalypse.buildQuery())
+    return CollectionRelationTypeResult.parseFrom(bytes).collectionrelationtypesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.collectionTypes(APICalypse: APICalypse): List<CollectionType> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_TYPES, APICalypse.buildQuery())
+    return CollectionTypeResult.parseFrom(bytes).collectiontypesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.collectionMemberships(APICalypse: APICalypse): List<CollectionMembership> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_MEMBERSHIPS, APICalypse.buildQuery())
+    return CollectionMembershipResult.parseFrom(bytes).collectionmembershipsList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.collectionMembershipTypes(APICalypse: APICalypse): List<CollectionMembershipType> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_MEMBERSHIP_TYPES, APICalypse.buildQuery())
+    return CollectionMembershipTypeResult.parseFrom(bytes).collectionmembershiptypesList
+}
+

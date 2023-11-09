@@ -312,5 +312,59 @@ class TestProtobufRequest {
         val result = wrapper.websites(APICalypse())
         assert(result.isNotEmpty())
     }
+
+    @Test
+    fun testEvents() {
+        val result = wrapper.events(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testEventLogos() {
+        val result = wrapper.eventLogos(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testEventNetworks() {
+        val result = wrapper.eventNetworks(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testNetworkTypes() {
+        val result = wrapper.networkTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCollectionRelations() {
+        val result = wrapper.collectionRelations(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCollectionRelationTypes() {
+        val result = wrapper.collectionRelationTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCollectionTypes() {
+        val result = wrapper.collectionTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCollectionMemberships() {
+        val result = wrapper.collectionMemberships(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCollectionMembershipTypes() {
+        val result = wrapper.collectionMembershipTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
     
 }

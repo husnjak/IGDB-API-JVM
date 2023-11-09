@@ -3,21 +3,22 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.8.21"
-    id("org.jetbrains.dokka") version "1.8.10"
+    kotlin("jvm") version "1.9.20"
+    id("org.jetbrains.dokka") version "1.9.10"
     id("maven-publish")
     id("signing")
-    id("de.undercouch.download") version "5.4.0"
-    id("com.google.protobuf") version "0.8.19"
+    id("de.undercouch.download") version "5.5.0"
+    id("com.google.protobuf") version "0.9.4"
 }
 
 group = "io.github.husnjak"
 version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.23.1"
-val junitJupiterVersion = "5.9.3"
-val junitPlatformVersion = "1.9.3"
+val protobufJavaVersion = "3.24.3"
+val junitJupiterVersion = "5.10.0"
+val junitPlatformVersion = "1.10.0"
+val protobufPluginVersion = "0.9.4"
 
 repositories {
     mavenCentral()
@@ -33,6 +34,7 @@ dependencies {
     // Protocol Buffers
       // set to api() to add protobuf to client classpath
     api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
+    implementation("com.google.protobuf:protobuf-gradle-plugin:$protobufPluginVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
@@ -53,17 +55,17 @@ sourceSets {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
     }
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
         dependsOn(getTasksByName("generateProto", true))
     }
     withType<GenerateProtoTask> {
-        dependsOn(downloadProtoFiles)
+        dependsOn("downloadProtoFiles")
     }
     processResources{
         dependsOn(getTasksByName("generateProto", true))
@@ -71,17 +73,16 @@ tasks {
     }
 }
 
-protobuf.protobuf.run {
-    protoc(delegateClosureOf<ExecutableLocator> {
+protobuf {
+    protoc {
         artifact = "com.google.protobuf:protoc:$protobufJavaVersion"
-    })
-    generatedFilesBaseDir = "$projectDir/src"
+    }
 }
 
-val downloadProtoFiles by tasks.creating(Download::class) {
-    src("https://api.igdb.com/v4/igdbapi.proto")
-    dest("$projectDir/src/resources/com/api/igdb/igdbproto.proto")
-    overwrite(true)
+ tasks.register("downloadProtoFiles",Download::class) {
+    this.src("https://api.igdb.com/v4/igdbapi.proto")
+    this.dest("$projectDir/src/resources/com/api/igdb/igdbproto.proto")
+    this.overwrite(true)
 }
 
 val dokkaJar by tasks.creating(Jar::class) {
