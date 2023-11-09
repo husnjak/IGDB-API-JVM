@@ -218,3 +218,45 @@ fun IGDBWrapper.jsonThemes(APICalypse: APICalypse): String {
 fun IGDBWrapper.jsonWebsites(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.WEBSITES, APICalypse.buildQuery())
 }
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonEvents(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.EVENTS, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonEventLogos(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.EVENT_LOGOS, APICalypse.buildQuery())
+}
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonEventNetworks(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.EVENT_NETWORKS, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonNetworkTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.NETWORK_TYPES, APICalypse.buildQuery())
+}
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonCollectionRelations(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.COLLECTION_RELATIONS, APICalypse.buildQuery())
+}
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonCollectionRelationTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.COLLECTION_RELATION_TYPES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonCollectionTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.COLLECTION_TYPES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonCollectionMemberships(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.COLLECTION_MEMBERSHIPS, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonCollectionMembershipTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.COLLECTION_MEMBERSHIP_TYPES, APICalypse.buildQuery())
+}
