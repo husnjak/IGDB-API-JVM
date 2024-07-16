@@ -59,6 +59,13 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
     }
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
+    }
+
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
         dependsOn(getTasksByName("generateProto", true))
