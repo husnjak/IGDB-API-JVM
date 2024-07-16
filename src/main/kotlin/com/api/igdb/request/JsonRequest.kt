@@ -260,3 +260,13 @@ fun IGDBWrapper.jsonCollectionMemberships(APICalypse: APICalypse): String {
 fun IGDBWrapper.jsonCollectionMembershipTypes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.COLLECTION_MEMBERSHIP_TYPES, APICalypse.buildQuery())
 }
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonPopularityTypes(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.POPULARITY_TYPES, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.jsonPopularityPrimitives(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.POPULARITY_PRIMITIVES, APICalypse.buildQuery())
+}

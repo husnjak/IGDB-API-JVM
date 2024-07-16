@@ -340,7 +340,7 @@ class TestProtobufRequest {
     @Test
     fun testCollectionRelations() {
         val result = wrapper.collectionRelations(APICalypse())
-        assert(result.isNotEmpty())
+        assert(result.isEmpty()) // Currently no data..
     }
 
     @Test
@@ -364,6 +364,18 @@ class TestProtobufRequest {
     @Test
     fun testCollectionMembershipTypes() {
         val result = wrapper.collectionMembershipTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testPopularityTypes() {
+        val result = wrapper.popularityTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testPopularityPrimitives() {
+        val result = wrapper.popularityPrimitives(APICalypse())
         assert(result.isNotEmpty())
     }
     

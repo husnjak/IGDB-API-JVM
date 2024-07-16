@@ -1,13 +1,12 @@
-import com.google.protobuf.gradle.ExecutableLocator
 import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.9.20"
-    id("org.jetbrains.dokka") version "1.9.10"
+    kotlin("jvm") version "1.9.24"
+    id("org.jetbrains.dokka") version "1.9.20"
     id("maven-publish")
     id("signing")
-    id("de.undercouch.download") version "5.5.0"
+    id("de.undercouch.download") version "5.6.0"
     id("com.google.protobuf") version "0.9.4"
 }
 
@@ -15,7 +14,7 @@ group = "io.github.husnjak"
 version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "3.24.3"
+val protobufJavaVersion = "4.27.2"
 val junitJupiterVersion = "5.10.0"
 val junitPlatformVersion = "1.10.0"
 val protobufPluginVersion = "0.9.4"
@@ -33,7 +32,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     // Protocol Buffers
       // set to api() to add protobuf to client classpath
-    api("com.google.protobuf:protobuf-java:$protobufJavaVersion")
+    api("com.google.protobuf:protobuf-kotlin:$protobufJavaVersion")
     implementation("com.google.protobuf:protobuf-gradle-plugin:$protobufPluginVersion")
     // Tests
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
