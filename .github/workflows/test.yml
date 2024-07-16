@@ -22,4 +22,6 @@ jobs:
           client_id: "${{ secrets.CLIENT_ID }}"
           client_secret: "${{ secrets.CLIENT_SECRET }}"
           bearer: "${{ secrets.BEARER_TOKEN }}"
+          proxy_api_key: "${{ secrets.PROXY_KEY }}"
+          proxy_url: "${{ secrets.PROXY_URL }}"
           ORG_GRADLE_PROJECT_version: Build-${{ github.run_id }}"
