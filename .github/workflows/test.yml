@@ -23,3 +23,10 @@ jobs:
           client_secret: "${{ secrets.CLIENT_SECRET }}"
           bearer: "${{ secrets.BEARER_TOKEN }}"
           ORG_GRADLE_PROJECT_version: Build-${{ github.run_id }}"
+      - name: Execute Gradle test
+        run: ./gradlew test --no-daemon
+        env:
+          client_id: "${{ secrets.CLIENT_ID }}"
+          client_secret: "${{ secrets.CLIENT_SECRET }}"
+          bearer: "${{ secrets.BEARER_TOKEN }}"
+          ORG_GRADLE_PROJECT_version: Build-${{ github.run_id }}"
