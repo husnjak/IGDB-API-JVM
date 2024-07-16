@@ -59,14 +59,6 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
     }
-    test {
-        useJUnitPlatform()
-        maxParallelForks = 1
-        testLogging {
-            events("passed", "skipped", "failed")
-        }
-        exclude("**/*Token*") // No need to generate tokens for tests
-    }
 
     dokkaJavadoc {
         outputDirectory.set(buildDir.resolve("javadoc"))
