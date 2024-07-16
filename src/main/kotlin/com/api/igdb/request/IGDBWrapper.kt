@@ -7,9 +7,10 @@ import com.github.kittinunf.fuel.httpPost
 /**
  * The ApiRequester object holds the API Key and uses it to request the IGDB API.
  */
-private var IGDB_API_URL = "https://api.igdb.com/v4"
+private const val IGDB_API_URL = "https://api.igdb.com/v4"
 object IGDBWrapper {
     private var requestHeaders: Map<String, Any> = mapOf("x-user-agent" to "igdb-api-jvm")
+    private var requestUrl: String = IGDB_API_URL
 
     /**
      * The Set method for API Credentials
@@ -18,6 +19,7 @@ object IGDBWrapper {
      * @property accessToken The IGDB AccessToken
      */
     fun setCredentials(clientID: String, accessToken: String) {
+        requestUrl = IGDB_API_URL
         requestHeaders = mapOf(
             "client-id" to clientID,
             "authorization" to "Bearer $accessToken",
@@ -31,7 +33,7 @@ object IGDBWrapper {
      * @property proxyHeaders The headers to send to the Proxy Server
      */
     fun setupProxy(proxyURL: String, proxyHeaders: Map<String, String>) {
-        IGDB_API_URL = proxyURL
+        requestUrl = proxyURL
         proxyHeaders.toMutableMap()["x-user-agent"] = "igdb-api-jvm"
         requestHeaders = proxyHeaders.toMap()
     }
@@ -45,7 +47,7 @@ object IGDBWrapper {
      */
     @Throws(RequestException::class)
     fun apiProtoRequest(endpoint: Endpoint, query: String): ByteArray {
-        val requestURL = "$IGDB_API_URL${endpoint.url()}.pb"
+        val requestURL = "$requestUrl${endpoint.url()}.pb"
         val (request, response, result) = requestURL.httpPost()
             .header(requestHeaders).body(query).responseString()
 
@@ -64,7 +66,7 @@ object IGDBWrapper {
      */
     @Throws(RequestException::class)
     fun apiJsonRequest(endpoint: Endpoint, query: String): String {
-        val requestURL = "$IGDB_API_URL${endpoint.url()}"
+        val requestURL = "$requestUrl${endpoint.url()}"
         val (request, response, result) = requestURL.httpPost()
             .header(requestHeaders).body(query).responseString()
 
