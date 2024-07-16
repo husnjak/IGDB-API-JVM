@@ -64,6 +64,7 @@ tasks {
         testLogging {
             events("passed", "skipped", "failed")
         }
+        exclude("**/*Token*") // No need to generate tokens for tests
     }
 
     dokkaJavadoc {
