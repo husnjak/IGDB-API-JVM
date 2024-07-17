@@ -320,3 +320,14 @@ fun IGDBWrapper.collectionMembershipTypes(APICalypse: APICalypse): List<Collecti
     return CollectionMembershipTypeResult.parseFrom(bytes).collectionmembershiptypesList
 }
 
+@Throws(RequestException::class)
+fun IGDBWrapper.popularityTypes(APICalypse: APICalypse): List<PopularityType> {
+    val bytes = apiProtoRequest(Endpoints.POPULARITY_TYPES, APICalypse.buildQuery())
+    return PopularityTypeResult.parseFrom(bytes).popularitytypesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.popularityPrimitives(APICalypse: APICalypse): List<PopularityPrimitive> {
+    val bytes = apiProtoRequest(Endpoints.COLLECTION_MEMBERSHIP_TYPES, APICalypse.buildQuery())
+    return PopularityPrimitiveResult.parseFrom(bytes).popularityprimitivesList
+}
