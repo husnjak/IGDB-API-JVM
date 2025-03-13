@@ -411,6 +411,6 @@ fun IGDBWrapper.popularityTypes(APICalypse: APICalypse): List<PopularityType> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.popularityPrimitives(APICalypse: APICalypse): List<PopularityPrimitive> {
-    val bytes = apiProtoRequest(Endpoints.COLLECTION_MEMBERSHIP_TYPES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.POPULARITY_PRIMITIVES, APICalypse.buildQuery())
     return PopularityPrimitiveResult.parseFrom(bytes).popularityprimitivesList
 }

@@ -457,14 +457,18 @@ class TestProtobufRequest {
 
     @Test
     fun testPopularityTypes() {
-        val result = wrapper.popularityTypes(APICalypse())
+        val result = wrapper.popularityTypes(APICalypse().fields("*"))
         assert(result.isNotEmpty())
+        assert(result.first().hasExternalPopularitySource())
     }
 
     @Test
     fun testPopularityPrimitives() {
-        val result = wrapper.popularityPrimitives(APICalypse())
+        val result = wrapper.popularityPrimitives(APICalypse().fields("*"))
         assert(result.isNotEmpty())
+        assert(result.first().hasExternalPopularitySource())
+        assert(result.first().hasCalculatedAt())
+        assert(result.first().value > 0)
     }
     
 }
