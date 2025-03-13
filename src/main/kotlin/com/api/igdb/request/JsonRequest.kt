@@ -71,7 +71,7 @@ fun IGDBWrapper.jsonCompanies(APICalypse: APICalypse): String {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonCompanyStatuses(APICalypse: APICalypse): String {
-    return apiJsonRequest(Endpoints.COMPANY_STATUS, APICalypse.buildQuery())
+    return apiJsonRequest(Endpoints.COMPANY_STATUSES, APICalypse.buildQuery())
 }
 
 @Throws(RequestException::class)
@@ -101,7 +101,7 @@ fun IGDBWrapper.jsonExternalGames(APICalypse: APICalypse): String {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonExternalGameSources(APICalypse: APICalypse): String {
-    return apiJsonRequest(Endpoints.EXTERNAL_GAMES_SOURCES, APICalypse.buildQuery())
+    return apiJsonRequest(Endpoints.EXTERNAL_GAME_SOURCES, APICalypse.buildQuery())
 }
 
 @Throws(RequestException::class)

@@ -87,7 +87,7 @@ fun IGDBWrapper.companies(APICalypse: APICalypse): List<Company> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.companyStatuses(APICalypse: APICalypse): List<CompanyStatus> {
-    val bytes = apiProtoRequest(Endpoints.COMPANIES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.COMPANY_STATUSES, APICalypse.buildQuery())
     return CompanyStatusResult.parseFrom(bytes).companystatusesList
 }
 
@@ -123,7 +123,7 @@ fun IGDBWrapper.externalGames(APICalypse: APICalypse): List<ExternalGame> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.externalGameSources(APICalypse: APICalypse): List<ExternalGameSource> {
-    val bytes = apiProtoRequest(Endpoints.EXTERNAL_GAMES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.EXTERNAL_GAME_SOURCES, APICalypse.buildQuery())
     return ExternalGameSourceResult.parseFrom(bytes).externalgamesourcesList
 }
 
@@ -171,13 +171,13 @@ fun IGDBWrapper.gameReleaseFormats(APICalypse: APICalypse): List<GameReleaseForm
 
 @Throws(RequestException::class)
 fun IGDBWrapper.gameStatuses(APICalypse: APICalypse): List<GameStatus> {
-    val bytes = apiProtoRequest(Endpoints.GAME_MODES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.GAME_STATUSES, APICalypse.buildQuery())
     return GameStatusResult.parseFrom(bytes).gamestatusesList
 }
 
 @Throws(RequestException::class)
 fun IGDBWrapper.gameTypes(APICalypse: APICalypse): List<GameType> {
-    val bytes = apiProtoRequest(Endpoints.GAME_MODES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.GAME_TYPES, APICalypse.buildQuery())
     return GameTypeResult.parseFrom(bytes).gametypesList
 }
 
@@ -261,7 +261,7 @@ fun IGDBWrapper.platformLogos(APICalypse: APICalypse): List<PlatformLogo> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.platformTypes(APICalypse: APICalypse): List<PlatformType> {
-    val bytes = apiProtoRequest(Endpoints.PLATFORM_LOGOS, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.PLATFORM_TYPES, APICalypse.buildQuery())
     return PlatformTypeResult.parseFrom(bytes).platformtypesList
 }
 
@@ -315,7 +315,7 @@ fun IGDBWrapper.releaseDates(APICalypse: APICalypse): List<ReleaseDate> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.releaseDateRegions(APICalypse: APICalypse): List<ReleaseDateRegion> {
-    val bytes = apiProtoRequest(Endpoints.RELEASE_DATES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.RELEASE_DATE_REGIONS, APICalypse.buildQuery())
     return ReleaseDateRegionResult.parseFrom(bytes).releasedateregionsList
 }
 
@@ -345,7 +345,7 @@ fun IGDBWrapper.websites(APICalypse: APICalypse): List<Website> {
 
 @Throws(RequestException::class)
 fun IGDBWrapper.websiteTypes(APICalypse: APICalypse): List<WebsiteType> {
-    val bytes = apiProtoRequest(Endpoints.WEBSITES, APICalypse.buildQuery())
+    val bytes = apiProtoRequest(Endpoints.WEBSITE_TYPES, APICalypse.buildQuery())
     return WebsiteTypeResult.parseFrom(bytes).websitetypesList
 }
 
