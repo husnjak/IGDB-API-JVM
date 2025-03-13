@@ -1,4 +1,4 @@
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm?versionPrefix=1.2.0)](https://central.sonatype.com/artifact/io.github.husnjak/igdb-api-jvm/1.2.0)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.husnjak/igdb-api-jvm?versionPrefix=1.3.0)](https://central.sonatype.com/artifact/io.github.husnjak/igdb-api-jvm/1.3.0)
 [![](https://jitpack.io/v/husnjak/IGDB-API-JVM.svg)](https://jitpack.io/#husnjak/IGDB-API-JVM)
 # IGDB API-JVM (V4)
 A Kotlin wrapper for the IGDB.com Video Game Database API. 
@@ -34,7 +34,7 @@ __Maven__
 <dependency>
   <groupId>io.github.husnjak</groupId>
   <artifactId>igdb-api-jvm</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 
@@ -42,7 +42,7 @@ __Gradle__
 
 ``` gradle
 dependencies {
-    implementation 'io.github.husnjak:igdb-api-jvm:1.2.0'
+    implementation 'io.github.husnjak:igdb-api-jvm:1.3.0'
 }
 ```
 
