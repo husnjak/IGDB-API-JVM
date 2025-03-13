@@ -2,7 +2,7 @@ import com.google.protobuf.gradle.GenerateProtoTask
 import de.undercouch.gradle.tasks.download.Download
 
 plugins {
-    kotlin("jvm") version "1.9.24"
+    kotlin("jvm") version "2.1.10"
     id("org.jetbrains.dokka") version "1.9.20"
     id("maven-publish")
     id("signing")
@@ -14,9 +14,9 @@ group = "io.github.husnjak"
 version = findProperty("version") as String
 
 val fuelVersion = "2.3.1"
-val protobufJavaVersion = "4.27.2"
-val junitJupiterVersion = "5.10.0"
-val junitPlatformVersion = "1.10.0"
+val protobufJavaVersion = "4.29.3"
+val junitJupiterVersion = "5.12.0"
+val junitPlatformVersion = "1.12.0"
 val protobufPluginVersion = "0.9.4"
 
 repositories {
