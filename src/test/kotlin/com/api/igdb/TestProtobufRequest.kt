@@ -24,8 +24,26 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testAgeRatingCategories() {
+        val result = wrapper.ageRatingCategories(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testAgeRatingContentDescriptions() {
         val result = wrapper.ageRatingContentDescriptions(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testAgeRatingContentDescriptionsV2() {
+        val result = wrapper.ageRatingContentDescriptionsV2(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testAgeRatingOrganizations() {
+        val result = wrapper.ageRatingOrganizations(APICalypse())
         assert(result.isNotEmpty())
     }
 
@@ -38,6 +56,18 @@ class TestProtobufRequest {
     @Test
     fun testArtwork() {
         val result = wrapper.artworks(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCharactersGenders() {
+        val result = wrapper.characterGenders(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testCharacterSpecies() {
+        val result = wrapper.characterSpecies(APICalypse())
         assert(result.isNotEmpty())
     }
 
@@ -66,6 +96,12 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testCompanyStatuses() {
+        val result = wrapper.companyStatuses(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testComapnyWebsites() {
         val result = wrapper.companyWebsites(APICalypse())
         assert(result.isNotEmpty())
@@ -84,8 +120,20 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testDateFormats() {
+        val result = wrapper.dateFormats(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testExternalGames() {
         val result = wrapper.externalGames(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testExternalGameSources() {
+        val result = wrapper.externalGameSources(APICalypse())
         assert(result.isNotEmpty())
     }
 
@@ -105,13 +153,16 @@ class TestProtobufRequest {
         assertEquals("The Witcher 3: Wild Hunt", game.name)
         assertEquals("the-witcher-3-wild-hunt", game.slug)
         assert(game.name.isNotEmpty())
-        assert(game.updatedAt.isInitialized)
+        assert(game.hasCreatedAt())
         if (game.checksum.isNullOrBlank()) println("checksumField empty") else println(game.checksum)
         assertNotEquals(" ", game.checksum)
 
         val ageRatings = game.ageRatingsList
         val ageRating = ageRatings.first()
         assert(ageRating.contentDescriptionsList.isNotEmpty())
+        assert(ageRating.ratingContentDescriptionsList.isNotEmpty())
+        assert(ageRating.hasOrganization())
+        assert(ageRating.hasRatingCategory())
         if (ageRating.checksum.isNullOrBlank()) println("checksumField empty") else println(ageRating.checksum)
         assertNotEquals(" ", ageRating.checksum)
 
@@ -183,6 +234,24 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testGameReleaseFormats() {
+        val result = wrapper.gameReleaseFormats(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testGameStatuses() {
+        val result = wrapper.gameStatuses(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testGameTypes() {
+        val result = wrapper.gameTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testGameVersions() {
         val result = wrapper.gameVersion(APICalypse())
         assert(result.isNotEmpty())
@@ -243,6 +312,12 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testPlatformTypes() {
+        val result = wrapper.platformTypes(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testPlatformVersions() {
         val result = wrapper.platformVersions(APICalypse())
         assert(result.isNotEmpty())
@@ -283,9 +358,16 @@ class TestProtobufRequest {
         val result = wrapper.regions(APICalypse())
         assert(result.isNotEmpty())
     }
+
     @Test
     fun testReleaseDates() {
         val result = wrapper.releaseDates(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testReleaseDateRegions() {
+        val result = wrapper.releaseDateRegions(APICalypse())
         assert(result.isNotEmpty())
     }
 
@@ -310,6 +392,12 @@ class TestProtobufRequest {
     @Test
     fun testWebsites() {
         val result = wrapper.websites(APICalypse())
+        assert(result.isNotEmpty())
+    }
+
+    @Test
+    fun testWebsiteTypes() {
+        val result = wrapper.websiteTypes(APICalypse())
         assert(result.isNotEmpty())
     }
 
