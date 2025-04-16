@@ -20,6 +20,7 @@ fun IGDBWrapper.ageRatingCategories(APICalypse: APICalypse): List<AgeRatingCateg
 }
 
 @Throws(RequestException::class)
+@Deprecated("Use ageRatingContentDescriptionsV2 instead")
 fun IGDBWrapper.ageRatingContentDescriptions(APICalypse: APICalypse): List<AgeRatingContentDescription> {
     val bytes = apiProtoRequest(Endpoints.AGE_RATING_CONTENT_DESCRIPTIONS, APICalypse.buildQuery())
     return AgeRatingContentDescriptionResult.parseFrom(bytes).ageratingcontentdescriptionsList
@@ -173,6 +174,12 @@ fun IGDBWrapper.gameReleaseFormats(APICalypse: APICalypse): List<GameReleaseForm
 fun IGDBWrapper.gameStatuses(APICalypse: APICalypse): List<GameStatus> {
     val bytes = apiProtoRequest(Endpoints.GAME_STATUSES, APICalypse.buildQuery())
     return GameStatusResult.parseFrom(bytes).gamestatusesList
+}
+
+@Throws(RequestException::class)
+fun IGDBWrapper.gameTimeToBeats(APICalypse: APICalypse): List<GameTimeToBeat> {
+    val bytes = apiProtoRequest(Endpoints.GAME_TIME_TO_BEATS, APICalypse.buildQuery())
+    return GameTimeToBeatResult.parseFrom(bytes).gametimetobeatsList
 }
 
 @Throws(RequestException::class)
