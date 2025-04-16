@@ -53,15 +53,8 @@ sourceSets {
 }
 
 tasks {
-    compileKotlin {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-    compileTestKotlin {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
     dokkaJavadoc {
-        outputDirectory.set(buildDir.resolve("javadoc"))
+        outputDirectory.set(layout.buildDirectory.dir("javadoc"))
         dependsOn(getTasksByName("generateProto", true))
     }
     withType<GenerateProtoTask> {
@@ -85,14 +78,14 @@ protobuf {
     this.overwrite(true)
 }
 
-val dokkaJar by tasks.creating(Jar::class) {
+val dokkaJar by tasks.registering(Jar::class) {
     group = JavaBasePlugin.DOCUMENTATION_GROUP
     description = "Assembles Kotlin docs with Dokka"
     archiveClassifier.set("javadoc")
     from(tasks.dokkaJavadoc)
 }
 
-val sourcesJar by tasks.creating(Jar::class) {
+val sourcesJar by tasks.registering(Jar::class) {
     dependsOn("generateProto")
     manifest {
         attributes("Main-Class" to "com.api.igdb.ApiRequesterKt")

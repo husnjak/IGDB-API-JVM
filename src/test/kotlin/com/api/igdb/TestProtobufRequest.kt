@@ -248,6 +248,12 @@ class TestProtobufRequest {
     }
 
     @Test
+    fun testGameTimeToBeats() {
+        val result = wrapper.gameTimeToBeats(apiCalypseQuery)
+        assert(result.isNotEmpty())
+    }
+
+    @Test
     fun testGameTypes() {
         val result = wrapper.gameTypes(apiCalypseQuery)
         assert(result.isNotEmpty())

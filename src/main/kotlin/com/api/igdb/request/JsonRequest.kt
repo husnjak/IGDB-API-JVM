@@ -145,6 +145,11 @@ fun IGDBWrapper.jsonGameStatuses(APICalypse: APICalypse): String {
 }
 
 @Throws(RequestException::class)
+fun IGDBWrapper.jsonGameTimeToBeats(APICalypse: APICalypse): String {
+    return apiJsonRequest(Endpoints.GAME_TIME_TO_BEATS, APICalypse.buildQuery())
+}
+
+@Throws(RequestException::class)
 fun IGDBWrapper.jsonGameTypes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.GAME_TYPES, APICalypse.buildQuery())
 }
@@ -298,6 +303,7 @@ fun IGDBWrapper.jsonEvents(APICalypse: APICalypse): String {
 fun IGDBWrapper.jsonEventLogos(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.EVENT_LOGOS, APICalypse.buildQuery())
 }
+
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonEventNetworks(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.EVENT_NETWORKS, APICalypse.buildQuery())
@@ -307,10 +313,12 @@ fun IGDBWrapper.jsonEventNetworks(APICalypse: APICalypse): String {
 fun IGDBWrapper.jsonNetworkTypes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.NETWORK_TYPES, APICalypse.buildQuery())
 }
+
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonCollectionRelations(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.COLLECTION_RELATIONS, APICalypse.buildQuery())
 }
+
 @Throws(RequestException::class)
 fun IGDBWrapper.jsonCollectionRelationTypes(APICalypse: APICalypse): String {
     return apiJsonRequest(Endpoints.COLLECTION_RELATION_TYPES, APICalypse.buildQuery())
